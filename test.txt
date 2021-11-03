@@ -1,1 +1,2 @@
 Here you can test if you are alowed to edit etc.
+Testing from ErikSundvall's fork of kardapp's CKM-mirror in branch project/MBA
