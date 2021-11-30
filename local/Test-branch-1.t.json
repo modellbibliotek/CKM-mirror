@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "1.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "25d4bb216d8c6f4a468f5ed152a88e2b",
+      "MD5-CAM-1.0.1" : "ce08abee87b52387a7de22093aad132b",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -358,7 +358,82 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "19FEDB8EB9D83F76587DE9C7D7A30872"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Bereitstellung eines Frameworks für die konsistente Modellierung von Vitalparametern innerhalb eines Templates.",
+          "keywords" : [ "Blutdruck", "Temperatur", "Puls", "Sauerstoffsättigung", "Atmung", "Observationen", "Vital", "Parameter" ],
+          "use" : "Verwenden Sie diesen Archetyp, um ein Framework und vorgeschlagene Design für die konsistente Modellierung von Vitalparametern innerhalb eines Templates bereitzustellen.\r\n\r\nDieser Archetyp soll in einem Template verwendet werden, in dem der Inhalt klinisch angemessen ist und in einem entsprechenden COMPOSITION-Archetyp verschachtelt ist. Zum Beispiel: eine Konsultationsnotiz oder Beobachtungen in der Pflege.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "*To provide a framework for consistent modelling of Vital signs within a template. (en)",
+          "keywords" : [ "blodtryck", "temperatur", "puls", "syremättnad", "andning", "observationer", "vitala", "tecken" ],
+          "use" : "*Use to provide a framework and suggested design guidance for consistent modelling of Vital signs within a template.\r\n\r\nThis archetype is intended to be used within a template in which the content is clinically appropriate, nested within any relevant COMPOSITION archetype. For example: a consultation note or nursing observations. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ko" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ko"
+          },
+          "purpose" : "*To provide a framework for consistent modelling of Vital signs within a template. (en)",
+          "keywords" : [ "*혈압(ko)", "*체온(ko)", "*맥박(ko)", "*산소 포화도(ko)", "*호흡수(ko)", "*관찰(ko)", "*생체(ko)", "*징후(ko)" ],
+          "use" : "*Use to provide a framework and suggested design guidance for consistent modelling of Vital signs within a template.\r\n\r\nThis archetype is intended to be used within a template in which the content is clinically appropriate, nested within any relevant COMPOSITION archetype. For example: a consultation note or nursing observations. (en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a framework for consistent modelling of Vital signs within a template.",
+          "keywords" : [ "blood pressure", "temperature", "pulse", "oxygen saturation", "respirations", "observations", "vital", "signs" ],
+          "use" : "Use to provide a framework and suggested design guidance for consistent modelling of Vital signs within a template.\r\n\r\nThis archetype is intended to be used within a template in which the content is clinically appropriate, nested within any relevant COMPOSITION archetype. For example: a consultation note or nursing observations.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "*To provide a framework for consistent modelling of Vital signs within a template. (en)",
+          "keywords" : [ "presión arterial", "temperatura", "frecuencia cardíaca", "saturación de oxígeno", "frecuencia respiratoria", "observaciones", "signos vitales" ],
+          "use" : "*Use to provide a framework and suggested design guidance for consistent modelling of Vital signs within a template.\r\n\r\nThis archetype is intended to be used within a template in which the content is clinically appropriate, nested within any relevant COMPOSITION archetype. For example: a consultation note or nursing observations. (en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.vital_signs.v0",
     "differential" : true,
@@ -491,7 +566,227 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "203F097307CFAB8871029D0E03720068"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung der gemessenen Temperatur einer Person - als Surrogat für die Temperatur des gesamten Körpers.",
+          "keywords" : [ "Temperatur", "Körper", "Ganzes", "Fieber", "Hypothermie", "Hyperthermie" ],
+          "use" : "Zur Darstellung der gesamten Körpertemperatur einer Person oder eines Körpers.\r\n\r\nWenn benötigt, können zusätzliche Cluster-Archetypen eingefügt werden, um zusätzliche Statusdaten bereitzustellen - darunter Details zu Umgebungsbedingungen und Belastungsdetails.\r\n\r\nBitte beachten: Die Stelle und Methode der Messung muss ggf. dem Endverbraucher angezeigt werden, um eine präzise Interpretation der gemessenen Temperatur zu ermöglichen.",
+          "misuse" : "Dieser Archetyp soll nicht für die Darstellung der Temperaturmessung eines anderen Objekts verwendet werden.\r\n\r\nDieser Archetyp darf nicht verwendet werden, um die Temperatur eines Körperteils isoliert darzustellen, z. B. die Temperatur an der Fußsohle im Rahmen des Managements von chronischem Diabetes.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Для записи измеряемой температуры человека - в качестве суррогата температуры всего тела.",
+          "keywords" : [ "температура", "лихорадка", "жар", "гипертермия", "гипотермия" ],
+          "use" : "Используется для записи температуры тела пациента или органа.\r\nДополнительные кластеры могут быть включены для получения дополнительной информации о состоянии - в том числе условия внешней среды, фаза менструального цикла и другие детали, где это уместно.\r\nОбратите внимание: запись о месте и методе измерения  может потребоваться  для облегчения точной интерпретации регистрируемой температуры.",
+          "misuse" : "Этот архетип не следует использовать для записи температуры любого другого объекта.\r\nЭтот архетип не следует использовать для записи температуры части тела, например, отдельного измерения температуры ступни в лечении больных с диабетической стопой.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att mäta en individs kroppstemperatur som är ett surrogat för kroppens kärntemperatur.",
+          "keywords" : [ "temperatur", "kropp", "kärna", "feber", "hypotermi", "hypertermi" ],
+          "use" : "Används för att mäta en individs kroppstemperatur som är ett surrogat för individens kärntemperatur.\r\nYtterligare kluster kan läggas till för ytterligare tillståndsdata såsom miljöförhållanden och detaljer från ansträngningstest där det är lämpligt.\r\n\r\nObservera: Platsen och mätmetoden kan behöva visas för slutanvändaren för att underlätta korrekt tolkning av den uppmätta temperaturen. \r\n",
+          "misuse" : "Ska inte användas för att mäta temperaturen av något annat föremål.\r\n\r\nSka inte användas för att mäta temperaturen av en isolerad kroppsdel, exempelvis temperaturen av fotsulan som en del i kronisk diabetesskötsel.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fi" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fi"
+          },
+          "purpose" : "Henkilön lämpötilan mittaamista varten. ",
+          "keywords" : [ "lämpötila, kuume, hypotermia, hypertermia" ],
+          "use" : "Yksilön lämpötilan kirjaamista varten.\r\n\r\nLisäklustereita voidaan sisällyttää lisätietojen tallentamista varten, mukaan lukien ympäristöolosuhteet ja yksityiskohtaiset rasitustiedot.\r\n\r\nHuomio: Mittauspaikka ja mittaustapa voi olla hyödyllistä näyttää käyttäjälle lämpötilan tarkan tulkinnan helpottamiseksi.",
+          "misuse" : "Tätä arkkityyppiä ei käytetä kuvaamaan minkään muun kohteen kuin potilaan lämpötilaa.\r\n\r\nTätä arkkityyppiä ei käytetä kehon osan lämpötilan tallentamiseen erillään, esim. jalan pohjan lämpötila osana kroonista diabeteksen hoitoa.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Registrar a temperatura aferida de uma pessoa - substituto para temperatura corporal central.",
+          "keywords" : [ "temperatura", "corpo", "central", "febre", "hipotermia", "hipertermia" ],
+          "use" : "Usado para registrar a temperatura corporal de uma pessoa, o qual é um substituto para a temperatura corporal central.\r\nClusters adicionais podem ser incluídos para fornecer dados adicionais - incluindo as condições ambientais e detalhes de esforço, quando apropriado.\r\n\r\nObservação: O local e método de gravação podem precisar ser exibidos ao usuário final para facilitar a interpretação exata da temperatura registrada.",
+          "misuse" : "Esse arquétipo não pode ser usado para registrar a temperatura de qualquer outro objeto.\r\nEsse arquétipo não pode ser usado para registrar a temperatura de uma parte do corpo isoladamente, por exemplo, temperatura da sola do pé, como parte do controle de diabetes crônica.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل درجة الحرارة التي تم قياسها للشخص - كبديل عن درجة حرارة الجسم كله",
+          "keywords" : [ "الحرارة", "الجسم", "اللُّب", "الحمى", "انخفاض الحرارة", "فرط الحرارة" ],
+          "use" : "يستخدم لتسجيل حرارة جميع الجسم للشخص أو الجثة.\r\nيمكن تضمين عناقيد أخرى للإمداد بالمزيد من تفاصيل الحالة - بما في ذلك العوامل البيئية, تفاصيل الدورة الشهرية, تفاصيل المجهود, حيثما تطلب الأمر.\r\nالرجاء ملاحظة: قد يكون من الواجب عرض هذا الموقع و طريقة التسجيل للمستخدِم النهائي لتسهيل التفسير الدقيق للحرارة التي يتم تسجيلها.",
+          "misuse" : "هذا النموذج لا يستخدم لتسجيل حرارة أي شيئ آخر.\r\nهذا النموذج لا يستخدم لتسجيل الحرارة لجزء معزول من الجسم, مثلا حرارة أخمص القدم كجزء من التدبير العلاجي لمرض السكري المزمن.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the measured temperature of a person - as a surrogate for the core body temperature.",
+          "keywords" : [ "temperature", "body", "core", "fever", "hypothermia", "hyperthermia" ],
+          "use" : "Used for recording the measurement of an individual's body temperature, which is a surrogate for the core body temperature of the individual.\r\n\r\nAdditional clusters can be included to provide additional state data - including environmental conditions and exertion details, where appropriate.\r\n\r\nPlease Note: The site and method of recording may need to be displayed to the end user to facilitate accurate interpretation of the temperature recorded.",
+          "misuse" : "This archetype is not to be used to record the temperature of any other object.\r\n\r\nThis archetype is not to be used to record the temperature of a part of the body in isolation e.g. temperature of the sole of the foot as a part of chronic diabetes management.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Registrare la temperatura misurata di una persona - come surrogato della temperatura del corpo centrale.",
+          "keywords" : [ "temperatura, corpo, tronco, febbre, ipotermia, ipertermia" ],
+          "use" : "\r\nUtilizzato per registrare la misurazione della temperatura corporea di un individuo, che è un indicatore della temperatura corporea interna dell'individuo.\r\n\r\nPossono essere inclusi ulteriori cluster per fornire dati aggiuntivi sullo stato - comprese le condizioni ambientali e i dettagli dello stato di fatica, se del caso.\r\n\r\nNota: il sito e il metodo di registrazione potrebbero dover essere visualizzati all'utente finale per facilitare l'interpretazione accurata della temperatura registrata.",
+          "misuse" : "Questo archetipo non deve essere usato per registrare la temperatura di alcun altro oggetto.\r\n\r\nQuesto archetipo non deve essere usato per registrare la temperatura di una parte del corpo in isolamento, ad esempio la temperatura della pianta del piede come parte della gestione del diabete cronico",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar la temperatura medida de una persona - como un derivado de la temperatura corporal",
+          "keywords" : [ "temperatura", "cuerpo", "central", "fiebre", "hipotermia", "hipertermia" ],
+          "use" : "Usar para registrar la temperatura corporal de una persona o cuerpo.\r\nClusters adicionales pueden incluirse para proveer datos adicionales de estado - incluyendo condiciones ambientales, detalles del ciclo menstrual y de ejercicio físico, cuando se considera apropiado.\r\nTener en cuenta: El sitio y el método del registro quizás sea necesario mostrarlo al usuario final, para la adecuada interpretación del registro de temperatura.",
+          "misuse" : "Este arquetipo no debe usarse para registrar la temperatura de cualquier otro objeto.\r\nEste arquetipo no debe usarse para registrar la temperatura de una parte del cuerpo aislado por ej: la temperatura de la planta del pie como parte del manejo de la diabetes crónica.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes til å registrere et individs målte kroppstemperatur, som uttrykk for kjernetemperaturen.",
+          "keywords" : [ "temperatur", "kropp", "kjerne", "feber", "hypotermi", "hypertermi", "temperaturmåling", "overoppheting", "nedkjøling", "heteslag" ],
+          "use" : "Brukes til å dokumentere et individs kjernetemperatur. Det kan legges til CLUSTERE for å tilføre tillegsinformasjon, inkludert miljømessige forhold (eksponering), detaljer om menstruasjonssyklus og informasjon om fysisk anstrengelse, der hvor dette er relevant. NB: Målemetode og -sted vil ofte måtte vises til sluttbruker for at de dokumenterte temperaturverdiene skal kunne tolkes korrekt.",
+          "misuse" : "Arketypen skal ikke brukes til å registrere andre objekters eller en isolert kroppsdels temperatur.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Registrar la temperatura medida de una persona - como un derivado de la temperatura corporal",
+          "keywords" : [ "temperatura", "cuerpo", "central", "fiebre", "hipotermia", "hipertermia" ],
+          "use" : "Usar para registrar la temperatura corporal de una persona o cuerpo.\r\nClusters adicionales pueden incluirse para proveer datos adicionales de estado - incluyendo condiciones ambientales, detalles del ciclo menstrual y de ejercicio físico, cuando se considera apropiado.\r\nTener en cuenta: El sitio y el método del registro quizás sea necesario mostrarlo al usuario final, para la adecuada interpretación del registro de temperatura.",
+          "misuse" : "Este arquetipo no debe usarse para registrar la temperatura de cualquier otro objeto.\r\nEste arquetipo no debe usarse para registrar la temperatura de una parte del cuerpo aislado por ej: la temperatura de la planta del pie como parte del manejo de la diabetes crónica.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ja" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ja"
+          },
+          "purpose" : "全身の温度の代用として計測された人の体温を記録する。",
+          "keywords" : [ "*temperature(en)", "*body(en)", "*core(en)", "*fever(en)", "*hypothermia(en)", "*hyperthermia(en)" ],
+          "use" : "人や体の全体の温度を記録するために用いられる。\r\nさらに状態データを表すために、追加のクラスタを内包することもできる。たとえば、環境条件や、月経周期の詳細、労作についての詳細を必要に応じて内包する。\r\n注意：計測された温度を正確に解釈するためにエンドユーザーに記録方法や部位を示す必要があるかもしれません。",
+          "misuse" : "このアーキタイプは、人体以外の温度を計測するためには用いられない。\r\nこのアーキタイプは、身体において独立した一部の温度を記録するためには用いられない。たとえば、糖尿病の慢性期管理の一貫として、測定の温度を計測すること。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fa" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fa"
+          },
+          "purpose" : "برای ثبت اندازه گیری دمای بدن یک فرد بکار می رود- به عنوان جایگزینی برای دمای کل بدن",
+          "keywords" : [ "دما", "بدن", "مرکز", "تب", "کاهش دمای بدن", "افزایش دمای بدن" ],
+          "use" : "برای ثبت دمای کل بدن فرد یا بدن استفاده می شود . خوشه‌های اضافی، برای در بر گرفتن داده‌های حالت بیشتر، شامل شرایط محیطی ، جزییات عادت ماهیانه و جزییات جنب و جوش فرد، هر جا که مناسب باشند، می‌توانند گنجانده شوند.\r\nلطفا توجه داشته باشید که برای تسهیل در تفسیر صحیح دما ثبت شده، توسط کاربر نهایی ممکن است که نمایش محل و روش ثبت لازم باشد",
+          "misuse" : "این الگو ساز جهت ثبت دما اشیا دیگر بکار نمی رود .\r\nاین الگو ساز جهت ثبت دمای بخشهایی از بدن -\r\nبه عنوان مثال دمای کف پا به عنوان بخشی از پایش دیابت مزمن- بصورت جداگانه استفاده نمی شود\r\n   ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "Voor het vastleggen van de gemeten temperatuur van een persoon - als surrogaat van de kerntemperatuur van het lichaam.",
+          "keywords" : [ "temperatuur", "lichaam", "kern", "koorts", "hypothermie", "hyperthermie" ],
+          "use" : "Gebruikt voor het vastleggen van de meting van de lichaamstemperatuur van een individu, wat een surrogaat is van de kerntemperatuur van het lichaam van een individu.\r\n\r\nWaar gepast kunnen extra clusters toegevoegd worden voor het ondersteunen van extra data over de toestand - inclusief omgevingsfactoren en inspannings details.\r\n\r\nNota bene: de plaats en methode van de meting dienen mogelijk weer gegeven te worden aan de eindgebruiker om precieze interpretatie van de vastgelegde temperatuur mogelijk te maken.",
+          "misuse" : "Dit archetype dient niet gebruikt te worden voor het vastleggen van de temperatuur van een (ander) object.\r\n\r\nDit archetype dient niet gebruikt te worden voor het vastleggen van de temperatuur van een specifiek lichaamsdeel, bijvoorbeeld de temperatuur van de voetzool zoals bij chronische diabeteszorg.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.body_temperature.v2",
     "differential" : true,
@@ -510,7 +805,44 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "ar-sy" : { },
+        "ar-sy" : {
+          "at0030" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "تَعَرُّض الجسم",
+            "description" : "الموقف الحراري للشخص الذي يتم قياس درجة حرارته"
+          },
+          "at0031" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0031",
+            "text" : "مُعرَّى",
+            "description" : "لا يوجد ملابس أو شراشف أو غطاء"
+          },
+          "at0032" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
+            "text" : "ملابس/ شراشف خفيفة",
+            "description" : "الشخص مُغَطَّى بكمية من الملابس أو الشراشف أقل من تلك المناسبة للظروف البيئية المحيطة"
+          },
+          "at0033" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033",
+            "text" : "ملابس/شراشف مناسبة",
+            "description" : "الشخص مُغَطَّى بكمية من الملابس أو الشراشف المناسبة للظروف البيئية المحيطة"
+          },
+          "at0034" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034",
+            "text" : "ملابس/شراشف زائدة",
+            "description" : "الشخص مُغَطَّى بكمية زائدة من الملابس/ الشراشف المناسبة للظروف البيئية المحيطة"
+          },
+          "at0043" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "الجلد/ البشرة",
+            "description" : "يتم قياس درجة الحرارة من الجلد المُعَرَّض/ المكشوف"
+          }
+        },
         "ru" : { },
         "nb" : { },
         "es-ar" : { },
@@ -734,7 +1066,181 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "02D54A1F08B1D0D12BDEB8DFD499D214"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Dokumentation der Sauerstoffsättigung im Blut unter Benutzung eines Pulsoxymeters.",
+          "keywords" : [ "Sauerstoff", "Behandlung mit Sauerstoff", "Pulsoxymeter", "Pulsoxymetrie" ],
+          "use" : "Zur Darstellung des Blutsauerstoffs und damit zusammenhängender Messungen, die durch Pulsoxymetrie oder Puls-CO-Oximetrie gemessen werden.\r\n\r\nWellenformen sollten hier aufgezeichnet werden, wenn sie zur Dokumentation der Qualität der Blutgasmessung verwendet werden.",
+          "misuse" : "Nicht zur Darstellung von andere nicht-invasive Blutgasmessungen wie transkutane CO₂, laterale endtidalen CO₂ oder nicht-invasive zerebraler Oxymetrie verwendet.\r\n\r\nNicht zur Darstellung von Plethysmographie zu verwenden. Verwenden Sie einen anderen geeigneten Archetyp für diesen Zweck.\r\n\r\nNicht zur Darstellung einer anderen Art von Messung verwenden, wie z.B. der Pulsfrequenz, wenn das Aufzeichnungsgerät dies ebenfalls ermöglicht. Dies sollte in einem separaten Archetyp aufgezeichnet werden, der für diese spezielle Messung geeignet ist, um eine konsistente Abfrage zu ermöglichen. In diesem Beispiel sollte die Pulsfrequenz im Archetyp OBSERVATION.pulse aufgezeichnet werden.\r\n\r\nNicht zur Darstellung von Messungen der peripheren Blutgase zu verwenden, die einen direkten Kontakt mit Blut beinhalten. Zum Beispiel sollte PaO₂, PaCO₂ unter Verwendung des Archetyps OBSERVATION.laboratory_test_result aufgezeichnet werden.\r\n\r\nNicht zur Darstellung invasiver Blutgasmessungen verwenden. Zum Beispiel arterielle (SaO₂), venöse (SvO₂) Sauerstoffsättigung oder Sauerstoffgehalt (CaOC), die normalerweise durch invasive Methoden wie Laborblutgase oder Gefäßkathetergeräte bestimmt werden. Diese sollten auch innerhalb des Archetyps OBSERVATION.laboratory_test_resultate erfasst werden.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Для записи результатов непрямых,в настоящее время неинвазивных, измерений газового состава крови, таких как SpO2 (насыщение кислородом периферической крови) и pTCO2 (насыщение углекислым газом), полученных методами пульсовой оксиметрии, чрескожной оксиметрии или другими методами.\r\n\r\nВполне вероятно, что этот архетип будет использоваться, в основном, для записи оценок оксигенации, однако в него могут быть включены или добавлены со временем измерения и других газов.",
+          "keywords" : [ "парциальное давление", "насыщение", "карбоксигемоглобин", "метгемоглобин", "чрескожный", "пульс", "оксиметр", "оксиметрия", "концентрация", "неинвазивный", "жизненный", "кислород", "углекислый газ", "О2", "СО2", "оксигенация" ],
+          "use" : "Используется для записи результатов непрямых,в настоящее время неинвазивных, измерений газового состава крови. Новые непрямые измерения газов крови должны добавляться к этому архетипу.\r\n\r\nЕсли записывающее устройство также обеспечивает другой тип измерения,например, такой как частота пульса, то это должно быть записано в отдельный архетип, соответствующий данному измерению, например, OBSERVATION.heart_rate, для обеспечения последовательных запросов.\r\n\r\nЦель состоит в том, чтобы последовательно моделировать клиническое понятие, а не моделировать вывод данных с устройства. Устройства становятся все более многофункциональными и обеспечивают дублирование измерений, которые, возможно, придется записывать с помощью ряда отдельных архетипов.\r\n\r\nОсциллограммы должны быть зарегистрированы здесь, когда используются для документирования качества измерений газов крови. В отличие от этого, если они используется для первичной диагностики, например, сердечного выброса, плетизмограммы должны быть записаны в ключевом клиническом архетипе - OBSERVATION.heart_rate-pulse.",
+          "misuse" : "Любые измерения газов крови, который включает прямой контакт с кровью, а также измерения PaO2 (парциальное давление кислорода), PaCO2 (парциальное давление углекислого газа) не должны записываться с помощью этого архетипа - для таких измерений используется архетип OBSERVATION.lab_test-blood_gases. Новые прямые измерения газов крови должны быть добавлены к архетипу OBSERVATION.lab_test-blood_gases.v1.\r\n\r\nНЕ использовать для записи прямого измерения газов крови. Например, насыщение кислородом артериальной (SaO2) или венозной (SvO2) крови, или содержание кислорода (CAOC), которые обычно определяются инвазивными методами, например, специальными лабораториями газов крови или с помощью сосудистых катетеров. Такие измерения должны быть записаны в архетип OBSERVATION.lab_test-blood_gases.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Mätning av syremättnad i blodet och relaterade mätningar, uppmätta med pulsoximetri eller CO-oximetri.",
+          "keywords" : [ "syre", "syresättning", "syremättnad", "SpO2", "spMet", "spCO", "spOC", "karboxihemoglobin", "methemoglobin", "puls", "oximeter", "oximetri", "koncentration", "partiell", "tryck", "icke-invasiv", "vital", "O2", "CO2", "koldioxid", "SaO₂", "SaO2" ],
+          "use" : "Använd för att dokumentera av mätning av syremättnad i blodet och relaterade mätningar, uppmätta med pulsoximetri eller CO-oximetri.\r\n\r\nVågformer bör registreras (i fältet vågform) om de används för att dokumentera kvaliteten av mätningen.",
+          "misuse" : "Ska inte användas för andra icke-invasiva blodgasmätningar, exempelvis transkutan CO₂, lateral endtidal CO₂ eller icke-invasiv cerebral oximetri.\r\n\r\nSka inte användas för pletysmografi. Använd en annan lämplig arketyp för det ändamålet.\r\n\r\nSka inte användas för att registrera andra typer av mätningar, exempelvis pulsfrekvens, även om mätenheten tillhandahåller också den informationen. Används istället existerande specifika arketyper, så att mer konsekventa sökningar kan göras. För exemplet puls registrerar du pulsfrekvensen i arketypen OBSERVATION.pulse istället.\r\n\r\n\r\nAnvänds inte för perifera blodgasmätningar som innebär direktkontakt med blod. PaO2, PaCO2 bör till exempel registreras med hjälp av OBSERVATION.laboratory_test_result arketypen istället.\r\n\r\nAnvänds inte för invasiv blodgasmätning. Exempelvis arteriell (SaO₂), venös (SvO₂) syremättnad, eller syreinnehåll (CaOC) som vanligtvis fastställs genom invasiva metoder såsom laboratorieblodgaser eller kärlkateter-kopplad utrustning. Dessa bör registreras med arketypen OBSERVATION.laboratory_test_result istället.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fi" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fi"
+          },
+          "purpose" : "*To record blood oxygen and related measurements, measured by pulse oximetry or pulse CO-oximetry.(en)",
+          "keywords" : [ "*oxygen(en)", "*oxygenation(en)", "*saturation(en)", "*SpO2(en)", "*spMet(en)", "*spCO(en)", "*spOC(en)", "*carboxyhaemoglobin(en)", "*methaemoglobin(en)", "*pulse(en)", "*oximeter(en)", "*oximetry(en)", "*concentration(en)", "*partial(en)", "*pressure(en)", "*non-invasive(en)", "*vital(en)", "*O2(en)", "*SaO₂(en)", "*SaO2(en)", "*sat(en)", "*sats(en)", "*hypoxaemia(en)" ],
+          "use" : "*Use to record blood oxygen and related measurements, measured by pulse oximetry or pulse CO-oximetry.\r\n\r\nWaveforms should be recorded here when used to document quality of the blood gas measurement.(en)",
+          "misuse" : "*Not used for other non-invasive blood gas measurements such as transcutaneous CO₂, lateral end-tidal CO₂ or non-invasive cerebral oximetry.\r\n\r\nNot to be used for recording plethysmography. Use another appropriate archetype for this purpose.\r\n\r\nNot to be used for recording another type of measurement, such as pulse rate, where the recording device also provides this. This should be recorded in a separate archetype, appropriate for that particular measurement to allow consistent querying. In this example, record the pulse rate in the OBSERVATION.pulse archetype.\r\n\r\nNot to be used to record any peripheral blood gas measurement that involves direct contact with blood. For example, PaO₂, PaCO₂ should be recorded using the OBSERVATION.laboratory_test_result archetype.\r\n\r\nNot to be used to record invasive blood gas measurement. For example, arterial (SaO₂), venous (SvO₂) oxygen saturation or Oxygen content (CaOC) which are usually determined by invasive methods such as laboratory blood gases or vascular catheter devices. These should also be recorded within the OBSERVATION.laboratory_test_result archetype.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Para registrar la medición indirecta y habitualmente no invasiva de los gases en sangre tales como SpO2 y PtCO2, por medio de un oxímetro de pulso (o saturómetro de pulso), oximetría transcutánea u otros métodos.\r\n\r\nEs probable que este arquetipo será usado usado primariamente para registrar estimaciones de oxigenación, pero otras mediciones de gases pueden ser incluidas o agregadas en el futuro.",
+          "keywords" : [ "oxígeno", "oxigenación", "saturación", "SpO2", "ptcCO2", "ptcO2", "spMet", "spCO", "spOC", "carboxi-hemoglobina", "meta-hemoglobina", "transcutáneo", "pulso", "oxímetro", "oximetría", "saturómetro", "concentración", "parcial", "presión", "no invasivo", "vital", "O2", "CO2", "anhídrido carbónico", "dióxido de carbono" ],
+          "use" : "Usado para registrar la medición indirecta de gases en sangre, comúnmente por técnicas no invasivas. Nuevas mediciones indirectas de gases en sangres deberían ser incorporadas a este arquetipo.\r\n\r\nCuando el dispositivo de registro también provea otro tipo de medida, tal como la frecuencia del pulso, esto debe ser registrado en un arquetipo separado, adecuado para esa medida en particular. Ej. el arquetipo OBSERVATION.heart_rate-pulse, para permitir una consulta consistente.\r\n\r\nEl objetivo es modelar consistentemente un concepto clínico, más que la salida del modelo del dispositivo; los dispositivos son cada vez más multi-funcionales y proporcionan mediciones redundantes, que pueden requerir el registro por medio de arquetipos discretos.\r\n\r\nLas formas de onda deben ser registradas aquí cuando se utiliza para documentar la calidad de la medición de gases en sangre. Por el contrario, si se utiliza primariamente con fines diagnósticos (Ej. del gasto cardíaco), debe registrarse en el arquetipo OBSERVATION.heart_rate-pulse.",
+          "misuse" : "Cualquier medición de gases en sangre que involucra contacto directo con la sangre y la medición de la PaO2, PaCO2 no deberían ser registradas usando este arquetipo. Usar el arquetipo OBSERVATION.lab_test-blood_gases.v1. Mediciones directas de gases arteriales nuevas, deberían ser agregadas a OBSERVATION.lab_test-blood_gases.v1.\r\n\r\nNo usar para registrar medidas directas de gases en sangre. Ej. SaO2 (saturación arterial), SvO2 (saturación venosa) o CaO2 (contenido de Oxígeno), usualmente determinados por métodos invasivos. Ej. laboratorio de gases en sangre o dispositivos catheter vascular. Estos deberían ser registrados en el arquetipo OBSERVATION.lab_test-blood_gases.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere blodoksygen og beslektede målinger, målt ved pulsoksymetri eller puls-CO-oksymetri.",
+          "keywords" : [ "oksygen", "oksygenering", "saturasjon", "SpO2", "spMet", "spCO", "spCaO", "karbonmonoksid hemoglobin", "methemoglobin", "puls", "oksimetri", "oksimeter", "konsentrasjon", "partial", "trykk", "non-invasiv", "vital", "O2", "CO2", "karbondioksid", "oksimetri", "oksymetri", "metning", "oksygenmetning", "SaO2", "SaO₂", "hypoksemi" ],
+          "use" : "Brukes til å registrere blodoksygen og beslektede målinger, målt ved pulsoksymetri eller puls-CO-oksymetri.\r\n\r\nBølgeformer bør registreres her, når det benyttes til å dokumentere kvalitet på blodgassmåling.\r\n",
+          "misuse" : "Brukes ikke til å registrere andre non-invasive blodgassmålinger, som transkutan CO₂, sidestrøms endetidal CO₂ eller noninasiv cerebral oksymetri.\r\n\r\nBrukes ikke til å registrere pletysmografi. Bruk en annen passende arketype for dette formålet.\r\n\r\nBrukes ikke til å registrer andre typer målinger som for eksempel puls, der måleutstyret også angir disse. Dette dette registreres i en egen arketype som er passende for den aktuelle målingen, for å muliggjøre konsekvent spørring. I dette eksempelet registreres puls i OBSERVATION.pulse-arketypen. \r\n\r\nBrukes ikke til å registrere perifere blodgassmålinger som involverer direkte kontakt med blod. For eksempel bør PaO₂, PaCO₂ registreres i OBSERVATION.laboratory_test_result arketypen.\r\n\r\nBrukes ikke til å registrere invasiv blodgassmåling, for eksempel arteriell (SaO₂) eller venøs (SvO₂) oksygenmetning eller oksygeninnhold (CaOC) som vanligvis måles ved hjelp av invasive metoder. Bruk OBSERVATION.laboratory_test_result til dette formålet.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar medidas de oxigênio sanguíneo, medidas por oximetria de pulso ou por carbo-oximetria de pulso.\r\n",
+          "keywords" : [ "Oxigênio", "Oxigenação", "Saturação", "SpO2", "spMet(", "spCO", "spOC", "Carboxyhaemoglobina", "Methaemoglobina", "Pulso", "Oxímetro", "Oximetria", "Concentração", "Parcial", "Pressão", "Não invasivo", "Vital", "O2", "SaO₂", "SaO2", "sat", "sats", "Hipoxemia" ],
+          "use" : "Para gravar medidas de oxigênio sanguíneo, medidas por oximetria de pulso ou por carbo-oximetria de pulso.\r\nA forma das ondas podem ser usadas para documentar a qualidade das medidas de gases sanguíneos",
+          "misuse" : "Não deve ser usado para outras medidas não invasivas de gases sanguíneos, tais como CO₂ transcutâneo, CO₂ inalado ou oximetria cerebral não invasiva.\r\nNão dever ser usado para avaliar alterações de volume. Usar outro arquétipo apropriado para este fim.\r\nNão deve ser usado para obter outros tipos de medida, tais como medida de pulso uma vez que o processo de medida também oferce isso. Deveria ser obtido em um arquétipo separado, apropriado para esta medida particular para obter dados consistentes. No exemplo obtenha o pulso no aquétipo de observação de pulso.\r\nNão deve ser usado para qualquer medida de gases de sangue periférico que envolva contato direto com sangue, por exemplo PaO₂, PaCO₂, poderiam ser obtidos usando o arquétipo de observações de resultados de teste de laboratório.\r\nNão deve ser usado para obter medidas de gases sanguíneos invasivos. Por exemplo, saturação de oxigênio arterial (SaO₂), Venoso (SvO₂) ou conteúdo de oxigênio (CaOC) que geralmente são determinados por métodos invasivos, como gasometria de laboratório ou cateter vascular. Estes também devem ser registrados no arquétipo OBSERVATION.laboratory_test_result.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل قياسات غازات الدم غير المباشرة, بطريقة غير باضِعة, مثل تشبع الدم الطرفي بالأكسجين, و الضغط الجزئي للأكسجين في الدم الطرفي, عن طريق قياس تأكسج الدم عند النبض, أو قياس تأكسج الدم بطريق الجلد أو طرق أخرى.\r\n\r\nعادة ما يستخدم هذا النموذج لتسجيل تقديرات التأكسج, و لكن قياسات الغازات الأخرى قد يتم تضمينها أو تضاف مع الوقت.",
+          "keywords" : [ "الأكسجين", "التأكسج", "تشبع الدم الطرفي بالأكسجين", "الضغط الجزئي لثاني أكسيد الكربون في الدم الطرفي", "الضغط الجزئي لثاني أكسيد الكربون في الدم الطرفي", "تشبع الميثوكسيهيموغلوبين في الدم الطرفي", "تشبع الكاربوكسي هيموغلوبين في الدم الطرفي", "المحتوى الأكسجيني في الدم الطرفي", "التشبع", "كربوكسي هيموغلوبين", "الميتهيموغلوبين", "عن طريق الجلد", "النبض", "مقياس التأكسج", "قياس التأكسج", "التركيز", "جزئي", "الضغط", "غير باضع", "حيوي - حياتي", "الأكسجين", "ثاني أكسيد الكربون" ],
+          "use" : "يستخدم لتسجيل القياسات غير المباشرة لغازات الدم, باستخدام الطرق غير الباضعة. ينبغي أن يتم إضافة القياسات الجديدة لغازات الدم إلى هذا النموذج.\r\n\r\nكما تضيف الجهيزة المستخدمة طريقة أخرى للقياس, مثل سرعة النبض, و لكن ينبغي تسجيل ذلك في نموذج منفرد, يتناسب مع العلامة التي يتم قياسها, مثل: نموذج ملاحظة. القلب - معدل النبض, للسماح بالاستعلام عن البيانات بشكل متجانس.\r\n\r\nيهدف ذلك إلى وضع نموذج لمفهوم سريري, أكثر من كونه وضعا لنموذج نتاج (مُخرَج) جهيزة, حيث إن الجهائز عادة ما تكون متعددة الوظائف و تقوم بقياسات متراكبة قد تحتاج أن يتم تسجيلها في عدد من النماذج المنفردة.\r\n\r\nينبغي تسجيل التموجات في هذا النموذج عند استخدامها لتوثيق جودة قراءة غاز الدم. و على العكس, إذا استخدمت لأغراض تشخيصية أولية, مثل النتاج (المخرج) القلبي, و الـ \r\nplesmythography \r\nفينبغي تسجيلها باستخدام النموذج الجوهري: ملاحظة. القلب - معدل النبض.",
+          "misuse" : "لا ينبغي أن يستخدم هذا النموذج في قياس غازات الدم التي تتضمن تماس مباشر مع الدم, و قياس ضغط الأكسجين في الدم الشرياني, و ضغط ثاني أكسيد الكربون في الدم \r\nالشرياني, و ينبغي استخدام نموذج ملاحظة. الاختبار المعملي - غازات الدم, لذلك.\r\n\r\nينبغي إضافة القياسات المباشرة لغازات الدم لنموذج ملاحظة. الاختبار المعملي. غازات الدم.\r\n\r\nلا ينبغي أن يستخدم لقياس قياسات غازات الدم المباشرة, مثل تشبع الدم شرياني بالأكسجين و تشبع الدم الوريدي بالأكسجين, أو المحتوى الأكسجيني, التي يتم تحديدها باستخدام الطرق الباضعة, مثل استخدام الأجهزة المعملية لقياس غازات الدم أو القثطار الوريدي \r\nو ينبغي تسجيل هذه القياسات باستخدام نموذج ملاحظة. الاختبار المعملي. غازات الدم.\r\n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record blood oxygen and related measurements, measured by pulse oximetry or pulse CO-oximetry.",
+          "keywords" : [ "oxygen", "oxygenation", "saturation", "SpO2", "spMet", "spCO", "spOC", "carboxyhaemoglobin", "methaemoglobin", "pulse", "oximeter", "oximetry", "concentration", "partial", "pressure", "non-invasive", "vital", "O2", "SaO₂", "SaO2", "sat", "sats", "hypoxaemia" ],
+          "use" : "Use to record blood oxygen and related measurements, measured by pulse oximetry or pulse CO-oximetry.\r\n\r\nWaveforms should be recorded here when used to document quality of the blood gas measurement.",
+          "misuse" : "Not used for other non-invasive blood gas measurements such as transcutaneous CO₂, lateral end-tidal CO₂ or non-invasive cerebral oximetry.\r\n\r\nNot to be used for recording plethysmography. Use another appropriate archetype for this purpose.\r\n\r\nNot to be used for recording another type of measurement, such as pulse rate, where the recording device also provides this. This should be recorded in a separate archetype, appropriate for that particular measurement to allow consistent querying. In this example, record the pulse rate in the OBSERVATION.pulse archetype.\r\n\r\nNot to be used to record any peripheral blood gas measurement that involves direct contact with blood. For example, PaO₂, PaCO₂ should be recorded using the OBSERVATION.laboratory_test_result archetype.\r\n\r\nNot to be used to record invasive blood gas measurement. For example, arterial (SaO₂), venous (SvO₂) oxygen saturation or Oxygen content (CaOC) which are usually determined by invasive methods such as laboratory blood gases or vascular catheter devices. These should also be recorded within the OBSERVATION.laboratory_test_result archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fa" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fa"
+          },
+          "purpose" : "برای ثبت اندازه گیری گاز خون بطور غیر مستقیم ،در حال حاضر غیر تهاجمی و غیر مستقیم بکار می رود، نظیر ....و ... از طریق اندازه گیری اکسیژن نبضی ، اندازه گیری اکسیژن زیر پوستی یا سایر روشها \r\nاین احتمال بالاست که از این الگو ساز بطور اولیه در ثبت برآوردهای تولید اکسیژن استفاده شوداما سایر اندازه گیری های گاز ممکن است در طول زمان اضافه شود  .   ",
+          "keywords" : [ "اکسیژن", "تولید اکسیژن", "اشباع", "اشباع اکسیژن خون", "SpO2", "ptcCO2", "ptcO2", "spMet", "spCO", "spOC", "ترکیب مونو اکسید کربن و هموگلوبین در گلبولهای قرمز", "پروتیین حمل کننده اکسیژن در هموگلوبین", "زیر پوستی", "وسیله اندازه گیری اکسیژن خون", "روش اندازه گیری اکسیژن خون", "غلظت", "جزیی", "فشار", "غیر تهاجمی", "حیاتی", "O2", "CO2", "کربن دی اکسید" ],
+          "use" : "برای ثبت اندازه گیری غیر مستقیم گاز خون، که در حال حاضر با تکنیک های غیر تهاجمی انجام می شود، بکار می رود. داده های جدید اندازه گیری های غیر مستقیم گاز خون بایستی به این الگوساز افزوده شوند\r\n\r\nاز انجایی که وسایل ثبت انواع دیگری از اندازه گیری مانند میزان نبض را فراهم می کنند، بایستی در یک الگوساز جداگانه، مناسب با آن اندازه گیری مانند\r\nOBSERVATION.heart_rate-pulse\r\nبرای اجازه دادن به پرسجوی مشروط، ثبت شوند\r\n \r\nهدف همواره مدل کردن یک مفهوم بالینی به جای مدل کردن خروجی یک وسیله است\r\nوسایل چند کاره بوده و پیوسته قابلیت های آنها در حال افزایش است و اندازه گیری ها همپوشانی دارند که ممکن است نیاز شوند تا با بکارگیری یک تعداد از الگوساز های گسسته ثبت شوند\r\n\r\nشکل موج ها هنگامی که برای مستند کردن کیفیت اندازه گیری گاز خون استفاده می شوند بایستی در اینجا ثبت شوند. و در مقابل اگر برای اهداف تشخیصی اولیه مانند برونده قلبی بکار روند، \"پلسمیتوگرافی\" باید در الگوساز بالینی کلیدی مرتبط\r\nOBSERVATION.heart_rate-pulse\r\nثبت شود\r\n    ",
+          "misuse" : "هر گونه اندازه گیری گاز خون که شامل تماس مستقیم با خون و اندازه گیری .... و .... نباید با استفاده از این الگو ساز ثبت شود . ازالگو ساز ..... استفاده کنید . اندازه گیری جدید فشار خو.ن باید به ... اضافه شود\r\nنباید در ثبت اندازه گیری فشار گاز خون مستقیم استفاده شود به عنوان مثال .... ، .... اشباع اکسیژن یا محتوای اکسیژن .... که معمولا با روشهای غیر تهاجمی تعیین می شود.به عنوان مثال گازههای خونی آزمایشگاهی یا وسایل کاتتر عروقی . این موارد باید در الگو ساز ... ثبت شوند ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "*To record blood oxygen and related measurements, measured by pulse oximetry or pulse CO-oximetry.(en)",
+          "keywords" : [ "*oxygen(en)", "*oxygenation(en)", "*saturation(en)", "*SpO2(en)", "*spMet(en)", "*spCO(en)", "*spOC(en)", "*carboxyhaemoglobin(en)", "*methaemoglobin(en)", "*pulse(en)", "*oximeter(en)", "*oximetry(en)", "*concentration(en)", "*partial(en)", "*pressure(en)", "*non-invasive(en)", "*vital(en)", "*O2(en)", "*SaO₂(en)", "*SaO2(en)", "*sat(en)", "*sats(en)", "*hypoxaemia(en)" ],
+          "use" : "*Use to record blood oxygen and related measurements, measured by pulse oximetry or pulse CO-oximetry.\r\n\r\nWaveforms should be recorded here when used to document quality of the blood gas measurement.(en)",
+          "misuse" : "*Not used for other non-invasive blood gas measurements such as transcutaneous CO₂, lateral end-tidal CO₂ or non-invasive cerebral oximetry.\r\n\r\nNot to be used for recording plethysmography. Use another appropriate archetype for this purpose.\r\n\r\nNot to be used for recording another type of measurement, such as pulse rate, where the recording device also provides this. This should be recorded in a separate archetype, appropriate for that particular measurement to allow consistent querying. In this example, record the pulse rate in the OBSERVATION.pulse archetype.\r\n\r\nNot to be used to record any peripheral blood gas measurement that involves direct contact with blood. For example, PaO₂, PaCO₂ should be recorded using the OBSERVATION.laboratory_test_result archetype.\r\n\r\nNot to be used to record invasive blood gas measurement. For example, arterial (SaO₂), venous (SvO₂) oxygen saturation or Oxygen content (CaOC) which are usually determined by invasive methods such as laboratory blood gases or vascular catheter devices. These should also be recorded within the OBSERVATION.laboratory_test_result archetype.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.pulse_oximetry.v1",
     "differential" : true,
@@ -746,7 +1252,180 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "OBSERVATION",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "nodeId" : "at0002",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0044.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "ml/dl" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : false,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : true
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0045.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_PROPORTION",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "numerator",
+                            "children" : [ {
+                              "@type" : "C_REAL",
+                              "rmTypeName" : "REAL",
+                              "occurrences" : "1..1",
+                              "constraint" : [ {
+                                "lower" : 0.0,
+                                "upper" : 100.0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            } ]
+                          }, {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "type",
+                            "children" : [ {
+                              "@type" : "C_INTEGER",
+                              "rmTypeName" : "INTEGER",
+                              "constraint" : [ {
+                                "lower" : 2,
+                                "upper" : 2,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0046.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_PROPORTION",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "numerator",
+                            "children" : [ {
+                              "@type" : "C_REAL",
+                              "rmTypeName" : "REAL",
+                              "occurrences" : "1..1",
+                              "constraint" : [ {
+                                "lower" : 0.0,
+                                "upper" : 100.0,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            } ]
+                          }, {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "type",
+                            "children" : [ {
+                              "@type" : "C_INTEGER",
+                              "rmTypeName" : "INTEGER",
+                              "constraint" : [ {
+                                "lower" : 2,
+                                "upper" : 2,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "lowerUnbounded" : false,
+                                "upperUnbounded" : false
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -765,7 +1444,13 @@
         "fi" : { },
         "nl" : { }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "LOINC" : {
+          "at0045.1" : "term:LOINC::86904-0",
+          "at0046.1" : "term:LOINC::2614-6",
+          "at0044.1" : "term:LOINC::57800-5"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
