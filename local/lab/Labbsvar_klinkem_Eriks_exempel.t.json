@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "1.1.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "fd101164939137fc77a1597ed4f091af",
+      "MD5-CAM-1.0.1" : "d21e1a209b90b8fd14845900a3f38b5c",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -3433,7 +3433,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Laboratory analyte result c (repeating and type set to quantity, but unbound units, test method set to voded text)",
+            "text" : "Laboratory analyte result c (repeating and type set to quantity, but unbound units, test method set to coded text)",
             "description" : "The result of a laboratory test for a single analyte value."
           }
         },
