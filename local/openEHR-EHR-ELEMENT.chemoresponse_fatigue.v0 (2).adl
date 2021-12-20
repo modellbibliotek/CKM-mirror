@@ -1,0 +1,95 @@
+archetype (adl_version=1.4; uid=f1b624d1-ec5c-4d8b-ba49-d60871e40129)
+	openEHR-EHR-ELEMENT.chemoresponse_fatigue.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["name"] = <"Erik Sundvall">
+		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
+		["email"] = <"erik.sundvall@regionstockholm.se">
+		["date"] = <"2021-12-19">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"5012b88a6b59d566fb5649ff6f8a1029">
+		["build_uid"] = <"b6a2d736-2d49-35f5-879a-a091e4619814">
+	>
+
+definition
+	ELEMENT[at0000] matches {    -- Do you experinece fatigue affecting your daily life?
+		value matches {
+			1|[local::at0001],
+			2|[local::at0002],
+			3|[local::at0003]
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Do you experinece fatigue affecting your daily life?">
+					description = <"ChemoResponse Fatigue">
+				>
+				["at0001"] = <
+					text = <"Slight fatigue, resting more than usual">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Moderate fatigue, resting less than 50% of waking time">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Severe fatigue, resting more than 50% of waking time">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Do you experinece fatigue affecting your daily life? (en)">
+					description = <"*ChemoResponse Fatigue (en)">
+				>
+				["at0001"] = <
+					text = <"Lätt trötthet, vilar mer än vanligt">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Måttlig trötthet, vilar mindre än 50% av vaken tid">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Svår trötthet, vilar mer än 50% av vaken tid">
+					description = <"">
+				>
+			>
+		>
+	>
