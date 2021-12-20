@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"75eef0b4868da514e45996938cbb5f8e">
+		["MD5-CAM-1.0.1"] = <"5f9a4af35bad2260cdf36528b1f35f1d">
 		["build_uid"] = <"6bb1954a-d5d1-3683-952b-19c064972b5a">
 	>
 
@@ -165,7 +165,7 @@ ontology
 					description = <"">
 				>
 				["at0013"] = <
-					text = <"*What are your symptoms of rash or redness? (en)">
+					text = <"Vilka besvär av utslag eller hudrodnad har du?">
 					description = <"">
 				>
 				["at0014"] = <
