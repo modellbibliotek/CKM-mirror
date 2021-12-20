@@ -16,10 +16,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2021-12-19">
 		["name"] = <"Erik Sundvall">
 		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
 		["email"] = <"erik.sundvall@regionstockholm.se">
-		["date"] = <"2021-12-19">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -37,12 +37,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5012b88a6b59d566fb5649ff6f8a1029">
+		["MD5-CAM-1.0.1"] = <"9bc9f5e7ccb2935e25a2621136b683cb">
 		["build_uid"] = <"b6a2d736-2d49-35f5-879a-a091e4619814">
 	>
 
 definition
-	ELEMENT[at0000] matches {    -- Do you experinece fatigue affecting your daily life?
+	ELEMENT[at0000] matches {    -- How does fatigue affect your daily life?
 		value matches {
 			1|[local::at0001],
 			2|[local::at0002],
@@ -55,7 +55,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Do you experinece fatigue affecting your daily life?">
+					text = <"How does fatigue affect your daily life?">
 					description = <"ChemoResponse Fatigue">
 				>
 				["at0001"] = <
@@ -75,7 +75,7 @@ ontology
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Do you experinece fatigue affecting your daily life? (en)">
+					text = <"Hur påverkar tröttheten ditt dagliga liv?">
 					description = <"*ChemoResponse Fatigue (en)">
 				>
 				["at0001"] = <
