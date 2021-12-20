@@ -19,7 +19,7 @@ description
 		["name"] = <"Erik Sundvall">
 		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
 		["email"] = <"erik.sundvall@regionstockholm.se">
-		["date"] = <"2021-12-19">
+		["date"] = <"2021-12-20">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2f16966a6ddb40c97bbc47e61f161f12">
+		["MD5-CAM-1.0.1"] = <"f338a08a137b4fb25f6bf3019fbd9416">
 		["build_uid"] = <"b6a2d736-2d49-35f5-879a-a091e4619814">
 	>
 
@@ -46,8 +46,7 @@ definition
 		value matches {
 			1|[local::at0001],
 			2|[local::at0002],
-			3|[local::at0003],
-			4|[local::at0005]
+			3|[local::at0003]
 		}
 	}
 
@@ -60,19 +59,15 @@ ontology
 					description = <"ChemoResponse Fatigue">
 				>
 				["at0001"] = <
-					text = <"Lätt, vilar mer än vanligt">
+					text = <"Slight fatigue, rests more than usual">
 					description = <"">
 				>
 				["at0002"] = <
-					text = <"Måttlig, vilar mindre än 50% av vaken tid">
+					text = <"Moderate fatigue, rests less than 50% of waking time">
 					description = <"">
 				>
 				["at0003"] = <
-					text = <"Svår trötthet, vilar mer än 50% av vaken tid">
-					description = <"">
-				>
-				["at0005"] = <
-					text = <"I am bedridden">
+					text = <"Severe fatigue, resting more than 50% of waking time">
 					description = <"">
 				>
 			>
@@ -93,10 +88,6 @@ ontology
 				>
 				["at0003"] = <
 					text = <"Svår trötthet, vilar mer än 50% av vaken tid (en)">
-					description = <"">
-				>
-				["at0005"] = <
-					text = <"*I am bedridden (en)">
 					description = <"">
 				>
 			>
