@@ -1,0 +1,95 @@
+archetype (adl_version=1.4; uid=6c07e526-e530-4a18-9208-512f71e40586)
+	openEHR-EHR-ELEMENT.chemoresponse_breathing.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["name"] = <"Erik Sundvall">
+		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
+		["email"] = <"erik.sundvall@regionstockholm.se">
+		["date"] = <"2021-12-20">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"948e1234bb7d25daf4a92db94bd44bbf">
+		["build_uid"] = <"b50f0f00-24b1-3198-bff4-5e02b4be49f8">
+	>
+
+definition
+	ELEMENT[at0000] matches {    -- How do breathing problems affect your daily life?
+		value matches {
+			1|[local::at0001],
+			2|[local::at0002],
+			3|[local::at0003]
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"How do breathing problems affect your daily life?">
+					description = <"ChemoResponse Breathing">
+				>
+				["at0001"] = <
+					text = <"Slight breathing difficulties, can walk up stairs without resting">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Moderate breathing problems, can not walk up stairs or 100 m outdoors without resting">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Severe breathing problems that affect my daily life">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Hur påverkar andningsbesvären ditt dagliga liv?">
+					description = <"*ChemoResponse Breathing (en)">
+				>
+				["at0001"] = <
+					text = <"Lätta andningsbesvär, orkar gå uppför trappa utan paus">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Måttliga andningsbesvär, orkar ej gå i trappa eller 100 m utomhus utan att pausa">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Svåra andningsbesvär som påverkar min livsföring">
+					description = <"">
+				>
+			>
+		>
+	>
