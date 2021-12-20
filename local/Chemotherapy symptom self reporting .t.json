@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.0",
+      "sem_ver" : "0.5.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "99236656ead449ac0f9ee6cab867420f",
+      "MD5-CAM-1.0.1" : "5be2ad91ce563fc280c176844af608d9",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -804,7 +804,7 @@
           "at0022.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.3",
-            "text" : "TOMT DOKUMENTATIONSMÖNSTER ATT KOPIERA för specifikt symptom",
+            "text" : "Utslag eller hudrodnad",
             "description" : "Gruppering av dataelement relaterade till screening för ett specifikt symptom eller annat tecken."
           },
           "at0022.4" : {
@@ -4986,7 +4986,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "75eef0b4868da514e45996938cbb5f8e"
+        "PARENT:MD5-CAM-1.0.1" : "5f9a4af35bad2260cdf36528b1f35f1d"
       },
       "details" : { }
     },
@@ -5026,7 +5026,20 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "sv" : { }
+        "sv" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "*What are your symptoms of rash or redness? (en)",
+            "description" : ""
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "*What are your symptoms of rash or redness? (en)",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6123,7 +6136,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "75eef0b4868da514e45996938cbb5f8e"
+        "PARENT:MD5-CAM-1.0.1" : "5f9a4af35bad2260cdf36528b1f35f1d"
       },
       "details" : { }
     },
@@ -6163,7 +6176,20 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "sv" : { }
+        "sv" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "*What are your symptoms of rash or redness? (en)",
+            "description" : ""
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "*What are your symptoms of rash or redness? (en)",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6203,7 +6229,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "75eef0b4868da514e45996938cbb5f8e"
+        "PARENT:MD5-CAM-1.0.1" : "5f9a4af35bad2260cdf36528b1f35f1d"
       },
       "details" : { }
     },
@@ -6234,6 +6260,12 @@
           "nodeId" : "at0002.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0013.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -6243,7 +6275,20 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "sv" : { }
+        "sv" : {
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "*What are your symptoms of rash or redness? (en)",
+            "description" : ""
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Vilka besvär av utslag eller hudrodnad har du?",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
