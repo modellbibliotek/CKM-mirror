@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.5.0",
+      "sem_ver" : "0.6.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5be2ad91ce563fc280c176844af608d9",
+      "MD5-CAM-1.0.1" : "e8186f590d790e9b5fd3286fa45de3b7",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -366,6 +366,18 @@
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
                               "occurrences" : "1..1",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "http://snomed.info/sct",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "784317004",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Fatigue due to chemotherapy",
+                                "@type" : "DV_CODED_TEXT"
+                              },
                               "attributes" : [ {
                                 "@type" : "C_ATTRIBUTE",
                                 "rmAttributeName" : "defining_code",
@@ -382,10 +394,6 @@
                                     "terminologyId" : "http://snomed.info/sct",
                                     "code" : "784317004",
                                     "value" : "Fatigue due to chemotherapy"
-                                  }, {
-                                    "terminologyId" : "http://snomed.info/sct",
-                                    "code" : "784317004",
-                                    "value" : "trötthet orsakad av cytostatikabehandling"
                                   } ]
                                 } ]
                               } ],
@@ -1076,6 +1084,18 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "http://snomed.info/sct",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "784317004",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Fatigue due to chemotherapy",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -1092,10 +1112,6 @@
                     "terminologyId" : "http://snomed.info/sct",
                     "code" : "784317004",
                     "value" : "Fatigue due to chemotherapy"
-                  }, {
-                    "terminologyId" : "http://snomed.info/sct",
-                    "code" : "784317004",
-                    "value" : "trötthet orsakad av cytostatikabehandling"
                   } ]
                 } ]
               } ],
