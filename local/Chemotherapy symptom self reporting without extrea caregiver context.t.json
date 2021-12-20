@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.9.1",
+      "sem_ver" : "0.9.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e0dc0d10aceb1cec75e352dc744c9726",
+      "MD5-CAM-1.0.1" : "7c20014ba9078bc6a22b374bef4b64e3",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -314,12 +314,12 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "0..1",
                               "terminologyId" : {
-                                "value" : "http://snomed.info/sct"
+                                "value" : "SNOMED-CT"
                               },
                               "constraint" : [ ],
-                              "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                              "selectedTerminologies" : [ "SNOMED-CT" ],
                               "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "http://snomed.info/sct",
+                                "terminologyId" : "SNOMED-CT",
                                 "code" : "385785003",
                                 "value" : "Chemotherapy care assessment"
                               } ]
@@ -381,28 +381,28 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "0..1",
                                   "terminologyId" : {
-                                    "value" : "http://snomed.info/sct"
+                                    "value" : "SNOMED-CT"
                                   },
                                   "constraint" : [ ],
-                                  "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                  "selectedTerminologies" : [ "SNOMED-CT" ],
                                   "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "http://snomed.info/sct",
+                                    "terminologyId" : "SNOMED-CT",
                                     "code" : "84229001",
                                     "value" : "Fatigue"
                                   }, {
-                                    "terminologyId" : "http://snomed.info/sct",
+                                    "terminologyId" : "SNOMED-CT",
                                     "code" : "704369007",
                                     "value" : "Fatigue due to treatment"
                                   }, {
-                                    "terminologyId" : "http://snomed.info/sct",
+                                    "terminologyId" : "SNOMED-CT",
                                     "code" : "784317004",
                                     "value" : "Fatigue due to chemotherapy"
                                   }, {
-                                    "terminologyId" : "http://snomed.info/sct",
+                                    "terminologyId" : "SNOMED-CT",
                                     "code" : "784318009",
                                     "value" : "Fatigue due to radiation therapy"
                                   }, {
-                                    "terminologyId" : "http://snomed.info/sct",
+                                    "terminologyId" : "SNOMED-CT",
                                     "code" : "716749005",
                                     "value" : "Cancer-related fatigue"
                                   } ]
@@ -517,20 +517,20 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "0..1",
                                   "terminologyId" : {
-                                    "value" : "http://snomed.info/sct"
+                                    "value" : "SNOMED-CT"
                                   },
                                   "constraint" : [ ],
-                                  "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                  "selectedTerminologies" : [ "SNOMED-CT" ],
                                   "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "http://snomed.info/sct",
+                                    "terminologyId" : "SNOMED-CT",
                                     "code" : "230145002",
                                     "value" : "Difficulty breathing"
                                   }, {
-                                    "terminologyId" : "http://snomed.info/sct",
+                                    "terminologyId" : "SNOMED-CT",
                                     "code" : "248552009",
                                     "value" : "Winded"
                                   }, {
-                                    "terminologyId" : "http://snomed.info/sct",
+                                    "terminologyId" : "SNOMED-CT",
                                     "code" : "248549001",
                                     "value" : "Labored breathing"
                                   } ]
@@ -633,28 +633,28 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "0..1",
                                   "terminologyId" : {
-                                    "value" : "local_terms"
+                                    "value" : "SNOMED-CT"
                                   },
                                   "constraint" : [ ],
-                                  "selectedTerminologies" : [ "local_terms" ],
+                                  "selectedTerminologies" : [ "SNOMED-CT" ],
                                   "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "local_terms",
+                                    "terminologyId" : "SNOMED-CT",
                                     "code" : "106076001",
                                     "value" : "Skin finding"
                                   }, {
-                                    "terminologyId" : "local_terms",
+                                    "terminologyId" : "SNOMED-CT",
                                     "code" : "247440002",
                                     "value" : "Skin or mucosa lesion"
                                   }, {
-                                    "terminologyId" : "local_terms",
+                                    "terminologyId" : "SNOMED-CT",
                                     "code" : "95324001",
                                     "value" : "Skin lesion"
                                   }, {
-                                    "terminologyId" : "local_terms",
+                                    "terminologyId" : "SNOMED-CT",
                                     "code" : "271807003",
                                     "value" : "Eruption of skin"
                                   }, {
-                                    "terminologyId" : "local_terms",
+                                    "terminologyId" : "SNOMED-CT",
                                     "code" : "444827008",
                                     "value" : "Erythema of skin"
                                   } ]
@@ -1219,28 +1219,28 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "http://snomed.info/sct"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "http://snomed.info/sct",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "84229001",
                     "value" : "Fatigue"
                   }, {
-                    "terminologyId" : "http://snomed.info/sct",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "704369007",
                     "value" : "Fatigue due to treatment"
                   }, {
-                    "terminologyId" : "http://snomed.info/sct",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "784317004",
                     "value" : "Fatigue due to chemotherapy"
                   }, {
-                    "terminologyId" : "http://snomed.info/sct",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "784318009",
                     "value" : "Fatigue due to radiation therapy"
                   }, {
-                    "terminologyId" : "http://snomed.info/sct",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "716749005",
                     "value" : "Cancer-related fatigue"
                   } ]
@@ -2297,20 +2297,20 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "http://snomed.info/sct"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "http://snomed.info/sct",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "230145002",
                     "value" : "Difficulty breathing"
                   }, {
-                    "terminologyId" : "http://snomed.info/sct",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "248552009",
                     "value" : "Winded"
                   }, {
-                    "terminologyId" : "http://snomed.info/sct",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "248549001",
                     "value" : "Labored breathing"
                   } ]
@@ -3380,28 +3380,28 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "http://snomed.info/sct"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "http://snomed.info/sct",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "106076001",
                     "value" : "Skin finding"
                   }, {
-                    "terminologyId" : "http://snomed.info/sct",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "247440002",
                     "value" : "Skin or mucosa lesion"
                   }, {
-                    "terminologyId" : "http://snomed.info/sct",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "95324001",
                     "value" : "Skin lesion"
                   }, {
-                    "terminologyId" : "http://snomed.info/sct",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "271807003",
                     "value" : "Eruption of skin"
                   }, {
-                    "terminologyId" : "http://snomed.info/sct",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "444827008",
                     "value" : "Erythema of skin"
                   } ]
