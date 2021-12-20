@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.9.2",
+      "sem_ver" : "0.10.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "7c20014ba9078bc6a22b374bef4b64e3",
+      "MD5-CAM-1.0.1" : "48c49ad344e35e97042dfcf4c8bcbcc9",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -731,39 +731,6 @@
                         } ]
                       } ],
                       "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "nodeId" : "at0022.4",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0037.4",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0035.4",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_ARCHETYPE_ROOT",
-                          "rmTypeName" : "CLUSTER",
-                          "occurrences" : "0..1",
-                          "nodeId" : "at0026.4",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ],
-                          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-symptom_sign-005.v1",
-                          "referenceType" : "archetypeOverlay"
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -806,12 +773,6 @@
             "text" : "Rash or reddening",
             "description" : "Screening details about a specifed symptom or sign."
           },
-          "at0022.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.4",
-            "text" : "BLANK TEMPLATE  NODE FOR Specific symptom/sign",
-            "description" : "Screening details about a specifed symptom or sign."
-          },
           "at0005.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.2",
@@ -837,12 +798,6 @@
             "code" : "at0022.1",
             "text" : "Oire / tuntemus ryhmitys (3)",
             "description" : "*Screening details about a specifed symptom or sign. (en)"
-          },
-          "at0022.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Oire / tuntemus ryhmitys (4)",
-            "description" : "*Screening details about a specifed symptom or sign. (en)"
           }
         },
         "nb" : {
@@ -856,12 +811,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.1",
             "text" : "Spesifikt symptom/sykdomstegn (3)",
-            "description" : "Detaljer om et spesifikt symptom eller sykdomstegn."
-          },
-          "at0022.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spesifikt symptom/sykdomstegn (4)",
             "description" : "Detaljer om et spesifikt symptom eller sykdomstegn."
           }
         },
@@ -877,12 +826,6 @@
             "code" : "at0022.1",
             "text" : "Spezifisches Symptom/Anzeichen (3)",
             "description" : "Screening-Details zu einem bestimmten Symptom oder Anzeichen."
-          },
-          "at0022.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (4)",
-            "description" : "Screening-Details zu einem bestimmten Symptom oder Anzeichen."
           }
         },
         "it" : {
@@ -896,12 +839,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.1",
             "text" : "Sintomo/segno specifico (3)",
-            "description" : "*Screening details about a specifed symptom or sign. (en)"
-          },
-          "at0022.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Sintomo/segno specifico (4)",
             "description" : "*Screening details about a specifed symptom or sign. (en)"
           }
         },
@@ -928,12 +865,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.3",
             "text" : "Utslag eller hudrodnad",
-            "description" : "Gruppering av dataelement relaterade till screening för ett specifikt symptom eller annat tecken."
-          },
-          "at0022.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.4",
-            "text" : "TOMT DOKUMENTATIONSMÖNSTER ATT KOPIERA för specifikt symptom",
             "description" : "Gruppering av dataelement relaterade till screening för ett specifikt symptom eller annat tecken."
           },
           "at0005.2" : {
