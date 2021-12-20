@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.0",
+      "sem_ver" : "0.4.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "81fea38b181d8d2097fb10fe3cd42686",
+      "MD5-CAM-1.0.1" : "99236656ead449ac0f9ee6cab867420f",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -817,6 +817,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.2",
             "text" : "Upplever du svårigheter med din andning?",
+            "description" : "Närvaro av symptomet eller annat tecken."
+          },
+          "at0005.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.3",
+            "text" : "Upplever du utslag eller hudrodnad?",
             "description" : "Närvaro av symptomet eller annat tecken."
           }
         }
