@@ -1,8 +1,9 @@
-﻿archetype (adl_version=1.4; uid=aab23408-3f8d-4bc8-b214-34af97e9abbd)
+archetype (adl_version=1.4; uid=aab23408-3f8d-4bc8-b214-34af97e9abbd)
 	openEHR-EHR-COMPOSITION.health_summary.v1
 
 concept
-	[at0000]	-- Health summary
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -31,18 +32,31 @@ language
 			>
 			accreditation = <"English C1, Spanish native">
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
 	>
+
 description
 	original_author = <
+		["date"] = <"2015-10-01">
 		["name"] = <"Heather Leslie">
 		["organisation"] = <"Atomica Informatics">
 		["email"] = <"heather.leslie@atomicainformatics.com">
-		["date"] = <"2015-10-01">
 	>
+	lifecycle_state = <"published">
+	other_contributors = <"Vebjoern Arntzen, Oslo university hospital, Norway","Silje Ljosland Bakke, National ICT Norway, Norway (openEHR Editor)","Sistine Barretto-Daniels, Ocean Informatics, Australia","Lars Bitsch-Larsen, Haukeland University hospital, Norway","Heather Grain, Llewelyn Grain Informatics, Australia","Lars Karlsen, DIPS ASA, Norway","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Yang Lu, University of Melbourne, Australia","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Andrej Orel, Marand d.o.o., Slovenia">
 	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å registrere et sammendrag av helseinformasjon om et individ på et spesifisert tidspunkt.">
+			keywords = <"sammendrag","oversikt","synopsis","sammenfatning","status">
 			use = <"Brukes som en generisk konteiner for et sammendrag eller en oversikt over pasientens helse og/eller omsorgsstatus på et spesifikt tidspunkt.
 
 Forfatteren av helsesammendraget er vanligvis en kliniker som er kjent med alle de relevante aspektene om individets helse som sammendraget består av.
@@ -58,12 +72,12 @@ som ved diabetes eller gravidiet.
 Det er ikke satt begrensinger på hovedkomponenten Section/content. Dette gjør at man kan legge til hvilken som helst SECTION eller ENTRY arketype som er passende for det kliniske formålet i et templat.
 
 Selv om det kliniske innholdet er ubegrenset, gir denne arketypen muligheter for enkle spørringer etter alle sammendrag av helseinformasjon i en journal.">
-			keywords = <"sammendrag", "oversikt", "synopsis", "sammenfatning", "status">
 			misuse = <"Brukes ikke for å registrere detaljer om en enkelt klinisk konsultasjon, prosedyre, prøve, vurdering eller lignende.">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
 			purpose = <"Gravar um sumário de informações de saúde sobre um indivíduo, representando um subconjunto de seu registro de saúde em um ponto específico no tempo.">
+			keywords = <"sumário","sinopse","visão geral","estado">
 			use = <"Usado como um repositório genérico para gravar um sumário ou visão geral da saúde e/ou situação do bem-estar de um paciente como um retrato da sua saúde em um ponto específico do tempo.
 
 O autor de um sumário de saúde é usualmente um clínico que está familiarizado com todos os aspectos relevantes da saúde do indivíduo, que é o conteúdo do sumário.
@@ -79,12 +93,13 @@ Os leitores alvo do sumário de saúde irão variar de acordo com o propósito p
 Os componentes das Seções/Conteúdo principais foram deixados sem restrição deliberadamente. Isso permite que os campos sejam populados com quaisquer arquétipos tipo SECTION ou ENTRY apropriados para o propósito clínico dentro do modelo.
 
 Embora o conteúdo clínico seja irrestrito, este arquétipo suporta buscas simples para todos os sumários de saúde que podem estar contidos dentro de um registro de saúde.">
-			keywords = <"sumário", "sinopse", "visão geral", "estado">
 			misuse = <"Não deve ser usado para gravar detalhes sobre uma única consulta clínica, procedimento, teste ou avaliação, etc.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record a summary of health information about an individual, representing a subset of their health record at a specified point in time.">
+			keywords = <"summary","synopsis","overview","status">
+			copyright = <"© openEHR Foundation">
 			use = <"Use as a generic containter to record a summary or overview of a patient's health and/or welfare status as a snapshot of their health at a specified point in time. 
 
 The author of a health summary is usually a clinician who is familiar with the all of the relevant aspects of the individual's health that is the content of the summary.
@@ -100,13 +115,12 @@ The intended readers of the health summary will vary according to the primary pu
 The main Sections/Content component has been deliberately left unconstrained. This will allow it to be populated with any SECTION or ENTRY archetypes appropriate for the clinical purpose within a template. 
 
 Even though clinical content is unconstrained, this archetype supports simple querying for all Health summaries that might be contained within a health record.">
-			keywords = <"summary", "synopsis", "overview", "status">
 			misuse = <"Not to be used to record details about a single clinical consultation, procedure, test or assessment etc.">
-			copyright = <"© openEHR Foundation">
 		>
 		["es"] = <
 			language = <[ISO_639-1::es]>
 			purpose = <"Para registrar un resumen de información de salud sobre un individuo, que representa un subconjunto de su registro de salud en un momento de tiempo específico.">
+			keywords = <"resumen","sinopsis","revisión","estatus">
 			use = <"Usar como un contenedor genérico para registrar un resumen o revisión de la salud y/o bienestar de un paciente como una instantánea de su salud en un punto especificado en el tiempo.
 
 El autor de un resumen de salud es normalmente un profesional clínico familiar con todos los aspectos relevantes de la salud del individuo que compone el contenido del informe.
@@ -122,12 +136,9 @@ Los destinatarios de un resumen de salud variarán de acuerdo con el propósito 
 Las secciones y contenidos principales se han dejado deliberadamente sin restringir. Esto permitirá popularlos con cualquier número de arquetipos Sección (SECTION) o Entrada (ENTRY) apropiados para el propósito clínico dentro de una plantilla.
 
 Incluso si el contenido clínico no se ha restringido, este arquetipo soporta consultas sencillas para obtener todos los resúmenes de salud que puedan estar contenidos dentro de un registro de salud">
-			keywords = <"resumen", "sinopsis", "revisión", "estatus">
 			misuse = <"No debe ser usado para registrar detalles sobre una única consulta, procedimiento, prueba o evaluación clínica, etc.">
 		>
 	>
-	lifecycle_state = <"published">
-	other_contributors = <"Vebjoern Arntzen, Oslo university hospital, Norway", "Silje Ljosland Bakke, National ICT Norway, Norway (openEHR Editor)", "Sistine Barretto-Daniels, Ocean Informatics, Australia", "Lars Bitsch-Larsen, Haukeland University hospital, Norway", "Heather Grain, Llewelyn Grain Informatics, Australia", "Lars Karlsen, DIPS ASA, Norway", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Yang Lu, University of Melbourne, Australia", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)", "Andrej Orel, Marand d.o.o., Slovenia">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -135,24 +146,26 @@ Incluso si el contenido clínico no se ha restringido, este arquetipo soporta co
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"05F3E1D9A0891A37F1DD10A47CCFA472">
+		["MD5-CAM-1.0.1"] = <"8e96f991f3c1295e8d0ac082e96f3949">
 		["build_uid"] = <"d62dca65-177e-46cc-b2e9-1ce996b49645">
 		["revision"] = <"1.0.1">
 	>
 
 definition
-	COMPOSITION[at0000] matches {	-- Health summary
+	COMPOSITION[at0000] matches {    -- Health summary
 		category matches {
 			DV_CODED_TEXT matches {
-				defining_code matches {[openehr::433]}
+				defining_code matches {
+					[openehr::433]
+				}
 			}
 		}
 		context matches {
 			EVENT_CONTEXT matches {
 				other_context matches {
-					ITEM_TREE[at0001] matches {	-- Tree
+					ITEM_TREE[at0001] matches {    -- Tree
 						items cardinality matches {0..*; unordered} matches {
-							allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {	-- Extension
+							allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {    -- Extension
 								include
 									archetype_id/value matches {/.*/}
 							}
@@ -162,7 +175,6 @@ definition
 			}
 		}
 	}
-
 
 ontology
 	term_definitions = <
@@ -231,6 +243,23 @@ ontology
 					text = <"Extensão">
 					description = <"Informações adicionais necessárias para capturar o conteúdo local ou para alinhar com outros modelos de referência/ formalismo.">
 					comment = <"Por exemplo: requisitos de informação local ou metadados adicionais para alinhar com equivalentes FHIR ou CIMI.">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Health summary (en)">
+					description = <"*Generic document containing a summary of health information about an individual. (en)">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to capture local content or to align with other reference models/formalisms. (en)">
+					comment = <"*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)">
 				>
 			>
 		>
