@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "8.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "c925f358f0c7d56db266fe374d8f1d0a",
+      "MD5-CAM-1.0.1" : "afe2774e1a93ce6dd7e9c1f199e345f6",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -4428,6 +4428,16 @@
       },
       "details" : { }
     },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "sv" : {
+          "" : {
+            "Mappningskommentar." : "Här anges laborerande lab om det avviker från NAD+PLA i segmentgrupp 7"
+          }
+        }
+      }
+    },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.organisation.v0",
     "differential" : true,
     "archetypeId" : {
@@ -4438,7 +4448,17 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0004.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -4448,7 +4468,14 @@
         "en" : { },
         "nb" : { },
         "de" : { },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Utförande laboratorium",
+            "description" : "Här anges laborerande lab om det avviker från NAD+PLA i segmentgrupp 7"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
