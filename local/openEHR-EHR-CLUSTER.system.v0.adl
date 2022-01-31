@@ -16,10 +16,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2022-01-12">
 		["name"] = <"Erik Sundvall">
 		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
 		["email"] = <"erik.sundvall@regionstockholm.se">
-		["date"] = <"2022-01-12">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"713983f909c4a437fe49d90468009478">
+		["MD5-CAM-1.0.1"] = <"112fc5a8c93c66319bd7e04e118006d0">
 		["build_uid"] = <"1ce66eba-54f3-32fc-a1dd-b94f13fdb812">
 	>
 
@@ -49,7 +49,7 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- identifier
+			ELEMENT[at0002] occurrences matches {0..*} matches {    -- identifier
 				value matches {
 					DV_IDENTIFIER matches {*}
 				}
