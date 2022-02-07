@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "12.0.0",
+      "sem_ver" : "13.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "0943ac236acdabb02f36a57d904577f4",
+      "MD5-CAM-1.0.1" : "df82061ede6ef6c8bab3aa0e7472dca7",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -236,6 +236,15 @@
         "unique" : false
       },
       "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "INSTRUCTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.0.6",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-INSTRUCTION.ovl-service_request-001.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "OBSERVATION",
         "occurrences" : "0..*",
@@ -1539,15 +1548,6 @@
               "attributes" : [ ],
               "attributeTuples" : [ ],
               "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-system-001.v0",
-              "referenceType" : "archetypeOverlay"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0117.2",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-urgency-002.v0",
               "referenceType" : "archetypeOverlay"
             } ]
           } ],
@@ -5883,7 +5883,52 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "EB35384930A3C9471F6C43E2C2D2B773"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere opplysninger om målgruppe for en distribusjon eller melding. Dette kan være til en navngitt gruppe, kategori, til enkeltpersoner eller organisasjoner.",
+          "keywords" : [ "kopi til", "melding", "notifikasjon", "beskjed", "notat", "distribusjon", "e-post", "e-mail", "fax", "brev" ],
+          "use" : "Brukes normalt i sammenheng med en serviceforespørsel, rapport eller annen kommunikasjon som er ment å bli distribuert til andre parter. Kan brukes som en del av en forespørsel eller annen instruks om å angi andre parter som bør inkluderes eller 'med kopi \"i responsen, og for å indikere hvilke andre partefir som faktisk ble notifisert i responsen.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the details of the target of a distribution or notification. This may be to a named group or category or to individual persons or organisations.",
+          "keywords" : [ "cc", "notification" ],
+          "use" : "Normally used within the context of a service request, report or other communication which is intended to be distributed to other parties. May be used as part of a request or other instruction to specify other parties who should be included or 'cced' in the response, and to indicate which other parties were actually notified in the response.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "Skupina naslovnikov, seznam prejemnikov",
+          "keywords" : [ "cc", "distribution list", "prejemnik", "naslovnik", "skupina naslovnikov", "seznam prejemnikov" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.distribution.v0",
     "differential" : true,
@@ -5929,32 +5974,14 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0012.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0006.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -6061,7 +6088,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "5A3F05C744F8449A401EE8BDEED5D610"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung von Informationen zur einer Organisation, die in der Gesundheitsakte repräsentiert sein muss.",
+          "keywords" : [ "Organisation, Anbieter, Versorger" ],
+          "use" : "Der Archetyp wird verwendet, um Informationen zur einer Organisation darzustellen, die in der Gesundheitsakte dargestellt werden muss. Beispiele beinhalten:\r\n- den Namen und die Kontaktdaten einer Organisation, die ein Exemplar einer erweiterten Pflegeakte besitzt;\r\n- den Namen und die Kontaktdaten einer Organisation für ambulante Pflegedienste im Rahmen einer Übermittlung von Krankenakten von Praxis zu Praxis; oder- den Namen, die Funktion und die Kontaktdaten eines Mitglieds des Betreuungsteams.\r\n\r\nIn diesem Kontext der Erfassung der Kontaktdaten einer Organisation oder von Personen innerhalb der Organisation kann der Umfang einer \"Organisation\" informell und flexibel sein, solange er dem Zweck dient. Zum Beispiel:\r\n- ein Krankenhaus; oder\r\n- eine \"Unterorganisation\" eines Krankenhauses, wie z. B. eine operativ getrennte oder spezialisierte Außenklinik eines Krankenhauses oder ein angeschlossener ambulanter Pflegedienst.\r\n\r\nDieser Archetyp könnte auch als Proxy für formale demografische Daten verwendet werden, wenn ein Template mit Domänenexperten überprüft wird – beispielsweise bei einer Bewertung, bei der die Prüfer erwarten würden, dass die Personendaten oben auf dem Bewertungsformular angezeigt werden.",
+          "misuse" : "Der Archetyp darf nicht verwendet werden, um die formellen demografischen Daten für die formelle Identifizierungsverwaltung oder zum Zwecke der Führung eines demografischen Registers oder Index zu repräsentieren oder zu ersetzen. Verwenden Sie zu diesem Zweck einen formellen Gesundheitsdienstleister Index oder Archetypen, die auf dem openEHR Demographic Information Model basieren.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera information om en organisation som behöver representeras i hälsojournalen.",
+          "keywords" : [ "organisation, leverantör, vårdgivare" ],
+          "use" : "Används för att registrera information om en organisation som behöver representeras i hälsojournalen. Exempel inkluderar:\r\n- namn och kontaktuppgifter för en organisation som har en fysisk kopia av en avancerad vårdregistrering;\r\n- namn och kontaktuppgifter för en besökande hemsjukvårdsorganisation vid överföring av medicinska journaler mellan kliniker, eller\r\n- namn, roll och kontaktuppgifter för en medlem i ett vårdteam.\r\n\r\nI detta sammanhang för att registrera en organisations kontaktuppgifter eller personer inom organisationen kan omfattningen av en 'organisation' vara informell och flexibel så länge den tjänar syftet. Till exempel:\r\n- ett sjukhus; eller\r\n- en \"underorganisation\" för ett sjukhus, såsom en operativt separat eller specialiserad satellitklinik för ett sjukhus eller en tillhörande hemtjänst.\r\n\r\nDen här arketypen kan också användas som en proxy för formell demografisk data när man granskar en mall med domenexperter - till exempel en bedömning där granskare förväntar sig att se en organisations information på en utvärderingsblankett.",
+          "misuse" : "Inte utformad för att representera eller ersätta de formella demografiska detaljerna för formell identifieringshantering eller för att upprätthålla ett demografiskt register eller index. Använd ett formellt vårdgivarindex för detta ändamål eller arketyper baserat på openEHR Demografisk informationsmodell.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om en organisasjon i en pasientjournal.",
+          "keywords" : [ ],
+          "use" : "Brukes for å registrere detaljer om en organisasjon i en pasientjournal, når det ikke er ønskelig eller mulig å bruke et formelt demografisk register eller indeks.\r\n\r\nFor eksempel:\r\n- navn og kontaktdetaljer for en organisasjon som har en kopi av et fremtidig behandlingsvalg.\r\n- navn, rolle og kontaktdetaljer til et medlem av et omsorgsteam.\r\n- et uformelt støttenettverk.\r\n\r\nI denne konteksten kan registreringen av en organisasjons kontaktdetaljer, eller person i organisasjonen, være uformell og fleksibel så lenge det tjener formålet.\r\nFor eksempel:\r\n- et sykehus\r\n- en spesialavdeling i et sykehus eller et tilknyttet hjemmesykehus eller hjemmetjeneste.\r\n\r\nDenne arketypen kan også brukes som en midlertidig erstatning for formelle demografiske data når man gjennomgår et templat med domeneeksperter - for eksempel en vurdering der man i templatet forventer å se detaljer om et individ på toppen av vurderingsskjema.\r\n",
+          "misuse" : "Brukes ikke til å representere eller erstatte de formelle demografiske opplysningene for formell identitetsforvaltning eller for å opprettholde et demografisk register eller en indeks. Bruk formelle pasientregister, helsepersonellregister eller arketyper basert på openEHR demografisk informasjonsmodell til dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about an organisation that needs to be represented within the health record.",
+          "keywords" : [ "organisation, organization, provider, carer, healthcare" ],
+          "use" : "Use to record details of an organisation in the electronic health record, when it is not appropriate or possible to use an official demographic register or index. Examples include:\r\n- the name and contact details for an organisation that holds a physical copy of an advanced care record; or\r\n- the name and contact details of a visiting home care organisation in a practice-to-practice transfer of medical record.\r\n\r\nIn this context of recording an organisation's contact details or people within the organisation, the scope of an 'organisation' can be informal and flexible, as long as it serves the purpose. For example:\r\n- a hospital; or\r\n- a 'sub organisation' of a hospital, such as an operationally separate or specialised satellite clinic of a hospital or an associated home care service.\r\n\r\nThis archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see an organisations' details on an assessment form.",
+          "misuse" : "Not to be used to represent or replace formal identification management or for the purposes of maintaining an official demographic register or index. Use a formal Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.organisation.v0",
     "differential" : true,
@@ -6172,7 +6261,7 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "b1c7c036-0c85-4452-98ad-3d271c4ee284",
+    "uid" : "e77731c6-32fc-4f8f-8951-5b731ea4a40d",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -6181,36 +6270,142 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "d139a9a374204b4b6d541a387690548c"
+        "PARENT:MD5-CAM-1.0.1" : "FD3D4859A234737CBF31A0D59D7AE51B"
       },
       "details" : { }
     },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.urgency.v0",
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/protocol[at0008]/items[at0010]" : {
+            "obs" : "RID"
+          }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-INSTRUCTION.service_request.v1",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-urgency-002.v0"
+      "value" : "openEHR-EHR-INSTRUCTION.ovl-service_request-001.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
+      "rmTypeName" : "INSTRUCTION",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "activities",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ACTIVITY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "description",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ITEM_TREE",
+              "nodeId" : "at0009",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0068.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "local"
+                          },
+                          "constraint" : [ "ac0.1" ],
+                          "selectedTerminologies" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
-        "sv" : { }
+        "en" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "nb" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "it" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "de" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "sv" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0136", "at0137", "at0138" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
-    "buildUid" : "f122cc34-620d-3db1-9e58-899a718bd81e",
+    "buildUid" : "a164ade5-6b83-4058-99c6-c0b008598acb",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
@@ -6227,9 +6422,54 @@
         "terminologyId" : {
           "value" : "ISO_639-1"
         },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Alina Rehberg",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "rehberg.alina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
         "codeString" : "sv"
       },
-      "author" : { },
+      "author" : {
+        "name" : "Sofia Janstad",
+        "organisation" : "SLL",
+        "email" : "sofia.lang-janstad@sll.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke",
+        "organisation" : "Nasjonal IKT HF, Norway"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : {
+        "name" : "Francesca Frexia",
+        "organisation" : "CRS4 - Center for advanced studies, research and development in Sardinia, Pula (Cagliari), Italy",
+        "email" : "francesca.frexia@crs4.it"
+      },
       "otherDetails" : { }
     } ]
   } ],
