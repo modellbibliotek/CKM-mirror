@@ -14,6 +14,15 @@ language
 				["email"] = <"Strauch.Natalia@mh-hannover.de">
 			>
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+				["name"] = <"Elham Gholami">
+				["organisation"] = <"SLL">
+				["email"] = <"elham.gholami@sll.se">
+			>
+			accreditation = <"Ackreditering">
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			author = <
@@ -57,6 +66,25 @@ Dieser Archetyp könnte auch als Proxy für formale demografische Daten verwende
 			misuse = <"Der Archetyp darf nicht verwendet werden, um die formelle Identifizierungsverwaltung zu repräsentieren oder zu ersetzen oder zum Zwecke der Führung eines offiziellen demografischen Registers oder Index. Verwenden Sie zu diesem Zweck einen formellen Master Patient Index oder Health Provider Index oder Archetypen, die auf dem openEHR Demographic Information Model basieren.
 
 Darf nicht verwendet werden, um den Patienten/die Patientin, die Teilnehmer oder den Verfasser der Akte und ähnliche Datenelemente darzustellen, die formell in der Gesundheitsakte unter Verwendung der Referenzmodell-Attribute dargestellt werden sollten.">
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Det används för att registrera information om en person som behöver representeras i patientjournalen.">
+			use = <"Används för att registrera uppgifter om en person i den elektroniska journalen, när det inte är lämpligt eller möjligt att använda ett formellt demografiskt register eller index. För Exempel:
+- Namn och kontaktuppgifter för en person som innehar en fysisk kopia av en avancerad patientjournal;
+- Namn och kontaktuppgifter för en vårdgivare i en remiss;
+- Namn, roll och kontaktuppgifter för en medlem av ett vårdgivarteam;
+- Rollen och kontaktuppgifterna för en namngiven kontaktperson inom en organisation;
+- uppgifter om en släkting i en släkthistoria; eller
+- ett vittne till ett epileptisk anfall.
+
+I de flesta vanliga användningsfallen där ett namn måste inkluderas i en journal räcker det med fritextinmatning inom elementet 'Ostrukturerat namn'. I situationer när det krävs mer detaljerade detaljer om en eller flera namnkomponenter, använd de ytterligare strukturerade dataelementen i arketypen CLUSTER.structured_name. I denna arketyp finns en SLOT kapslade i \"Structured name\" . Om arketypen CLUSTER.structured name är kapslad i 'Structured name' SLOT, kan något eller alla av de strukturerade namnelementen sammanfogas och representeras i elementet 'Ostrukturerat namn'.
+
+Denna arketyp skulle också kunna användas som en proxy för formella demografiska data när man granskar en mall med domänexperter – till exempel en bedömning där granskare förväntar sig att se individen eller vårdämnets uppgifter högst upp i bedömningsformuläret.">
+			keywords = <"Leverantör, vårdgivare, personal, vårdpersonal, släkting, anhöriga, läkare, vittne, vän, granne, barn, familj, syskon, förälder", ...>
+			misuse = <"Får inte användas för att representera eller ersätta formell identifieringshantering eller i syfte att upprätthålla ett officiellt demografiskt register eller index. Använd ett formellt Master Patient Index eller Vårdgivare Index för detta ändamål, eller arketyper baserade på openEHR Demographic Information Model.
+
+Får inte användas för att representera vårdobjektet, deltagare eller författare till journalen och liknande dataelement som bör representeras formellt i journalen med hjälp av Referensmodellens attribut.">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -134,8 +162,8 @@ HL7 FHIR Resource - Person v4.0.1: R4 [Internet]. Health Level Seven Internation
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"366C6616AB120C2E1891A5830480F4DF">
-		["build_uid"] = <"3334572e-b42f-42d2-975a-76d6810c4737">
+		["MD5-CAM-1.0.1"] = <"C861853315FA18B509194DDFCF4C369D">
+		["build_uid"] = <"ce65dca9-5d92-4c81-bdc5-a78289052487">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -598,6 +626,102 @@ ontology
 					text = <"*Organisation (en)">
 					description = <"*Details about the organisational context for this person. (en)">
 					comment = <"*For example: identifying the legal firm that holds the Advance care plan, where the lawyer works; or the school where a teacher works. (en)">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Person">
+					description = <"En identifierad människa.">
+				>
+				["at0001"] = <
+					text = <"Namn">
+					description = <"Det ostrukturerade namnet eller etiketten för personen.">
+					comment = <"Innehållet i detta dataelement kan härledas från en sammanlänkning av en eller flera komponenter från CLUSTER.structured.address. Till exempel: 'John Markham', 'Professor Sir John Markham', 'John Markham Jnr MP' eller 'Granne i huset med den röda dörren'.">
+				>
+				["at0002"] = <
+					text = <"Strukturerat namn">
+					description = <"Ytterligare strukturerad information om namnet på en person som kan sammanfogas för att bilda \"Namnrad\"-posten.">
+				>
+				["at0003"] = <
+					text = <"Identifierare">
+					description = <"Identifierare förknippad med personen.">
+				>
+				["at0004"] = <
+					text = <"Roll">
+					description = <"Personens relation eller roll till individen eller vårdsubjektet.">
+					comment = <"Exempelvis: Vittne; medlem i ett vårdgivarteam; släkting; kontaktperson; granne eller vårdnadshavare.">
+				>
+				["at0005"] = <
+					text = <"Adress">
+					description = <"Detaljer om en adress för personen.">
+				>
+				["at0006"] = <
+					text = <"Elektronisk kommunikation">
+					description = <"Detaljer om en specifik typ av elektronisk kommunikation för personen.">
+				>
+				["at0007"] = <
+					text = <"Typ">
+					description = <"Typen eller mediet för elektronisk kommunikation.
+">
+					comment = <"Utbudet av elektroniska kommunikationsmedier inkluderar, men det är inte begränsat till användning av: telefon, mobiltelefon, e-post, personsökare, fax, konferensverktyg eller sociala medier">
+				>
+				["at0008"] = <
+					text = <"Mobiltelefon (mobiltelefon).">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Telefon (exklusive mobiltelefon)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"e-mail">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Personsökare">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Syfte">
+					description = <"Syftet med eller användningen av den identifierade typen av elektronisk kommunikation.">
+				>
+				["at0013"] = <
+					text = <"Affärsanvändning">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Personlig användning">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Både affärs- och personligt bruk">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Värde">
+					description = <"Den unika kombinationen av alfanumeriska tecken, meningsfull för den identifierade typen eller mediet för elektronisk kommunikation.
+">
+					comment = <"Till exempel: riktnummer + fast telefon / personsökarnummer; landskod + mobiltelefonnummer; e-postadress; eller kontaktnamn på skype.">
+				>
+				["at0017"] = <
+					text = <"Ytterligare detaljer">
+					description = <"Ytterligare information om personen.">
+				>
+				["at0018"] = <
+					text = <"Kommentar">
+					description = <"Ytterligare berättelse om den elektroniska kommunikationen som inte fångas på andra områden.">
+				>
+				["at0019"] = <
+					text = <"Kommentar">
+					description = <"Ytterligare berättelse om personen som inte är fångad i andra områden.">
+				>
+				["at0020"] = <
+					text = <"Organisation">
+					description = <"Detaljer om det organisatoriska sammanhanget/kopplingen för denna person.
+">
+					comment = <"Till exempel: att identifiera den advokatbyrå som innehar planen för förhandsvård, där advokaten arbetar; eller skolan där en lärare arbetar.">
 				>
 			>
 		>
