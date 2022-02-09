@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "1.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b6fb22b6e38ebc52d0ac49dbda4cb7cd",
+      "MD5-CAM-1.0.1" : "883aa520222110eafa1bf42e7269edb9",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -628,12 +628,24 @@
           }
         },
         "nb" : {
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Drikker du Alkohol",
+            "description" : "Bruker individet substansen?"
+          },
           "at0026.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0026.1",
             "text" : "Spesifikk substans eller gruppering (2)",
             "description" : "Detaljer om en spesifikk substans eller en gruppe av substans.",
             "comment" : "Bruk separate instanser av dette clusteret for å skille mellom spesifikke substanser eller grupper av substanser."
+          },
+          "at0024.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "Röyker du",
+            "description" : "Bruker individet substansen?"
           },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
