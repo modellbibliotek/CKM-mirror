@@ -1,0 +1,95 @@
+archetype (adl_version=1.4; uid=3124931f-02ca-417b-b3c4-7ebd0158d3d0)
+	openEHR-EHR-COMPOSITION.test_of_cardinality.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Erik Sundvall">
+		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
+		["email"] = <"erik.sundvall@regionstockholm.se">
+		["date"] = <"2022-02-15">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"4f01141213cde0539a53f3dbe8eeee1e">
+		["build_uid"] = <"d46921b0-b772-3453-985e-66e3d7aef9c8">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- test_of_cardinality
+		category matches {
+			DV_CODED_TEXT[at0001] matches {    -- Coded text
+				defining_code matches {
+					[openehr::433]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT[at0002] matches {    -- Event Context
+				other_context matches {
+					ITEM_TREE[at0003] matches {    -- Item tree
+						items cardinality matches {0..*; unordered} matches {
+							CLUSTER[at0004] occurrences matches {0..1} matches {*}    -- test1
+							CLUSTER[at0005] occurrences matches {0..1} matches {*}    -- test2
+							ELEMENT[at0006] occurrences matches {0..1} matches {    -- test3
+								value matches {
+									DV_CODED_TEXT matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"test_of_cardinality">
+					description = <"test_of_cardinality">
+				>
+				["at0001"] = <
+					text = <"Coded text">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Event Context">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"test1">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"test2">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"test3">
+					description = <"">
+				>
+			>
+		>
+	>
