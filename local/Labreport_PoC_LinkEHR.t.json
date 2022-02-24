@@ -5,13 +5,13 @@
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
       "name" : "Erik Sundvall",
-      "organisation" : "Region Östergötland & Linköping University, Sweden",
-      "email" : "erik.sundvall@regionostergotland.se",
-      "date" : "2021-11-19"
+      "organisation" : "Region Stockholm, Sweden",
+      "email" : "erik.sundvall@regionstockholm.se",
+      "date" : "2022-02-24"
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "in_development"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "16.0.0",
+      "sem_ver" : "16.1.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
       "MD5-CAM-1.0.1" : "c539a2bb4a59899d1e61b890d53f1b65",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
@@ -518,7 +518,7 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "91d48937-1d92-3fa6-9f53-1476f130d97f",
+  "buildUid" : "e59733fe-625f-3f27-8797-b26c7fc53c5d",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
