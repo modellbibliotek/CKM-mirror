@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "15.0.0",
+      "sem_ver" : "15.1.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "8bd68b48c761d8e97351cd63b1c34789",
+      "MD5-CAM-1.0.1" : "0571c5e2b493391fd42250cb2f00d1ca",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -259,6 +259,13 @@
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "*Document to communicate information to others about the result of a test or assessment.(en)"
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
         }
       },
       "nb" : {
@@ -273,6 +280,13 @@
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Dokument for å formidle informasjon til andre om svaret på en prøve eller undersøkelse."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilleggsinformasjon",
+          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
+          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
         }
       },
       "pt-br" : {
@@ -299,6 +313,13 @@
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Documento para comunicar informações sobre o resultado de um teste ou avaliação."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensão",
+          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
+          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
         }
       },
       "de" : {
@@ -363,9 +384,9 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "*Extension (en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
-          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+          "text" : "Laajennus",
+          "description" : "Tarvitaan lisätietoja paikallisen tilanteen mallintamiseksi tai yhdenmukaistamiseksi muiden vertailumallien / muodollisuuksien kanssa. \r\n",
+          "comment" : "Esimerkiksi: paikalliset tietovaatimukset tai ylimääräiset metatiedot FHIR- tai CIMI-vastaavien mukaisiksi."
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -402,9 +423,9 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "*Extension (en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
-          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+          "text" : "Estensione",
+          "description" : "Informazioni aggiuntive necessarie per catturare il contesto locale o per allinearsi con altri modelli/formalismi di riferimento.",
+          "comment" : "Per esempio: requisiti informativi locali o metadati aggiuntivi per allinearsi con gli equivalenti FHIR o CIMI."
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -441,9 +462,9 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "*Extension (en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
-          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+          "text" : "Uitbreiding",
+          "description" : "Extra informatie nodig om de context te beschrijven of te voldoen aan andere modellen of formalismen.",
+          "comment" : "Bijvoorbeeld: lokale informatievereisten of aanvullende metadata om overeen te komen met FHIR- of CIMI-equivalenten."
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -482,6 +503,13 @@
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Dokument för att kommunicera information till andra, vanligen som svar på en begäran från en annan part."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilläggsinformation",
+          "description" : "Ytterligare information som krävs för att fånga lokalt sammanhang eller för att anpassning till andra referensmodeller/formalismer. \r\n",
+          "comment" : "Till exempel: lokala informationskrav eller ytterligare metadata för att anpassning till FHIR eller CIMI."
         }
       }
     },
@@ -4160,24 +4188,6 @@
           "nodeId" : "at0004.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..0",
-          "nodeId" : "at0002.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-person-001.v0",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
-          "nodeId" : "at0005.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-address-001.v0",
-          "referenceType" : "archetypeOverlay"
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -4240,439 +4250,6 @@
         "name" : "Therese Lindberg",
         "organisation" : "Cambio CDS",
         "email" : "therese.lindberg@cambio.se"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Liv Laugen, John Tore Valand, Vebjørn Arntzen",
-        "organisation" : "​Oslo University Hospital, Norway, Helse Bergen",
-        "email" : "liv.laugen@ous-hf.no, john.tore.valand@helse-bergen.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "7ccf60ea-6473-496e-bde1-26516c6c00b1",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "C861853315FA18B509194DDFCF4C369D"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Darstellung von Informationen zu einer Person, die in der Gesundheitsakte repräsentiert sein muss.",
-          "keywords" : [ "Anbieter, Betreuer, Personal, medizinisches Fachpersonal, Verwandter, nächster Angehöriger, Hausarzt, Zeuge, Freund, Nachbar, Kind, Familie, Geschwister, Elternteil" ],
-          "use" : "Der Archetyp wird verwendet, um Informationen zu einer Person darzustellen, die in der Gesundheitsakte dargestellt werden muss, wenn es nicht angemessen oder möglich ist, ein formelles demografisches Register oder einen Index zu verwenden. Beispiele beinhalten:\r\n- Name und Kontaktdaten einer Person, die eine Hard-Kopie einer Grundversorgungsakte besitzt;\r\n- Name und Kontaktdaten eines Betreuers bei einer Überweisung;\r\n- Name, Funktion und Kontaktdaten eines Mitglieds eines Pflegeteams;\r\n- die Rolle und Kontaktdaten einer benannten Kontaktperson innerhalb einer Organisation;\r\n- Angaben zu einem Verwandten in einer Familienanamnese; oder\r\n- Zeuge eines epileptischen Anfalls.\r\n\r\nIn den meisten Anwendungsfällen, in denen ein Name in eine Gesundheitsakte aufgenommen werden muss, reicht die Freitexteingabe im Element „Name unstrukturiert“ aus. In Situationen, in denen detailliertere Details zu einer oder mehreren Namenskomponenten erforderlich sind, verwenden Sie die zusätzlichen strukturierten Datenelemente im Archetyp CLUSTER.structured_name, die im SLOT \"Strukturierter Name\" innerhalb dieses Archetyps verschachtelt sind. Wenn der Archetyp CLUSTER.structured_name im SLOT \"Name strukturiert\" verschachtelt ist, können beliebige oder alle strukturierten Namenselemente verkettet und im Element \"Name unstrukturiert\" dargestellt werden.\r\n\r\nDieser Archetyp könnte auch als Proxy für formale demografische Daten verwendet werden, wenn ein Template mit Domänenexperten überprüft wird – beispielsweise bei einer Bewertung, bei der die Prüfer erwarten würden, dass die Personendaten oben auf dem Bewertungsformular angezeigt werden.",
-          "misuse" : "Der Archetyp darf nicht verwendet werden, um die formelle Identifizierungsverwaltung zu repräsentieren oder zu ersetzen oder zum Zwecke der Führung eines offiziellen demografischen Registers oder Index. Verwenden Sie zu diesem Zweck einen formellen Master Patient Index oder Health Provider Index oder Archetypen, die auf dem openEHR Demographic Information Model basieren.\r\n\r\nDarf nicht verwendet werden, um den Patienten/die Patientin, die Teilnehmer oder den Verfasser der Akte und ähnliche Datenelemente darzustellen, die formell in der Gesundheitsakte unter Verwendung der Referenzmodell-Attribute dargestellt werden sollten.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere detaljer om en person i en pasientjournal.",
-          "keywords" : [ "tjenesteyter, helsepersonell, omorgsperson, slektning, pårørende, vitne, venn, nabo, barn, familie, forelder, arbeidsgiver, rekvirent, henviser, pårørende, slektning, kontaktperson" ],
-          "use" : "Brukes for å registrere detaljer om en person i en pasientjournal, når det ikke er ønskelig eller mulig å bruke et formelt demografisk register eller indeks.\r\n\r\nFor eksempel:\r\n- navn og kontaktdetaljer til en person som har en kopi av et fremtidig behandlingsvalg.\r\n- navn og kontaktdetaljer til en omsorgsperson eller helsepersonell i en henvisning.\r\n- navn, rolle og kontaktdetaljer til et medlem av et behandlingsteam.\r\n- rolle og kontaktdetaljer til en navngitt kontaktperson i en organisasjon.\r\n- detaljer om en slektning i en familieanamnese.\r\n- detaljer om et vitne til et epileptisk anfall.\r\n\r\nI de mest vanlige brukscasene der navn skal registreres i pasientjournalen, vil dataelementet \"Ustrukturert navn\" være tilstrekkelig. I tilfeller der man har behov for detaljer om en eller flere navnekomponenter, bruk arketypen CLUSTER.structured_name i SLOTet \"Strukturert navn\". I tilfeller der arketypen CLUSTER.structured_name er lagt i SLOTet \"Strukturert navn\", kan noen eller alle de strukturerte navnelementene slås sammen og vises i dataelementet \"Ustrukturert navn\".\r\n\r\nDenne arketypen kan også brukes som en midlertidig erstatning for formelle demografiske data når man gjennomgår et templat med domeneeksperter - for eksempel en vurdering der man i templatet forventer å se detaljer om et individ på toppen av vurderingsskjema.",
-          "misuse" : "Brukes ikke til å representere eller erstatte de formelle demografiske opplysninger for formell identitetsforvaltning eller for å opprettholde et demografisk register eller en indeks. Bruk formelle pasientregister, helsepersonellregister eller arketyper basert på openEHR demografisk informasjonsmodell til dette formålet.\r\n\r\nBrukes ikke for å representerer pasient, deltakere i behandling, forfatter eller lignende der man kan benytte attributter fra referansemodellen.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record details about a person who needs to be represented within the health record.",
-          "keywords" : [ "provider, carer, staff, healthcare professional, relative, next-of-kin, practitioner, witness, friend, neighbour, child, family, sibling, parent" ],
-          "use" : "Use to record details of a person in the electronic health record, when it is not appropriate or possible to use a formal demographic register or index. Examples include:\r\n- the name and contact details for a person who holds a physical copy of an advanced care record;\r\n- the name and contact details of a carer in a referral; \r\n- the name, role and contact details of a member of a care team;\r\n- the role and contact details of a named contact person within an organisation;\r\n- details about a relative in a family history record; or\r\n- a witness to an epileptic fit.\r\n\r\nIn most common use cases where a name needs to be included within a health record, free text entry within the 'Unstructured name' element will be sufficient. In situations when finer-grained detail about one or more name components is required, use the additional structured data elements in the CLUSTER.structured_name archetype, nested in the 'Structured name' SLOT within this archetype. If the CLUSTER.structured_name archetype is nested within the 'Structured name' SLOT, any or all of the structured name elements can be concatenated and represented in the 'Unstructured name' element.\r\n\r\nThis archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see the individual or subject of care's details at the top of the assessment form.",
-          "misuse" : "Not to be used to represent or replace formal identification management or for the purposes of maintaining an official demographic register or index. Use a formal Master Patient Index or Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.\r\n\r\nNot to be used to represent the subject of care, participants or author of the record and similar data elements that should be represented formally in the health record using the Reference Model attributes.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "zh" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "zh"
-          },
-          "purpose" : "记录需要出现在健康记录中的人的详细信息。",
-          "keywords" : [ "*provider, carer, staff, healthcare professional, relative, next-of-kin, practitioner, witness, friend, neighbour, child, family, sibling, parent (en)" ],
-          "use" : "*Use to record details of a person in the electronic health record, when it is not appropriate or possible to use a formal demographic register or index. Examples include:\r\n- the name and contact details for a person who holds a physical copy of an advanced care record;\r\n- the name and contact details of a carer in a referral; \r\n- the name, role and contact details of a member of a care team;\r\n- the role and contact details of a named contact person within an organisation;\r\n- details about a relative in a family history record; or\r\n- a witness to an epileptic fit.\r\n\r\nIn most common use cases where a name needs to be included within a health record, free text entry within the 'Unstructured name' element will be sufficient. In situations when finer-grained detail about one or more name components is required, use the additional structured data elements in the CLUSTER.structured_name archetype, nested in the 'Structured name' SLOT within this archetype. If the CLUSTER.structured_name archetype is nested within the 'Structured name' SLOT, any or all of the structured name elements can be concatenated and represented in the 'Unstructured name' element.\r\n\r\nThis archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see the individual or subject of care's details at the top of the assessment form. (en)",
-          "misuse" : "*Not to be used to represent or replace formal identification management or for the purposes of maintaining an official demographic register or index. Use a formal Master Patient Index or Healthcare Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.\r\n\r\nNot to be used to represent the subject of care, participants or author of the record and similar data elements that should be represented formally in the health record using the Reference Model attributes. (en)",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "sv" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "sv"
-          },
-          "purpose" : "Det används för att registrera information om en person som behöver representeras i patientjournalen.",
-          "keywords" : [ "Leverantör, vårdgivare, personal, vårdpersonal, släkting, anhöriga, läkare, vittne, vän, granne, barn, familj, syskon, förälder" ],
-          "use" : "Används för att registrera uppgifter om en person i den elektroniska journalen, när det inte är lämpligt eller möjligt att använda ett formellt demografiskt register eller index. För Exempel:\r\n- Namn och kontaktuppgifter för en person som innehar en fysisk kopia av en avancerad patientjournal;\r\n- Namn och kontaktuppgifter för en vårdgivare i en remiss;\r\n- Namn, roll och kontaktuppgifter för en medlem av ett vårdgivarteam;\r\n- Rollen och kontaktuppgifterna för en namngiven kontaktperson inom en organisation;\r\n- uppgifter om en släkting i en släkthistoria; eller\r\n- ett vittne till ett epileptisk anfall.\r\n\r\nI de flesta vanliga användningsfallen där ett namn måste inkluderas i en journal räcker det med fritextinmatning inom elementet 'Ostrukturerat namn'. I situationer när det krävs mer detaljerade detaljer om en eller flera namnkomponenter, använd de ytterligare strukturerade dataelementen i arketypen CLUSTER.structured_name. I denna arketyp finns en SLOT kapslade i \"Structured name\" . Om arketypen CLUSTER.structured name är kapslad i 'Structured name' SLOT, kan något eller alla av de strukturerade namnelementen sammanfogas och representeras i elementet 'Ostrukturerat namn'.\r\n\r\nDenna arketyp skulle också kunna användas som en proxy för formella demografiska data när man granskar en mall med domänexperter – till exempel en bedömning där granskare förväntar sig att se individen eller vårdämnets uppgifter högst upp i bedömningsformuläret.",
-          "misuse" : "Får inte användas för att representera eller ersätta formell identifieringshantering eller i syfte att upprätthålla ett officiellt demografiskt register eller index. Använd ett formellt Master Patient Index eller Vårdgivare Index för detta ändamål, eller arketyper baserade på openEHR Demographic Information Model.\r\n\r\nFår inte användas för att representera vårdobjektet, deltagare eller författare till journalen och liknande dataelement som bör representeras formellt i journalen med hjälp av Referensmodellens attribut.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.person.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-person-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { },
-        "nb" : { },
-        "de" : { },
-        "zh" : { },
-        "sv" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "3334572e-b42f-42d2-975a-76d6810c4737",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Natalia Strauch",
-        "organisation" : "Medizinische Hochschule Hannover",
-        "email" : "Strauch.Natalia@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Liv Laugen, John Tore Valand, Vebjørn Arntzen",
-        "organisation" : "​Oslo University Hospital, Norway, Helse Bergen",
-        "email" : "liv.laugen@ous-hf.no, john.tore.valand@helse-bergen.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "zh"
-      },
-      "author" : {
-        "name" : "Yexuan Cheng",
-        "organisation" : "浙江大学",
-        "email" : "3160100913@zju.edu.cn"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : {
-        "name" : "Elham Gholami",
-        "organisation" : "SLL",
-        "email" : "elham.gholami@sll.se"
-      },
-      "accreditation" : "Ackreditering",
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "44d468eb-c581-40d1-b15e-dc4d3b84f181",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "26D7CB755C36F413FAC76B4A0BE7F507"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Darstellung von Details zu einer Haus- oder Postadresse zur Verwendung in einer Gesundheitsakte.",
-          "keywords" : [ "Adresse", "Anschrift", "postalisch", "Mailing", "Heimat", "Geschäft", "physisch" ],
-          "use" : "Verwenden Sie diese Archetyp, um Details zu einer physischen oder postalischen Adresse darzustellen, die als Teil einer klinischen Aufzeichnung in einer Gesundheitsakte erforderlich ist. Beispiele beinhalten:\r\n- die Adresse einer teilnehmenden Organisation für häusliche Pflege bei einer Überweisung an einen anderen Gesundheitsdienstleister; oder\r\n- die Adresse einer Person oder Organisation, die eine physische Kopie einer Vorab-Pflegerichtlinie besitzt; oder\r\n- die Adresse eines Sturz- oder Unfallortes.\r\n\r\nDer Umfang dieses Archetyps wurde darauf beschränkt, nur die gebräuchlichsten Komponenten für eine einfache Adresse zu enthalten. Detailliertere Adresskomponenten sind im Archetyp CLUSTER.structured_address enthalten, der im SLOT \"Strukturierte Adressdaten\" innerhalb dieses Archetyps verschachtelt ist.\r\n\r\nIn den meisten Anwendungsfällen, in denen eine Adresse in eine Gesundheitsakte aufgenommen werden muss, reicht die Freitexteingabe in einem oder mehreren Elementen der \"Adresse unstrukturiert\" aus, um eine einfache Adresse zu erfassen. In Situationen, in denen detailliertere Details zu einer oder mehreren Adresskomponenten erforderlich sind, verwenden Sie die zusätzlichen strukturierten Datenelemente im Archetyp CLUSTER.structured_address. Wenn der Archetyp CLUSTER.structured_address innerhalb des SLOTs \"Strukturierte Adressdaten\" verschachtelt ist, können einige oder alle der strukturierten Adresselemente verkettet und im Element \"Adresse unstrukturiert\" dargestellt werden.\r\n\r\nDieser Archetyp könnte auch als Ersatz für formelle demografische Daten verwendet werden, wenn ein Template mit Domänenexperten überprüft wird – beispielsweise bei einer Bewertung, bei der Prüfer eine Adresse in einem Bewertungsformular erwarten würden. Dieser CLUSTER.address könnte auch als Stellvertreter für eine Adresse in formalen demografischen Adressdaten verwendet werden, wenn ein Template mit Klinikern überprüft wird – zum Beispiel bei einer Bewertung, bei der Prüfer erwarten würden, dass die vollständigen Kontaktdaten der Person oben auf dem Bewertungsformular angezeigt werden.",
-          "misuse" : "Darf nicht verwendet werden, um eine Adresse im Rahmen der Führung eines offiziellen demografischen Registers oder Index zu erfassen. Verwenden Sie zu diesem Zweck einen formalen Master Patient Index oder Health Provider Index oder Archetypen, die auf dem openEHR Demographic Information Mode basieren.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere detaljer om en fysisk adresse eller postadresse i en pasientjournal.",
-          "keywords" : [ "adresse, postadresse, hjem, arbeid, fysisk, oppmøtested" ],
-          "use" : "Brukes for å registrere detaljer om en fysisk adresse eller postadresse i en pasientjournal.\r\n\r\nFor eksempel:\r\n- Adressen til hjemmetjeneste eller en annen helsetjenesteyter.\r\n- Adressen til en person eller organisasjon som oppbevarer fremtidige behandlingsvalg.\r\n- Adressen til hendelsestedet til en ulykke eller et fall.\r\n\r\nMålet for denne arketypen er å dekke de vanligste komponentene for en enkel adresse. Mer detaljerte adressekomponenter finnes i arketypen CLUSTER.structured_address, som er laget for bruk i SLOTet \"Strukturert adresse\" i denne arketypen.\r\n\r\nI de mest vanlige brukscasene der navn skal registreres i pasientjournalen, vil fritekstregistrering i ett eller flere \"Ustrukturert adresse\" elementer være tilstrekkelig. I tilfeller der man har behov for detaljer om en eller flere adressekomponenter, bruk arketypen CLUSTER.structured_address i SLOTet \"Strukturert adresse\". I tilfeller der arketypen CLUSTER.structured_address er lagt i SLOTet \"Strukturert adresse\", kan noen eller alle de strukturerte navnelementene slås sammen og vises i dataelementet \"Adresse\".\r\n\r\nDenne arketypen kan også brukes som en midlertidig erstatning for formelle demografiske data når man gjennomgår et templat med domeneeksperter - for eksempel en vurdering der man i templatet forventer å se detaljer om en adresse i eller på toppen av et vurderingsskjema.",
-          "misuse" : "Brukes ikke til å representere eller erstatte de formelle demografiske opplysninger for formell identitetsforvaltning eller for å opprettholde et demografisk register eller en indeks. Bruk formelle pasientregister, helsepersonellregister eller arketyper basert på openEHR demografisk informasjonsmodell til dette formålet.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record details about a physical or postal address for use within a health record.",
-          "keywords" : [ "address", "postal", "mailing", "home", "business", "physical" ],
-          "use" : "Use to record details about a physical or postal address required as part of clinical recording within a health record. Examples include:\r\n- the address of an attending home care organisation in a referral to another healthcare provider; or\r\n- the address of a person or organisation that holds a physical copy of an advance care directive; or\r\n- the address of a location of a fall or accident.\r\n\r\nThe scope of this archetype has been constrained to carry only the most common components for a simple address. More detailed address components are included in the CLUSTER.structured_address archetype, designed to nest in the 'Structured address' SLOT within this archetype. \r\n\r\nIn most common use cases where an address needs to be included within a health record, free text entry within one or more 'Unstructured address' elements will be sufficient to record a simple address. In situations when finer-grained detail about one or more address components is required, use the additional structured data elements in the CLUSTER.structured address archetype. If the CLUSTER.structured_address archetype is nested within the 'Structured address' SLOT, any or all of the structured name elements can be concatenated and represented in the 'Unstructured address' element.\r\n\r\nThis archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see an address within an assessment form. This CLUSTER.address could also be used as a proxy for an address in formal demographic address data when reviewing a template with clinicians - for example, an assessment where reviewers would expect to see the individual's full contact details at the top of the assessment form.",
-          "misuse" : "Not to be used to record an address as part of maintaining an official demographic register or index. Use a formal Master Patient Index or Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.address.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-address-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0001.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0005.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "ac0.2" ],
-                  "selectedTerminologies" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.2",
-            "description" : ""
-          }
-        },
-        "nb" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          }
-        },
-        "de" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : {
-        "ac0.1" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.1",
-          "members" : [ "at0002", "at0003", "at0004" ]
-        },
-        "ac0.2" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.2",
-          "members" : [ "at0006", "at0007", "at0008" ]
-        }
-      }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "c8cc2441-ed53-4603-9005-58af62552be1",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Natalia Strauch",
-        "organisation" : "Medizinische Hochschule Hannover",
-        "email" : "Strauch.Natalia@mh-hannover.de"
       },
       "otherDetails" : { }
     }, {
@@ -5524,32 +5101,14 @@
                   "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0145.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_DATE_TIME",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0144.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_DATE_TIME",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
