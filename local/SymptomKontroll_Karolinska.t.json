@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "49.0.0",
+      "sem_ver" : "49.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "03d078462bd3e360403ea1b4cf696ec7",
+      "MD5-CAM-1.0.1" : "5e75d513b14ab118e30fd0b2ab7ccea0",
       "PARENT:MD5-CAM-1.0.1" : "E858DD464A107EBCD2ACE4E3D0FC1C0C"
     },
     "details" : {
@@ -1279,7 +1279,7 @@
           "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.2",
-            "text" : "Specifika symptom/tecken (2)",
+            "text" : "Andning",
             "description" : "Gruppering av dataelement relaterade till screening för ett enda symptom eller annat tecken."
           },
           "at0005.2" : {
@@ -1291,7 +1291,7 @@
           "at0022.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.3",
-            "text" : "Specifika symptom/tecken (3)",
+            "text" : "Hud",
             "description" : "Gruppering av dataelement relaterade till screening för ett enda symptom eller annat tecken."
           },
           "at0005.3" : {
@@ -1303,7 +1303,7 @@
           "at0022.4" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.4",
-            "text" : "Specifika symptom/tecken (4)",
+            "text" : "Klåda",
             "description" : "Gruppering av dataelement relaterade till screening för ett enda symptom eller annat tecken."
           },
           "at0005.4" : {
@@ -1315,7 +1315,7 @@
           "at0022.5" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.5",
-            "text" : "Specifika symptom/tecken (5)",
+            "text" : "Mun och svalg",
             "description" : "Gruppering av dataelement relaterade till screening för ett enda symptom eller annat tecken."
           },
           "at0005.5" : {
@@ -1327,7 +1327,7 @@
           "at0022.6" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.6",
-            "text" : "Specifika symptom/tecken (6)",
+            "text" : "Naglar",
             "description" : "Gruppering av dataelement relaterade till screening för ett enda symptom eller annat tecken."
           },
           "at0005.6" : {
@@ -1339,7 +1339,7 @@
           "at0022.7" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.7",
-            "text" : "Specifika symptom/tecken (7)",
+            "text" : "Svullnad",
             "description" : "Gruppering av dataelement relaterade till screening för ett enda symptom eller annat tecken."
           },
           "at0005.7" : {
@@ -1351,7 +1351,7 @@
           "at0022.8" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.8",
-            "text" : "Specifika symptom/tecken (8)",
+            "text" : "Kroppstemperatur",
             "description" : "Gruppering av dataelement relaterade till screening för ett enda symptom eller annat tecken."
           },
           "at0005.8" : {
@@ -1363,7 +1363,7 @@
           "at0022.9" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.9",
-            "text" : "Specifika symptom/tecken (9)",
+            "text" : "Elimination",
             "description" : "Gruppering av dataelement relaterade till screening för ett enda symptom eller annat tecken."
           },
           "at0005.9" : {
@@ -1371,6 +1371,12 @@
             "code" : "at0005.9",
             "text" : "Har du problem med diarréer?",
             "description" : "Närvaro av symptomet eller annat tecken."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Trötthet",
+            "description" : "Gruppering av dataelement relaterade till screening för ett specifikt symptom eller annat tecken."
           }
         }
       },
@@ -4502,7 +4508,7 @@
           "at0021.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0021.1",
-            "text" : "Hur påverkar tröttheten ditt dagliga liv?",
+            "text" : "Hur upplever du din klåda?",
             "description" : "Kategori som presenterar symtomens eller tecknets totala svårighetsgrad.",
             "comment" : "Att definiera värden som mild, måttlig eller svår på ett sådant sätt som är tillämpligt på flera symtom eller tecken plus som tillåter flera användare att tolka och registrera dem konsekvent är inte lätt. Vissa organisationer utökar inställningen av värdet ytterligare med att inkludera värden som \"Obetydlig\" och \"Mycket svår\" och\"Mild-Måttlig\" och \"Måttlig-Svår\", vilket ger problem med att förstå skillnaden mellan olika definitioner samt ger svårigheter att jämföra olika mätresultat.\r\n\r\nAnvändning av \"Livshotande\" och \"Dödlig\" anses ofta också som en del av denna värdeskattning, men det kan faktiskt reflektera ett resultat snarare än en svårighetsgrad. Med tanke på ovanstående är det att föredra att hålla sig till en väldefinierad men mindre lista, och sålunda erbjuds den milda/måttligt svåra värdesatsen, men valet av annan text tillåter att andra värdesatser inkluderas i detta dataelement i en mall. Obs! Mer specifik gradering av svårighetsgrad kan registreras i fältet \"Specifika Detaljer\"."
           }
