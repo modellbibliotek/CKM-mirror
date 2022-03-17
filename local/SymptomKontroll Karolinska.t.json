@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "73.0.0",
+      "sem_ver" : "74.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "56c66427ccc39096fbb0f7afe95766f1",
+      "MD5-CAM-1.0.1" : "50651655fd0666564e38cf684a5ee219",
       "PARENT:MD5-CAM-1.0.1" : "E858DD464A107EBCD2ACE4E3D0FC1C0C"
     },
     "details" : {
@@ -4217,12 +4217,26 @@
                 "rmAttributeName" : "defining_code",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
-                    "value" : "local"
+                    "value" : "local_terms"
                   },
-                  "constraint" : [ "at0023", "at0024", "at0025" ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "162468002",
+                    "value" : "Lätta besvär, lite klåda"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "162469005",
+                    "value" : "Måttliga besvär, besvarande klåda"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "162470006",
+                    "value" : "Svåra besvär, klåda som är svår att kontrollera"
+                  } ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -4569,6 +4583,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.3",
           "members" : [ "at0183", "at0182", "at0181", "at0184" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0023", "at0024", "at0025" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "ac0.4" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "ac0.4" ]
         }
       }
     },
