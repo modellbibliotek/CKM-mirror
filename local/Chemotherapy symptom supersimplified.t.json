@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "bc6f56db1c63cc7e29c39919b4137c38",
+      "MD5-CAM-1.0.1" : "66bb5e697468371e2c68d53434460388",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -161,7 +161,93 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "83F071422ADAD3A691E59A7558F416B9"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Repräsentation der Antworten auf einen Fragebogen, der von einer Person ausgefüllt wurde. Hierbei werden die Symptome und Anzeichen abgefragt.",
+          "keywords" : [ ],
+          "use" : "Zur Repräsentation der Antworten auf einen Fragebogen, der von einer Person ausgefüllt wurde. Hierbei werden die Symptome und Anzeichen abgefragt.\r\n\r\nZu den häufigen Anwendungsfällen gehören u.a., aber nicht ausschließlich:\r\n- Systematische Befragung bei jeder Konsultation; oder\r\n- Spezifische Befragung im Zusammenhang mit der Überwachung von Infektionskrankheiten.\r\n\r\nUm die Antwort zu einem bestimmten Zeitpunkt oder innerhalb eines Zeitintervalls darzustellen, verwenden Sie das RM-Attribut EVENT.\r\n\r\nDieser Archetyp wurde entwickelt, um als Screening-Tool verwendet zu werden oder um einfache Daten im Fragebogenformat für die Verwendung in Situationen wie einem Krankheitsregister darzustellen. Wenn im Screening-Prozess das Vorhandensein eines Symptoms oder Anzeichens festgestellt ist und es ist beabsichtigt, die Details als Teil einer laufenden Gesundheitsakte aufzuzeichnen und beibehalten, sollten alle weiteren spezifischen Details zu dem Symptom oder den Anzeichen mithilfe des Archetyps Symptom/Krankheitsanzeichen dargestellt werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fi" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fi"
+          },
+          "purpose" : "*To record the responses to an individual- or self-reported questionnaire screening for symptoms and signs.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to record the responses to an individual- or self-reported questionnaire screening for symptoms and signs.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic questioning in any consultation; or\r\n- Specific questioning related to infectious disease surveillance.\r\n\r\nIn order to record the response at a specific point in time or within an interval of time, use the EVENT RM attribute.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening process identifies the presence of a symptom or sign and it is intended that the details are to be recorded and persisted as part of an ongoing health record, any further specific details about the symptom or sign should be recorded using the Symptom/Sign archetype. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Registrering av svar från ett frågeformulär eller självrapporteringsskala för screening av symptom och andra tecken.",
+          "keywords" : [ "självrapporteringsskala", "screening", "symptom", "formulär", "frågeformulär" ],
+          "use" : "Används för att registrera svaren från ett frågeformulär eller en självrapporteringsskala för screening av symptom och andra tecken.\r\n\r\nOm ytterligare detaljer om ett specifikt symptom behöver registreras, använd CLUSTER.symptom_sign-arketypen med SLOT \"Symptom/detaljer om tecken\". \r\n\r\nVanliga användningsfall inkluderar bland annat:\r\n- Systematiska frågor vid alla samråd; eller\r\n- Specifika frågor relaterade till övervakning av infektionssjukdomar.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å dokumentere responsen gitt i et selvregistreringsskjema eller undersøkelsesskjema om et individs symptomer og sykdomstegn.",
+          "keywords" : [ ],
+          "use" : "Brukes for å dokumentere responsen gitt i et selvregistreringsskjema eller undersøkelsesskjema om et individs symptomer og sykdomstegn.\r\n\r\n\t\r\nBrukes for å dokumentere responsen gitt i et selvregistreringsskjema eller undersøkelsesskjema om et individs helsetilstander.\r\n\r\nVanlige bruksområder inkluderer, men er ikke begrenset til:\r\n- Systematisk bruk av selvregistrering- eller undersøkelsesskjema ved konsultasjoner.\r\n- Spesifikk spørring relatert til overvåkning av infeksjonssykdommer.\r\n\r\nFor å registrere det spesifikke tidspunktet, eller tidsintervallet responsen ble gitt, bruk referansemodellens EVENT RM attributt\r\n\r\nDenne arketypen er laget for bruk som et screeningverktøy for å registrere enkle data i et spørreskjema/undersøkelsesskjema, som for eksempel til et sykdomsregister. Dersom det i screeningsprosessen blir identifisert at et symptom eller sykdomstegn er tilstede, og som bør være en del av den løpende journalen, bruk arketypen CLUSTER.symptom/sign (Symptom/Sykdomstegn) for å registrere spesifikke detaljer om symptomet eller sykdomstegnet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the responses to an individual- or self-reported questionnaire screening for symptoms and signs.",
+          "keywords" : [ ],
+          "use" : "Use to record the responses to an individual- or self-reported questionnaire screening for symptoms and signs.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic questioning in any consultation; or\r\n- Specific questioning related to infectious disease surveillance.\r\n\r\nIn order to record the response at a specific point in time or within an interval of time, use the EVENT RM attribute.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening process identifies the presence of a symptom or sign and it is intended that the details are to be recorded and persisted as part of an ongoing health record, any further specific details about the symptom or sign should be recorded using the Symptom/Sign archetype.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Registrare le risposte a un questionario individuale o a un questionario autodenunciato per lo screening dei sintomi e dei segni.",
+          "keywords" : [ ],
+          "use" : "*Use to record the responses to an individual- or self-reported questionnaire screening for symptoms and signs.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic questioning in any consultation; or\r\n- Specific questioning related to infectious disease surveillance.\r\n\r\nIn order to record the response at a specific point in time or within an interval of time, use the EVENT RM attribute.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening process identifies the presence of a symptom or sign and it is intended that the details are to be recorded and persisted as part of an ongoing health record, any further specific details about the symptom or sign should be recorded using the Symptom/Sign archetype. (en)",
+          "misuse" : "Da non utilizzare per registrare i dettagli di uno specifico sintomo o segno riportato come parte di una tipica consultazione clinica. Utilizzare CLUSTER.symptom_sign per questo scopo.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.symptom_sign_screening.v0",
     "differential" : true,
@@ -243,16 +329,7 @@
                       "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at0029.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_DATE_TIME",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -279,7 +356,7 @@
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_TEXT",
                               "defaultValue" : {
-                                "value" : "Fatigue",
+                                "value" : "Trötthet",
                                 "@type" : "DV_TEXT"
                               },
                               "attributes" : [ ],
@@ -302,12 +379,13 @@
                                 "rmAttributeName" : "defining_code",
                                 "children" : [ {
                                   "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "CODE_PHRASE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "at0023", "at0024", "at0027" ]
+                                  "constraint" : [ "ac0.4" ],
+                                  "selectedTerminologies" : [ ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
@@ -324,16 +402,7 @@
                           "rmTypeName" : "ELEMENT",
                           "occurrences" : "0..0",
                           "nodeId" : "at0037.1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DURATION",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
+                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
@@ -363,7 +432,7 @@
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_TEXT",
                               "defaultValue" : {
-                                "value" : "breathing problems",
+                                "value" : "Andningssvårigheter",
                                 "@type" : "DV_TEXT"
                               },
                               "attributes" : [ ],
@@ -386,12 +455,13 @@
                                 "rmAttributeName" : "defining_code",
                                 "children" : [ {
                                   "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "CODE_PHRASE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "at0023", "at0024", "at0027" ]
+                                  "constraint" : [ "ac0.7" ],
+                                  "selectedTerminologies" : [ ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
@@ -408,16 +478,7 @@
                           "rmTypeName" : "ELEMENT",
                           "occurrences" : "0..0",
                           "nodeId" : "at0037.2",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DURATION",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
+                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
@@ -447,7 +508,7 @@
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_TEXT",
                               "defaultValue" : {
-                                "value" : "rash or reddening of the skin",
+                                "value" : "Utslag eller hudrodnad",
                                 "@type" : "DV_TEXT"
                               },
                               "attributes" : [ ],
@@ -470,12 +531,13 @@
                                 "rmAttributeName" : "defining_code",
                                 "children" : [ {
                                   "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "CODE_PHRASE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "at0023", "at0024", "at0027" ]
+                                  "constraint" : [ "ac0.8" ],
+                                  "selectedTerminologies" : [ ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
@@ -492,16 +554,7 @@
                           "rmTypeName" : "ELEMENT",
                           "occurrences" : "0..0",
                           "nodeId" : "at0037.3",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DURATION",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
+                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
@@ -572,6 +625,24 @@
             "code" : "at0005.3",
             "text" : "Do you experience a rash or reddening of the skin?",
             "description" : "Presence of the symptom or sign."
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.7",
+            "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.8",
+            "description" : ""
           }
         },
         "fi" : {
@@ -592,6 +663,24 @@
             "code" : "at0022.1",
             "text" : "Oire / tuntemus ryhmitys (3)",
             "description" : "*Screening details about a specifed symptom or sign. (en)"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : ""
           }
         },
         "nb" : {
@@ -612,6 +701,24 @@
             "code" : "at0022.1",
             "text" : "Spesifikt symptom/sykdomstegn (3)",
             "description" : "Detaljer om et spesifikt symptom eller sykdomstegn."
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : ""
           }
         },
         "de" : {
@@ -632,6 +739,24 @@
             "code" : "at0022.1",
             "text" : "Spezifisches Symptom/Anzeichen (3)",
             "description" : "Screening-Details zu einem bestimmten Symptom oder Anzeichen."
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : ""
           }
         },
         "it" : {
@@ -652,6 +777,24 @@
             "code" : "at0022.1",
             "text" : "Sintomo/segno specifico (3)",
             "description" : "*Screening details about a specifed symptom or sign. (en)"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : ""
           }
         },
         "sv" : {
@@ -696,6 +839,24 @@
             "code" : "at0005.3",
             "text" : "Upplever du utslag eller hudrodnad?",
             "description" : "Närvaro av symptomet eller annat tecken."
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : ""
           }
         }
       },
@@ -706,6 +867,31 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.3",
           "members" : [ "at0031", "at0032", "at0033" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0023", "at0024", "at0027" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0023", "at0024" ]
         }
       }
     },
