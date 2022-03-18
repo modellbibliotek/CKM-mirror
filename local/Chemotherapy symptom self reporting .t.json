@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "76c07e2ef1246d19897d17975e8eecfa",
+      "MD5-CAM-1.0.1" : "b9074568fbd4e4440fb24e4301e6dd10",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -417,6 +417,7 @@
                                   },
                                   "constraint" : [ ],
                                   "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "limitToList" : false,
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "84229001",
@@ -553,6 +554,7 @@
                                   },
                                   "constraint" : [ ],
                                   "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "limitToList" : false,
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "230145002",
@@ -681,6 +683,7 @@
                                   },
                                   "constraint" : [ ],
                                   "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "limitToList" : false,
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "106076001",
@@ -766,7 +769,7 @@
                         }, {
                           "@type" : "C_ARCHETYPE_ROOT",
                           "rmTypeName" : "CLUSTER",
-                          "occurrences" : "0..1",
+                          "occurrences" : "0..*",
                           "nodeId" : "at0026.3",
                           "attributes" : [ ],
                           "attributeTuples" : [ ],
@@ -1267,26 +1270,27 @@
                   },
                   "constraint" : [ ],
                   "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "84229001",
-                    "value" : "Fatigue"
+                    "value" : "trötthet (fatigue)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "704369007",
-                    "value" : "Fatigue due to treatment"
+                    "value" : "trötthet (fatigue) orsakad av behandling"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "784317004",
-                    "value" : "Fatigue due to chemotherapy"
+                    "value" : "trötthet orsakad av cytostatikabehandling"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "784318009",
-                    "value" : "Fatigue due to radiation therapy"
+                    "value" : "trötthet orsakad av strålbehandling"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "716749005",
-                    "value" : "Cancer-related fatigue"
+                    "value" : "cancerrelaterad trötthet"
                   } ]
                 } ]
               } ],
@@ -1647,7 +1651,8 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0018",
+          "occurrences" : "0..0",
+          "nodeId" : "at0018.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -1699,7 +1704,8 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0165",
+          "occurrences" : "0..0",
+          "nodeId" : "at0165.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -1730,7 +1736,8 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0190",
+          "occurrences" : "0..0",
+          "nodeId" : "at0190.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -2341,18 +2348,19 @@
                   },
                   "constraint" : [ ],
                   "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "230145002",
-                    "value" : "Difficulty breathing"
+                    "value" : "andningsbesvär"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "248552009",
-                    "value" : "Winded"
+                    "value" : "andfåddhet"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "248549001",
-                    "value" : "Labored breathing"
+                    "value" : "ansträngd andning"
                   } ]
                 } ]
               } ],
@@ -2714,7 +2722,8 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0018",
+          "occurrences" : "0..0",
+          "nodeId" : "at0018.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -2766,7 +2775,8 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0165",
+          "occurrences" : "0..0",
+          "nodeId" : "at0165.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -2797,7 +2807,8 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0190",
+          "occurrences" : "0..0",
+          "nodeId" : "at0190.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -2842,8 +2853,18 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0161.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -3436,26 +3457,27 @@
                   },
                   "constraint" : [ ],
                   "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "106076001",
-                    "value" : "Skin finding"
+                    "value" : "fynd som rör huden"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "247440002",
-                    "value" : "Skin or mucosa lesion"
+                    "value" : "lesion på hud eller slemhinna"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "95324001",
-                    "value" : "Skin lesion"
+                    "value" : "hudlesion"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "271807003",
-                    "value" : "Eruption of skin"
+                    "value" : "hudutslag"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "444827008",
-                    "value" : "Erythema of skin"
+                    "value" : "huderytem"
                   } ]
                 } ]
               } ],
@@ -3783,7 +3805,8 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0018",
+          "occurrences" : "0..0",
+          "nodeId" : "at0018.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -3835,7 +3858,8 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0165",
+          "occurrences" : "0..0",
+          "nodeId" : "at0165.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -3866,7 +3890,8 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0190",
+          "occurrences" : "0..0",
+          "nodeId" : "at0190.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -3911,8 +3936,18 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0161.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
