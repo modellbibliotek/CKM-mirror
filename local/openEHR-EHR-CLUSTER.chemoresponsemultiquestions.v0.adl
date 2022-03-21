@@ -16,10 +16,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2021-12-20">
 		["name"] = <"Erik Sundvall">
 		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
 		["email"] = <"erik.sundvall@regionstockholm.se">
-		["date"] = <"2021-12-20">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5f9a4af35bad2260cdf36528b1f35f1d">
+		["MD5-CAM-1.0.1"] = <"f7d72be1696e217cb7bd09398ee33515">
 		["build_uid"] = <"6bb1954a-d5d1-3683-952b-19c064972b5a">
 	>
 
@@ -49,6 +49,14 @@ definition
 					1|[local::at0006],
 					2|[local::at0007],
 					3|[local::at0008]
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0017,    -- Slight fatigue, resting more than usual
+							at0018,    -- Moderate fatigue, resting less than 50% of waking time
+							at0019]    -- Severe fatigue, resting more than 50% of waking time
+						}
+					}
 				}
 			}
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- How do breathing problems affect your daily life?
@@ -56,6 +64,14 @@ definition
 					1|[local::at0009],
 					2|[local::at0010],
 					3|[local::at0011]
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0020,    -- Slight breathing difficulties, can walk up stairs without resting
+							at0021,    -- Moderate breathing problems, can not walk up stairs or 100 m outdoors without resting
+							at0022]    -- Severe breathing problems that affect my daily life
+						}
+					}
 				}
 			}
 			ELEMENT[at0013] occurrences matches {0..1} matches {    -- What are your symptoms of rash or redness?
@@ -63,6 +79,14 @@ definition
 					1|[local::at0014],
 					2|[local::at0015],
 					3|[local::at0016]
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0023,    -- Mild discomfort, occasional redness and / or rash
+							at0024,    -- Moderate symptoms, widespread redness and / or rash
+							at0025]    -- Severe problems, rash on a large part of the body.
+						}
+					}
 				}
 			}
 		}
@@ -124,6 +148,42 @@ ontology
 					text = <"Severe problems, rash on a large part of the body.">
 					description = <"">
 				>
+				["at0017"] = <
+					text = <"Slight fatigue, resting more than usual">
+					description = <"1">
+				>
+				["at0018"] = <
+					text = <"Moderate fatigue, resting less than 50% of waking time">
+					description = <"2">
+				>
+				["at0019"] = <
+					text = <"Severe fatigue, resting more than 50% of waking time">
+					description = <"3">
+				>
+				["at0020"] = <
+					text = <"Slight breathing difficulties, can walk up stairs without resting">
+					description = <"1">
+				>
+				["at0021"] = <
+					text = <"Moderate breathing problems, can not walk up stairs or 100 m outdoors without resting">
+					description = <"2">
+				>
+				["at0022"] = <
+					text = <"Severe breathing problems that affect my daily life">
+					description = <"3">
+				>
+				["at0023"] = <
+					text = <"Mild discomfort, occasional redness and / or rash">
+					description = <"1">
+				>
+				["at0024"] = <
+					text = <"Moderate symptoms, widespread redness and / or rash">
+					description = <"2">
+				>
+				["at0025"] = <
+					text = <"Severe problems, rash on a large part of the body.">
+					description = <"3">
+				>
 			>
 		>
 		["sv"] = <
@@ -179,6 +239,42 @@ ontology
 				["at0016"] = <
 					text = <"Svåra besvär, utslag på stor del av kroppen.">
 					description = <"">
+				>
+				["at0017"] = <
+					text = <"Lätt trötthet, vilar mer än vanligt">
+					description = <"1">
+				>
+				["at0018"] = <
+					text = <"Måttlig trötthet, vilar mindre än 50% av vaken tid">
+					description = <"2">
+				>
+				["at0019"] = <
+					text = <"Svår trötthet, vilar mer än 50% av vaken tid">
+					description = <"3">
+				>
+				["at0020"] = <
+					text = <"Lätta andningsbesvär, orkar gå uppför trappa utan paus">
+					description = <"1">
+				>
+				["at0021"] = <
+					text = <"Måttliga andningsbesvär, orkar ej gå i trappa eller 100 m utomhus utan att pausa">
+					description = <"2">
+				>
+				["at0022"] = <
+					text = <"Svåra andningsbesvär som påverkar min livsföring">
+					description = <"3">
+				>
+				["at0023"] = <
+					text = <"Lätta besvär, enstaka rodnader och/eller utslag">
+					description = <"1">
+				>
+				["at0024"] = <
+					text = <"Måttliga besvär, utbredda rodnader och/eller utslag">
+					description = <"2">
+				>
+				["at0025"] = <
+					text = <"Svåra besvär, utslag på stor del av kroppen.">
+					description = <"3">
 				>
 			>
 		>
