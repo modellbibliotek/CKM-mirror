@@ -1,8 +1,9 @@
-﻿archetype (adl_version=1.4; uid=5dde27f7-5241-489e-bb22-0a765a02fa02)
+archetype (adl_version=1.4; uid=5dde27f7-5241-489e-bb22-0a765a02fa02)
 	openEHR-EHR-CLUSTER.organisation.v0
 
 concept
-	[at0000]	-- Organisation
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -31,17 +32,20 @@ language
 			>
 		>
 	>
+
 description
 	original_author = <
+		["date"] = <"2021-04-14">
 		["name"] = <"Heather Leslie">
 		["organisation"] = <"Atomica Informatics">
 		["email"] = <"heather.leslie@atomicainformatics.com">
-		["date"] = <"2021-04-14">
 	>
+	lifecycle_state = <"in_development">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"Zur Darstellung von Informationen zur einer Organisation, die in der Gesundheitsakte repräsentiert sein muss.">
+			keywords = <"Organisation, Anbieter, Versorger", ...>
 			use = <"Der Archetyp wird verwendet, um Informationen zur einer Organisation darzustellen, die in der Gesundheitsakte dargestellt werden muss. Beispiele beinhalten:
 - den Namen und die Kontaktdaten einer Organisation, die ein Exemplar einer erweiterten Pflegeakte besitzt;
 - den Namen und die Kontaktdaten einer Organisation für ambulante Pflegedienste im Rahmen einer Übermittlung von Krankenakten von Praxis zu Praxis; oder- den Namen, die Funktion und die Kontaktdaten eines Mitglieds des Betreuungsteams.
@@ -51,12 +55,12 @@ In diesem Kontext der Erfassung der Kontaktdaten einer Organisation oder von Per
 - eine \"Unterorganisation\" eines Krankenhauses, wie z. B. eine operativ getrennte oder spezialisierte Außenklinik eines Krankenhauses oder ein angeschlossener ambulanter Pflegedienst.
 
 Dieser Archetyp könnte auch als Proxy für formale demografische Daten verwendet werden, wenn ein Template mit Domänenexperten überprüft wird – beispielsweise bei einer Bewertung, bei der die Prüfer erwarten würden, dass die Personendaten oben auf dem Bewertungsformular angezeigt werden.">
-			keywords = <"Organisation, Anbieter, Versorger", ...>
 			misuse = <"Der Archetyp darf nicht verwendet werden, um die formellen demografischen Daten für die formelle Identifizierungsverwaltung oder zum Zwecke der Führung eines demografischen Registers oder Index zu repräsentieren oder zu ersetzen. Verwenden Sie zu diesem Zweck einen formellen Gesundheitsdienstleister Index oder Archetypen, die auf dem openEHR Demographic Information Model basieren.">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			purpose = <"Att registrera information om en organisation som behöver representeras i hälsojournalen.">
+			keywords = <"organisation, leverantör, vårdgivare", ...>
 			use = <"Används för att registrera information om en organisation som behöver representeras i hälsojournalen. Exempel inkluderar:
 - namn och kontaktuppgifter för en organisation som har en fysisk kopia av en avancerad vårdregistrering;
 - namn och kontaktuppgifter för en besökande hemsjukvårdsorganisation vid överföring av medicinska journaler mellan kliniker, eller
@@ -67,7 +71,6 @@ I detta sammanhang för att registrera en organisations kontaktuppgifter eller p
 - en \"underorganisation\" för ett sjukhus, såsom en operativt separat eller specialiserad satellitklinik för ett sjukhus eller en tillhörande hemtjänst.
 
 Den här arketypen kan också användas som en proxy för formell demografisk data när man granskar en mall med domenexperter - till exempel en bedömning där granskare förväntar sig att se en organisations information på en utvärderingsblankett.">
-			keywords = <"organisation, leverantör, vårdgivare", ...>
 			misuse = <"Inte utformad för att representera eller ersätta de formella demografiska detaljerna för formell identifieringshantering eller för att upprätthålla ett demografiskt register eller index. Använd ett formellt vårdgivarindex för detta ändamål eller arketyper baserat på openEHR Demografisk informationsmodell.">
 		>
 		["nb"] = <
@@ -92,6 +95,8 @@ Denne arketypen kan også brukes som en midlertidig erstatning for formelle demo
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record details about an organisation that needs to be represented within the health record.">
+			keywords = <"organisation, organization, provider, carer, healthcare", ...>
+			copyright = <"© openEHR Foundation">
 			use = <"Use to record details of an organisation in the electronic health record, when it is not appropriate or possible to use an official demographic register or index. Examples include:
 - the name and contact details for an organisation that holds a physical copy of an advanced care record; or
 - the name and contact details of a visiting home care organisation in a practice-to-practice transfer of medical record.
@@ -101,13 +106,9 @@ In this context of recording an organisation's contact details or people within 
 - a 'sub organisation' of a hospital, such as an operationally separate or specialised satellite clinic of a hospital or an associated home care service.
 
 This archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see an organisations' details on an assessment form.">
-			keywords = <"organisation, organization, provider, carer, healthcare", ...>
 			misuse = <"Not to be used to represent or replace formal identification management or for the purposes of maintaining an official demographic register or index. Use a formal Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.">
-			copyright = <"© openEHR Foundation">
 		>
 	>
-	lifecycle_state = <"in_development">
-	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -117,7 +118,7 @@ HL7 FHIR Resource - Organization v4.0.1: R4 [Internet]. Health Level Seven Inter
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5A3F05C744F8449A401EE8BDEED5D610">
+		["MD5-CAM-1.0.1"] = <"2539a5064f1d5c07e57b7948eaf720a4">
 		["build_uid"] = <"602210ec-a855-44a1-9f2f-090d496fde31">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -193,7 +194,6 @@ definition
 			}
 		}
 	}
-
 
 ontology
 	term_definitions = <
@@ -504,11 +504,11 @@ ontology
 					description = <"Ytterligare detaljer om organisationen.">
 				>
 				["at0018"] = <
-					text = <"*Comment(en)">
+					text = <"Kommentar">
 					description = <"*Additional narrative about the electronic communication not captured in other fields.(en)">
 				>
 				["at0019"] = <
-					text = <"*Comment(en)">
+					text = <"Kommentar">
 					description = <"*Additional narrative about the organisation not captured in other fields.(en)">
 				>
 				["at0020"] = <
@@ -516,7 +516,7 @@ ontology
 					description = <"">
 				>
 				["at0021"] = <
-					text = <"*Parent organisation(en)">
+					text = <"Överordnad organisation">
 					description = <"*A larger organisation of which this organisation is a child or subsidiary.(en)">
 				>
 			>
