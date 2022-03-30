@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,6 +23,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -26,13 +37,18 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"48551df910aeff1b950e77943434a27c">
+		["MD5-CAM-1.0.1"] = <"7b7af9bcd25679ee0f717a6a1b991447">
 		["build_uid"] = <"aeddd5fc-7634-3adb-b19b-5eaf6866ddef">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- EDI_labinfo_adapter
 		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- observed value
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- unit
 				value matches {
 					DV_TEXT matches {*}
@@ -46,11 +62,6 @@ definition
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- pathological
 				value matches {
 					DV_BOOLEAN matches {*}
-				}
-			}
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- observed value
-				value matches {
-					DV_TEXT matches {*}
 				}
 			}
 		}
@@ -82,6 +93,33 @@ SG12.OBR..C502.6155 (Measurement attribute, coded)">
 					text = <"test method id">
 					description = <"The incoming (not mapped) Test method identification  code 
 ">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"EDI_labinfo_adapter">
+					description = <"*Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected). (en)">
+				>
+				["at0001"] = <
+					text = <"patologisk markör">
+					description = <"*Pathological manifestation (en)">
+					comment = <"*Marked * in EDI message
+SG12.OBR..C502.6155 (Measurement attribute, coded) (en)">
+				>
+				["at0002"] = <
+					text = <"mätvärde">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"enhet">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"testmetod">
+					description = <"*The incoming (not mapped) Test method identification  code 
+ (en)">
 				>
 			>
 		>
