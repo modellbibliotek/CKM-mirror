@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "8.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "43e4b2a3668d4624cebb014cf29ca7f3",
+      "MD5-CAM-1.0.1" : "c81c6f9ebfe43d6a733464d130ba77a9",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -332,6 +332,34 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0028.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.1" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at0029.1",
                       "attributes" : [ ],
@@ -427,19 +455,15 @@
                                 "rmAttributeName" : "defining_code",
                                 "children" : [ {
                                   "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "CODE_PHRASE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "at0023", "at0024", "at0027" ]
+                                  "constraint" : [ "ac0.2" ],
+                                  "selectedTerminologies" : [ ]
                                 } ]
                               } ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
@@ -555,19 +579,15 @@
                                 "rmAttributeName" : "defining_code",
                                 "children" : [ {
                                   "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "CODE_PHRASE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "at0023", "at0024", "at0027" ]
+                                  "constraint" : [ "ac0.3" ],
+                                  "selectedTerminologies" : [ ]
                                 } ]
                               } ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
@@ -679,19 +699,15 @@
                                 "rmAttributeName" : "defining_code",
                                 "children" : [ {
                                   "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "CODE_PHRASE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "at0023", "at0024", "at0027" ]
+                                  "constraint" : [ "ac0.4" ],
+                                  "selectedTerminologies" : [ ]
                                 } ]
                               } ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
@@ -784,6 +800,30 @@
             "code" : "at0005.3",
             "text" : "Do you experience a rash or reddening of the skin?",
             "description" : "Presence of the symptom or sign."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "fi" : {
@@ -798,6 +838,30 @@
             "code" : "at0022.1",
             "text" : "Oire / tuntemus ryhmitys (3)",
             "description" : "*Screening details about a specifed symptom or sign. (en)"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "nb" : {
@@ -812,6 +876,30 @@
             "code" : "at0022.1",
             "text" : "Spesifikt symptom/sykdomstegn (3)",
             "description" : "Detaljer om et spesifikt symptom eller sykdomstegn."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "de" : {
@@ -826,6 +914,30 @@
             "code" : "at0022.1",
             "text" : "Spezifisches Symptom/Anzeichen (3)",
             "description" : "Screening-Details zu einem bestimmten Symptom oder Anzeichen."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "it" : {
@@ -840,6 +952,30 @@
             "code" : "at0022.1",
             "text" : "Sintomo/segno specifico (3)",
             "description" : "*Screening details about a specifed symptom or sign. (en)"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "sv" : {
@@ -878,12 +1014,57 @@
             "code" : "at0005.3",
             "text" : "Upplever du utslag eller hudrodnad?",
             "description" : "Närvaro av symptomet eller annat tecken."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0031", "at0032", "at0033" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0023", "at0024", "at0027" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0023", "at0024", "at0027" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0023", "at0024", "at0027" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "9972d5f2-dc03-42c2-8a05-de03455abac9",
