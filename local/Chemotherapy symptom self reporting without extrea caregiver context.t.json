@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "8.0.0",
+      "sem_ver" : "9.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c81c6f9ebfe43d6a733464d130ba77a9",
+      "MD5-CAM-1.0.1" : "8319c06377f7bdb9865f0f6511ffdb7b",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -321,7 +321,7 @@
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "SNOMED-CT",
                                 "code" : "385785003",
-                                "value" : "Chemotherapy care assessment"
+                                "value" : "utvärdering av cytostatikabehandling"
                               } ]
                             } ]
                           } ],
