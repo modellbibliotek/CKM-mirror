@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4effec2f097be8a2ddbd245fa078c165">
+		["MD5-CAM-1.0.1"] = <"513763ada01cc346558551235b8f55c3">
 		["build_uid"] = <"aeddd5fc-7634-3adb-b19b-5eaf6866ddef">
 	>
 
@@ -62,7 +62,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"EDI_labinfo_adapter">
-					description = <"EDI_labinfo_adapter">
+					description = <"EDI_labinfo_adapter containing filelds from EDI source data that may go wrong during vonversion due to bad or ambiguousindata quality">
 				>
 				["at0001"] = <
 					text = <"pathological">
