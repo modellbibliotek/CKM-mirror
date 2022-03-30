@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "dae5f069d8bb590cd2d79274968d4b45",
+      "MD5-CAM-1.0.1" : "bd043474169e5ef41384b18ae1819046",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -3367,6 +3367,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0151.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -5682,6 +5683,12 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0065.1",
           "attributes" : [ ],
@@ -5701,7 +5708,15 @@
         "pt-br" : { },
         "de" : { },
         "nl" : { },
-        "sv" : { }
+        "sv" : {
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Lokalisation",
+            "description" : "Identifiering av enskilt fysiskt ställe på eller i människokroppen.",
+            "comment" : "Det här är det enda obligatoriska fältet i denna arketyp och det ska användas som det primära stället att registrera en anatomisk lokalisation med ett vedertaget namn. Det rekommenderas starkt att \"Namn på kroppsställe\" anges så specifikt som det är anatomiskt möjligt. Till exempel; registrera \"övre ögonlock\" snarare än \"ögonlock\" med \"övre\" som kvalificering; \"femte revbenet\" snarare än \"revben\" med en numerisk kvalificering. Använd de andra dataelementen för lateralitet, aspekt, region och anatomisk linje för att ge mer information.\r\n\r\nDetta dataelement bör kodas med en terminologi som kan starta beslutsstödsfunktionalitet när så är möjligt - en lämplig terminologi för användning här kan innehålla enskilda begrepp eller listor med förkoordinerade termer. Fritext bör endast användas om det inte finns någon lämplig terminologi.\r\n\r\nOm kroppsställets namn anges i den överordnade arketypen kan detta dataelement vara överflödigt. Emellertid har användningsfall identifierats där datavärdet kan kopieras till detta element för att stödja semantiska utsökningsfrågor baserat på denna arketyp snarare än den överordnade arketypen.\r\n\r\n\r\n"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
