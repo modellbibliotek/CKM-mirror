@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.1.0",
+      "sem_ver" : "5.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d21e241213ce99dbca26e9649c9b6ba1",
+      "MD5-CAM-1.0.1" : "32918ec7f3bcf8cf1ca33e6bcd391e26",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -116,7 +116,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Chemotherapy symptom self reporting (simplified)",
+          "text" : "Chemotherapy symptom self reporting (simplified) EN",
           "description" : "A composition to record a person self-monitoring particular parameters."
         }
       },
