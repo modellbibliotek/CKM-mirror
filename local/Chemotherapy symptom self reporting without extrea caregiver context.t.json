@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.1.0",
+      "sem_ver" : "6.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b1ccec36f57903843e5ccc81c371f5fa",
+      "MD5-CAM-1.0.1" : "fcf38697ed15d1c0857f6cf9955acd43",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -1157,23 +1157,23 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "84229001",
-                    "value" : "Fatigue"
+                    "value" : "trötthet (fatigue)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "704369007",
-                    "value" : "Fatigue due to treatment"
+                    "value" : "trötthet (fatigue) orsakad av behandling"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "784317004",
-                    "value" : "Fatigue due to chemotherapy"
+                    "value" : "trötthet orsakad av cytostatikabehandling"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "784318009",
-                    "value" : "Fatigue due to radiation therapy"
+                    "value" : "trötthet orsakad av strålbehandling"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "716749005",
-                    "value" : "Cancer-related fatigue"
+                    "value" : "cancerrelaterad trötthet"
                   } ]
                 } ]
               } ],
@@ -2304,15 +2304,15 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "230145002",
-                    "value" : "Difficulty breathing"
+                    "value" : "andningsbesvär"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "248552009",
-                    "value" : "Winded"
+                    "value" : "andfåddhet"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "248549001",
-                    "value" : "Labored breathing"
+                    "value" : "ansträngd andning"
                   } ]
                 } ]
               } ],
@@ -3441,23 +3441,23 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "106076001",
-                    "value" : "Skin finding"
+                    "value" : "fynd som rör huden"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "247440002",
-                    "value" : "Skin or mucosa lesion"
+                    "value" : "lesion på hud eller slemhinna"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "95324001",
-                    "value" : "Skin lesion"
+                    "value" : "hudlesion"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "271807003",
-                    "value" : "Eruption of skin"
+                    "value" : "hudutslag (eruption)"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "444827008",
-                    "value" : "Erythema of skin"
+                    "value" : "huderytem"
                   } ]
                 } ]
               } ],
