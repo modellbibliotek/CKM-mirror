@@ -24,7 +24,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "9.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "8f77a61a835308b305da5017f8535dee",
+      "MD5-CAM-1.0.1" : "4b511f17e04adc4029f340ac9b31a33f",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -1152,7 +1152,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "E79BF25AD13657E474EE3C778DF3D90B"
+        "PARENT:MD5-CAM-1.0.1" : "A9A976F991D312E9DE564B12396B0463"
       },
       "details" : {
         "de" : {
@@ -2321,7 +2321,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "E79BF25AD13657E474EE3C778DF3D90B",
+        "PARENT:MD5-CAM-1.0.1" : "A9A976F991D312E9DE564B12396B0463",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
@@ -3458,7 +3458,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "E79BF25AD13657E474EE3C778DF3D90B",
+        "PARENT:MD5-CAM-1.0.1" : "A9A976F991D312E9DE564B12396B0463",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
@@ -4719,7 +4719,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "E79BF25AD13657E474EE3C778DF3D90B",
+        "PARENT:MD5-CAM-1.0.1" : "A9A976F991D312E9DE564B12396B0463",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
