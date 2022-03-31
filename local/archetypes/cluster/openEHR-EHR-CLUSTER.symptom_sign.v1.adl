@@ -25,7 +25,7 @@ language
 			language = <[ISO_639-1::sv]>
 			author = <
 				["name"] = <"Kirsi Poikela; Erik Sundvall">
-				["organisation"] = <"Tieto Sweden AB; Karolinska Institutet, Karolinska University Hospital, Region Stockholm + Linköping University">
+				["organisation"] = <"Tieto Sweden AB; Karolinska Institutet, Karolinska University Hospital, Region Stockholm + Linköping University, Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University">
 				["email"] = <"ext.kirsi.poikela@tieto.com, erik.sundvall@regionstockholm.se">
 			>
 		>
@@ -257,7 +257,7 @@ Not to be used for diagnoses and problems that form part of a persisting Problem
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"E79BF25AD13657E474EE3C778DF3D90B">
+		["MD5-CAM-1.0.1"] = <"A9A976F991D312E9DE564B12396B0463">
 		["build_uid"] = <"26ffc37b-1247-4b47-b517-4b61239781f9">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"1.0.2-alpha">
@@ -1758,7 +1758,7 @@ If the anatomical location is included in the Symptom name via precoordinated co
 					comment = <"Exempel på påverkande faktorn: Ligger på flera kuddar, äter eller ges ett specifikt läkemedel.">
 				>
 				["at0021"] = <
-					text = <"Svårighetsgrad kategori">
+					text = <"Svårighetsgrad">
 					description = <"Kategori som presenterar symtomens eller tecknets totala svårighetsgrad.">
 					comment = <"Att definiera värden som mild, måttlig eller svår på ett sådant sätt som är tillämpligt på flera symtom eller tecken plus som tillåter flera användare att tolka och registrera dem konsekvent är inte lätt. Vissa organisationer utökar inställningen av värdet ytterligare med att inkludera värden som \"Obetydlig\" och \"Mycket svår\" och\"Mild-Måttlig\" och \"Måttlig-Svår\", vilket ger problem med att förstå skillnaden mellan olika definitioner samt ger svårigheter att jämföra olika mätresultat.
 
@@ -1925,15 +1925,15 @@ Partiella datum och tider är tillåtna, men om det är möjligt och lämpligt k
 					comment = <"Förekomster i det här fältet är inställda på 0.. * för att tillåta flera typer av progression att separeras i en mall om så önskas, exempelvis svårighetsgrad eller frekvens.">
 				>
 				["at0181"] = <
-					text = <"Under förbättring">
+					text = <"förbättras">
 					description = <"Svårighetsgraden av symtomet eller tecknet har förbättrats totalt sett under den här episoden.">
 				>
 				["at0182"] = <
-					text = <"Oförändrat tillstånd">
+					text = <"oförändrat">
 					description = <"Svårighetsgraden av symtomet eller tecknet har inte förändrats totalt sett under denna episod.">
 				>
 				["at0183"] = <
-					text = <"Under försämring">
+					text = <"försämras">
 					description = <"Svårighetsgraden av symtomet eller tecknet har förvärrats totalt sett under denna episod.">
 				>
 				["at0184"] = <
