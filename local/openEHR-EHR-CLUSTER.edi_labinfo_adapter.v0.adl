@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7b529fa66754e3b1353908554fe6b582">
+		["MD5-CAM-1.0.1"] = <"b5d4487bb517b8ae5744bda5abd321a2">
 		["build_uid"] = <"aeddd5fc-7634-3adb-b19b-5eaf6866ddef">
 	>
 
@@ -64,7 +64,11 @@ definition
 					DV_BOOLEAN matches {*}
 				}
 			}
-			ELEMENT[at0005] occurrences matches {0..1} matches {*}    -- observers comment
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- observer comment
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
 		}
 	}
 
@@ -95,8 +99,8 @@ SG12.OBR..C502.6155 (Measurement attribute, coded)">
 					description = <"The incoming (not mapped) Test method identification  code 
 ">
 				>
-				["at0005"] = <
-					text = <"observers comment">
+				["at0007"] = <
+					text = <"observer comment">
 					description = <"">
 				>
 			>
@@ -126,8 +130,8 @@ SG12.OBR..C502.6155 (Measurement attribute, coded) (en)">
 					description = <"*The incoming (not mapped) Test method identification  code 
  (en)">
 				>
-				["at0005"] = <
-					text = <"*observers comment (en)">
+				["at0007"] = <
+					text = <"kommentar">
 					description = <"">
 				>
 			>
