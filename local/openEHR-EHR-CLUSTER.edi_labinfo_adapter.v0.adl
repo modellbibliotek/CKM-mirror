@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b5d4487bb517b8ae5744bda5abd321a2">
+		["MD5-CAM-1.0.1"] = <"267cde30fa305f63021c381312a9b550">
 		["build_uid"] = <"aeddd5fc-7634-3adb-b19b-5eaf6866ddef">
 	>
 
@@ -131,7 +131,7 @@ SG12.OBR..C502.6155 (Measurement attribute, coded) (en)">
  (en)">
 				>
 				["at0007"] = <
-					text = <"kommentar">
+					text = <"analyskommentar">
 					description = <"">
 				>
 			>
