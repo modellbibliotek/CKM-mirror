@@ -37,14 +37,29 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bde06a844920e0f7e7020357df7131f1">
+		["MD5-CAM-1.0.1"] = <"120e960de05930f2a12f4f18a2e3791d">
 		["build_uid"] = <"aeddd5fc-7634-3adb-b19b-5eaf6866ddef">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- juno_labinfo_adapter
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- observed value
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- analysis
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- analysisComment
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- analysisId
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- referenceArea
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -54,19 +69,14 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0004] occurrences matches {0..1} matches {    -- test method id
+			ELEMENT[at0010] occurrences matches {0..1} matches {    -- value
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- pathological
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- isDeviating
 				value matches {
 					DV_BOOLEAN matches {*}
-				}
-			}
-			ELEMENT[at0007] occurrences matches {0..1} matches {    -- observer comment
-				value matches {
-					DV_TEXT matches {*}
 				}
 			}
 		}
@@ -81,26 +91,35 @@ ontology
 					description = <"Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected).">
 				>
 				["at0001"] = <
-					text = <"pathological">
+					text = <"isDeviating">
 					description = <"Pathological manifestation">
 					comment = <"Marked * in EDI message
 SG12.OBR..C502.6155 (Measurement attribute, coded)">
 				>
 				["at0002"] = <
-					text = <"observed value">
-					description = <"">
+					text = <"referenceArea">
+					description = <"Reference range from ..
+">
 				>
 				["at0003"] = <
 					text = <"unit">
 					description = <"">
 				>
-				["at0004"] = <
-					text = <"test method id">
-					description = <"The incoming (not mapped) Test method identification  code 
+				["at0007"] = <
+					text = <"analysisComment">
+					description = <"Kommentar från TakeCares JUNO-API">
+				>
+				["at0008"] = <
+					text = <"analysis">
+					description = <"Analysnamn från TakeCares JUNO-API">
+				>
+				["at0009"] = <
+					text = <"analysisId">
+					description = <"NPU, SWE or local from TakeCare
 ">
 				>
-				["at0007"] = <
-					text = <"observer comment">
+				["at0010"] = <
+					text = <"value">
 					description = <"">
 				>
 			>
@@ -112,26 +131,35 @@ SG12.OBR..C502.6155 (Measurement attribute, coded)">
 					description = <"*Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected). (en)">
 				>
 				["at0001"] = <
-					text = <"patologisk markör">
+					text = <"*isDeviating (en)">
 					description = <"*Pathological manifestation (en)">
 					comment = <"*Marked * in EDI message
 SG12.OBR..C502.6155 (Measurement attribute, coded) (en)">
 				>
 				["at0002"] = <
-					text = <"mätvärde">
-					description = <"">
+					text = <"*referenceArea (en)">
+					description = <"*Reference range from ..
+ (en)">
 				>
 				["at0003"] = <
 					text = <"enhet">
 					description = <"">
 				>
-				["at0004"] = <
-					text = <"testmetod">
-					description = <"*The incoming (not mapped) Test method identification  code 
- (en)">
-				>
 				["at0007"] = <
-					text = <"analyskommentar">
+					text = <"analysisComment">
+					description = <"Kommentar från TakeCares JUNO-API">
+				>
+				["at0008"] = <
+					text = <"analysis">
+					description = <"A
+nalysnamn från TakeCares JUNO-API">
+				>
+				["at0009"] = <
+					text = <"analysisId">
+					description = <"NPU, SWE eller lokal kod från TakeCares JUNO-API">
+				>
+				["at0010"] = <
+					text = <"*value (en)">
 					description = <"">
 				>
 			>
