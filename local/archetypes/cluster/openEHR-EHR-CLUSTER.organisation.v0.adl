@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4; uid=5dde27f7-5241-489e-bb22-0a765a02fa02)
+archetype (adl_version=1.4; uid=5dde27f7-5241-489e-bb22-0a765a02fa02)
 	openEHR-EHR-CLUSTER.organisation.v0
 
 concept
@@ -17,9 +17,9 @@ language
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			author = <
-				["name"] = <"Therese Lindberg, Erik Sundvall">
-				["organisation"] = <"Cambio CDS + Karolinska University Hospital, Region Stockholm + Linköping University">
-				["email"] = <"therese.lindberg@cambio.se, erik.sundvall@regionstockholm.se">
+				["name"] = <"Therese Lindberg">
+				["organisation"] = <"Cambio CDS">
+				["email"] = <"therese.lindberg@cambio.se">
 			>
 		>
 		["nb"] = <
@@ -56,18 +56,19 @@ Dieser Archetyp könnte auch als Proxy für formale demografische Daten verwende
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
-			purpose = <"Att registrera information om en organisation som behöver representeras i journalen.">
-			use = <"Används för att registrera information om en organisation som behöver representeras i journalen. Exempel inkluderar:
-- namn och kontaktuppgifter för en organisation som har en fysisk kopia av patientens önskemål om vård i händelse av att patienten inte längre kan kommunicera
-- namn och kontaktuppgifter för hemtjänst- eller hemsjukvårdsorganisation vid överföring av journaluppgifter mellan organisationer
+			purpose = <"Att registrera information om en organisation som behöver representeras i hälsojournalen.">
+			use = <"Används för att registrera information om en organisation som behöver representeras i hälsojournalen. Exempel inkluderar:
+- namn och kontaktuppgifter för en organisation som har en fysisk kopia av en avancerad vårdregistrering;
+- namn och kontaktuppgifter för en besökande hemsjukvårdsorganisation vid överföring av medicinska journaler mellan kliniker, eller
+- namn, roll och kontaktuppgifter för en medlem i ett vårdteam.
 
-Defintionien eller omfattningen av en 'organisation' kan i detta sammanhang vara informell och flexibel så länge den tjänar syftet. Till exempel:
+I detta sammanhang för att registrera en organisations kontaktuppgifter eller personer inom organisationen kan omfattningen av en 'organisation' vara informell och flexibel så länge den tjänar syftet. Till exempel:
 - ett sjukhus; eller
-- en \"underorganisation\" för ett sjukhus, såsom en separat eller specialiserad satellitklinik för ett sjukhus eller en tillhörande hemsjukvårs.
+- en \"underorganisation\" för ett sjukhus, såsom en operativt separat eller specialiserad satellitklinik för ett sjukhus eller en tillhörande hemtjänst.
 
-Den här arketypen kan också användas som en proxy för formell demografisk data när man granskar en mall med domänexperter - exempelvis där granskare förväntar sig att se en organisations information i ett formulär.">
-			keywords = <"organisation, leverantör, vårdgivare, vårdenhet", ...>
-			misuse = <"Inte avsedd att representera eller ersätta formell identifieringshantering eller för att upprätta ett demografiskt register eller index. Använd en katalogtjänst för detta ändamål eller arketyper baserade på openEHRs demografiska informationsmodell.">
+Den här arketypen kan också användas som en proxy för formell demografisk data när man granskar en mall med domenexperter - till exempel en bedömning där granskare förväntar sig att se en organisations information på en utvärderingsblankett.">
+			keywords = <"organisation, leverantör, vårdgivare", ...>
+			misuse = <"Inte utformad för att representera eller ersätta de formella demografiska detaljerna för formell identifieringshantering eller för att upprätthålla ett demografiskt register eller index. Använd ett formellt vårdgivarindex för detta ändamål eller arketyper baserat på openEHR Demografisk informationsmodell.">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -116,8 +117,8 @@ HL7 FHIR Resource - Organization v4.0.1: R4 [Internet]. Health Level Seven Inter
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"56687785A4AEF4D2BE503626E5D494CB">
-		["build_uid"] = <"5b39d7fe-0014-4e5e-babb-1ca545b6974b">
+		["MD5-CAM-1.0.1"] = <"5A3F05C744F8449A401EE8BDEED5D610">
+		["build_uid"] = <"602210ec-a855-44a1-9f2f-090d496fde31">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -443,13 +444,13 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Organisation">
-					description = <"In identifierad organisationsenhet eller en informell grupp.">
-					comment = <"Exempelvis företag, institution, avdeling, enhet, förening, vårdgivare, försäkringsbolag, vårdteam, eller en grupp grannar som fungerar som stöd.">
+					description = <"Ett företag, en institution eller en förening som behöver representeras inom hälsojournalen.">
+					comment = <"*For example: a company, institution, corporation, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who will act as carers or support.(en)">
 				>
 				["at0001"] = <
-					text = <"Namn">
-					description = <"Organisationenes namn">
-					comment = <"Exempelvis: 'Royal Children's Hospital'; 'ABC District Nursing Service'; 'YNWA Oslo' or 'JB Smith Lawyers'.">
+					text = <"Namnrad">
+					description = <"Namnet som en organisation är känd för.">
+					comment = <"*For example: 'Royal Children's Hospital'; 'ABC District Nursing Service'; 'YNWA Oslo' or 'JB Smith Lawyers'.(en)">
 				>
 				["at0002"] = <
 					text = <"Kontaktperson">
@@ -461,12 +462,12 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Roll">
-					description = <"Organisationens relation eller roll till till individen eller patienten">
-					comment = <"Exempelvis juridiskt ombud, försäkringsbolag, skola, klinik, sjukhus eller informellt stödjande nätverk">
+					description = <"Den roll eller kapacitet i vilken organisationen bidrar till vårdpersonens hälsa eller sociala vård.">
+					comment = <"*For example: Lawyer, insurance company, school, health clinic, hospital, or informal support network.(en)">
 				>
 				["at0005"] = <
 					text = <"Adress">
-					description = <"Detaljer om en adress för organisationen.">
+					description = <"Detaljer om en specifik adress för organisationen.">
 				>
 				["at0006"] = <
 					text = <"Elektronisk kommunikation">
@@ -475,7 +476,7 @@ ontology
 				["at0007"] = <
 					text = <"Medium">
 					description = <"Typ av elektronisk kommunikation eller kanal.">
-					comment = <"Omfattningen av elektroniskt kommunikationsmedium inkluderar, men är inte begränsat till, användning av: en telefon, mobiltelefon, epost, personsökare, fax, videokonferens eller sociala media.">
+					comment = <"Omfattningen av elektroniskt kommunikationsmedium inkluderar, men är inte begränsat till, användning av: en telefon, mobiltelefon, dator eller personsökare.">
 				>
 				["at0008"] = <
 					text = <"Mobiltelefon">
@@ -486,7 +487,7 @@ ontology
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"Epost">
+					text = <"Email">
 					description = <"">
 				>
 				["at0011"] = <
@@ -503,20 +504,20 @@ ontology
 					description = <"Ytterligare detaljer om organisationen.">
 				>
 				["at0018"] = <
-					text = <"Kommentar">
-					description = <"Beskrivning av kommunikationsmediet som inte kunnat anges i övriga fält">
+					text = <"*Comment(en)">
+					description = <"*Additional narrative about the electronic communication not captured in other fields.(en)">
 				>
 				["at0019"] = <
-					text = <"Kommentar">
-					description = <"Beskrivning av organisationen som inte kunnat anges i övriga fält">
+					text = <"*Comment(en)">
+					description = <"*Additional narrative about the organisation not captured in other fields.(en)">
 				>
 				["at0020"] = <
-					text = <"Fax">
+					text = <"*Fax(en)">
 					description = <"">
 				>
 				["at0021"] = <
-					text = <"Överordnad organisation">
-					description = <"En större organisation som denna organisation är en del av.">
+					text = <"*Parent organisation(en)">
+					description = <"*A larger organisation of which this organisation is a child or subsidiary.(en)">
 				>
 			>
 		>
