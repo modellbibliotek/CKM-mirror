@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "18.0.0",
+      "sem_ver" : "19.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "01a3d4d50d51b9cd9abb4a7f862a9910",
+      "MD5-CAM-1.0.1" : "9f16369cd8f3af9493cb8b63be245afd",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -4118,6 +4118,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -5331,7 +5332,17 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0008.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -5344,6 +5355,20 @@
             "code" : "at0004",
             "text" : "test method id",
             "description" : "The incoming (not mapped) Test method identification  code \n"
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "analysis",
+            "description" : "Analysnamn från TakeCares JUNO-API",
+            "comment" : "---begin-mapping-instruction---\nCOPY /LabReplyChem/samples/samples[x]/analyses/analyses[y]/analysis\n---end-mapping-instruction---"
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "analysis",
+            "description" : "Analysnamn från TakeCares JUNO-API",
+            "comment" : "---begin-mapping-instruction---\nCOPY /LabReplyChem/samples/samples[x]/analyses/analyses[y]/analysis\n---end-mapping-instruction---"
           }
         },
         "sv" : {
