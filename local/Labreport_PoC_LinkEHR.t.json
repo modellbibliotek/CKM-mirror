@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "22.0.0",
+      "sem_ver" : "22.0.1",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "2b0048037553011039acdc91056a5e99",
-      "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
+      "MD5-CAM-1.0.1" : "3cd56b02b2222d67153a62e5e66c5244",
+      "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
       "de" : {
@@ -169,6 +169,20 @@
           "codeString" : "nl"
         },
         "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "zh" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh"
+        },
+        "purpose" : "用作携带共享所需信息的通用容器原型。",
+        "keywords" : [ "报告" ],
+        "use" : "用作携带共享所需信息的通用原型。\r\n常见用例是：请求信息的响应记录；测试结果；已进行的活动；或已经发生的事件。\r\n主要的Section/Content有意设计为不受约束，从而允许在模板中填充符合临床目的的任何 SECTION 或 ENTRY 原型。",
         "originalResourceUri" : { },
         "otherDetails" : { }
       }
@@ -484,19 +498,19 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000",
           "text" : "Rapport",
-          "description" : "Dokument för att kommunicera information till andra, vanligen som svar på en begäran från en annan part."
+          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
         },
         "at0002" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0002",
-          "text" : "Rapport ID",
-          "description" : "Information som identifierar rapporten\r\n"
+          "text" : "Rapport-id",
+          "description" : "Information som identifierar rapporten.\r\n"
         },
         "at0005" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0005",
           "text" : "Status",
-          "description" : "Status för hela rapporten. Observera: Detta är inte status för någon av rapportkomponenterna."
+          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -508,8 +522,53 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
           "text" : "Tilläggsinformation",
-          "description" : "Ytterligare information som krävs för att fånga lokalt sammanhang eller för att anpassning till andra referensmodeller/formalismer. \r\n",
-          "comment" : "Till exempel: lokala informationskrav eller ytterligare metadata för att anpassning till FHIR eller CIMI."
+          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapport",
+          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
+        }
+      },
+      "zh" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "报告",
+          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "报告",
+          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "报告",
+          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "报告ID",
+          "description" : "关于这份报告的标识信息。"
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "状态",
+          "description" : "整份报告的状态。注意：这不是指报告的任何一个组成部分的状态"
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "扩展",
+          "description" : "用于捕获本地的上下文或与其他参考模型/形式保持一致所需的其他信息。",
+          "comment" : "比如：本地的信息需求或是为了与FHIR或CIMI保持一致的其他元数据。"
         }
       }
     },
@@ -1142,7 +1201,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0A48CEA5CFCABE46203C50BDC1AA6760"
+        "PARENT:MD5-CAM-1.0.1" : "E637F4E72B8AF6864C778C54E519ADA4"
       },
       "details" : {
         "de" : {
@@ -2060,7 +2119,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "2539a5064f1d5c07e57b7948eaf720a4"
+        "PARENT:MD5-CAM-1.0.1" : "A36E1D46F5D27FA50239A25435C2FC98"
       },
       "details" : {
         "de" : {
@@ -2180,13 +2239,6 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0004.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..0",
-          "nodeId" : "at0006.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
@@ -2429,7 +2481,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "2539a5064f1d5c07e57b7948eaf720a4"
+        "PARENT:MD5-CAM-1.0.1" : "A36E1D46F5D27FA50239A25435C2FC98"
       },
       "details" : {
         "de" : {
@@ -2518,13 +2570,41 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0003.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0003.2",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -2545,13 +2625,6 @@
               "attributeTuples" : [ ]
             } ]
           } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..0",
-          "nodeId" : "at0006.1",
-          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -2951,7 +3024,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "2539a5064f1d5c07e57b7948eaf720a4"
+        "PARENT:MD5-CAM-1.0.1" : "A36E1D46F5D27FA50239A25435C2FC98"
       },
       "details" : {
         "de" : {
@@ -3044,13 +3117,6 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0004.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..0",
-          "nodeId" : "at0006.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
         } ]
@@ -3151,7 +3217,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "2539a5064f1d5c07e57b7948eaf720a4"
+        "PARENT:MD5-CAM-1.0.1" : "A36E1D46F5D27FA50239A25435C2FC98"
       },
       "details" : {
         "de" : {
@@ -3260,13 +3326,6 @@
               "attributeTuples" : [ ]
             } ]
           } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..0",
-          "nodeId" : "at0006.1",
-          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -4012,7 +4071,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "2539a5064f1d5c07e57b7948eaf720a4"
+        "PARENT:MD5-CAM-1.0.1" : "A36E1D46F5D27FA50239A25435C2FC98"
       },
       "details" : {
         "de" : {
@@ -4105,13 +4164,6 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0004.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..0",
-          "nodeId" : "at0006.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
         } ]
@@ -5022,6 +5074,20 @@
       "codeString" : "nl"
     },
     "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh"
+    },
+    "author" : {
+      "name" : "Yexuan Cheng",
+      "organisation" : "浙江大学",
+      "email" : "3160100913@zju.edu.cn"
+    },
     "otherDetails" : { }
   } ]
 }
