@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "19.0.0",
+      "sem_ver" : "19.0.1",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "9f16369cd8f3af9493cb8b63be245afd",
+      "MD5-CAM-1.0.1" : "3468cff723326c30e69afdf9d37fcbc3",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -5363,12 +5363,18 @@
             "description" : "Analysnamn från TakeCares JUNO-API",
             "comment" : "---begin-mapping-instruction---\nCOPY /LabReplyChem/samples/samples[x]/analyses/analyses[y]/analysis\n---end-mapping-instruction---"
           },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "juno_labinfo_adapter",
+            "description" : "Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected).",
+            "comment" : "---begin-mapping-instruction---\n\nSRCPATH =\nRULE = Create an instance for each analyte in source (Attribute names are identical)\n---end-mapping-instruction---"
+          },
           "at0008.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0008.1",
             "text" : "analysis",
-            "description" : "Analysnamn från TakeCares JUNO-API",
-            "comment" : "---begin-mapping-instruction---\nCOPY /LabReplyChem/samples/samples[x]/analyses/analyses[y]/analysis\n---end-mapping-instruction---"
+            "description" : "Analysnamn från TakeCares JUNO-API"
           }
         },
         "sv" : {
