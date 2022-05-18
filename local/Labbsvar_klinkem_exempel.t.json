@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "19.0.2",
+      "sem_ver" : "19.0.3",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "e858956c5edc61444b3b5282a89ecc31",
+      "MD5-CAM-1.0.1" : "7fbccf9925a7304ec2b0ea575ae44b91",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -5368,7 +5368,7 @@
             "code" : "at0000",
             "text" : "juno_labinfo_adapter",
             "description" : "Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected).",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples[x]/analyses/analyses[y]/analysis\nRULE = Create an instance for each analyte in source (Attribute names are identical)\n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples[x]/analyses/analyses[y]/analysis\nRULE = Create an instance for each analysis in source (Attribute names are identical)\n---end-mapping-instruction---"
           },
           "at0008.1" : {
             "@type" : "ARCHETYPE_TERM",
