@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "28.0.0",
+      "sem_ver" : "29.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "62d86407152347f039289c000b74ef22",
+      "MD5-CAM-1.0.1" : "6373a257b30c1e1df9217fe9e216bb07",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -2741,7 +2741,7 @@
             "code" : "at0015.1",
             "text" : "Collection date/time",
             "description" : "The date and time that collection has been ordered to take place or has taken place.",
-            "comment" : "This datetime will be captured primarily in the INSTRUCTION timing, ACTION time or OBSERVATION times. However, as this is a critical piece of information, it can be useful to also associate it directly with the specimen itself.\n"
+            "comment" : "This datetime will be captured primarily in the INSTRUCTION timing, ACTION time or OBSERVATION times. However, as this is a critical piece of information, it can be useful to also associate it directly with the specimen itself.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /ChemReply/samplingDateTime\nRULE = COPY (To all specimen instances)\n---end-mapping-instruction---\n"
           }
         },
         "pt-br" : { },
