@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "23.0.0",
+      "sem_ver" : "23.0.1",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "109d85acb9e29cf1dfc4f73edc508868",
+      "MD5-CAM-1.0.1" : "68cf8cbb1ad95f21c0bbf3fe69c0628a",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -303,12 +303,6 @@
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Document to communicate information to others about the result of a test or assessment."
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "Report ID",
-          "description" : "Identification information about the report."
         },
         "at0002.0.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -1646,13 +1640,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.4",
             "description" : ""
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "Test name",
-            "description" : "Name of the laboratory investigation performed on the specimen(s).",
-            "comment" : "A test result may be for a single analyte, or a group of items, including panel tests. It is strongly recommended that 'Test name' be coded with a terminology, for example LOINC or SNOMED CT. For example: 'Glucose', 'Urea and Electrolytes', 'Swab', 'Cortisol (am)', 'Potassium in perspiration' or 'Melanoma histopathology'. The name may sometimes include specimen type and patient state, for example 'Fasting blood glucose' or include other information, as 'Potassium (PNA blood gas)'.\n\n"
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3520,6 +3507,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_IDENTIFIER",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
               "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
@@ -3581,7 +3571,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.2",
             "text" : "Kombikakod",
-            "description" : "Identifier associated with the organisation."
+            "description" : "Identifier associated with the organisation.",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /ChemReply/ordererCareUnitExternalId\nRULE = COPY\n---end-mapping-instruction---"
           }
         },
         "nb" : {
