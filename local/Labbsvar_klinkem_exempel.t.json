@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "21.0.0",
+      "sem_ver" : "22.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "993829e69d31a9d83adc5dfa9110c0f1",
+      "MD5-CAM-1.0.1" : "344eb14c9cbefc652d06988aaff0b266",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -215,6 +215,12 @@
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "items",
               "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0002.0.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
                 "@type" : "C_ARCHETYPE_ROOT",
                 "rmTypeName" : "CLUSTER",
                 "occurrences" : "0..1",
@@ -297,6 +303,19 @@
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Document to communicate information to others about the result of a test or assessment."
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Report ID",
+          "description" : "Identification information about the report."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.0.1",
+          "text" : "Report ID",
+          "description" : "Identification information about the report.",
+          "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /ChemReply/referralId\nRULE = COPY\n---end-mapping-instruction---"
         }
       },
       "es-ar" : {
@@ -408,6 +427,12 @@
           "text" : "Extensão",
           "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
           "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.0.1",
+          "text" : "Identificador do relatório",
+          "description" : "Informação de identificação sobre o relatório."
         }
       },
       "de" : {
@@ -440,6 +465,12 @@
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Das Dokument wird verwendet, um Informationen über das Ergebnis eines Tests oder einer Bewertung zu übermitteln."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.0.1",
+          "text" : "Bericht ID",
+          "description" : "Identifizierungsmerkmal des Berichts."
         }
       },
       "ko" : {
@@ -501,6 +532,12 @@
           "code" : "at0000",
           "text" : "Raportti",
           "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.0.1",
+          "text" : "Raportti ID",
+          "description" : "Raportin tunnistetiedot"
         }
       },
       "it" : {
@@ -554,6 +591,12 @@
           "code" : "at0000",
           "text" : "Rapporto",
           "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.0.1",
+          "text" : "ID del rapporto",
+          "description" : "Informazioni di identificazione del rapporto"
         }
       },
       "nl" : {
@@ -607,6 +650,12 @@
           "code" : "at0000",
           "text" : "Rapportage",
           "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.0.1",
+          "text" : "Rapportage ID",
+          "description" : "Identificerende informatie over deze rapportage."
         }
       },
       "sv" : {
@@ -660,6 +709,12 @@
           "code" : "at0000",
           "text" : "Rapport",
           "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.0.1",
+          "text" : "Rapport-id",
+          "description" : "Information som identifierar rapporten.\r\n"
         }
       },
       "zh" : {
@@ -713,6 +768,12 @@
           "text" : "扩展",
           "description" : "用于捕获本地的上下文或与其他参考模型/形式保持一致所需的其他信息。",
           "comment" : "比如：本地的信息需求或是为了与FHIR或CIMI保持一致的其他元数据。"
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.0.1",
+          "text" : "报告ID",
+          "description" : "关于这份报告的标识信息。"
         }
       }
     },
@@ -2059,13 +2120,6 @@
             "description" : "Additional narrative about the specimen not captured in other fields.",
             "fhir_mapping" : "Specimen.note",
             "comment" : "Fredrik:"
-          },
-          "at0015" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0015",
-            "text" : "Collection date/time",
-            "description" : "The date and time that collection has been ordered to take place or has taken place.",
-            "comment" : "This datetime will be captured primarily in the INSTRUCTION timing, ACTION time or OBSERVATION times. However, as this is a critical piece of information, it can be useful to also associate it directly with the specimen itself.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samplingDateTime\nRULE = COPY\nNOTE = Set same value in all Specimen instances\n---end-mapping-instruction---"
           },
           "at0015.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -5226,13 +5280,6 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "at0010" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010",
-            "text" : "Requester order identifier",
-            "description" : "The local identifier assigned by the requesting clinical system.",
-            "comment" : "Usually equivalent to the HL7 Placer Order Identifier.\n---"
-          },
           "at0010.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0010.1",
@@ -5427,25 +5474,12 @@
             "text" : "test method id",
             "description" : "The incoming (not mapped) Test method identification  code \n"
           },
-          "at0008" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008",
-            "text" : "analysis",
-            "description" : "Analysnamn från TakeCares JUNO-API",
-            "comment" : "---begin-mapping-instruction---\nCOPY /LabReplyChem/samples/samples[x]/analyses/analyses[y]/analysis\n---end-mapping-instruction---"
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
             "text" : "juno_labinfo_adapter",
             "description" : "Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected).",
             "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples[x]/analyses/analyses[y]/analysis\nRULE = Create an instance for each analysis in source (Attribute names are identical)\n---end-mapping-instruction---"
-          },
-          "at0008.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008.1",
-            "text" : "analysis",
-            "description" : "Analysnamn från TakeCares JUNO-API"
           }
         },
         "sv" : {
