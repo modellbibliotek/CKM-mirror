@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "26.0.0",
+      "sem_ver" : "27.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
       "MD5-CAM-1.0.1" : "b414a1359a05c7c342391b8b1cd19254",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
@@ -1695,7 +1695,7 @@
             "code" : "at0075",
             "text" : "Overall test status timestamp",
             "description" : "The date and/or time that ‘Overall test status’ was issued.",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/\nRULE = \"Final\" if isFinal otherwise \"Partial\"\nWN = \n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/replyTime\nRULE = COPY\nWN = \n---end-mapping-instruction---"
           },
           "at0073.1" : {
             "@type" : "ARCHETYPE_TERM",
