@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "25.0.0",
+      "sem_ver" : "25.0.1",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "ed7b25617c355421589f2a3eb6e81997",
+      "MD5-CAM-1.0.1" : "537b54a96ae95a0975ccf19daec27f88",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -1578,6 +1578,9 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_IDENTIFIER",
+                      "defaultValue" : {
+                        "@type" : "DV_IDENTIFIER"
+                      },
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
@@ -1677,6 +1680,13 @@
             "text" : "Receiver order identifier",
             "description" : "The local identifier assigned to the test order by the order filler, usually by the Laboratory Information System (LIS).",
             "comment" : "Assigning an identifier to a request by the Laboratory lnformation System (LIS) enables tracking progress of the request and enables linking results to requests. It also provides a reference to assist with enquiries and it is usually equivalent to the HL7 Filler Order Identifier.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = LabReply/LID\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0062.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0062",
+            "text" : "Requester order identifier",
+            "description" : "The local identifier assigned by the requesting clinical system.",
+            "comment" : "Equivalent to the HL7 Placer Order Identifier.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /ChemReply/referralId\nRULE = COPY\n---end-mapping-instruction---"
           },
           "at0063.1" : {
             "@type" : "ARCHETYPE_TERM",
