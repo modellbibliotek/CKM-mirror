@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "25.0.1",
+      "sem_ver" : "25.0.2",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "537b54a96ae95a0975ccf19daec27f88",
+      "MD5-CAM-1.0.1" : "5d8164b8bc5383105fecc5eb30ec6a88",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -309,7 +309,7 @@
           "code" : "at0002.0.1",
           "text" : "Report ID",
           "description" : "Identification information about the report.",
-          "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /ChemReply/referralId\nRULE = COPY\n---end-mapping-instruction---"
+          "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/referralId\nRULE = COPY\n---end-mapping-instruction---"
         }
       },
       "es-ar" : {
@@ -3622,14 +3622,14 @@
             "code" : "at0003.1",
             "text" : "HSAID",
             "description" : "Identifier associated with the organisation.",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /ChemReply/ordererCareUnitExternalId\nRULE = Lookup Organization.identifier.hsaid (Organization.identifier.kombika=SRCPATH)\n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/ordererCareUnitExternalId\nRULE = Lookup Organization.identifier.hsaid (Organization.identifier.kombika=SRCPATH)\n---end-mapping-instruction---"
           },
           "at0003.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.2",
             "text" : "Kombikakod",
             "description" : "Identifier associated with the organisation.",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /ChemReply/ordererCareUnitExternalId\nRULE = COPY\n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/ordererCareUnitExternalId\nRULE = COPY\n---end-mapping-instruction---"
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
