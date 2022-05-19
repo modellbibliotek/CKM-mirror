@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "25.0.3",
+      "sem_ver" : "26.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "3ef3ab936743c3f5d4e8650024f1766c",
+      "MD5-CAM-1.0.1" : "b414a1359a05c7c342391b8b1cd19254",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -1481,6 +1481,21 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0075.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_DATE_TIME",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0077.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -1675,6 +1690,13 @@
             "description" : "The local identifier assigned to the test order by the order filler, usually by the Laboratory Information System (LIS).",
             "comment" : "Assigning an identifier to a request by the Laboratory lnformation System (LIS) enables tracking progress of the request and enables linking results to requests. It also provides a reference to assist with enquiries and it is usually equivalent to the HL7 Filler Order Identifier.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = LabReply/LID\nRULE = COPY\n---end-mapping-instruction---"
           },
+          "at0075" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0075",
+            "text" : "Overall test status timestamp",
+            "description" : "The date and/or time that ‘Overall test status’ was issued.",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/\nRULE = \"Final\" if isFinal otherwise \"Partial\"\nWN = \n---end-mapping-instruction---"
+          },
           "at0073.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0073",
@@ -1701,6 +1723,13 @@
             "text" : "(Synthesized)",
             "code" : "ac0.109",
             "description" : ""
+          },
+          "at0075.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0075.1",
+            "text" : "Overall test status timestamp",
+            "description" : "The date and/or time that ‘Overall test status’ was issued.",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/isFinal\nRULE = \"Final\" if isFinal otherwise \"Partial\"\n---end-mapping-instruction---"
           }
         },
         "nb" : {
