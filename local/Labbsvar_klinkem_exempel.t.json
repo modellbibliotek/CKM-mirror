@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "23.0.1",
+      "sem_ver" : "24.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "68cf8cbb1ad95f21c0bbf3fe69c0628a",
+      "MD5-CAM-1.0.1" : "2a75eef769b2dd7f87bd473bb29af0ac",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -3480,6 +3480,12 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "nodeId" : "at0003.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -3487,6 +3493,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_IDENTIFIER",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
               "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
@@ -3565,7 +3574,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
             "text" : "HSAID",
-            "description" : "Identifier associated with the organisation."
+            "description" : "Identifier associated with the organisation.",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /ChemReply/ordererCareUnitExternalId\nRULE = Lookup Organization.identifier.hsaid (Organization.identifier.kombika=SRCPATH)\n---end-mapping-instruction---"
           },
           "at0003.2" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3573,6 +3583,20 @@
             "text" : "Kombikakod",
             "description" : "Identifier associated with the organisation.",
             "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /ChemReply/ordererCareUnitExternalId\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Name",
+            "description" : "The unstructured name or label for the organisation.",
+            "comment" : "For example: 'Royal Children's Hospital'; 'ABC District Nursing Service'; 'YNWA Oslo' or 'JB Smith Lawyers'.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /ChemReply/ordererCareUnitExternalId\nRULE = Lookup Organization.name (Organization.identifier.kombika=SRCPATH)\n---end-mapping-instruction---"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Name",
+            "description" : "The unstructured name or label for the organisation.",
+            "comment" : "For example: 'Royal Children's Hospital'; 'ABC District Nursing Service'; 'YNWA Oslo' or 'JB Smith Lawyers'.\n"
           }
         },
         "nb" : {
