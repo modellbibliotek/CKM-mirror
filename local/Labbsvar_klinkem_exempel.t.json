@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "31.0.0",
+      "sem_ver" : "32.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "9880a2cefa02ca303d2f2646cc3f8ceb",
+      "MD5-CAM-1.0.1" : "7dd61945af98065d4f824ae7408e002c",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -1716,6 +1716,13 @@
             "text" : "Overall test status timestamp",
             "description" : "The date and/or time that ‘Overall test status’ was issued.",
             "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/replyTime\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0065" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Specimen detail",
+            "description" : "Details about the physical substance that has been analysed.",
+            "comment" : "If the specimen type is sufficiently specified with a code in the Test name, then this additional data is not required. Linking results to specific specimens may be recorded using 'Specimen identifier' elements in both the CLUSTER.specimen and the various results CLUSTER archetypes.\n"
           }
         },
         "nb" : {
@@ -2728,6 +2735,13 @@
             "text" : "Collection date/time",
             "description" : "The date and time that collection has been ordered to take place or has taken place.",
             "comment" : "This datetime will be captured primarily in the INSTRUCTION timing, ACTION time or OBSERVATION times. However, as this is a critical piece of information, it can be useful to also associate it directly with the specimen itself.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /ChemReply/samplingDateTime\nRULE = COPY (To all specimen instances)\n---end-mapping-instruction---\n"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Specimen",
+            "description" : "A physical sample collected from, or related to, an individual for the purpose of investigation, examination or analysis.",
+            "comment" : "For example: Tissue or body fluid.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples\nRULE = Create one Specimen per samples element in source\n---end-mapping-instruction---"
           }
         },
         "pt-br" : { },
