@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "29.0.0",
+      "sem_ver" : "30.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "6373a257b30c1e1df9217fe9e216bb07",
+      "MD5-CAM-1.0.1" : "b865f3770d7fdb24cd632b55d6d37dde",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -1482,16 +1482,7 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0075.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_DATE_TIME",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -1682,20 +1673,6 @@
             "text" : "Test name",
             "description" : "Name of the laboratory investigation performed on the specimen(s).",
             "comment" : "A test result may be for a single analyte, or a group of items, including panel tests. It is strongly recommended that 'Test name' be coded with a terminology, for example LOINC or SNOMED CT. For example: 'Glucose', 'Urea and Electrolytes', 'Swab', 'Cortisol (am)', 'Potassium in perspiration' or 'Melanoma histopathology'. The name may sometimes include specimen type and patient state, for example 'Fasting blood glucose' or include other information, as 'Potassium (PNA blood gas)'.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = \nRULE = Hard-code \"KUL Klinisk Kemi\"\nCOMMENT = Bastard use of field should be proper coding\n---end-mapping-instruction---\n"
-          },
-          "at0063" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0063",
-            "text" : "Receiver order identifier",
-            "description" : "The local identifier assigned to the test order by the order filler, usually by the Laboratory Information System (LIS).",
-            "comment" : "Assigning an identifier to a request by the Laboratory lnformation System (LIS) enables tracking progress of the request and enables linking results to requests. It also provides a reference to assist with enquiries and it is usually equivalent to the HL7 Filler Order Identifier.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = LabReply/LID\nRULE = COPY\n---end-mapping-instruction---"
-          },
-          "at0075" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0075",
-            "text" : "Overall test status timestamp",
-            "description" : "The date and/or time that ‘Overall test status’ was issued.",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/replyTime\nRULE = COPY\nWN = \n---end-mapping-instruction---"
           },
           "at0073.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3938,7 +3915,29 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -3951,6 +3950,20 @@
             "code" : "at0000.1",
             "text" : "LIS",
             "description" : "System"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "identifier",
+            "description" : "",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/lab/SID\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "identifier",
+            "description" : "",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples[x]/analyses/analyses[y]/analysis\nRULE = Create an instance for each analysis in source (Attribute names are identical)\n---end-mapping-instruction---"
           }
         },
         "sv" : {
@@ -4191,13 +4204,6 @@
             "text" : "Kombikakod",
             "description" : "Identifier associated with the organisation.",
             "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/ordererCareUnitExternalId\nRULE = COPY\n---end-mapping-instruction---"
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Name",
-            "description" : "The unstructured name or label for the organisation.",
-            "comment" : "For example: 'Royal Children's Hospital'; 'ABC District Nursing Service'; 'YNWA Oslo' or 'JB Smith Lawyers'.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /ChemReply/ordererCareUnitExternalId\nRULE = Lookup Organization.name (Organization.identifier.kombika=SRCPATH)\n---end-mapping-instruction---"
           },
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
