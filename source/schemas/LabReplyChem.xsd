@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="Root">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="versionId" type="xs:unsignedLong" minOccurs="0"/>
+                <xs:element name="samplingDateTime" type="xs:unsignedLong" minOccurs="0"/>
+                <xs:element name="LID" type="xs:string" minOccurs="0"/>
+                <xs:element name="referralId" type="xs:string" minOccurs="0"/>
+                <xs:element name="id" type="xs:unsignedInt" minOccurs="0"/>
+                <xs:element name="type" type="DocumentType" minOccurs="0"/>
+                <xs:element name="isFinal" type="xs:boolean" minOccurs="0"/>
+                <xs:element name="saved" type="CreatedLabReply" minOccurs="0"/>
+                <xs:element name="lab" type="LabUnit" minOccurs="0"/>
+                <xs:element name="ordererCareUnitExternalId" type="xs:string" minOccurs="0"/>
+                <xs:element name="invoiceeCareUnitExternalId" type="xs:string" minOccurs="0"/>
+                <xs:element name="referringDoctor" type="xs:string" minOccurs="0"/>
+                <xs:element name="attestation" type="Attestation" minOccurs="0"/>                
+                <xs:element name="order" type="Document" minOccurs="0"/>
+                <xs:element name="isCopy" type="xs:boolean" minOccurs="0"/>                
+                <xs:element name="originalRecipientsAddress" type="xs:string" minOccurs="0"/>
+                <xs:element name="comment" type="xs:string" minOccurs="0"/>
+                <xs:element name="orderComment" type="xs:string" minOccurs="0"/>
+                <xs:element name="replyTime" type="xs:unsignedLong" minOccurs="0"/>
+                <xs:element name="samples" type="SamplesChem" minOccurs="0"/>                
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="SamplesChem">
+        <xs:sequence>    
+            <xs:element name="samples" type="SampleChem" minOccurs="0" maxOccurs="unbounded"/>            
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SampleChem">
+        <xs:all>    
+            <xs:element name="analyses" type="AnalysesChem" minOccurs="0"/>
+            <xs:element name="groupComment" type="xs:string" minOccurs="0"/>            
+            <xs:element name="group" type="xs:string" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="AnalysesChem">
+        <xs:sequence>    
+            <xs:element name="analyses" type="AnalysisChem" minOccurs="0" maxOccurs="unbounded"/>            
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AnalysisChem">
+        <xs:all>                
+            <xs:element name="analysisComment" type="xs:string" minOccurs="0"/>
+            <xs:element name="referenceArea" type="xs:string" minOccurs="0"/>
+            <xs:element name="isDeviating" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="analysisId" type="xs:string" minOccurs="0"/>
+            <xs:element name="analysis" type="xs:string" minOccurs="0"/>
+            <xs:element name="value" type="xs:string" minOccurs="0"/>            
+            <xs:element name="unit" type="xs:string" minOccurs="0"/>            
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="DocumentType">
+        <xs:all>    
+            <xs:element name="id" type="xs:unsignedInt" minOccurs="0"/>
+            <xs:element name="name" type="xs:string" minOccurs="0"/>            
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="CreatedLabReply">
+        <xs:all>    
+            <xs:element name="dateTime" type="xs:unsignedLong" minOccurs="0"/>
+            <xs:element name="careUnit" type="CareUnit" minOccurs="0"/>            
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="CareUnit">
+        <xs:all>    
+            <xs:element name="id" type="xs:unsignedInt" minOccurs="0"/>
+            <xs:element name="name" type="xs:string" minOccurs="0"/>            
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="LabUnit">
+        <xs:all>    
+            <xs:element name="SID" type="xs:string" minOccurs="0"/>
+            <xs:element name="careUnit" type="CareUnit" minOccurs="0"/>            
+        </xs:all>
+    </xs:complexType>     
+    <xs:complexType name="Attestation">
+        <xs:all>    
+            <xs:element name="createdDateTime" type="xs:unsignedLong" minOccurs="0"/>
+            <xs:element name="attested" type="Attested" minOccurs="0"/>
+            <xs:element name="patient" type="Patient" minOccurs="0"/>
+            <xs:element name="document" type="AttestationDocument" minOccurs="0"/>
+            <xs:element name="careUnit" type="CareUnit" minOccurs="0"/>            
+            <xs:element name="responsibleAttester" type="User" minOccurs="0"/>
+            <xs:element name="responsibleAttesterName" type="xs:string" minOccurs="0"/>            
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="Attested">
+        <xs:all>    
+            <xs:element name="dateTime" type="xs:unsignedLong" minOccurs="0"/>
+            <xs:element name="user" type="User" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>    
+    <xs:complexType name="Patient">
+        <xs:all>    
+            <xs:element name="id" type="xs:unsignedLong" minOccurs="0"/>
+            <xs:element name="idFormatted" type="xs:string" minOccurs="0"/>
+            <xs:element name="fullName" type="xs:string" minOccurs="0"/>
+            <xs:element name="firstName" type="xs:string" minOccurs="0"/>
+            <xs:element name="lastName" type="xs:string" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="User">
+        <xs:all>    
+            <xs:element name="id" type="xs:unsignedLong" minOccurs="0"/>
+            <xs:element name="username" type="xs:string" minOccurs="0"/>
+            <xs:element name="fullName" type="xs:string" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="AttestationDocument">
+        <xs:all>
+            <xs:element name="id" type="xs:string" minOccurs="0"/>
+            <xs:element name="type" type="DocumentType" minOccurs="0"/>
+            <xs:element name="hasDeviatingAnalysis" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="savedDateTime" type="xs:unsignedLong" minOccurs="0"/>
+            <xs:element name="isLatestVersionAttested" type="xs:boolean" minOccurs="0"/>            
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="Document">
+        <xs:all>    
+            <xs:element name="id" type="xs:unsignedLong" minOccurs="0"/>
+            <xs:element name="type" type="DocumentType" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType> 
+</xs:schema>
