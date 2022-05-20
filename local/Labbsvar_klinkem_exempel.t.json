@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "32.0.0",
+      "sem_ver" : "33.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "7dd61945af98065d4f824ae7408e002c",
+      "MD5-CAM-1.0.1" : "8d0a0cbffd4113a1f0aadf16c802f8dd",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -2727,7 +2727,7 @@
             "text" : "Comment",
             "description" : "Additional narrative about the specimen not captured in other fields.",
             "fhir_mapping" : "Specimen.note",
-            "comment" : "Fredrik:"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/groupComment\nRULE = COPY\n---end-mapping-instruction---"
           },
           "at0015.1" : {
             "@type" : "ARCHETYPE_TERM",
