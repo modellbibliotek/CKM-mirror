@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "37.0.0",
+      "sem_ver" : "38.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "26f8a7bb041f71f1b3daf774f8bada0f",
+      "MD5-CAM-1.0.1" : "c6f4985fd4467da5a9cf28a370773f26",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -1566,6 +1566,9 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_IDENTIFIER",
+                  "defaultValue" : {
+                    "@type" : "DV_IDENTIFIER"
+                  },
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 }, {
@@ -1723,6 +1726,13 @@
             "text" : "Specimen detail",
             "description" : "Details about the physical substance that has been analysed.",
             "comment" : "If the specimen type is sufficiently specified with a code in the Test name, then this additional data is not required. Linking results to specific specimens may be recorded using 'Specimen identifier' elements in both the CLUSTER.specimen and the various results CLUSTER archetypes.\n"
+          },
+          "at0068.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0068",
+            "text" : "Laboratory internal identifier",
+            "description" : "A local identifier assigned by the receiving Laboratory Information System (LIS) to track the test process.",
+            "comment" : "This identifier is an internal tracking number assigned by the LIS, and it not intended to be the name of the test.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/LID\nRULE = COPY\n---end-mapping-instruction---\n"
           }
         },
         "nb" : {
