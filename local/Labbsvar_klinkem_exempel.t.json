@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "39.0.0",
+      "sem_ver" : "40.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "c6f4985fd4467da5a9cf28a370773f26",
+      "MD5-CAM-1.0.1" : "828e2ccb025553a23b7db7f282880ee7",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -4022,7 +4022,7 @@
             "code" : "at0002.1",
             "text" : "identifier",
             "description" : "",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples[x]/analyses/analyses[y]/analysis\nRULE = Create an instance for each analysis in source (Attribute names are identical)\n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/lab/SID\nRULE = COPY\n---end-mapping-instruction---"
           }
         },
         "sv" : {
