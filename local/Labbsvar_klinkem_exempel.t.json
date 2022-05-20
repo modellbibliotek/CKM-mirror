@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "34.0.0",
+      "sem_ver" : "35.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "e8f97c1a9697bce65c03bc128adf928f",
+      "MD5-CAM-1.0.1" : "94c1a1bb516f9c3f7ad0c58f614370be",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -3532,12 +3532,21 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "Analyte name",
+            "description" : "The name of the analyte result.",
+            "comment" : "The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/analyses/analysisId\nRULE = COPY\n---end-mapping-instruction---\n\n",
+            "hl7v2_mapping" : "OBX.3",
+            "fhir_mapping" : "Observation.code"
+          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
             "text" : "Laboratory analyte result",
             "description" : "The result of a laboratory test for a single analyte value.",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples[x]/analyses/analyses[y]/analysis\n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples[x]/analyses/analyses[y]\nRULE = Create one instance per analyses in all samples\n---end-mapping-instruction---"
           }
         },
         "nb" : { },
