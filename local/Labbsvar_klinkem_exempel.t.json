@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "33.0.0",
+      "sem_ver" : "34.0.0",
       "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "8d0a0cbffd4113a1f0aadf16c802f8dd",
+      "MD5-CAM-1.0.1" : "e8f97c1a9697bce65c03bc128adf928f",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -3531,7 +3531,15 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Laboratory analyte result",
+            "description" : "The result of a laboratory test for a single analyte value.",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples[x]/analyses/analyses[y]/analysis\n---end-mapping-instruction---"
+          }
+        },
         "nb" : { },
         "pt-br" : { },
         "de" : { },
@@ -6151,7 +6159,7 @@
             "code" : "at0000",
             "text" : "juno_labinfo_adapter",
             "description" : "Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected).",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples[x]/analyses/analyses[y]/analysis\nRULE = Create an instance for each analysis in source (Attribute names are identical)\n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/analyses\nRULE = Copy all attributes (identical names)\n---end-mapping-instruction---"
           }
         },
         "sv" : {
