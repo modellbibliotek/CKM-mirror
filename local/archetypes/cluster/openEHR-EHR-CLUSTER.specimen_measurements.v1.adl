@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4; uid=ae8f7946-2197-4d85-97fe-ea2f93d932f1)
+archetype (adl_version=1.4; uid=ae8f7946-2197-4d85-97fe-ea2f93d932f1)
 	openEHR-EHR-CLUSTER.specimen_measurements.v1
 
 concept
@@ -147,7 +147,7 @@ Not to be used to record measurements in imaging examinations. Use measurement-r
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"DF58079D394733994ECA8ED758C0AFC7">
+		["MD5-CAM-1.0.1"] = <"757A4FD2358E634CFDC0B0CC9EAF70E4">
 		["build_uid"] = <"2a8d3161-782e-416b-a5ff-17989f578477">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"1.0.2-alpha">
@@ -902,8 +902,8 @@ Om det inte finns någon tydlig orientering av till exempel längd vs bredd vs h
 					description = <"Den uppmätta längden av provet från kant till kant, vanligtvis av ett ungefärligt runt eller ovalt exemplar, som passerar genom dess centrum.">
 				>
 				["at0053"] = <
-					text = <"Djup">
-					description = <"Den uppmätta längden av den tredje ledden av ett prov, vanligtvis vinkelrät mot längden och bredden, eller mätningen av den vertikala aspekten av ett prov från ytan till basen. Kan även kallas tjocklek.">
+					text = <"Tjocklek (djup)">
+					description = <"Den uppmätta längden av den tredje ledden av ett prov, vanligtvis vinkelrät mot längden och bredden, eller mätningen av den vertikala aspekten av ett prov från ytan till basen. Kallas ibland djup och ibland tjocklek.">
 				>
 				["at0054"] = <
 					text = <"Höjd">
