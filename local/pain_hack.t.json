@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.1.0",
+      "sem_ver" : "2.1.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d22129e7b383b25dfaa2760a3ad840d3",
+      "MD5-CAM-1.0.1" : "b8f88dbb9f287acebb01198e6853ea06",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -5315,7 +5315,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Gradering (3)",
+            "text" : "Gradering - värst (3)",
             "description" : "Observation av ett fysiskt eller psykiskt besvär hos en individ."
           }
         },
@@ -6347,7 +6347,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Gradering (4)",
+            "text" : "Gradering - minst (4)",
             "description" : "Observation av ett fysiskt eller psykiskt besvär hos en individ."
           }
         },
