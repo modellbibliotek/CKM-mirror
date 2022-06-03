@@ -49,12 +49,12 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"2803ee96c11d2110fe0bd8401330b074">
+		["MD5-CAM-1.0.1"] = <"df744023f83ceadcf3f865bc76efe0c0">
 		["build_uid"] = <"332018e6-86ca-47b3-b6b6-bd41145ffe7c">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- microscopy_breast_carcinoma_update_suggestion
+	CLUSTER[at0000] matches {    -- Microscopic  findings related to breast cancer (update suggestion)
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0188] occurrences matches {0..1} matches {    -- DV_COUNT
 				value matches {
@@ -486,7 +486,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"microscopy_breast_carcinoma_update_suggestion">
+					text = <"Microscopic  findings related to breast cancer (update suggestion)">
 					description = <"Microscopic anatomic pathology findings related to breast cancer.">
 				>
 				["at0014"] = <
@@ -1035,7 +1035,7 @@ ontology
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"microscopy_breast_carcinoma_update_suggestion">
+					text = <"*Microscopic  findings related to breast cancer (update suggestion) (en)">
 					description = <"Mikroskopiska anatomiska patologifynd relaterade till bröstcancer.">
 				>
 				["at0014"] = <
