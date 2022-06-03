@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "25.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "da2e56530b71093b8b2364f81a08f18f",
+      "MD5-CAM-1.0.1" : "7d19e408622547c74f40b7bc40030a2d",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -2533,9 +2533,41 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "df744023f83ceadcf3f865bc76efe0c0"
+        "PARENT:MD5-CAM-1.0.1" : "81ac058e85b5d6b37e6fb52f87fd7f20"
       },
-      "details" : { }
+      "details" : {
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera detaljerade fynd om bröstcancer som hittats vid mikroskopisk undersökning.",
+          "keywords" : [ "bröst", "histopatologi", "cancer", "laboratorium", "labb", "patologi", "histologi", "malignitet" ],
+          "use" : "För att registrera detaljerade fynd om mikroskopisk undersökning av vävnad relaterad till bröstcancer.\r\nAnvänd som en komponentarketyp i samband med en uppsättning av arketyper som utgör en histopatologisk rapport, dvs OBSERVATION.lab_test.histopathology.",
+          "misuse" : "Inte utformad för att användas inom någon annan arketyp än OBSERVATION.lab_test.histopathology.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record detailed findings about breast cancer found on microscopic examination.",
+          "keywords" : [ "breast", "histopathology", "cancer", "laboratory", "lab", "pathology", "histology", "malignancy" ],
+          "use" : "To record detailed findings about microscopic examination of tissue related to breast cancer. \r\nUse as a component archetype in the context of a suite of archetypes that make up a histopathology report ie OBSERVATION.lab_test.histopathology.",
+          "misuse" : "Not designed to be used within any other archetype other than OBSERVATION.lab_test.histopathology.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.microscopy_breast_carcinoma_update_suggestion.v0",
     "differential" : true,
