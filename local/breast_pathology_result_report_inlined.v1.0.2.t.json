@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.3",
+      "sem_ver" : "1.0.4",
       "build_uid" : "9177344f-2d05-4583-b2ba-406c1e9c4dce",
-      "MD5-CAM-1.0.1" : "26410d6a3d56ec31ef0e4a7c53465877",
+      "MD5-CAM-1.0.1" : "daef083835e76ba29518579ff0138418",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -5965,24 +5965,24 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "http://snomed.info/id/"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "http://snomed.info/id/" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "http://snomed.info/id/",
                     "code" : "77831004",
                     "value" : "Övre inre kvadrant av bröst, struktur"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "http://snomed.info/id/",
                     "code" : "19100000",
                     "value" : "Nedre inre kvadrant av bröst, struktur"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "http://snomed.info/id/",
                     "code" : "76365002",
                     "value" : "Övre yttre kvadrant av bröst, struktur"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "http://snomed.info/id/",
                     "code" : "3564002",
                     "value" : "Nedre yttre kvadrant av bröst, struktur"
                   } ]
