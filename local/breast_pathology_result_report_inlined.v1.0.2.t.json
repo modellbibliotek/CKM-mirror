@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.4",
+      "sem_ver" : "1.0.5",
       "build_uid" : "9177344f-2d05-4583-b2ba-406c1e9c4dce",
-      "MD5-CAM-1.0.1" : "daef083835e76ba29518579ff0138418",
+      "MD5-CAM-1.0.1" : "566d64b52b32c80ed78fd8edd2f2a6ab",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -5559,24 +5559,24 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "http://snomed.info/id/"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "http://snomed.info/id/" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "http://snomed.info/id/",
                         "code" : "82711006",
                         "value" : "Infiltrating duct carcinoma (morphologic abnormality)"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "http://snomed.info/id/",
                         "code" : "89740008",
                         "value" : "Lobular carcinoma (morphologic abnormality)"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "http://snomed.info/id/",
                         "code" : "4631006",
                         "value" : "Tubular adenocarcinoma (morphologic abnormality)"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "http://snomed.info/id/",
                         "code" : "72495009",
                         "value" : "Mucinous adenocarcinoma (morphologic abnormality)"
                       } ]
