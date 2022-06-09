@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.2",
-      "build_uid" : "1fb98733-a06d-42f4-866b-311216673a79",
-      "MD5-CAM-1.0.1" : "9a3c9c0a7558d4f4100e784d49572c54",
+      "sem_ver" : "1.1.0",
+      "build_uid" : "7d7228ad-00cc-41eb-8e83-1f3c6e54dce7",
+      "MD5-CAM-1.0.1" : "bb4c871ea7c1639b0a6a5114ecab7b59",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -464,6 +464,44 @@
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
         "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0065.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "defaultValue" : {
+                "value" : "Kranialt (uppåt mot huvudet)",
+                "@type" : "DV_TEXT"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0079.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "defaultValue" : {
+                "value" : "mamill",
+                "@type" : "DV_TEXT"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0061.1",
@@ -4436,7 +4474,10 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -4997,6 +5038,25 @@
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "items",
                     "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0005.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "defaultValue" : {
+                            "value" : "Makroskopisk analys av bröstvävnad",
+                            "@type" : "DV_TEXT"
+                          },
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
@@ -6593,9 +6653,6 @@
           "/items[at0013]" : {
             "fhir_mapping" : "*Specimen.collection.sourceSite(en)"
           },
-          "/items[at0001]" : {
-            "fhir_mapping" : "*Specimen.accessionIdentifier(en)"
-          },
           "/items[at0034]" : {
             "fhir_mapping" : "*Specimen.receivedTime(en)"
           },
@@ -6610,20 +6667,17 @@
           },
           "/items[at0070.1]" : {
             "fhir_mapping" : "*Specimen.collection.collector(en)"
+          },
+          "/items[at0001.1]" : {
+            "fhir_mapping" : "*Specimen.accessionIdentifier(en)"
           }
         },
         "en" : {
           "/items[at0071]" : {
             "fhir_mapping" : "Specimen.collection.collector"
           },
-          "/items[at0088]" : {
-            "fhir_mapping" : "Specimen.identifier"
-          },
           "/items[at0013]" : {
             "fhir_mapping" : "Specimen.collection.sourceSite"
-          },
-          "/items[at0001]" : {
-            "fhir_mapping" : "Specimen.accessionIdentifier"
           },
           "/items[at0034]" : {
             "fhir_mapping" : "Specimen.receivedTime"
@@ -6642,6 +6696,12 @@
           },
           "/items[at0045.1]" : {
             "fhir_mapping" : "Specimen.note"
+          },
+          "/items[at0001.1]" : {
+            "fhir_mapping" : "Specimen.accessionIdentifier"
+          },
+          "/items[at0088.1]" : {
+            "fhir_mapping" : "Specimen.identifier"
           }
         },
         "pt-br" : { },
@@ -6650,14 +6710,8 @@
           "/items[at0071]" : {
             "fhir_mapping" : "Specimen.collection.collector"
           },
-          "/items[at0088]" : {
-            "fhir_mapping" : "Specimen.identifier"
-          },
           "/items[at0013]" : {
             "fhir_mapping" : "Specimen.collection.sourceSite"
-          },
-          "/items[at0001]" : {
-            "fhir_mapping" : "Specimen.accessionIdentifier"
           },
           "/items[at0034]" : {
             "fhir_mapping" : "Specimen.receivedTime"
@@ -6676,6 +6730,12 @@
           },
           "/items[at0045.1]" : {
             "fhir_mapping" : "Specimen.note"
+          },
+          "/items[at0001.1]" : {
+            "fhir_mapping" : "Specimen.accessionIdentifier"
+          },
+          "/items[at0088.1]" : {
+            "fhir_mapping" : "Specimen.identifier"
           }
         },
         "sv" : {
@@ -6699,6 +6759,42 @@
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
         "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0088.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
@@ -6792,7 +6888,10 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -7631,6 +7730,25 @@
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "items",
                     "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0005.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "defaultValue" : {
+                            "value" : "Mikroskopisk analys av bröstvävnad",
+                            "@type" : "DV_TEXT"
+                          },
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
