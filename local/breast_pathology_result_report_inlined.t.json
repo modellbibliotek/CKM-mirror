@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.1.0",
-      "build_uid" : "c7f25fd4-3597-47b5-9cf5-cd9124d5d5c9",
-      "MD5-CAM-1.0.1" : "4409a2e5f6e6b677c0c73f70f2a69b7e",
+      "sem_ver" : "2.1.1",
+      "build_uid" : "1d06c529-0343-4981-bb3e-84ed8bc91f78",
+      "MD5-CAM-1.0.1" : "0a5bb0a21243715bd78da9bb5bea5d79",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -342,7 +342,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "breast_pathology_result_report_inlined.v2",
+          "text" : "breast_pathology_report.v2",
           "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
         }
       },
