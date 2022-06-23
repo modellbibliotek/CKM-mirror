@@ -1,0 +1,139 @@
+archetype (adl_version=1.4; uid=311aa279-fa98-44ed-9159-d54c88a6fe1b)
+	openEHR-EHR-CLUSTER.edi_labinfo_adapter.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2022-03-30">
+		["name"] = <"Erik Sundvall">
+		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
+		["email"] = <"erik.sundvall@regionstockholm.se">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"267cde30fa305f63021c381312a9b550">
+		["build_uid"] = <"aeddd5fc-7634-3adb-b19b-5eaf6866ddef">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- EDI_labinfo_adapter
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- observed value
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- unit
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- test method id
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- pathological
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- observer comment
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"EDI_labinfo_adapter">
+					description = <"Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected).">
+				>
+				["at0001"] = <
+					text = <"pathological">
+					description = <"Pathological manifestation">
+					comment = <"Marked * in EDI message
+SG12.OBR..C502.6155 (Measurement attribute, coded)">
+				>
+				["at0002"] = <
+					text = <"observed value">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"unit">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"test method id">
+					description = <"The incoming (not mapped) Test method identification  code 
+">
+				>
+				["at0007"] = <
+					text = <"observer comment">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"EDI_labinfo_adapter">
+					description = <"*Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected). (en)">
+				>
+				["at0001"] = <
+					text = <"patologisk markör">
+					description = <"*Pathological manifestation (en)">
+					comment = <"*Marked * in EDI message
+SG12.OBR..C502.6155 (Measurement attribute, coded) (en)">
+				>
+				["at0002"] = <
+					text = <"mätvärde">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"enhet">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"testmetod">
+					description = <"*The incoming (not mapped) Test method identification  code 
+ (en)">
+				>
+				["at0007"] = <
+					text = <"analyskommentar">
+					description = <"">
+				>
+			>
+		>
+	>

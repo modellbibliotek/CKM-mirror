@@ -8,6 +8,7 @@ Please note that _operational_ templates (.opt-files) and other downstream openE
 
 Also note the shared ad-hoc work area at https://github.com/modellbibliotek/Arbetsyta-openEHR that can be used when you do not want the entire CKM-mirror content to potentially interfere with your work.
 
+
 New 2022
 --------
 * Since Archetype Designer now suports Github branches, we have started using them extensively for different swedish projects, try switching branch in the drop-down button menu. Examples:
