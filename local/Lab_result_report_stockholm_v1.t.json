@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "1,0,1",
       "build_uid" : "eb8608db-2fb1-41a6-ae19-0925c7316b69",
-      "MD5-CAM-1.0.1" : "95fe23b27461086d9bf8dd20583224d5",
+      "MD5-CAM-1.0.1" : "829ebe7ef93cb60e05f6eb0fd34a7a88",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -1444,7 +1444,39 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0005.1",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "http://snomed.info/id/"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "http://snomed.info/id/" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "http://snomed.info/id/",
+                                "code" : "4311000179106",
+                                "value" : "Klinisk kemi (utlåtande från kemisk patologi)"
+                              }, {
+                                "terminologyId" : "http://snomed.info/id/",
+                                "code" : "4341000179107",
+                                "value" : "Mikrobiologiskt utlåtande"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
