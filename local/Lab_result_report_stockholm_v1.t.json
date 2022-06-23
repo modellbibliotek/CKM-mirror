@@ -11,20 +11,20 @@
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "release_candidate"
     },
     "ipAcknowledgements" : { },
     "references" : { },
     "conversionDetails" : { },
     "otherDetails" : {
-      "licence" : "",
+      "licence" : "CC BY 4.0, https://creativecommons.org/licenses/by/4.0/",
       "custodian_organisation" : "",
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "40.0.0",
-      "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "b368be8a5a341aacc0931ebb8e1224a6",
+      "sem_ver" : "1.0.0",
+      "build_uid" : "eb8608db-2fb1-41a6-ae19-0925c7316b69",
+      "MD5-CAM-1.0.1" : "95fe23b27461086d9bf8dd20583224d5",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -121,6 +121,7 @@
           "codeString" : "en"
         },
         "keywords" : [ ],
+        "copyright" : "Region Stockholm, Sweden",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
@@ -301,7 +302,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "Labbsvar_klinkem_exempel",
+          "text" : "Lab_result_report_stockholm_v1",
           "description" : "Document to communicate information to others about the result of a test or assessment."
         },
         "at0002.0.1" : {
@@ -776,7 +777,7 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "91d48937-1d92-3fa6-9f53-1476f130d97f",
+  "buildUid" : "79f25952-e4ae-3421-a478-9f3122046668",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
