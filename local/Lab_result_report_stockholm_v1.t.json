@@ -1,6 +1,6 @@
 {
   "@type" : "TEMPLATE",
-  "uid" : "3cd6f32b-8769-4025-87d7-96d42fda89e2",
+  "uid" : "2a2a867b-c971-4295-a069-2da98f7e98a2",
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
@@ -11,20 +11,20 @@
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "release_candidate"
     },
     "ipAcknowledgements" : { },
     "references" : { },
     "conversionDetails" : { },
     "otherDetails" : {
-      "licence" : "",
+      "licence" : "CC BY 4.0, https://creativecommons.org/licenses/by/4.0/",
       "custodian_organisation" : "",
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "40.0.0",
-      "build_uid" : "a67dfeaf-4ed3-4777-bed9-5e43393168d0",
-      "MD5-CAM-1.0.1" : "828e2ccb025553a23b7db7f282880ee7",
+      "sem_ver" : "1.0.5",
+      "build_uid" : "4a51e4dd-c764-467b-a003-69a374c439b7",
+      "MD5-CAM-1.0.1" : "56a169666627550f8322c5f5ef323050",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -121,6 +121,7 @@
           "codeString" : "en"
         },
         "keywords" : [ ],
+        "copyright" : "Region Stockholm, Sweden",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
@@ -227,17 +228,8 @@
                 "nodeId" : "at0006.0.1",
                 "attributes" : [ ],
                 "attributeTuples" : [ ],
-                "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-organisation-001.v0",
-                "referenceType" : "archetypeOverlay"
-              }, {
-                "@type" : "C_ARCHETYPE_ROOT",
-                "rmTypeName" : "CLUSTER",
-                "occurrences" : "0..1",
-                "nodeId" : "at0006.0.2",
-                "attributes" : [ ],
-                "attributeTuples" : [ ],
-                "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-organisation-002.v0",
-                "referenceType" : "archetypeOverlay"
+                "archetypeRef" : "Care unit",
+                "referenceType" : "templateId"
               } ]
             } ],
             "attributeTuples" : [ ]
@@ -301,7 +293,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "Labbsvar_klinkem_exempel",
+          "text" : "Lab_result_report_stockholm_v1",
           "description" : "Document to communicate information to others about the result of a test or assessment."
         },
         "at0002.0.1" : {
@@ -313,32 +305,11 @@
         }
       },
       "es-ar" : {
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "*Extension(en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
-          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "*Document to communicate information to others about the result of a test or assessment.(en)"
-        },
-        "at0006.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.1",
-          "text" : "*Extension(en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
-          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
-        },
-        "at0006.0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.2",
-          "text" : "*Extension(en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
-          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
         }
       },
       "nb" : {
@@ -348,32 +319,11 @@
           "text" : "Rapport",
           "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
         },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Tilleggsinformasjon",
-          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
-          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Dokument for å formidle informasjon til andre om svaret på en prøve eller undersøkelse."
-        },
-        "at0006.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.1",
-          "text" : "Tilleggsinformasjon",
-          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
-          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
-        },
-        "at0006.0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.2",
-          "text" : "Tilleggsinformasjon",
-          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
-          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
         }
       },
       "pt-br" : {
@@ -395,32 +345,11 @@
           "text" : "Estado",
           "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
         },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Extensão",
-          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
-          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Documento para comunicar informações sobre o resultado de um teste ou avaliação."
-        },
-        "at0006.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.1",
-          "text" : "Extensão",
-          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
-          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
-        },
-        "at0006.0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.2",
-          "text" : "Extensão",
-          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
-          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
         },
         "at0002.0.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -497,29 +426,15 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "Laajennus",
-          "description" : "Tarvitaan lisätietoja paikallisen tilanteen mallintamiseksi tai yhdenmukaistamiseksi muiden vertailumallien / muodollisuuksien kanssa. \r\n",
-          "comment" : "Esimerkiksi: paikalliset tietovaatimukset tai ylimääräiset metatiedot FHIR- tai CIMI-vastaavien mukaisiksi."
+          "text" : "*Extension (en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
+          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
-        },
-        "at0006.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.1",
-          "text" : "Laajennus",
-          "description" : "Tarvitaan lisätietoja paikallisen tilanteen mallintamiseksi tai yhdenmukaistamiseksi muiden vertailumallien / muodollisuuksien kanssa. \r\n",
-          "comment" : "Esimerkiksi: paikalliset tietovaatimukset tai ylimääräiset metatiedot FHIR- tai CIMI-vastaavien mukaisiksi."
-        },
-        "at0006.0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.2",
-          "text" : "Laajennus",
-          "description" : "Tarvitaan lisätietoja paikallisen tilanteen mallintamiseksi tai yhdenmukaistamiseksi muiden vertailumallien / muodollisuuksien kanssa. \r\n",
-          "comment" : "Esimerkiksi: paikalliset tietovaatimukset tai ylimääräiset metatiedot FHIR- tai CIMI-vastaavien mukaisiksi."
         },
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -532,6 +447,13 @@
           "code" : "at0002.0.1",
           "text" : "Raportti ID",
           "description" : "Raportin tunnistetiedot"
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006.0.1",
+          "text" : "*Extension (en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
+          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
         }
       },
       "it" : {
@@ -556,29 +478,15 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "Estensione",
-          "description" : "Informazioni aggiuntive necessarie per catturare il contesto locale o per allinearsi con altri modelli/formalismi di riferimento.",
-          "comment" : "Per esempio: requisiti informativi locali o metadati aggiuntivi per allinearsi con gli equivalenti FHIR o CIMI."
+          "text" : "*Extension (en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
+          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
-        },
-        "at0006.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.1",
-          "text" : "Estensione",
-          "description" : "Informazioni aggiuntive necessarie per catturare il contesto locale o per allinearsi con altri modelli/formalismi di riferimento.",
-          "comment" : "Per esempio: requisiti informativi locali o metadati aggiuntivi per allinearsi con gli equivalenti FHIR o CIMI."
-        },
-        "at0006.0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.2",
-          "text" : "Estensione",
-          "description" : "Informazioni aggiuntive necessarie per catturare il contesto locale o per allinearsi con altri modelli/formalismi di riferimento.",
-          "comment" : "Per esempio: requisiti informativi locali o metadati aggiuntivi per allinearsi con gli equivalenti FHIR o CIMI."
         },
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -591,6 +499,13 @@
           "code" : "at0002.0.1",
           "text" : "ID del rapporto",
           "description" : "Informazioni di identificazione del rapporto"
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006.0.1",
+          "text" : "*Extension (en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
+          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
         }
       },
       "nl" : {
@@ -615,29 +530,15 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "Uitbreiding",
-          "description" : "Extra informatie nodig om de context te beschrijven of te voldoen aan andere modellen of formalismen.",
-          "comment" : "Bijvoorbeeld: lokale informatievereisten of aanvullende metadata om overeen te komen met FHIR- of CIMI-equivalenten."
+          "text" : "*Extension (en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
+          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
-        },
-        "at0006.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.1",
-          "text" : "Uitbreiding",
-          "description" : "Extra informatie nodig om de context te beschrijven of te voldoen aan andere modellen of formalismen.",
-          "comment" : "Bijvoorbeeld: lokale informatievereisten of aanvullende metadata om overeen te komen met FHIR- of CIMI-equivalenten."
-        },
-        "at0006.0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.2",
-          "text" : "Uitbreiding",
-          "description" : "Extra informatie nodig om de context te beschrijven of te voldoen aan andere modellen of formalismen.",
-          "comment" : "Bijvoorbeeld: lokale informatievereisten of aanvullende metadata om overeen te komen met FHIR- of CIMI-equivalenten."
         },
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -650,6 +551,13 @@
           "code" : "at0002.0.1",
           "text" : "Rapportage ID",
           "description" : "Identificerende informatie over deze rapportage."
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006.0.1",
+          "text" : "*Extension (en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
+          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
         }
       },
       "sv" : {
@@ -674,29 +582,15 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "Tilläggsinformation",
-          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
-          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
+          "text" : "*Extension (en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
+          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Dokument för att kommunicera information till andra, vanligen som svar på en begäran från en annan part."
-        },
-        "at0006.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.1",
-          "text" : "Tilläggsinformation",
-          "description" : "Ytterligare information som krävs för att fånga lokalt sammanhang eller för att anpassning till andra referensmodeller/formalismer. \r\n",
-          "comment" : "Till exempel: lokala informationskrav eller ytterligare metadata för att anpassning till FHIR eller CIMI."
-        },
-        "at0006.0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.2",
-          "text" : "Tilläggsinformation",
-          "description" : "Ytterligare information som krävs för att fånga lokalt sammanhang eller för att anpassning till andra referensmodeller/formalismer. \r\n",
-          "comment" : "Till exempel: lokala informationskrav eller ytterligare metadata för att anpassning till FHIR eller CIMI."
         },
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -709,6 +603,13 @@
           "code" : "at0002.0.1",
           "text" : "Rapport-id",
           "description" : "Information som identifierar rapporten.\r\n"
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006.0.1",
+          "text" : "*Extension (en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
+          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
         }
       },
       "zh" : {
@@ -745,29 +646,22 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "扩展",
-          "description" : "用于捕获本地的上下文或与其他参考模型/形式保持一致所需的其他信息。",
-          "comment" : "比如：本地的信息需求或是为了与FHIR或CIMI保持一致的其他元数据。"
-        },
-        "at0006.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "扩展",
-          "description" : "用于捕获本地的上下文或与其他参考模型/形式保持一致所需的其他信息。",
-          "comment" : "比如：本地的信息需求或是为了与FHIR或CIMI保持一致的其他元数据。"
-        },
-        "at0006.0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "扩展",
-          "description" : "用于捕获本地的上下文或与其他参考模型/形式保持一致所需的其他信息。",
-          "comment" : "比如：本地的信息需求或是为了与FHIR或CIMI保持一致的其他元数据。"
+          "text" : "*Extension (en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
+          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
         },
         "at0002.0.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0002.0.1",
           "text" : "报告ID",
           "description" : "关于这份报告的标识信息。"
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006.0.1",
+          "text" : "*Extension (en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
+          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
         }
       }
     },
@@ -776,461 +670,13 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "91d48937-1d92-3fa6-9f53-1476f130d97f",
+  "buildUid" : "79f25952-e4ae-3421-a478-9f3122046668",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
-  "templateId" : "Labbsvar_klinkem_exempel",
+  "templateId" : "Lab_result_report_stockholm_v1",
   "otherMetaData" : { },
   "templateOverlays" : [ {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "59699f38-3af7-4127-bb96-db614c4dd21e",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "A36E1D46F5D27FA50239A25435C2FC98"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Darstellung von Informationen zur einer Organisation, die in der Gesundheitsakte repräsentiert sein muss.",
-          "keywords" : [ "Organisation, Anbieter, Versorger" ],
-          "use" : "Der Archetyp wird verwendet, um Informationen zur einer Organisation darzustellen, die in der Gesundheitsakte dargestellt werden muss. Beispiele beinhalten:\r\n- den Namen und die Kontaktdaten einer Organisation, die ein Exemplar einer erweiterten Pflegeakte besitzt;\r\n- den Namen und die Kontaktdaten einer Organisation für ambulante Pflegedienste im Rahmen einer Übermittlung von Krankenakten von Praxis zu Praxis; oder- den Namen, die Funktion und die Kontaktdaten eines Mitglieds des Betreuungsteams.\r\n\r\nIn diesem Kontext der Erfassung der Kontaktdaten einer Organisation oder von Personen innerhalb der Organisation kann der Umfang einer \"Organisation\" informell und flexibel sein, solange er dem Zweck dient. Zum Beispiel:\r\n- ein Krankenhaus; oder\r\n- eine \"Unterorganisation\" eines Krankenhauses, wie z. B. eine operativ getrennte oder spezialisierte Außenklinik eines Krankenhauses oder ein angeschlossener ambulanter Pflegedienst.\r\n\r\nDieser Archetyp könnte auch als Proxy für formale demografische Daten verwendet werden, wenn ein Template mit Domänenexperten überprüft wird – beispielsweise bei einer Bewertung, bei der die Prüfer erwarten würden, dass die Personendaten oben auf dem Bewertungsformular angezeigt werden.",
-          "misuse" : "Der Archetyp darf nicht verwendet werden, um die formellen demografischen Daten für die formelle Identifizierungsverwaltung oder zum Zwecke der Führung eines demografischen Registers oder Index zu repräsentieren oder zu ersetzen. Verwenden Sie zu diesem Zweck einen formellen Gesundheitsdienstleister Index oder Archetypen, die auf dem openEHR Demographic Information Model basieren.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "sv" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "sv"
-          },
-          "purpose" : "Att registrera information om en organisation som behöver representeras i hälsojournalen.",
-          "keywords" : [ "organisation, leverantör, vårdgivare" ],
-          "use" : "Används för att registrera information om en organisation som behöver representeras i hälsojournalen. Exempel inkluderar:\r\n- namn och kontaktuppgifter för en organisation som har en fysisk kopia av en avancerad vårdregistrering;\r\n- namn och kontaktuppgifter för en besökande hemsjukvårdsorganisation vid överföring av medicinska journaler mellan kliniker, eller\r\n- namn, roll och kontaktuppgifter för en medlem i ett vårdteam.\r\n\r\nI detta sammanhang för att registrera en organisations kontaktuppgifter eller personer inom organisationen kan omfattningen av en 'organisation' vara informell och flexibel så länge den tjänar syftet. Till exempel:\r\n- ett sjukhus; eller\r\n- en \"underorganisation\" för ett sjukhus, såsom en operativt separat eller specialiserad satellitklinik för ett sjukhus eller en tillhörande hemtjänst.\r\n\r\nDen här arketypen kan också användas som en proxy för formell demografisk data när man granskar en mall med domenexperter - till exempel en bedömning där granskare förväntar sig att se en organisations information på en utvärderingsblankett.",
-          "misuse" : "Inte utformad för att representera eller ersätta de formella demografiska detaljerna för formell identifieringshantering eller för att upprätthålla ett demografiskt register eller index. Använd ett formellt vårdgivarindex för detta ändamål eller arketyper baserat på openEHR Demografisk informationsmodell.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere detaljer om en organisasjon i en pasientjournal.",
-          "keywords" : [ ],
-          "use" : "Brukes for å registrere detaljer om en organisasjon i en pasientjournal, når det ikke er ønskelig eller mulig å bruke et formelt demografisk register eller indeks.\r\n\r\nFor eksempel:\r\n- navn og kontaktdetaljer for en organisasjon som har en kopi av et fremtidig behandlingsvalg.\r\n- navn, rolle og kontaktdetaljer til et medlem av et omsorgsteam.\r\n- et uformelt støttenettverk.\r\n\r\nI denne konteksten kan registreringen av en organisasjons kontaktdetaljer, eller person i organisasjonen, være uformell og fleksibel så lenge det tjener formålet.\r\nFor eksempel:\r\n- et sykehus\r\n- en spesialavdeling i et sykehus eller et tilknyttet hjemmesykehus eller hjemmetjeneste.\r\n\r\nDenne arketypen kan også brukes som en midlertidig erstatning for formelle demografiske data når man gjennomgår et templat med domeneeksperter - for eksempel en vurdering der man i templatet forventer å se detaljer om et individ på toppen av vurderingsskjema.\r\n",
-          "misuse" : "Brukes ikke til å representere eller erstatte de formelle demografiske opplysningene for formell identitetsforvaltning eller for å opprettholde et demografisk register eller en indeks. Bruk formelle pasientregister, helsepersonellregister eller arketyper basert på openEHR demografisk informasjonsmodell til dette formålet.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record details about an organisation that needs to be represented within the health record.",
-          "keywords" : [ "organisation, organization, provider, carer, healthcare" ],
-          "use" : "Use to record details of an organisation in the electronic health record, when it is not appropriate or possible to use an official demographic register or index. Examples include:\r\n- the name and contact details for an organisation that holds a physical copy of an advanced care record; or\r\n- the name and contact details of a visiting home care organisation in a practice-to-practice transfer of medical record.\r\n\r\nIn this context of recording an organisation's contact details or people within the organisation, the scope of an 'organisation' can be informal and flexible, as long as it serves the purpose. For example:\r\n- a hospital; or\r\n- a 'sub organisation' of a hospital, such as an operationally separate or specialised satellite clinic of a hospital or an associated home care service.\r\n\r\nThis archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see an organisations' details on an assessment form.",
-          "misuse" : "Not to be used to represent or replace formal identification management or for the purposes of maintaining an official demographic register or index. Use a formal Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.organisation.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-organisation-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0004.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "defaultValue" : {
-                "value" : "Vårdgivare",
-                "@type" : "DV_TEXT"
-              },
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_STRING",
-                  "rmTypeName" : "STRING",
-                  "constraint" : [ "Care provider organisation", "Vårdgivare", "/.+/" ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0019.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Care provider organisation",
-            "description" : "An identified formal entity or informal grouping of people.",
-            "comment" : "For example: a company, institution, corporation, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who will act as carers or support."
-          }
-        },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Vårdgivare",
-            "description" : "En identifisert formell entitet eller en uformell gruppering av mennesker.",
-            "comment" : "For eksempel: Et firma, institusjon, selskap, avdeling, gruppe i nærmiljøet, forsikringsselskap, behandlingsteam eller en gruppe av naboer som opptrer som støtte."
-          }
-        },
-        "de" : { },
-        "sv" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Vårdgivare",
-            "description" : "Ett företag, en institution eller en förening som behöver representeras inom hälsojournalen.",
-            "comment" : "*For example: a company, institution, corporation, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who will act as carers or support.(en)"
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "602210ec-a855-44a1-9f2f-090d496fde31",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Sarah Ballout",
-        "organisation" : "MHH-Hanover",
-        "email" : "ballout.sarah@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : {
-        "name" : "Therese Lindberg",
-        "organisation" : "Cambio CDS",
-        "email" : "therese.lindberg@cambio.se"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Liv Laugen, John Tore Valand, Vebjørn Arntzen",
-        "organisation" : "​Oslo University Hospital, Norway, Helse Bergen",
-        "email" : "liv.laugen@ous-hf.no, john.tore.valand@helse-bergen.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "59699f38-3af7-4127-bb96-db614c4dd21e",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "A36E1D46F5D27FA50239A25435C2FC98"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Darstellung von Informationen zur einer Organisation, die in der Gesundheitsakte repräsentiert sein muss.",
-          "keywords" : [ "Organisation, Anbieter, Versorger" ],
-          "use" : "Der Archetyp wird verwendet, um Informationen zur einer Organisation darzustellen, die in der Gesundheitsakte dargestellt werden muss. Beispiele beinhalten:\r\n- den Namen und die Kontaktdaten einer Organisation, die ein Exemplar einer erweiterten Pflegeakte besitzt;\r\n- den Namen und die Kontaktdaten einer Organisation für ambulante Pflegedienste im Rahmen einer Übermittlung von Krankenakten von Praxis zu Praxis; oder- den Namen, die Funktion und die Kontaktdaten eines Mitglieds des Betreuungsteams.\r\n\r\nIn diesem Kontext der Erfassung der Kontaktdaten einer Organisation oder von Personen innerhalb der Organisation kann der Umfang einer \"Organisation\" informell und flexibel sein, solange er dem Zweck dient. Zum Beispiel:\r\n- ein Krankenhaus; oder\r\n- eine \"Unterorganisation\" eines Krankenhauses, wie z. B. eine operativ getrennte oder spezialisierte Außenklinik eines Krankenhauses oder ein angeschlossener ambulanter Pflegedienst.\r\n\r\nDieser Archetyp könnte auch als Proxy für formale demografische Daten verwendet werden, wenn ein Template mit Domänenexperten überprüft wird – beispielsweise bei einer Bewertung, bei der die Prüfer erwarten würden, dass die Personendaten oben auf dem Bewertungsformular angezeigt werden.",
-          "misuse" : "Der Archetyp darf nicht verwendet werden, um die formellen demografischen Daten für die formelle Identifizierungsverwaltung oder zum Zwecke der Führung eines demografischen Registers oder Index zu repräsentieren oder zu ersetzen. Verwenden Sie zu diesem Zweck einen formellen Gesundheitsdienstleister Index oder Archetypen, die auf dem openEHR Demographic Information Model basieren.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "sv" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "sv"
-          },
-          "purpose" : "Att registrera information om en organisation som behöver representeras i hälsojournalen.",
-          "keywords" : [ "organisation, leverantör, vårdgivare" ],
-          "use" : "Används för att registrera information om en organisation som behöver representeras i hälsojournalen. Exempel inkluderar:\r\n- namn och kontaktuppgifter för en organisation som har en fysisk kopia av en avancerad vårdregistrering;\r\n- namn och kontaktuppgifter för en besökande hemsjukvårdsorganisation vid överföring av medicinska journaler mellan kliniker, eller\r\n- namn, roll och kontaktuppgifter för en medlem i ett vårdteam.\r\n\r\nI detta sammanhang för att registrera en organisations kontaktuppgifter eller personer inom organisationen kan omfattningen av en 'organisation' vara informell och flexibel så länge den tjänar syftet. Till exempel:\r\n- ett sjukhus; eller\r\n- en \"underorganisation\" för ett sjukhus, såsom en operativt separat eller specialiserad satellitklinik för ett sjukhus eller en tillhörande hemtjänst.\r\n\r\nDen här arketypen kan också användas som en proxy för formell demografisk data när man granskar en mall med domenexperter - till exempel en bedömning där granskare förväntar sig att se en organisations information på en utvärderingsblankett.",
-          "misuse" : "Inte utformad för att representera eller ersätta de formella demografiska detaljerna för formell identifieringshantering eller för att upprätthålla ett demografiskt register eller index. Använd ett formellt vårdgivarindex för detta ändamål eller arketyper baserat på openEHR Demografisk informationsmodell.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere detaljer om en organisasjon i en pasientjournal.",
-          "keywords" : [ ],
-          "use" : "Brukes for å registrere detaljer om en organisasjon i en pasientjournal, når det ikke er ønskelig eller mulig å bruke et formelt demografisk register eller indeks.\r\n\r\nFor eksempel:\r\n- navn og kontaktdetaljer for en organisasjon som har en kopi av et fremtidig behandlingsvalg.\r\n- navn, rolle og kontaktdetaljer til et medlem av et omsorgsteam.\r\n- et uformelt støttenettverk.\r\n\r\nI denne konteksten kan registreringen av en organisasjons kontaktdetaljer, eller person i organisasjonen, være uformell og fleksibel så lenge det tjener formålet.\r\nFor eksempel:\r\n- et sykehus\r\n- en spesialavdeling i et sykehus eller et tilknyttet hjemmesykehus eller hjemmetjeneste.\r\n\r\nDenne arketypen kan også brukes som en midlertidig erstatning for formelle demografiske data når man gjennomgår et templat med domeneeksperter - for eksempel en vurdering der man i templatet forventer å se detaljer om et individ på toppen av vurderingsskjema.\r\n",
-          "misuse" : "Brukes ikke til å representere eller erstatte de formelle demografiske opplysningene for formell identitetsforvaltning eller for å opprettholde et demografisk register eller en indeks. Bruk formelle pasientregister, helsepersonellregister eller arketyper basert på openEHR demografisk informasjonsmodell til dette formålet.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record details about an organisation that needs to be represented within the health record.",
-          "keywords" : [ "organisation, organization, provider, carer, healthcare" ],
-          "use" : "Use to record details of an organisation in the electronic health record, when it is not appropriate or possible to use an official demographic register or index. Examples include:\r\n- the name and contact details for an organisation that holds a physical copy of an advanced care record; or\r\n- the name and contact details of a visiting home care organisation in a practice-to-practice transfer of medical record.\r\n\r\nIn this context of recording an organisation's contact details or people within the organisation, the scope of an 'organisation' can be informal and flexible, as long as it serves the purpose. For example:\r\n- a hospital; or\r\n- a 'sub organisation' of a hospital, such as an operationally separate or specialised satellite clinic of a hospital or an associated home care service.\r\n\r\nThis archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see an organisations' details on an assessment form.",
-          "misuse" : "Not to be used to represent or replace formal identification management or for the purposes of maintaining an official demographic register or index. Use a formal Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.organisation.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-organisation-002.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0004.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "defaultValue" : {
-                "value" : "Vårdenhet",
-                "@type" : "DV_TEXT"
-              },
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_STRING",
-                  "rmTypeName" : "STRING",
-                  "constraint" : [ "Care provider (sub)unit", "Vårdenhet" ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0019.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Care provider (sub)unit",
-            "description" : "An identified formal entity or informal grouping of people.",
-            "comment" : "For example: a company, institution, corporation, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who will act as carers or support."
-          }
-        },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Vårdenhet",
-            "description" : "En identifisert formell entitet eller en uformell gruppering av mennesker.",
-            "comment" : "For eksempel: Et firma, institusjon, selskap, avdeling, gruppe i nærmiljøet, forsikringsselskap, behandlingsteam eller en gruppe av naboer som opptrer som støtte."
-          }
-        },
-        "de" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Organisation (2)",
-            "description" : "Ein Unternehmen, eine Institution oder ein Verband, der in der Gesundheitsakte vertreten sein muss.",
-            "comment" : "*For example: a company, institution, corporation, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who will act as carers or support.(en)"
-          }
-        },
-        "sv" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Vårdenhet",
-            "description" : "Ett företag, en institution eller en förening som behöver representeras inom hälsojournalen.",
-            "comment" : "*For example: a company, institution, corporation, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who will act as carers or support.(en)"
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "602210ec-a855-44a1-9f2f-090d496fde31",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Sarah Ballout",
-        "organisation" : "MHH-Hanover",
-        "email" : "ballout.sarah@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : {
-        "name" : "Therese Lindberg",
-        "organisation" : "Cambio CDS",
-        "email" : "therese.lindberg@cambio.se"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Liv Laugen, John Tore Valand, Vebjørn Arntzen",
-        "organisation" : "​Oslo University Hospital, Norway, Helse Bergen",
-        "email" : "liv.laugen@ous-hf.no, john.tore.valand@helse-bergen.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "3e857e63-28e0-4a78-af2c-be688a403a9d",
     "description" : {
@@ -1482,16 +928,7 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0075.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_DATE_TIME",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -1502,12 +939,31 @@
                         "rmAttributeName" : "value",
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_TEXT",
-                          "defaultValue" : {
-                            "value" : "klinkem",
-                            "@type" : "DV_TEXT"
-                          },
-                          "attributes" : [ ],
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "http://snomed.info/id/"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "http://snomed.info/id/" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "http://snomed.info/id/",
+                                "code" : "4311000179106",
+                                "value" : "Klinisk kemi (utlåtande från kemisk patologi)"
+                              }, {
+                                "terminologyId" : "http://snomed.info/id/",
+                                "code" : "4341000179107",
+                                "value" : "Mikrobiologiskt utlåtande"
+                              } ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
@@ -1684,7 +1140,7 @@
             "code" : "at0005.1",
             "text" : "Test name",
             "description" : "Name of the laboratory investigation performed on the specimen(s).",
-            "comment" : "A test result may be for a single analyte, or a group of items, including panel tests. It is strongly recommended that 'Test name' be coded with a terminology, for example LOINC or SNOMED CT. For example: 'Glucose', 'Urea and Electrolytes', 'Swab', 'Cortisol (am)', 'Potassium in perspiration' or 'Melanoma histopathology'. The name may sometimes include specimen type and patient state, for example 'Fasting blood glucose' or include other information, as 'Potassium (PNA blood gas)'.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = \nRULE = Hard-code \"KUL Klinisk Kemi\"\nCOMMENT = Bastard use of field should be proper coding\n---end-mapping-instruction---\n"
+            "comment" : "A test result may be for a single analyte, or a group of items, including panel tests. It is strongly recommended that 'Test name' be coded with a terminology, for example LOINC or SNOMED CT. For example: 'Glucose', 'Urea and Electrolytes', 'Swab', 'Cortisol (am)', 'Potassium in perspiration' or 'Melanoma histopathology'. The name may sometimes include specimen type and patient state, for example 'Fasting blood glucose' or include other information, as 'Potassium (PNA blood gas)'.\n\n"
           },
           "at0073.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1720,19 +1176,19 @@
             "description" : "The date and/or time that ‘Overall test status’ was issued.",
             "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/replyTime\nRULE = COPY\n---end-mapping-instruction---"
           },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Specimen detail",
-            "description" : "Details about the physical substance that has been analysed.",
-            "comment" : "If the specimen type is sufficiently specified with a code in the Test name, then this additional data is not required. Linking results to specific specimens may be recorded using 'Specimen identifier' elements in both the CLUSTER.specimen and the various results CLUSTER archetypes.\n"
-          },
           "at0068.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0068",
             "text" : "Laboratory internal identifier",
             "description" : "A local identifier assigned by the receiving Laboratory Information System (LIS) to track the test process.",
             "comment" : "This identifier is an internal tracking number assigned by the LIS, and it not intended to be the name of the test.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/LID\nRULE = COPY\n---end-mapping-instruction---\n"
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "Diagnostic service category",
+            "description" : "The diagnostic service or discipline that is responsible for the laboratory test result.",
+            "comment" : "This is intended to be a general categorisation and not to capture the organisational name of the laboratory. For example: anatomical pathology, immunology and transfusion medicine, medical microbiology, clinical pharmacology, medical genetics, medical biochemistry. Alternatively more granular sub categories or sub disciplines, such as endocrinology, haematology, and allergology services, may be used. This may assist clinicians in filtering between categories of results. Coding with a terminology is desirable, where possible.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = \nRULE = Map to appropriate locally (Snomed) coded text available in the template\nCOMMENT = currently only chemistry, but soon also microbiology\n---end-mapping-instruction---\n"
           }
         },
         "nb" : {
@@ -3674,7 +3130,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "A36E1D46F5D27FA50239A25435C2FC98"
+        "PARENT:MD5-CAM-1.0.1" : "DD48EFB93C891D53FDBE789F20EF3B8D"
       },
       "details" : {
         "de" : {
@@ -4010,13 +3466,6 @@
             "text" : "LIS",
             "description" : "System"
           },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "identifier",
-            "description" : "",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/lab/SID\nRULE = COPY\n---end-mapping-instruction---"
-          },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
@@ -4072,7 +3521,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "A36E1D46F5D27FA50239A25435C2FC98"
+        "PARENT:MD5-CAM-1.0.1" : "DD48EFB93C891D53FDBE789F20EF3B8D"
       },
       "details" : {
         "de" : {
@@ -4616,7 +4065,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "A36E1D46F5D27FA50239A25435C2FC98"
+        "PARENT:MD5-CAM-1.0.1" : "DD48EFB93C891D53FDBE789F20EF3B8D"
       },
       "details" : {
         "de" : {
@@ -4810,7 +4259,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "4EA2DB34E08D4F6D9E8F0F3CBDA17119"
+        "PARENT:MD5-CAM-1.0.1" : "1C320DED088EE5628FB14D9BDA552BC4"
       },
       "details" : {
         "de" : {
@@ -5051,7 +4500,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "A36E1D46F5D27FA50239A25435C2FC98"
+        "PARENT:MD5-CAM-1.0.1" : "DD48EFB93C891D53FDBE789F20EF3B8D"
       },
       "details" : {
         "de" : {
@@ -5261,7 +4710,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "4EA2DB34E08D4F6D9E8F0F3CBDA17119"
+        "PARENT:MD5-CAM-1.0.1" : "1C320DED088EE5628FB14D9BDA552BC4"
       },
       "details" : {
         "de" : {
@@ -5593,7 +5042,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "A36E1D46F5D27FA50239A25435C2FC98"
+        "PARENT:MD5-CAM-1.0.1" : "DD48EFB93C891D53FDBE789F20EF3B8D"
       },
       "details" : {
         "de" : {
@@ -5994,6 +5443,12 @@
             "text" : "Requester order identifier",
             "description" : "The local identifier assigned by the requesting clinical system.",
             "comment" : "Usually equivalent to the HL7 Placer Order Identifier.\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/referralId\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Details copied from service request",
+            "description" : "Request for a health-related service or activity to be delivered by a clinician, organisation or agency."
           }
         },
         "nb" : {
