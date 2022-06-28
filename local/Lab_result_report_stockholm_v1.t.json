@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.5",
-      "build_uid" : "4a51e4dd-c764-467b-a003-69a374c439b7",
-      "MD5-CAM-1.0.1" : "56a169666627550f8322c5f5ef323050",
+      "sem_ver" : "1.1.0-alpha.1",
+      "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
+      "MD5-CAM-1.0.1" : "251cb9c632689696f634cb712623b21a",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -310,6 +310,20 @@
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "*Document to communicate information to others about the result of a test or assessment.(en)"
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
         }
       },
       "nb" : {
@@ -324,6 +338,20 @@
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Dokument for å formidle informasjon til andre om svaret på en prøve eller undersøkelse."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilleggsinformasjon",
+          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
+          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilleggsinformasjon",
+          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
+          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
         }
       },
       "pt-br" : {
@@ -356,6 +384,20 @@
           "code" : "at0002.0.1",
           "text" : "Identificador do relatório",
           "description" : "Informação de identificação sobre o relatório."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensão",
+          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
+          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensão",
+          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
+          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
         }
       },
       "de" : {
@@ -426,9 +468,9 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "*Extension (en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
-          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+          "text" : "Laajennus",
+          "description" : "Tarvitaan lisätietoja paikallisen tilanteen mallintamiseksi tai yhdenmukaistamiseksi muiden vertailumallien / muodollisuuksien kanssa. \r\n",
+          "comment" : "Esimerkiksi: paikalliset tietovaatimukset tai ylimääräiset metatiedot FHIR- tai CIMI-vastaavien mukaisiksi."
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -478,9 +520,9 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "*Extension (en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
-          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+          "text" : "Estensione",
+          "description" : "Informazioni aggiuntive necessarie per catturare il contesto locale o per allinearsi con altri modelli/formalismi di riferimento.",
+          "comment" : "Per esempio: requisiti informativi locali o metadati aggiuntivi per allinearsi con gli equivalenti FHIR o CIMI."
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -530,9 +572,9 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "*Extension (en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
-          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+          "text" : "Uitbreiding",
+          "description" : "Extra informatie nodig om de context te beschrijven of te voldoen aan andere modellen of formalismen.",
+          "comment" : "Bijvoorbeeld: lokale informatievereisten of aanvullende metadata om overeen te komen met FHIR- of CIMI-equivalenten."
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -582,9 +624,9 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "*Extension (en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
-          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+          "text" : "Tilläggsinformation",
+          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -646,9 +688,9 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "*Extension (en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
-          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+          "text" : "扩展",
+          "description" : "用于捕获本地的上下文或与其他参考模型/形式保持一致所需的其他信息。",
+          "comment" : "比如：本地的信息需求或是为了与FHIR或CIMI保持一致的其他元数据。"
         },
         "at0002.0.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -2313,7 +2355,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "CA3FF56BD3E7798B2C2A9C553E6E1102"
+        "PARENT:MD5-CAM-1.0.1" : "86469A298616E7CE233B12A8019966B0"
       },
       "details" : {
         "de" : {
@@ -3130,7 +3172,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "DD48EFB93C891D53FDBE789F20EF3B8D"
+        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
       },
       "details" : {
         "de" : {
@@ -3521,7 +3563,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "DD48EFB93C891D53FDBE789F20EF3B8D"
+        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
       },
       "details" : {
         "de" : {
@@ -4065,7 +4107,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "DD48EFB93C891D53FDBE789F20EF3B8D"
+        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
       },
       "details" : {
         "de" : {
@@ -4259,7 +4301,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1C320DED088EE5628FB14D9BDA552BC4"
+        "PARENT:MD5-CAM-1.0.1" : "2133C3C9ED943180AF0FD5076B412AD5"
       },
       "details" : {
         "de" : {
@@ -4500,7 +4542,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "DD48EFB93C891D53FDBE789F20EF3B8D"
+        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
       },
       "details" : {
         "de" : {
@@ -4710,7 +4752,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1C320DED088EE5628FB14D9BDA552BC4"
+        "PARENT:MD5-CAM-1.0.1" : "2133C3C9ED943180AF0FD5076B412AD5"
       },
       "details" : {
         "de" : {
@@ -5042,7 +5084,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "DD48EFB93C891D53FDBE789F20EF3B8D"
+        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
       },
       "details" : {
         "de" : {
@@ -5219,7 +5261,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "FD3D4859A234737CBF31A0D59D7AE51B"
+        "PARENT:MD5-CAM-1.0.1" : "11F691D9DF1D132FDB71A9FAEB730938"
       },
       "details" : {
         "de" : {
@@ -5291,6 +5333,34 @@
           "purpose" : "Quadro generico di richiesta per un servizio o un'attività sanitaria che deve essere fornita da un medico, da un'organizzazione o da un'agenzia.",
           "keywords" : [ "richiesta, ordine, servizio, fornire, indirizzamento" ],
           "use" : "Usato per registrare la richiesta di un servizio o di un'attività sanitaria da parte di un clinico, di un'organizzazione o di un'agenzia.\r\n\r\nQuesto archetipo è stato progettato come una cornice che possa essere utilizzata come base per:\r\n- una richiesta da un clinico, organizzazione o agenzia ad un altro clinico, organizzazione o agenzia per un servizio sanitario. Per esempio: la richiesta di un medico specialista per un trattamento o un secondo parere clinico; il trasferimento delle cure a un reparto di emergenza; il monitoraggio dei segni vitali ogni quattro ore; e la fornitura di servizi a domicilio da parte di un consiglio comunale; oppure\r\n- una richiesta di un servizio di follow-up da programmare per lo stesso clinico, organizzazione o agenzia. Ad esempio: un appuntamento di controllo in ambulatorio in 6 settimane. \r\n\r\nCasi d'uso clinico:\r\n- si prenda in considerazione l'idea di un clinico che ordini un appuntamento di follow-up tra 6 settimane. L'\"Appuntamento di follow-up\" sarà il \"Nome del servizio\". Se si inseriscono '6 settimane' come tempistica proposta per l'appuntamento nell'interfaccia utente, il sistema clinico registrerà la data a sei settimane da oggi nell'elemento \"Tempistica per la fornitura del servizio\".\r\n- si consideri un clinico che ordina l'educazione al diabete come 'Nome del servizio'. I valori per 'Motivo della richiesta' possono essere 'Nuova diagnosi' e 'Prevenzione della chetoacidosi'. L'\"Indicazione clinica\" sarà \"Diabete di tipo 1\", che può essere collegato all'archetipo Problem Diagnosis e/o a Laboratory test results. Se è richiesto un corso di 4 settimane, con sessioni organizzate a intervalli settimanali in 4 occasioni separate, allora la complessa tempistica richiede l'uso dell'archetipo CLUSTER.service_direction e dell'associato CLUSTER.timing_nondaily.\r\n- si prenda in considerazione un medico che ordina un esame del sangue ricorrente, come ad esempio un INR. La complessa tempistica per questo richiede l'uso del CLUSTER.service_direction e dell'archetipo CLUSTER.timing_nondaily associato per definire ogni tempistica in una sequenza di test, come ad esempio \"giornalmente per una settimana, settimanalmente per 4 settimane, mensilmente per 6 mesi\".\r\n\r\nIl presupposto di default per questo archetipo è che si tratti di una richiesta per un singolo servizio. Se è richiesta una serie di servizi, utilizzare l'archetipo CLUSTER.service_direction all'interno dello SLOT 'Tempistica Complessa'.\r\n\r\nIn molte situazioni sarà possibile registrare i passaggi che si verificano nell'ambito di questa richiesta che viene effettuata utilizzando il corrispondente generico ACTION.service. Tuttavia, ci saranno molte occasioni in cui l'archetipo di ACTION richiesto sarà molto specifico per lo scopo, in quanto i requisiti di dati per la registrazione della fornitura di molti servizi sanitari avranno bisogno di elementi, pattern di registrazione o fasi di percorso piuttosto unici. Ad esempio: ACTION.screening o ACTION. health_education.\r\n\r\n\r\n\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Estrutura de solicitação genérica para um serviço ou atividade relacionada à saúde a ser prestado por um médico, organização ou agência.",
+          "keywords" : [ "solicitação", "requisição", "ordem", "pedido", "serviço", "referência", "encaminhamento" ],
+          "use" : "Use para registrar uma solicitação de um serviço ou atividade relacionada à saúde a ser prestado por um médico, organização ou agência.\r\n\r\nEste arquétipo foi projetado como uma estrutura que pode ser usada como base para:\r\n- uma solicitação de um clínico, organização ou agência a outro clínico, organização ou agência para um serviço relacionado à saúde. Por exemplo: uma referência a um clínico especialista para tratamento ou uma segunda opinião clínica; transferência do atendimento para um pronto-socorro; monitoramento de sinais vitais de quatro horas; e prestação de serviços domiciliares de um conselho municipal; ou\r\n- uma solicitação de um serviço de acompanhamento a ser agendado para o mesmo médico, organização ou agência. Por exemplo: uma consulta de revisão de pacientes ambulatoriais em 6 semanas.\r\n\r\nCasos-de-uso clínicos:\r\n- Considere um médico solicitando uma consulta de acompanhamento em 6 semanas. 'Consulta de acompanhamento' será o 'Nome do serviço'. Se eles inserirem '6 semanas' como o tempo proposto para a consulta na interface do usuário, o sistema clínico registrará a data seis semanas a partir de hoje no elemento de dados 'Serviço devido'.\r\n- considere um médico solicitando Educação sobre Diabetes como o 'Nome do serviço'. Os valores para 'Motivo da solicitação' podem ser 'Novo diagnóstico' e 'Prevenção de cetoacidose'. A 'indicação clínica' será 'Diabetes tipo 1', que pode estar associada ao diagnóstico de problemas e / ou resultados de exames laboratoriais. Se um curso de 4 semanas for necessário, com sessões organizadas em intervalos semanais em 4 ocasiões diferentes, o tempo complexo requer o uso de CLUSTER.service_direction e o arquétipo CLUSTER.timing_nondaily associado.\r\n- Considere um médico solicitando um exame de sangue recorrente, como um INR. O tempo complexo para isso requer o uso de CLUSTER.service_direction e o arquétipo CLUSTER.timing_nondaily associado para definir cada tempo de uma sequência de testes, como 'diariamente por uma semana, semanalmente por 4 semanas, mensalmente por 6 meses'.\r\n\r\nA suposição padrão para esse arquétipo é que ele é uma solicitação de um único serviço. Se uma série de serviços for necessária, use o arquétipo CLUSTER.service_direction dentro do SLOT 'Complex timing'.\r\n\r\nEm muitas situações, será possível registrar as etapas que ocorrem como parte dessa solicitação que está sendo realizada usando o ACTION.service genérico correspondente. No entanto, haverá muitas ocasiões em que o arquétipo de AÇÃO exigido será muito específico para o propósito, uma vez que os requisitos de dados para registrar o fornecimento de muitos serviços relacionados à saúde precisarão de elementos de dados bastante exclusivos, padrões de registro ou etapas do caminho. Por exemplo: ACTION.screening ou ACTION.health_education.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "Generiek verzoekkader voor een gezondheidsgerelateerde dienst of activiteit die moet worden geleverd door een zorgverlener, organisatie of instantie.",
+          "keywords" : [ "verzoek", "opdracht", "dienst", "voorschrift", "verwijzing" ],
+          "use" : "Gebruik dit om een verzoek vast te leggen voor een gezondheidsgerelateerde dienst of activiteit die moet worden geleverd door een arts, organisatie of instantie.\r\n\r\nDit archetype is ontworpen als een raamwerk dat als basis kan dienen voor:\r\n- een verzoek van de ene arts, organisatie of instantie aan een andere arts, organisatie of instantie voor een gezondheidsgerelateerde dienst. Bijvoorbeeld: een verwijzing naar een specialistisch arts voor behandeling of een second clinical opinion; overdracht van zorg naar een afdeling spoedeisende hulp; vier uur durende monitoring van vitale functies; en dienstverlening aan huis door een gemeente; of\r\n- een verzoek om een vervolgservice in te plannen voor dezelfde arts, organisatie of instantie. Bijvoorbeeld: een controleafspraak bij poliklinische patiënten over 6 weken.\r\n\r\nKlinische gebruiksgevallen:\r\n- neem bijvoorbeeld een arts die opdracht geeft tot een vervolgafspraak voor over 6 weken. De 'Servicenaam' wordt 'Vervolgafspraak'. Als ze '6 weken' invoeren als de voorgestelde timing voor de afspraak in de gebruikersinterface, zal het klinische systeem de datum zes weken vanaf vandaag vastleggen in het gegevenselement 'Servicetijd'.\r\n- In het geval van een clinicus die Diabetes Education gebruikt als de 'Servicenaam'. De waarden bij 'Reden verzoek' kunnen 'Nieuwe diagnose' en 'Preventie van ketoacidose' zijn. De 'Klinische indicatie' wordt 'Diabetes Type 1', mogelijk gekoppeld aan de Probleemdiagnose en/of Laboratoriumuitslagen. Als een cursus van 4 weken vereist is, met sessies die wekelijks op 4 verschillende gelegenheden worden georganiseerd, dan vereist de complexe timing het gebruik van het CLUSTER.service_direction en het bijbehorende CLUSTER.timing_nondaily archetype.\r\n- beeld je in dat een arts om een ​​terugkerend bloedonderzoek vraagt, zoals een INR. De complexe timing hiervoor vereist het gebruik van het CLUSTER.service_direction en het bijbehorende archetype CLUSTER.timing_nondaily om elke timing in een reeks tests te definiëren, zoals 'dagelijks gedurende een week, wekelijks gedurende 4 weken, maandelijks gedurende 6 maanden'.\r\n\r\nDe standaardaanname voor dit archetype is dat het om een enkele service gaat. Als een reeks services vereist is, gebruikt u het archetype CLUSTER.service_direction binnen het SLOT 'Complex timing'.\r\n\r\nIn veel situaties zal het mogelijk zijn om de stappen die plaatsvinden als onderdeel van dit verzoek dat wordt uitgevoerd, vast te leggen met behulp van de bijbehorende generieke ACTION.service. Er zullen zich echter veel gelegenheden voordoen waarin het vereiste ACTIE-archetype zeer specifiek zal zijn voor het doel, aangezien de gegevensvereisten voor het vastleggen van de levering van veel gezondheidsgerelateerde diensten vrij unieke gegevenselementen, registratiepatronen of trajectstappen vereisen. Bijvoorbeeld: ACTION.screening of ACTION.health_education.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -5482,6 +5552,22 @@
             "code" : "ac0.1",
             "description" : ""
           }
+        },
+        "pt-br" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "nl" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
         }
       },
       "termBindings" : { },
@@ -5559,6 +5645,34 @@
         "name" : "Francesca Frexia",
         "organisation" : "CRS4 - Center for advanced studies, research and development in Sardinia, Pula (Cagliari), Italy",
         "email" : "francesca.frexia@crs4.it"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Clínica Parente Pizzo",
+        "email" : "vrppizzo@gmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Mattijs Kuhlmann, Joost Holslag",
+        "organisation" : "Nedap",
+        "email" : "mattijs.kuhlmann@nedap.com, joost.holslag@nedap.com"
       },
       "otherDetails" : { }
     } ]
