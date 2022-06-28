@@ -2175,7 +2175,7 @@
           "nodeId" : "at0085.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-specimen_container-001.v0",
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-specimen_container-001.v1",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -2390,11 +2390,11 @@
         }
       }
     },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.specimen_container.v0",
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.specimen_container.v1",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-specimen_container-001.v0"
+      "value" : "openEHR-EHR-CLUSTER.ovl-specimen_container-001.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -4167,7 +4167,7 @@
           "nodeId" : "at0005.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-address-001.v0",
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-address-001.v1",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -4309,11 +4309,11 @@
         }
       }
     },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.address.v0",
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.address.v1",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-address-001.v0"
+      "value" : "openEHR-EHR-CLUSTER.ovl-address-001.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -4617,7 +4617,7 @@
           "nodeId" : "at0005.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-address-002.v0",
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-address-002.v1",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -4760,11 +4760,11 @@
         }
       }
     },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.address.v0",
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.address.v1",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-address-002.v0"
+      "value" : "openEHR-EHR-CLUSTER.ovl-address-002.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
