@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4; uid=92cf3ce0-8de6-47bf-b479-e229e5aab7da)
+archetype (adl_version=1.4; uid=92cf3ce0-8de6-47bf-b479-e229e5aab7da)
 	openEHR-EHR-CLUSTER.electronic_communication.v1
 
 concept

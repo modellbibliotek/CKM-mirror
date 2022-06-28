@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4; uid=18f96334-947e-4451-ba42-1d790977f553)
+archetype (adl_version=1.4; uid=18f96334-947e-4451-ba42-1d790977f553)
 	openEHR-EHR-CLUSTER.organisation.v1
 
 concept

@@ -1,4 +1,4 @@
-﻿archetype (adl_version=1.4; uid=9d44ce81-a4e4-4edc-a828-20f5e4b88af5)
+archetype (adl_version=1.4; uid=9d44ce81-a4e4-4edc-a828-20f5e4b88af5)
 	openEHR-EHR-CLUSTER.address.v1
 
 concept
