@@ -14,6 +14,14 @@ language
 				["email"] = <"Strauch.Natalia@mh-hannover.de">
 			>
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+				["name"] = <"Erik Sundvall">
+				["organisation"] = <"Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University">
+				["email"] = <"erik.sundvall@regionstockholm.se">
+			>
+		>
 	>
 description
 	original_author = <
@@ -28,6 +36,13 @@ description
 			purpose = <"Zur Repräsentation von Messungen und Beobachtungen der Person, die als Subjekt der Patientenakte ist, oder ihren Betreuern.">
 			use = <"Zur Verwendung durch den Patienten, um die von ihm gesammelten Informationen in die Gesundheitsakte aufzunehmen.">
 			keywords = <"Home-Überwachung", "Patienteneingabe", "Self Reporting">
+			misuse = <"">
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Egendokumentation av mätningar och observationer utförda av individen som denna journal handlar om, eller utförda av individens anhöriga etc.">
+			use = <"Används av vårdtagaren för att till vårdgivarens system skicka in information vårdtagaren själv (eller anhöriga) har samlat in.">
+			keywords = <"egenmonitorering", "hemmonitorering", "patientinmatad", "patientrapporterad", "självskattning", "självrapportering", "frågeformulär", "PROM", "PREM">
 			misuse = <"">
 		>
 		["en"] = <
@@ -48,8 +63,8 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1C84C8769BB0D98F98BADEB6DE3EDE75">
-		["build_uid"] = <"4e1c4465-ca96-4d2b-8132-dd8ca054e15d">
+		["MD5-CAM-1.0.1"] = <"195AB9421E2B48C2234DB0EE9E6A42BB">
+		["build_uid"] = <"168a2074-aeb9-40ec-b4da-35327eaa5be0">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -112,6 +127,23 @@ ontology
 					text = <"Erweiterung">
 					description = <"Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.">
 					comment = <"Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen oder CIMI-Modelle.">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Egenrapportering och egenmonitorering">
+					description = <"En COMPOSITION avsedd för en individs egenrapportering och egenmonitorering av mätvärden etc.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Tilläggsinformation">
+					description = <"Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.">
+					comment = <"Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter.">
 				>
 			>
 		>
