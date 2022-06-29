@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.1.1",
+      "sem_ver" : "2.2.0-alpha.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "9c9387081a5997dcd8195e7c3667bc52",
+      "MD5-CAM-1.0.1" : "7cfc014e5f575edb73313098700a6f84",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -116,7 +116,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Chemotherapy symptom self reporting",
+          "text" : "Chemotherapy symptom self reporting v2",
           "description" : "A composition to record a person self-monitoring particular parameters."
         }
       },
@@ -132,7 +132,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Cytostatikabehandling, egenrapporterad symtomkontroll",
+          "text" : "Cytostatikabehandling, egenrapporterad symtomkontroll v2",
           "description" : "En COMPOSITION avsedd för en individs egenrapportering och egenmonitorering av mätvärden etc."
         }
       }
