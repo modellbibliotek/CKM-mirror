@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.2.0-alpha.3",
+      "sem_ver" : "2.2.0-alpha.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "69da6a4704ec3a62e9849d0272dfe9b3",
+      "MD5-CAM-1.0.1" : "c64b9e9b919f0d1898859c03d66ae1ab",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -246,6 +246,33 @@
           "misuse" : "Da non utilizzare per registrare i dettagli di uno specifico sintomo o segno riportato come parte di una tipica consultazione clinica. Utilizzare CLUSTER.symptom_sign per questo scopo.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        }
+      }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "sv" : {
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0022.1]/items[at0004.1]" : {
+            "a.hide_on_form" : "true"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0022.2]/items[at0004.2]" : {
+            "a.hide_on_form" : "true"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0022.3]/items[at0004.3]" : {
+            "a.hide_on_form" : "true"
+          }
+        },
+        "en" : {
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0022.3]/items[at0004.3]" : {
+            "a.hide_on_form" : "true"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0022.2]/items[at0004.2]" : {
+            "a.hide_on_form" : "true"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0022.1]/items[at0004.1]" : {
+            "a.hide_on_form" : "true"
+          }
         }
       }
     },
