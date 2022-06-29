@@ -8,12 +8,23 @@ Please note that _operational_ templates (.opt-files) and other downstream openE
 
 Also note the shared ad-hoc work area at https://github.com/modellbibliotek/Arbetsyta-openEHR that can be used when you do not want the entire CKM-mirror content to potentially interfere with your work.
 
+
+New 2022
+--------
+* Since Archetype Designer now suports Github branches, we have started using them extensively for different swedish projects, try switching branch in the drop-down button menu. Examples:
+    * The branch `sv-translation-lookahead` is intended for previews of Swedish translations from individual's branches in the CKM that have not yet been merged into the international CKM-mirror
+    * The branch `lekstuga` is a sandbox for collaborative experimentation with tools, versioning, updating etc. Do not preform serious work there.
+    * ...
+* Experiments regarding sharing of derived artifacts like OPT (operational templates) and Web Templates have started in a separate repository: https://github.com/modellbibliotek/openehr-definitions (that has a dev and main branch)
+* Updating a branch to include the latest changes from the international CKM has now been made easier by a new built in Github button, so the section "Update policy & instructions" below needs to be updated...
+
 Directory names and content
 ---------------------------
 Warning: the directory names are a bit confusing due to conventions and tools used "upstream"
 
 * `/local`  currently may often contain many locally created archetypes and templates, all in the same directory, no matter what openEHR class they are based on. (This seems to be the default directory for saving new files created in Marand's ADL-designer). Needs regular manual cleanup by moving to suitable subdirectories.
 * `/local/archetypes`, `/local/templates` and `/local/templates` contain directories copied straight from openEHR's international online CKM tool http://ckm.openehr.org via https://github.com/openEHR/CKM-mirror
+* `/local/pdl/` a manually created subdirectory intended for files related to PDL (Swedish patient data law). Note that the tools do not save here by default.
 * Potential example: `/local/standin/` a manually created subdirectory intended for (semi-regularly) manually organizing files from the project Standin3. Note that the tools do not save here by default.
 * Potential example: `/local/regionostergotland/` example of a manually created subdirectory intended for (semi-regularly) manually organizing Region Östergötland's files. Note that the tools do not save here by default. Further project/topic-specific subdirectories could be created, e.g. `/local/regionostergotland/surgery` - the subdirectories under `/local` seem to be read by several tools.
 * `/remote/` contains subdirectories like `no.nasjonalikt/archetypes` that have been copied from "national/regional" CKMs like http://arketyper.no/ckm/ into openEHR's international online CKM tool http://ckm.openehr.org they are thus "remote" with respect to the international CKM as opposed to the `/local/archetypes` considered local with respect to the international CKM. 
