@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "6.0.0",
+      "sem_ver" : "1.0.1-rc.1",
       "build_uid" : "5746ba87-6c50-487d-ae95-843cd2a76da7",
-      "MD5-CAM-1.0.1" : "b005f1c5e4609943b484a3a63fe8adfa",
-      "PARENT:MD5-CAM-1.0.1" : "741B1F1780F2E7CC968EBA22E4287776"
+      "MD5-CAM-1.0.1" : "7fa2687ed6edb0e878bc3e0aa90a21a3",
+      "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
     },
     "details" : {
       "de" : {
@@ -80,11 +80,11 @@
       }
     }
   },
-  "parentArchetypeId" : "openEHR-EHR-CLUSTER.organisation.v0",
+  "parentArchetypeId" : "openEHR-EHR-CLUSTER.organisation.v1",
   "differential" : true,
   "archetypeId" : {
     "@type" : "ARCHETYPE_HRID",
-    "value" : "openEHR-EHR-CLUSTER.t_organisation.v0"
+    "value" : "openEHR-EHR-CLUSTER.t_organisation.v1"
   },
   "definition" : {
     "@type" : "C_COMPLEX_OBJECT",
@@ -172,7 +172,7 @@
         "nodeId" : "at0021.1",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-organisation-001.v0",
+        "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-organisation-001.v1",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -209,7 +209,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Care provider subunit",
+          "text" : "Vårdenhet",
           "description" : "En identifisert formell entitet eller en uformell gruppering av mennesker.",
           "comment" : "For eksempel: Et firma, institusjon, selskap, avdeling, gruppe i nærmiljøet, forsikringsselskap, behandlingsteam eller en gruppe av naboer som opptrer som støtte."
         }
@@ -218,7 +218,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Care provider subunit",
+          "text" : "Pflegeeinheit",
           "description" : "Ein Unternehmen, eine Institution oder ein Verband, der in der Gesundheitsakte vertreten sein muss.",
           "comment" : "*For example: a company, institution, corporation, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who will act as carers or support.(en)"
         }
@@ -252,11 +252,11 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "71e23a66-f356-3b98-b030-a16b20226e77",
+  "buildUid" : "38147ef7-f3af-386a-a9f5-a5788b80d11a",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
-  "templateId" : "Care unit",
+  "templateId" : "Care unit v1",
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
@@ -269,7 +269,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "741B1F1780F2E7CC968EBA22E4287776"
+        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
       },
       "details" : {
         "de" : {
@@ -335,11 +335,11 @@
         }
       }
     },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.organisation.v0",
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.organisation.v1",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-organisation-001.v0"
+      "value" : "openEHR-EHR-CLUSTER.ovl-organisation-001.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -445,8 +445,24 @@
             "comment" : "For example: a company, institution, corporation, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who will act as carers or support."
           }
         },
-        "nb" : { },
-        "de" : { },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Vårdgivare",
+            "description" : "En entitet som består av ett eller flere mennesker med et bestemt formål.",
+            "comment" : "For eksempel: Et firma, institusjon, selskap, forening, nettverk, avdeling, gruppe i nærmiljøet, forsikringsselskap, behandlingsteam eller en gruppe av naboer som opptrer som støtte."
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Gesundheitsdienstleister",
+            "description" : "Eine Einheit, die aus einer oder mehreren Personen besteht und ein bestimmtes Ziel hat.",
+            "comment" : "Zum Beispiel: ein Unternehmen, eine Institution, ein Verband, ein Netzwerk, eine Abteilung, eine Gemeindegruppe, eine Gesundheitspraxisgruppe, ein Kostenträger/Versicherer, ein Pflegeteam oder eine Gruppe von Nachbarn, die Pflege oder Unterstützung leisten."
+          }
+        },
         "sv" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
