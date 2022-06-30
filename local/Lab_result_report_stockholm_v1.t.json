@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.1.0-alpha.1",
+      "sem_ver" : "1.1.0-alpha.2",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "251cb9c632689696f634cb712623b21a",
-      "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
+      "MD5-CAM-1.0.1" : "bee820841ba80c2ddd6962c5ccc91810",
+      "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
       "de" : {
@@ -615,30 +615,11 @@
           "text" : "Rapport-id",
           "description" : "Information som identifierar rapporten.\r\n"
         },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Status",
-          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Tilläggsinformation",
-          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
-          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Dokument för att kommunicera information till andra, vanligen som svar på en begäran från en annan part."
-        },
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapport",
-          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
         },
         "at0002.0.1" : {
           "@type" : "ARCHETYPE_TERM",
