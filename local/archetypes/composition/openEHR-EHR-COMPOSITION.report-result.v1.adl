@@ -16,6 +16,14 @@ language
 				["email"] = <"antje.wulff@plri.de/ballout.sarah@mh-hannover.de">
 			>
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+				["name"] = <"Erik Sundvall">
+				["organisation"] = <"Karolinska Institutet & Karolinska University Hospital, Region Stockholm + Linköping University">
+				["email"] = <"erik.sundvall@regionstockholm.se">
+			>
+		>
 		["es-ar"] = <
 			language = <[ISO_639-1::es-ar]>
 			author = <
@@ -91,6 +99,23 @@ Um die Wiederverwendung dieses Archetyps zu maximieren, wurde die Komponente Sec
 
 
 Nicht für Test- oder Bewertungsergebnisse zu verwenden, die im Rahmen einer Beratungsnotiz aufgezeichnet werden, z.B. Glasgow Koma-Skala im Rahmen einer Notfallberatung - verwenden Sie dazu den Archetyp OBSERVATION.glasgow_coma_scale als eine Komponente innerhalb des COMPOSITION.encouter.">
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"En generell behållare för resultat av prov eller bedömningar.">
+			use = <"Används som en generell arketyp för information om resultat av enstaka test eller bedömning, eller en grupp av relaterade resultat.
+
+Vid användning av COMPOSITION.report-result förväntas den innehålla minst en OBSERVATIONs-arketyp som innehåller testresultaten eller bedömningarna, men beroende på testens eller bedömningarnas komplexitet så kan även andra arketyper inkluderas för att ge kompletterande kliniskt sammanhang 
+
+Vanliga användningsfall är:
+- laboratoriemedicinska resultat
+- resultat från bilddiagnostik, t.ex. röntgen
+- ett EKG-resultat
+- audiogram m.m. från en hörselbedömning">
+			keywords = <"svar", "rapport", "test", "testresultat", "resultat", "prov", "provresultat">
+			misuse = <"Ej avsedd för andra rapporter än resultat från tester eller bedömningar. För övriga rapporter använd den mer generella arketypen COMPOSITION.report eller andra ändamålsenliga arketyper.
+
+Ej avsedd för tester och bedömningar som ingår som del av en vanlig besöksanteckning, t.ex. Glasgow coma scale vid ett akutmottagningsbesök - använd då istället arketypen OBSERVATION.glasgow_coma_scale inuti besöksanteckningen baserad på arketypen COMPOSITION.encounter.">
 		>
 		["es-ar"] = <
 			language = <[ISO_639-1::es-ar]>
@@ -208,7 +233,7 @@ Not to be used for test or assessment results that are recorded as part of a con
 			copyright = <"© openEHR Foundation">
 		>
 	>
-	lifecycle_state = <"published">
+	lifecycle_state = <"in_development">
 	other_contributors = <"Vebjørn Arntzen, Oslo University Hospital, Norway", "Koray Atalag, University of Auckland, New Zealand", "Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)", "Sistine Barretto-Daniels, Ocean Informatics, Australia", "Lars Bitsch-Larsen, Haukeland University hospital, Norway", "Einar Fosse, National Centre for Integrated Care and Telemedicine, Norway", "Heath Frankel, Ocean Informatics, Australia", "Heather Grain, Llewelyn Grain Informatics, Australia", "Sam Heard, Ocean Informatics, Australia", "Lars Karlsen, DIPS ASA, Norway", "Lars Morgan Karlsen, DIPS ASA, Norway", "Shinji Kobayashi, Kyoto University, Japan", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Hugh Leslie, Ocean Informatics, Australia", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)", "Bjoern Naess, DIPS ASA, Norway", "Andrej Orel, Marand d.o.o., Slovenia">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
@@ -217,9 +242,9 @@ Not to be used for test or assessment results that are recorded as part of a con
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2A64B8463AA11FF22EA7977CDF0E9959">
-		["build_uid"] = <"337cfbb1-2078-4f74-a475-ab94da9959cc">
-		["revision"] = <"1.0.4">
+		["MD5-CAM-1.0.1"] = <"0C863D4A5014A8C96C483D557F9ABE83">
+		["build_uid"] = <"e2d1b875-38d7-460e-9ffe-9f42a95c68bc">
+		["revision"] = <"1.0.5-alpha">
 	>
 
 definition
@@ -488,6 +513,36 @@ ontology
 					text = <"*Extension(en)">
 					description = <"로컬 컨텍스트를 획득하는데 필요하거나 다른 참조 모델/표현과 조정에 필요한 추가 정보">
 					comment = <"예: 로컬 정보 요구사항 또는 FHIR나 CIMI의 동등한 것들과 조정하는 추가 메타데이터">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Rapport">
+					description = <"Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part.
+">
+				>
+				["at0000.1"] = <
+					text = <"Resultatrapport">
+					description = <"Dokument för att förmedla resultat av prov eller bedömningar.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Rapport-id">
+					description = <"Information som identifierar rapporten.">
+				>
+				["at0005"] = <
+					text = <"Status">
+					description = <"Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna.">
+				>
+				["at0006"] = <
+					text = <"Tilläggsinformation">
+					description = <"Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.">
+					comment = <"Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter.">
 				>
 			>
 		>
