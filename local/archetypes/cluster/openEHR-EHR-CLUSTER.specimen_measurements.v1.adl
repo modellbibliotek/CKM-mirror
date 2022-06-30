@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=ae8f7946-2197-4d85-97fe-ea2f93d932f1)
+﻿archetype (adl_version=1.4; uid=ae8f7946-2197-4d85-97fe-ea2f93d932f1)
 	openEHR-EHR-CLUSTER.specimen_measurements.v1
 
 concept
@@ -77,12 +77,12 @@ Till exempel:
 - 7 ml blod i ett vakuumrör.
 
 Storleken på ett prov kan registreras i två eller flera linjära mätningar (dimensioner), t.ex. längd, bredd och djup (höjd). Om det inte är möjligt att bestämma orienteringen av provet, kan varje dimension registreras genom att upprepa dataelementet 'Längd' eller 'Diameter'.">
-			keywords = <"prov", "provmaterial", "laboratorium", "patologi", "storlek", "volym", "area", "vikt", "dimension", "längd", "vidd", "bredd", "diameter", "massa", "tjocklek">
+			keywords = <"prov", "provmaterial", "laboratorium", "patologi", "storlek", "volym", "area", "vikt", "dimension", "längd", "vidd", "bredd", "diameter", "massa", "tjocklek", "djup", "omkrets">
 			misuse = <"Skall inte användas för att registrera mått för kroppsdelar eller kroppssegment. Använd kroppssegmentfamiljen av arketyper för detta ändamål.
 
-Skall inte användas för att registrera mätningar vid fysiska (status)undersökningar. Använd istället mätningsrelaterade dataelement inom CLUSTER.exam-familjen av arketyper för detta ändamål. Till exempel: den uppmätta storleken på en pupill i CLUSTER.exam-pupil och längden och bredden på en perforering i CLUSTER.exam-tympanic_membrane.
+Skall inte användas för att registrera mätningar vid fysiska undersökningar. Använd istället mätningsrelaterade dataelement inom CLUSTER.exam-familjen av arketyper för detta ändamål. Till exempel: den uppmätta storleken på en pupill i CLUSTER.exam-pupill och längden och bredden på en perforering i CLUSTER.exam-tympanic_membrane.
 
-Skall inte användas för att registrera mätningar vid bildundersökningar. Använd istället mätningsrelaterade dataelement inom ramen för CLUSTER-arketyper för varje modalitets- och/eller organspecifika avbildningsfynd.">
+Skall inte användas för att registrera mätningar vid bildgenererande undersökningar. Använd mätningsrelaterade dataelement inom ramen för CLUSTER-arketyper för varje modalitets- och/eller organspecifik avbildningsfynd.">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -147,8 +147,8 @@ Not to be used to record measurements in imaging examinations. Use measurement-r
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"757A4FD2358E634CFDC0B0CC9EAF70E4">
-		["build_uid"] = <"2a8d3161-782e-416b-a5ff-17989f578477">
+		["MD5-CAM-1.0.1"] = <"7AB82C019635282D7217E681A24CE9B5">
+		["build_uid"] = <"204a6766-b7c8-4015-9612-080caf06bbd2">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"1.0.2-alpha">
 	>
@@ -881,9 +881,7 @@ Dette dataelementet har 0..* forekomster som tillater registrering av to dimensj
 				["at0042"] = <
 					text = <"Dimension">
 					description = <"En uppmätt dimension av provet.">
-					comment = <"Detta dataelement har obegränsat antal förekomster (0..*) för att möjliggöra mätningar längs 2 eller fler axlar.
-
-Om det inte finns någon tydlig orientering av till exempel längd vs bredd vs höjd, använd då flera förekomster för att tillåta registrering av längden på 2 eller fler axlar utan någon specifik orientering, till exempel 3 x 4 x 5 mm.">
+					comment = <"Detta dataelement har obegränsat antal förekomster (0..*) för att möjliggöra mätningar längs 2 eller fler axlar. Om det inte finns någon tydlig orientering av till exempel längd vs bredd vs höjd, använd då flera förekomster för att tillåta registrering av längden på 2 eller fler axlar utan någon specifik orientering, till exempel 3 x 4 x 5 mm.">
 				>
 				["at0046"] = <
 					text = <"Volym">
@@ -911,10 +909,10 @@ Om det inte finns någon tydlig orientering av till exempel längd vs bredd vs h
 				>
 				["at0055"] = <
 					text = <"Omkrets">
-					description = <"Den uppmätta längden av omkretsen av ett runt eller elliptiskt exemplar eller den totala längden av alla yttre ytor av ett kvadratiskt, rektangulärt eller oregelbundet format prov.">
-					comment = <"Exempelvis: omkretsen av en gallblåsa eller kolon.
+					description = <"Den uppmätta längden av omkretsen av ett runt eller elliptiskt prov eller den totala längden av alla yttre ytor av ett kvadratiskt, rektangulärt eller oregelbundet format prov.">
+					comment = <"Exempelvis: omkretsen av en gallblåsa eller kolon. 
 
-Detta dataelement har 0..* tillåtna förekomster för att möjliggöra registrering av flera mätningar.">
+Detta dataelement har 0..* tillåtna förekomster för att möjliggöra registrering av flera mätningar, exempelvis 2 dimensioner av en \"oval\" hudutskärning som saknar markeringar som skiljer längd från bredd">
 				>
 			>
 		>
