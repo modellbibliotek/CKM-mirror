@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.3.0-rc.3",
+      "sem_ver" : "2.3.0-rc.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "68031fc57cb478d24f6b6560a1f00fa2",
+      "MD5-CAM-1.0.1" : "255e3d826bf3a184546b45ddab5ef375",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -478,7 +478,7 @@
                               "defaultValue" : {
                                 "defining_code" : {
                                   "terminology_id" : {
-                                    "value" : "http://snomed.info/sct",
+                                    "value" : "SNOMED-CT",
                                     "@type" : "TERMINOLOGY_ID"
                                   },
                                   "code_string" : "84229001",
@@ -631,13 +631,13 @@
                               "defaultValue" : {
                                 "defining_code" : {
                                   "terminology_id" : {
-                                    "value" : "local_terms",
+                                    "value" : "SNOMED-CT",
                                     "@type" : "TERMINOLOGY_ID"
                                   },
                                   "code_string" : "230145002",
                                   "@type" : "CODE_PHRASE"
                                 },
-                                "value" : "Difficulty breathing",
+                                "value" : "andningsbesvär",
                                 "@type" : "DV_CODED_TEXT"
                               },
                               "attributes" : [ {
@@ -782,7 +782,7 @@
                                   "code_string" : "106076001",
                                   "@type" : "CODE_PHRASE"
                                 },
-                                "value" : "Skin finding",
+                                "value" : "fynd som rör huden",
                                 "@type" : "DV_CODED_TEXT"
                               },
                               "attributes" : [ {
