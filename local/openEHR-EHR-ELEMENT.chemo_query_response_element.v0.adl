@@ -1,0 +1,96 @@
+archetype (adl_version=1.4; uid=d32374e7-0166-4f65-9ff4-a66b62175bd8)
+	openEHR-EHR-ELEMENT.chemo_query_response_element.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["name"] = <"Erik Sundvall">
+		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
+		["email"] = <"erik.sundvall@regionstockholm.se">
+		["date"] = <"2022-07-01">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
+		["MD5-CAM-1.0.1"] = <"3d7cd09bf0c84265bdf73a887e300bfd">
+		["build_uid"] = <"56170d05-8f1c-3910-860c-e32c625405cd">
+	>
+
+definition
+	ELEMENT[at0000] matches {    -- Chemo query response element
+		value matches {
+			1|[local::at0001],
+			2|[local::at0002],
+			3|[local::at0003]
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Chemo query response element">
+					description = <"Chemo query response element">
+				>
+				["at0001"] = <
+					text = <"Mild discomfort, ...">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Moderate symptoms, ...">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Severe problems, ....">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Chemo query response element (en)">
+					description = <"*Chemo query response element (en)">
+				>
+				["at0001"] = <
+					text = <"*Mild discomfort, ... (en)">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"*Moderate symptoms, ... (en)">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"*Severe problems, .... (en)">
+					description = <"">
+				>
+			>
+		>
+	>
