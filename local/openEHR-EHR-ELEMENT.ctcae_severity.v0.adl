@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"086f3ddf976af461883dfcd3387c4111">
+		["MD5-CAM-1.0.1"] = <"a4a14c9550940f447d9df0f798a5f1fc">
 		["build_uid"] = <"56170d05-8f1c-3910-860c-e32c625405cd">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["references"] = <"https://ctep.cancer.gov/protocoldevelopment/electronic_applications/ctc.htm">
@@ -65,23 +65,23 @@ ontology
 				>
 				["at0001"] = <
 					text = <"Mild discomfort">
-					description = <"CTCAE grade 1">
+					description = <"Mild; asymptomatic or mild symptoms; clinical or diagnostic observations only; intervention not indicated. CTCAE grade 1 .">
 				>
 				["at0002"] = <
 					text = <"Moderate symptoms">
-					description = <"CTCAE grade 2">
+					description = <"Moderate; minimal, local or noninvasive intervention indicated; limiting age-appropriate instrumental ADL. CTCAE grade 2.">
 				>
 				["at0003"] = <
 					text = <"Severe problems">
-					description = <"CTCAE grade 3">
+					description = <"Severe or medically significant but not  immediately life-threatening; hospitalization or prolongation of  hospitalization indicated; disabling;  limiting self care ADL. CTCAE grade 3.">
 				>
 				["at0004"] = <
 					text = <"Very severe problems">
-					description = <"Life-threatening consequences; urgent intervention indicated (CTCAE grade 4)">
+					description = <"Life-threatening consequences; urgent intervention indicated. CTCAE grade 4.">
 				>
 				["at0007"] = <
 					text = <"Death">
-					description = <"CTCAE grade 5">
+					description = <"Death related to adverse event. CTCAE grade 5">
 				>
 			>
 		>
