@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8b4dceceb2fabfda37f1ef6d35b913ef">
+		["MD5-CAM-1.0.1"] = <"e8b894fa31698be0c06e887e045620e9">
 		["build_uid"] = <"6bb1954a-d5d1-3683-952b-19c064972b5a">
 	>
 
@@ -65,13 +65,6 @@ definition
 					3|[local::at0016]
 				}
 			}
-			ELEMENT[at0027] occurrences matches {0..1} matches {    -- What are your symptoms of ...?
-				value matches {
-					1|[local::at0028],
-					2|[local::at0029],
-					3|[local::at0030]
-				}
-			}
 			ELEMENT[at0031] occurrences matches {0..1} matches {    -- What are your symptoms of ...?
 				value matches {
 					1|[local::at0032],
@@ -84,20 +77,6 @@ definition
 					1|[local::at0036],
 					2|[local::at0037],
 					3|[local::at0038]
-				}
-			}
-			ELEMENT[at0039] occurrences matches {0..1} matches {    -- What are your symptoms of ...?
-				value matches {
-					1|[local::at0040],
-					2|[local::at0041],
-					3|[local::at0042]
-				}
-			}
-			ELEMENT[at0043] occurrences matches {0..1} matches {    -- What are your symptoms of ...?
-				value matches {
-					1|[local::at0044],
-					2|[local::at0045],
-					3|[local::at0046]
 				}
 			}
 		}
@@ -159,22 +138,6 @@ ontology
 					text = <"Severe problems, rash on a large part of the body.">
 					description = <"">
 				>
-				["at0027"] = <
-					text = <"What are your symptoms of ...?">
-					description = <"">
-				>
-				["at0028"] = <
-					text = <"Mild discomfort, ...">
-					description = <"">
-				>
-				["at0029"] = <
-					text = <"Moderate symptoms, ...">
-					description = <"">
-				>
-				["at0030"] = <
-					text = <"Severe problems, ....">
-					description = <"">
-				>
 				["at0031"] = <
 					text = <"What are your symptoms of ...?">
 					description = <"">
@@ -204,38 +167,6 @@ ontology
 					description = <"">
 				>
 				["at0038"] = <
-					text = <"Severe problems, ....">
-					description = <"">
-				>
-				["at0039"] = <
-					text = <"What are your symptoms of ...?">
-					description = <"">
-				>
-				["at0040"] = <
-					text = <"Mild discomfort, ...">
-					description = <"">
-				>
-				["at0041"] = <
-					text = <"Moderate symptoms, ...">
-					description = <"">
-				>
-				["at0042"] = <
-					text = <"Severe problems, ....">
-					description = <"">
-				>
-				["at0043"] = <
-					text = <"What are your symptoms of ...?">
-					description = <"">
-				>
-				["at0044"] = <
-					text = <"Mild discomfort, ...">
-					description = <"">
-				>
-				["at0045"] = <
-					text = <"Moderate symptoms, ...">
-					description = <"">
-				>
-				["at0046"] = <
 					text = <"Severe problems, ....">
 					description = <"">
 				>
@@ -295,22 +226,6 @@ ontology
 					text = <"Svåra besvär, utslag på stor del av kroppen.">
 					description = <"">
 				>
-				["at0027"] = <
-					text = <"Hur upplever du dina besvär ...">
-					description = <"">
-				>
-				["at0028"] = <
-					text = <"Lätta besvär, ...">
-					description = <"">
-				>
-				["at0029"] = <
-					text = <"Måttliga besvär, ...">
-					description = <"">
-				>
-				["at0030"] = <
-					text = <"Svåra besvär, ...">
-					description = <"">
-				>
 				["at0031"] = <
 					text = <"Hur upplever du dina besvär med klåda?">
 					description = <"">
@@ -341,38 +256,6 @@ ontology
 				>
 				["at0038"] = <
 					text = <"Svåra besvär, kan ej äta och dricka p.g.a. blåsor och smärta i munnen">
-					description = <"">
-				>
-				["at0039"] = <
-					text = <"Har du förändringar av naglarna?">
-					description = <"">
-				>
-				["at0040"] = <
-					text = <"Lätta besvär, ...">
-					description = <"">
-				>
-				["at0041"] = <
-					text = <"Måttliga besvär, ...">
-					description = <"">
-				>
-				["at0042"] = <
-					text = <"Svåra besvär, ...">
-					description = <"">
-				>
-				["at0043"] = <
-					text = <"Hur upplever du dina besvär ...">
-					description = <"">
-				>
-				["at0044"] = <
-					text = <"Lätta besvär, ...">
-					description = <"">
-				>
-				["at0045"] = <
-					text = <"Måttliga besvär, ...">
-					description = <"">
-				>
-				["at0046"] = <
-					text = <"Svåra besvär, ...">
 					description = <"">
 				>
 			>
