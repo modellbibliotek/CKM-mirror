@@ -37,14 +37,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c10091a43e839d3e9324d8796fcaffe7">
+		["MD5-CAM-1.0.1"] = <"086f3ddf976af461883dfcd3387c4111">
 		["build_uid"] = <"56170d05-8f1c-3910-860c-e32c625405cd">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["references"] = <"https://ctep.cancer.gov/protocoldevelopment/electronic_applications/ctc.htm">
 	>
 
 definition
-	ELEMENT[at0000] matches {    -- ctcae_severity
+	ELEMENT[at0000] matches {    -- CTCAE Severity
 		value matches {
 			1|[local::at0001],
 			2|[local::at0002],
@@ -60,8 +60,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"ctcae_severity">
-					description = <"Chemo query response element">
+					text = <"CTCAE Severity">
+					description = <"Rename this to be suitable CTCAE Term or corresponding patient facing question">
 				>
 				["at0001"] = <
 					text = <"Mild discomfort">
@@ -88,8 +88,8 @@ ontology
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"ctcae_severity">
-					description = <"Rename this to fit suitable CTCAE Term">
+					text = <"Allvarlighetsgrad enligt CTCAE">
+					description = <"Döp om denna etikett så att den matchar CTCAE-term eller motsvarande fråga till patient (t.ex. i frågeformulär)">
 				>
 				["at0001"] = <
 					text = <"Lätta besvär">
