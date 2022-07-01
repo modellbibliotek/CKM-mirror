@@ -1,0 +1,124 @@
+archetype (adl_version=1.4; uid=40e6d7d7-8697-4bac-959c-f1053c24bb91)
+	openEHR-EHR-ELEMENT.ctcae_severity.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2022-07-01">
+		["name"] = <"Erik Sundvall">
+		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
+		["email"] = <"erik.sundvall@regionstockholm.se">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"c316afb261850efbc7eef5acd05fa298">
+		["build_uid"] = <"56170d05-8f1c-3910-860c-e32c625405cd">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
+	>
+
+definition
+	ELEMENT[at0000] matches {    -- ctcae_severity
+		value matches {
+			1|[local::at0001],
+			2|[local::at0002],
+			3|[local::at0003],
+			4|[local::at0004],
+			5|[local::at0007]
+		}
+	}
+
+ontology
+	terminologies_available = <"SNOMED-CT", ...>
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"ctcae_severity">
+					description = <"Chemo query response element">
+				>
+				["at0001"] = <
+					text = <"Mild discomfort">
+					description = <"CTCAE grade 1">
+				>
+				["at0002"] = <
+					text = <"Moderate symptoms">
+					description = <"CTCAE grade 2">
+				>
+				["at0003"] = <
+					text = <"Severe problems">
+					description = <"CTCAE grade 3">
+				>
+				["at0004"] = <
+					text = <"Very severe problems">
+					description = <"Life-threatening consequences; urgent intervention indicated (CTCAE grade 4)">
+				>
+				["at0007"] = <
+					text = <"Death">
+					description = <"CTCAE grade 5">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"ctcae_severity">
+					description = <"*Chemo query response element (en)">
+				>
+				["at0001"] = <
+					text = <"Lätta besvär">
+					description = <"CTCAE grade 1">
+				>
+				["at0002"] = <
+					text = <"Måttliga besvär">
+					description = <"CTCAE grade 2">
+				>
+				["at0003"] = <
+					text = <"Svåra besvär">
+					description = <"CTCAE grade 3">
+				>
+				["at0004"] = <
+					text = <"Mycket alllvarliga besvär">
+					description = <"Livshotande konsekvenser; kräver omedelbar åtgärd (CTCAE grade 4)">
+				>
+				["at0007"] = <
+					text = <"Död">
+					description = <"CTCAE grade 5">
+				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0001"] = <[SNOMED-CT::162468002]>
+				["at0002"] = <[SNOMED-CT::162469005]>
+				["at0003"] = <[SNOMED-CT::162470006]>
+			>
+		>
+	>
