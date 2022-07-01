@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.3.0-rc.4",
+      "sem_ver" : "2.4.0-rc.5",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "255e3d826bf3a184546b45ddab5ef375",
+      "MD5-CAM-1.0.1" : "3ed7c07f3fb82c239fe1f97a9ae38499",
       "PARENT:MD5-CAM-1.0.1" : "195AB9421E2B48C2234DB0EE9E6A42BB"
     },
     "details" : {
@@ -547,7 +547,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.250" ],
+                                  "constraint" : [ "ac0.300" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -692,7 +692,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.299" ],
+                                  "constraint" : [ "ac0.301" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -845,7 +845,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.5" ],
+                                  "constraint" : [ "ac0.302" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -962,28 +962,28 @@
             "text" : "Do you experience a rash or reddening of the skin?",
             "description" : "Presence of the symptom or sign."
           },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
           "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.250" : {
+          "ac0.300" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.250",
+            "code" : "ac0.300",
             "description" : ""
           },
-          "ac0.299" : {
+          "ac0.301" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.299",
+            "code" : "ac0.301",
+            "description" : ""
+          },
+          "ac0.302" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.302",
             "description" : ""
           }
         },
@@ -1000,28 +1000,28 @@
             "text" : "Oire / tuntemus ryhmitys (3)",
             "description" : "*Screening details about a specifed symptom or sign. (en)"
           },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
           "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.250" : {
+          "ac0.300" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.250",
+            "code" : "ac0.300",
             "description" : ""
           },
-          "ac0.299" : {
+          "ac0.301" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.299",
+            "code" : "ac0.301",
+            "description" : ""
+          },
+          "ac0.302" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.302",
             "description" : ""
           }
         },
@@ -1038,28 +1038,28 @@
             "text" : "Spesifikt symptom/sykdomstegn (3)",
             "description" : "Detaljer om et spesifikt symptom eller sykdomstegn."
           },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
           "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.250" : {
+          "ac0.300" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.250",
+            "code" : "ac0.300",
             "description" : ""
           },
-          "ac0.299" : {
+          "ac0.301" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.299",
+            "code" : "ac0.301",
+            "description" : ""
+          },
+          "ac0.302" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.302",
             "description" : ""
           }
         },
@@ -1076,28 +1076,28 @@
             "text" : "Spezifisches Symptom/Anzeichen (3)",
             "description" : "Screening-Details zu einem bestimmten Symptom oder Anzeichen."
           },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
           "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.250" : {
+          "ac0.300" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.250",
+            "code" : "ac0.300",
             "description" : ""
           },
-          "ac0.299" : {
+          "ac0.301" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.299",
+            "code" : "ac0.301",
+            "description" : ""
+          },
+          "ac0.302" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.302",
             "description" : ""
           }
         },
@@ -1114,28 +1114,28 @@
             "text" : "Sintomo/segno specifico (3)",
             "description" : "*Screening details about a specifed symptom or sign. (en)"
           },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
           "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.250" : {
+          "ac0.300" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.250",
+            "code" : "ac0.300",
             "description" : ""
           },
-          "ac0.299" : {
+          "ac0.301" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.299",
+            "code" : "ac0.301",
+            "description" : ""
+          },
+          "ac0.302" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.302",
             "description" : ""
           }
         },
@@ -1176,28 +1176,28 @@
             "text" : "Upplever du utslag eller hudrodnad?",
             "description" : "Närvaro av symptomet eller annat tecken."
           },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
           "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.250" : {
+          "ac0.300" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.250",
+            "code" : "ac0.300",
             "description" : ""
           },
-          "ac0.299" : {
+          "ac0.301" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.299",
+            "code" : "ac0.301",
+            "description" : ""
+          },
+          "ac0.302" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.302",
             "description" : ""
           }
         }
@@ -2699,6 +2699,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.299",
           "members" : [ "at0023", "at0024", "at0027" ]
+        },
+        "ac0.300" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.300",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.301" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.301",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.302" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.302",
+          "members" : [ "at0023", "at0024" ]
         }
       }
     },
