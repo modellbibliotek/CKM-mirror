@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.1",
-      "build_uid" : "1793e636-0bab-41e9-80a9-de9dc45e104f",
-      "MD5-CAM-1.0.1" : "03ec9788a355a5448e7104370ac2d70e",
+      "sem_ver" : "1.0.2",
+      "build_uid" : "0f0c03a1-251a-46ac-ade2-f15fb72d37c9",
+      "MD5-CAM-1.0.1" : "e022996a0e56d47034e3ef08278a8cfb",
       "PARENT:MD5-CAM-1.0.1" : "e59a77e9bd595bb36a0b7df77ae03538"
     },
     "details" : {
@@ -2964,6 +2964,12 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "nodeId" : "at0003.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -3177,7 +3183,10 @@
       },
       "codeString" : "de"
     },
-    "author" : { },
+    "author" : {
+      "email" : "erik.sundvall@regionstockholm.se",
+      "name" : "Erik Sundvall"
+    },
     "otherDetails" : { }
   }, {
     "@type" : "TRANSLATION_DETAILS",
@@ -3187,7 +3196,10 @@
       },
       "codeString" : "sv"
     },
-    "author" : { },
+    "author" : {
+      "name" : "Erik Sundvall",
+      "email" : "erik.sundvall@regionstockholm.se"
+    },
     "otherDetails" : { }
   }, {
     "@type" : "TRANSLATION_DETAILS",
@@ -3197,7 +3209,10 @@
       },
       "codeString" : "nb"
     },
-    "author" : { },
+    "author" : {
+      "name" : "Erik Sundvall",
+      "email" : "erik.sundvall@regionstockholm.se"
+    },
     "otherDetails" : { }
   } ]
 }
