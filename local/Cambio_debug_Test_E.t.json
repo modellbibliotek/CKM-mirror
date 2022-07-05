@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.0.0",
+      "sem_ver" : "0.0.1",
       "build_uid" : "cc9c8472-3488-45ed-9cc2-721008e1d886",
-      "MD5-CAM-1.0.1" : "5479dd76f4a5d06d88feebdf4a913053",
+      "MD5-CAM-1.0.1" : "b39d36d617527fa204fa0ecfa0b87d5c",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B"
     },
     "details" : {
@@ -149,6 +149,15 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "OBSERVATION",
         "occurrences" : "0..1",
+        "nodeId" : "at0.20",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-container-001.v0",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
         "nodeId" : "at0.11",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -163,15 +172,6 @@
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-clinical_synopsis-001.v1",
         "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "OBSERVATION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.19",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-container-001.v0",
-        "referenceType" : "archetypeOverlay"
       } ]
     } ],
     "attributeTuples" : [ ]
@@ -184,7 +184,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Cambio_debug_Test_D",
+          "text" : "Cambio_debug_Test_E",
           "description" : "Generic document containing a summary of health information about an individual."
         }
       },
@@ -1310,8 +1310,22 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
-        "sv" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Symptoms",
+            "description" : "Generic archetype to contain existing CLUSTER archetypes which need to be represented as standalone data."
+          }
+        },
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Symptom",
+            "description" : "Allmän arketyp som kan innehålla sådana CLUSTER-arketyper som behöver representeras som fristående data."
+          }
+        },
         "de" : { }
       },
       "termBindings" : { },
