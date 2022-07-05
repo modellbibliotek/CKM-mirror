@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0",
+      "sem_ver" : "3.1.0",
       "build_uid" : "cc9c8472-3488-45ed-9cc2-721008e1d886",
-      "MD5-CAM-1.0.1" : "34d6f3f328cecd0fe1b380c4496eb888",
+      "MD5-CAM-1.0.1" : "fc23728d73b7795393bf9301b920ae78",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B"
     },
     "details" : {
@@ -184,7 +184,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Cambio_debug_Test_C",
+          "text" : "Cambio_debug_Test_D",
           "description" : "Generic document containing a summary of health information about an individual."
         }
       },
