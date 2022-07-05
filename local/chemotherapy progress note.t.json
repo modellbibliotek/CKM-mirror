@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "2.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "6d71f50a432d38020a0aba3d650fe916",
+      "MD5-CAM-1.0.1" : "e57007f5994a26c93f6be35710a7abe0",
       "PARENT:MD5-CAM-1.0.1" : "e59a77e9bd595bb36a0b7df77ae03538"
     },
     "details" : {
@@ -401,6 +401,12 @@
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "items",
                     "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0004.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
                       "occurrences" : "0..1",
@@ -453,7 +459,14 @@
         "it" : { },
         "de" : { },
         "nl" : { },
-        "sv" : { }
+        "sv" : {
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Sammanfattning",
+            "description" : "Berättande beskrivning av vårdtagarens sjukdomshistoria."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
