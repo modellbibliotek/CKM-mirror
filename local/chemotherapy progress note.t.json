@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.1",
+      "sem_ver" : "0.2.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "37720a7dd74c8bab599b32ce47b6e8c8",
+      "MD5-CAM-1.0.1" : "cd35aa9b768a98414884dedb8bdccdc2",
       "PARENT:MD5-CAM-1.0.1" : "e59a77e9bd595bb36a0b7df77ae03538"
     },
     "details" : {
@@ -752,7 +752,7 @@
                   "code_string" : "230145002",
                   "@type" : "CODE_PHRASE"
                 },
-                "value" : "Difficulty breathing",
+                "value" : "andningsbesvär",
                 "@type" : "DV_CODED_TEXT"
               },
               "attributes" : [ {
@@ -767,7 +767,6 @@
                   },
                   "constraint" : [ ],
                   "selectedTerminologies" : [ "SNOMED-CT" ],
-                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "230145002",
@@ -1920,7 +1919,6 @@
                   },
                   "constraint" : [ ],
                   "selectedTerminologies" : [ "SNOMED-CT" ],
-                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "84229001",
@@ -3029,7 +3027,7 @@
                   "code_string" : "106076001",
                   "@type" : "CODE_PHRASE"
                 },
-                "value" : "Skin finding",
+                "value" : "fynd som rör huden",
                 "@type" : "DV_CODED_TEXT"
               },
               "attributes" : [ {
@@ -3044,7 +3042,6 @@
                   },
                   "constraint" : [ ],
                   "selectedTerminologies" : [ "SNOMED-CT" ],
-                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "106076001",
