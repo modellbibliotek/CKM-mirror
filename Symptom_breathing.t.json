@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "e640ac6c225d20a95201646b248b1a27",
+      "MD5-CAM-1.0.1" : "24a56c422e1cafe897d4eaee6fd67c34",
       "PARENT:MD5-CAM-1.0.1" : "F609CCB2F85F4B9B0B9A5B17D85D4831",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "0.1.1",
       "build_uid" : "85c14043-dfd3-4ed0-a89e-5c610b8e2326"
     },
     "details" : {
@@ -262,16 +262,7 @@
         "rmTypeName" : "ELEMENT",
         "occurrences" : "0..0",
         "nodeId" : "at0152.1",
-        "attributes" : [ {
-          "@type" : "C_ATTRIBUTE",
-          "rmAttributeName" : "value",
-          "children" : [ {
-            "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
-            "attributes" : [ ],
-            "attributeTuples" : [ ]
-          } ]
-        } ],
+        "attributes" : [ ],
         "attributeTuples" : [ ]
       }, {
         "@type" : "C_COMPLEX_OBJECT",
