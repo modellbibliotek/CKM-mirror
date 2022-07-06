@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "1.1.0",
       "build_uid" : "c40c8131-730c-4327-b34e-2f0571a160f1",
-      "MD5-CAM-1.0.1" : "77199a911241174e0ef72a7f2f75ac01",
+      "MD5-CAM-1.0.1" : "706e85b9bf454823a4b3a3917b51acb3",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B"
     },
     "details" : {
@@ -1312,7 +1312,7 @@
                     }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..1",
+                      "occurrences" : "0..*",
                       "nodeId" : "at0004.3",
                       "attributes" : [ ],
                       "attributeTuples" : [ ],
@@ -1578,7 +1578,6 @@
                   },
                   "constraint" : [ ],
                   "selectedTerminologies" : [ "SNOMED-CT" ],
-                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "84229001",
@@ -2577,7 +2576,6 @@
                   },
                   "constraint" : [ ],
                   "selectedTerminologies" : [ "SNOMED-CT" ],
-                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "230145002",
@@ -3598,7 +3596,6 @@
                   },
                   "constraint" : [ ],
                   "selectedTerminologies" : [ "SNOMED-CT" ],
-                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "106076001",
