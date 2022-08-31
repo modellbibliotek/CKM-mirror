@@ -1,0 +1,96 @@
+{
+    "versionId": 20170202020202,
+    "samplingDateTime": 201810161302,
+    "LID": 123456789,
+    "referralId": 123456789,
+    "id": 10,
+    "type": {
+        "id": 22,
+        "name": "Journaltext"
+    },
+    "isFinal": true,
+    "saved": {
+        "dateTime": 20180919160606,
+        "careUnit": {
+            "id": 36,
+            "name": "H - Akutmott (Kir 1)"
+        }
+    },
+    "lab": {
+        "SID": "S4043",
+        "careUnit": {
+            "id": 36,
+            "name": "H - Akutmott (Kir 1)"
+        }
+    },
+    "ordererCareUnitExternalId": "11002211M01",
+    "invoiceeCareUnitExternalId": "11002211M01",
+    "referringDoctor": "Robert Andersson",
+    "attestation": {
+        "createdDateTime": 201801010101,
+        "attested": {
+            "dateTime": 201212121212,
+            "user": {
+                "id": 191010101010,
+                "username": "4HQ7",
+                "fullName": "Anna Andersson"
+            }
+        },
+        "patient": {
+            "id": 191212121212,
+            "idFormatted": "19  121212-1212",
+            "fullName": "Tolvan Tolvansson",
+            "firstName": "Tolvan",
+            "lastName": "Tolvansson"
+        },
+        "document": {
+            "id": "20121119122740-197709065663",
+            "type": {
+                "id": 22,
+                "name": "Journaltext"
+            },
+            "hasDeviatingAnalysis": true,
+            "savedDateTime": 201810101602,
+            "isLatestVersionAttested": true
+        },
+        "careUnit": {
+            "id": 36,
+            "name": "H - Akutmott (Kir 1)"
+        },
+        "responsibleAttester": {
+            "id": 191010101010,
+            "username": "4HQ7",
+            "fullName": "Anna Andersson"
+        },
+        "responsibleAttesterName": "Tolvan"
+    },
+    "order": {
+        "id": 123,
+        "type": {
+            "id": 22,
+            "name": "Journaltext"
+        }
+    },
+    "isCopy": false,
+    "originalRecipientsAddress": "string",
+    "comment": "Svar på beställning 1234567",
+    "orderComment": "Provet taget bakifrån",
+    "replyTime": 20170202020202,
+    "samples": [
+        {
+            "analyses": [
+                {
+                    "analysisComment": "Urinprovet bör snarast tas om",
+                    "referenceArea": "1,0-2,0",
+                    "isDeviating": false,
+                    "analysisId": "NPU3219",
+                    "analysis": "P-Glukos",
+                    "value": "3,2",
+                    "unit": "mmol/L"
+                }
+            ],
+            "groupComment": "Provet bör tas om",
+            "group": "string"
+        }
+    ]
+}
