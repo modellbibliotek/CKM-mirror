@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.1.0-alpha.3",
+      "sem_ver" : "1.1.0-alpha.4",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "91d882ad95b153a7bd614b70fed999b5",
+      "MD5-CAM-1.0.1" : "8b0004cd555be909b83b70850cb50579",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -310,6 +310,20 @@
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "*Document to communicate information to others about the result of a test or assessment.(en)"
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
         }
       },
       "nb" : {
@@ -324,6 +338,20 @@
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Dokument for å formidle informasjon til andre om svaret på en prøve eller undersøkelse."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilleggsinformasjon",
+          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
+          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilleggsinformasjon",
+          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
+          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
         }
       },
       "pt-br" : {
@@ -356,6 +384,20 @@
           "code" : "at0002.0.1",
           "text" : "Identificador do relatório",
           "description" : "Informação de identificação sobre o relatório."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensão",
+          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
+          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensão",
+          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
+          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
         }
       },
       "de" : {
@@ -426,9 +468,9 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "*Extension (en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
-          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+          "text" : "Laajennus",
+          "description" : "Tarvitaan lisätietoja paikallisen tilanteen mallintamiseksi tai yhdenmukaistamiseksi muiden vertailumallien / muodollisuuksien kanssa. \r\n",
+          "comment" : "Esimerkiksi: paikalliset tietovaatimukset tai ylimääräiset metatiedot FHIR- tai CIMI-vastaavien mukaisiksi."
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -478,9 +520,9 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "*Extension (en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
-          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+          "text" : "Estensione",
+          "description" : "Informazioni aggiuntive necessarie per catturare il contesto locale o per allinearsi con altri modelli/formalismi di riferimento.",
+          "comment" : "Per esempio: requisiti informativi locali o metadati aggiuntivi per allinearsi con gli equivalenti FHIR o CIMI."
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -530,9 +572,9 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "*Extension (en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
-          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+          "text" : "Uitbreiding",
+          "description" : "Extra informatie nodig om de context te beschrijven of te voldoen aan andere modellen of formalismen.",
+          "comment" : "Bijvoorbeeld: lokale informatievereisten of aanvullende metadata om overeen te komen met FHIR- of CIMI-equivalenten."
         },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -620,9 +662,9 @@
         "at0006" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "*Extension (en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
-          "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+          "text" : "扩展",
+          "description" : "用于捕获本地的上下文或与其他参考模型/形式保持一致所需的其他信息。",
+          "comment" : "比如：本地的信息需求或是为了与FHIR或CIMI保持一致的其他元数据。"
         },
         "at0002.0.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -5619,7 +5661,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "120e960de05930f2a12f4f18a2e3791d"
+        "PARENT:MD5-CAM-1.0.1" : "ecdae67f79b2bac88502dd840f54c0e9"
       },
       "details" : {
         "sv" : {
@@ -5668,6 +5710,25 @@
           "nodeId" : "at0008.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0012",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0015.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-juno_labinfo_adapter-002.v0",
+              "referenceType" : "archetypeOverlay"
+            } ]
+          } ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -5699,6 +5760,79 @@
             "description" : "*The incoming (not mapped) Test method identification  code \n (en)"
           }
         }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "aeddd5fc-7634-3adb-b19b-5eaf6866ddef",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "29352c74-e26b-433a-ba92-914d016bbbb3",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "ecdae67f79b2bac88502dd840f54c0e9"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.juno_labinfo_adapter.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-juno_labinfo_adapter-002.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
+          "nodeId" : "at0012.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
