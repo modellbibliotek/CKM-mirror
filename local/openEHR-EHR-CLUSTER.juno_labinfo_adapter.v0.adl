@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e0a6a312131e78252fe3cbcc6340669f">
+		["MD5-CAM-1.0.1"] = <"5f82dde20dc593d6ffe83a8358dbecbe">
 		["build_uid"] = <"aeddd5fc-7634-3adb-b19b-5eaf6866ddef">
 	>
 
@@ -74,6 +74,11 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- isDeviating
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
 			ELEMENT[at0011] occurrences matches {0..1} matches {    -- isAccredited
 				value matches {
 					DV_BOOLEAN matches {*}
@@ -81,16 +86,6 @@ definition
 			}
 			CLUSTER[at0012] occurrences matches {0..1} matches {    -- PairAnalysis
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0013] occurrences matches {0..1} matches {    -- pairAnalysisSamplingDateTime
-						value matches {
-							DV_TIME matches {*}
-						}
-					}
-					ELEMENT[at0001] occurrences matches {0..1} matches {    -- isDeviating
-						value matches {
-							DV_BOOLEAN matches {*}
-						}
-					}
 					allow_archetype CLUSTER[at0015] occurrences matches {0..*} matches {    -- PairAnlyses
 						include
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.juno_labinfo_adapter\.v0/}
@@ -151,10 +146,6 @@ SG12.OBR..C502.6155 (Measurement attribute, coded)">
 					text = <"PairAnalysis">
 					description = <"">
 				>
-				["at0013"] = <
-					text = <"pairAnalysisSamplingDateTime">
-					description = <"">
-				>
 				["at0015"] = <
 					text = <"PairAnlyses">
 					description = <"">
@@ -168,48 +159,42 @@ SG12.OBR..C502.6155 (Measurement attribute, coded)">
 					description = <"*Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected). (en)">
 				>
 				["at0001"] = <
-					text = <"*isDeviating (en)">
+					text = <"avvikande">
 					description = <"*Pathological manifestation (en)">
 					comment = <"*Marked * in EDI message
 SG12.OBR..C502.6155 (Measurement attribute, coded) (en)">
 				>
 				["at0002"] = <
-					text = <"*referenceArea (en)">
-					description = <"*Reference range from ..
- (en)">
+					text = <"referensområde">
+					description = <"Referensområde från TakeCares JUNO-API">
 				>
 				["at0003"] = <
 					text = <"enhet">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"analysisComment">
+					text = <"analyskommentar">
 					description = <"Kommentar från TakeCares JUNO-API">
 				>
 				["at0008"] = <
-					text = <"analysis">
-					description = <"A
-nalysnamn från TakeCares JUNO-API">
+					text = <"analys">
+					description = <"Analysnamn från TakeCares JUNO-API">
 				>
 				["at0009"] = <
-					text = <"analysisId">
+					text = <"analys-ID">
 					description = <"NPU, SWE eller lokal kod från TakeCares JUNO-API">
 				>
 				["at0010"] = <
-					text = <"*value (en)">
+					text = <"värde">
 					description = <"">
 				>
 				["at0011"] = <
-					text = <"*isAccredited (en)">
+					text = <"ackrediterad">
 					description = <"">
 					comment = <"*From Multidisciplinary responsed (Unilabs etc) (en)">
 				>
 				["at0012"] = <
-					text = <"*PairAnalysis (en)">
-					description = <"">
-				>
-				["at0013"] = <
-					text = <"*pairAnalysisSamplingDateTime (en)">
+					text = <"analyspar">
 					description = <"">
 				>
 				["at0015"] = <
