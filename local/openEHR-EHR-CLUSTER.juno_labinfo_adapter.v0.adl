@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"120e960de05930f2a12f4f18a2e3791d">
+		["MD5-CAM-1.0.1"] = <"e0a6a312131e78252fe3cbcc6340669f">
 		["build_uid"] = <"aeddd5fc-7634-3adb-b19b-5eaf6866ddef">
 	>
 
@@ -74,9 +74,29 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- isDeviating
+			ELEMENT[at0011] occurrences matches {0..1} matches {    -- isAccredited
 				value matches {
 					DV_BOOLEAN matches {*}
+				}
+			}
+			CLUSTER[at0012] occurrences matches {0..1} matches {    -- PairAnalysis
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0013] occurrences matches {0..1} matches {    -- pairAnalysisSamplingDateTime
+						value matches {
+							DV_TIME matches {*}
+						}
+					}
+					ELEMENT[at0001] occurrences matches {0..1} matches {    -- isDeviating
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					allow_archetype CLUSTER[at0015] occurrences matches {0..*} matches {    -- PairAnlyses
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.juno_labinfo_adapter\.v0/}
+						exclude
+							archetype_id/value matches {/.*/}
+					}
 				}
 			}
 		}
@@ -122,6 +142,23 @@ SG12.OBR..C502.6155 (Measurement attribute, coded)">
 					text = <"value">
 					description = <"">
 				>
+				["at0011"] = <
+					text = <"isAccredited">
+					description = <"">
+					comment = <"From Multidisciplinary responsed (Unilabs etc)">
+				>
+				["at0012"] = <
+					text = <"PairAnalysis">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"pairAnalysisSamplingDateTime">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"PairAnlyses">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -160,6 +197,23 @@ nalysnamn från TakeCares JUNO-API">
 				>
 				["at0010"] = <
 					text = <"*value (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*isAccredited (en)">
+					description = <"">
+					comment = <"*From Multidisciplinary responsed (Unilabs etc) (en)">
+				>
+				["at0012"] = <
+					text = <"*PairAnalysis (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*pairAnalysisSamplingDateTime (en)">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"*PairAnlyses (en)">
 					description = <"">
 				>
 			>
