@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ebd45ab540210835468807a2a6148951">
+		["MD5-CAM-1.0.1"] = <"ecdae67f79b2bac88502dd840f54c0e9">
 		["build_uid"] = <"aeddd5fc-7634-3adb-b19b-5eaf6866ddef">
 	>
 
@@ -171,7 +171,7 @@ SG12.OBR..C502.6155 (Measurement attribute, coded)">
 				>
 				["at0001"] = <
 					text = <"avvikande">
-					description = <"*Pathological manifestation (en)">
+					description = <"Patologisk markör">
 					comment = <"*Marked * in EDI message
 SG12.OBR..C502.6155 (Measurement attribute, coded) (en)">
 				>
