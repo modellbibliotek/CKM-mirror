@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9db91572518c616dfb30782180f752b2">
+		["MD5-CAM-1.0.1"] = <"5c8ec3045e80fdb71e561e411268184a">
 		["build_uid"] = <"aeddd5fc-7634-3adb-b19b-5eaf6866ddef">
 	>
 
@@ -110,7 +110,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"juno_labinfo_adapter">
-					description = <"Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected).">
+					description = <"Adapter archetype for copying original fields from TakeCare's JUNO API source data since thay need to be available even when thay may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected).">
 				>
 				["at0001"] = <
 					text = <"isDeviating">
@@ -167,7 +167,7 @@ SG12.OBR..C502.6155 (Measurement attribute, coded)">
 			items = <
 				["at0000"] = <
 					text = <"juno_labinfo_adapter">
-					description = <"*Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected). (en)">
+					description = <"Adapterarketyp med kopior av originalfält från TakeCares JUNO API eftersom källdata måste vara tillgängligt även om det blivit fel under konverteringen på grund av dålig eller tvetydig inkommande datakvalitet (t.ex. inkommande text där siffror förväntas).">
 				>
 				["at0001"] = <
 					text = <"avvikande">
