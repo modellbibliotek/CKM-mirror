@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ecdae67f79b2bac88502dd840f54c0e9">
+		["MD5-CAM-1.0.1"] = <"7dd00fb6d82b3577f4b22c4dab35cbae">
 		["build_uid"] = <"aeddd5fc-7634-3adb-b19b-5eaf6866ddef">
 	>
 
@@ -49,17 +49,12 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0007] occurrences matches {0..1} matches {    -- analysisComment
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
 			ELEMENT[at0009] occurrences matches {0..1} matches {    -- analysisId
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- referenceArea
+			ELEMENT[at0010] occurrences matches {0..1} matches {    -- value
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -69,7 +64,12 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0010] occurrences matches {0..1} matches {    -- value
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- analysisComment
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- referenceArea
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -114,48 +114,48 @@ ontology
 				>
 				["at0001"] = <
 					text = <"isDeviating">
-					description = <"Pathological manifestation">
+					description = <"Marker for pathological manifestation">
 					comment = <"Marked * in EDI message
 SG12.OBR..C502.6155 (Measurement attribute, coded)">
 				>
 				["at0002"] = <
 					text = <"referenceArea">
-					description = <"Reference range from ..
-">
+					description = <"Reference range from from TakeCare's JUNO-API">
 				>
 				["at0003"] = <
 					text = <"unit">
-					description = <"">
+					description = <"Measurement unit from TakeCare's JUNO-API">
 				>
 				["at0007"] = <
 					text = <"analysisComment">
-					description = <"Kommentar från TakeCares JUNO-API">
+					description = <"Analysis comment from TakeCare's JUNO-API. This field sometimes contains an actual result (e.g. if the \"value\" field says somoething like see comment).">
 				>
 				["at0008"] = <
 					text = <"analysis">
-					description = <"Analysnamn från TakeCares JUNO-API">
+					description = <"Analysis name from TakeCare's JUNO-API">
 				>
 				["at0009"] = <
 					text = <"analysisId">
-					description = <"NPU, SWE or local from TakeCare
+					description = <"NPU, SWE or local code from from TakeCare's JUNO-API
 ">
 				>
 				["at0010"] = <
 					text = <"value">
-					description = <"">
+					description = <"Result value from TakeCare's JUNO-API">
 				>
 				["at0011"] = <
 					text = <"isAccredited">
 					description = <"">
-					comment = <"From Multidisciplinary responsed (Unilabs etc)">
+					comment = <"From Multidisciplinary responses (Unilabs etc)">
 				>
 				["at0012"] = <
 					text = <"PairAnalysis">
-					description = <"">
+					description = <"Used for what the Juno API calls \"pair anlysis\" - two related tastes that are usually compared to each other Används när man gör \"Pair analysis\" dvs två jämförande provtagningar som hänger ihop. ">
+					comment = <"From Multidisciplinary responses (Unilabs etc)">
 				>
 				["at0015"] = <
 					text = <"PairAnlyses">
-					description = <"">
+					description = <"Copy of the previous related/parired analysis">
 				>
 				["at0016"] = <
 					text = <"pairAnalysisSamplingDateTime">
@@ -171,46 +171,49 @@ SG12.OBR..C502.6155 (Measurement attribute, coded)">
 				>
 				["at0001"] = <
 					text = <"avvikande">
-					description = <"Patologisk markör">
+					description = <"*Marker for pathological manifestation (en)">
 					comment = <"*Marked * in EDI message
 SG12.OBR..C502.6155 (Measurement attribute, coded) (en)">
 				>
 				["at0002"] = <
 					text = <"referensområde">
-					description = <"Referensområde från TakeCares JUNO-API">
+					description = <"*Reference range from from TakeCare's JUNO-API (en)">
 				>
 				["at0003"] = <
 					text = <"enhet">
-					description = <"">
+					description = <"*Measurement unit from TakeCare's JUNO-API (en)">
 				>
 				["at0007"] = <
 					text = <"analyskommentar">
-					description = <"Kommentar från TakeCares JUNO-API">
+					description = <"Analyskommentar från TakeCares JUNO-API. Ibland innehåller detta fält själva resultatet (t.ex. när \"analysresultat\"-fältet innehåller \"se kommentar\" etc.
+">
 				>
 				["at0008"] = <
-					text = <"analys">
-					description = <"Analysnamn från TakeCares JUNO-API">
+					text = <"analysnamn">
+					description = <"*Analysis name from TakeCare's JUNO-API (en)">
 				>
 				["at0009"] = <
-					text = <"analys-ID">
-					description = <"NPU, SWE eller lokal kod från TakeCares JUNO-API">
+					text = <"analyskod">
+					description = <"*NPU, SWE or local code from from TakeCare's JUNO-API
+ (en)">
 				>
 				["at0010"] = <
-					text = <"värde">
-					description = <"">
+					text = <"analysresultat">
+					description = <"*Result value from TakeCare's JUNO-API (en)">
 				>
 				["at0011"] = <
 					text = <"ackrediterad">
 					description = <"">
-					comment = <"*From Multidisciplinary responsed (Unilabs etc) (en)">
+					comment = <"Används ibland i multidisciplinära svar (Unilabs etc)">
 				>
 				["at0012"] = <
 					text = <"analyspar">
-					description = <"">
+					description = <"Används när man gör det som Junos API kallar \"Pair analysis\" dvs två jämförande provtagningar som hänger ihop.">
+					comment = <"Används ibland i multidisciplinära svar (Unilabs etc)">
 				>
 				["at0015"] = <
 					text = <"relaterad analys">
-					description = <"">
+					description = <"Kopia av den föregående relaterade anlaysen">
 				>
 				["at0016"] = <
 					text = <"provtagningstid för relaterad analys">
