@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7dd00fb6d82b3577f4b22c4dab35cbae">
+		["MD5-CAM-1.0.1"] = <"9db91572518c616dfb30782180f752b2">
 		["build_uid"] = <"aeddd5fc-7634-3adb-b19b-5eaf6866ddef">
 	>
 
@@ -171,17 +171,17 @@ SG12.OBR..C502.6155 (Measurement attribute, coded)">
 				>
 				["at0001"] = <
 					text = <"avvikande">
-					description = <"*Marker for pathological manifestation (en)">
-					comment = <"*Marked * in EDI message
+					description = <"Patologisk markör">
+					comment = <"Marked * in EDI message
 SG12.OBR..C502.6155 (Measurement attribute, coded) (en)">
 				>
 				["at0002"] = <
 					text = <"referensområde">
-					description = <"*Reference range from from TakeCare's JUNO-API (en)">
+					description = <"Referensområde från TakeCares JUNO-API">
 				>
 				["at0003"] = <
 					text = <"enhet">
-					description = <"*Measurement unit from TakeCare's JUNO-API (en)">
+					description = <"Mätenhet från TakeCares JUNO-API">
 				>
 				["at0007"] = <
 					text = <"analyskommentar">
@@ -190,16 +190,15 @@ SG12.OBR..C502.6155 (Measurement attribute, coded) (en)">
 				>
 				["at0008"] = <
 					text = <"analysnamn">
-					description = <"*Analysis name from TakeCare's JUNO-API (en)">
+					description = <"Analysnamn från TakeCares JUNO-API">
 				>
 				["at0009"] = <
 					text = <"analyskod">
-					description = <"*NPU, SWE or local code from from TakeCare's JUNO-API
- (en)">
+					description = <"NPU, SWE eller lokal kod från TakeCares JUNO-API">
 				>
 				["at0010"] = <
 					text = <"analysresultat">
-					description = <"*Result value from TakeCare's JUNO-API (en)">
+					description = <"Analysresultat från TakeCares JUNO-API">
 				>
 				["at0011"] = <
 					text = <"ackrediterad">
