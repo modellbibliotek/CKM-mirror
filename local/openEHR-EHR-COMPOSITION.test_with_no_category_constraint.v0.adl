@@ -32,13 +32,6 @@ description
 
 definition
 	COMPOSITION[at0000] matches {    -- test with no category constraint
-		category matches {
-			DV_CODED_TEXT[at0001] matches {    -- Coded text
-				defining_code matches {
-					[openehr::433]
-				}
-			}
-		}
 		context matches {
 			EVENT_CONTEXT[at0002] matches {    -- Event Context
 				other_context matches {
