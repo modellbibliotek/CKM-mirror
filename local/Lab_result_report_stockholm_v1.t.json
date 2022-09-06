@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.1.0-alpha.5",
+      "sem_ver" : "1.1.0-alpha.6",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "d49e922e1fd1865fc9478f8fff38472d",
+      "MD5-CAM-1.0.1" : "3418b39e53458dc92a64f0b38f5eef3d",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -4589,7 +4589,8 @@
           "" : {
             "EDI[KUL].path" : "SG5.NAD.*",
             "EDI[KUL].when" : "path(SG5.NAD.3035)=PAY",
-            "EDI[KUL].converter" : "EDI-org-to-openEHR-org"
+            "EDI[KUL].converter" : "EDI-org-to-openEHR-org",
+            "obs" : "Needs to be mapped as comment"
           }
         }
       }
