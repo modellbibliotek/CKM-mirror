@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0-alpha.6",
+      "sem_ver" : "2.1.0-alpha.6",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "5fa8b8a01369674584460c75022769b6",
+      "MD5-CAM-1.0.1" : "7f0abacb253028a81aa1358e73077bf6",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -4686,7 +4686,7 @@
             "code" : "at0003.1",
             "text" : "Identifier",
             "description" : "Identifier associated with the organisation.",
-            "comment" : "Occurrences for this data element is set to 0..* to allow for more than one Identifier to be recorded. Note that the ID data type contains multiple subcomponents for recording the ID value, type, issuer and assigner.\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/invoiceeCareUnitExternalId\nRULE = Lookup Organization.identifier.hsaid (Organization.identifier.kombika=SRCPATH)\n---end-mapping-instruction---"
+            "comment" : "Occurrences for this data element is set to 0..* to allow for more than one Identifier to be recorded. Note that the ID data type contains multiple subcomponents for recording the ID value, type, issuer and assigner.\n---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/invoiceeCareUnitExternalId\nRULE : Lookup Organization.identifier.hsaid (Organization.identifier.kombika=SRCPATH)\nRULE : Set Identifier.Type = 'HSAID oid'\n---end-mapping-instruction---"
           }
         },
         "nb" : { },
