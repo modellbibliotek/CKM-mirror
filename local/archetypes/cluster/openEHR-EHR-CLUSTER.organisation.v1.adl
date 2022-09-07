@@ -1,0 +1,368 @@
+﻿archetype (adl_version=1.4; uid=18f96334-947e-4451-ba42-1d790977f553)
+	openEHR-EHR-CLUSTER.organisation.v1
+
+concept
+	[at0000]	-- Organisation
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+				["name"] = <"Sarah Ballout, Natalia Strauch">
+				["organisation"] = <"Medizinische Hochschule Hannover">
+				["email"] = <"ballout.sarah@mh-hannover.de, Strauch.Natalia@mh-hannover.de">
+			>
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+				["name"] = <"Therese Lindberg, Erik Sundvall">
+				["organisation"] = <"Cambio CDS, Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University">
+				["email"] = <"therese.lindberg@cambio.se, erik.sundvall@regionstockholm.se">
+			>
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+				["name"] = <"Liv Laugen, John Tore Valand, Vebjørn Arntzen, Kanika Kuwelker">
+				["organisation"] = <"​Oslo University Hospital, Norway, Helse Bergen, Helse Vest IKT">
+				["email"] = <"liv.laugen@ous-hf.no, john.tore.valand@helse-bergen.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no, kanika.kuwelker@helse-vest-ikt.no">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"Heather Leslie">
+		["organisation"] = <"Atomica Informatics">
+		["email"] = <"heather.leslie@atomicainformatics.com">
+		["date"] = <"2021-04-14">
+	>
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			purpose = <"Zur Darstellung von Informationen zur einer Organisation, wie sie bekannt sind oder im Rahmen der klinischen Dokumentation verstanden werden.">
+			use = <"Der Archetyp wird verwendet, um Informationen zur einer Organisation darzustellen, wie sie bekannt sind oder im Rahmen der klinischen Dokumentation verstanden werden, oft ad hoc oder wenn die Verwendung von einem formellen demografischen Register oder einem Index nicht angemessen oder nicht möglich ist.
+Beispiele beinhalten:
+- der Inhaber einer Patientenverfügung unter Verwendung des SLOT „Inhaber der Kopie“ innerhalb des Archetyps EVALUATION.advance_care_directive oder
+- Name und Kontaktdaten einer Organisation, die die Betreuung einer Person in ihrem zu Hause übernimmt.
+
+Dieser Archetyp wurde entwickelt, um Angaben zu offiziell anerkannten Einrichtungen, wie einem eingetragenen Unternehmen, einem Krankenhaus und seinen anerkannten „Unterorganisationen“, wie einer operativ getrennten oder spezialisierten Satellitenklinik oder einem häuslichen Pflegedienst, zu enthalten. Es kann auch verwendet werden, um Kontaktinformationen über informellere Netzwerke oder Gruppen darzustellen, wie z. B. eine lokale Selbsthilfegruppe.
+
+Dieser Archetyp könnte auch als Proxy für formale demografische Daten verwendet werden, wenn ein Template mit Domänenexperten überprüft wird – beispielsweise bei einer Bewertung, bei der die Prüfer erwarten würden, dass die Details zu der Organisation oben auf dem Bewertungsformular angezeigt werden.">
+			keywords = <"Organisation, Anbieter, Versorger, Betreuer, Netzwerk, Verbund, Gruppe", ...>
+			misuse = <"Der Archetyp darf nicht verwendet werden, um ein offizielles Register oder einen Index darzustellen, zu ersetzen oder zu führen. Verwenden Sie zu diesem Zweck einen formellen Gesundheitsanbieter-Index (Health Provider Index) oder Archetypen, die auf dem openEHR Demographic Information Model basieren.
+
+Der Archetyp darf nicht verwendet werden, um den Pflegeort und ähnliche Datenelemente darzustellen, die formal in der Patientenakte unter Verwendung der Reference Model-Attribute dargestellt werden sollten.">
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Att registrera information om en organisation på det sätt som det behöver representeras i en journalanteckning.
+">
+			use = <"Används för att registrera information om en organisation som behöver representeras i journalen. Används exempelvis ad hoc eller i de fall då formella demografiska register eller kataloger inte kan användas istället. 
+Exempel inkluderar:
+- namn och kontaktuppgifter för en organisation som har en fysisk kopia av patientens önskemål om vård i händelse av att patienten inte längre kan kommunicera
+- namn och kontaktuppgifter för hemtjänst- eller hemsjukvårdsorganisation för en individ
+
+Denna arketyp har utformats för att dokumentera information om formellt erkända enheter, såsom ett registrerat företag, ett sjukhus och dess erkända \"underorganisationer\", såsom en separat eller specialiserad satellitklinik eller hemsjukvård. Den kan också användas för att dokumentera kontaktinformation om mer informella nätverk eller grupper, till exempel en lokal stödgrupp.
+
+Den här arketypen kan också användas som en proxy för formell demografisk data när man granskar en mall med domänexperter - exempelvis där granskare förväntar sig att se en organisations information i ett formulär.">
+			keywords = <"organisation, leverantör, vårdgivare, vårdenhet, enhet, avdelning, nätverk, grupp", ...>
+			misuse = <"*Not to be used to represent, replace or maintain an official register or index. Use a formal Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.
+
+Not to be used to represent the location of care and similar data elements that should be represented formally in the health record using the Reference Model attributes. (en)">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For å registrere detaljer om en organisasjon, som man har informasjon om eller har forstått, i det kliniske dokumentasjonsarbeidet.">
+			use = <"Brukes for å registrere detaljer om en organisasjon, som man har informasjon om eller har forstått, i det kliniske dokumentasjonsarbeidet, ofte ad hoc eller i de tilfeller når det ikke er ønskelig eller mulig å bruke et formelt demografisk register eller indeks.
+
+For eksempel:
+- kopiinnhaver av av et fremtidig behandlingsvalg ved å bruke \"Kopiholder\"-SLOTet i arketypen \"EVALUATION.advance_care_directive\" (Fremtidig behandlingsvalg).
+- navn og kontaktdetaljer for en organisasjon som yter hjemmehjelp til en enkeltperson.
+
+Denne arketypen er utformet for å registrere detaljer om formelt anerkjente enheter, for eksempel en registrert virksomhet, et sykehus og dets \"underorganisasjoner\", en operativt separat eller spesialisert satellittklinikk eller hjemmetjeneste. Den kan også brukes til å registrere kontaktinformasjon om mer uformelle nettverk eller grupper, for eksempel en lokal støttegruppe.
+
+Denne arketypen kan også brukes som en midlertidig erstatning for formelle demografiske data når man gjennomgår et templat med domeneeksperter - for eksempel en vurdering der man i templatet forventer å se detaljer om en organisasjon i et vurderingsskjema.">
+			keywords = <"organisasjon, leverandør, omsorgsperson, nettverk, gruppe", ...>
+			misuse = <"Brukes ikke til å representere, erstatte eller vedlikeholde formelle demografiske opplysninger. Bruk et formelt pasientregister, helsepersonellregister eller arketyper basert på openEHR demografisk informasjonsmodell til dette formålet.
+
+Brukes ikke for å representere behandlingssted eller lignende dataelementer, som skal representeres formelt i pasientjournalen. Bruk attributter fra Referansemodellen for dette formålet.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record details about an organisation as they are known or understood in the course of clinical documentation.">
+			use = <"Use to record details of an organisation as they are known or understood in the course of clinical documentation, often ad hoc or when it is not appropriate or possible to use a formal demographic register or index. Examples include:
+- the copyholder of an advanced care record, using the 'Copyholder' SLOT within the EVALUATION.advance_care_directive archetype; or
+- the name and contact details of an organisation providing home care to an individual.
+
+This archetype has been designed to carry details of formally recognised entities, such as a registered business, a hospital and its recognised 'sub-organisations', such as an operationally separate or specialised satellite clinic or home care service. It may also be used to carry contact information about more informal networks or groups, such as a local community support group.
+
+This archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see an organisations' details on an assessment form.">
+			keywords = <"organisation, organization, provider, carer, network, group", ...>
+			misuse = <"Not to be used to represent, replace or maintain an official register or index. Use a formal Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.
+
+Not to be used to represent the location of care and similar data elements that should be represented formally in the health record using the Reference Model attributes.">
+			copyright = <"© openEHR Foundation">
+		>
+	>
+	lifecycle_state = <"published">
+	other_contributors = <"Dag Aarhus, Vestre Viken HF, Norway", "Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)", "Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)", "Keisha Barwise, MOHW/IDB HSSP Project, Jamaica", "SB Bhattacharyya, Bhattacharyyas Clinical Records Research & Informatics LLP, India", "Yexuan Cheng, 浙江大学, China", "Candice de Lisser, Ministry of Health and Wellness, Jamaica", "Valborg Ellingsen, Haraldsplass Diakonale sykehus, Norway", "Heather Grain, Llewelyn Grain Informatics, Australia", "Martin Grundberg, Cambio Healthcare Systems, Sweden", "Mikkel Johan Gaup Grønmo, Regional forvaltning EPJ, Helse Nord, Norway (openEHR Editor)", "Joost Holslag, Nedap, Netherlands", "Evelyn Hovenga, EJSH Consulting, Australia", "Gunnar Jårvik, Helse Vest IKT AS, Norway", "Gunn-Lisbeth Kleiven, Oslo universitetssykehus HF, Norway", "Shinji Kobayashi, National Institute of Public Health, Japan", "Kanika Kuwelker, Helse Vest IKT, Norway", "Jörgen Kuylenstierna, eWeave AB, Sweden", "Liv Laugen, ​Oslo University Hospital, Norway, Norway (openEHR Editor)", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Lars Morgan Karlsen, Nordlandssykehuset Bodø, Norway", "Mikael Nyström, Cambio Healthcare Systems AB, Sweden", "Sidharth Ramesh, Kasturba Medical College, India", "Erik Skjemstad, Helse Nord RHF, Norway", "Natalia Strauch, Medizinische Hochschule Hannover, Germany", "Norwegian Review Summary, Norwegian Public Hospitals, Norway", "Erik Sundvall, Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University, Sweden", "Nyree Taylor, Ocean Health Systems, Australia", "Anders Thurin, VGR, Sweden", "John Tore Valand, Helse Bergen, Norway (openEHR Editor)", "Marit Alice Venheim, Helse Vest IKT, Norway (openEHR Editor)">
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Health Care Provider Identification - AS 4846-2006. New South Wales (AU): Standards Australia; 2006.
+
+HL7 FHIR Resource - Organization v4.0.1: R4 [Internet]. Health Level Seven International; [accessed 2021 05 04]. Available from: http://hl7.org/fhir/2021May/organization.html">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"5DFD0809E7CD46EA0712A590C68F545B">
+		["build_uid"] = <"8543bf4b-0e15-4990-8a02-c7d082df8617">
+		["revision"] = <"1.0.1">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Organisation
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Name
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..*} matches {    -- Identifier
+				value matches {
+					DV_IDENTIFIER matches {*}
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..*} matches {    -- Role
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- Address
+				include
+					archetype_id/value matches {/openEHR-EHR-CLUSTER\.address(-[a-zA-Z0-9_]+)*\.v1/}
+			}
+			allow_archetype CLUSTER[at0022] occurrences matches {0..*} matches {    -- Electronic communication
+				include
+					archetype_id/value matches {/openEHR-EHR-CLUSTER\.electronic_communication(-[a-zA-Z0-9_]+)*\.v1/}
+			}
+			allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {    -- Contact person
+				include
+					archetype_id/value matches {/openEHR-EHR-CLUSTER\.person(-[a-zA-Z0-9_]+)*\.v1/}
+			}
+			allow_archetype CLUSTER[at0021] occurrences matches {0..*} matches {    -- Parent organisation
+				include
+					archetype_id/value matches {/openEHR-EHR-CLUSTER\.organisation(-[a-zA-Z0-9_]+)*\.v1/}
+			}
+			allow_archetype CLUSTER[at0017] occurrences matches {0..*} matches {    -- Additional details
+				include
+					archetype_id/value matches {/.*/}
+			}
+			ELEMENT[at0019] occurrences matches {0..1} matches {    -- Comment
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Organisation">
+					description = <"An entity comprising one or more people and having a particular purpose.">
+					comment = <"For example: a company, institution, association, network, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who provide care or support.">
+				>
+				["at0001"] = <
+					text = <"Name">
+					description = <"The unstructured name or label for the organisation.">
+					comment = <"For example: 'Royal Children's Hospital'; 'ABC District Nursing Service'; 'YNWA Oslo' or 'JB Smith Lawyers'.">
+				>
+				["at0002"] = <
+					text = <"Contact person">
+					description = <"Details about one or more people within the organisation.">
+				>
+				["at0003"] = <
+					text = <"Identifier">
+					description = <"Identifier associated with the organisation.">
+					comment = <"Occurrences for this data element is set to 0..* to allow for more than one Identifier to be recorded. Note that the ID data type contains multiple subcomponents for recording the ID value, type, issuer and assigner.">
+				>
+				["at0004"] = <
+					text = <"Role">
+					description = <"The relationship or role of the organisation to the individual or subject of care.">
+					comment = <"For example: oncologist; palliative care home nursing service; or informal support network.">
+				>
+				["at0005"] = <
+					text = <"Address">
+					description = <"Details about an address for the organisation.">
+				>
+				["at0017"] = <
+					text = <"Additional details">
+					description = <"Additional details about the organisation.">
+				>
+				["at0019"] = <
+					text = <"Comment">
+					description = <"Additional narrative about the organisation not captured in other fields.">
+				>
+				["at0021"] = <
+					text = <"Parent organisation">
+					description = <"A larger organisation of which this organisation is a child or subsidiary.">
+				>
+				["at0022"] = <
+					text = <"Electronic communication">
+					description = <"Details about one or more types of electronic communication for the organisation.">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Organisasjon">
+					description = <"En entitet som består av ett eller flere mennesker med et bestemt formål.">
+					comment = <"For eksempel: Et firma, institusjon, selskap, forening, nettverk, avdeling, gruppe i nærmiljøet, forsikringsselskap, behandlingsteam eller en gruppe av naboer som opptrer som støtte.">
+				>
+				["at0001"] = <
+					text = <"Navn">
+					description = <"Ustrukturert navn for organisasjonen.">
+					comment = <"For eksempel: \"Haukeland Sykehus\", \"Årstad hjemmesykepleie\", \"YNWA Oslo\" eller \"JB Smith advokater\".">
+				>
+				["at0002"] = <
+					text = <"Kontaktperson">
+					description = <"Detaljer om én eller flere personer i organisasjonen.">
+				>
+				["at0003"] = <
+					text = <"Identifikator">
+					description = <"Identifikator for organisasjonen.">
+					comment = <"Forekomster for dette dataelementet er satt til 0..* for å tillate at mer enn én identifikator kan registreres. Merk at ID-datatypen inneholder flere underkomponenter for registrering av ID-verdi, type, utsteder og tilordnet.">
+				>
+				["at0004"] = <
+					text = <"Rolle">
+					description = <"Forholdet eller rollen organisasjonen har til individet som pasientjournalen omhandler.">
+					comment = <"For eksempel: onkolog; palliativ hjemmetjeneste; eller uformelt støttenettverk.">
+				>
+				["at0005"] = <
+					text = <"Adresse">
+					description = <"Detaljer om organisasjonens adresse.">
+				>
+				["at0017"] = <
+					text = <"Ytterligere detaljer">
+					description = <"Ytterligere strukturerte detaljer om organisasjonen.">
+				>
+				["at0019"] = <
+					text = <"Kommentar">
+					description = <"Ytterligere fritekst om organisasjonen som ikke er registrert i andre felt.">
+				>
+				["at0021"] = <
+					text = <"Overordnet organisasjon">
+					description = <"En større organisasjon som denne organisasjonen er en del av.">
+				>
+				["at0022"] = <
+					text = <"Elektronisk kommunikasjon">
+					description = <"Detaljer om én eller flere former for elektronisk kommunikasjon med organisasjonen.">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"Organisation">
+					description = <"Eine Einheit, die aus einer oder mehreren Personen besteht und ein bestimmtes Ziel hat.">
+					comment = <"Zum Beispiel: ein Unternehmen, eine Institution, ein Verband, ein Netzwerk, eine Abteilung, eine Gemeindegruppe, eine Gesundheitspraxisgruppe, ein Kostenträger/Versicherer, ein Pflegeteam oder eine Gruppe von Nachbarn, die Pflege oder Unterstützung leisten.">
+				>
+				["at0001"] = <
+					text = <"Namenszeile">
+					description = <"Der Name oder Bezeichnung der Organisation in unstrukturierter Form.">
+					comment = <"Zum Beispiel: „Royal Children's Hospital“, \"ABC-Krankenpflegedienst\", „YNWA Oslo“ oder „JB Smith Rechtsanwälte“.">
+				>
+				["at0002"] = <
+					text = <"Kontaktperson">
+					description = <"Details zu einer oder mehreren Personen innerhalb der Organisation.">
+				>
+				["at0003"] = <
+					text = <"Identifier">
+					description = <"Identifikator, der der identifizierten Organisation zugeordnet ist.">
+					comment = <"Kardinalität für dieses Datenelement wird auf 0..* gesetzt, damit mehr als ein Identifikator aufgezeichnet werden kann. Beachten Sie, dass der ID-Datentyp mehrere Unterkomponenten zum Aufzeichnen des ID-Werts, -Typs, -Ausstellers und -Zuweisers enthält.">
+				>
+				["at0004"] = <
+					text = <"Funktion">
+					description = <"Die Beziehung oder Rolle der Organisation zum Pflegebedürftigen oder Patient.">
+					comment = <"Zum Beispiel: Onkologe, ambulanter Palliativdienst oder informelles Supportnetzwerk.">
+				>
+				["at0005"] = <
+					text = <"Adresse">
+					description = <"Angaben zu einer Adresse der Organisation.">
+				>
+				["at0017"] = <
+					text = <"Zusätzliche Details">
+					description = <"Weitere Angaben zur Organisation.">
+				>
+				["at0019"] = <
+					text = <"Kommentar">
+					description = <"Zusätzlicher Text zu der Organisation, der in anderen Bereichen nicht erfasst wird.">
+				>
+				["at0021"] = <
+					text = <"Muttergesellschaft">
+					description = <"Eine größere Organisation, von der diese Organisation ein Sub- oder Tochterunternehmen ist.">
+				>
+				["at0022"] = <
+					text = <"Elektronische Kommunikation">
+					description = <"Details zu einer oder mehreren Arten der elektronischen Kommunikation für die Organisation.">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Organisation">
+					description = <"*An entity comprising one or more people and having a particular purpose. (en)">
+					comment = <"*For example: a company, institution, association, network, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who provide care or support. (en)">
+				>
+				["at0001"] = <
+					text = <"Namn">
+					description = <"Namnet som en organisation är känd för.">
+					comment = <"Exempelvis: 'Royal Children's Hospital'; 'ABC District Nursing Service'; 'YNWA Oslo' or 'JB Smith Lawyers'.">
+				>
+				["at0002"] = <
+					text = <"Kontaktperson">
+					description = <"Detaljer om en eller flera personer inom organisationen.">
+				>
+				["at0003"] = <
+					text = <"Identifierare">
+					description = <"Identifierare associerad med den identifierade organisationen.">
+					comment = <"Förekomster (Occurrences) för detta dataelement är satt till 0..* för att tillåta att mer än en identifierare kan användas samtidigt. Observera att ID-datatypen innehåller flera underkomponenter för ID-värde, typ, utfärdare och tilldelare.">
+				>
+				["at0004"] = <
+					text = <"Roll">
+					description = <"Den roll eller kapacitet i vilken organisationen bidrar till vårdpersonens hälsa eller sociala vård.">
+					comment = <"*For example: oncologist; palliative care home nursing service; or informal support network. (en)">
+				>
+				["at0005"] = <
+					text = <"Adress">
+					description = <"Detaljer om en specifik adress för organisationen.">
+				>
+				["at0017"] = <
+					text = <"Ytterligare detaljer">
+					description = <"Ytterligare detaljer om organisationen.">
+				>
+				["at0019"] = <
+					text = <"Kommentar">
+					description = <"Beskrivning av organisationen som inte kunnat anges i övriga fält.">
+				>
+				["at0021"] = <
+					text = <"Överordnad organisation">
+					description = <"En större organisation som denna organisation är en del av.
+">
+				>
+				["at0022"] = <
+					text = <"Elektronisk kommunikation">
+					description = <"Detaljer om en viss typ av elektronisk kommunikation för organisationen.">
+				>
+			>
+		>
+	>

@@ -1,8 +1,8 @@
-﻿archetype (adl_version=1.4; uid=eb25e880-6a48-4ac9-a480-cbe4526ada87)
-	openEHR-EHR-CLUSTER.birth_summary.v0
+﻿archetype (adl_version=1.4; uid=2cf8a52d-0cff-48d5-86bc-8022fe025bce)
+	openEHR-EHR-CLUSTER.birth_detail.v0
 
 concept
-	[at0000]	-- Birth summary
+	[at0000]	-- Birth detail
 language
 	original_language = <[ISO_639-1::en]>
 description
@@ -19,8 +19,8 @@ description
 			use = <"Use to record a subset of persistent or summary information about the pregnancy and birth of an infant, usually recorded as part of a maternal health record or birth report, but also able to be shared and reused to provide context about the pregnancy and birth within the newborn's health record.
 
 This archetype has been designed to be nested:
-- in the 'Birth summary' SLOT within the EVALUATION.pregnancy_summary archetype, to capture details about an infant born to the mother; and
-- in the 'Birth summary' SLOT within the EVALUATION.birth_details archetype, to capture or reuse details about the birth of the individual.">
+- in the 'Birth detail' SLOT within the EVALUATION.pregnancy_summary archetype, to capture details about an infant born to the mother; and
+- in the 'Birth detail' SLOT within the EVALUATION.birth_summary archetype, to capture or reuse details about the birth of the individual.">
 			keywords = <"birth", "pregnancy", "infant", "newborn">
 			misuse = <"">
 			copyright = <"© openEHR Foundation">
@@ -34,13 +34,13 @@ This archetype has been designed to be nested:
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"650E7B9060024D405F6CB7E430DC374C">
-		["build_uid"] = <"367d5596-94c7-428c-aec3-36d8cbf9128e">
+		["MD5-CAM-1.0.1"] = <"9E544BDD4FF29BEBBD2F2D6CA12E8098">
+		["build_uid"] = <"38457142-134c-45ff-ac8a-4a13f32b451d">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Birth summary
+	CLUSTER[at0000] matches {    -- Birth detail
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Description
 				value matches {
@@ -66,7 +66,7 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Mode of birth
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Method of delivery
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -84,11 +84,19 @@ definition
 							at0016]    -- Caesarean - upper uterine segment
 						}
 					}
+					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0017] occurrences matches {0..*} matches {    -- Apgar record
+			ELEMENT[at0019] occurrences matches {0..1} matches {    -- Delivery timing
 				value matches {
-					DV_COUNT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0020,    -- Routine/Elective
+							at0021,    -- Urgent
+							at0022]    -- Emergency
+						}
+					}
 					DV_TEXT matches {*}
 				}
 			}
@@ -101,7 +109,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Birth summary">
+					text = <"Birth detail">
 					description = <"A subset of persistent or summary information about the pregnancy and birth of an infant, selected for utility of use within both the maternal and infant health records.">
 				>
 				["at0001"] = <
@@ -110,7 +118,8 @@ ontology
 				>
 				["at0003"] = <
 					text = <"Birth order">
-					description = <"">
+					description = <"The sequential order of the birth of the infant within a multiple birth pregnancy.">
+					comment = <"For example: singleton or first of a multiple birth; second; third etc.">
 				>
 				["at0004"] = <
 					text = <"Gestational age">
@@ -118,7 +127,7 @@ ontology
 					comment = <"The value for this data element will usually, but not always, be identical to the 'Pregnancy duration' data element within the EVALUATION.pregnancy_summary in the maternal record. It may also be derived using the 'Agreed date' data element within the EVALUATION.estimated_date_delivery archetype in the maternal record. Usually estimated by Naegele's rule or by ultrasound scan.">
 				>
 				["at0005"] = <
-					text = <"Mode of birth">
+					text = <"Method of delivery">
 					description = <"Method by which the newborn was delivered.">
 					comment = <"For example: vaginal; forceps rotation; or Caesarean Section.">
 				>
@@ -166,15 +175,26 @@ ontology
 					text = <"Caesarean - upper uterine segment">
 					description = <"Surgical delivery by an approach in the upper uterine segment.">
 				>
-				["at0017"] = <
-					text = <"Apgar record">
-					description = <"Description about Apgar scores recorded after birth.">
-					comment = <"This data element may be recorded as narrative text or as a numerical score. As different countries record Apgar at different times, the timing of this data element has been left unspecified. However the data element allows 0..* occurrences to enable recording a score for one or more timed Apgar scores to be recorded. These scores can be copied or derived from the 'Total' data element within the OBSERVATION.apgar archetype recorded within the maternal health record. ">
-				>
 				["at0018"] = <
 					text = <"Gestational maturity">
 					description = <"The postnatal gestation estimated by physical examination and/or neuromuscular assessment of newborn.">
 					comment = <"Usually estimated by physical examination and/or neuromuscular assessment of the newborn.">
+				>
+				["at0019"] = <
+					text = <"Delivery timing">
+					description = <"The level of urgency identified at or around the time of delivery.">
+				>
+				["at0020"] = <
+					text = <"Routine/Elective">
+					description = <"The delivery, induction or Caesarean Section did not require any unexpected or urgent intervention.">
+				>
+				["at0022"] = <
+					text = <"Emergency">
+					description = <"Recognition of a high risk situation required the delivery to be expedited as an emergency.">
+				>
+				["at0021"] = <
+					text = <"Urgent">
+					description = <"Recognition of an increasing risk situation required the delivery to be expedited.">
 				>
 			>
 		>
