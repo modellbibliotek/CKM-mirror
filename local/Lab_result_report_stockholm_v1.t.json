@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.6",
+      "sem_ver" : "4.0.0-alpha.6",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "751c20b598ad3b4d86cd4214696b7d44",
+      "MD5-CAM-1.0.1" : "48ca9b4e5eb4e0011df54c1d7b272de8",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -222,6 +222,29 @@
                 "attributes" : [ ],
                 "attributeTuples" : [ ]
               }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0005.0.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_STRING",
+                        "rmTypeName" : "STRING",
+                        "constraint" : [ "Final", "Partial" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
                 "@type" : "C_ARCHETYPE_ROOT",
                 "rmTypeName" : "CLUSTER",
                 "occurrences" : "0..1",
@@ -301,7 +324,28 @@
           "code" : "at0002.0.1",
           "text" : "Report ID",
           "description" : "Identification information about the report.",
-          "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/referralId\nRULE = COPY\n---end-mapping-instruction---"
+          "comment" : "---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/referralId\nSRCPATH : /LabReplyChem/samplingDate\nTime\nSRCPATH : /LabReplyChem/lab/SID\nRULE : Concatenate referalId_SID_samplingDateTime\n---end-mapping-instruction---"
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "The status of the entire report. Note: This is not the status of any of the report components.",
+          "comment" : "\n\n/LabReplyChem/isFinal"
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extension",
+          "description" : "Additional information required to capture local context or to align with other reference models/formalisms.",
+          "comment" : "For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.\n"
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "The status of the entire report. Note: This is not the status of any of the report components.",
+          "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/isFinal\nRULE = \"Final\" if isFinal otherwise \"Partial\"\n---end-mapping-instruction---"
         }
       },
       "es-ar" : {
@@ -398,6 +442,12 @@
           "text" : "Extensão",
           "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
           "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Estado",
+          "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
         }
       },
       "de" : {
@@ -436,6 +486,12 @@
           "code" : "at0002.0.1",
           "text" : "Bericht ID",
           "description" : "Identifizierungsmerkmal des Berichts."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "Der Status des gesamten Berichts. Hinweis: Dies ist nicht der Status einer Berichtskomponente."
         }
       },
       "ko" : {
@@ -496,6 +552,12 @@
           "text" : "*Extension (en)",
           "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
           "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "Koko raportin tila. Huomaa: Tämä ei ole minkään raporttiosien tila."
         }
       },
       "it" : {
@@ -548,6 +610,12 @@
           "text" : "*Extension (en)",
           "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
           "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Stato",
+          "description" : "Lo stato dell'intero rapporto. Nota: Questo non è lo stato di alcuna delle componenti del rapporto."
         }
       },
       "nl" : {
@@ -600,6 +668,12 @@
           "text" : "*Extension (en)",
           "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
           "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "De status van de rapportage. Let op, dit is niet de status van een van de onderdelen van de rapportage."
         }
       },
       "sv" : {
@@ -678,6 +752,12 @@
           "text" : "*Extension (en)",
           "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
           "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "状态",
+          "description" : "整份报告的状态。注意：这不是指报告的任何一个组成部分的状态"
         }
       }
     },
