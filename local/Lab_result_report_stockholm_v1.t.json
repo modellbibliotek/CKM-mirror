@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.0.0-alpha.6",
+      "sem_ver" : "4.1.0-alpha.6",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "48ca9b4e5eb4e0011df54c1d7b272de8",
+      "MD5-CAM-1.0.1" : "32587eed5736339aac4a82282f78b691",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -224,6 +224,7 @@
               }, {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
                 "nodeId" : "at0005.0.1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
@@ -344,8 +345,7 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0005.0.1",
           "text" : "Status",
-          "description" : "The status of the entire report. Note: This is not the status of any of the report components.",
-          "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/isFinal\nRULE = \"Final\" if isFinal otherwise \"Partial\"\n---end-mapping-instruction---"
+          "description" : "The status of the entire report. Note: This is not the status of any of the report components."
         }
       },
       "es-ar" : {
