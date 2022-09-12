@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.3.2-alpha.6",
+      "sem_ver" : "4.3.3-alpha.6",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "8c25cbb533281b35b8b34d02ab70a270",
+      "MD5-CAM-1.0.1" : "739507425794cd9c1e6aff7072e09df2",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -5596,7 +5596,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Details copied from service request",
-            "description" : "Request for a health-related service or activity to be delivered by a clinician, organisation or agency."
+            "description" : "Request for a health-related service or activity to be delivered by a clinician, organisation or agency.",
+            "comment" : "TODO : Skippa i första utgåva?"
           }
         },
         "nb" : {
