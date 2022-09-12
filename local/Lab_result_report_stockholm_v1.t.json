@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.3.0-alpha.6",
+      "sem_ver" : "4.3.1-alpha.6",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "c64bbfa9e3d4efbd711c696f443fb53c",
+      "MD5-CAM-1.0.1" : "38b2e2d4f50110e422894eba7b96b468",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -189,6 +189,12 @@
       }
     }
   },
+  "annotations" : {
+    "@type" : "RESOURCE_ANNOTATIONS",
+    "documentation" : {
+      "en" : { }
+    }
+  },
   "parentArchetypeId" : "openEHR-EHR-COMPOSITION.report-result.v1",
   "differential" : true,
   "archetypeId" : {
@@ -327,25 +333,12 @@
           "description" : "Identification information about the report.",
           "comment" : "---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/referralId\nSRCPATH : /LabReplyChem/samplingDate\nTime\nSRCPATH : /LabReplyChem/lab/SID\nRULE : Concatenate referalId_SID_samplingDateTime\n---end-mapping-instruction---"
         },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Status",
-          "description" : "The status of the entire report. Note: This is not the status of any of the report components.",
-          "comment" : "\n\n/LabReplyChem/isFinal"
-        },
         "at0006.0.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
           "text" : "Extension",
           "description" : "Additional information required to capture local context or to align with other reference models/formalisms.",
-          "comment" : "For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.\n---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/ordererCareUnitExternalId\nRULE : Lookup in Organization service using SRCPATH as id (type = 'kombika')\nset Care unit/Identifier and Care unit/\n/items[openEHR-EHR-CLUSTER.organisation.v1, 'Care provider']/items[at0003]\n\n---end-mapping-instruction---\n"
-        },
-        "at0005.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005.0.1",
-          "text" : "Status",
-          "description" : "The status of the entire report. Note: This is not the status of any of the report components."
+          "comment" : "For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.\n---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/ordererCareUnitExternalId\nRULE : \n-Lookup in Organization service using SRCPATH as id (type = 'kombika').\n-Set 'Care unit/Identifier' =  Organization.hsaHierarchy.hsaCareUnit.identifier.value\n-Set 'Care unit/Parent organization/Care provider/identifier' =\nOrganization.hsaHierarchy.hsaCareProvider.identifier.value\n---end-mapping-instruction---\n"
         }
       },
       "es-ar" : {
@@ -4754,13 +4747,6 @@
             "text" : "Payer",
             "description" : "An identified formal entity or informal grouping of people.",
             "comment" : "For example: a company, institution, corporation, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who will act as carers or support."
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Identifier",
-            "description" : "Identifier associated with the organisation.",
-            "comment" : "Occurrences for this data element is set to 0..* to allow for more than one Identifier to be recorded. Note that the ID data type contains multiple subcomponents for recording the ID value, type, issuer and assigner.\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/invoiceeCare\nUnitExternalId\nRULE = Lookup Organization.identifier.hsaid (Organization.identifier.kombika=SRCPATH)\n---end-mapping-instruction---"
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
