@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.3.1-alpha.6",
+      "sem_ver" : "4.3.2-alpha.6",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "38b2e2d4f50110e422894eba7b96b468",
+      "MD5-CAM-1.0.1" : "8c25cbb533281b35b8b34d02ab70a270",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -3794,21 +3794,21 @@
             "code" : "at0003.1",
             "text" : "HSAID",
             "description" : "Identifier associated with the organisation.",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/ordererCareUnitExternalId\nRULE = Lookup Organization.identifier.hsaid (Organization.identifier.kombika=SRCPATH)\n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/ordererCareUnitExternalId\nRULE = Lookup Organization.identifier.hsaid (Organization.identifier.kombika=SRCPATH)\nTODO : Eventuellt mappa 'originalRecipi\nentsAddress' om det är en kopia?\n---end-mapping-instruction---"
           },
           "at0003.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.2",
             "text" : "Kombikakod",
             "description" : "Identifier associated with the organisation.",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/ordererCareUnitExternalId\nRULE = COPY\n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/ordererCareUnitExternalId\nRULE = COPY\nTODO : Eventuellt mappa 'originalRecipi\nentsAddress' om det är en kopia?\n---end-mapping-instruction---"
           },
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Name",
             "description" : "The unstructured name or label for the organisation.",
-            "comment" : "For example: 'Royal Children's Hospital'; 'ABC District Nursing Service'; 'YNWA Oslo' or 'JB Smith Lawyers'.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/ordererCareUnitExternalId\nRULE = Lookup Organization.name (Organization.identifier.kombika=SRCPATH)\n---end-mapping-instruction---\n"
+            "comment" : "For example: 'Royal Children's Hospital'; 'ABC District Nursing Service'; 'YNWA Oslo' or 'JB Smith Lawyers'.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/ordererCareUnitExternalId\nRULE = Lookup Organization.name (Organization.identifier.kombika=SRCPATH)\nTODO : Eventuellt mappa 'originalRecipi\nentsAddress' om det är en kopia?\n---end-mapping-instruction---\n"
           }
         },
         "nb" : {
