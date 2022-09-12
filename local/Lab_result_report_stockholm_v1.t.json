@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.4.0-alpha.6",
+      "sem_ver" : "4.4.1-alpha.6",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "4412115378dcddd4b3928ad9d830a15b",
+      "MD5-CAM-1.0.1" : "714153b327f89b84ded761dd2415538c",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -1269,6 +1269,13 @@
             "text" : "Diagnostic service category",
             "description" : "The diagnostic service or discipline that is responsible for the laboratory test result.",
             "comment" : "This is intended to be a general categorisation and not to capture the organisational name of the laboratory. For example: anatomical pathology, immunology and transfusion medicine, medical microbiology, clinical pharmacology, medical genetics, medical biochemistry. Alternatively more granular sub categories or sub disciplines, such as endocrinology, haematology, and allergology services, may be used. This may assist clinicians in filtering between categories of results. Coding with a terminology is desirable, where possible.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = \nRULE = Map to appropriate locally (Snomed) coded text available in the template\nCOMMENT = currently only chemistry, but soon also microbiology\n---end-mapping-instruction---\n"
+          },
+          "at0100.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0100",
+            "text" : "Clinical information provided",
+            "description" : "Description of clinical information available at the time of interpretation of results.",
+            "comment" : "This data element may include a link to the original clinical information provided in the test request.\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/orderComment\nRULE = COPY\n---end-mapping-instruction---\n\n\n"
           }
         },
         "nb" : {
