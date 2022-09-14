@@ -14,6 +14,14 @@ language
 				["email"] = <"Strauch.Natalia@mh-hannover.de">
 			>
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+				["name"] = <"Erik Sundvall">
+				["organisation"] = <"Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University">
+				["email"] = <"erik.sundvall@regionstockholm.se">
+			>
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			author = <
@@ -39,6 +47,18 @@ description
 
 Ein typischer Fortschrittsbericht während einer Krankenhausepisode für die Krankenpglege kann Archetypen EVALUATION.reason_for_encounter, EVALUATION.progress_note zur Darstellung der Beschreibung der Schicht der Krankenpflege enthalten oder eine Kombination von OBSERVATION-Archetypen zur Darstellung von Vitalzeichen-Parameter und / oder ACTION-Archetypen zur Darstellung der durchgeführten Maßnahmen oder Prozeduren umfassen.">
 			keywords = <"Fortschrittsbericht, Fortschrittsnotiz", ...>
+			misuse = <"">
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Registrera detaljer om hälsorelaterade händelser som har inträffat som en del av individens vård, eller registrera individens hälsotillstånd, fynd, bedömningar och planer som är aktuella vid registreringstillfället.">
+			use = <"Används för att registrera detaljer om hälsorelaterade händelser som har inträffat som en del av individens vård, eller för att registrera individens hälsotillstånd, fynd, bedömningar och planer som är aktuella vid registreringstillfället.
+Statusrapporter och uppdateringar används vanligtvis för att registrera pågående vård och för att kommunicera mellan olika aktörer som deltar under en vårdepisod. 
+
+Detta skiljer sig från ett enskilt vårdtillfälle/patientmöte som vanligtvis istället registreras som en COMPOSITION.encounter. Statusrapporten/uppdateringen behöver inte Ha orsakats av ett fysiskt möte, utan kan även baseras på distansmöten eller användas för att rapportera om uppföljning via telefonsamtal eller anävndas för kontakt mellan vårdgivare utan att patienten är närvarande.
+
+En typisk statusrapport under en sjukhusepisod kan inkludera EVALUATION.reason_for_encounter och OBSERVATION.progress_note för att sammanfatta inför ett ett skiftbyte, samt även en kombination av OBSERVATIONs för vitalparametrar eller ACTIONs som registrerar vad som har utförts.">
+			keywords = <"uppdatering", "statusrapport", "omvårdnadsnotering", "statusnotering", "förloppsnotering">
 			misuse = <"">
 		>
 		["nb"] = <
@@ -70,8 +90,8 @@ A typical nursing progress note during a hospital episode might include EVALUATI
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"828E3A9242B5A392FFB0A74D4AC7F494">
-		["build_uid"] = <"fba771b3-54c6-4bf6-97eb-12c3f52af0fd">
+		["MD5-CAM-1.0.1"] = <"C86116B8526ED275626908BBD25536E3">
+		["build_uid"] = <"966bebbe-3754-4b38-8115-2b19f9831548">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -108,6 +128,14 @@ ontology
 				["at0000"] = <
 					text = <"Fortløpende notat">
 					description = <"Dokument brukt for å registrere detaljer om helserelaterte hendelser som har hendt som ledd i omsorg av et individ og/eller individets helsestatus, funn, meninger eller planer som er gyldig på tidspunktet det registreres.">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Statusrapport/uppdatering">
+					description = <"Dokument för att registrera detaljer om hälsorelaterade händelser som har inträffat som en del av individens vård, eller registrera individens hälsotillstånd, fynd, bedömningar och planer som är aktuella vid registreringstillfället.">
 				>
 			>
 		>
