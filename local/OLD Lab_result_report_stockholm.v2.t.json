@@ -21,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0-alpha.4",
+      "sem_ver" : "2.0.0-alpha.5",
       "build_uid" : "318a4739-3c95-4092-a4fd-d727d3f90257",
-      "MD5-CAM-1.0.1" : "ce394f9801c6851780d56dda158bb8ed",
+      "MD5-CAM-1.0.1" : "238881714dcae7c2c181fca26adeffd0",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -313,7 +313,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "Lab_result_report_stockholm.v2",
+          "text" : "OLD Lab_result_report_stockholm.v2",
           "description" : "Document to communicate information to others about the result of a test or assessment."
         },
         "at0002.0.1" : {
