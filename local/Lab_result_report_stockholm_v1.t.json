@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.4.1-alpha.6",
+      "sem_ver" : "1.0.0-alpha.7",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "714153b327f89b84ded761dd2415538c",
+      "MD5-CAM-1.0.1" : "483156aebc56e3db2c74d197cd9e9001",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -322,7 +322,7 @@
           "code" : "at0002.0.1",
           "text" : "Report ID",
           "description" : "Identification information about the report.",
-          "comment" : "---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/referralId\nSRCPATH : /LabReplyChem/samplingDate\nTime\nSRCPATH : /LabReplyChem/lab/SID\nRULE : Concatenate referalId_SID_samplingDateTime\n---end-mapping-instruction---"
+          "comment" : "---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/referralId\nSRCPATH : /LabReplyChem/samplingDate\nTime\nSRCPATH : /LabReplyChem/lab/SID ????? See below\nRULE : Concatenate referalId_SID_samplingDateTime\n---end-mapping-instruction---\nTODO: will there be multiple SIDs in one result report?"
         },
         "at0006.0.1" : {
           "@type" : "ARCHETYPE_TERM",
