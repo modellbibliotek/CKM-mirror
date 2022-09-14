@@ -3233,7 +3233,7 @@
           "nodeId" : "at0014.4",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-juno_labinfo_adapter-001.v0",
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-juno_labinfo_adapter-001.v1",
           "referenceType" : "archetypeOverlay"
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
@@ -4807,11 +4807,11 @@
         }
       }
     },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.juno_labinfo_adapter.v0",
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.juno_labinfo_adapter.v1",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-juno_labinfo_adapter-001.v0"
+      "value" : "openEHR-EHR-CLUSTER.ovl-juno_labinfo_adapter-001.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
