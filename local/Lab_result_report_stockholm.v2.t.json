@@ -4,9 +4,8 @@
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
-      "name" : "Erik Sundvall",
-      "organisation" : "Region Östergötland & Linköping University, Sweden",
-      "email" : "erik.sundvall@regionostergotland.se",
+      "name" : "Linda Aulin Lundeqvist, Fredrik Jonsson, Erik Sundvall, ",
+      "organisation" : "Karolinska University Hospital, Region Stockholm, Sweden",
       "date" : "2021-11-19"
     },
     "otherContributors" : [ ],
@@ -22,9 +21,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.4.1-alpha.6",
-      "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "0c24c8f346db8a2f46dcd10988602573",
+      "sem_ver" : "2.0.0-alpha.1",
+      "build_uid" : "318a4739-3c95-4092-a4fd-d727d3f90257",
+      "MD5-CAM-1.0.1" : "96ceb69b130ef07501ce2e2783067da9",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -314,7 +313,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "Lab_result_report_stockholm_v1",
+          "text" : "Lab_result_report_stockholm.v2",
           "description" : "Document to communicate information to others about the result of a test or assessment."
         },
         "at0002.0.1" : {
