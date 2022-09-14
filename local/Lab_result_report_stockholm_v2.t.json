@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.1.0-alpha.1",
+      "sem_ver" : "2.1.0-alpha.2",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "2e8c24aff6e32f2294bc2de43ec92151",
+      "MD5-CAM-1.0.1" : "8489c139debaac20dfdce306014f23bb",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -338,144 +338,30 @@
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "*Document to communicate information to others about the result of a test or assessment.(en)"
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "*Extension(en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
-          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
-        },
-        "at0006.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "*Extension(en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
-          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
         }
       },
       "nb" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapport",
-          "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Dokument for å formidle informasjon til andre om svaret på en prøve eller undersøkelse."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Tilleggsinformasjon",
-          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
-          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
-        },
-        "at0006.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Tilleggsinformasjon",
-          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
-          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
         }
       },
       "pt-br" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Relatório",
-          "description" : "Documento para comunicar informações a outros, comumente em resposta a uma solicitação de terceiros."
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "Identificador do relatório",
-          "description" : "Informação de identificação sobre o relatório."
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Estado",
-          "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Documento para comunicar informações sobre o resultado de um teste ou avaliação."
-        },
-        "at0002.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002.0.1",
-          "text" : "Identificador do relatório",
-          "description" : "Informação de identificação sobre o relatório."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Extensão",
-          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
-          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
-        },
-        "at0006.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Extensão",
-          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
-          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
-        },
-        "at0005.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005.0.1",
-          "text" : "Estado",
-          "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
         }
       },
       "de" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Bericht",
-          "description" : "Ein Dokument zur Übermittlung von Informationen an andere, meist als Antwort auf eine Anfrage."
-        },
-        "at0001" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0001",
-          "text" : "Tree",
-          "description" : "@ internal @"
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "Bericht ID",
-          "description" : "Identifizierungsmerkmal des Berichts."
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Status",
-          "description" : "Der Status des gesamten Berichts. Hinweis: Dies ist nicht der Status einer Berichtskomponente."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Das Dokument wird verwendet, um Informationen über das Ergebnis eines Tests oder einer Bewertung zu übermitteln."
-        },
-        "at0002.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002.0.1",
-          "text" : "Bericht ID",
-          "description" : "Identifizierungsmerkmal des Berichts."
-        },
-        "at0005.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005.0.1",
-          "text" : "Status",
-          "description" : "Der Status des gesamten Berichts. Hinweis: Dies ist nicht der Status einer Berichtskomponente."
         }
       },
       "ko" : {
@@ -487,48 +373,11 @@
         }
       },
       "fi" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Raportti",
-          "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "Raportti ID",
-          "description" : "Raportin tunnistetiedot"
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Status",
-          "description" : "Koko raportin tila. Huomaa: Tämä ei ole minkään raporttiosien tila."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Laajennus",
-          "description" : "Tarvitaan lisätietoja paikallisen tilanteen mallintamiseksi tai yhdenmukaistamiseksi muiden vertailumallien / muodollisuuksien kanssa. \r\n",
-          "comment" : "Esimerkiksi: paikalliset tietovaatimukset tai ylimääräiset metatiedot FHIR- tai CIMI-vastaavien mukaisiksi."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
-        },
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Raportti",
-          "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
-        },
-        "at0002.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002.0.1",
-          "text" : "Raportti ID",
-          "description" : "Raportin tunnistetiedot"
         },
         "at0006.0.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -536,57 +385,14 @@
           "text" : "*Extension (en)",
           "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
           "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
-        },
-        "at0005.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005.0.1",
-          "text" : "Status",
-          "description" : "Koko raportin tila. Huomaa: Tämä ei ole minkään raporttiosien tila."
         }
       },
       "it" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapporto",
-          "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "ID del rapporto",
-          "description" : "Informazioni di identificazione del rapporto"
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Stato",
-          "description" : "Lo stato dell'intero rapporto. Nota: Questo non è lo stato di alcuna delle componenti del rapporto."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Estensione",
-          "description" : "Informazioni aggiuntive necessarie per catturare il contesto locale o per allinearsi con altri modelli/formalismi di riferimento.",
-          "comment" : "Per esempio: requisiti informativi locali o metadati aggiuntivi per allinearsi con gli equivalenti FHIR o CIMI."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
-        },
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapporto",
-          "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
-        },
-        "at0002.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002.0.1",
-          "text" : "ID del rapporto",
-          "description" : "Informazioni di identificazione del rapporto"
         },
         "at0006.0.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -594,57 +400,14 @@
           "text" : "*Extension (en)",
           "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
           "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
-        },
-        "at0005.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005.0.1",
-          "text" : "Stato",
-          "description" : "Lo stato dell'intero rapporto. Nota: Questo non è lo stato di alcuna delle componenti del rapporto."
         }
       },
       "nl" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapportage",
-          "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "Rapportage ID",
-          "description" : "Identificerende informatie over deze rapportage."
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Status",
-          "description" : "De status van de rapportage. Let op, dit is niet de status van een van de onderdelen van de rapportage."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Uitbreiding",
-          "description" : "Extra informatie nodig om de context te beschrijven of te voldoen aan andere modellen of formalismen.",
-          "comment" : "Bijvoorbeeld: lokale informatievereisten of aanvullende metadata om overeen te komen met FHIR- of CIMI-equivalenten."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
-        },
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapportage",
-          "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
-        },
-        "at0002.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002.0.1",
-          "text" : "Rapportage ID",
-          "description" : "Identificerende informatie over deze rapportage."
         },
         "at0006.0.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -652,96 +415,23 @@
           "text" : "*Extension (en)",
           "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
           "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
-        },
-        "at0005.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005.0.1",
-          "text" : "Status",
-          "description" : "De status van de rapportage. Let op, dit is niet de status van een van de onderdelen van de rapportage."
         }
       },
       "sv" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapport",
-          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "Rapport-id",
-          "description" : "Information som identifierar rapporten.\r\n"
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Labbsvar_klinkem_exempel",
           "description" : "Dokument för att kommunicera information till andra, vanligen som svar på en begäran från en annan part."
-        },
-        "at0002.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002.0.1",
-          "text" : "Rapport-id",
-          "description" : "Information som identifierar rapporten.\r\n"
         }
       },
       "zh" : {
-        "at0000.1.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "报告",
-          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
-        },
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "报告",
-          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
-        },
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "报告",
-          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "报告ID",
-          "description" : "关于这份报告的标识信息。"
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "状态",
-          "description" : "整份报告的状态。注意：这不是指报告的任何一个组成部分的状态"
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "扩展",
-          "description" : "用于捕获本地的上下文或与其他参考模型/形式保持一致所需的其他信息。",
-          "comment" : "比如：本地的信息需求或是为了与FHIR或CIMI保持一致的其他元数据。"
-        },
-        "at0002.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002.0.1",
-          "text" : "报告ID",
-          "description" : "关于这份报告的标识信息。"
-        },
         "at0006.0.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006.0.1",
           "text" : "*Extension (en)",
           "description" : "*Additional information required to capture local context or to align with other reference models/formalisms. (en)",
           "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)"
-        },
-        "at0005.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005.0.1",
-          "text" : "状态",
-          "description" : "整份报告的状态。注意：这不是指报告的任何一个组成部分的状态"
         }
       }
     },
@@ -889,6 +579,21 @@
           "keywords" : [ ],
           "use" : "*Use to record the result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual. This is typically done in a laboratory, but may be done in other environments such as at the point of care.\r\n\r\nThis archetype is intended to cover the result of a single ordered investigation where the specimen(s) are collected as a single procedure, and may include multiple analyte results or other components. Examples of this could include 'Full blood count', which would yield a separate analyte result for the count of each type of blood cell, or 'kidney biopsy non-neoplastic', which would yield findings from microscopy, immunohistochemistry and electron microscopy.\r\n\r\nThis archetype has been designed to be a framework that will usually be extended with CLUSTER archetypes to enable appropriate recording of specific laboratory test result patterns. This includes, but is not limited to, tests for biochemistry, haematology, immunology and transfusion services etc and specific patterns for the unique requirements for microbiology and anatomical pathology. If the ordered tests or investigations do not commonly belong together in a named group or panel, each test result would normally be represented using separate instances of this archetype. There is, however, considerable variation in actual reporting/messaging practice and this archetype/related archetypes are designed to handle such variation.\r\n\r\nThis archetype supports multiple approaches to recording of specimen, reflecting current practice which varies enormously. A Laboratory test result has a high degree of alignment to an HL7 FHIR Diagnostic Report resource.\r\n\r\nIt is anticipated that one or more instances of this archetype, or archetype family, will be sent back to a requesting clinician within a laboratory report document comprising COMPOSITION.report_result archetype, or similar, and other relevant ENTRY archetypes.\r\n\r\nThe recording of confounding factors may be inconsistent, often depending on the analysing laboratory and on clinical information sent by the requester. In the State section of the archetype there is a simple 'Confounding factors' data element that is optional and can be repeated as one way to record a variety of simple factors that need to be made explicit as they may influence interpretation of the results. If the confounding factors are more complex, it may be appropriate to create a local/shared CLUSTER archetype that can be nested in the 'Confounding factors details' SLOT. \r\nNote 1: Known or required pre-conditions, such as 'fasting' or 'Day 1 of menstrual cycle', should be reported in the 'Sampling conditions' data element in the CLUSTER.specimen archetype, nested within this OBSERVATION archetype.\r\nNote 2: Known issues with specimen collection or handling, such as 'sample haemolysed' or 'prolonged use of tourniquet' should be reported within 'Specimen quality' in the CLUSTER.specimen archetype, nested within this OBSERVATION archetype.\r\n\r\nWhere 'reflex tests' are performed by the laboratory, these may be handled as per US/FHIR guidance (see https://www.hl7.org/fhir/2015may/uslabreport-guide.html) or other local policy. For example, one of the following ...\r\n1. Record the reflex test results additional 'Test findings' within the same 'openEHR-EHR-OBSERVATION.laboratory_test_result'\r\n2. Record the reflex test results as 'Test findings' within a new 'openEHR-EHR-OBSERVATION.laboratory_test_result' but refer to the original lab test request via 'Test request details'.\r\n3. Record the reflex test results as 'Test findings' within a new 'openEHR-EHR-OBSERVATION.laboratory_test_result' but reference a new lab test request as well as the original lab test request via 'Test request details'.(en)",
           "misuse" : "*Not to be used to record an Autopsy or a Forensic report, although tests on some specimens that are taken in such situations may be represented using this archetype. For these, additional or specialised archetypes will be required to represent the data.\r\n\r\nThis archetype is suitable for representation of general laboratory test results, but not intended to cover full synoptic reports. For these, additional specialising archetypes are required to represent the data.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Documentar o resultado, incluindo achados e a interpretação do laboratório, de uma investigação realizada em amostras coletadas de um indivíduo ou relacionadas a esse indivíduo.",
+          "keywords" : [ "lab", "laboratório", "patologia", "bioquímica", "hematologia", "microbiologia", "imunologia", "anatomia", "química", "clínico", "imunopatologia", "citologia", "histopatologia", "teste", "biópsia", "espécimen", "forense", "genético", "laboratório médico", "laboratório clínico", "resultados", "análises", "análises clínicas" ],
+          "use" : "Use para documentar o resultado, incluindo achados e a interpretação do laboratório, de uma investigação realizada em amostras coletadas de um indivíduo ou relacionadas a esse indivíduo. Isso normalmente é feito em um laboratório, mas pode ser feito em outros ambientes, como no próprio local de atendimento (point of care).\r\n\r\nEste arquétipo se destina a cobrir o resultado de uma única investigação solicitada, onde a(s) amostra(s) é(são) coletada(s) como um único procedimento e pode(m) incluir múltiplos resultados de analitos ou outros componentes. Exemplos disso podem incluir 'hemograma completo', que produziria um resultado separado (analito) para a contagem de cada tipo de célula sanguínea, ou 'biópsia renal não neoplásica', que produziria resultados de microscopia, imunohistoquímica e microscopia eletrônica.\r\n\r\nEste arquétipo foi projetado para ser uma estrutura que normalmente será ampliada com os arquétipos CLUSTER para permitir o registro apropriado de padrões de resultados de testes laboratoriais específicos. Isso inclui, mas não está limitado a, testes de bioquímica, hematologia, imunologia e serviços de transfusão, entre outros e padrões específicos para as solicitações de microbiologia e anatomia patológica. Se os testes ou investigações solicitados não pertencerem comumente a um grupo ou painel nomeado, cada resultado do teste será representado usando instâncias separadas deste arquétipo. Há, no entanto, uma variação considerável na prática real de relatórios/mensagens e esse arquétipo/arquétipos relacionados são projetados para lidar com essa variação.\r\n\r\nEste arquétipo oferece suporte a várias abordagens para o registro de espécimes, refletindo a prática atual que varia enormemente. Um resultado de teste de laboratório tem um alto grau de alinhamento com um recurso de relatório de diagnóstico HL7 FHIR (HL7 FHIR Diagnostic Report resource).\r\n\r\nÉ esperado que uma ou mais instâncias deste arquétipo, ou família de arquétipos, sejam enviadas de volta a um médico solicitante em um documento de relatório de laboratório compreendendo o arquétipo COMPOSITION.report_result, ou semelhante, e outros arquétipos de ENTRY relevantes.\r\n\r\nO registro de fatores de confusão pode ser inconsistente, geralmente dependendo do laboratório de análise e das informações clínicas enviadas pelo solicitante. Na seção Estado (State) do arquétipo, há um elemento de dados simples de 'Fatores de confusão' que é opcional e pode ser repetido como uma forma de registrar uma variedade de fatores simples que precisam ser explicitados, pois podem influenciar a interpretação dos resultados. Se os fatores de confusão forem mais complexos, pode ser apropriado criar um arquétipo CLUSTER local/compartilhado que pode ser aninhado no SLOT 'Detalhes dos fatores de confusão'.\r\nNota 1: Pré-condições conhecidas ou exigidas, como 'jejum' ou 'Dia 1 do ciclo menstrual', devem ser relatadas no elemento de dados 'Condições de amostragem' no arquétipo CLUSTER.specimen, contido neste arquétipo de OBSERVAÇÃO (OBSERVATION).\r\nNota 2: Problemas conhecidos com a coleta ou manuseio de amostras, como 'amostra hemolisada' ou 'uso prolongado de torniquete', devem ser relatados em 'Qualidade da amostra' no arquétipo de CLUSTER.specimen, contido neste arquétipo de OBSERVAÇÃO (OBSERVATION).\r\n\r\nOnde 'testes de reflexo' são realizados pelo laboratório, eles podem ser realizados de acordo com a orientação dos US/FHIR (consulte https://www.hl7.org/fhir/2015may/uslabreport-guide.html) ou outra política local. Por exemplo, um dos seguintes ...\r\n1. Registre os resultados adicionais do teste de reflexo nos 'Resultados do teste' dentro do mesmo 'openEHR-EHR-OBSERVATION.laboratory_test_result'\r\n2. Registre os resultados do teste de reflexo como 'Resultados do teste' em um novo 'openEHR-EHR-OBSERVATION.laboratory_test_result', mas referencie à solicitação de teste de laboratório original em 'Detalhes da solicitação de teste'.\r\n3. Registre os resultados do teste de reflexo como 'Resultados do teste' em um novo 'openEHR-EHR-OBSERVATION.laboratory_test_result', mas referencie uma nova solicitação de teste de laboratório, bem como a solicitação de teste de laboratório original por meio de 'Detalhes da solicitação de teste'.",
+          "misuse" : "Não deve ser usado para registrar uma Autópsia ou Relatório Forense, embora os testes em alguns espécimes que são tirados em tais situações possam ser representados usando este arquétipo. Para estes fins, arquétipos adicionais ou especializados serão necessários.\r\n\r\nEste arquétipo é adequado para representação de resultados de testes laboratoriais gerais, mas não se destina a cobrir relatórios sinópticos completos. Para representar estes dados, arquétipos especializados adicionais são necessários.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -1477,6 +1182,14 @@
           "ac0.109" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
+            "code" : "ac0.109",
+            "description" : ""
+          }
+        },
+        "pt-br" : {
+          "ac0.109" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
             "code" : "ac0.109",
             "description" : ""
           }
@@ -2140,6 +1853,20 @@
         "email" : "joost.holslag@nedap.com"
       },
       "accreditation" : "MD",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Clínica Parente Pizzo",
+        "email" : "vrppizzo@gmail.com"
+      },
       "otherDetails" : { }
     } ]
   }, {
@@ -4585,6 +4312,21 @@
           "misuse" : "Not to be used to record an address as part of maintaining an official demographic register or index. Use a formal Master Patient Index or Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "*To record details about the location of a person, physical building or landmark as they are known or understood in the course of clinical documentation.(en)",
+          "keywords" : [ "adress", "postadress", "hem", "företag", "position", "ort", "distrikt", "region" ],
+          "use" : "*Use to record details about the location of a person, physical building or landmark as they are known or understood in the course of clinical documentation, often ad hoc or when it is not appropriate or possible to use an address lookup service. Examples include:\r\n- the business address of an organisation providing home care to an individual; or\r\n- the postal address of the copyholder of an advanced care record, within the EVALUATION.advance_care_directive archetype; or\r\n- the physical location of a fall or accident.\r\n\r\nThe scope of this archetype has been constrained to carry only the commonest structured components for identifying a specific physical building or landmark. In this context a complete address may be described using:\r\n- One or more free text 'Address line' data elements to represent the huge variety of ways that ‘street-level' details may need to be recorded; and\r\n- 'Town' to represent a suburb, town, city, village, or community;\r\n- 'District/County' to represent a local government district;\r\n- 'State/Territory/Province’ to represent a major government district;\r\n- ‘Postcode’, and \r\n- ‘Country'.\r\n\r\nThis CLUSTER.address could also be used as a proxy for an address in formal demographic address data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see the individual's full contact details at the top of the assessment form.(en)",
+          "misuse" : "*Not to be used to record a fully structured address, such as described in ISO standards or as part of maintaining an official demographic register or index. Use an address lookup service, a formal Master Patient Index or a Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.\r\n\r\nNot to be used to represent digital addresses for use in electronic communication. Use CLUSTER.electronic_communication for this purpose.\r\n\r\nNot to be used to record details about housing or homelessness. Use the EVALUATION.housing_summary for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -4710,6 +4452,20 @@
             "code" : "ac0.2",
             "description" : ""
           }
+        },
+        "sv" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
         }
       },
       "termBindings" : { },
@@ -4767,6 +4523,20 @@
         "email" : "liv.laugen@ous-hf.no, john.tore.valand@helse-bergen.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Erik Sundvall",
+        "organisation" : "Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University",
+        "email" : "erik.sundvall@regionstockholm.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -4778,7 +4548,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "b514aa978c3432541c85b704ea690164"
+      },
       "details" : {
         "sv" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
