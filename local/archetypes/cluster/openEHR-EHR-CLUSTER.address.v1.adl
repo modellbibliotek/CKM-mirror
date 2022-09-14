@@ -14,6 +14,14 @@ language
 				["email"] = <"Strauch.Natalia@mh-hannover.de">
 			>
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+				["name"] = <"Erik Sundvall">
+				["organisation"] = <"Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University">
+				["email"] = <"erik.sundvall@regionstockholm.se">
+			>
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			author = <
@@ -54,6 +62,30 @@ Dieser Archetyp könnte auch als Ersatz für formelle demografische Daten verwen
 Darf nicht verwendet werden, um digitale Adressen zur Verwendung in der elektronischen Kommunikation darzustellen. Verwenden Sie für diesen Zweck den Archetyp CLUSTER.electronic_communication.
 
 Darf nicht verwendet werden, um Details über Wohnungs- oder Obdachlosigkeit darzustellen. Verwenden Sie für diesen Zweck den Archetyp EVALUATION.housing_summary.">
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"*To record details about the location of a person, physical building or landmark as they are known or understood in the course of clinical documentation.(en)">
+			use = <"*Use to record details about the location of a person, physical building or landmark as they are known or understood in the course of clinical documentation, often ad hoc or when it is not appropriate or possible to use an address lookup service. Examples include:
+- the business address of an organisation providing home care to an individual; or
+- the postal address of the copyholder of an advanced care record, within the EVALUATION.advance_care_directive archetype; or
+- the physical location of a fall or accident.
+
+The scope of this archetype has been constrained to carry only the commonest structured components for identifying a specific physical building or landmark. In this context a complete address may be described using:
+- One or more free text 'Address line' data elements to represent the huge variety of ways that ‘street-level' details may need to be recorded; and
+- 'Town' to represent a suburb, town, city, village, or community;
+- 'District/County' to represent a local government district;
+- 'State/Territory/Province’ to represent a major government district;
+- ‘Postcode’, and 
+- ‘Country'.
+
+This CLUSTER.address could also be used as a proxy for an address in formal demographic address data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see the individual's full contact details at the top of the assessment form.(en)">
+			keywords = <"adress", "postadress", "hem", "företag", "position", "ort", "distrikt", "region">
+			misuse = <"*Not to be used to record a fully structured address, such as described in ISO standards or as part of maintaining an official demographic register or index. Use an address lookup service, a formal Master Patient Index or a Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.
+
+Not to be used to represent digital addresses for use in electronic communication. Use CLUSTER.electronic_communication for this purpose.
+
+Not to be used to record details about housing or homelessness. Use the EVALUATION.housing_summary for this purpose.(en)">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -105,7 +137,7 @@ Not to be used to represent digital addresses for use in electronic communicatio
 Not to be used to record details about housing or homelessness. Use the EVALUATION.housing_summary for this purpose.">
 		>
 	>
-	lifecycle_state = <"published">
+	lifecycle_state = <"in_development">
 	other_contributors = <"Dag Aarhus, Vestre Viken HF, Norway", "Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)", "Astrid Askeland, Dips AS, Norway", "Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)", "Keisha Barwise, MOHW/IDB HSSP Project, Jamaica", "SB Bhattacharyya, Bhattacharyyas Clinical Records Research & Informatics LLP, India", "Yexuan Cheng, 浙江大学, China", "Candice de Lisser, Ministry of Health and Wellness, Jamaica", "Ludvig Eek Hofmann, Cambio Healthcare Systems AB, Sweden", "Valborg Ellingsen, Haraldsplass Diakonale sykehus, Norway", "Heather Grain, Llewelyn Grain Informatics, Australia", "Martin Grundberg, Cambio Healthcare Systems, Sweden", "Mikkel Johan Gaup Grønmo, Regional forvaltning EPJ, Helse Nord, Norway (openEHR Editor)", "Rebecka Hansson, Cambio Healthcare Systems AB, Sweden", "Anca Heyd, DIPS ASA, Norway", "Joost Holslag, Nedap, Netherlands", "Evelyn Hovenga, EJSH Consulting, Australia", "Gunnar Jårvik, Helse Vest IKT AS, Norway", "Gunn-Lisbeth Kleiven, Oslo universitetssykehus HF, Norway", "Shinji Kobayashi, National Institute of Public Health, Japan", "Kanika Kuwelker, Helse Vest IKT, Norway", "Jörgen Kuylenstierna, eWeave AB, Sweden", "Liv Laugen, ​Oslo University Hospital, Norway, Norway (openEHR Editor)", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Lars Morgan Karlsen, Nordlandssykehuset Bodø, Norway", "Mikael Nyström, Cambio Healthcare Systems AB, Sweden", "Jayashree Panickar, Karolinska Institute, Sweden", "Erik Skjemstad, Helse Nord RHF, Norway", "Natalia Strauch, Medizinische Hochschule Hannover, Germany", "Norwegian Review Summary, Norwegian Public Hospitals, Norway", "Nyree Taylor, Ocean Health Systems, Australia", "Anders Thurin, VGR, Sweden", "John Tore Valand, Helse Bergen, Norway (openEHR Editor)", "Marit Alice Venheim, Helse Vest IKT, Norway (openEHR Editor)", "Ina Wille, Helse-Vest RHF, Norway">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -122,9 +154,9 @@ HL7 FHIR Resource - Organization v4.0.1: R4 [Internet]. Health Level Seven Inter
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2133C3C9ED943180AF0FD5076B412AD5">
-		["build_uid"] = <"5858eb68-b337-41fb-b80f-5c74cdeabfe1">
-		["revision"] = <"1.0.3">
+		["MD5-CAM-1.0.1"] = <"26A90566AC3E9E471708D7D44C96FFB6">
+		["build_uid"] = <"fa31cc45-ca56-469e-ab8f-3fd27d9dde39">
+		["revision"] = <"1.0.4-alpha">
 	>
 
 definition
@@ -530,6 +562,90 @@ For eksempel:
 					text = <"Karte URL">
 					description = <"Link zu einem Ort auf einer Online-Karte.">
 					comment = <"Zum Beispiel: ein Standort auf einer Google- oder iOS-Map.">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Adress">
+					description = <"Detaljer om platsen för en person, fysisk byggnad eller landmärke.">
+				>
+				["at0001"] = <
+					text = <"Gatuadress">
+					description = <"*An unstructured address line representing all relevant street-level or post-box details that would support the identification of a location.(en)">
+				>
+				["at0002"] = <
+					text = <"Ort/Postort">
+					description = <"*The name of the suburb, town, city, village, community or lowest level locality that contains the address.(en)">
+				>
+				["at0003"] = <
+					text = <"Kommun">
+					description = <"*The name of a local government district or geographical area that contains the address.(en)">
+				>
+				["at0004"] = <
+					text = <"Region">
+					description = <"*The name of a major government district or geographical area that contains the address.(en)">
+				>
+				["at0005"] = <
+					text = <"Postnummer">
+					description = <"*The code for a postal delivery area containing the address, as defined by the relevant postal delivery service.(en)">
+				>
+				["at0006"] = <
+					text = <"Land">
+					description = <"*The name of the country containing the address.(en)">
+				>
+				["at0007"] = <
+					text = <"Latitud">
+					description = <"*Horizontal (y) coordinate of a geolocation for the address.(en)">
+				>
+				["at0008"] = <
+					text = <"Longitud">
+					description = <"*Horizontal (x) coordinate of a geolocation for the address.(en)">
+				>
+				["at0009"] = <
+					text = <"Altitud">
+					description = <"*The vertical coordinate of a geolocation representing height or depth of the address.(en)">
+				>
+				["at0010"] = <
+					text = <"Typ">
+					description = <"*The type of address.(en)">
+				>
+				["at0011"] = <
+					text = <"Besöksadress">
+					description = <"*A physical location that can be visited.(en)">
+				>
+				["at0012"] = <
+					text = <"Postadress">
+					description = <"*Address used as a destination for mailing letters or parcels.(en)">
+				>
+				["at0013"] = <
+					text = <"Både besöks- och postadress">
+					description = <"*Address of a physical location, also used as a destination for mail.(en)">
+				>
+				["at0014"] = <
+					text = <"*Use(en)">
+					description = <"*The primary purpose or use for the address.(en)">
+				>
+				["at0015"] = <
+					text = <"Arbete/företag">
+					description = <"*Address of the physical location of a business or office.(en)">
+				>
+				["at0016"] = <
+					text = <"Hemadress">
+					description = <"*Address of where a person is living on a regular basis.(en)">
+				>
+				["at0017"] = <
+					text = <"Tillfällig adress">
+					description = <"*Address of where a person is living on a temporary basis.(en)">
+				>
+				["at0018"] = <
+					text = <"Kommentar">
+					description = <"*Additional narrative about the address not captured in other fields.(en)">
+				>
+				["at0019"] = <
+					text = <"URL till karta">
+					description = <"*Link to a location on an online map.(en)">
 				>
 			>
 		>
