@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.1.0-alpha.4",
+      "sem_ver" : "2.1.0-alpha.5",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "eaf82f107ff6a9ba725d9556c29501ca",
+      "MD5-CAM-1.0.1" : "35f3da3ed4cd7531db39c0823aef844f",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -2340,7 +2340,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.215" ],
+                  "constraint" : [ "ac0.226" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -2363,10 +2363,10 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : {
-          "ac0.215" : {
+          "ac0.226" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.215",
+            "code" : "ac0.226",
             "description" : ""
           }
         },
@@ -2421,44 +2421,44 @@
             "code" : "at0042.1",
             "text" : "Specimen quality issue",
             "description" : "A specific quality issue with a specimen.",
-            "comment" : "Coding of the specimen quality issues with a terminology is preferred, where possible.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = \nRULE = Possibly set based on \"known vocabulary\" for issues sometimesed used as incoming values \n---end-mapping-instruction---"
+            "comment" : "Coding of the specimen quality issues with a terminology is preferred, where possible.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = \nRULE = Possibly set ad map based on \"known vocabulary\" for issues sometimes used as incoming values \n---end-mapping-instruction---"
           },
-          "ac0.215" : {
+          "ac0.226" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.215",
+            "code" : "ac0.226",
             "description" : ""
           }
         },
         "pt-br" : {
-          "ac0.215" : {
+          "ac0.226" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.215",
+            "code" : "ac0.226",
             "description" : ""
           }
         },
         "nb" : {
-          "ac0.215" : {
+          "ac0.226" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.215",
+            "code" : "ac0.226",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.215" : {
+          "ac0.226" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.215",
+            "code" : "ac0.226",
             "description" : ""
           }
         },
         "sv" : {
-          "ac0.215" : {
+          "ac0.226" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.215",
+            "code" : "ac0.226",
             "description" : ""
           }
         }
@@ -3539,6 +3539,61 @@
         "ac0.215" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.215",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.216" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.216",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.217" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.217",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.218" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.218",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.219" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.219",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.220" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.220",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.221" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.221",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.222" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.222",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.223" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.223",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.224" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.224",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.225" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.225",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.226" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.226",
           "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
         }
       }
