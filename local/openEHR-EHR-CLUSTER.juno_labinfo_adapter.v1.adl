@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b514aa978c3432541c85b704ea690164">
+		["MD5-CAM-1.0.1"] = <"b273dc864c8c4fe3539d180067d8f066">
 		["build_uid"] = <"aeddd5fc-7634-3adb-b19b-5eaf6866ddef">
 	>
 
@@ -95,7 +95,7 @@ definition
 					}
 					allow_archetype CLUSTER[at0015] occurrences matches {0..*} matches {    -- PairAnlyses
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.juno_labinfo_adapter\.v0|openEHR-EHR-CLUSTER\.juno_labinfo_adapter(-[a-zA-Z0-9_]+)*\.v0/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.juno_labinfo_adapter\.v1/}
 						exclude
 							archetype_id/value matches {/.*/}
 					}
