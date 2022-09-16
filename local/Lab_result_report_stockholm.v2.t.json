@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.3.0-alpha.1",
+      "sem_ver" : "2.4.0-alpha.1",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "9823f121a7b2d6110b6c8b8dd1091b22",
+      "MD5-CAM-1.0.1" : "2e3a2f69eab5d13809149ba6e02ca755",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -230,6 +230,7 @@
               }, {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
                 "nodeId" : "at0005.0.1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
@@ -1983,9 +1984,6 @@
           "/items[at0013]" : {
             "fhir_mapping" : "*Specimen.collection.sourceSite(en)"
           },
-          "/items[at0034]" : {
-            "fhir_mapping" : "*Specimen.receivedTime(en)"
-          },
           "/items[at0027]" : {
             "fhir_mappings" : "*Specimen.collection.quantity(en)"
           },
@@ -2000,6 +1998,9 @@
           },
           "/items[at0029.1]" : {
             "fhir_mapping" : "*Specimen.type(en)"
+          },
+          "/items[at0034.1]" : {
+            "fhir_mapping" : "*Specimen.receivedTime(en)"
           }
         },
         "en" : {
@@ -2008,9 +2009,6 @@
           },
           "/items[at0013]" : {
             "fhir_mapping" : "Specimen.collection.sourceSite"
-          },
-          "/items[at0034]" : {
-            "fhir_mapping" : "Specimen.receivedTime"
           },
           "/items[at0027]" : {
             "fhir_mapping" : "Specimen.collection.quantity"
@@ -2032,6 +2030,9 @@
           },
           "/items[at0029.1]" : {
             "fhir_mapping" : "Specimen.type"
+          },
+          "/items[at0034.1]" : {
+            "fhir_mapping" : "Specimen.receivedTime"
           }
         },
         "pt-br" : { },
@@ -2043,9 +2044,6 @@
           "/items[at0013]" : {
             "fhir_mapping" : "Specimen.collection.sourceSite"
           },
-          "/items[at0034]" : {
-            "fhir_mapping" : "Specimen.receivedTime"
-          },
           "/items[at0027]" : {
             "fhir_mapping" : "Specimen.collection.quantity"
           },
@@ -2066,6 +2064,9 @@
           },
           "/items[at0029.1]" : {
             "fhir_mapping" : "Specimen.type"
+          },
+          "/items[at0034.1]" : {
+            "fhir_mapping" : "Specimen.receivedTime"
           }
         },
         "sv" : {
@@ -2093,7 +2094,14 @@
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0029.1",
           "attributes" : [ ],
-          "attributeTuples" : [ ]
+          "attributeTuples" : [ ],
+          "attributeCustomizations" : {
+            "null_reason" : {
+              "aliases" : {
+                "en" : "null_reason"
+              }
+            }
+          }
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -2118,6 +2126,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2133,22 +2142,29 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0088.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_IDENTIFIER",
-              "defaultValue" : {
-                "@type" : "DV_IDENTIFIER"
-              },
+              "rmTypeName" : "DV_TEXT",
               "attributes" : [ ],
               "attributeTuples" : [ ]
-            }, {
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0034.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
+              "rmTypeName" : "DV_DATE_TIME",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2310,7 +2326,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.226" ],
+                  "constraint" : [ "ac0.234" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -2333,10 +2349,10 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : {
-          "ac0.226" : {
+          "ac0.234" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.226",
+            "code" : "ac0.234",
             "description" : ""
           }
         },
@@ -2378,42 +2394,57 @@
             "description" : "A specific quality issue with a specimen.",
             "comment" : "Coding of the specimen quality issues with a terminology is preferred, where possible.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = \nRULE = Possibly set ad map based on \"known vocabulary\" for issues sometimes used as incoming values \n---end-mapping-instruction---"
           },
-          "ac0.226" : {
+          "at0088.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0088.1",
+            "text" : "Juno sample identifier",
+            "description" : "A unique identifier of the specimen, assigned by a party external to the laboratory.",
+            "comment" : "For example: 'Requester ID', 'Archive ID, 'Biobank ID'.",
+            "fhir_mapping" : "Specimen.identifier"
+          },
+          "ac0.234" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.226",
+            "code" : "ac0.234",
             "description" : ""
           }
         },
         "pt-br" : {
-          "ac0.226" : {
+          "ac0.234" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.226",
+            "code" : "ac0.234",
             "description" : ""
           }
         },
         "nb" : {
-          "ac0.226" : {
+          "ac0.234" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.226",
+            "code" : "ac0.234",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.226" : {
+          "ac0.234" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.226",
+            "code" : "ac0.234",
             "description" : ""
           }
         },
         "sv" : {
-          "ac0.226" : {
+          "at0042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0042",
+            "text" : "Provkvalitetsproblem",
+            "description" : "Ett specifikt kvalitetsproblem med provmaterialet.",
+            "comment" : "Kodning av kvalitetsproblem till en terminologi är att föredra i de fall det är möjligt.\n\nTODO: "
+          },
+          "ac0.234" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.226",
+            "code" : "ac0.234",
             "description" : ""
           }
         }
@@ -3550,6 +3581,46 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.226",
           "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.227" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.227",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.228" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.228",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.229" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.229",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.230" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.230",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.231" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.231",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.232" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.232",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.233" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.233",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
+        },
+        "ac0.234" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.234",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
         }
       }
     },
@@ -3764,13 +3835,17 @@
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
           },
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
+          },
+          "/items[at0001.2]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
+          },
+          "/items[at0001]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "nb" : {
@@ -3790,13 +3865,17 @@
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
           },
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
+          },
+          "/items[at0001.2]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
+          },
+          "/items[at0001]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "pt-br" : {
@@ -3816,13 +3895,17 @@
             "hl7v2_mapping" : "*OBX.2,OBX.5,OBX.6(en)",
             "fhir_mapping" : "*Observation.value[x](en)"
           },
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "*OBX.2,OBX.5,OBX.6(en)",
-            "fhir_mapping" : "*Observation.value[x](en)"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "*OBX-11-observation result status(en)",
             "fhir_mapping" : "*status(en)"
+          },
+          "/items[at0001.2]" : {
+            "hl7v2_mapping" : "*OBX.2,OBX.5,OBX.6(en)",
+            "fhir_mapping" : "*Observation.value[x](en)"
+          },
+          "/items[at0001]" : {
+            "hl7v2_mapping" : "*OBX.2,OBX.5,OBX.6(en)",
+            "fhir_mapping" : "*Observation.value[x](en)"
           }
         },
         "de" : {
@@ -3842,13 +3925,17 @@
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
           },
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
+          },
+          "/items[at0001.2]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
+          },
+          "/items[at0001]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "nl" : {
@@ -3868,13 +3955,17 @@
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
           },
-          "/items[at0001]" : {
-            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
-            "fhir_mapping" : "Observation.value[x]"
-          },
           "/items[at0005.1]" : {
             "hl7v2_mapping" : "OBX.11",
             "fhir_mapping" : "Observation.status"
+          },
+          "/items[at0001.2]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
+          },
+          "/items[at0001]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "sv" : { }
@@ -4080,6 +4171,66 @@
               "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.2",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "g/L" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "mmol/L" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                } ]
+              } ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -4371,6 +4522,15 @@
             "text" : "(Synthesized)",
             "code" : "ac0.74",
             "description" : ""
+          },
+          "at0001.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.2",
+            "text" : "Analyte result quantity example",
+            "description" : "The value of the analyte result.",
+            "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nA fairly complex rule goes into here...\n---end-mapping-instruction---\nTODO: Create that rule...",
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "nb" : {
@@ -4379,6 +4539,15 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.74",
             "description" : ""
+          },
+          "at0001.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Analyseresultat (2)",
+            "description" : "Verdien av analyseresultatet.",
+            "comment" : "For eksempel \"7,3 mmol/L\" eller \"Forhøyet\". Datatypen \"Udefinert datatype\" må begrenses til en passende datatype i en spesialisering, et templat eller i applikasjonen. Datatypen Quantity har attributter fra referansemodellen som dekker flagg for normalt/unormalt, referanseområder og approksimeringer. Se https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for mer detaljer.",
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "pt-br" : {
@@ -4387,6 +4556,15 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.74",
             "description" : ""
+          },
+          "at0001.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Analyte result(en) (2)",
+            "description" : "*The value of the analyte result.(en)",
+            "comment" : "*For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.(en)",
+            "hl7v2_mapping" : "*OBX.2,OBX.5,OBX.6(en)",
+            "fhir_mapping" : "*Observation.value[x](en)"
           }
         },
         "de" : {
@@ -4395,6 +4573,15 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.74",
             "description" : ""
+          },
+          "at0001.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Analyt-Ergebnis (2)",
+            "description" : "(Mess-)Wert des Analyt-Ergebnisses.",
+            "comment" : "Z.B. \"7,3 mmol/l\", \"Erhöht\". Der \"Any\"-Datentyp wird dann durch eine Spezialisierung, eine Vorlage oder zur Laufzeit der Anwendung auf einen passenden Datentyp eingeschränkt werden müssen, um das aktuelle Analyt-Ergebnis wiederzugeben. Der \"Quantity\"-Datentyp hat Referenzmodell-Attribute, wie Kennungen für normal/abnormal, Referenzbereiche und Näherungen - für weitere Details s. https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class .",
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "nl" : {
@@ -4403,6 +4590,15 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.74",
             "description" : ""
+          },
+          "at0001.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Uitslag van een analyt (2)",
+            "description" : "De waarde van een analyt uitslag.",
+            "comment" : "Bijvoorbeeld: '7.3 mmol/l', 'Verhoogd'. Om het daadwerkelijke analyt result weer te geven dient het 'Any' data type gespecificeerd te worden tot een toepasselijk data type in een specialisatie, een template of terwijl de applicatie loopt.",
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "sv" : {
@@ -4411,6 +4607,13 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.74",
             "description" : ""
+          },
+          "at0001.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Analysresultat (2)",
+            "description" : "Värdet av analysresultatet.",
+            "comment" : "Till exempel \"7,3 mmol / L\" eller \"Förhöjd\". Datatypen \"Any\", som är en odefinierad datatyp, måste begränsas till en lämplig datatyp i en specialisering, mall eller applikation. Datatypen \"Quantity\" har attribut från referensmodellen som täcker flaggor för normal/onormal, referensområden och approximationer.\r\nSe https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class för mer information."
           }
         }
       },
