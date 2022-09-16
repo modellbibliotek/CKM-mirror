@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.1.0-alpha.5",
+      "sem_ver" : "2.1.0-alpha.6",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "35f3da3ed4cd7531db39c0823aef844f",
+      "MD5-CAM-1.0.1" : "104448744fb57b7a6796cdf6dd494bd1",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -3941,6 +3941,13 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0027.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "nodeId" : "at0024.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -4357,7 +4364,7 @@
             "code" : "at0024",
             "text" : "Analyte name",
             "description" : "The name of the analyte result.",
-            "comment" : "The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples/analyses/analysesId\nRULE = COPY\n---end-mapping-instruction---\n\n",
+            "comment" : "The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples/analyses/analysesId\nRULE = COPY\nCOMMENT = This is a coded text with two values from the source file (or perhaps enriched by a lookup in a terminology server?)\n---end-mapping-instruction---\n\n",
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
           },
