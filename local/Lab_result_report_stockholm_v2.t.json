@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.1.0-alpha.1",
+      "sem_ver" : "2.1.1-alpha.1",
       "build_uid" : "e6d684c3-1df9-4de9-a4f4-cb1d3bbc54c5",
-      "MD5-CAM-1.0.1" : "46fc57e9ecee8f4d24138a8a7e275387",
+      "MD5-CAM-1.0.1" : "d0e6cdbe456dec84f5a506f3d86caf22",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -322,7 +322,7 @@
           "code" : "at0002.0.1",
           "text" : "Report ID",
           "description" : "Identification information about the report.",
-          "comment" : "---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/referralId\nSRCPATH : /LabReplyChem/samplingDate\nTime\nSRCPATH : /LabReplyChem/lab/SID ????? See below\nRULE : Concatenate referalId_SID_samplingDateTime\n---end-mapping-instruction---\nTODO: will there be multiple SIDs in one result report?"
+          "comment" : "---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/referralId\nSRCPATH : /LabReplyChem/samplingDate\nTime\nRULE : Concatenate referalId_samplingDateTime\nComment : System ID (SID) is omitted from Report ID to cater for creation of a multi-disciplinary report based in replies from individual disciplines\n---end-mapping-instruction---\n"
         },
         "at0006.0.1" : {
           "@type" : "ARCHETYPE_TERM",
