@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.7.1",
+      "sem_ver" : "2.7.2",
       "build_uid" : "7e0bebb7-4dfe-403a-9e56-1a596cda6cca",
-      "MD5-CAM-1.0.1" : "a80b537ad8760ab6673cabf45cbef060",
+      "MD5-CAM-1.0.1" : "6b76265bef8343237e855c8af6f83ddd",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -322,7 +322,7 @@
           "code" : "at0002.0.1",
           "text" : "Report ID",
           "description" : "Identification information about the report.",
-          "comment" : "---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/referralId\nSRCPATH : /LabReplyChem/samplingDate\nTime\nSRCPATH : /LabReplyChem/lab/SID ????? See below\nRULE : Concatenate referalId_SID_samplingDateTime\n---end-mapping-instruction---\nTODO: will there be multiple SIDs in one result report?"
+          "comment" : "---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/referralId\nSRCPATH : /LabReplyChem/samplingDate\nTime\nRULE : Concatenate referalId_samplingDateTime\nComment : SID omitted to allow creation of a single report from replies from individual disciplines.\n---end-mapping-instruction---"
         },
         "at0006.0.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -2159,16 +2159,7 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0034.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
