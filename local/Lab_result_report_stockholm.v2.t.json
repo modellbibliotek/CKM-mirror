@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.7.4",
+      "sem_ver" : "2.7.5",
       "build_uid" : "7e0bebb7-4dfe-403a-9e56-1a596cda6cca",
-      "MD5-CAM-1.0.1" : "f140b4e6b06c4d354bb73833261e60bf",
+      "MD5-CAM-1.0.1" : "f60be53dd35297f16b4a54fe47bae7ea",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -2375,7 +2375,7 @@
             "code" : "at0029.1",
             "text" : "Specimen type",
             "description" : "The type of specimen.",
-            "comment" : "For example: Venous blood, bacterial culture, cytology, or tissue sample. Coding of the specimen type with a terminology is preferred, where possible.\n",
+            "comment" : "For example: Venous blood, bacterial culture, cytology, or tissue sample. Coding of the specimen type with a terminology is preferred, where possible.\nFJ : Slå upp från NPU?",
             "fhir_mapping" : "Specimen.type"
           },
           "at0042.1" : {
@@ -2390,7 +2390,7 @@
             "code" : "at0088.1",
             "text" : "Juno sample identifier",
             "description" : "A unique identifier of the specimen, assigned by a party external to the laboratory.",
-            "comment" : "For example: 'Requester ID', 'Archive ID, 'Biobank ID'.",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = /LabReplyChem/samples/sample[x]/group\nRULE = COPY\n---end-mapping-instruction---\n",
             "fhir_mapping" : "Specimen.identifier"
           },
           "ac0.234" : {
