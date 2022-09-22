@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.0.0",
+      "sem_ver" : "5.0.0",
       "build_uid" : "7e0bebb7-4dfe-403a-9e56-1a596cda6cca",
-      "MD5-CAM-1.0.1" : "22534588758a8fc29aaceb0a7d3f23ed",
+      "MD5-CAM-1.0.1" : "81836ef2d24560eafc356cccdbef42d1",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -5149,6 +5149,13 @@
             "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nA fairly complex rule goes into here...\n---end-mapping-instruction---\nTODO: Create that rule...",
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
+          },
+          "at0026.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "Specimen",
+            "description" : "Identification of the specimen used for the analyte result.",
+            "comment" : "In some situations, a single Laboratory test result archetype will contain multiple Specimen archetypes and multiple Analyte result archetypes. In these situations, this 'Specimen' data element is needed to be able to connect the results with the correct specimens.\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH =/LabReplyChem/samples/sample[x]/group\nRULE = Copy (from parent element for this analysis)\n---end-mapping-instruction---\n"
           }
         },
         "nb" : {
@@ -6227,7 +6234,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.70" ],
+                  "constraint" : [ "ac0.72" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -6249,20 +6256,20 @@
             "code" : "at0003",
             "text" : "Urgency",
             "description" : "",
-            "comment" : "---begin-mapping-instruction---\nComment : Does not exist in reply, needs to be fatched from order. \n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nComment : Does not exist in reply, needs to be fetched from order. \n---end-mapping-instruction---"
           },
-          "ac0.70" : {
+          "ac0.72" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.70",
+            "code" : "ac0.72",
             "description" : ""
           }
         },
         "sv" : {
-          "ac0.70" : {
+          "ac0.72" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.70",
+            "code" : "ac0.72",
             "description" : ""
           }
         }
@@ -6619,6 +6626,16 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.70",
           "members" : [ "at0004", "at0005", "at0006" ]
+        },
+        "ac0.71" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.71",
+          "members" : [ "at0004", "at0005", "at0006" ]
+        },
+        "ac0.72" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.72",
+          "members" : [ "at0004", "at0005", "at0006" ]
         }
       }
     },
@@ -6970,7 +6987,7 @@
             "code" : "at0000",
             "text" : "juno_labinfo_adapter",
             "description" : "Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected).",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/analyses\nRULE = Copy all attributes with identical names\n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]\nRULE = Copy all attributes with identical names\n---end-mapping-instruction---"
           }
         },
         "sv" : {
