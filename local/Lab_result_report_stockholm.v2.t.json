@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "6.0.0",
       "build_uid" : "7e0bebb7-4dfe-403a-9e56-1a596cda6cca",
-      "MD5-CAM-1.0.1" : "81836ef2d24560eafc356cccdbef42d1",
+      "MD5-CAM-1.0.1" : "e04df29a743f85de28d745122d3fb857",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -4528,10 +4528,6 @@
       "@type" : "RESOURCE_ANNOTATIONS",
       "documentation" : {
         "en" : {
-          "/items[at0003]" : {
-            "hl7v2_mapping" : "NTE.3",
-            "fhir_mapping" : "Observation.note"
-          },
           "/items[at0024.1]" : {
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
@@ -4559,13 +4555,13 @@
           "/items[at0006.1]" : {
             "hl7v2_mapping" : "OBX.19",
             "fhir_mapping" : "Observation.issued"
+          },
+          "/items[at0003.1]" : {
+            "hl7v2_mapping" : "NTE.3",
+            "fhir_mapping" : "Observation.note"
           }
         },
         "nb" : {
-          "/items[at0003]" : {
-            "hl7v2_mapping" : "NTE.3",
-            "fhir_mapping" : "Observation.note"
-          },
           "/items[at0024.1]" : {
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
@@ -4593,13 +4589,13 @@
           "/items[at0006.1]" : {
             "hl7v2_mapping" : "OBX.19",
             "fhir_mapping" : "Observation.issued"
+          },
+          "/items[at0003.1]" : {
+            "hl7v2_mapping" : "NTE.3",
+            "fhir_mapping" : "Observation.note"
           }
         },
         "pt-br" : {
-          "/items[at0003]" : {
-            "hl7v2_mapping" : "*NTE.3(en)",
-            "fhir_mapping" : "*Observation.comments(en)"
-          },
           "/items[at0024.1]" : {
             "hl7v2_mapping" : "*OBX-3.1;3.2(en)",
             "fhir_mapping" : "*Observation.code(en)"
@@ -4627,13 +4623,13 @@
           "/items[at0006.1]" : {
             "hl7v2_mapping" : "*OBX-22 and/or OBX-19(en)",
             "fhir_mapping" : "*Observation.issued(en)"
+          },
+          "/items[at0003.1]" : {
+            "hl7v2_mapping" : "*NTE.3(en)",
+            "fhir_mapping" : "*Observation.comments(en)"
           }
         },
         "de" : {
-          "/items[at0003]" : {
-            "hl7v2_mapping" : "NTE.3",
-            "fhir_mapping" : "Observation.note"
-          },
           "/items[at0024.1]" : {
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
@@ -4661,13 +4657,13 @@
           "/items[at0006.1]" : {
             "hl7v2_mapping" : "OBX.19",
             "fhir_mapping" : "Observation.issued"
+          },
+          "/items[at0003.1]" : {
+            "hl7v2_mapping" : "NTE.3",
+            "fhir_mapping" : "Observation.note"
           }
         },
         "nl" : {
-          "/items[at0003]" : {
-            "hl7v2_mapping" : "NTE.3",
-            "fhir_mapping" : "Observation.note"
-          },
           "/items[at0024.1]" : {
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
@@ -4695,6 +4691,10 @@
           "/items[at0006.1]" : {
             "hl7v2_mapping" : "OBX.19",
             "fhir_mapping" : "Observation.issued"
+          },
+          "/items[at0003.1]" : {
+            "hl7v2_mapping" : "NTE.3",
+            "fhir_mapping" : "Observation.note"
           }
         },
         "sv" : { }
@@ -5057,6 +5057,12 @@
           } ],
           "attributeTuples" : [ ]
         }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0003.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..1",
@@ -5150,12 +5156,30 @@
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
           },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Comment",
+            "description" : "Additional narrative about the analyte result, not captured in other fields.",
+            "hl7v2_mapping" : "NTE.3",
+            "fhir_mapping" : "Observation.note",
+            "comment" : "/LabReplyChem/samples/sample/analyses/analysis/analysisComment"
+          },
           "at0026.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0026",
             "text" : "Specimen",
             "description" : "Identification of the specimen used for the analyte result.",
             "comment" : "In some situations, a single Laboratory test result archetype will contain multiple Specimen archetypes and multiple Analyte result archetypes. In these situations, this 'Specimen' data element is needed to be able to connect the results with the correct specimens.\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH =/LabReplyChem/samples/sample[x]/group\nRULE = Copy (from parent element for this analysis)\n---end-mapping-instruction---\n"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Comment",
+            "description" : "Additional narrative about the analyte result, not captured in other fields.",
+            "hl7v2_mapping" : "NTE.3",
+            "fhir_mapping" : "Observation.note",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH= /LabReplyChem/samples/sample/analyses/analysis/analysisComment\nRULE = Copy\n---end-mapping-instruction---\n\n"
           }
         },
         "nb" : {
