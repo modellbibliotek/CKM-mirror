@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.7.3",
+      "sem_ver" : "2.7.4",
       "build_uid" : "7e0bebb7-4dfe-403a-9e56-1a596cda6cca",
-      "MD5-CAM-1.0.1" : "fbe0030d95dd906d1e4ed6bb760ed866",
+      "MD5-CAM-1.0.1" : "f140b4e6b06c4d354bb73833261e60bf",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -329,7 +329,7 @@
           "code" : "at0006",
           "text" : "Extension",
           "description" : "Additional information required to capture local context or to align with other reference models/formalisms.",
-          "comment" : "For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.\n---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/ordererCareUnitExternalId\nRULE : \n-Lookup in Organization service using SRCPATH as id (type = 'kombika').\n-Set 'Care unit/Identifier' =  Organization.hsaHierarchy.hsaCareUnit.identifier.value\n-Set 'Care unit/Parent organization/Care provider/identifier' =\nOrganization.hsaHierarchy.hsaCareProvider.identifier.value\n---end-mapping-instruction---\nTODO: Add name"
+          "comment" : "For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.\n---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/ordererCareUnitExternalId\nRULE : \n-Lookup in Organization service using SRCPATH as id (type = 'kombika').\n-Set 'Care unit/Identifier' =  Organization.hsaHierarchy.hsaCareUnit.identifier.value\n-Set 'Care unit/Parent organization/Care provider/identifier' =\nOrganization.hsaHierarchy.hsaCareProvider.identifier.value\n-Set 'Care unit/Name' and 'Care unit/Parent organization/Care provider/Name' based on lookups in Organization service using the respective hsa identifiers.  \n---end-mapping-instruction---\nTODO: Add name"
         }
       },
       "es-ar" : {
