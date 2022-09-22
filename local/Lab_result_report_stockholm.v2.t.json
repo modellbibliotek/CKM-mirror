@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "8.0.0",
       "build_uid" : "7e0bebb7-4dfe-403a-9e56-1a596cda6cca",
-      "MD5-CAM-1.0.1" : "a022d3602cca44f0d1f269c51d925a87",
+      "MD5-CAM-1.0.1" : "e7ba86b7aa7aac4be6b9825bbecb08f2",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -1156,7 +1156,7 @@
             "code" : "at0101.1",
             "text" : "Comment",
             "description" : "Additional narrative about the test result not captured in other fields.",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples[x]/analyses/analyses[y]\nRULE = Create one instance per analyses in all samples\n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nComment : Seems to be a useless comment from Juno\n---end-mapping-instruction---"
           }
         },
         "nb" : {
