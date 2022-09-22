@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "6.0.0",
+      "sem_ver" : "7.0.0",
       "build_uid" : "7e0bebb7-4dfe-403a-9e56-1a596cda6cca",
-      "MD5-CAM-1.0.1" : "e04df29a743f85de28d745122d3fb857",
+      "MD5-CAM-1.0.1" : "a022d3602cca44f0d1f269c51d925a87",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -785,6 +785,12 @@
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0101.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
                       "occurrences" : "0..*",
@@ -1137,6 +1143,20 @@
             "text" : "(Synthesized)",
             "code" : "ac0.110",
             "description" : ""
+          },
+          "at0101" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0101",
+            "text" : "Comment",
+            "description" : "Additional narrative about the test result not captured in other fields.",
+            "comment" : "---begin-mapping-instruction---\nComment : Seems to be a useless comment in /LabReplyChem/comment\n---end-mapping-instruction---"
+          },
+          "at0101.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0101.1",
+            "text" : "Comment",
+            "description" : "Additional narrative about the test result not captured in other fields.",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples[x]/analyses/analyses[y]\nRULE = Create one instance per analyses in all samples\n---end-mapping-instruction---"
           }
         },
         "nb" : {
