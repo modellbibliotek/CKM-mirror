@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.2.0",
+      "sem_ver" : "3.3.0",
       "build_uid" : "7e0bebb7-4dfe-403a-9e56-1a596cda6cca",
-      "MD5-CAM-1.0.1" : "eeb024bbff0f48df46d1c62fcc5e20da",
+      "MD5-CAM-1.0.1" : "d2268107d6bdeb45c12ec644721aeb8c",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -6775,7 +6775,7 @@
             "code" : "at0000.1",
             "text" : "Performing laboratory",
             "description" : "An entity comprising one or more people and having a particular purpose.",
-            "comment" : "For example: a company, institution, association, network, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who provide care or support."
+            "comment" : "For example: a company, institution, association, network, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who provide care or support.\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/lab/careUnit\nRULE = \nComment : Source contains local id in TC, need a lookup either in two steps local -> kombika or hsa and then from Organization service or possibly adding local TC ids to the Organization service.\n---end-mapping-instruction---"
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
