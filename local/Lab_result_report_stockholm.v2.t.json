@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.7.2",
+      "sem_ver" : "2.7.3",
       "build_uid" : "7e0bebb7-4dfe-403a-9e56-1a596cda6cca",
-      "MD5-CAM-1.0.1" : "6b76265bef8343237e855c8af6f83ddd",
+      "MD5-CAM-1.0.1" : "fbe0030d95dd906d1e4ed6bb760ed866",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -322,7 +322,7 @@
           "code" : "at0002.0.1",
           "text" : "Report ID",
           "description" : "Identification information about the report.",
-          "comment" : "---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/referralId\nSRCPATH : /LabReplyChem/samplingDate\nTime\nRULE : Concatenate referalId_samplingDateTime\nComment : SID omitted to allow creation of a single report from replies from individual disciplines.\n---end-mapping-instruction---"
+          "comment" : "---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/referralId\nSRCPATH : /LabReplyChem/samplingDate\nTime\nRULE : Concatenate referalId_samplingDateTime\nComment : SID omitted to allow creation of a single report from replies from individual disciplines. Not 100% absolutely guaranteed to be unique but likelyhood of getting the same RID for different labs for the same patioent with the sam samplingDateTime is low\n---end-mapping-instruction---"
         },
         "at0006.0.1" : {
           "@type" : "ARCHETYPE_TERM",
