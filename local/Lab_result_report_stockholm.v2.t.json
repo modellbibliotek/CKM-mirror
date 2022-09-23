@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "11.0.2",
+      "sem_ver" : "11.0.3",
       "build_uid" : "7e0bebb7-4dfe-403a-9e56-1a596cda6cca",
-      "MD5-CAM-1.0.1" : "8bb21e412605d9e90bd30b85dbe9564e",
+      "MD5-CAM-1.0.1" : "12b0426c6c0530757273c30dc612e086",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -5107,7 +5107,7 @@
             "code" : "at0024",
             "text" : "Analyte name",
             "description" : "The name of the analyte result.",
-            "comment" : "The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples/analyses/analysesId\nRULE = COPY\nCOMMENT = This is a coded text with two values from the source file (or perhaps enriched by a lookup in a terminology server?)\n---end-mapping-instruction---\n\n",
+            "comment" : "The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]\nRULE = COPY\nCOMMENT = This is a coded text with two values from the source file (or perhaps enriched by a lookup in a terminology server?)\n---end-mapping-instruction---\n\n",
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
           },
