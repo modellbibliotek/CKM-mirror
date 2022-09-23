@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "17.0.0",
-      "build_uid" : "7e0bebb7-4dfe-403a-9e56-1a596cda6cca",
-      "MD5-CAM-1.0.1" : "d6083763cd4d396cb87c6da4c5dc7503",
+      "sem_ver" : "2.8.0-alpha-1",
+      "build_uid" : "08813b85-9632-48ef-956f-08e639739af7",
+      "MD5-CAM-1.0.1" : "cb00d1ef45b5e4d157772e504490d915",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -5607,7 +5607,7 @@
             "code" : "at0001.2",
             "text" : "Analyte result quantity",
             "description" : "The value of the analyte result.",
-            "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH `\nRULE = \nIF there is a measurement unit in incoming data AND (the measurement value is a number OR a number prefixed with < or >)\nTHEN map to corresponding openEHR quantity fields (inluding \n---end-mapping-instruction---\nTODO: Create that rule...",
+            "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH `\nRULE = \nIF there is a measurement unit in incoming data AND (the measurement value is a number OR a number prefixed with < or > )\nTHEN map to corresponding openEHR quantity fields (inluding setting magnitude_status according to suitable alternative from https://specifications.openehr.org/releases/RM/Release-1.1.0/data_types.html#_dv_quantified_class\n---end-mapping-instruction---\nComment: this is a first version of the rule. May be replaced by a acustom Java function later.",
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
           },
