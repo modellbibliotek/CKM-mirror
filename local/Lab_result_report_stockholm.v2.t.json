@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "11.0.1",
+      "sem_ver" : "11.0.2",
       "build_uid" : "7e0bebb7-4dfe-403a-9e56-1a596cda6cca",
-      "MD5-CAM-1.0.1" : "7a30d96bb1c952ee6aebacff97983e2e",
+      "MD5-CAM-1.0.1" : "8bb21e412605d9e90bd30b85dbe9564e",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -2427,7 +2427,7 @@
             "code" : "at0000",
             "text" : "Specimen",
             "description" : "A physical sample collected from, or related to, an individual for the purpose of investigation, examination or analysis.",
-            "comment" : "For example: Tissue or body fluid.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples\nRULE = Create one Specimen per samples element in source\n---end-mapping-instruction---"
+            "comment" : "For example: Tissue or body fluid.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]\nRULE = Create one Specimen per sample element in source\n---end-mapping-instruction---"
           },
           "at0029.1" : {
             "@type" : "ARCHETYPE_TERM",
