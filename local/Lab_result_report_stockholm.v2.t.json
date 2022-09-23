@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "11.0.0",
+      "sem_ver" : "11.0.1",
       "build_uid" : "7e0bebb7-4dfe-403a-9e56-1a596cda6cca",
-      "MD5-CAM-1.0.1" : "cc4c0cd8346dfba3e26de86da453c527",
+      "MD5-CAM-1.0.1" : "7a30d96bb1c952ee6aebacff97983e2e",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -322,14 +322,14 @@
           "code" : "at0002.0.1",
           "text" : "Report ID",
           "description" : "Identification information about the report.",
-          "comment" : "---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/referralId\nSRCPATH : /LabReplyChem/samplingDate\nTime\nRULE : Concatenate referalId_samplingDateTime\nComment : SID omitted to allow creation of a single report from replies from individual disciplines. Not 100% absolutely guaranteed to be unique but likelyhood of getting the same RID for different labs for the same patioent with the sam samplingDateTime is low\n---end-mapping-instruction---"
+          "comment" : "---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/referralId\nSRCPATH : /LabReplyChem/samplingDate\nTime\nRULE : Concatenate referalId_samplingDateTime\nComment : SID omitted to allow creation of a single report from replies from individual disciplines. Not 100% absolutely guaranteed to be unique but likelyhood of getting the same RID for different labs for the same patioent with the sam samplingDateTime is low\n---end-mapping-instruction---\n\n"
         },
         "at0006.0.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
           "text" : "Extension",
           "description" : "Additional information required to capture local context or to align with other reference models/formalisms.",
-          "comment" : "For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.\n---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/ordererCareUnitExternalId\nRULE : \n-Lookup in Organization service using SRCPATH as id (type = 'kombika').\n-Set 'Care unit/Identifier' =  Organization.hsaHierarchy.hsaCareUnit.identifier.value\n-Set 'Care unit/Parent organization/Care provider/identifier' =\nOrganization.hsaHierarchy.hsaCareProvider.identifier.value\n-Set 'Care unit/Name' and 'Care unit/Parent organization/Care provider/Name' based on lookups in Organization service using the respective hsa identifiers.  \n---end-mapping-instruction---\nTODO: Add name"
+          "comment" : "For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.\n---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/ordererCareUnitExternalId\nRULE : \n-Lookup in Organization service using SRCPATH as id (type = 'kombika').\n-Set 'Care unit/Identifier' =  Organization.hsaHierarchy.hsaCareUnit.identifier.value\n-Set 'Care unit/Parent organization/Care provider/identifier' =\nOrganization.hsaHierarchy.hsaCareProvider.identifier.value\n-Set 'Care unit/Name' and 'Care unit/Parent organization/Care provider/Name' based on lookups in Organization service using the respective hsa identifiers.  \n---end-mapping-instruction---"
         }
       },
       "es-ar" : {
@@ -1150,13 +1150,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.110",
             "description" : ""
-          },
-          "at0101" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0101",
-            "text" : "Comment",
-            "description" : "Additional narrative about the test result not captured in other fields.",
-            "comment" : "---begin-mapping-instruction---\nComment : Seems to be a useless comment in /LabReplyChem/comment\n---end-mapping-instruction---"
           },
           "at0101.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2458,13 +2451,6 @@
             "description" : "A unique identifier of the specimen, assigned by a party external to the laboratory.",
             "comment" : "---begin-mapping-instruction---\nSRCFMT = /LabReplyChem/samples/sample[x]/group\nRULE = COPY\n---end-mapping-instruction---\n",
             "fhir_mapping" : "Specimen.identifier"
-          },
-          "at0041" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0041",
-            "text" : "Adequacy for testing",
-            "description" : "Information about whether the specimen was adequate for testing.",
-            "comment" : "This element is intended to be used to record a judgement about whether or not the specimen quality was good enough for testing, and whether or not testing has been carried out. Coding of the specimen quality issues with a terminology is preferred, where possible.\n\nFor mapping see 'Adequacy for testing'"
           },
           "ac0.319" : {
             "@type" : "ARCHETYPE_TERM",
@@ -5054,16 +5040,7 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0006.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -5182,15 +5159,6 @@
             "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nA fairly complex rule goes into here...\n---end-mapping-instruction---\nTODO: Create that rule...",
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Comment",
-            "description" : "Additional narrative about the analyte result, not captured in other fields.",
-            "hl7v2_mapping" : "NTE.3",
-            "fhir_mapping" : "Observation.note",
-            "comment" : "/LabReplyChem/samples/sample/analyses/analysis/analysisComment"
           },
           "at0026.1" : {
             "@type" : "ARCHETYPE_TERM",
