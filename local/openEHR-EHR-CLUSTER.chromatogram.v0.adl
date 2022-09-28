@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ebb84998f6738b11d96b3a1b68324139">
+		["MD5-CAM-1.0.1"] = <"0df566d6771eba4693e6ffdf0651d497">
 		["build_uid"] = <"1faa92ad-37b0-3b5f-b001-6cda51360f99">
 	>
 
@@ -59,7 +59,7 @@ definition
 					DV_BOOLEAN matches {*}
 				}
 			}
-			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Subtracion tyoe
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Subtracion type
 				value matches {
 					DV_CODED_TEXT matches {*}
 				}
@@ -84,7 +84,7 @@ ontology
 					description = <"">
 				>
 				["at0004"] = <
-					text = <"Subtracion tyoe">
+					text = <"Subtracion type">
 					description = <"">
 				>
 				["at0005"] = <
@@ -108,7 +108,7 @@ ontology
 					description = <"">
 				>
 				["at0004"] = <
-					text = <"Subtrakionstyp">
+					text = <"*Subtracion type (en)">
 					description = <"">
 				>
 				["at0005"] = <
