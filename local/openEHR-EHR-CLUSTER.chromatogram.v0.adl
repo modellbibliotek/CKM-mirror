@@ -37,12 +37,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0df566d6771eba4693e6ffdf0651d497">
+		["MD5-CAM-1.0.1"] = <"26aa808d8c4716fd60287b0c0614174c">
 		["build_uid"] = <"1faa92ad-37b0-3b5f-b001-6cda51360f99">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Chromatogram
+	CLUSTER[at0000] matches {    -- Capillary electroforesis
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Curve type
 				value matches {
@@ -72,7 +72,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Chromatogram">
+					text = <"Capillary electroforesis">
 					description = <"CHROMATOGRAM">
 				>
 				["at0002"] = <
@@ -96,7 +96,7 @@ ontology
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"Kromatogram">
+					text = <"Kapillärelektrofores">
 					description = <"*CHROMATOGRAM (en)">
 				>
 				["at0002"] = <
