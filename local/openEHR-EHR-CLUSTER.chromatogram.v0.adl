@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"26aa808d8c4716fd60287b0c0614174c">
+		["MD5-CAM-1.0.1"] = <"9de2ccff1a69c93c93365b0265b7199d">
 		["build_uid"] = <"1faa92ad-37b0-3b5f-b001-6cda51360f99">
 	>
 
@@ -108,7 +108,7 @@ ontology
 					description = <"">
 				>
 				["at0004"] = <
-					text = <"*Subtracion type (en)">
+					text = <"Subtrakionstyp">
 					description = <"">
 				>
 				["at0005"] = <
