@@ -28,13 +28,15 @@ description
 			purpose = <"*To record severity according to CTCAE Common Terminology Criteria for Adverse Events (CTCAE) (en)">
 			keywords = <"*CTCAE (en)","*Adverse Events (en)","*Chemotherapy (en)">
 			copyright = <"© openEHR Foundation">
-			use = <"*In a template or archetype speicialisation, rename the ordinal node to suitable CTCAE Term or corresponding patient facing question. In Archetype specialsations also the text of the ordinals can be changed to fit corresponding specialized texts in the CTCAE table row. (en)">
+			use = <"*In a template or archetype speicialisation, rename the ordinal node to suitable CTCAE Term or corresponding patient facing question. In Archetype specialsations also the text of the ordinals can be changed to fit corresponding specialized texts in the CTCAE table row. It is recommended to document ssociated MedDRA Code ineither the containing template or specialisation metadata.
+ (en)">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record severity according to CTCAE Common Terminology Criteria for Adverse Events (CTCAE)">
 			keywords = <"CTCAE","Adverse Events","Chemotherapy">
-			use = <"In a template or archetype speicialisation, rename the ordinal node to suitable CTCAE Term or corresponding patient facing question. In Archetype specialsations also the text of the ordinals can be changed to fit corresponding specialized texts in the CTCAE table row.">
+			use = <"In a template or archetype speicialisation, rename the ordinal node to suitable CTCAE Term or corresponding patient facing question. In Archetype specialsations also the text of the ordinals can be changed to fit corresponding specialized texts in the CTCAE table row. It is recommended to document ssociated MedDRA Code ineither the containing template or specialisation metadata.
+">
 		>
 	>
 	other_details = <
