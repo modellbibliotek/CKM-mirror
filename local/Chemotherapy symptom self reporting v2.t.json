@@ -66,11 +66,11 @@
       }
     }
   },
-  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.self_monitoring.v0",
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.self_reported_data.v0",
   "differential" : true,
   "archetypeId" : {
     "@type" : "ARCHETYPE_HRID",
-    "value" : "openEHR-EHR-COMPOSITION.t_self_monitoring.v0"
+    "value" : "penEHR-EHR-COMPOSITION.t_self_reported_data.v0"
   },
   "definition" : {
     "@type" : "C_COMPLEX_OBJECT",
