@@ -125,7 +125,7 @@
         "nodeId" : "at0.2",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-symptom_sign_screening-001.v0",
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-symptom_sign_screening-001.v1",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -305,11 +305,11 @@
         }
       }
     },
-    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.symptom_sign_screening.v0",
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.symptom_sign_screening.v1",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-OBSERVATION.ovl-symptom_sign_screening-001.v0"
+      "value" : "openEHR-EHR-OBSERVATION.ovl-symptom_sign_screening-001.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
