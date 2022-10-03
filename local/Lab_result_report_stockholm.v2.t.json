@@ -4,10 +4,10 @@
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
-      "name" : "Erik Sundvall",
-      "organisation" : "Region Östergötland & Linköping University, Sweden",
-      "email" : "erik.sundvall@regionostergotland.se",
-      "date" : "2021-11-19"
+      "name" : "Erik Sundvall, LInda Aulin Lundeqvist, Fredrik Jonsson",
+      "organisation" : "Region Stockholm, Sweden",
+      "email" : "erik.sundvall@regionstockholm.se",
+      "date" : "2022-10-03"
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.8.0-alpha-1",
-      "build_uid" : "08813b85-9632-48ef-956f-08e639739af7",
-      "MD5-CAM-1.0.1" : "cb00d1ef45b5e4d157772e504490d915",
+      "sem_ver" : "2.8.0-alpha.2",
+      "build_uid" : "07c0374a-2759-4524-8805-a40f6d30daad",
+      "MD5-CAM-1.0.1" : "933eeb0932f982b534859f1acdd3f418",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -698,14 +698,7 @@
                           "attributeTuples" : [ ]
                         } ]
                       } ],
-                      "attributeTuples" : [ ],
-                      "attributeCustomizations" : {
-                        "null_flavour" : {
-                          "aliases" : {
-                            "en" : "null_flavour"
-                          }
-                        }
-                      }
+                      "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
@@ -1189,27 +1182,6 @@
             "text" : "Comment",
             "description" : "Additional narrative about the test result not captured in other fields.",
             "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nComment : There seems to be a useless comment from Juno (that could be mapped here later?), but will need to be checked with real data.\n---end-mapping-instruction---"
-          },
-          "at0057" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0057",
-            "text" : "Conclusion",
-            "description" : "Narrative description of the key findings.",
-            "comment" : "For example: 'Pattern suggests significant renal impairment'. The content of the conclusion will vary, depending on the investigation performed. This conclusion should be aligned with the coded 'Test diagnosis'.\n---begin-mapping-instruction---\nnot mapped yet\n---end-mapping-instruction---"
-          },
-          "at0098" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0098",
-            "text" : "Test diagnosis",
-            "description" : "Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test result.",
-            "comment" : "For example: 'Severe hepatic impairment', 'Salmonella contamination'. Coding of the diagnosis with a terminology is strongly recommended, where possible. This diagnosis should be aligned with the narrative in the 'Conclusion'.\n---begin-mapping-instruction---\nnot mapped yet\n---end-mapping-instruction---"
-          },
-          "at0113" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0113",
-            "text" : "Confounding factors",
-            "description" : "Issues or circumstances that impact on the accurate interpretation of the measurement or test result.",
-            "comment" : "'Confounding factors' should be reserved for uncontrolled/unplanned issues of patient state/physiology that might affect interpretation, for example 'recent exercise' or 'recent tobacco smoking'.\n\nKnown or required preconditions, such as 'fasting' should be carried in the 'Sampling conditions' element within the CLUSTER.specimen archetype . In some cases preconditions are captured as part of the test name, for example 'Fasting blood glucose'.\n\nKnown issues with specimen collection or handling, such as 'prolonged use of tourniquet' or 'sample haemolysed', should be carried in the 'Specimen quality' elements within CLUSTER.specimen archetype.\n\nCoding with a terminology is desirable, where possible."
           },
           "at0057.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -5468,16 +5440,7 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0025.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -5653,13 +5616,6 @@
             "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nA fairly complex rule goes into here...\n---end-mapping-instruction---\nTODO: Create that rule...",
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
-          },
-          "at0025" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025",
-            "text" : "Validation time",
-            "description" : "The date and time that the analyte result was validated in the laboratory by a healthcare practitioner.",
-            "comment" : "In many jurisdictions the 'Result status' is assumed to include medical validation i.e. a 'final' result will be assumed to be medically validated, but in others this will be recorded and reported separately using this data element.\n---begin-mapping-instruction---\nnot mapped yet\n---end-mapping-instruction---"
           },
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
