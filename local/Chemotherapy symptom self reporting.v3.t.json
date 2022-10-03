@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.2",
+      "sem_ver" : "3.0.0-alpha.3",
       "build_uid" : "a0715e39-b550-4d72-b7ca-424187ef30e2",
-      "MD5-CAM-1.0.1" : "faa775bddf718aa63d4df547cb910e43",
+      "MD5-CAM-1.0.1" : "bce875af1fe8cbfe127f5056327b433a",
       "PARENT:MD5-CAM-1.0.1" : "F56C24081D5D4E5CAF0AB1D658AD3A0D"
     },
     "details" : {
@@ -188,7 +188,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Chemotherapy symptom self reporting.v3",
+          "text" : "Symptomkontroll inför cytostatikabehandling",
           "description" : "Generell behållare för information som tillhandahålls av en individ."
         }
       },
@@ -223,9 +223,100 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "D0E02DE26104C7DB2CB94198C5B658FE"
+        "PARENT:MD5-CAM-1.0.1" : "2141E7DE7BD3A1749F385CE9AEA6E90B"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "*To create a framework for recording answers about symptoms or signs, to the questions of a pre-defined screening questionnaire. (en)",
+          "keywords" : [ "*screening, questionnaire, emotions, pain numbness vertigo (en)" ],
+          "use" : "*Use to create a framework for recording answers to pre-defined screening questions about symptoms or signs.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic inquiry in any consultation, for example:\r\n--- Do you have headaches? Yes, No, Unknown.\r\n--- Have you had dizziness in the past four weeks? Yes, No, Unknown.\r\n- Specific questioning related to disease surveillance.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the 'text' choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a symptom that has been present at any time in the past and information about a symptom within a specified time interval - for example the difference between \"\"Are you dizzy now?\" compared to \"Have you had any dizziness in the past 4 weeks?\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of a symptom or sign, it is recommended that clinical system record and persist the specific details about the symptom or sign using the CLUSTER.symptom_sign archetype nested within the Additional details SLOT in this archetype. (en)",
+          "misuse" : "*Not to be used to record details about the presence or absence of a symptom, outside of a screening context. Use CLUSTER.symptom_sign or CLUSTER.exclusion_symptom_sign for these purposes.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "*To create a framework for recording answers to pre-defined screening questions about symptoms or signs.(en)",
+          "keywords" : [ "*screening, questionnaire, emotions, pain numbness vertigo (en)" ],
+          "use" : "*Use to create a framework for recording answers to pre-defined screening questions about symptoms or signs.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic inquiry in any consultation, for example:\r\n--- Do you have headaches? Yes, No, Unknown.\r\n--- Have you had dizziness in the past four weeks? Yes, No, Unknown.\r\n- Specific questioning related to disease surveillance.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the 'text' choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a symptom that has been present at any time in the past and information about a symptom within a specified time interval - for example the difference between \"\"Are you dizzy now?\" compared to \"Have you had any dizziness in the past 4 weeks?\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of a symptom or sign, it is recommended that clinical system record and persist the specific details about the symptom or sign using the CLUSTER.symptom_sign archetype nested within the Additional details SLOT in this archetype. (en)",
+          "misuse" : "*Not to be used to record details about the presence or absence of a symptom, outside of a screening context. Use CLUSTER.symptom_sign or CLUSTER.exclusion_symptom_sign for these purposes.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fi" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fi"
+          },
+          "purpose" : "*To create a framework for recording answers about symptoms or signs, to the questions of a pre-defined screening questionnaire. (en)",
+          "keywords" : [ "*screening, questionnaire, emotions, pain numbness vertigo (en)" ],
+          "use" : "*Use to create a framework for recording answers to pre-defined screening questions about symptoms or signs.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic inquiry in any consultation, for example:\r\n--- Do you have headaches? Yes, No, Unknown.\r\n--- Have you had dizziness in the past four weeks? Yes, No, Unknown.\r\n- Specific questioning related to disease surveillance.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the 'text' choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a symptom that has been present at any time in the past and information about a symptom within a specified time interval - for example the difference between \"\"Are you dizzy now?\" compared to \"Have you had any dizziness in the past 4 weeks?\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of a symptom or sign, it is recommended that clinical system record and persist the specific details about the symptom or sign using the CLUSTER.symptom_sign archetype nested within the Additional details SLOT in this archetype. (en)",
+          "misuse" : "*Not to be used to record details about the presence or absence of a symptom, outside of a screening context. Use CLUSTER.symptom_sign or CLUSTER.exclusion_symptom_sign for these purposes.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om symptomer eller sykdomstegn.",
+          "keywords" : [ "intervjuskjema, kartleggingskjema, spørreskjema, lidelse, plage, problem, ubehag, symptom, sykdomstegn, lyte, skavank" ],
+          "use" : "Brukes for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om symptomer eller sykdomstegn.\r\n\r\nVanlige bruksområder inkluderer, men er ikke begrenset til:\r\n- Systematiske spørsmål ved konsultasjoner, for eksempel:\r\n--- Har du hodepine? Ja, Nei, Usikker.\r\n--- Har du vært plaget med svimmelhet de siste fire ukene? Ja, Nei, Usikker.\r\n- Spesifikke spørsmål relatert til overvåkning av sykdommer.\r\n\r\nSemantikken til denne arketypen er med vilje løst definert, og spørringer etter data i denne arketypen vil normalt bare være hensiktsmessig eller sikkert i konteksten av det spesifikke templatet. I et templat vil hvert dataelement vanligvis døpes om til det (spesifikke) spørsmålet man ønsker svar på. Flere steder er det foreslått verdisett som passer til de vanligste bruksområder, men det er allikevel mulig å tilpasse/endre verdisett for lokal bruk ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN for å harmonere verdisettet til hvert enkelt brukstilfelle.\r\n\r\nEVENT-strukturen fra arketypens referansemodell kan brukes for å spesifisere om spørsmålene relateres til et tidspunkt eller til et tidsintervall.\r\nBruk egne instanser av denne arketypen for å skille mellom spørsmål om prosedyrer som er gjennomførte på et hvilket som helst tidspunkt og spørsmål om prosedyrer som er gjennomført i et tidsintervall. For eksempel; \"Har du hodepine?\" sammenlignet med \"Har du vært plaget med svimmelhet de siste fire ukene?\".\r\n\r\nKilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan identifiseres spesifikt ved å benytte \"Information provider\" elementet i openEHR referansemodellen.\r\n\r\nDenne arketypen er laget for å bli brukt i et spørreskjema eller for å registrere enkle strukturerte data til for eksempel et sykdomsregister. Dersom det i spørreskjemaet identifiseres at et symptom eller sykdomstegn er tilstede, anbefales det at spesifikke detaljer om symptomet registreres og lagres i pasientjournalen i arketypen CLUSTER.symptom_sign (Symptom/Sykdomstegn) i SLOTet \"Ytterligere detaljer\" i denne arketypen.",
+          "misuse" : "Brukes ikke for å registrere detaljer om tilstedeværelse eller fravær av et symptom utenfor konteksten av kartleggingen. Bruk arketypen CLUSTER.symptom_sign (Symptom/sykdomstegn) eller CLUSTER.exclusion_symptom_sign (Eksklusjon av et symptom) for dette formålet.\r\n\r\nBrukes ikke for å registrere detaljer om en enkel utvalgsliste der et spørsmål kan registreres som enten \"Tilstede\" eller \"Ubestemt\". Bruk arketypen OBSERVATION.selection_list for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To create a framework for recording answers to pre-defined screening questions about symptoms or signs.",
+          "keywords" : [ "screening, questionnaire, complaint, symptom, disturbance, problem, discomfort, sign" ],
+          "use" : "Use to create a framework for recording answers to pre-defined screening questions about symptoms or signs.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic inquiry in any consultation, for example:\r\n--- Do you have headaches? Yes, No, Unknown.\r\n--- Have you had dizziness in the past four weeks? Yes, No, Unknown.\r\n- Specific questioning related to disease surveillance.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a symptom that has been present at any time in the past and information about a symptom within a specified time interval - for example the difference between \"\"Are you dizzy now?\" compared to \"Have you had any dizziness in the past 4 weeks?\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of a symptom or sign, it is recommended that clinical system record and persist the specific details about the symptom or sign using the CLUSTER.symptom_sign archetype nested within the Additional details SLOT in this archetype.",
+          "misuse" : "Not to be used to record details about the presence or absence of a symptom, outside of a screening context. Use CLUSTER.symptom_sign or CLUSTER.exclusion_symptom_sign for these purposes.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "*To create a framework for recording answers about symptoms or signs, to the questions of a pre-defined screening questionnaire. (en)",
+          "keywords" : [ "*screening, questionnaire, emotions, pain numbness vertigo (en)" ],
+          "use" : "*Use to create a framework for recording answers to pre-defined screening questions about symptoms or signs.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic inquiry in any consultation, for example:\r\n--- Do you have headaches? Yes, No, Unknown.\r\n--- Have you had dizziness in the past four weeks? Yes, No, Unknown.\r\n- Specific questioning related to disease surveillance.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the 'text' choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a symptom that has been present at any time in the past and information about a symptom within a specified time interval - for example the difference between \"\"Are you dizzy now?\" compared to \"Have you had any dizziness in the past 4 weeks?\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of a symptom or sign, it is recommended that clinical system record and persist the specific details about the symptom or sign using the CLUSTER.symptom_sign archetype nested within the Additional details SLOT in this archetype. (en)",
+          "misuse" : "*Not to be used to record details about the presence or absence of a symptom, outside of a screening context. Use CLUSTER.symptom_sign or CLUSTER.exclusion_symptom_sign for these purposes.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.symptom_sign_screening.v1",
     "differential" : true,
