@@ -1,0 +1,113 @@
+archetype (adl_version=1.4; uid=3f88967a-e4de-4e87-8ac1-5adbd94df522)
+	openEHR-EHR-CLUSTER.urgency.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2022-01-19">
+		["name"] = <"Erik Sundvall">
+		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
+		["email"] = <"erik.sundvall@regionstockholm.se">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d139a9a374204b4b6d541a387690548c">
+		["build_uid"] = <"f122cc34-620d-3db1-9e58-899a718bd81e">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Urgency
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Urgency
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0004,    -- Emergency
+							at0005,    -- Urgent
+							at0006]    -- Routine
+						}
+					}
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Urgency">
+					description = <"Urgency">
+				>
+				["at0003"] = <
+					text = <"Urgency">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Emergency">
+					description = <"The request requires immediate attention.">
+				>
+				["at0005"] = <
+					text = <"Urgent">
+					description = <"The request requires prioritised attention.">
+				>
+				["at0006"] = <
+					text = <"Routine">
+					description = <"The request does not require prioritised scheduling.">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Brådskandegrad">
+					description = <"*Urgency (en)">
+				>
+				["at0003"] = <
+					text = <"Brådskandegrad">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Akut">
+					description = <"Denna förfrågan kräver omedelbar uppmärksamhet.">
+				>
+				["at0005"] = <
+					text = <"Brådskande">
+					description = <"Denna förfrågan kräver prioriterad uppmärksamhet.">
+				>
+				["at0006"] = <
+					text = <"Rutin">
+					description = <"Denna förfrågan kräver inte prioriterad schemaläggning.">
+				>
+			>
+		>
+	>
