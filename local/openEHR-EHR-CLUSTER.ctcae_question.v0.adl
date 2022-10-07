@@ -76,13 +76,13 @@ CTCAE is intended to be populated using MedDRA terms only.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5e584f3ab3c5b956dff77cfc0a738888">
+		["MD5-CAM-1.0.1"] = <"6c609fc3c4862a10eddaa265511a42f0">
 		["build_uid"] = <"9ac99a39-c4cf-48aa-aa91-d7e80be4cc06">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- CTCAE-baserad fråga
+	CLUSTER[at0000] matches {    -- CTCAE based question
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0002] matches {    -- CTCAE Term
 				value matches {
@@ -107,7 +107,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"CTCAE-baserad fråga">
+					text = <"CTCAE based question">
 					description = <"A framework for recording any unfavourable and unintended sign, symptom or disease temporally using the CTCAE terminology.">
 				>
 				["at0002"] = <
@@ -124,7 +124,7 @@ ontology
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"*CTCAE-baserad fråga (en)">
+					text = <"*CTCAE based question (en)">
 					description = <"Systematische Einteilung zur Erfassung aller unerwünschten und unerwarteten Ereignissen, Symptome oder Krankheiten unter Verwendung der CTCAE-Terminologie.">
 				>
 				["at0002"] = <
@@ -141,7 +141,7 @@ ontology
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"*CTCAE-baserad fråga (en)">
+					text = <"CTCAE-baserad fråga">
 					description = <"Ett ramverk för att med hjälp av CTCAE-terminologin registrera eventuella biverkningar eller ogynnsamma och oavsiktliga symptom eller sjukdomar.">
 				>
 				["at0002"] = <
