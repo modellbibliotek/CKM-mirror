@@ -76,7 +76,7 @@ CTCAE is intended to be populated using MedDRA terms only.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ae57aa39046cffb663cf135ac6163d17">
+		["MD5-CAM-1.0.1"] = <"35853a8b1f6f9986879300ae4601970e">
 		["build_uid"] = <"9ac99a39-c4cf-48aa-aa91-d7e80be4cc06">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -84,30 +84,21 @@ CTCAE is intended to be populated using MedDRA terms only.">
 definition
 	CLUSTER[at0000] matches {    -- ctcae_question
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] matches {    -- System Organ Class (SOC)
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
 			ELEMENT[at0002] matches {    -- Term
 				value matches {
-					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0003] matches {    -- Grade
+			ELEMENT[at0003] matches {    -- Question
 				value matches {
 					DV_ORDINAL matches {*}
-				}
-			}
-			ELEMENT[at0009] occurrences matches {0..1} matches {    -- CTCAE version
-				value matches {
-					DV_TEXT matches {*}
 				}
 			}
 		}
 	}
 
 ontology
+	terminologies_available = <"MedDRA", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
@@ -115,24 +106,15 @@ ontology
 					text = <"ctcae_question">
 					description = <"A framework for recording any unfavourable and unintended sign, symptom or disease temporally using the CTCAE terminology.">
 				>
-				["at0001"] = <
-					text = <"System Organ Class (SOC)">
-					description = <"The category of the 'Term' in the MedDRA hierarchy.">
-					comment = <"Identified as a MedDRA primary class - representing an anatomical or physiological system, aetiology or purpose.">
-				>
 				["at0002"] = <
 					text = <"Term">
 					description = <"The name of the sign, symptom or disease observed.">
 					comment = <"Identified as a MEDRAterm and corresponding code.">
 				>
 				["at0003"] = <
-					text = <"Grade">
+					text = <"Question">
 					description = <"The severity of the Adverse event.">
 					comment = <"For each Grade, non-specific comments provide some general guidance about the severity for each grade and are represented within square brackets []. In practice, each grade will be represented by a specific clinical description, appropriate for the selected term and will likely be sourced from an external knowledgebase or resource.">
-				>
-				["at0009"] = <
-					text = <"CTCAE version">
-					description = <"The version of the CTCAE terminology used.">
 				>
 			>
 		>
@@ -142,25 +124,15 @@ ontology
 					text = <"ctcae_question">
 					description = <"Systematische Einteilung zur Erfassung aller unerwünschten und unerwarteten Ereignissen, Symptome oder Krankheiten unter Verwendung der CTCAE-Terminologie.">
 				>
-				["at0001"] = <
-					text = <"System Organ Class (SOC)">
-					description = <"Die Kategorie des \"Terms\" in der MedDRA-Hierarchie.">
-					comment = <"Identifiziert als eine MedDRA-Primärklasse - repräsentiert ein anatomisches oder physiologisches System, eine Ätiologie oder einen Zweck.">
-				>
 				["at0002"] = <
 					text = <"Terme">
 					description = <"Der Name des beobachteten Zeichens, Symptoms oder der Krankheit.">
 					comment = <"Identifiziert als MEDRAterm und entsprechender Code.">
 				>
 				["at0003"] = <
-					text = <"Grad">
+					text = <"*Question (en)">
 					description = <"Der Schweregrad des unerwünschten Ereignisses.">
 					comment = <"Für jeden Grad bieten unspezifische Kommentare einige allgemeine Hinweise zum Schweregrad für jeden Grad und werden in eckigen Klammern [] dargestellt. In der Praxis wird jeder Grad durch eine spezifische klinische Beschreibung dargestellt, die für den ausgewählten Begriff geeignet ist und wahrscheinlich aus einer externen Wissensdatenbank oder Ressource stammt.">
-				>
-				["at0009"] = <
-					text = <"CTCAE Version">
-					description = <"Die verwendete Version der CTCAE-Terminologie.
-">
 				>
 			>
 		>
@@ -170,11 +142,6 @@ ontology
 					text = <"ctcae_question">
 					description = <"Ett ramverk för att med hjälp av CTCAE-terminologin registrera eventuella biverkningar eller ogynnsamma och oavsiktliga symptom eller sjukdomar.">
 				>
-				["at0001"] = <
-					text = <"Organklass (SOC)">
-					description = <"\"Termens\" kategori i MedDRA-hierarkn.">
-					comment = <"MedDRAs primära klass - representerar ett anatomiskt eller fysiologiskt system, etiologi eller syfte.">
-				>
 				["at0002"] = <
 					text = <"Term">
 					description = <"Namnet på tecknet, symtomet eller sjukdomen som observerats.">
@@ -182,13 +149,9 @@ ontology
 Identifierad som en MEDRA-term och motsvarande kod.">
 				>
 				["at0003"] = <
-					text = <"Allvarlighetsgrad">
+					text = <"*Question (en)">
 					description = <"Biverkningens svårighetsgrad.">
 					comment = <"För varje allvarlighetsgrad finns icke-specifika kommentarer som allmän vägledning om svårighetsgraden inom hakparenteser []. I praktiken kommer varje allvarlighetsgrad att representeras av en specifik klinisk beskrivning, lämplig för den valda termen och kommer sannolikt att hämtas från en extern kunskapsbas eller resurs, eller specificeras i en template.">
-				>
-				["at0009"] = <
-					text = <"CTCAE-version">
-					description = <"Den version av CTCAE-terminologin som använts.">
 				>
 			>
 		>
