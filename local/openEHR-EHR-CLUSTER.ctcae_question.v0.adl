@@ -76,15 +76,15 @@ CTCAE is intended to be populated using MedDRA terms only.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"099355c9ef221962c0cc6724aba9cff2">
+		["MD5-CAM-1.0.1"] = <"5e584f3ab3c5b956dff77cfc0a738888">
 		["build_uid"] = <"9ac99a39-c4cf-48aa-aa91-d7e80be4cc06">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- ctcae_question
+	CLUSTER[at0000] matches {    -- CTCAE-baserad fråga
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0002] matches {    -- Term
+			ELEMENT[at0002] matches {    -- CTCAE Term
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -107,55 +107,52 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"ctcae_question">
+					text = <"CTCAE-baserad fråga">
 					description = <"A framework for recording any unfavourable and unintended sign, symptom or disease temporally using the CTCAE terminology.">
 				>
 				["at0002"] = <
-					text = <"Term">
+					text = <"CTCAE Term">
 					description = <"The name of the sign, symptom or disease observed.">
 					comment = <"Identified as a MEDRAterm and corresponding code.">
 				>
 				["at0003"] = <
 					text = <"Question">
-					description = <"The severity of the Adverse event.">
-					comment = <"For each Grade, non-specific comments provide some general guidance about the severity for each grade and are represented within square brackets []. In practice, each grade will be represented by a specific clinical description, appropriate for the selected term and will likely be sourced from an external knowledgebase or resource.">
+					description = <"Question to the patinet regarding the severity of the adverse event.">
 				>
 			>
 		>
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"ctcae_question">
+					text = <"*CTCAE-baserad fråga (en)">
 					description = <"Systematische Einteilung zur Erfassung aller unerwünschten und unerwarteten Ereignissen, Symptome oder Krankheiten unter Verwendung der CTCAE-Terminologie.">
 				>
 				["at0002"] = <
-					text = <"Terme">
+					text = <"*CTCAE Term (en)">
 					description = <"Der Name des beobachteten Zeichens, Symptoms oder der Krankheit.">
 					comment = <"Identifiziert als MEDRAterm und entsprechender Code.">
 				>
 				["at0003"] = <
 					text = <"*Question (en)">
-					description = <"Der Schweregrad des unerwünschten Ereignisses.">
-					comment = <"Für jeden Grad bieten unspezifische Kommentare einige allgemeine Hinweise zum Schweregrad für jeden Grad und werden in eckigen Klammern [] dargestellt. In der Praxis wird jeder Grad durch eine spezifische klinische Beschreibung dargestellt, die für den ausgewählten Begriff geeignet ist und wahrscheinlich aus einer externen Wissensdatenbank oder Ressource stammt.">
+					description = <"*Question to the patinet regarding the severity of the adverse event. (en)">
 				>
 			>
 		>
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"ctcae_question">
+					text = <"*CTCAE-baserad fråga (en)">
 					description = <"Ett ramverk för att med hjälp av CTCAE-terminologin registrera eventuella biverkningar eller ogynnsamma och oavsiktliga symptom eller sjukdomar.">
 				>
 				["at0002"] = <
-					text = <"Term">
+					text = <"CTCAE-Term">
 					description = <"Namnet på tecknet, symtomet eller sjukdomen som observerats.">
 					comment = <"
 Identifierad som en MEDRA-term och motsvarande kod.">
 				>
 				["at0003"] = <
-					text = <"*Question (en)">
-					description = <"Biverkningens svårighetsgrad.">
-					comment = <"För varje allvarlighetsgrad finns icke-specifika kommentarer som allmän vägledning om svårighetsgraden inom hakparenteser []. I praktiken kommer varje allvarlighetsgrad att representeras av en specifik klinisk beskrivning, lämplig för den valda termen och kommer sannolikt att hämtas från en extern kunskapsbas eller resurs, eller specificeras i en template.">
+					text = <"Fråga">
+					description = <"*Question to the patinet regarding the severity of the adverse event. (en)">
 				>
 			>
 		>
