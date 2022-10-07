@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.0.0-alpha.4",
+      "sem_ver" : "3.0.0-alpha.5",
       "build_uid" : "a0715e39-b550-4d72-b7ca-424187ef30e2",
-      "MD5-CAM-1.0.1" : "f1c42d528aec5838b6b214f52a506ac6",
+      "MD5-CAM-1.0.1" : "1cb34d7a074b2583d5ec1626f73d8869",
       "PARENT:MD5-CAM-1.0.1" : "F56C24081D5D4E5CAF0AB1D658AD3A0D"
     },
     "details" : {
@@ -591,12 +591,13 @@
                                 "rmAttributeName" : "defining_code",
                                 "children" : [ {
                                   "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "CODE_PHRASE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "at0023", "at0024", "at0027" ]
+                                  "constraint" : [ "ac0.2" ],
+                                  "selectedTerminologies" : [ ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
@@ -660,10 +661,10 @@
                           "@type" : "C_ARCHETYPE_ROOT",
                           "rmTypeName" : "CLUSTER",
                           "occurrences" : "0..1",
-                          "nodeId" : "at0026.1",
+                          "nodeId" : "at0026.3",
                           "attributes" : [ ],
                           "attributeTuples" : [ ],
-                          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-ctcae-001.v0",
+                          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-ctcae_question-001.v0",
                           "referenceType" : "archetypeOverlay"
                         } ]
                       } ],
@@ -718,15 +719,6 @@
                           "nodeId" : "at0035.2",
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_ARCHETYPE_ROOT",
-                          "rmTypeName" : "CLUSTER",
-                          "occurrences" : "0..1",
-                          "nodeId" : "at0026.2",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ],
-                          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-ctcae-002.v0",
-                          "referenceType" : "archetypeOverlay"
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -765,6 +757,12 @@
             "code" : "at0022.2",
             "text" : "Specific symptom/sign (2)",
             "description" : "Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         },
         "fi" : {
@@ -779,6 +777,12 @@
             "code" : "at0022",
             "text" : "Oire / tuntemus ryhmitys (2)",
             "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         },
         "nb" : {
@@ -793,6 +797,12 @@
             "code" : "at0022",
             "text" : "Spesifikt symptom/sykdomstegn (2)",
             "description" : "Detaljer om et spesifikt symptom eller sykdomstegn, eller gruppe av symptomer eller sykdomstegn som er innenfor kartleggingsformålet."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         },
         "de" : {
@@ -807,6 +817,12 @@
             "code" : "at0022",
             "text" : "Spezifisches Symptom/Anzeichen (2)",
             "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         },
         "it" : {
@@ -821,6 +837,12 @@
             "code" : "at0022",
             "text" : "Sintomo/segno specifico (2)",
             "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         },
         "sv" : {
@@ -848,6 +870,12 @@
             "text" : "Upplever du trötthet som påverkar ditt dagliga liv?",
             "description" : "Har symptomet eller tecknet förekommit?",
             "comment" : "I en mall skulle dataelementet vanligtvis döpas om till den specifika fråga som ställdes till användaren. De föreslagna svarsalternativen kan anpassas för lokal användning genom att välja DV_TEXT eller DV_BOOLEAN datatyper för att matcha varje specifikt användningsfall."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         }
       },
@@ -858,6 +886,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.1",
           "members" : [ "at0031", "at0032", "at0033" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0023", "at0024" ]
         }
       }
     },
@@ -938,7 +971,7 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "bbfb31b8-1ef8-4db4-ab0c-b69d4a5be5ce",
+    "uid" : "3565c6cc-a92f-441b-b313-02e5bf9cb601",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -947,42 +980,15 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "e00f9f943e765ed9b3de40e3c11f2c2a"
+        "PARENT:MD5-CAM-1.0.1" : "6c609fc3c4862a10eddaa265511a42f0"
       },
       "details" : { }
     },
-    "annotations" : {
-      "@type" : "RESOURCE_ANNOTATIONS",
-      "documentation" : {
-        "sv" : {
-          "/items[at0001.1]" : {
-            "a.hide_on_form" : "true"
-          },
-          "/items[at0002.1]" : {
-            "a.hide_on_form" : "true"
-          },
-          "/items[at0009.1]" : {
-            "a.hide_on_form" : "true"
-          }
-        },
-        "en" : {
-          "/items[at0001.1]" : {
-            "a.hide_on_form" : "true"
-          },
-          "/items[at0002.1]" : {
-            "a.hide_on_form" : "true"
-          },
-          "/items[at0009.1]" : {
-            "a.hide_on_form" : "true"
-          }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.ctcae.v0",
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.ctcae_question.v0",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-ctcae-001.v0"
+      "value" : "openEHR-EHR-CLUSTER.ovl-ctcae_question-001.v0"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -994,25 +1000,6 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0001.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "defaultValue" : {
-                "value" : "General disorders and administration site conditions",
-                "@type" : "DV_TEXT"
-              },
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
           "nodeId" : "at0002.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1020,38 +1007,15 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "defaultValue" : {
                 "defining_code" : {
-                  "terminology_id" : {
-                    "value" : "http://terminology.hl7.org/CodeSystem/mdr",
-                    "@type" : "TERMINOLOGY_ID"
-                  },
                   "code_string" : "10016256",
                   "@type" : "CODE_PHRASE"
                 },
                 "value" : "Fatigue",
                 "@type" : "DV_CODED_TEXT"
               },
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "http://terminology.hl7.org/CodeSystem/mdr"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "http://terminology.hl7.org/CodeSystem/mdr" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/mdr",
-                    "code" : "10016256",
-                    "value" : "Fatigue"
-                  } ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -1094,7 +1058,7 @@
                   }, {
                     "@type" : "C_TERMINOLOGY_CODE",
                     "rmTypeName" : "TERMINOLOGY_CODE",
-                    "constraint" : [ "at0004" ]
+                    "constraint" : [ "at0.1" ]
                   } ]
                 }, {
                   "@type" : "C_PRIMITIVE_TUPLE",
@@ -1112,7 +1076,7 @@
                   }, {
                     "@type" : "C_TERMINOLOGY_CODE",
                     "rmTypeName" : "TERMINOLOGY_CODE",
-                    "constraint" : [ "at0005" ]
+                    "constraint" : [ "at0.2" ]
                   } ]
                 }, {
                   "@type" : "C_PRIMITIVE_TUPLE",
@@ -1130,29 +1094,10 @@
                   }, {
                     "@type" : "C_TERMINOLOGY_CODE",
                     "rmTypeName" : "TERMINOLOGY_CODE",
-                    "constraint" : [ "at0006" ]
+                    "constraint" : [ "at0.3" ]
                   } ]
                 } ]
               } ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0009.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "defaultValue" : {
-                "value" : "5.0",
-                "@type" : "DV_TEXT"
-              },
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -1164,307 +1109,76 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
-        "de" : { },
-        "sv" : {
-          "at0004" : {
+        "en" : {
+          "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Grade 1",
-            "description" : "",
-            "comment" : "[Mild; ELLER asymtomatiska eller milda symtom; ELLER endast kliniska eller diagnostiska\r\nobservationer; ELLER intervention ej indikerad.]"
+            "code" : "at0003.1",
+            "text" : "Grade of fatigue",
+            "description" : "Question to the patinet regarding the severity of the adverse event."
           },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "Fatigue relieved by rest",
+            "code" : "at0.1",
+            "description" : ""
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "Fatigue not relieved by rest; limiting instrumental ADL",
+            "code" : "at0.2",
+            "description" : ""
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "Fatigue not relieved by rest, limiting self care ADL",
+            "code" : "at0.3",
+            "description" : ""
+          }
+        },
+        "de" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*Fatigue relieved by rest (en)",
+            "code" : "at0.1",
+            "description" : ""
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*Fatigue not relieved by rest; limiting instrumental ADL (en)",
+            "code" : "at0.2",
+            "description" : ""
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*Fatigue not relieved by rest, limiting self care ADL (en)",
+            "code" : "at0.3",
+            "description" : ""
+          }
+        },
+        "sv" : {
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
             "text" : "Hur påverkar tröttheten ditt dagliga liv?",
-            "description" : "Biverkningens svårighetsgrad.",
-            "comment" : "För varje allvarlighetsgrad finns icke-specifika kommentarer som allmän vägledning om svårighetsgraden inom hakparenteser []. I praktiken kommer varje allvarlighetsgrad att representeras av en specifik klinisk beskrivning, lämplig för den valda termen och kommer sannolikt att hämtas från en extern kunskapsbas eller resurs, eller specificeras i en template."
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "9ac99a39-c4cf-48aa-aa91-d7e80be4cc06",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Alina Rehberg",
-        "organisation" : "Medizinische Hochschule Hannover",
-        "email" : "rehberg.alina@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : {
-        "name" : "Erik Sundvall",
-        "organisation" : "Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University",
-        "email" : "erik.sundvall@regionstockholm.se"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "bbfb31b8-1ef8-4db4-ab0c-b69d4a5be5ce",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "e00f9f943e765ed9b3de40e3c11f2c2a"
-      },
-      "details" : { }
-    },
-    "annotations" : {
-      "@type" : "RESOURCE_ANNOTATIONS",
-      "documentation" : {
-        "sv" : {
-          "/items[at0001.1]" : {
-            "a.hide_on_form" : "true"
+            "description" : "*Question to the patinet regarding the severity of the adverse event. (en)"
           },
-          "/items[at0002.1]" : {
-            "a.hide_on_form" : "true"
-          },
-          "/items[at0009.1]" : {
-            "a.hide_on_form" : "true"
-          }
-        },
-        "en" : {
-          "/items[at0001.1]" : {
-            "a.hide_on_form" : "true"
-          },
-          "/items[at0002.1]" : {
-            "a.hide_on_form" : "true"
-          },
-          "/items[at0009.1]" : {
-            "a.hide_on_form" : "true"
-          }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.ctcae.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-ctcae-002.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0001.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "defaultValue" : {
-                "value" : "General disorders and administration site conditions",
-                "@type" : "DV_TEXT"
-              },
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0002.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "defaultValue" : {
-                "defining_code" : {
-                  "terminology_id" : {
-                    "value" : "http://terminology.hl7.org/CodeSystem/mdr",
-                    "@type" : "TERMINOLOGY_ID"
-                  },
-                  "code_string" : "10016256",
-                  "@type" : "CODE_PHRASE"
-                },
-                "value" : "Fatigue",
-                "@type" : "DV_CODED_TEXT"
-              },
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "http://terminology.hl7.org/CodeSystem/mdr"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "http://terminology.hl7.org/CodeSystem/mdr" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "http://terminology.hl7.org/CodeSystem/mdr",
-                    "code" : "10016256",
-                    "value" : "Fatigue"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0003.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_ORDINAL",
-              "attributes" : [ ],
-              "attributeTuples" : [ {
-                "@type" : "C_ATTRIBUTE_TUPLE",
-                "members" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "value",
-                  "children" : [ ]
-                }, {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "symbol",
-                  "children" : [ ]
-                } ],
-                "tuples" : [ {
-                  "@type" : "C_PRIMITIVE_TUPLE",
-                  "members" : [ {
-                    "@type" : "C_INTEGER",
-                    "rmTypeName" : "INTEGER",
-                    "constraint" : [ {
-                      "lower" : 1,
-                      "upper" : 1,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
-                    } ]
-                  }, {
-                    "@type" : "C_TERMINOLOGY_CODE",
-                    "rmTypeName" : "TERMINOLOGY_CODE",
-                    "constraint" : [ "at0004" ]
-                  } ]
-                }, {
-                  "@type" : "C_PRIMITIVE_TUPLE",
-                  "members" : [ {
-                    "@type" : "C_INTEGER",
-                    "rmTypeName" : "INTEGER",
-                    "constraint" : [ {
-                      "lower" : 2,
-                      "upper" : 2,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
-                    } ]
-                  }, {
-                    "@type" : "C_TERMINOLOGY_CODE",
-                    "rmTypeName" : "TERMINOLOGY_CODE",
-                    "constraint" : [ "at0005" ]
-                  } ]
-                }, {
-                  "@type" : "C_PRIMITIVE_TUPLE",
-                  "members" : [ {
-                    "@type" : "C_INTEGER",
-                    "rmTypeName" : "INTEGER",
-                    "constraint" : [ {
-                      "lower" : 3,
-                      "upper" : 3,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : true,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false
-                    } ]
-                  }, {
-                    "@type" : "C_TERMINOLOGY_CODE",
-                    "rmTypeName" : "TERMINOLOGY_CODE",
-                    "constraint" : [ "at0006" ]
-                  } ]
-                } ]
-              } ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0009.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "defaultValue" : {
-                "value" : "5.0",
-                "@type" : "DV_TEXT"
-              },
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { },
-        "de" : { },
-        "sv" : {
-          "at0004" : {
+          "at0.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Grade 1",
+            "text" : "Lätt trötthet, vilar mer än vanligt",
             "description" : "",
-            "comment" : "[Mild; ELLER asymtomatiska eller milda symtom; ELLER endast kliniska eller diagnostiska\r\nobservationer; ELLER intervention ej indikerad.]"
+            "code" : "at0.1"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "Måttlig trötthet, vilar mindre än 50% av vaken tid",
+            "description" : "",
+            "code" : "at0.2"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "Svår trötthet, vilar mer än 50% av vaken tid",
+            "description" : "",
+            "code" : "at0.3"
           }
         }
       },
