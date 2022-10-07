@@ -76,7 +76,7 @@ CTCAE is intended to be populated using MedDRA terms only.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"204e593bea07fc72d790f39ea60caf2f">
+		["MD5-CAM-1.0.1"] = <"71d3cec42a11356fb0d36b48abc887bf">
 		["build_uid"] = <"9ac99a39-c4cf-48aa-aa91-d7e80be4cc06">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -96,11 +96,7 @@ definition
 			}
 			ELEMENT[at0003] matches {    -- Grade
 				value matches {
-					1|[local::at0004],
-					2|[local::at0005],
-					3|[local::at0006],
-					4|[local::at0007],
-					5|[local::at0008]
+					DV_ORDINAL matches {*}
 				}
 			}
 			ELEMENT[at0009] occurrences matches {0..1} matches {    -- CTCAE version
@@ -134,32 +130,6 @@ ontology
 					description = <"The severity of the Adverse event.">
 					comment = <"For each Grade, non-specific comments provide some general guidance about the severity for each grade and are represented within square brackets []. In practice, each grade will be represented by a specific clinical description, appropriate for the selected term and will likely be sourced from an external knowledgebase or resource.">
 				>
-				["at0004"] = <
-					text = <"Grade 1">
-					description = <"">
-					comment = <"[Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic
-observations only; OR intervention not indicated.]">
-				>
-				["at0005"] = <
-					text = <"Grade 2">
-					description = <"">
-					comment = <"[Moderate; OR minimal, local or non-invasive intervention indicated; OR limiting age-appropriate instrumental ADL.]">
-				>
-				["at0006"] = <
-					text = <"Grade 3">
-					description = <"">
-					comment = <"[Severe or medically significant but not immediately life-threatening; OR hospitalization or prolongation of hospitalization indicated OR disabling; limiting self-care ADL.]">
-				>
-				["at0007"] = <
-					text = <"Grade 4">
-					description = <"">
-					comment = <"[Life-threatening consequences OR urgent intervention indicated.]">
-				>
-				["at0008"] = <
-					text = <"Grade 5">
-					description = <"">
-					comment = <"[Death related to AE.]">
-				>
 				["at0009"] = <
 					text = <"CTCAE version">
 					description = <"The version of the CTCAE terminology used.">
@@ -186,36 +156,6 @@ observations only; OR intervention not indicated.]">
 					text = <"Grad">
 					description = <"Der Schweregrad des unerwünschten Ereignisses.">
 					comment = <"Für jeden Grad bieten unspezifische Kommentare einige allgemeine Hinweise zum Schweregrad für jeden Grad und werden in eckigen Klammern [] dargestellt. In der Praxis wird jeder Grad durch eine spezifische klinische Beschreibung dargestellt, die für den ausgewählten Begriff geeignet ist und wahrscheinlich aus einer externen Wissensdatenbank oder Ressource stammt.">
-				>
-				["at0004"] = <
-					text = <"Grad 1">
-					description = <"">
-					comment = <"[Mild; ODER asymptomatisch oder milde Symptome; ODER nur klinische oder diagnostische
-Beobachtungen; ODER Intervention nicht indiziert].
-">
-				>
-				["at0005"] = <
-					text = <"Grad 2">
-					description = <"">
-					comment = <"[Mäßig; ODER minimale, lokale oder nicht-invasive Intervention angezeigt; ODER Einschränkung altersgemäßer instrumenteller ADL].
-">
-				>
-				["at0006"] = <
-					text = <"Grad 3">
-					description = <"">
-					comment = <"[Schwerwiegend oder medizinisch bedeutsam, aber nicht unmittelbar lebensbedrohlich; ODER Krankenhausaufenthalt oder Verlängerung des Krankenhausaufenthalts angezeigt ODER Behinderung; Einschränkung der Selbstversorgung ADL].
-">
-				>
-				["at0007"] = <
-					text = <"Grad 4">
-					description = <"">
-					comment = <"[Lebensbedrohliche Folgen ODER dringende Intervention angezeigt].
-">
-				>
-				["at0008"] = <
-					text = <"Grad 5">
-					description = <"">
-					comment = <"[Tod in Zusammenhang zu AE.]">
 				>
 				["at0009"] = <
 					text = <"CTCAE Version">
@@ -245,32 +185,6 @@ Identifierad som en MEDRA-term och motsvarande kod.">
 					text = <"Allvarlighetsgrad">
 					description = <"Biverkningens svårighetsgrad.">
 					comment = <"För varje allvarlighetsgrad finns icke-specifika kommentarer som allmän vägledning om svårighetsgraden inom hakparenteser []. I praktiken kommer varje allvarlighetsgrad att representeras av en specifik klinisk beskrivning, lämplig för den valda termen och kommer sannolikt att hämtas från en extern kunskapsbas eller resurs, eller specificeras i en template.">
-				>
-				["at0004"] = <
-					text = <"Grad 1">
-					description = <"">
-					comment = <"[Mild; ELLER asymtomatiska eller milda symtom; ELLER endast kliniska eller diagnostiska
-observationer; ELLER intervention ej indikerad.]">
-				>
-				["at0005"] = <
-					text = <"Grad 2">
-					description = <"">
-					comment = <"[Måttlig; ELLER minimal, lokal eller icke-invasiv intervention indikerad; ELLER begränsar av åldersanpassad instrumentell ADL.]">
-				>
-				["at0006"] = <
-					text = <"Grad 3">
-					description = <"">
-					comment = <"[Svår eller medicinskt betydelsefull men inte omedelbart livshotande; ELLER sjukhusvistelse eller förlängning av sjukhusvistelse indikerat ELLER invalidiserande; begränsar egenvård enligt ADL.]">
-				>
-				["at0007"] = <
-					text = <"Grad 4">
-					description = <"">
-					comment = <"[Livshotande konsekvenser ELLER brådskande ingripande behövs.]">
-				>
-				["at0008"] = <
-					text = <"Grad 5">
-					description = <"">
-					comment = <"[Död relaterad till biverkan.]">
 				>
 				["at0009"] = <
 					text = <"CTCAE-version">
