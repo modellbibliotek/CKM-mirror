@@ -1,8 +1,9 @@
-﻿archetype (adl_version=1.4; uid=5ab05865-6d45-4474-9cae-daa451ba8bba)
+archetype (adl_version=1.4; uid=5ab05865-6d45-4474-9cae-daa451ba8bba)
 	openEHR-EHR-CLUSTER.ctcae.v0
 
 concept
-	[at0000]	-- Common Terminology Criteria for Adverse Events (CTCAE)
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -23,30 +24,32 @@ language
 			>
 		>
 	>
+
 description
 	original_author = <
+		["date"] = <"2021-01-11">
 		["name"] = <"Heather Leslie">
 		["organisation"] = <"Atomica Informatics">
 		["email"] = <"heather.leslie@atomicainformatics.com">
-		["date"] = <"2021-01-11">
 	>
+	lifecycle_state = <"in_development">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"Bereitstellung einer systematischen Einteilung zur Erfassung aller unerwünschten und unerwarteten Ereignissen, Symptome oder Krankheiten unter Verwendung der CTCAE-Terminologie.
 ">
+			keywords = <"ctcae","Symptom","Krankheit","unerwünscht","Ereignis">
 			use = <"Ein Schema für die Erfassung aller unerwünschten und unerwartete Ereignissen, Symptome oder Krankheiten, die zeitlich mit der Anwendung einer medizinischen Behandlung oder eines Verfahrens verbunden sind und die unter Verwendung der CTCAE-Terminologie als mit der medizinischen Behandlung oder dem Verfahren zusammenhängend betrachtet werden können oder nicht.
 
 Dieser Archetyp ist dafür vorgesehen, im Kontext des Archetyps CLUSTER.symptom_sign oder EVALUATION.problem_diagnosis oder anderer klinisch relevanter Archetypen verwendet zu werden.
 
 CTCAE ist nur für die Verwendung von MedDRA-Begriffen vorgesehen.
 ">
-			keywords = <"ctcae", "Symptom", "Krankheit", "unerwünscht", "Ereignis">
-			misuse = <"">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			purpose = <"Ett ramverk för att med hjälp av CTCAE-terminologin registrera eventuella biverkningar eller ogynnsamma och oavsiktliga symptom eller sjukdomar.">
+			keywords = <"CTCAE","biverkan","biverkningar","tecken","symptom","sjukdom">
 			use = <"Ett ramverk för att registrera biverkningar och andra ogynnsamma och oavsiktliga symtom eller sjukdomar som är tidsmässigt förknippade med användningen av en medicinsk behandling eller procedur som kan eller inte kan anses relaterad till den medicinska behandlingen eller proceduren med användning av CTCAE-terminologin.
 
 Denna arketyp är avsedd att användas inom ramen för arketypen CLUSTER.symptom_sign eller EVALUATION.problem_diagnosis eller andra kliniskt relevanta arketyper.
@@ -54,31 +57,26 @@ Denna arketyp är avsedd att användas inom ramen för arketypen CLUSTER.symptom
 CTCAE är avsett att endast fyllas med MedDRA-termer.
 
 För svensk kontext se t.ex. https://healthcaredelivery.cancer.gov/pro-ctcae/pro-ctcae_swedish.pdf och https://healthcaredelivery.cancer.gov/pro-ctcae/pro-ctcae_swedish.pdf">
-			keywords = <"CTCAE", "biverkan", "biverkningar", "tecken", "symptom", "sjukdom">
-			misuse = <"">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To provide a framework for recording any unfavourable and unintended sign, symptom or disease temporally using the CTCAE terminology.">
+			keywords = <"ctcae","sign","symptom","disease","adverse","event">
+			copyright = <"© openEHR Foundation">
 			use = <"A framework for recording any unfavourable and unintended sign, symptom or disease temporally associated with the use of a medical treatment or procedure that may or may not be considered related to the medical treatment or procedure using the CTCAE terminology.
 
 This archetype is intended to be used within the context of the CLUSTER.symptom_sign or EVALUATION.problem_diagnosis archetype or other clinically relevant archetypes.
 
 CTCAE is intended to be populated using MedDRA terms only.">
-			keywords = <"ctcae", "sign", "symptom", "disease", "adverse", "event">
-			misuse = <"">
-			copyright = <"© openEHR Foundation">
 		>
 	>
-	lifecycle_state = <"in_development">
-	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3B9A899465508A378CD9D5F2FE4CE592">
+		["MD5-CAM-1.0.1"] = <"e00f9f943e765ed9b3de40e3c11f2c2a">
 		["build_uid"] = <"9ac99a39-c4cf-48aa-aa91-d7e80be4cc06">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -112,7 +110,6 @@ definition
 			}
 		}
 	}
-
 
 ontology
 	term_definitions = <
@@ -250,7 +247,7 @@ Identifierad som en MEDRA-term och motsvarande kod.">
 					comment = <"För varje allvarlighetsgrad finns icke-specifika kommentarer som allmän vägledning om svårighetsgraden inom hakparenteser []. I praktiken kommer varje allvarlighetsgrad att representeras av en specifik klinisk beskrivning, lämplig för den valda termen och kommer sannolikt att hämtas från en extern kunskapsbas eller resurs, eller specificeras i en template.">
 				>
 				["at0004"] = <
-					text = <"Grade 1">
+					text = <"Grad 1">
 					description = <"">
 					comment = <"[Mild; ELLER asymtomatiska eller milda symtom; ELLER endast kliniska eller diagnostiska
 observationer; ELLER intervention ej indikerad.]">
