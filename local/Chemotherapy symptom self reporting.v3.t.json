@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.6",
+      "sem_ver" : "3.0.0-alpha.7",
       "build_uid" : "a0715e39-b550-4d72-b7ca-424187ef30e2",
-      "MD5-CAM-1.0.1" : "cd307934b85e40baabbef0d7dc5d02a0",
+      "MD5-CAM-1.0.1" : "4b31f7875b37c1b7391618aeaa35a02c",
       "PARENT:MD5-CAM-1.0.1" : "F56C24081D5D4E5CAF0AB1D658AD3A0D"
     },
     "details" : {
@@ -993,6 +993,21 @@
       },
       "details" : { }
     },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "sv" : {
+          "/items[at0002.1]" : {
+            "a.hide_on_form" : "true"
+          }
+        },
+        "en" : {
+          "/items[at0002.1]" : {
+            "a.hide_on_form" : "true"
+          }
+        }
+      }
+    },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.ctcae_question.v0",
     "differential" : true,
     "archetypeId" : {
@@ -1250,6 +1265,21 @@
         "PARENT:MD5-CAM-1.0.1" : "6c609fc3c4862a10eddaa265511a42f0"
       },
       "details" : { }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "sv" : {
+          "/items[at0002]" : {
+            "a.hide_on_form" : "true"
+          }
+        },
+        "en" : {
+          "/items[at0002]" : {
+            "a.hide_on_form" : "true"
+          }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.ctcae_question.v0",
     "differential" : true,
