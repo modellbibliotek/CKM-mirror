@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.8.0-alpha.3",
+      "sem_ver" : "2.8.0-alpha.4",
       "build_uid" : "07c0374a-2759-4524-8805-a40f6d30daad",
-      "MD5-CAM-1.0.1" : "faf7e9831301ba60fdd93e91226b8fc1",
+      "MD5-CAM-1.0.1" : "c31ab0a3a8cc833700f8d3f6cd6ae826",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -729,7 +729,16 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0075.1",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_DATE_TIME",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -1091,7 +1100,14 @@
           "attributeTuples" : [ ]
         } ]
       } ],
-      "attributeTuples" : [ ]
+      "attributeTuples" : [ ],
+      "attributeCustomizations" : {
+        "feeder_audit" : {
+          "aliases" : {
+            "en" : "feeder_audit"
+          }
+        }
+      }
     },
     "terminology" : {
       "@type" : "ARCHETYPE_TERMINOLOGY",
@@ -1145,7 +1161,7 @@
             "code" : "at0075.1",
             "text" : "Overall test status timestamp",
             "description" : "The date and/or time that ‘Overall test status’ was issued.",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/replyTime\nRULE = COPY\n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/replyTime\nRULE = COPY\nNote that the source data is an integer in format YYYYMMDDhhmmss so conversion might be necessary\n---end-mapping-instruction---"
           },
           "at0068.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1193,14 +1209,21 @@
             "code" : "at0098.1",
             "text" : "Test diagnosis",
             "description" : "Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test result.",
-            "comment" : "For example: 'Severe hepatic impairment', 'Salmonella contamination'. Coding of the diagnosis with a terminology is strongly recommended, where possible. This diagnosis should be aligned with the narra---begin-mapping-instruction---\nnot mapped yet\n---end-mapping-instruction---tive in the 'Conclusion'."
+            "comment" : "For example: 'Severe hepatic impairment', 'Salmonella contamination'. Coding of the diagnosis with a terminology is strongly recommended, where possible. This diagnosis should be aligned with the narrative in the 'Conclusion'.\n\n---begin-mapping-instruction---\nnot mapped yet\n---end-mapping-instruction---"
           },
           "at0113.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0113.1",
             "text" : "Confounding factors",
             "description" : "Issues or circumstances that impact on the accurate interpretation of the measurement or test result.",
-            "comment" : "'Confounding factors' should be reserved for uncontrolled/unplanned issues of patient state/physiology that might affect interpretation, for example 'recent exercise' or 'recent tobacco smoking'.\nComment : Seems to be a useless comment from Juno, but will need to be checked with real data.\nKnown or required preconditions, such as 'fasting' should be carried in the 'Sampling conditions' element within the CLUSTER.specimen archetype . In some cases preconditions are captured as part of the test name, for example 'Fasting blood glucose'.\n\nKnown issues with specimen collection or handling, such as 'prolonged use of tourniquet' or 'sample haemolysed', should be carried in the 'Specimen quality' elements within CLUSTER.specimen archetype.\n\nCoding with a terminology is desirable, where possible."
+            "comment" : "'Confounding factors' should be reserved for uncontrolled/unplanned issues of patient state/physiology that might affect interpretation, for example 'recent exercise' or 'recent tobacco smoking'.\n\nComment : Seems to be a useless comment from Juno, but will need to be checked with real data.\nKnown or required preconditions, such as 'fasting' should be carried in the 'Sampling conditions' element within the CLUSTER.specimen archetype . In some cases preconditions are captured as part of the test name, for example 'Fasting blood glucose'.\n\nKnown issues with specimen collection or handling, such as 'prolonged use of tourniquet' or 'sample haemolysed', should be carried in the 'Specimen quality' elements within CLUSTER.specimen archetype.\n\nCoding with a terminology is desirable, where possible."
+          },
+          "at0017" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017",
+            "text" : "Receiving laboratory",
+            "description" : "Details of the laboratory which received the request and has overall responsibility to manage reporting of the test, even if other labs perform specific aspects.",
+            "comment" : "This slot is intended to carry details of the laboratory which received the request and has overall responsibility to manage reporting of the test, even if other labs perform specific aspects.\n\nThe receiving laboratory may either perform the test or refer it to another laboratory. Where a different laboratory is responsible for performing the testing on specific analytes, it would be expected that these details would be carried in the 'Analyte result detail' SLOT within the CLUSTER.laboratory_test_analyte archetype."
           }
         },
         "nb" : {
@@ -2468,14 +2491,14 @@
             "text" : "Comment",
             "description" : "Additional narrative about the specimen not captured in other fields.",
             "fhir_mapping" : "Specimen.note",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/groupComment\nRULE = COPY\n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/groupComment\nRULE = COPY\n---end-mapping-instruction---"
           },
           "at0015.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0015.1",
             "text" : "Collection date/time",
             "description" : "The date and time that collection has been ordered to take place or has taken place.",
-            "comment" : "This datetime will be captured primarily in the INSTRUCTION timing, ACTION time or OBSERVATION times. However, as this is a critical piece of information, it can be useful to also associate it directly with the specimen itself.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /ChemReply/samplingDateTime\nRULE = COPY (To all specimen instances)\n---end-mapping-instruction---\n"
+            "comment" : "This datetime will be captured primarily in the INSTRUCTION timing, ACTION time or OBSERVATION times. However, as this is a critical piece of information, it can be useful to also associate it directly with the specimen itself.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samplingDateTime\nRULE = COPY (To all specimen instances)\nNote that the source data is an integer in format YYYYMMDDhhmmss so conversion might be necessary\n---end-mapping-instruction---\n"
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2489,7 +2512,7 @@
             "code" : "at0029.1",
             "text" : "Specimen type",
             "description" : "The type of specimen.",
-            "comment" : "For example: Venous blood, bacterial culture, cytology, or tissue sample. Coding of the specimen type with a terminology is preferred, where possible.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nRULE = Shoulf LATER (not implementetd yet) be looked up in terminology server, likely based on analyte codes for the analytes from this sample. A tricky thing may be if tehy would happen to signal different valuse for the NPU \"system\" parameter. A baetter way would be to find this from info about teh sample itself rather than the analyte results.\n---end-mapping-instruction---\n\n\n\nFJ : Slå upp från NPU?",
+            "comment" : "For example: Venous blood, bacterial culture, cytology, or tissue sample. Coding of the specimen type with a terminology is preferred, where possible.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nRULE = Should LATER (not implementetd yet) be looked up in terminology server, likely based on analyte codes for the analytes from this sample. A tricky thing may be if they would happen to signal different values for the NPU \"system\" parameter. A baetter way would be to find this from info about the sample itself rather than the analyte results.\n\nIf we should read from analyte results to drive the type for the whole Specimen, the source ID exists per analyte in the path /LabReplyChem/samples/sample[x]/analyses/analysis[y]/analysisId\n---end-mapping-instruction---",
             "fhir_mapping" : "Specimen.type"
           },
           "at0042.1" : {
@@ -5438,7 +5461,16 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0025.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -5528,7 +5560,7 @@
             "code" : "at0024",
             "text" : "Analyte name",
             "description" : "The name of the analyte result.",
-            "comment" : "The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH1 = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/\nSRCPATH2 = /LabReplyChem/samples/sample[x]/analyses/analysis[y]\n\nAnalyte name/defining code/codestring =\nAnalyte name/value = \n---end-mapping-instruction---\n\n",
+            "comment" : "The value for this element is normally supplied in a specialisation, in a template or at run-time to reflect the actual analyte. For example: 'Serum sodium', 'Haemoglobin'. Coding with an external terminology is strongly recommended, such as LOINC, NPU, SNOMED CT, or local lab terminologies.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH1 = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/analysisId\nSRCPATH2 = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/analysis\n\nAnalyte name/defining code/codestring = ./analysisId (but maybe this should be fetched from kind of NPU terminology service)\n\nAnalyte name/value = ./analysis\n\n---end-mapping-instruction---",
             "hl7v2_mapping" : "OBX.3",
             "fhir_mapping" : "Observation.code"
           },
@@ -5537,14 +5569,14 @@
             "code" : "at0000",
             "text" : "Laboratory analyte result",
             "description" : "The result of a laboratory test for a single analyte value.",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples[x]/analyses/analyses[y]\nRULE = Create one instance per analyses in all samples\n---end-mapping-instruction---"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/samples[x]/analyses/analysis[y]\nRULE = Create one instance per analysis in all samples\n---end-mapping-instruction---"
           },
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Analyte result coded text",
             "description" : "The value of the analyte result.",
-            "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nA fairly complex rule goes into here...\n---end-mapping-instruction---\nTODO: Create that rule...",
+            "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/* (possibly need multiple values)\nRULE = A fairly complex rule goes into here...\n---end-mapping-instruction---\nTODO: Create that rule...",
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
           },
@@ -5568,7 +5600,7 @@
             "code" : "at0001.2",
             "text" : "Analyte result quantity",
             "description" : "The value of the analyte result.",
-            "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH `\nRULE = \nIF there is a measurement unit in incoming data AND (the measurement value is a number OR a number prefixed with < or > )\nTHEN map to corresponding openEHR quantity fields (inluding setting magnitude_status according to suitable alternative from https://specifications.openehr.org/releases/RM/Release-1.1.0/data_types.html#_dv_quantified_class\n---end-mapping-instruction---\nComment: this is a first version of the rule. May be replaced by a acustom Java function later.",
+            "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/unit (and check against ./value)\nRULE = \nIF there is a measurement \"/unit\" in incoming data AND (the measurement \"/value\" is a number OR a number prefixed with < or > )\nTHEN map to corresponding openEHR quantity fields (inluding setting magnitude_status according to suitable alternative from https://specifications.openehr.org/releases/RM/Release-1.1.0/data_types.html#_dv_quantified_class\n---end-mapping-instruction---\nComment: this is a first version of the rule. May be replaced by a custom Java function later.",
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
           },
@@ -5577,7 +5609,7 @@
             "code" : "at0001.3",
             "text" : "Analyte result time",
             "description" : "The value of the analyte result.",
-            "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nA fairly complex rule goes into here...\n---end-mapping-instruction---\nTODO: Create that rule...",
+            "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nRULE = A fairly complex rule goes into here...\nShould this be a copy of /LabReplyChem/replyTime or otherwise we will need to fetch/enrich the data from another data source\n---end-mapping-instruction---\nTODO: Create that rule...",
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
           },
@@ -5586,7 +5618,7 @@
             "code" : "at0026",
             "text" : "Specimen",
             "description" : "Identification of the specimen used for the analyte result.",
-            "comment" : "In some situations, a single Laboratory test result archetype will contain multiple Specimen archetypes and multiple Analyte result archetypes. In these situations, this 'Specimen' data element is needed to be able to connect the results with the correct specimens.\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH =/LabReplyChem/samples/sample[x]/group\nRULE = Copy (from parent element for this analysis)\n---end-mapping-instruction---\n"
+            "comment" : "In some situations, a single Laboratory test result archetype will contain multiple Specimen archetypes and multiple Analyte result archetypes. In these situations, this 'Specimen' data element is needed to be able to connect the results with the correct specimens.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH =/LabReplyChem/samples/sample[x]/group\nRULE = Copy (from parent element for this analysis)\n---end-mapping-instruction---"
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -5595,14 +5627,14 @@
             "description" : "Additional narrative about the analyte result, not captured in other fields.",
             "hl7v2_mapping" : "NTE.3",
             "fhir_mapping" : "Observation.note",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH= /LabReplyChem/samples/sample/analyses/analysis/analysisComment\nRULE = Copy\n---end-mapping-instruction---\n\n"
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH= /LabReplyChem/samples/sample[x]/analyses/analysis[y]/analysisComment\nRULE = COPY\n---end-mapping-instruction---"
           },
           "at0001.4" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.4",
             "text" : "Analyte result free text",
             "description" : "The value of the analyte result.",
-            "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nA fairly complex rule goes into here...\n---end-mapping-instruction---\nTODO: Create that rule...",
+            "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/* (possibly need multiple values)\nRULE = A fairly complex rule goes into here...\n---end-mapping-instruction---\nTODO: Create that rule...",
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
           },
@@ -5627,7 +5659,7 @@
             "code" : "at0025.1",
             "text" : "Validation time",
             "description" : "The date and time that the analyte result was validated in the laboratory by a healthcare practitioner.",
-            "comment" : "In many jurisdictions the 'Result status' is assumed to include medical validation i.e. a 'final' result will be assumed to be medically validated, but in others this will be recorded and reported separately using this data element.\n"
+            "comment" : "In many jurisdictions the 'Result status' is assumed to include medical validation i.e. a 'final' result will be assumed to be medically validated, but in others this will be recorded and reported separately using this data element.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/attestation/attested/dateTime (not confirmed, to be validated)\nRULE = COPY\nNote that the source data is an integer in format YYYYMMDDhhmmss so conversion might be necessary\n---end-mapping-instruction---"
           }
         },
         "nb" : {
@@ -6787,8 +6819,68 @@
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0009.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0010.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0003.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0007.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0011.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0012",
+          "nodeId" : "at0012.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -6825,6 +6917,125 @@
             "text" : "juno_labinfo_adapter",
             "description" : "Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected).",
             "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]\nRULE = Copy all attributes with identical names\n---end-mapping-instruction---"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "isDeviating",
+            "description" : "Marker for pathological manifestation",
+            "comment" : "Marked * in EDI message\nSG12.OBR..C502.6155 (Measurement attribute, coded)\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/isDeviating\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "referenceArea",
+            "description" : "Reference range from from TakeCare's JUNO-API",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/referenceArea\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "unit",
+            "description" : "Measurement unit from TakeCare's JUNO-API",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/unit\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "analysisComment",
+            "description" : "Analysis comment from TakeCare's JUNO-API. This field sometimes contains an actual result (e.g. if the \"value\" field says somoething like see comment).",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/analysisComment\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
+            "text" : "analysisId",
+            "description" : "NPU, SWE or local code from from TakeCare's JUNO-API\n",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/analysisId\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0010" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010",
+            "text" : "value",
+            "description" : "Result value from TakeCare's JUNO-API",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/value\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0011" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "isAccredited",
+            "description" : "",
+            "comment" : "Not present for LabReplyChem responses but will be used for LabReplyMulti (Multidisciplinary) responses (Unilabs etc)"
+          },
+          "at0012" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "PairAnalysis",
+            "description" : "Used for what the Juno API calls \"pair anlysis\" - two related tastes that are usually compared to each other Används när man gör \"Pair analysis\" dvs två jämförande provtagningar som hänger ihop. ",
+            "comment" : "Not present for LabReplyChem responses but will be used for LabReplyMulti (Multidisciplinary) responses (Unilabs etc)"
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "analysis",
+            "description" : "Analysis name from TakeCare's JUNO-API",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/analysis\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "analysisId",
+            "description" : "NPU, SWE or local code from from TakeCare's JUNO-API\n",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/analysis\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "value",
+            "description" : "Result value from TakeCare's JUNO-API",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/analysis\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "unit",
+            "description" : "Measurement unit from TakeCare's JUNO-API",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/analysis\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "analysisComment",
+            "description" : "Analysis comment from TakeCare's JUNO-API. This field sometimes contains an actual result (e.g. if the \"value\" field says somoething like see comment).",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/analysis\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "referenceArea",
+            "description" : "Reference range from from TakeCare's JUNO-API",
+            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/analysis\nRULE = COPY\n---end-mapping-instruction---"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "isDeviating",
+            "description" : "Marker for pathological manifestation",
+            "comment" : "Marked * in EDI message\nSG12.OBR..C502.6155 (Measurement attribute, coded)\n"
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011.1",
+            "text" : "isAccredited",
+            "description" : "",
+            "comment" : "NFrom Multidisciplinary responses (Unilabs etc)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "PairAnalysis",
+            "description" : "Used for what the Juno API calls \"pair anlysis\" - two related tastes that are usually compared to each other Används när man gör \"Pair analysis\" dvs två jämförande provtagningar som hänger ihop. ",
+            "comment" : "Not present for LabReplyChem responses but will be used for LabReplyMulti (Multidisciplinary) responses (Unilabs etc)"
           }
         },
         "sv" : {
