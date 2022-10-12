@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.8.0-alpha.4",
+      "sem_ver" : "2.8.0-alpha.5",
       "build_uid" : "07c0374a-2759-4524-8805-a40f6d30daad",
-      "MD5-CAM-1.0.1" : "c31ab0a3a8cc833700f8d3f6cd6ae826",
+      "MD5-CAM-1.0.1" : "18ea7c689528fb52d6e1c387af4586f6",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -322,7 +322,7 @@
           "code" : "at0002.0.1",
           "text" : "Report ID",
           "description" : "Identification information about the report.",
-          "comment" : "---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/referralId\nSRCPATH : /LabReplyChem/samplingDate\nTime\nRULE : Concatenate referalId_samplingDateTime\nComment : SID omitted to allow creation of a single report from replies from individual disciplines. Not 100% absolutely guaranteed to be unique but likelyhood of getting the same RID for different labs for the same patioent with the sam samplingDateTime is low\n---end-mapping-instruction---\n\n"
+          "comment" : "---begin-mapping-instruction---\nSRCFMT : LabReplyChem\nSRCPATH : /LabReplyChem/referralId\nSRCPATH : /LabReplyChem/samplingDate\nTime\nRULE : Concatenate referalId_samplingDateTime\nComment : SID omitted to allow creation of a single report from replies from individual disciplines. Not 100% absolutely guaranteed to be unique but likelyhood of getting the same RID for different labs for the same patient with the same samplingDateTime is low\n---end-mapping-instruction---"
         },
         "at0006.0.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -1154,7 +1154,7 @@
             "code" : "at0063.1",
             "text" : "Receiver order identifier",
             "description" : "The local identifier assigned to the test order by the order filler, usually by the Laboratory Information System (LIS).",
-            "comment" : "Assigning an identifier to a request by the Laboratory lnformation System (LIS) enables tracking progress of the request and enables linking results to requests. It also provides a reference to assist with enquiries and it is usually equivalent to the HL7 Filler Order Identifier.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/LID\nRULE = COPY\n---end-mapping-instruction---\n"
+            "comment" : "Assigning an identifier to a request by the Laboratory lnformation System (LIS) enables tracking progress of the request and enables linking results to requests. It also provides a reference to assist with enquiries and it is usually equivalent to the HL7 Filler Order Identifier.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/LID\nRULE = COPY\n---end-mapping-instruction---"
           },
           "at0075.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -5618,7 +5618,7 @@
             "code" : "at0026",
             "text" : "Specimen",
             "description" : "Identification of the specimen used for the analyte result.",
-            "comment" : "In some situations, a single Laboratory test result archetype will contain multiple Specimen archetypes and multiple Analyte result archetypes. In these situations, this 'Specimen' data element is needed to be able to connect the results with the correct specimens.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH =/LabReplyChem/samples/sample[x]/group\nRULE = Copy (from parent element for this analysis)\n---end-mapping-instruction---"
+            "comment" : "In some situations, a single Laboratory test result archetype will contain multiple Specimen archetypes and multiple Analyte result archetypes. In these situations, this 'Specimen' data element is needed to be able to connect the results with the correct specimens.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/group\nRULE = Copy (from parent element for this analysis)\n---end-mapping-instruction---"
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -6505,7 +6505,7 @@
             "code" : "at0000.1",
             "text" : "Receiving Laboratory Organisation",
             "description" : "An identified formal entity or informal grouping of people.",
-            "comment" : "For example: a company, institution, corporation, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who will act as carers or support.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nComment : Needs lookup(s) based on /LabReplyChem/lab/careUnit/id which is an internal TC id.\n---end-mapping-instruction---"
+            "comment" : "For example: a company, institution, corporation, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who will act as carers or support.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/lab/careUnit/id\nRULE = Needs lookup(s) based on careUnit ID which is an internal TakeCare ID. This lookup should fetch all of the attributes which are needed for the children under this structure.\n---end-mapping-instruction---"
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -6518,7 +6518,7 @@
             "code" : "at0003.2",
             "text" : "Kombikakod",
             "description" : "Identifier associated with the organisation.",
-            "comment" : "TODO: Set Identifier-type to something signalling that it is a Kombika code"
+            "comment" : "TODO: Set Identifier-type to something signalling that it is a Kombika code, or if we have both in our Organisation service would it make sense to always include both HSAID and Kombikakod?"
           }
         },
         "nb" : {
