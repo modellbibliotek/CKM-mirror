@@ -1,3 +1,7 @@
+BRANCH info for UMI-warning-info
+================================
+Branch related to experiments in the project described at https://openehr.atlassian.net/wiki/spaces/healthmod/pages/1966211073/Uppm+rksamhetsinformation+i+openEHR
+
 Modellbiblioteket's fork of the international openEHR.org CKM mirror, plus some "local" Swedish templates and archetypes
 ===========================================================================================================
 The intention of this experimental "fork" is to make it simple to work with archetype and template tools to create and share local Swedish content based on international archetypes. You can download a zip (or maintain a GIT-clone/fork/link) of this repository in order to access the combination of international and local archetypes and templates in your tools.
