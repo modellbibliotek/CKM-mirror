@@ -39,24 +39,27 @@ description
 			purpose = <"Bereitstellung einer systematischen Einteilung zur Erfassung aller unerwünschten und unerwarteten Ereignissen, Symptome oder Krankheiten unter Verwendung der CTCAE-Terminologie.
 ">
 			keywords = <"ctcae","Symptom","Krankheit","unerwünscht","Ereignis">
-			use = <"Ein Schema für die Erfassung aller unerwünschten und unerwartete Ereignissen, Symptome oder Krankheiten, die zeitlich mit der Anwendung einer medizinischen Behandlung oder eines Verfahrens verbunden sind und die unter Verwendung der CTCAE-Terminologie als mit der medizinischen Behandlung oder dem Verfahren zusammenhängend betrachtet werden können oder nicht.
+			use = <"*A framework for recording any unfavourable and unintended sign, symptom or disease temporally associated with the use of a medical treatment or procedure that may or may not be considered related to the medical treatment or procedure using the CTCAE terminology.
 
-Dieser Archetyp ist dafür vorgesehen, im Kontext des Archetyps CLUSTER.symptom_sign oder EVALUATION.problem_diagnosis oder anderer klinisch relevanter Archetypen verwendet zu werden.
+This archetype is intended to be used within the context of the CLUSTER.symptom_sign, EVALUATION.problem_diagnosis, OBSERVATION.symptom_sign_screening archetype or other clinically relevant archetypes.
 
-CTCAE ist nur für die Verwendung von MedDRA-Begriffen vorgesehen.
-">
+The 'Term' field is intended to be populated using a coded text based on 'CTCAE term' coded with 'MedDRA Code' terms only.
+
+In a template or at runtime populate the 'Grade' ordinal field with e.g. applicable values  and descriptions from the 'Grade 1' ... 'Grade 5' columns of the CTCAE spreadsheet. (en)">
+			misuse = <"*When querying data for severity level, please refer to the DV_ORDINAL.value field, do NOT select data based on the symbol/name or \"at-code\" of the archetype value, since these may change in different templates or translataions. (en)">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			purpose = <"Ett ramverk för att med hjälp av CTCAE-terminologin registrera eventuella biverkningar eller ogynnsamma och oavsiktliga symptom eller sjukdomar.">
 			keywords = <"CTCAE","biverkan","biverkningar","tecken","symptom","sjukdom">
-			use = <"Ett ramverk för att registrera biverkningar och andra ogynnsamma och oavsiktliga symtom eller sjukdomar som är tidsmässigt förknippade med användningen av en medicinsk behandling eller procedur som kan eller inte kan anses relaterad till den medicinska behandlingen eller proceduren med användning av CTCAE-terminologin.
+			use = <"*A framework for recording any unfavourable and unintended sign, symptom or disease temporally associated with the use of a medical treatment or procedure that may or may not be considered related to the medical treatment or procedure using the CTCAE terminology.
 
-Denna arketyp är avsedd att användas inom ramen för arketypen CLUSTER.symptom_sign eller EVALUATION.problem_diagnosis eller andra kliniskt relevanta arketyper.
+This archetype is intended to be used within the context of the CLUSTER.symptom_sign, EVALUATION.problem_diagnosis, OBSERVATION.symptom_sign_screening archetype or other clinically relevant archetypes.
 
-CTCAE är avsett att endast fyllas med MedDRA-termer.
+The 'Term' field is intended to be populated using a coded text based on 'CTCAE term' coded with 'MedDRA Code' terms only.
 
-För svensk kontext se t.ex. https://healthcaredelivery.cancer.gov/pro-ctcae/pro-ctcae_swedish.pdf och https://healthcaredelivery.cancer.gov/pro-ctcae/pro-ctcae_swedish.pdf">
+In a template or at runtime populate the 'Grade' ordinal field with e.g. applicable values  and descriptions from the 'Grade 1' ... 'Grade 5' columns of the CTCAE spreadsheet. (en)">
+			misuse = <"*When querying data for severity level, please refer to the DV_ORDINAL.value field, do NOT select data based on the symbol/name or \"at-code\" of the archetype value, since these may change in different templates or translataions. (en)">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -65,9 +68,12 @@ För svensk kontext se t.ex. https://healthcaredelivery.cancer.gov/pro-ctcae/pro
 			copyright = <"© openEHR Foundation">
 			use = <"A framework for recording any unfavourable and unintended sign, symptom or disease temporally associated with the use of a medical treatment or procedure that may or may not be considered related to the medical treatment or procedure using the CTCAE terminology.
 
-This archetype is intended to be used within the context of the CLUSTER.symptom_sign or EVALUATION.problem_diagnosis archetype or other clinically relevant archetypes.
+This archetype is intended to be used within the context of the CLUSTER.symptom_sign, EVALUATION.problem_diagnosis, OBSERVATION.symptom_sign_screening archetype or other clinically relevant archetypes.
 
-CTCAE is intended to be populated using MedDRA terms only.">
+The 'Term' field is intended to be populated using a coded text based on 'CTCAE term' coded with 'MedDRA Code' terms only.
+
+In a template or at runtime populate the 'Grade' ordinal field with e.g. applicable values  and descriptions from the 'Grade 1' ... 'Grade 5' columns of the CTCAE spreadsheet.">
+			misuse = <"When querying data for severity level, please refer to the DV_ORDINAL.value field, do NOT select data based on the symbol/name or \"at-code\" of the archetype value, since these may change in different templates or translataions.">
 		>
 	>
 	other_details = <
@@ -76,9 +82,11 @@ CTCAE is intended to be populated using MedDRA terms only.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"96bb1b3b257c75ccb0704521a3c2caba">
+		["MD5-CAM-1.0.1"] = <"b4f8ad925d0e88314f1af227d80e52e0">
 		["build_uid"] = <"9ac99a39-c4cf-48aa-aa91-d7e80be4cc06">
 		["revision"] = <"0.0.1-alpha">
+		["references"] = <"Common Terminology Criteria for Adverse Events (CTCAE), https://ctep.cancer.gov/protocoldevelopment/electronic_applications/ctc.htm
+CTCAE Version 5 content spreadsheet https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5.0.xlsx">
 	>
 
 definition
@@ -96,11 +104,7 @@ definition
 			}
 			ELEMENT[at0003] matches {    -- Grade
 				value matches {
-					1|[local::at0004],
-					2|[local::at0005],
-					3|[local::at0006],
-					4|[local::at0007],
-					5|[local::at0008]
+					DV_ORDINAL matches {*}
 				}
 			}
 			ELEMENT[at0009] occurrences matches {0..1} matches {    -- CTCAE version
@@ -132,39 +136,13 @@ ontology
 				["at0003"] = <
 					text = <"Grade">
 					description = <"The severity of the Adverse event.">
-					comment = <"For each Grade, non-specific comments, presented within square brackets [] below, provide some general guidance about the severity for each grade. In practice when using this archetype, each grade will be represented by a specific CTCAE-based clinical description, appropriate for the selected term and will likely be either assigned in a template or sourced from an external knowledgebase or resource.
+					comment = <"For each Grade, non-specific comments, presented within square brackets [] below, provide some general guidance about the severity for each grade. In practice when using this archetype, each grade will be represented by an ordinal number labelled with a specific CTCAE-based clinical description, appropriate for the selected term and will likely be either assigned in a template or sourced from an external knowledgebase or resource.
 
 Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic observations only; OR intervention not indicated.]
 2: Grade 2 [Moderate; OR minimal, local or non-invasive intervention indicated; OR limiting age-appropriate instrumental ADL.]
 3: Grade 3 [Severe or medically significant but not immediately life-threatening; OR hospitalization or prolongation of hospitalization indicated OR disabling; limiting self-care ADL.]
 4: Grade 4 [Life-threatening consequences OR urgent intervention indicated.]
 5: Grade 5 [Death related to AE.]">
-				>
-				["at0004"] = <
-					text = <"Grade 1">
-					description = <"">
-					comment = <"[Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic
-observations only; OR intervention not indicated.]">
-				>
-				["at0005"] = <
-					text = <"Grade 2">
-					description = <"">
-					comment = <"[Moderate; OR minimal, local or non-invasive intervention indicated; OR limiting age-appropriate instrumental ADL.]">
-				>
-				["at0006"] = <
-					text = <"Grade 3">
-					description = <"">
-					comment = <"[Severe or medically significant but not immediately life-threatening; OR hospitalization or prolongation of hospitalization indicated OR disabling; limiting self-care ADL.]">
-				>
-				["at0007"] = <
-					text = <"Grade 4">
-					description = <"">
-					comment = <"[Life-threatening consequences OR urgent intervention indicated.]">
-				>
-				["at0008"] = <
-					text = <"Grade 5">
-					description = <"">
-					comment = <"[Death related to AE.]">
 				>
 				["at0009"] = <
 					text = <"CTCAE version">
@@ -191,43 +169,13 @@ observations only; OR intervention not indicated.]">
 				["at0003"] = <
 					text = <"Grad">
 					description = <"Der Schweregrad des unerwünschten Ereignisses.">
-					comment = <"*For each Grade, non-specific comments, presented within square brackets [] below, provide some general guidance about the severity for each grade. In practice when using this archetype, each grade will be represented by a specific CTCAE-based clinical description, appropriate for the selected term and will likely be either assigned in a template or sourced from an external knowledgebase or resource.
+					comment = <"*For each Grade, non-specific comments, presented within square brackets [] below, provide some general guidance about the severity for each grade. In practice when using this archetype, each grade will be represented by an ordinal number labelled with a specific CTCAE-based clinical description, appropriate for the selected term and will likely be either assigned in a template or sourced from an external knowledgebase or resource.
 
 Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic observations only; OR intervention not indicated.]
 2: Grade 2 [Moderate; OR minimal, local or non-invasive intervention indicated; OR limiting age-appropriate instrumental ADL.]
 3: Grade 3 [Severe or medically significant but not immediately life-threatening; OR hospitalization or prolongation of hospitalization indicated OR disabling; limiting self-care ADL.]
 4: Grade 4 [Life-threatening consequences OR urgent intervention indicated.]
 5: Grade 5 [Death related to AE.] (en)">
-				>
-				["at0004"] = <
-					text = <"Grad 1">
-					description = <"">
-					comment = <"[Mild; ODER asymptomatisch oder milde Symptome; ODER nur klinische oder diagnostische
-Beobachtungen; ODER Intervention nicht indiziert].
-">
-				>
-				["at0005"] = <
-					text = <"Grad 2">
-					description = <"">
-					comment = <"[Mäßig; ODER minimale, lokale oder nicht-invasive Intervention angezeigt; ODER Einschränkung altersgemäßer instrumenteller ADL].
-">
-				>
-				["at0006"] = <
-					text = <"Grad 3">
-					description = <"">
-					comment = <"[Schwerwiegend oder medizinisch bedeutsam, aber nicht unmittelbar lebensbedrohlich; ODER Krankenhausaufenthalt oder Verlängerung des Krankenhausaufenthalts angezeigt ODER Behinderung; Einschränkung der Selbstversorgung ADL].
-">
-				>
-				["at0007"] = <
-					text = <"Grad 4">
-					description = <"">
-					comment = <"[Lebensbedrohliche Folgen ODER dringende Intervention angezeigt].
-">
-				>
-				["at0008"] = <
-					text = <"Grad 5">
-					description = <"">
-					comment = <"[Tod in Zusammenhang zu AE.]">
 				>
 				["at0009"] = <
 					text = <"CTCAE Version">
@@ -256,39 +204,13 @@ Identifierad som en MEDRA-term och motsvarande kod.">
 				["at0003"] = <
 					text = <"Allvarlighetsgrad">
 					description = <"Biverkningens svårighetsgrad.">
-					comment = <"*For each Grade, non-specific comments, presented within square brackets [] below, provide some general guidance about the severity for each grade. In practice when using this archetype, each grade will be represented by a specific CTCAE-based clinical description, appropriate for the selected term and will likely be either assigned in a template or sourced from an external knowledgebase or resource.
+					comment = <"*For each Grade, non-specific comments, presented within square brackets [] below, provide some general guidance about the severity for each grade. In practice when using this archetype, each grade will be represented by an ordinal number labelled with a specific CTCAE-based clinical description, appropriate for the selected term and will likely be either assigned in a template or sourced from an external knowledgebase or resource.
 
 Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic observations only; OR intervention not indicated.]
 2: Grade 2 [Moderate; OR minimal, local or non-invasive intervention indicated; OR limiting age-appropriate instrumental ADL.]
 3: Grade 3 [Severe or medically significant but not immediately life-threatening; OR hospitalization or prolongation of hospitalization indicated OR disabling; limiting self-care ADL.]
 4: Grade 4 [Life-threatening consequences OR urgent intervention indicated.]
 5: Grade 5 [Death related to AE.] (en)">
-				>
-				["at0004"] = <
-					text = <"Grad 1">
-					description = <"">
-					comment = <"[Mild; ELLER asymtomatiska eller milda symtom; ELLER endast kliniska eller diagnostiska
-observationer; ELLER intervention ej indikerad.]">
-				>
-				["at0005"] = <
-					text = <"Grad 2">
-					description = <"">
-					comment = <"[Måttlig; ELLER minimal, lokal eller icke-invasiv intervention indikerad; ELLER begränsar av åldersanpassad instrumentell ADL.]">
-				>
-				["at0006"] = <
-					text = <"Grad 3">
-					description = <"">
-					comment = <"[Svår eller medicinskt betydelsefull men inte omedelbart livshotande; ELLER sjukhusvistelse eller förlängning av sjukhusvistelse indikerat ELLER invalidiserande; begränsar egenvård enligt ADL.]">
-				>
-				["at0007"] = <
-					text = <"Grad 4">
-					description = <"">
-					comment = <"[Livshotande konsekvenser ELLER brådskande ingripande behövs.]">
-				>
-				["at0008"] = <
-					text = <"Grad 5">
-					description = <"">
-					comment = <"[Död relaterad till biverkan.]">
 				>
 				["at0009"] = <
 					text = <"CTCAE-version">
