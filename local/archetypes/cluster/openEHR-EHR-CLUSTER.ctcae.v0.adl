@@ -46,20 +46,23 @@ This archetype is intended to be used within the context of the CLUSTER.symptom_
 The 'Term' field is intended to be populated using a coded text based on 'CTCAE term' coded with 'MedDRA Code' terms only.
 
 In a template or at runtime populate the 'Grade' ordinal field with e.g. applicable values  and descriptions from the 'Grade 1' ... 'Grade 5' columns of the CTCAE spreadsheet. (en)">
-			misuse = <"*When querying data for severity level, please refer to the DV_ORDINAL.value field, do NOT select data based on the symbol/name or \"at-code\" of the archetype value, since these may change in different templates or translataions. (en)">
+			misuse = <"*When querying data for severity level, please refer to the DV_ORDINAL.value field, do NOT select data based on the symbol/name or \"at-code\" of the archetype value, since these may change in different templates or translations. (en)">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			purpose = <"Ett ramverk för att med hjälp av CTCAE-terminologin registrera eventuella biverkningar eller ogynnsamma och oavsiktliga symptom eller sjukdomar.">
 			keywords = <"CTCAE","biverkan","biverkningar","tecken","symptom","sjukdom">
-			use = <"*A framework for recording any unfavourable and unintended sign, symptom or disease temporally associated with the use of a medical treatment or procedure that may or may not be considered related to the medical treatment or procedure using the CTCAE terminology.
+			use = <"Ett ramverk för att registrera biverkningar och andra ogynnsamma och oavsiktliga symtom eller sjukdomar som är tidsmässigt förknippade med användningen av en medicinsk behandling eller procedur som kan eller inte kan anses relaterad till den medicinska behandlingen eller proceduren med användning av CTCAE-terminologin.
 
-This archetype is intended to be used within the context of the CLUSTER.symptom_sign, EVALUATION.problem_diagnosis, OBSERVATION.symptom_sign_screening archetype or other clinically relevant archetypes.
+Denna arketyp är avsedd att användas inom ramen för arketypen CLUSTER.symptom_sign, EVALUATION.problem_diagnosis,  OBSERVATION.symptom_sign_screening eller andra kliniskt relevanta arketyper.
 
-The 'Term' field is intended to be populated using a coded text based on 'CTCAE term' coded with 'MedDRA Code' terms only.
+\"Term\"-fältet är avsett att fyllas i med en kodad text baserad på \"CTCAE term\" kodad med \"MedDRA Code\"-termer.
 
-In a template or at runtime populate the 'Grade' ordinal field with e.g. applicable values  and descriptions from the 'Grade 1' ... 'Grade 5' columns of the CTCAE spreadsheet. (en)">
-			misuse = <"*When querying data for severity level, please refer to the DV_ORDINAL.value field, do NOT select data based on the symbol/name or \"at-code\" of the archetype value, since these may change in different templates or translataions. (en)">
+I en mall eller applikation ska man i  fältet \"allvarlighetsgrad\" ange tillämpliga värden och beskrivningar från kolumnerna 'Grade 1' ... 'Grade 5' i CTCAE-kalkylarket.
+
+För svensk kontext se t.ex. https://healthcaredelivery.cancer.gov/pro-ctcae/pro-ctcae_swedish.pdf och https://healthcaredelivery.cancer.gov/pro-ctcae/pro-ctcae_swedish.pdf
+">
+			misuse = <"När sökningar avseende allvarlighetsgrad görs, basera dem då på fältet DV_ORDINAL.value, basera inte sökningen på symbol/name eller \"at-kod\" eftersom dessa kan variera i olika templates eller översättningar.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -73,18 +76,19 @@ This archetype is intended to be used within the context of the CLUSTER.symptom_
 The 'Term' field is intended to be populated using a coded text based on 'CTCAE term' coded with 'MedDRA Code' terms only.
 
 In a template or at runtime populate the 'Grade' ordinal field with e.g. applicable values  and descriptions from the 'Grade 1' ... 'Grade 5' columns of the CTCAE spreadsheet.">
-			misuse = <"When querying data for severity level, please refer to the DV_ORDINAL.value field, do NOT select data based on the symbol/name or \"at-code\" of the archetype value, since these may change in different templates or translataions.">
+			misuse = <"When querying data for severity level, please refer to the DV_ORDINAL.value field, do NOT select data based on the symbol/name or \"at-code\" of the archetype value, since these may change in different templates or translations.">
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
 		["references"] = <"Common Terminology Criteria for Adverse Events (CTCAE), https://ctep.cancer.gov/protocoldevelopment/electronic_applications/ctc.htm
-CTCAE Version 5 content spreadsheet https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5.0.xlsx">
+CTCAE Version 5 content spreadsheet, https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5.0.xlsx
+MedDRA Hierarchy, https://www.meddra.org/how-to-use/basics/hierarchy">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"918bc3e149f9d0e01d22e182f39684a1">
+		["MD5-CAM-1.0.1"] = <"1d7daf40635f27fb1c2ee42c3a2f04aa">
 		["build_uid"] = <"9ac99a39-c4cf-48aa-aa91-d7e80be4cc06">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -94,12 +98,17 @@ definition
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] matches {    -- System Organ Class (SOC)
 				value matches {
-					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0002] matches {    -- Term
 				value matches {
 					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[ac0001]
+						}
+					}
 				}
 			}
 			ELEMENT[at0003] matches {    -- Grade
@@ -116,6 +125,7 @@ definition
 	}
 
 ontology
+	terminologies_available = <"MedDRA", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
@@ -195,8 +205,9 @@ Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic obser
 				["at0001"] = <
 					text = <"Organklass (SOC)">
 					description = <"\"Termens\" kategori i MedDRA-hierarkn.">
-					comment = <"*Identified as a MedDRA primary class - representing an anatomical or physiological system, aetiology or purpose. Corresponds to the 'MedDRA SOC' column in the CTCAE spreadsheet.
- (en)">
+					comment = <"MedDRAs primära klass - representerar ett anatomiskt eller fysiologiskt system, etiologi eller syfte.
+
+Motsvarar kolumnen 'MedDRA SOC' i CTCAE-kalkylarket.">
 				>
 				["at0002"] = <
 					text = <"Term">
@@ -219,6 +230,13 @@ Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic obser
 					text = <"CTCAE-version">
 					description = <"Den version av CTCAE-terminologin som använts.">
 				>
+			>
+		>
+	>
+	constraint_binding = <
+		["MedDRA"] = <
+			items = <
+				["ac0001"] = <terminology:MDR>
 			>
 		>
 	>
