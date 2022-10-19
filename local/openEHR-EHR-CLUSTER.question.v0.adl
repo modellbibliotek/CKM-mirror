@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,6 +23,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -26,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f0ca5123c433745c720a9cd45db4deaf">
+		["MD5-CAM-1.0.1"] = <"30f97ee1b646f062e3fcee5126d8963c">
 		["build_uid"] = <"066c4ffb-5a7c-3bfb-87b4-9cf642fa614e">
 	>
 
@@ -56,6 +67,23 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Specific details">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Fråga">
+					description = <"*Ad hoc question to be used for example in templates as a base e.g. for detailed questions in a questionnaire (en)">
+				>
+				["at0001"] = <
+					text = <"Fråga">
+					description = <"">
+					comment = <"*The node name \"Question\" should be substituted for the actual question facing the user (e.g. a clinician or patient) and a suitable data type should be used to capture the response (for example an ordinal or coded text with response alternatives or a freetext field). (en)">
+				>
+				["at0002"] = <
+					text = <"Ytterligare detaljer">
 					description = <"">
 				>
 			>
