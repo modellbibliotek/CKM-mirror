@@ -88,7 +88,7 @@ MedDRA Hierarchy, https://www.meddra.org/how-to-use/basics/hierarchy">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f157703ba4e8b4b596c866f7e7ea6b33">
+		["MD5-CAM-1.0.1"] = <"43c321d9897c80dc61a9e70d4397288a">
 		["build_uid"] = <"9ac99a39-c4cf-48aa-aa91-d7e80be4cc06">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -96,12 +96,12 @@ MedDRA Hierarchy, https://www.meddra.org/how-to-use/basics/hierarchy">
 definition
 	CLUSTER[at0000] matches {    -- Common Terminology Criteria for Adverse Events (CTCAE)
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] matches {    -- System Organ Class (SOC)
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- System Organ Class (SOC)
 				value matches {
 					DV_CODED_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0002] matches {    -- Term
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Term
 				value matches {
 					DV_TEXT matches {*}
 					DV_CODED_TEXT matches {
