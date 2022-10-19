@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"30f97ee1b646f062e3fcee5126d8963c">
+		["MD5-CAM-1.0.1"] = <"fea49c7bf84d571a85594703a046918e">
 		["build_uid"] = <"066c4ffb-5a7c-3bfb-87b4-9cf642fa614e">
 	>
 
@@ -80,7 +80,7 @@ ontology
 				["at0001"] = <
 					text = <"Fråga">
 					description = <"">
-					comment = <"*The node name \"Question\" should be substituted for the actual question facing the user (e.g. a clinician or patient) and a suitable data type should be used to capture the response (for example an ordinal or coded text with response alternatives or a freetext field). (en)">
+					comment = <"Namnet \"Fråga\" för denna nod ska bytas ut mot den faktiska frågan som användaren (t.ex. klinisk personal eller patient) ställs inför och en lämplig datatyp ska användas för att fånga svaret (till exempel \"ordinal\" eller kodad text med svarsalternativ, eller ett fritextfält ).">
 				>
 				["at0002"] = <
 					text = <"Ytterligare detaljer">
