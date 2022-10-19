@@ -76,7 +76,7 @@ CTCAE is intended to be populated using MedDRA terms only.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e00f9f943e765ed9b3de40e3c11f2c2a">
+		["MD5-CAM-1.0.1"] = <"96bb1b3b257c75ccb0704521a3c2caba">
 		["build_uid"] = <"9ac99a39-c4cf-48aa-aa91-d7e80be4cc06">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -132,7 +132,13 @@ ontology
 				["at0003"] = <
 					text = <"Grade">
 					description = <"The severity of the Adverse event.">
-					comment = <"For each Grade, non-specific comments provide some general guidance about the severity for each grade and are represented within square brackets []. In practice, each grade will be represented by a specific clinical description, appropriate for the selected term and will likely be sourced from an external knowledgebase or resource.">
+					comment = <"For each Grade, non-specific comments, presented within square brackets [] below, provide some general guidance about the severity for each grade. In practice when using this archetype, each grade will be represented by a specific CTCAE-based clinical description, appropriate for the selected term and will likely be either assigned in a template or sourced from an external knowledgebase or resource.
+
+Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic observations only; OR intervention not indicated.]
+2: Grade 2 [Moderate; OR minimal, local or non-invasive intervention indicated; OR limiting age-appropriate instrumental ADL.]
+3: Grade 3 [Severe or medically significant but not immediately life-threatening; OR hospitalization or prolongation of hospitalization indicated OR disabling; limiting self-care ADL.]
+4: Grade 4 [Life-threatening consequences OR urgent intervention indicated.]
+5: Grade 5 [Death related to AE.]">
 				>
 				["at0004"] = <
 					text = <"Grade 1">
@@ -185,7 +191,13 @@ observations only; OR intervention not indicated.]">
 				["at0003"] = <
 					text = <"Grad">
 					description = <"Der Schweregrad des unerwünschten Ereignisses.">
-					comment = <"Für jeden Grad bieten unspezifische Kommentare einige allgemeine Hinweise zum Schweregrad für jeden Grad und werden in eckigen Klammern [] dargestellt. In der Praxis wird jeder Grad durch eine spezifische klinische Beschreibung dargestellt, die für den ausgewählten Begriff geeignet ist und wahrscheinlich aus einer externen Wissensdatenbank oder Ressource stammt.">
+					comment = <"*For each Grade, non-specific comments, presented within square brackets [] below, provide some general guidance about the severity for each grade. In practice when using this archetype, each grade will be represented by a specific CTCAE-based clinical description, appropriate for the selected term and will likely be either assigned in a template or sourced from an external knowledgebase or resource.
+
+Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic observations only; OR intervention not indicated.]
+2: Grade 2 [Moderate; OR minimal, local or non-invasive intervention indicated; OR limiting age-appropriate instrumental ADL.]
+3: Grade 3 [Severe or medically significant but not immediately life-threatening; OR hospitalization or prolongation of hospitalization indicated OR disabling; limiting self-care ADL.]
+4: Grade 4 [Life-threatening consequences OR urgent intervention indicated.]
+5: Grade 5 [Death related to AE.] (en)">
 				>
 				["at0004"] = <
 					text = <"Grad 1">
@@ -244,7 +256,13 @@ Identifierad som en MEDRA-term och motsvarande kod.">
 				["at0003"] = <
 					text = <"Allvarlighetsgrad">
 					description = <"Biverkningens svårighetsgrad.">
-					comment = <"För varje allvarlighetsgrad finns icke-specifika kommentarer som allmän vägledning om svårighetsgraden inom hakparenteser []. I praktiken kommer varje allvarlighetsgrad att representeras av en specifik klinisk beskrivning, lämplig för den valda termen och kommer sannolikt att hämtas från en extern kunskapsbas eller resurs, eller specificeras i en template.">
+					comment = <"*For each Grade, non-specific comments, presented within square brackets [] below, provide some general guidance about the severity for each grade. In practice when using this archetype, each grade will be represented by a specific CTCAE-based clinical description, appropriate for the selected term and will likely be either assigned in a template or sourced from an external knowledgebase or resource.
+
+Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic observations only; OR intervention not indicated.]
+2: Grade 2 [Moderate; OR minimal, local or non-invasive intervention indicated; OR limiting age-appropriate instrumental ADL.]
+3: Grade 3 [Severe or medically significant but not immediately life-threatening; OR hospitalization or prolongation of hospitalization indicated OR disabling; limiting self-care ADL.]
+4: Grade 4 [Life-threatening consequences OR urgent intervention indicated.]
+5: Grade 5 [Death related to AE.] (en)">
 				>
 				["at0004"] = <
 					text = <"Grad 1">
