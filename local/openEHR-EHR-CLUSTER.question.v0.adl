@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fea49c7bf84d571a85594703a046918e">
+		["MD5-CAM-1.0.1"] = <"04159367086ed9ea4f3aee886ab55807">
 		["build_uid"] = <"066c4ffb-5a7c-3bfb-87b4-9cf642fa614e">
 	>
 
@@ -58,7 +58,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Question">
-					description = <"Ad hoc question to be used for example in templates as a base e.g. for detailed questions in a questionnaire">
+					description = <"Ad hoc question to be used for example in templates as a base for detailed questions in a questionnaire">
 				>
 				["at0001"] = <
 					text = <"Question">
@@ -75,7 +75,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Fråga">
-					description = <"*Ad hoc question to be used for example in templates as a base e.g. for detailed questions in a questionnaire (en)">
+					description = <"Ad hoc-fråga som kan användas till exempel i mallar som bas för detaljerade frågor i ett frågeformulär">
 				>
 				["at0001"] = <
 					text = <"Fråga">
