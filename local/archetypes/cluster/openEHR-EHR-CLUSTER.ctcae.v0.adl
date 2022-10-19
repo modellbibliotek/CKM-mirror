@@ -88,7 +88,7 @@ MedDRA Hierarchy, https://www.meddra.org/how-to-use/basics/hierarchy">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1d7daf40635f27fb1c2ee42c3a2f04aa">
+		["MD5-CAM-1.0.1"] = <"f157703ba4e8b4b596c866f7e7ea6b33">
 		["build_uid"] = <"9ac99a39-c4cf-48aa-aa91-d7e80be4cc06">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -218,13 +218,13 @@ Identifierad som en MEDRA-term och motsvarande kod.">
 				["at0003"] = <
 					text = <"Allvarlighetsgrad">
 					description = <"Biverkningens svårighetsgrad.">
-					comment = <"*For each Grade, non-specific comments, presented within square brackets [] below, provide some general guidance about the severity for each grade. In practice when using this archetype, each grade will be represented by an ordinal number labelled with a specific CTCAE-based clinical description, appropriate for the selected term and will likely be either assigned in a template or sourced from an external knowledgebase or resource.
+					comment = <"För varje allvarlighetsgrad finns icke-specifika kommentarer nedan som allmän vägledning om svårighetsgraden inom hakparenteser []. I praktiken kommer allvarlighetsgrad när arketypen används att representeras av en specifik klinisk beskrivning, lämplig för den valda termen och kommer sannolikt att hämtas från en extern kunskapsbas eller resurs, eller specificeras i en template.
 
-Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic observations only; OR intervention not indicated.]
-2: Grade 2 [Moderate; OR minimal, local or non-invasive intervention indicated; OR limiting age-appropriate instrumental ADL.]
-3: Grade 3 [Severe or medically significant but not immediately life-threatening; OR hospitalization or prolongation of hospitalization indicated OR disabling; limiting self-care ADL.]
-4: Grade 4 [Life-threatening consequences OR urgent intervention indicated.]
-5: Grade 5 [Death related to AE.] (en)">
+1: Grad 1 [Mild; ELLER asymtomatiska eller milda symtom; ELLER endast kliniska eller diagnostiska observationer; ELLER intervention ej indikerad.]
+2: Grad 2 [Måttlig; ELLER minimal, lokal eller icke-invasiv intervention indikerad; ELLER begränsar av åldersanpassad instrumentell ADL.]
+3: Grad 3 [Svår eller medicinskt betydelsefull men inte omedelbart livshotande; ELLER sjukhusvistelse eller förlängning av sjukhusvistelse indikerat ELLER invalidiserande; begränsar egenvård enligt ADL.]
+4: Grad 4 [Livshotande konsekvenser ELLER brådskande ingripande behövs.]
+5: Grad 5 [Död relaterad till biverkning.]">
 				>
 				["at0009"] = <
 					text = <"CTCAE-version">
