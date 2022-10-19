@@ -79,14 +79,14 @@ In a template or at runtime populate the 'Grade' ordinal field with e.g. applica
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Common Terminology Criteria for Adverse Events (CTCAE), https://ctep.cancer.gov/protocoldevelopment/electronic_applications/ctc.htm
+CTCAE Version 5 content spreadsheet https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5.0.xlsx">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b4f8ad925d0e88314f1af227d80e52e0">
+		["MD5-CAM-1.0.1"] = <"918bc3e149f9d0e01d22e182f39684a1">
 		["build_uid"] = <"9ac99a39-c4cf-48aa-aa91-d7e80be4cc06">
 		["revision"] = <"0.0.1-alpha">
-		["references"] = <"Common Terminology Criteria for Adverse Events (CTCAE), https://ctep.cancer.gov/protocoldevelopment/electronic_applications/ctc.htm
-CTCAE Version 5 content spreadsheet https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5.0.xlsx">
 	>
 
 definition
@@ -126,7 +126,8 @@ ontology
 				["at0001"] = <
 					text = <"System Organ Class (SOC)">
 					description = <"The category of the 'Term' in the MedDRA hierarchy.">
-					comment = <"Identified as a MedDRA primary class - representing an anatomical or physiological system, aetiology or purpose.">
+					comment = <"Identified as a MedDRA primary class - representing an anatomical or physiological system, aetiology or purpose. Corresponds to the 'MedDRA SOC' column in the CTCAE spreadsheet.
+">
 				>
 				["at0002"] = <
 					text = <"Term">
@@ -159,7 +160,8 @@ Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic obser
 				["at0001"] = <
 					text = <"System Organ Class (SOC)">
 					description = <"Die Kategorie des \"Terms\" in der MedDRA-Hierarchie.">
-					comment = <"Identifiziert als eine MedDRA-Primärklasse - repräsentiert ein anatomisches oder physiologisches System, eine Ätiologie oder einen Zweck.">
+					comment = <"*Identified as a MedDRA primary class - representing an anatomical or physiological system, aetiology or purpose. Corresponds to the 'MedDRA SOC' column in the CTCAE spreadsheet.
+ (en)">
 				>
 				["at0002"] = <
 					text = <"Terme">
@@ -193,7 +195,8 @@ Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic obser
 				["at0001"] = <
 					text = <"Organklass (SOC)">
 					description = <"\"Termens\" kategori i MedDRA-hierarkn.">
-					comment = <"MedDRAs primära klass - representerar ett anatomiskt eller fysiologiskt system, etiologi eller syfte.">
+					comment = <"*Identified as a MedDRA primary class - representing an anatomical or physiological system, aetiology or purpose. Corresponds to the 'MedDRA SOC' column in the CTCAE spreadsheet.
+ (en)">
 				>
 				["at0002"] = <
 					text = <"Term">
