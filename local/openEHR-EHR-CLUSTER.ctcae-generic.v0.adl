@@ -90,13 +90,13 @@ MedDRA Hierarchy, https://www.meddra.org/how-to-use/basics/hierarchy">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8e8821baf85ca6b3c810680e33c97f01">
+		["MD5-CAM-1.0.1"] = <"4ed939c0a67370d3eb217bcbc717d88e">
 		["build_uid"] = <"9ac99a39-c4cf-48aa-aa91-d7e80be4cc06">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	CLUSTER[at0000.1] matches {    -- Common Terminology Criteria for Adverse Events (CTCAE)
+	CLUSTER[at0000.1] matches {    -- Common Terminology Criteria for Adverse Events (CTCAE) with generic grades
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- System Organ Class (SOC)
 				value matches {
@@ -122,12 +122,12 @@ definition
 					5|[local::at0.5]
 				}
 			}
-			ELEMENT[at0.6] occurrences matches {0..1} matches {    -- Description of grade
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- CTCAE version
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0009] occurrences matches {0..1} matches {    -- CTCAE version
+			ELEMENT[at0.6] occurrences matches {0..1} matches {    -- Description of grade
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -140,34 +140,8 @@ ontology
 	term_definitions = <
 		["en"] = <
 			items = <
-				["at0001"] = <
-					text = <"System Organ Class (SOC)">
-					description = <"The category of the 'Term' in the MedDRA hierarchy.">
-					comment = <"Identified as a MedDRA primary class - representing an anatomical or physiological system, aetiology or purpose. Corresponds to the 'MedDRA SOC' column in the CTCAE spreadsheet.
-">
-				>
-				["at0002"] = <
-					text = <"Term">
-					description = <"The name of the sign, symptom or disease observed.">
-					comment = <"Identified as a MEDRAterm and corresponding code.">
-				>
-				["at0003"] = <
-					text = <"Grade">
-					description = <"The severity of the Adverse event.">
-					comment = <"For each Grade, non-specific comments, presented within square brackets [] below, provide some general guidance about the severity for each grade. In practice when using this archetype, each grade will be represented by an ordinal number labelled with a specific CTCAE-based clinical description, appropriate for the selected term and will likely be either assigned in a template or sourced from an external knowledgebase or resource.
-
-Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic observations only; OR intervention not indicated.]
-2: Grade 2 [Moderate; OR minimal, local or non-invasive intervention indicated; OR limiting age-appropriate instrumental ADL.]
-3: Grade 3 [Severe or medically significant but not immediately life-threatening; OR hospitalization or prolongation of hospitalization indicated OR disabling; limiting self-care ADL.]
-4: Grade 4 [Life-threatening consequences OR urgent intervention indicated.]
-5: Grade 5 [Death related to AE.]">
-				>
-				["at0009"] = <
-					text = <"CTCAE version">
-					description = <"The version of the CTCAE terminology used.">
-				>
 				["at0000.1"] = <
-					text = <"Common Terminology Criteria for Adverse Events (CTCAE)">
+					text = <"Common Terminology Criteria for Adverse Events (CTCAE) with generic grades">
 					description = <"A framework for recording any unfavourable and unintended sign, symptom or disease temporally using the CTCAE terminology.">
 				>
 				["at0003.1"] = <
@@ -206,39 +180,42 @@ Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic obser
 					description = <"The textual description seen by the clinician when selecting'Grade'.">
 					comment = <"Use this optional field if needed e.g. for medicolegal reasons or for display in systems without built in CTCAE knowledge base support.">
 				>
-			>
-		>
-		["de"] = <
-			items = <
+				["at0000"] = <
+					text = <"Common Terminology Criteria for Adverse Events (CTCAE)">
+					description = <"A framework for recording any unfavourable and unintended sign, symptom or disease temporally using the CTCAE terminology.">
+				>
 				["at0001"] = <
 					text = <"System Organ Class (SOC)">
-					description = <"Die Kategorie des \"Terms\" in der MedDRA-Hierarchie.">
-					comment = <"*Identified as a MedDRA primary class - representing an anatomical or physiological system, aetiology or purpose. Corresponds to the 'MedDRA SOC' column in the CTCAE spreadsheet.
- (en)">
+					description = <"The category of the 'Term' in the MedDRA hierarchy.">
+					comment = <"Identified as a MedDRA primary class - representing an anatomical or physiological system, aetiology or purpose. Corresponds to the 'MedDRA SOC' column in the CTCAE spreadsheet.
+">
 				>
 				["at0002"] = <
-					text = <"Terme">
-					description = <"Der Name des beobachteten Zeichens, Symptoms oder der Krankheit.">
-					comment = <"Identifiziert als MEDRAterm und entsprechender Code.">
+					text = <"Term">
+					description = <"The name of the sign, symptom or disease observed.">
+					comment = <"Identified as a MEDRAterm and corresponding code.">
 				>
 				["at0003"] = <
-					text = <"Grad">
-					description = <"Der Schweregrad des unerwünschten Ereignisses.">
-					comment = <"*For each Grade, non-specific comments, presented within square brackets [] below, provide some general guidance about the severity for each grade. In practice when using this archetype, each grade will be represented by an ordinal number labelled with a specific CTCAE-based clinical description, appropriate for the selected term and will likely be either assigned in a template or sourced from an external knowledgebase or resource.
+					text = <"Grade">
+					description = <"The severity of the Adverse event.">
+					comment = <"For each Grade, non-specific comments, presented within square brackets [] below, provide some general guidance about the severity for each grade. In practice when using this archetype, each grade will be represented by an ordinal number labelled with a specific CTCAE-based clinical description, appropriate for the selected term and will likely be either assigned in a template or sourced from an external knowledgebase or resource.
 
 Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic observations only; OR intervention not indicated.]
 2: Grade 2 [Moderate; OR minimal, local or non-invasive intervention indicated; OR limiting age-appropriate instrumental ADL.]
 3: Grade 3 [Severe or medically significant but not immediately life-threatening; OR hospitalization or prolongation of hospitalization indicated OR disabling; limiting self-care ADL.]
 4: Grade 4 [Life-threatening consequences OR urgent intervention indicated.]
-5: Grade 5 [Death related to AE.] (en)">
+5: Grade 5 [Death related to AE.]">
 				>
 				["at0009"] = <
-					text = <"CTCAE Version">
-					description = <"Die verwendete Version der CTCAE-Terminologie.
-">
+					text = <"CTCAE version">
+					description = <"The version of the CTCAE terminology used.">
 				>
+			>
+		>
+		["de"] = <
+			items = <
 				["at0000.1"] = <
-					text = <"Common Terminology Criteria of Adverse Events (CTCAE)">
+					text = <"*Common Terminology Criteria for Adverse Events (CTCAE) with generic grades (en)">
 					description = <"Systematische Einteilung zur Erfassung aller unerwünschten und unerwarteten Ereignissen, Symptome oder Krankheiten unter Verwendung der CTCAE-Terminologie.">
 				>
 				["at0003.1"] = <
@@ -277,40 +254,43 @@ Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic obser
 					description = <"*The textual description seen by the clinician when selecting'Grade'. (en)">
 					comment = <"*Use this optional field if needed e.g. for medicolegal reasons or for display in systems without built in CTCAE knowledge base support. (en)">
 				>
+				["at0000"] = <
+					text = <"Common Terminology Criteria of Adverse Events (CTCAE)">
+					description = <"Systematische Einteilung zur Erfassung aller unerwünschten und unerwarteten Ereignissen, Symptome oder Krankheiten unter Verwendung der CTCAE-Terminologie.">
+				>
+				["at0001"] = <
+					text = <"System Organ Class (SOC)">
+					description = <"Die Kategorie des \"Terms\" in der MedDRA-Hierarchie.">
+					comment = <"*Identified as a MedDRA primary class - representing an anatomical or physiological system, aetiology or purpose. Corresponds to the 'MedDRA SOC' column in the CTCAE spreadsheet.
+ (en)">
+				>
+				["at0002"] = <
+					text = <"Terme">
+					description = <"Der Name des beobachteten Zeichens, Symptoms oder der Krankheit.">
+					comment = <"Identifiziert als MEDRAterm und entsprechender Code.">
+				>
+				["at0003"] = <
+					text = <"Grad">
+					description = <"Der Schweregrad des unerwünschten Ereignisses.">
+					comment = <"*For each Grade, non-specific comments, presented within square brackets [] below, provide some general guidance about the severity for each grade. In practice when using this archetype, each grade will be represented by an ordinal number labelled with a specific CTCAE-based clinical description, appropriate for the selected term and will likely be either assigned in a template or sourced from an external knowledgebase or resource.
+
+Grade 1 [Mild; OR asymptomatic or mild symptoms; OR clinical or diagnostic observations only; OR intervention not indicated.]
+2: Grade 2 [Moderate; OR minimal, local or non-invasive intervention indicated; OR limiting age-appropriate instrumental ADL.]
+3: Grade 3 [Severe or medically significant but not immediately life-threatening; OR hospitalization or prolongation of hospitalization indicated OR disabling; limiting self-care ADL.]
+4: Grade 4 [Life-threatening consequences OR urgent intervention indicated.]
+5: Grade 5 [Death related to AE.] (en)">
+				>
+				["at0009"] = <
+					text = <"CTCAE Version">
+					description = <"Die verwendete Version der CTCAE-Terminologie.
+">
+				>
 			>
 		>
 		["sv"] = <
 			items = <
-				["at0001"] = <
-					text = <"Organklass (SOC)">
-					description = <"\"Termens\" kategori i MedDRA-hierarkn.">
-					comment = <"MedDRAs primära klass - representerar ett anatomiskt eller fysiologiskt system, etiologi eller syfte.
-
-Motsvarar kolumnen 'MedDRA SOC' i CTCAE-kalkylarket.">
-				>
-				["at0002"] = <
-					text = <"Term">
-					description = <"Namnet på tecknet, symtomet eller sjukdomen som observerats.">
-					comment = <"
-Identifierad som en MEDRA-term och motsvarande kod.">
-				>
-				["at0003"] = <
-					text = <"Allvarlighetsgrad">
-					description = <"Biverkningens svårighetsgrad.">
-					comment = <"För varje allvarlighetsgrad finns icke-specifika kommentarer nedan som allmän vägledning om svårighetsgraden inom hakparenteser []. I praktiken kommer allvarlighetsgrad när arketypen används att representeras av en specifik klinisk beskrivning, lämplig för den valda termen och kommer sannolikt att hämtas från en extern kunskapsbas eller resurs, eller specificeras i en template.
-
-1: Grad 1 [Mild; ELLER asymtomatiska eller milda symtom; ELLER endast kliniska eller diagnostiska observationer; ELLER intervention ej indikerad.]
-2: Grad 2 [Måttlig; ELLER minimal, lokal eller icke-invasiv intervention indikerad; ELLER begränsar av åldersanpassad instrumentell ADL.]
-3: Grad 3 [Svår eller medicinskt betydelsefull men inte omedelbart livshotande; ELLER sjukhusvistelse eller förlängning av sjukhusvistelse indikerat ELLER invalidiserande; begränsar egenvård enligt ADL.]
-4: Grad 4 [Livshotande konsekvenser ELLER brådskande ingripande behövs.]
-5: Grad 5 [Död relaterad till biverkning.]">
-				>
-				["at0009"] = <
-					text = <"CTCAE-version">
-					description = <"Den version av CTCAE-terminologin som använts.">
-				>
 				["at0000.1"] = <
-					text = <"Common Terminology Criteria for Adverse Events (CTCAE)">
+					text = <"Common Terminology Criteria for Adverse Events (CTCAE) med generella allvarlighetsgrader">
 					description = <"Ett ramverk för att med hjälp av CTCAE-terminologin registrera eventuella biverkningar eller ogynnsamma och oavsiktliga symptom eller sjukdomar.">
 				>
 				["at0003.1"] = <
@@ -348,6 +328,38 @@ Identifierad som en MEDRA-term och motsvarande kod.">
 					text = <"Beskrivning av allvarlighetsgrad">
 					description = <"Beskrivningen klinikern såg då \"Allvarlighetsgrad\" valdes.">
 					comment = <"Använd detta fält om det behövs av juridiska eftergranskningsskäl eller för att underlätta visning i system som saknar inbyggt CTCAE-specifikt stöd.">
+				>
+				["at0000"] = <
+					text = <"Common Terminology Criteria for Adverse Events (CTCAE)">
+					description = <"Ett ramverk för att med hjälp av CTCAE-terminologin registrera eventuella biverkningar eller ogynnsamma och oavsiktliga symptom eller sjukdomar.">
+				>
+				["at0001"] = <
+					text = <"Organklass (SOC)">
+					description = <"\"Termens\" kategori i MedDRA-hierarkn.">
+					comment = <"MedDRAs primära klass - representerar ett anatomiskt eller fysiologiskt system, etiologi eller syfte.
+
+Motsvarar kolumnen 'MedDRA SOC' i CTCAE-kalkylarket.">
+				>
+				["at0002"] = <
+					text = <"Term">
+					description = <"Namnet på tecknet, symtomet eller sjukdomen som observerats.">
+					comment = <"
+Identifierad som en MEDRA-term och motsvarande kod.">
+				>
+				["at0003"] = <
+					text = <"Allvarlighetsgrad">
+					description = <"Biverkningens svårighetsgrad.">
+					comment = <"För varje allvarlighetsgrad finns icke-specifika kommentarer nedan som allmän vägledning om svårighetsgraden inom hakparenteser []. I praktiken kommer allvarlighetsgrad när arketypen används att representeras av en specifik klinisk beskrivning, lämplig för den valda termen och kommer sannolikt att hämtas från en extern kunskapsbas eller resurs, eller specificeras i en template.
+
+1: Grad 1 [Mild; ELLER asymtomatiska eller milda symtom; ELLER endast kliniska eller diagnostiska observationer; ELLER intervention ej indikerad.]
+2: Grad 2 [Måttlig; ELLER minimal, lokal eller icke-invasiv intervention indikerad; ELLER begränsar av åldersanpassad instrumentell ADL.]
+3: Grad 3 [Svår eller medicinskt betydelsefull men inte omedelbart livshotande; ELLER sjukhusvistelse eller förlängning av sjukhusvistelse indikerat ELLER invalidiserande; begränsar egenvård enligt ADL.]
+4: Grad 4 [Livshotande konsekvenser ELLER brådskande ingripande behövs.]
+5: Grad 5 [Död relaterad till biverkning.]">
+				>
+				["at0009"] = <
+					text = <"CTCAE-version">
+					description = <"Den version av CTCAE-terminologin som använts.">
 				>
 			>
 		>
