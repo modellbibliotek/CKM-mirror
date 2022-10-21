@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "1.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "afd72699e6a4f5dcbfbbada14806105e",
+      "MD5-CAM-1.0.1" : "fb2630ff163d089eef6c3a8f4c14e46a",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -622,20 +622,20 @@
           "at0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "Fatigue relieved by rest",
-            "code" : "at0.1",
-            "description" : ""
+            "description" : "Fatigue relieved by rest [desc]",
+            "code" : "at0.1"
           },
           "at0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "Fatigue not relieved by rest; limiting instrumental ADL",
-            "code" : "at0.2",
-            "description" : ""
+            "description" : "Fatigue not relieved by rest; limiting instrumental ADL",
+            "code" : "at0.2"
           },
           "at0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "Fatigue not relieved by rest, limiting self care ADL",
-            "code" : "at0.3",
-            "description" : ""
+            "description" : "Fatigue not relieved by rest, limiting self care ADL",
+            "code" : "at0.3"
           }
         },
         "de" : {
