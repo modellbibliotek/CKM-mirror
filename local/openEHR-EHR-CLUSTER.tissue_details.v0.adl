@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,6 +23,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -27,7 +38,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
-		["MD5-CAM-1.0.1"] = <"49597fd0667011c178a186bc2908a2a6">
+		["MD5-CAM-1.0.1"] = <"33f33c1175abce15d7de09105de46619">
 		["build_uid"] = <"8a2d59a7-9c56-3783-b066-6ba81ce87375">
 	>
 
@@ -53,6 +64,18 @@ ontology
 				>
 				["at0001"] = <
 					text = <"Sample includes">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Vävnadsdetaljer">
+					description = <"*Tissue details (en)">
+				>
+				["at0001"] = <
+					text = <"Provet inkluderar">
 					description = <"">
 				>
 			>
