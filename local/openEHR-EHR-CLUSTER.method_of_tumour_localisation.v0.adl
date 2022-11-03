@@ -16,10 +16,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2022-11-03">
 		["name"] = <"Erik Sundvall">
 		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
 		["email"] = <"erik.sundvall@regionstockholm.se">
-		["date"] = <"2022-11-03">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -37,8 +37,9 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b3afe2a40a55aa06fb1da8fb3f247ee2">
+		["MD5-CAM-1.0.1"] = <"dfd1c7bb83f9321c98ed93eb6e725406">
 		["build_uid"] = <"df20794f-aad6-3106-bfd5-8210fefb34d4">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
 
 definition
@@ -49,10 +50,12 @@ definition
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0002,    -- Wire/hook
-							at0003,    -- I-125 seed
-							at0004,    -- Metal probe
-							at0005]    -- Other
+							at0022,    -- Wire/hook
+							at0023,    -- I-125 seed
+							at0024,    -- Coil
+							at0025,    -- Other
+							at0026,    -- None
+							at0027]    -- Metal probe [?]
 						}
 					}
 				}
@@ -62,27 +65,22 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			CLUSTER[at0006] occurrences matches {0..1} matches {    -- Seed details
+			CLUSTER[at0006] occurrences matches {0..1} matches {    -- Number of seeds/coils
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Number of seeds inserted
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- inserted
 						value matches {
 							DV_COUNT matches {
 								magnitude matches {|>=0|}
 							}
 						}
 					}
-					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Number of seeds retrieved
+					ELEMENT[at0028] occurrences matches {0..1} matches {    -- retrieved
 						value matches {
 							DV_COUNT matches {
 								magnitude matches {|>=0|}
 							}
 						}
 					}
-				}
-			}
-			ELEMENT[at0011] occurrences matches {0..1} matches {    -- Wire/hook details
-				value matches {
-					DV_CODED_TEXT matches {*}
 				}
 			}
 		}
@@ -100,32 +98,12 @@ ontology
 					text = <"Method">
 					description = <"">
 				>
-				["at0002"] = <
-					text = <"Wire/hook">
-					description = <"">
-				>
-				["at0003"] = <
-					text = <"I-125 seed">
-					description = <"">
-				>
-				["at0004"] = <
-					text = <"Metal probe">
-					description = <"">
-				>
-				["at0005"] = <
-					text = <"Other">
-					description = <"">
-				>
 				["at0006"] = <
-					text = <"Seed details">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"Number of seeds inserted">
+					text = <"Number of seeds/coils">
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"Number of seeds retrieved">
+					text = <"inserted">
 					description = <"">
 				>
 				["at0009"] = <
@@ -133,8 +111,32 @@ ontology
 					description = <"Further details not captured elewhere">
 					comment = <"Important to include it \"other\" was chosen as \"Method\"">
 				>
-				["at0011"] = <
-					text = <"Wire/hook details">
+				["at0022"] = <
+					text = <"Wire/hook">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"I-125 seed">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Coil">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Other">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"None">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Metal probe [?]">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"retrieved">
 					description = <"">
 				>
 			>
@@ -149,32 +151,12 @@ ontology
 					text = <"Metod">
 					description = <"">
 				>
-				["at0002"] = <
-					text = <"*Wire/hook (en)">
-					description = <"">
-				>
-				["at0003"] = <
-					text = <"*I-125 seed (en)">
-					description = <"">
-				>
-				["at0004"] = <
-					text = <"*Metal probe (en)">
-					description = <"">
-				>
-				["at0005"] = <
-					text = <"*Other (en)">
-					description = <"">
-				>
 				["at0006"] = <
-					text = <"*Seed details (en)">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"*Number of seeds inserted (en)">
+					text = <"Antal korn/coil">
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"*Number of seeds retrieved (en)">
+					text = <"inlagda">
 					description = <"">
 				>
 				["at0009"] = <
@@ -182,8 +164,32 @@ ontology
 					description = <"*Further details not captured elewhere (en)">
 					comment = <"*Important to include it \"other\" was chosen as \"Method\" (en)">
 				>
-				["at0011"] = <
-					text = <"*Wire/hook details (en)">
+				["at0022"] = <
+					text = <"metalltråd [*Wire/hook (en)]">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"I-125 korn">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"coil">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"annat">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"ingen">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"*Metal probe [?] (en)">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"hittade">
 					description = <"">
 				>
 			>
