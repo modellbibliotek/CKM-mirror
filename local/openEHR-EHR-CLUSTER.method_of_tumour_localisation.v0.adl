@@ -1,0 +1,131 @@
+archetype (adl_version=1.4; uid=b66bca34-21da-4b3c-b319-6be0b11379ad)
+	openEHR-EHR-CLUSTER.method_of_tumour_localisation.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Erik Sundvall">
+		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
+		["email"] = <"erik.sundvall@regionstockholm.se">
+		["date"] = <"2022-11-03">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"adaa67bcbd851a2d5af0ca2c1d0c3ab8">
+		["build_uid"] = <"df20794f-aad6-3106-bfd5-8210fefb34d4">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Method of tumour localisation
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Method
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Wire/hook
+							at0003,    -- I-125 seed
+							at0004,    -- Metal probe
+							at0005]    -- Other
+						}
+					}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Description
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			CLUSTER[at0006] occurrences matches {0..1} matches {    -- Seed details
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Number of seeds inserted
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|>=0|}
+							}
+						}
+					}
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Number of seeds retrieved
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|>=0|}
+							}
+						}
+					}
+				}
+			}
+			ELEMENT[at0011] occurrences matches {0..1} matches {    -- Wire/hook details
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Method of tumour localisation">
+					description = <"Method of tumour localisation">
+				>
+				["at0001"] = <
+					text = <"Method">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Wire/hook">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"I-125 seed">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Metal probe">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Other">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Seed details">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Number of seeds inserted">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Number of seeds retrieved">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Description">
+					description = <"Further details not captured elewhere">
+					comment = <"Important to include it \"other\" was chosen as \"Method\"">
+				>
+				["at0011"] = <
+					text = <"Wire/hook details">
+					description = <"">
+				>
+			>
+		>
+	>
