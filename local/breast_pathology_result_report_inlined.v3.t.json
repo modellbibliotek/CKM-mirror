@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.7",
+      "sem_ver" : "3.0.0-alpha.8",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "74557d24596b78bcfc8eeb4c0faa11ee",
+      "MD5-CAM-1.0.1" : "3df6999a6f8c4b8694dd7b8471d7e9f8",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -4374,6 +4374,14 @@
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "76752008",
                     "value" : "Bröstvävnad"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "91532001",
+                    "value" : "bröstkörtel hos kvinna"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "67770001",
+                    "value" : "bröstkörtel hos man"
                   } ]
                 } ]
               } ],
@@ -7336,13 +7344,6 @@
           }
         },
         "sv" : {
-          "at0041.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0041.1",
-            "text" : "Analyserbarhet",
-            "description" : "Information om huruvida provmaterialet var av tillräcklig kvalitet för analys.",
-            "comment" : "Detta element är avsett för att registrera ett beslut om huruvida provmaterialet var tillräckligt bra för analys och om analysen har genomförts. Kodning av analysbarheten till en terminologi är att föredra där det är möjligt."
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -16968,6 +16969,9 @@
         "sv" : {
           "/items[at0027]" : {
             "fhir_mapping" : "Specimen.collection.quantity"
+          },
+          "/items[at0029.1]" : {
+            "TODO" : "koppla urval av vävnadstyper via terminologiserver"
           }
         }
       }
@@ -16996,33 +17000,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "http://snomed.info/id/"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "http://snomed.info/id/" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "http://snomed.info/id/",
-                    "code" : "1163303005",
-                    "value" : "Sentinel lymph node (portvaktslymfknuta)"
-                  }, {
-                    "terminologyId" : "http://snomed.info/id/",
-                    "code" : "38000004",
-                    "value" : "Lymfa"
-                  }, {
-                    "terminologyId" : "http://snomed.info/id/",
-                    "code" : "76752008",
-                    "value" : "Bröstvävnad"
-                  } ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
