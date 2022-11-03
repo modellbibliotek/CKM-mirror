@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.4",
+      "sem_ver" : "3.0.0-alpha.5",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "7da12715a157c6d168ea92fcfa155c7b",
+      "MD5-CAM-1.0.1" : "26391bb24af3dd6beae18ac21d79df54",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -3448,7 +3448,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Provmaterialsmätningar",
+            "text" : "Preparatstorlek",
             "description" : "Måtten på ett prov (provmaterial)"
           },
           "at0042.1" : {
@@ -4851,7 +4851,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Makroskopisk information om Provmaterial",
+            "text" : "Bröstvävnad",
             "description" : "Ett fysiskt prov taget från, eller relaterat till, en individ i syfte att utföra en bedömning, undersökning eller analys.",
             "comment" : "Exempelvis vävnad eller kroppsvätska."
           },
@@ -8784,6 +8784,13 @@
             "code" : "at0001.1",
             "text" : "mamill",
             "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Mamill",
+            "description" : "*Tissue details (en)",
+            "comment" : "*Repeat this cluster for each described tissue type (en)"
           }
         }
       },
@@ -12867,7 +12874,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Makroskopisk information om Provmaterial (2)",
+            "text" : "Lymfnod(er)",
             "description" : "Ett fysiskt prov taget från, eller relaterat till, en individ i syfte att utföra en bedömning, undersökning eller analys.",
             "comment" : "Exempelvis vävnad eller kroppsvätska."
           },
@@ -17594,7 +17601,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Makroskopisk information om Provmaterial (3)",
+            "text" : "Övrig vävnad",
             "description" : "Ett fysiskt prov taget från, eller relaterat till, en individ i syfte att utföra en bedömning, undersökning eller analys.",
             "comment" : "Exempelvis vävnad eller kroppsvätska."
           },
@@ -19928,6 +19935,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.70",
             "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Preparatstrolek orienterat",
+            "description" : "Måtten på ett prov (provmaterial)"
           }
         }
       },
@@ -20709,8 +20722,8 @@
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Vävnadsdetaljer (4)",
+            "code" : "at0000.1",
+            "text" : "Hud",
             "description" : "*Tissue details (en)",
             "comment" : "*Repeat this cluster for each described tissue type (en)"
           }
@@ -20845,6 +20858,26 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -20884,8 +20917,8 @@
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Vävnadsdetaljer (3)",
+            "code" : "at0000.1",
+            "text" : "Muskel",
             "description" : "*Tissue details (en)",
             "comment" : "*Repeat this cluster for each described tissue type (en)"
           }
@@ -21020,6 +21053,59 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "http://snomed.info/id/{sctid}"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "http://snomed.info/id/{sctid}" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "http://snomed.info/id/{sctid}",
+                    "code" : "TODO-fascia-1",
+                    "value" : "rörlig och intakt"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/{sctid}",
+                    "code" : "TODO-fascia-2",
+                    "value" : "rörlig, dock icke intakt"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/{sctid}",
+                    "code" : "TODO-fascia-3",
+                    "value" : "ej fritt rörlig, dock intakt"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/{sctid}",
+                    "code" : "TODO-fascia-4",
+                    "value" : "ej fritt rörlig, icke intakt"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/{sctid}",
+                    "code" : "TODO-fascia-5",
+                    "value" : "ej applicerbart"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -21059,8 +21145,8 @@
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Vävnadsdetaljer (5)",
+            "code" : "at0000.1",
+            "text" : "Fascia",
             "description" : "*Tissue details (en)",
             "comment" : "*Repeat this cluster for each described tissue type (en)"
           }
