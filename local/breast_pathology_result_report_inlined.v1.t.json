@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.4.0-alpha.3",
+      "sem_ver" : "1.4.0-alpha.4",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "05c8451ce6ba5f5e337345ac8ed25d86",
+      "MD5-CAM-1.0.1" : "592e817c8d8a52e632e05f1febd19f4a",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -4719,6 +4719,15 @@
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-tissue_details-002.v0",
           "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0083.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-method_of_tumour_localisation-001.v0",
+          "referenceType" : "archetypeOverlay"
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -8726,9 +8735,29 @@
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
-            "text" : "mamill",
+            "text" : "*mamill",
             "description" : ""
           },
+          "at0001.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.2",
+            "text" : "*hud",
+            "description" : ""
+          },
+          "at0001.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.3",
+            "text" : "*muskel",
+            "description" : ""
+          },
+          "at0001.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.4",
+            "text" : "*fascia",
+            "description" : ""
+          }
+        },
+        "sv" : {
           "at0001.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.2",
@@ -8746,25 +8775,11 @@
             "code" : "at0001.4",
             "text" : "fascia",
             "description" : ""
-          }
-        },
-        "sv" : {
-          "at0001.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Provet inkluderar (2)",
-            "description" : ""
           },
-          "at0001.3" : {
+          "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Provet inkluderar (3)",
-            "description" : ""
-          },
-          "at0001.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Provet inkluderar (4)",
+            "code" : "at0001.1",
+            "text" : "mamill",
             "description" : ""
           }
         }
@@ -17764,6 +17779,68 @@
       "author" : {
         "name" : "Mona Saleh"
       },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "f22a7e65-fef2-40c9-8e5d-1401f6c46eaf",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "b3afe2a40a55aa06fb1da8fb3f247ee2"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.method_of_tumour_localisation.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-method_of_tumour_localisation-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "sv" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "df20794f-aad6-3106-bfd5-8210fefb34d4",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : { },
       "otherDetails" : { }
     } ]
   } ],
