@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.6",
+      "sem_ver" : "3.0.0-alpha.7",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "007ba490db531c5907470136022a49c1",
+      "MD5-CAM-1.0.1" : "74557d24596b78bcfc8eeb4c0faa11ee",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -4137,7 +4137,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F7B76EAD2EEC5F532AD6FB9414C5AC58"
+        "PARENT:MD5-CAM-1.0.1" : "5a54ddbb6c64d1f5e5307d2c6f7ef444"
       },
       "details" : {
         "de" : {
@@ -6778,7 +6778,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F7B76EAD2EEC5F532AD6FB9414C5AC58"
+        "PARENT:MD5-CAM-1.0.1" : "5a54ddbb6c64d1f5e5307d2c6f7ef444"
       },
       "details" : {
         "de" : {
@@ -8644,7 +8644,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1b7de79402383caba5550ca3412159b4"
+        "PARENT:MD5-CAM-1.0.1" : "21b015248673e56d27a6b745d07cc764"
       },
       "details" : {
         "sv" : {
@@ -12226,7 +12226,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F7B76EAD2EEC5F532AD6FB9414C5AC58"
+        "PARENT:MD5-CAM-1.0.1" : "5a54ddbb6c64d1f5e5307d2c6f7ef444"
       },
       "details" : {
         "de" : {
@@ -16766,171 +16766,6 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "8d0700c2-c5ed-49be-aadc-f145635cc683",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1b7de79402383caba5550ca3412159b4"
-      },
-      "details" : {
-        "sv" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "sv"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "keywords" : [ ],
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.tissue_details.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-tissue_details-003.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..1",
-          "nodeId" : "at0001.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..1",
-          "nodeId" : "at0001.2",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..1",
-          "nodeId" : "at0001.3",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Tissue details boolean",
-            "description" : "Tissue details"
-          },
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "mamill",
-            "description" : ""
-          },
-          "at0001.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.2",
-            "text" : "hud",
-            "description" : ""
-          },
-          "at0001.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.3",
-            "text" : "muskel",
-            "description" : ""
-          }
-        },
-        "sv" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "8a2d59a7-9c56-3783-b066-6ba81ce87375",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : { },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
     "uid" : "4887ad34-f22c-44b6-bf53-aa1b8ad951a4",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
@@ -16940,7 +16775,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F7B76EAD2EEC5F532AD6FB9414C5AC58"
+        "PARENT:MD5-CAM-1.0.1" : "5a54ddbb6c64d1f5e5307d2c6f7ef444"
       },
       "details" : {
         "de" : {
@@ -17502,15 +17337,6 @@
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-specimen_measurements-003.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
-          "nodeId" : "at0083.2",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-tissue_details-003.v0",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -20689,7 +20515,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1b7de79402383caba5550ca3412159b4"
+        "PARENT:MD5-CAM-1.0.1" : "21b015248673e56d27a6b745d07cc764"
       },
       "details" : {
         "sv" : {
@@ -20909,7 +20735,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1b7de79402383caba5550ca3412159b4"
+        "PARENT:MD5-CAM-1.0.1" : "21b015248673e56d27a6b745d07cc764"
       },
       "details" : {
         "sv" : {
@@ -21091,7 +20917,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1b7de79402383caba5550ca3412159b4"
+        "PARENT:MD5-CAM-1.0.1" : "21b015248673e56d27a6b745d07cc764"
       },
       "details" : {
         "sv" : {
