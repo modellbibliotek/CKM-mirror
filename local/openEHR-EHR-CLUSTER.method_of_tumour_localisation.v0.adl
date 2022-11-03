@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,6 +23,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -26,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"adaa67bcbd851a2d5af0ca2c1d0c3ab8">
+		["MD5-CAM-1.0.1"] = <"b3afe2a40a55aa06fb1da8fb3f247ee2">
 		["build_uid"] = <"df20794f-aad6-3106-bfd5-8210fefb34d4">
 	>
 
@@ -124,6 +135,55 @@ ontology
 				>
 				["at0011"] = <
 					text = <"Wire/hook details">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Tumörlokaliseringsmetod">
+					description = <"*Method of tumour localisation (en)">
+				>
+				["at0001"] = <
+					text = <"Metod">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"*Wire/hook (en)">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"*I-125 seed (en)">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"*Metal probe (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*Other (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Seed details (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Number of seeds inserted (en)">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"*Number of seeds retrieved (en)">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Beskrivning">
+					description = <"*Further details not captured elewhere (en)">
+					comment = <"*Important to include it \"other\" was chosen as \"Method\" (en)">
+				>
+				["at0011"] = <
+					text = <"*Wire/hook details (en)">
 					description = <"">
 				>
 			>
