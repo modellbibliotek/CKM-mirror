@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e338e5e7885b1f5ff8b21490ec292ac8">
+		["MD5-CAM-1.0.1"] = <"1b7de79402383caba5550ca3412159b4">
 		["build_uid"] = <"8a2d59a7-9c56-3783-b066-6ba81ce87375">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -53,6 +53,11 @@ definition
 			ELEMENT[at0001] occurrences matches {0..*} matches {    -- Included in sample?
 				value matches {
 					DV_CODED_TEXT matches {*}
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Normal?
+				value matches {
 					DV_BOOLEAN matches {*}
 				}
 			}
@@ -81,11 +86,16 @@ ontology
 				["at0002"] = <
 					text = <"Description">
 					description = <"">
+					comment = <"E.g. used to describe non-normal findings">
 				>
 				["at0003"] = <
 					text = <"Tissue type">
 					description = <"">
 					comment = <"Likely pre-selected in template, not user input">
+				>
+				["at0004"] = <
+					text = <"Normal?">
+					description = <"">
 				>
 			>
 		>
@@ -103,11 +113,16 @@ ontology
 				["at0002"] = <
 					text = <"beskrivning">
 					description = <"">
+					comment = <"*E.g. used to describe non-normal findings (en)">
 				>
 				["at0003"] = <
 					text = <"vävnadstyp">
 					description = <"">
 					comment = <"*Likely pre-selected in template, not user input (en)">
+				>
+				["at0004"] = <
+					text = <"*Normal? (en)">
+					description = <"">
 				>
 			>
 		>
