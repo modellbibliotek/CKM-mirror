@@ -24,7 +24,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "3.0.0-alpha.9",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "29b913915e553fd7637b379b80bfb758",
+      "MD5-CAM-1.0.1" : "27991a83e23647f2b17b0fffa958bf57",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -4450,9 +4450,64 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0008.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "392021009",
+                    "value" : "excision [Lumpectomy of breast (procedure)]"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "237370008",
+                    "value" : "sektor [Segmentectomy of breast (procedure)]"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "172043006",
+                    "value" : "|Simple mastectomy (procedure)|"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "428564008",
+                    "value" : "|Skin sparing mastectomy (procedure)|"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "70183006",
+                    "value" : "|Subcutaneous mastectomy (procedure)|"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "406505007",
+                    "value" : "|Modified radical mastectomy (procedure)|"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "384723003",
+                    "value" : "|Radical mastectomy (procedure)|"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "1231734007",
+                    "value" : "|Excision of breast (procedure)|"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -5349,7 +5404,7 @@
                     }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..1",
+                      "occurrences" : "0..*",
                       "nodeId" : "at0065.2",
                       "attributes" : [ ],
                       "attributeTuples" : [ ],
@@ -5358,7 +5413,7 @@
                     }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..1",
+                      "occurrences" : "0..*",
                       "nodeId" : "at0065.3",
                       "attributes" : [ ],
                       "attributeTuples" : [ ],
@@ -8799,12 +8854,6 @@
           }
         },
         "sv" : {
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "inkluderat i provet/preparatet?",
-            "description" : ""
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
@@ -18159,12 +18208,6 @@
           }
         },
         "sv" : {
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "inkluderat i provet/preparatet?",
-            "description" : ""
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
@@ -18341,12 +18384,6 @@
           }
         },
         "sv" : {
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "inkluderat i provet/preparatet?",
-            "description" : ""
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
@@ -18557,12 +18594,6 @@
           }
         },
         "sv" : {
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "inkluderat i provet/preparatet?",
-            "description" : ""
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
