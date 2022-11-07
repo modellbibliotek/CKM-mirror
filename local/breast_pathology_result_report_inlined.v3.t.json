@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.10",
+      "sem_ver" : "3.0.0-alpha.11",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "2b13fefe48f5c6e6bbc6cc9fc505807b",
+      "MD5-CAM-1.0.1" : "faa7bcc395c93e9d7b960f69131fa8bd",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -9097,7 +9097,11 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "68171009",
-                    "value" : "Axillary lymph node"
+                    "value" : "axillär lymfknuta (nivå 1 eller 2)"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "16051009",
+                    "value" : "apikal axillär lymfknuta (nivå 3)"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "245340002",
@@ -10644,7 +10648,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.96" ],
+                  "constraint" : [ "ac0.142" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -11406,8 +11410,8 @@
           "at0042.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0042",
-            "text" : "*Length (en)",
-            "description" : "*The measured length of the longest aspect of a specimen (eg longest edge of a rectangular specimen) or the measured length of a specimen along its longitudinal axis (eg 2cm of bowel, measured along the axis of the bowel, and even if the measured length is shorter than the diameter of the bowel itself). (en)"
+            "text" : "*Diameter (en)",
+            "description" : "*The measured length of the specimen from edge to edge, usually of an approximately round or oval specimen, passing through its centre. (en)"
           },
           "at0042.2" : {
             "@type" : "ARCHETYPE_TERM",
@@ -11421,12 +11425,6 @@
             "text" : "*Depth (en)",
             "description" : "*The measured length of the third aspect of a specimen, usually perpendicular to the length and width or measurement of the vertical aspect of a specimen from the surface to the base. Also known as thickness. (en)"
           },
-          "ac0.96" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.96",
-            "description" : ""
-          },
           "ac0.114" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -11438,14 +11436,20 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.116",
             "description" : ""
+          },
+          "ac0.142" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.142",
+            "description" : ""
           }
         },
         "en" : {
           "at0042.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0042",
-            "text" : "Length",
-            "description" : "The measured length of the longest aspect of a specimen (e.g. longest edge of a rectangular specimen) or the measured length of a specimen along its longitudinal axis (e.g. 2cm of bowel, measured along the axis of the bowel, and even if the measured length is shorter than the diameter of the bowel itself)."
+            "text" : "Diameter",
+            "description" : "The measured length of the specimen from edge to edge, usually of an approximately round or oval specimen, passing through its centre."
           },
           "at0042.2" : {
             "@type" : "ARCHETYPE_TERM",
@@ -11459,12 +11463,6 @@
             "text" : "Depth",
             "description" : "The measured length of the third aspect of a specimen, usually perpendicular to the length and width or measurement of the vertical aspect of a specimen from the surface to the base. Also known as thickness."
           },
-          "ac0.96" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.96",
-            "description" : ""
-          },
           "ac0.114" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -11476,14 +11474,20 @@
             "text" : "(Synthesized)",
             "code" : "ac0.116",
             "description" : ""
+          },
+          "ac0.142" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.142",
+            "description" : ""
           }
         },
         "de" : {
           "at0042.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0042",
-            "text" : "Länge",
-            "description" : "Die gemessene Länge der längsten Seite einer Probe (z. B. längste Kante einer rechteckigen Probe) oder die gemessene Länge einer Probe entlang ihrer Längsachse (z. B. 2 cm Darm, gemessen entlang der Darmachse, und selbst wenn die gemessene Länge kürzer ist als der Durchmesser des Darms selbst)."
+            "text" : "Durchmesser",
+            "description" : "Gemessener Abstand einer geraden Linie von Seite zu Seite eines annähernd runden oder ovalen Probe, die durch Mittelpunkt der Probe verläuft."
           },
           "at0042.2" : {
             "@type" : "ARCHETYPE_TERM",
@@ -11497,12 +11501,6 @@
             "text" : "Tiefe",
             "description" : "Die gemessene Länge des dritten Aspekts einer Probe, normalerweise senkrecht zur Länge und Breite oder Messung der vertikalen Seite einer Probe von der Oberfläche bis zur Basis. Auch bekannt als Dicke."
           },
-          "ac0.96" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.96",
-            "description" : ""
-          },
           "ac0.114" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -11514,14 +11512,20 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.116",
             "description" : ""
+          },
+          "ac0.142" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.142",
+            "description" : ""
           }
         },
         "nb" : {
           "at0042.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0042",
-            "text" : "Lengde",
-            "description" : "Den målte lengden av den lengste aspektet på prøvematerialet (f.eks. avstanden til den lengste enden av 3 kanter) eller den målte lengden til et prøvemateriale langs dens lengdeakse (f.eks. 2 cm av magesekken, målt langs magesekkens akse selv om den målte lengden er kortere enn diameteren på selve tarmen)."
+            "text" : "Diameter",
+            "description" : "Den målte lengden av en prøve i rett linje fra side til side gjennom midten av en tilnærmet rund eller oval prøve."
           },
           "at0042.2" : {
             "@type" : "ARCHETYPE_TERM",
@@ -11535,12 +11539,6 @@
             "text" : "Dybde",
             "description" : "Det målte tredje aspektet til et prøvemateriale, vanligvis vinkelrett på lengden og bredden, eller lengden til det vertikale aspektet av en prøve - fra overflaten til basen. Synonymt med tykkelse."
           },
-          "ac0.96" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.96",
-            "description" : ""
-          },
           "ac0.114" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -11551,6 +11549,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.116",
+            "description" : ""
+          },
+          "ac0.142" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.142",
             "description" : ""
           }
         },
@@ -11564,8 +11568,8 @@
           "at0042.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0042",
-            "text" : "Längd",
-            "description" : "Den uppmätta längden av den längsta delen av ett prov (t.ex. längsta kanten av ett rektangulärt prov) eller den uppmätta längden av ett prov längs dess längsgående axel (t.ex. 2 cm av tarmen, mätt längs tarmens axel, och även om den uppmätta längden är kortare än själva tarmens diameter)."
+            "text" : "Diameter",
+            "description" : "Den uppmätta längden av provet från kant till kant, vanligtvis av ett ungefärligt runt eller ovalt exemplar, som passerar genom dess centrum."
           },
           "at0042.2" : {
             "@type" : "ARCHETYPE_TERM",
@@ -11579,12 +11583,6 @@
             "text" : "Tjocklek (djup)",
             "description" : "Den uppmätta längden av den tredje ledden av ett prov, vanligtvis vinkelrät mot längden och bredden, eller mätningen av den vertikala aspekten av ett prov från ytan till basen. Kallas ibland djup och ibland tjocklek."
           },
-          "ac0.96" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.96",
-            "description" : ""
-          },
           "ac0.114" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -11595,6 +11593,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.116",
+            "description" : ""
+          },
+          "ac0.142" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.142",
             "description" : ""
           }
         }
@@ -12186,6 +12190,136 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.116",
           "members" : [ "at0053" ]
+        },
+        "ac0.117" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.117",
+          "members" : [ "at0049", "at0052" ]
+        },
+        "ac0.118" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.118",
+          "members" : [ "at0049", "at0052" ]
+        },
+        "ac0.119" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.119",
+          "members" : [ "at0052" ]
+        },
+        "ac0.120" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.120",
+          "members" : [ "at0052" ]
+        },
+        "ac0.121" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.121",
+          "members" : [ "at0052" ]
+        },
+        "ac0.122" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.122",
+          "members" : [ "at0052" ]
+        },
+        "ac0.123" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.123",
+          "members" : [ "at0049" ]
+        },
+        "ac0.124" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.124",
+          "members" : [ "at0049" ]
+        },
+        "ac0.125" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.125",
+          "members" : [ "at0049", "at0050" ]
+        },
+        "ac0.126" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.126",
+          "members" : [ "at0049", "at0050" ]
+        },
+        "ac0.127" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.127",
+          "members" : [ "at0049", "at0050", "at0054" ]
+        },
+        "ac0.128" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.128",
+          "members" : [ "at0049", "at0050", "at0054" ]
+        },
+        "ac0.129" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.129",
+          "members" : [ "at0049", "at0050", "at0054", "at0053" ]
+        },
+        "ac0.130" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.130",
+          "members" : [ "at0049", "at0050", "at0054", "at0053" ]
+        },
+        "ac0.131" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.131",
+          "members" : [ "at0049", "at0050", "at0054", "at0053", "at0052" ]
+        },
+        "ac0.132" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.132",
+          "members" : [ "at0049", "at0050", "at0054", "at0053", "at0052" ]
+        },
+        "ac0.133" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.133",
+          "members" : [ "at0049", "at0050", "at0054", "at0052" ]
+        },
+        "ac0.134" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.134",
+          "members" : [ "at0049", "at0050", "at0054", "at0052" ]
+        },
+        "ac0.135" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.135",
+          "members" : [ "at0049", "at0050", "at0052" ]
+        },
+        "ac0.136" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.136",
+          "members" : [ "at0049", "at0050", "at0052" ]
+        },
+        "ac0.137" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.137",
+          "members" : [ "at0049", "at0052" ]
+        },
+        "ac0.138" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.138",
+          "members" : [ "at0049", "at0052" ]
+        },
+        "ac0.139" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.139",
+          "members" : [ "at0052" ]
+        },
+        "ac0.140" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.140",
+          "members" : [ "at0052" ]
+        },
+        "ac0.141" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.141",
+          "members" : [ "at0052" ]
+        },
+        "ac0.142" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.142",
+          "members" : [ "at0052" ]
         }
       }
     },
@@ -12503,11 +12637,11 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "1163303005",
-                    "value" : "Sentinel lymph node (portvaktslymfknuta)"
+                    "value" : "portvaktslymfknuta"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
-                    "code" : "38000004",
-                    "value" : "Lymfa"
+                    "code" : "181756000",
+                    "value" : "lymfknuta (ej portvakt)"
                   } ]
                 } ]
               } ],
