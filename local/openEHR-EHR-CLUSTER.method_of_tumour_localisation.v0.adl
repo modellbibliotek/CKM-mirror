@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"dfd1c7bb83f9321c98ed93eb6e725406">
+		["MD5-CAM-1.0.1"] = <"250221b31c9b2d55361122d9aa7e645d">
 		["build_uid"] = <"df20794f-aad6-3106-bfd5-8210fefb34d4">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -53,9 +53,7 @@ definition
 							at0022,    -- Wire/hook
 							at0023,    -- I-125 seed
 							at0024,    -- Coil
-							at0025,    -- Other
-							at0026,    -- None
-							at0027]    -- Metal probe [?]
+							at0026]    -- None
 						}
 					}
 				}
@@ -65,7 +63,7 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			CLUSTER[at0006] occurrences matches {0..1} matches {    -- Number of seeds/coils
+			CLUSTER[at0006] occurrences matches {0..1} matches {    -- Number of seeds
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0008] occurrences matches {0..1} matches {    -- inserted
 						value matches {
@@ -99,8 +97,8 @@ ontology
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"Number of seeds/coils">
-					description = <"">
+					text = <"Number of seeds">
+					description = <"Number of I-125 seeds">
 				>
 				["at0008"] = <
 					text = <"inserted">
@@ -123,16 +121,8 @@ ontology
 					text = <"Coil">
 					description = <"">
 				>
-				["at0025"] = <
-					text = <"Other">
-					description = <"">
-				>
 				["at0026"] = <
 					text = <"None">
-					description = <"">
-				>
-				["at0027"] = <
-					text = <"Metal probe [?]">
 					description = <"">
 				>
 				["at0028"] = <
@@ -152,8 +142,8 @@ ontology
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"Antal korn/coil">
-					description = <"">
+					text = <"Antal korn">
+					description = <"Antal I-125-korn">
 				>
 				["at0008"] = <
 					text = <"inlagda">
@@ -165,7 +155,7 @@ ontology
 					comment = <"*Important to include it \"other\" was chosen as \"Method\" (en)">
 				>
 				["at0022"] = <
-					text = <"metalltråd [*Wire/hook (en)]">
+					text = <"metalltråd">
 					description = <"">
 				>
 				["at0023"] = <
@@ -176,16 +166,8 @@ ontology
 					text = <"coil">
 					description = <"">
 				>
-				["at0025"] = <
-					text = <"annat">
-					description = <"">
-				>
 				["at0026"] = <
 					text = <"ingen">
-					description = <"">
-				>
-				["at0027"] = <
-					text = <"*Metal probe [?] (en)">
 					description = <"">
 				>
 				["at0028"] = <
