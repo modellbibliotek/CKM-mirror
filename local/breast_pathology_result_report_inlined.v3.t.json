@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.19",
+      "sem_ver" : "3.0.0-alpha.20",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "0b37ca426222b02b89bffd5482aea517",
+      "MD5-CAM-1.0.1" : "9baddb6380678e94e2e1678abe152966",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -9099,6 +9099,10 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "68171009",
+                    "value" : "axillär lymfknuta"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "68171009",
                     "value" : "axillär lymfknuta (nivå 1 eller 2)"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
@@ -9107,7 +9111,7 @@
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "245340002",
-                    "value" : "Internal mammary node"
+                    "value" : "inre mammarlymfknuta"
                   } ]
                 } ]
               } ],
