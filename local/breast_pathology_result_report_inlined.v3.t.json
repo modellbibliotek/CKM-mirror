@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.13",
+      "sem_ver" : "3.0.0-alpha.14",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "959ba15153cd3bb1886fa3ef15a4b6b4",
+      "MD5-CAM-1.0.1" : "e80b17bb1deedc0bab7b6e71fa997a99",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -4474,35 +4474,35 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "392021009",
-                    "value" : "excision [Lumpectomy of breast (procedure)]"
+                    "value" : "lumpektomi av bröst / ektomi av bröstknöl"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "237370008",
-                    "value" : "sektor [Segmentectomy of breast (procedure)]"
+                    "value" : "segmentektomi på bröst"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "172043006",
-                    "value" : "mastektomi - enkel |Simple mastectomy (procedure)|"
+                    "value" : "mastektomi - enkel |Simple mastectomy|"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "428564008",
-                    "value" : "mastektomi - hudsparande |Skin sparing mastectomy (procedure)|"
+                    "value" : "mastektomi - hudsparande |Skin sparing mastectomy|"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "70183006",
-                    "value" : "mastektomi - subkutan/mamillsparande |Subcutaneous mastectomy (procedure)|"
+                    "value" : "mastektomi - subkutan/mamillsparande |Subcutaneous mastectomy|"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "406505007",
-                    "value" : "mastektomi - modifierad radikal |Modified radical mastectomy (procedure)|"
+                    "value" : "mastektomi - modifierad radikal |Modified radical mastectomy|"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "384723003",
-                    "value" : "mastektomi - radikal |Radical mastectomy (procedure)|"
+                    "value" : "mastektomi - radikal |Radical mastectomy|"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "1231734007",
-                    "value" : "mastektomi - ospecificerad |Excision of breast (procedure)|"
+                    "value" : "mastektomi - ospecificerad |Excision of breast|"
                   } ]
                 } ]
               } ],
