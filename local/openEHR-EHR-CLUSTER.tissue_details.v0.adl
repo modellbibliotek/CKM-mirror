@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"36c2c584dd797bb426f7a75175a96602">
+		["MD5-CAM-1.0.1"] = <"ab8aa6793faf3c30c2bcb16d87b66cc1">
 		["build_uid"] = <"8a2d59a7-9c56-3783-b066-6ba81ce87375">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -107,6 +107,7 @@ ontology
 					text = <"Tissue details">
 					description = <"Tissue details">
 					comment = <"Repeat this cluster for each described tissue type">
+					TODO = <"Possibly rename to (sub)specimen details">
 				>
 				["at0001"] = <
 					text = <"Presence in sample?">
@@ -121,6 +122,7 @@ ontology
 					text = <"Tissue">
 					description = <"">
 					comment = <"Likely pre-selected in template, not user input">
+					TODO = <"Possibly rename to Tissue/Substande/Feture">
 				>
 				["at0004"] = <
 					text = <"Normal?">
