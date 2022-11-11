@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.23",
+      "sem_ver" : "3.0.0-alpha.24",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "39d9c3fe0faab83b2da9a32b55ebff06",
+      "MD5-CAM-1.0.1" : "82632f9f052b2f4018ba23a259c31bb3",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -8870,6 +8870,16 @@
         }
       }
     },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "sv" : {
+          "/items[at0004]" : {
+            "TODO" : "Utred om man hellre vill använda kod än separat fält för normalmarkering, t.ex. 290118000 |Nipple normal (finding)|"
+          }
+        }
+      }
+    },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.tissue_details.v0",
     "differential" : true,
     "archetypeId" : {
@@ -8955,16 +8965,16 @@
                   "selectedTerminologies" : [ "http://snomed.info/id/" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "http://snomed.info/id/",
-                    "code" : "ToDo-mam-1",
-                    "value" : "eksematöst"
+                    "code" : "255421000",
+                    "value" : "eksematös"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
-                    "code" : "ToDo-mam-2",
-                    "value" : "ulcererad"
+                    "code" : "46742003",
+                    "value" : "ulcererad (hudsår)"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
-                    "code" : "ToDo-mam-3",
-                    "value" : "tumorös"
+                    "code" : "108369006",
+                    "value" : "tumorös (tumör)"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "ToDo-mam-4",
@@ -17437,6 +17447,18 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "http://snomed.info/id/{sctid}",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "281725007",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "hud på del av bröst",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -17500,7 +17522,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "87386002",
-                    "value" : "Apelsinhud (peau d'orange)"
+                    "value" : "apelsinhud (peau d'orange)"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "255421000",
@@ -17511,8 +17533,8 @@
                     "value" : "sår på hud (ulcererad)"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
-                    "code" : "ToDo-skin-4",
-                    "value" : "tumorös"
+                    "code" : "108369006",
+                    "value" : "tumör"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "70582006",
@@ -17847,6 +17869,18 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "http://snomed.info/id/",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "84820005",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "fascia",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -17855,13 +17889,13 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "http://snomed.info/id/{sctid}"
+                    "value" : "http://snomed.info/id/"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "http://snomed.info/id/{sctid}" ],
+                  "selectedTerminologies" : [ "http://snomed.info/id/" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "http://snomed.info/id/{sctid}",
-                    "code" : "ToDo-sno-fascia",
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "84820005",
                     "value" : "fascia"
                   } ]
                 } ]
