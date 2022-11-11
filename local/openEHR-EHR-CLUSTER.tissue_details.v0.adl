@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"43b3e4b5d23987e2282140a7d4da0208">
+		["MD5-CAM-1.0.1"] = <"908c9cd65342f98a68fae898334cc07b">
 		["build_uid"] = <"8a2d59a7-9c56-3783-b066-6ba81ce87375">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -66,7 +66,14 @@ definition
 			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Normal?
 				value matches {
 					DV_BOOLEAN matches {*}
-					DV_CODED_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0012,    -- Normal
+							at0013,    -- Abnormal
+							at0014]    -- Indeterminate
+						}
+					}
 				}
 			}
 			ELEMENT[at0002] occurrences matches {0..*} matches {    -- Description
@@ -145,6 +152,18 @@ ontology
 					text = <"Absent">
 					description = <"">
 				>
+				["at0012"] = <
+					text = <"Normal">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Abnormal">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Indeterminate">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -189,11 +208,23 @@ ontology
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"förekommer/föreligger">
+					text = <"ingår/förekommer/föreligger">
 					description = <"">
 				>
 				["at0011"] = <
 					text = <"saknas">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"normal">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"avvikande/abnormal">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"obestämbar">
 					description = <"">
 				>
 			>
@@ -204,6 +235,9 @@ ontology
 			items = <
 				["at0010"] = <[SNOMED-CT::52101004]>
 				["at0011"] = <[SNOMED-CT::2667000]>
+				["at0014"] = <[SNOMED-CT::82334004]>
+				["at0013"] = <[SNOMED-CT::263654008]>
+				["at0012"] = <[SNOMED-CT::17621005]>
 			>
 		>
 	>
