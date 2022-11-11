@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e1b4a1c9064f23ab2d83fdc87dc273bd">
+		["MD5-CAM-1.0.1"] = <"43b3e4b5d23987e2282140a7d4da0208">
 		["build_uid"] = <"8a2d59a7-9c56-3783-b066-6ba81ce87375">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -48,11 +48,18 @@ definition
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Tissue
 				value matches {
 					DV_CODED_TEXT matches {*}
+					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Included in sample?
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Presence in sample?
 				value matches {
-					DV_CODED_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0010,    -- Present
+							at0011]    -- Absent
+						}
+					}
 					DV_BOOLEAN matches {*}
 				}
 			}
@@ -71,18 +78,12 @@ definition
 			}
 			CLUSTER[at0005] occurrences matches {0..*} matches {    -- Structured description
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Name
+					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Description, coded term
 						value matches {
 							DV_CODED_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Question/Selection
-						value matches {
-							DV_BOOLEAN matches {*}
-							DV_CODED_TEXT matches {*}
-							DV_TEXT matches {*}
-						}
-					}
+					ELEMENT[at0007] occurrences matches {0..1} matches {*}    -- Question & response alternatives
 					allow_archetype CLUSTER[at0008] occurrences matches {0..*} matches {    -- Description details
 						include
 							archetype_id/value matches {/.*/}
@@ -93,6 +94,7 @@ definition
 	}
 
 ontology
+	terminologies_available = <"SNOMED-CT", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
@@ -102,7 +104,7 @@ ontology
 					comment = <"Repeat this cluster for each described tissue type">
 				>
 				["at0001"] = <
-					text = <"Included in sample?">
+					text = <"Presence in sample?">
 					description = <"">
 				>
 				["at0002"] = <
@@ -124,15 +126,23 @@ ontology
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"Name">
+					text = <"Description, coded term">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"Question/Selection">
+					text = <"Question & response alternatives">
 					description = <"">
 				>
 				["at0008"] = <
 					text = <"Description details">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Present">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Absent">
 					description = <"">
 				>
 			>
@@ -145,7 +155,7 @@ ontology
 					comment = <"*Repeat this cluster for each described tissue type (en)">
 				>
 				["at0001"] = <
-					text = <"inkluderat i provet/preparatet?">
+					text = <"förekomst i provet?">
 					description = <"">
 				>
 				["at0002"] = <
@@ -154,7 +164,7 @@ ontology
 					comment = <"*E.g. used to describe non-normal findings (en)">
 				>
 				["at0003"] = <
-					text = <"*Tissue (en)">
+					text = <"vävnad">
 					description = <"">
 					comment = <"*Likely pre-selected in template, not user input (en)">
 				>
@@ -163,21 +173,37 @@ ontology
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"*Structured description (en)">
+					text = <"strukturerad beskrivning">
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"*Name (en)">
+					text = <"beskrivning, kodat begrepp">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"*Question/Selection (en)">
+					text = <"fråga och svarsalternativ">
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"*Description details (en)">
+					text = <"detaljerad beskrivning">
 					description = <"">
 				>
+				["at0010"] = <
+					text = <"förekommer/föreligger">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"saknas">
+					description = <"">
+				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0010"] = <[SNOMED-CT::52101004]>
+				["at0011"] = <[SNOMED-CT::2667000]>
 			>
 		>
 	>
