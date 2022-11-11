@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.29",
+      "sem_ver" : "3.1.1",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "aeae10f088cbf344864674f2ecc77646",
+      "MD5-CAM-1.0.1" : "43b2d547d8cfae928f577f2034f4c0a5",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -8840,7 +8840,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "36c2c584dd797bb426f7a75175a96602"
+        "PARENT:MD5-CAM-1.0.1" : "ab8aa6793faf3c30c2bcb16d87b66cc1"
       },
       "details" : {
         "sv" : {
@@ -9363,8 +9363,8 @@
                     "value" : "axillär lymfknuta"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
-                    "code" : "68171009",
-                    "value" : "axillär lymfknuta (nivå 1 eller 2)"
+                    "code" : "283001",
+                    "value" : "central axillär lymfknuta (nivå 2)"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "16051009",
@@ -9373,6 +9373,26 @@
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "245340002",
                     "value" : "inre mammarlymfknuta"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "245274001",
+                    "value" : "interpektoral lymfknutsgrupp"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "76838003",
+                    "value" : "supraklavikulär lymfknuta"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "33770006",
+                    "value" : "lateral axillär lymfknuta (del av nivå 1)"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "12196003",
+                    "value" : "subklavikulär axillär lymfknuta (del av nivå1)"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "69691007",
+                    "value" : "pektoral axillär lymfknuta (del av nivå 1)"
                   } ]
                 } ]
               } ],
@@ -17498,7 +17518,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "36c2c584dd797bb426f7a75175a96602"
+        "PARENT:MD5-CAM-1.0.1" : "ab8aa6793faf3c30c2bcb16d87b66cc1"
       },
       "details" : {
         "sv" : {
@@ -17823,7 +17843,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "36c2c584dd797bb426f7a75175a96602"
+        "PARENT:MD5-CAM-1.0.1" : "ab8aa6793faf3c30c2bcb16d87b66cc1"
       },
       "details" : {
         "sv" : {
@@ -18179,7 +18199,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "36c2c584dd797bb426f7a75175a96602"
+        "PARENT:MD5-CAM-1.0.1" : "ab8aa6793faf3c30c2bcb16d87b66cc1"
       },
       "details" : {
         "sv" : {
