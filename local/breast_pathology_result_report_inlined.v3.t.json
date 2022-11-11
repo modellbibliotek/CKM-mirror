@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.27",
+      "sem_ver" : "3.0.0-alpha.28",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "29172772a4f86cd5ff61221937b3be99",
+      "MD5-CAM-1.0.1" : "1b2b8e607bce22779d67efd7e587a15a",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -8840,7 +8840,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "779748848fa644f3bbde36f0a5e92f95"
+        "PARENT:MD5-CAM-1.0.1" : "908c9cd65342f98a68fae898334cc07b"
       },
       "details" : {
         "sv" : {
@@ -8911,12 +8911,12 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "http://snomed.info/id/{sctid}"
+                    "value" : "http://snomed.info/id/"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "http://snomed.info/id/{sctid}" ],
+                  "selectedTerminologies" : [ "http://snomed.info/id/" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "http://snomed.info/id/{sctid}",
+                    "terminologyId" : "http://snomed.info/id/",
                     "code" : "24142002",
                     "value" : "Bröstvårta/Mamill"
                   } ]
@@ -8935,8 +8935,21 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.4" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -8950,8 +8963,21 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.3" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -8994,10 +9020,6 @@
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "ToDo-mam-4",
                     "value" : "indragen"
-                  }, {
-                    "terminologyId" : "http://snomed.info/id/",
-                    "code" : "ToDo-mam-5",
-                    "value" : "annat"
                   } ]
                 } ]
               } ],
@@ -9006,6 +9028,32 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
               "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
+          "nodeId" : "at0005.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0006.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -9025,6 +9073,18 @@
             "text" : "Mamill",
             "description" : "Tissue details",
             "comment" : "Repeat this cluster for each described tissue type"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "sv" : {
@@ -9034,12 +9094,45 @@
             "text" : "Mamill",
             "description" : "*Tissue details (en)",
             "comment" : "*Repeat this cluster for each described tissue type (en)"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0012", "at0013", "at0014" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0012", "at0013", "at0014" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0012", "at0013" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0010", "at0011" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "8a2d59a7-9c56-3783-b066-6ba81ce87375",
@@ -17409,7 +17502,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "779748848fa644f3bbde36f0a5e92f95"
+        "PARENT:MD5-CAM-1.0.1" : "908c9cd65342f98a68fae898334cc07b"
       },
       "details" : {
         "sv" : {
@@ -17482,12 +17575,12 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "http://snomed.info/id/{sctid}"
+                    "value" : "http://snomed.info/id/"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "http://snomed.info/id/{sctid}" ],
+                  "selectedTerminologies" : [ "http://snomed.info/id/" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "http://snomed.info/id/{sctid}",
+                    "terminologyId" : "http://snomed.info/id/",
                     "code" : "281725007",
                     "value" : "hud på del av bröst"
                   } ]
@@ -17506,8 +17599,21 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.3" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -17521,8 +17627,21 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.2" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -17581,6 +17700,32 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
+          "nodeId" : "at0005.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0006.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -17596,6 +17741,18 @@
             "text" : "Skin",
             "description" : "Tissue details",
             "comment" : "Repeat this cluster for each described tissue type"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
           }
         },
         "sv" : {
@@ -17605,12 +17762,40 @@
             "text" : "Hud",
             "description" : "*Tissue details (en)",
             "comment" : "*Repeat this cluster for each described tissue type (en)"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
           }
         }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0012", "at0013", "at0014" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0012", "at0013" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0010", "at0011" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "8a2d59a7-9c56-3783-b066-6ba81ce87375",
@@ -17646,7 +17831,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "779748848fa644f3bbde36f0a5e92f95"
+        "PARENT:MD5-CAM-1.0.1" : "908c9cd65342f98a68fae898334cc07b"
       },
       "details" : {
         "sv" : {
@@ -17741,8 +17926,21 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.1" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -17763,7 +17961,19 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0012", "at0013", "at0014" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -17842,6 +18052,12 @@
             "text" : "Description (2)",
             "description" : "",
             "comment" : "E.g. used to describe non-normal findings"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         },
         "sv" : {
@@ -17858,12 +18074,24 @@
             "text" : "Misstänkt inväxt av cancer?",
             "comment" : "*E.g. used to describe non-normal findings (en)",
             "description" : ""
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0010", "at0011" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "8a2d59a7-9c56-3783-b066-6ba81ce87375",
@@ -17899,7 +18127,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "779748848fa644f3bbde36f0a5e92f95"
+        "PARENT:MD5-CAM-1.0.1" : "908c9cd65342f98a68fae898334cc07b"
       },
       "details" : {
         "sv" : {
@@ -17996,8 +18224,21 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.1" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -18011,8 +18252,21 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.2" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -18091,6 +18345,13 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
+          "nodeId" : "at0005.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -18120,6 +18381,18 @@
             "text" : "Movability?",
             "comment" : "E.g. used to describe non-normal findings",
             "description" : ""
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         },
         "sv" : {
@@ -18143,12 +18416,35 @@
             "text" : "rörlighet",
             "comment" : "*E.g. used to describe non-normal findings (en)",
             "description" : ""
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0010", "at0011" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0012", "at0013", "at0014" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "8a2d59a7-9c56-3783-b066-6ba81ce87375",
