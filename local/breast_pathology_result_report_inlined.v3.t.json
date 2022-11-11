@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.22",
+      "sem_ver" : "3.0.0-alpha.23",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "f07f5264093d4aecf1163b7b1aa10106",
+      "MD5-CAM-1.0.1" : "39d9c3fe0faab83b2da9a32b55ebff06",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -8907,8 +8907,8 @@
                   "selectedTerminologies" : [ "http://snomed.info/id/{sctid}" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "http://snomed.info/id/{sctid}",
-                    "code" : "ToDo-sno-mam",
-                    "value" : "Mamill"
+                    "code" : "24142002",
+                    "value" : "Bröstvårta/Mamill"
                   } ]
                 } ]
               } ],
@@ -17451,8 +17451,8 @@
                   "selectedTerminologies" : [ "http://snomed.info/id/{sctid}" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "http://snomed.info/id/{sctid}",
-                    "code" : "ToDo-sno-skin",
-                    "value" : "Hud"
+                    "code" : "281725007",
+                    "value" : "hud på del av bröst"
                   } ]
                 } ]
               } ],
@@ -17499,24 +17499,24 @@
                   "selectedTerminologies" : [ "http://snomed.info/id/" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "http://snomed.info/id/",
-                    "code" : "ToDo-skin-1",
-                    "value" : "peau d'orange"
+                    "code" : "87386002",
+                    "value" : "Apelsinhud (peau d'orange)"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
-                    "code" : "ToDo-skin-2",
-                    "value" : "eksematöst"
+                    "code" : "255421000",
+                    "value" : "eksematös"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
-                    "code" : "ToDo-skin-3",
-                    "value" : "ulcererad"
+                    "code" : "46742003",
+                    "value" : "sår på hud (ulcererad)"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "ToDo-skin-4",
                     "value" : "tumorös"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
-                    "code" : "ToDo-skin-5",
-                    "value" : "ärr"
+                    "code" : "70582006",
+                    "value" : "ärr på hud"
                   } ]
                 } ]
               } ],
