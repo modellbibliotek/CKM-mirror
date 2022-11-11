@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.26",
+      "sem_ver" : "3.0.0-alpha.27",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "993bd48cb7ada11af368a9c97f5afb5c",
+      "MD5-CAM-1.0.1" : "29172772a4f86cd5ff61221937b3be99",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -8874,7 +8874,7 @@
       "@type" : "RESOURCE_ANNOTATIONS",
       "documentation" : {
         "sv" : {
-          "/items[at0004]" : {
+          "/items[at0004.1]" : {
             "TODO" : "Utred om man hellre vill använda kod än separat fält för normalmarkering, t.ex. 290118000 |Nipple normal (finding)|"
           }
         }
@@ -8930,6 +8930,21 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0004.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "value",
@@ -17500,6 +17515,21 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0004.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "nodeId" : "at0002.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -17646,6 +17676,16 @@
         }
       }
     },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "sv" : {
+          "/items[at0002.2]" : {
+            "SnomedCTMappping" : "399565008"
+          }
+        }
+      }
+    },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.tissue_details.v0",
     "differential" : true,
     "archetypeId" : {
@@ -17677,13 +17717,13 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "http://snomed.info/id/{sctid}"
+                    "value" : "http://snomed.info/id/"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "http://snomed.info/id/{sctid}" ],
+                  "selectedTerminologies" : [ "http://snomed.info/id/" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "http://snomed.info/id/{sctid}",
-                    "code" : "ToDo-sno-muscle",
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "91727004",
                     "value" : "muskel"
                   } ]
                 } ]
@@ -17712,7 +17752,21 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0004.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -17751,6 +17805,21 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.2",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -17766,6 +17835,13 @@
             "text" : "Muscle",
             "description" : "Tissue details",
             "comment" : "Repeat this cluster for each described tissue type"
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Description (2)",
+            "description" : "",
+            "comment" : "E.g. used to describe non-normal findings"
           }
         },
         "sv" : {
@@ -17775,6 +17851,13 @@
             "text" : "Muskel",
             "description" : "*Tissue details (en)",
             "comment" : "*Repeat this cluster for each described tissue type (en)"
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.2",
+            "text" : "Misstänkt inväxt av cancer?",
+            "comment" : "*E.g. used to describe non-normal findings (en)",
+            "description" : ""
           }
         }
       },
@@ -17908,6 +17991,21 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0004.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "value",
