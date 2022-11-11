@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.20",
+      "sem_ver" : "3.0.0-alpha.21",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "9baddb6380678e94e2e1678abe152966",
+      "MD5-CAM-1.0.1" : "e9a19735b0f3472613414da2e79eca69",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -528,12 +528,39 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
               "defaultValue" : {
-                "value" : "mamill",
-                "@type" : "DV_TEXT"
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "http://snomed.info/id/",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "24142002",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Bröstvårta",
+                "@type" : "DV_CODED_TEXT"
               },
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "http://snomed.info/id/"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "http://snomed.info/id/" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "24142002",
+                    "value" : "Bröstvårta"
+                  } ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -16448,34 +16475,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0041.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "ac0.14" ],
-                  "selectedTerminologies" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
           "nodeId" : "at0042.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -16494,6 +16493,34 @@
                     "value" : "local"
                   },
                   "constraint" : [ "ac0.15" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0041.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.14" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -17859,7 +17886,100 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "E7411DDB89ED5C11E9013CAE5F1FE7BD"
       },
-      "details" : { }
+      "details" : {
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av strukturerade detaljer om en enda fysisk plats på eller i människokroppen i förhållande till andra makroskopiska anatomiska landmärken.",
+          "keywords" : [ "plats", "lokalisering", "anatomisk", "relativ", "ungefärlig", "anatomisk region", "topografisk plats", "topografisk anatomi", "makroskopisk anatomi", "makroskopisk", "anatomi", "placering" ],
+          "use" : "Används för att registrera strukturerade och enhetliga detaljer om en enda identifierad fysisk plats på eller i människokroppen genom att beskriva platsen i förhållande till identifierade makroskopiska anatomiska landmärken. Det kan vara nödvändigt att beskriva en enkel fysisk plats med mer än en relativ plats - till exempel 2 cm lägre än \"landmärke A\" OCH 3 cm medialt till \"landmärke B\".\r\n\r\nVissa arketyper innehåller ett enkelt dataelement för en enkel beskrivning av en plats på kroppen - till exempel OBSERVATION.blood_pressure och CLUSTER.symptom_sign. I de fall där värden är förutsägbara och enkla att definiera är dessa dataelement ett mycket exakt och praktiskt sätt att registrera och hämta en anatomisk plats. I fall där den anatomiska platsen inte är väldefinierad eller behöver definieras i en applikation kan det vara mer flexibelt att använda denna strukturerade arketyp.\r\n\r\nDen här arketypen är speciellt utformad för användning i ENTRY- och CLUSTER-arketyper som ger sammanhanget för den identifierade kroppsplatsen.\r\n\r\nFall för klinisk användning:\r\n-5 cm lägre än vänster tuberositas tibiae.\r\n-2 cm medialt till höger bröstvårta.\r\n-5 cm inuti analöppningen.\r\n\r\nI en situation där CLUSTER.anatomical_location endast kan användas för att namnge en större eller ospecifik kroppsdel kan användningen av denna arketyp i SLOT för \"Alternativ struktur\" stödja registreringen av en mer exakt plats - t.ex. 2 cm främre än fossa cubitalis på vänster arm eller 4 cm under revbensbågen i medioklavikularlinjen på bröstväggen.\r\n",
+          "misuse" : "Används inte för att registrera \"ensidig\" eller \"bilateral\", eftersom dessa termer kvalificerar sig för slutsatser snarare än anatomiska platser.\r\n\r\nAnvänds inte för att ange en enda fysisk plats på kroppen som vänster lårben eller den mediala delen av näsan. Använd arketypen CLUSTER.anatomical_location för detta.\r\n\r\nAnvänds inte för att specificera mikroskopiska anatomiska platser.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For registrering av strukturerte detaljer om et enkelt fysisk sted på eller i menneskekroppen i forhold til andre makroskopiske anatomiske landemerker.",
+          "keywords" : [ "sted", "lokalisering", "anatomisk", "relativ", "omtrentlig", "anatomisk region", "topografisk sted", "topografisk anatomi", "makroskopisk anatomi", "makroskopisk", "anatomi", "plassering" ],
+          "use" : "Brukes for å registrere strukturerte og ensartede detaljer om et enkelt identifisert fysisk sted på eller i menneskekroppen ved å beskrive lokaliseringen i relasjon til identifiserte makroskopiske anatomiske landemerker. Det kan være nødvendig å beskrive en enkel fysisk lokalisering med mer enn en relativ lokalisering - for eksempel 2 cm inferiort for \"landemerke A\" OG 3 cm medialt for \"landemerke B\".\r\n\r\nNoen arketyper inneholder et enkelt dataelement for enkel beskrivelse av et sted på kroppen - for eksempel OBSERVATION.blood_pressure (Blodtrykk), og CLUSTER.symptom_sign (Symptom/sykdomstegn). I tilfeller hvor verdisettet er forutsigbart og enkelt å definere, er disse dataelementene en meget nøyaktig og praktisk måte for å registrere og gjenfinne et anatomisk sted. I tilfeller når den anatomiske lokaliseringen ikke er veldefinert eller må defineres i en applikasjon, kan det være mer fleksibelt å bruke denne strukturerte arketypen.\r\n\r\nDenne arketypen er spesifikt designet for bruk i ENTRY- og CLUSTER-arketyper som gir konteksten for det identifiserte kroppsstedet.\r\n\r\nKliniske brukstilfeller:\r\n-5 cm inferiort i forhold til venstre tibiale tuberositas.\r\n-2 cm medialt for den høyre brystvorten.\r\n-5 cm innenfor analåpningen.\r\n\r\nI en situasjon hvor CLUSTER.anatomical_location (Anatomisk lokalisering) bare kan brukes for å navngi en større eller uspesifikk kroppsdel, kan bruken av denne arketypen i \"Alternativ struktur\"-SLOTet understøtte registreringen av en mer presis lokasjon - f.eks. 2 cm anteriort for fossa cubiti på venstre arm eller 4 cm under høyre costal kant i midtclaviculær linjen på brystveggen på høyre side.",
+          "misuse" : "Brukes ikke for å registrere \"unilateral\" eller \"bilateral\", da disse uttrykkene er kvalifikatorer for konklusjoner heller enn anatomiske lokaliseringer.\r\n\r\nBrukes ikke for spesifisering av et enkelt navngitt fysisk sted på kroppen som venstre femur eller den mediale del av nesen. Bruk arketypen CLUSTER.anatomical_location (Anatomisk lokalisering) for dette.\r\n\r\nBrukes ikke for å spesifisere mikroskopiske anatomiske lokaliseringer.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Identificar and registras detalhes estruturados sobre um único local físico dentro ou fora do corpo humano, a partir das suas relações com outros pontos macroscópicos de referência anatômica.",
+          "keywords" : [ "localização", "local", "anatômico", "relativo", "aproximado", "região anatômica", "Anatomia topográfica", "Anatomia macroscópica", "macroscópico", "anatômico", "anatomia" ],
+          "use" : "Utilizar para registrar os detalhes estruturados e consistentes sobre um único local físico identificado no corpo humano ou dentro dele, descrevendo sua localização em relação a marcos anatômicos macroscópicos identificados. Pode ser necessário descrever a localização física única usando mais de uma localização relativa - por exemplo, 2 cm inferior a \"marco A\" E 3 cm medial para 'marco B'.\r\n\r\nNa prática, alguns arquétipos possuem um único elemento de dados para representar uma descrição simples do local do corpo - por exemplo, OBSERVATION.blood_pressure e CLUSTER.smpto quando descreve a dor nos ouvidos. Nessa situação, onde o conjunto de valores é previsível e simples de definir, este elemento de dados único é uma maneira muito precisa e pragmática de gravar o local do corpo e consultar posteriormente. No entanto, na situação em que a localização anatômica não está bem definida ou precisa ser determinada em tempo de execução, pode ser mais flexível usar este arquétipo estruturado.\r\n\r\nEste arquétipo é projetado especificamente para ser usado no contexto de qualquer arquétipo ENTRY ou CLUSTER apropriado que forneça o contexto do local do corpo identificado, incluindo a inserção dentro da localização CLUSTER.anatomical se \"Nome do site do corpo\" ou outros elementos de dados também forem necessários.\r\n\r\nCasos de uso clínico:\r\n- 5 cm inferior à tuberosidade tibial esquerda\r\n- 2 cm medial ao mamilo direito\r\n- aspecto medial da unha do dedo indicador da mão.\r\n\r\nNa situação em que o CLUSTER.anatomical_location só pode ser usado para nomear uma parte do corpo grande e / ou não específica, o uso deste arquétipo dentro do SLOT 'Estrutura alternativa' suportará a gravação de uma localização mais precisa - por exemplo, 2 Cm anterior à fossa cubital do antebraço esquerdo ou 4 cm abaixo da margem costal R na parede torácica na linha médio clavicular.\r\n",
+          "misuse" : "Não utilizar para especificar ocorrências de características anatômicas de lateralidade.\r\nNão utilizar para especificar um local simples de locais do corpo já nominados, tais como, femur esquerdo ou a fossa medial do nariz. Utilize neste caso o CLUSTER.anatomical_location.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "تسجيل المكان التشريحي بالتفصيل",
+          "keywords" : [ "الموقع", "المكان", "تشريحي" ],
+          "misuse" : "لا يستخدم لتحديد حالات الحدوث في جانب واحد أو في الجانبين - حيث إن ذلك متعلق بتقييم قد يتضمن العديد من الأماكن",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To record details about anatomical location.(en)",
+          "keywords" : [ "*location(en)", "*site(en)", "*anatomical(en)" ],
+          "misuse" : "*Not for specifiying unilateral/bilateral occurence - this is related to an evaluation which perhaps includes multiple locations.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To identify and record structured details about a single physical site on, or within, the human body in terms of its relationship to other macroscopic anatomical landmarks.",
+          "keywords" : [ "location", "site", "anatomical", "relative", "approximate", "anatomic region", "topographic anatomy", "macroscopic anatomy", "macroscopic", "anatomic", "anatomy" ],
+          "use" : "Use to record structured and consistent details about a single identified physical site on, or within, the human body by describing its location in relation to identified macroscopic anatomical landmarks. It may be necessary to describe the single physical location using more than one relative location - for example, 2 cm inferior to 'landmark A' AND 3 cm medial to 'landmark B'. \r\n\r\nIn practice, some archetypes carry a single data element for carrying a simple description of body site - for example, OBSERVATION.blood_pressure and CLUSTER.symptom when describing ear pain. In this situation, where the value set is predictable and simple to define, this single data element is a very accurate and pragmatic way to record the site in the body and to query at a later date. However in the situation where the anatomical location is not well defined or needs to be determined at run-time, it may be more flexible to use this structured archetype.\r\n\r\nThis archetype is specifically designed to be used within the context of any appropriate ENTRY or CLUSTER archetypes which supply the context of the identified body site, including insertion within the CLUSTER.anatomical_location if 'Body site name' or other data elements are also required.\r\n\r\nClinical use cases: \r\n- 5 cm inferior to the left tibial tuberosity;\r\n- 2 cm medial to the right nipple; and\r\n- 5 cm within the anal opening.\r\n\r\nIn the situation where the CLUSTER.anatomical_location can only be used to name a large and/or non-specific body part, the use of this archetype within the 'Alternative Structure' SLOT will support recording of a more precise location - for example, 2 cm anterior to the cubital fossa of the left forearm or 4 cm below R costal margin on the chest wall in the mid-clavicular line.",
+          "misuse" : "Not to be used to record 'unilateral' and 'bilateral', as these terms are qualifiers for conclusions rather than anatomical locations.\r\n\r\nNot to be used to specify a simple location of a named physical site in the body.\r\n\r\nNot to be used to specify a simple location of a named physical site in the body, such as left femur or medial aspect of nose. Use the CLUSTER.anatomical_location archetype for this purpose.\r\n\r\nNot to be used to represent location of anatomical features at the microscopic level, for example in reporting histopathology. Use a CLUSTER archetype for histopathology nested within the OBSERVATION.laboratory_test_result archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.anatomical_location_relative.v2",
     "differential" : true,
