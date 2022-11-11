@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.24",
+      "sem_ver" : "3.0.0-alpha.25",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "82632f9f052b2f4018ba23a259c31bb3",
+      "MD5-CAM-1.0.1" : "9d41c2fa2d1d6e1a89163386bf186a4d",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -17943,6 +17943,44 @@
                   "selectedTerminologies" : [ "http://snomed.info/id/{sctid}" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "http://snomed.info/id/{sctid}",
+                    "code" : "11163003",
+                    "value" : "intakt"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.2",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "http://snomed.info/id/{sctid}"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "http://snomed.info/id/{sctid}" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "http://snomed.info/id/{sctid}",
                     "code" : "TODO-fascia-1",
                     "value" : "rörlig och intakt"
                   }, {
@@ -17961,6 +17999,10 @@
                     "terminologyId" : "http://snomed.info/id/{sctid}",
                     "code" : "TODO-fascia-5",
                     "value" : "ej applicerbart"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/{sctid}",
+                    "code" : "11163003",
+                    "value" : "intakt"
                   } ]
                 } ]
               } ],
@@ -17988,6 +18030,20 @@
             "text" : "Fascia",
             "description" : "Tissue details",
             "comment" : "Repeat this cluster for each described tissue type"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Intakt?",
+            "comment" : "E.g. used to describe non-normal findings",
+            "description" : ""
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.2",
+            "text" : "Rörlig?",
+            "comment" : "E.g. used to describe non-normal findings",
+            "description" : ""
           }
         },
         "sv" : {
@@ -17997,6 +18053,13 @@
             "text" : "Fascia",
             "description" : "*Tissue details (en)",
             "comment" : "*Repeat this cluster for each described tissue type (en)"
+          },
+          "at0002.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "beskrivning (2)",
+            "description" : "",
+            "comment" : "*E.g. used to describe non-normal findings (en)"
           }
         }
       },
