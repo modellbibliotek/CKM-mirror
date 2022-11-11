@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.28",
+      "sem_ver" : "3.0.0-alpha.29",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "1b2b8e607bce22779d67efd7e587a15a",
+      "MD5-CAM-1.0.1" : "aeae10f088cbf344864674f2ecc77646",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -8840,7 +8840,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "908c9cd65342f98a68fae898334cc07b"
+        "PARENT:MD5-CAM-1.0.1" : "36c2c584dd797bb426f7a75175a96602"
       },
       "details" : {
         "sv" : {
@@ -8974,7 +8974,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.3" ],
+                  "constraint" : [ "ac0.5" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -9044,16 +9044,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0006.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -9074,16 +9065,16 @@
             "description" : "Tissue details",
             "comment" : "Repeat this cluster for each described tissue type"
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
@@ -9095,16 +9086,16 @@
             "description" : "*Tissue details (en)",
             "comment" : "*Repeat this cluster for each described tissue type (en)"
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
+            "description" : ""
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
             "description" : ""
           }
         }
@@ -9131,6 +9122,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
           "members" : [ "at0010", "at0011" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0012", "at0013", "at0014" ]
         }
       }
     },
@@ -17502,7 +17498,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "908c9cd65342f98a68fae898334cc07b"
+        "PARENT:MD5-CAM-1.0.1" : "36c2c584dd797bb426f7a75175a96602"
       },
       "details" : {
         "sv" : {
@@ -17638,7 +17634,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.2" ],
+                  "constraint" : [ "ac0.4" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -17712,16 +17708,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0006.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -17742,16 +17729,16 @@
             "description" : "Tissue details",
             "comment" : "Repeat this cluster for each described tissue type"
           },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.2",
-            "description" : ""
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
@@ -17763,16 +17750,16 @@
             "description" : "*Tissue details (en)",
             "comment" : "*Repeat this cluster for each described tissue type (en)"
           },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
-            "description" : ""
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         }
@@ -17794,6 +17781,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.3",
           "members" : [ "at0010", "at0011" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0012", "at0013", "at0014" ]
         }
       }
     },
@@ -17831,7 +17823,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "908c9cd65342f98a68fae898334cc07b"
+        "PARENT:MD5-CAM-1.0.1" : "36c2c584dd797bb426f7a75175a96602"
       },
       "details" : {
         "sv" : {
@@ -17864,11 +17856,7 @@
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
       "documentation" : {
-        "sv" : {
-          "/items[at0002.2]" : {
-            "SnomedCTMappping" : "399565008"
-          }
-        }
+        "sv" : { }
       }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.tissue_details.v0",
@@ -17981,43 +17969,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0002.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "local_terms"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "TODO-in",
-                    "value" : "Misstänkt inväxt av cancer"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "TODO-not",
-                    "value" : "Ingen misstanke om inväxt av cancer"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0002.2",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -18026,6 +17978,94 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_BOOLEAN",
               "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0005",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0006.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "defaultValue" : {
+                    "defining_code" : {
+                      "code_string" : "399565008",
+                      "@type" : "CODE_PHRASE"
+                    },
+                    "@type" : "DV_CODED_TEXT"
+                  },
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "http://snomed.info/id/"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "http://snomed.info/id/" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "http://snomed.info/id/",
+                        "code" : "399565008",
+                        "value" : "organ och/eller vävnad med makroskopiskt tumörengagemang"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0007.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "http://snomed.info/id/"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "http://snomed.info/id/" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "http://snomed.info/id/",
+                        "code" : "415684004",
+                        "value" : "misstänkt"
+                      }, {
+                        "terminologyId" : "http://snomed.info/id/",
+                        "code" : "428263003",
+                        "value" : "icke misstänkt"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -18058,6 +18098,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "Question & response alternatives",
+            "description" : ""
           }
         },
         "sv" : {
@@ -18079,6 +18125,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
+            "description" : ""
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "inväxt av cancer?",
             "description" : ""
           }
         }
@@ -18127,7 +18179,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "908c9cd65342f98a68fae898334cc07b"
+        "PARENT:MD5-CAM-1.0.1" : "36c2c584dd797bb426f7a75175a96602"
       },
       "details" : {
         "sv" : {
