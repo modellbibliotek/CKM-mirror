@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"779748848fa644f3bbde36f0a5e92f95">
+		["MD5-CAM-1.0.1"] = <"e1b4a1c9064f23ab2d83fdc87dc273bd">
 		["build_uid"] = <"8a2d59a7-9c56-3783-b066-6ba81ce87375">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -45,12 +45,12 @@ description
 definition
 	CLUSTER[at0000] occurrences matches {1..*} matches {    -- Tissue details
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Tissue type
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Tissue
 				value matches {
 					DV_CODED_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0001] occurrences matches {0..*} matches {    -- Included in sample?
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Included in sample?
 				value matches {
 					DV_CODED_TEXT matches {*}
 					DV_BOOLEAN matches {*}
@@ -67,6 +67,26 @@ definition
 					DV_CODED_TEXT matches {*}
 					DV_TEXT matches {*}
 					DV_BOOLEAN matches {*}
+				}
+			}
+			CLUSTER[at0005] occurrences matches {0..*} matches {    -- Structured description
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Name
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Question/Selection
+						value matches {
+							DV_BOOLEAN matches {*}
+							DV_CODED_TEXT matches {*}
+							DV_TEXT matches {*}
+						}
+					}
+					allow_archetype CLUSTER[at0008] occurrences matches {0..*} matches {    -- Description details
+						include
+							archetype_id/value matches {/.*/}
+					}
 				}
 			}
 		}
@@ -91,12 +111,28 @@ ontology
 					comment = <"E.g. used to describe non-normal findings">
 				>
 				["at0003"] = <
-					text = <"Tissue type">
+					text = <"Tissue">
 					description = <"">
 					comment = <"Likely pre-selected in template, not user input">
 				>
 				["at0004"] = <
 					text = <"Normal?">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Structured description">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Name">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Question/Selection">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Description details">
 					description = <"">
 				>
 			>
@@ -118,12 +154,28 @@ ontology
 					comment = <"*E.g. used to describe non-normal findings (en)">
 				>
 				["at0003"] = <
-					text = <"vävnadstyp">
+					text = <"*Tissue (en)">
 					description = <"">
 					comment = <"*Likely pre-selected in template, not user input (en)">
 				>
 				["at0004"] = <
 					text = <"normal?">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*Structured description (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Name (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Question/Selection (en)">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"*Description details (en)">
 					description = <"">
 				>
 			>
