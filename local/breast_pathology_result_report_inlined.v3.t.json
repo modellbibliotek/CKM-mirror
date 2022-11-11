@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0-alpha.21",
+      "sem_ver" : "3.0.0-alpha.22",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "e9a19735b0f3472613414da2e79eca69",
+      "MD5-CAM-1.0.1" : "f07f5264093d4aecf1163b7b1aa10106",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -557,7 +557,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "24142002",
-                    "value" : "Bröstvårta"
+                    "value" : "Mamill/Bröstvårta"
                   } ]
                 } ]
               } ],
@@ -975,12 +975,27 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "defaultValue" : {
-                "value" : "Bröst",
-                "@type" : "DV_TEXT"
-              },
-              "attributes" : [ ],
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "http://snomed.info/id/"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "http://snomed.info/id/" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "76752008",
+                    "value" : "Bröst"
+                  } ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -1008,22 +1023,35 @@
                   },
                   "constraint" : [ ],
                   "selectedTerminologies" : [ "http://snomed.info/id/" ],
+                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "http://snomed.info/id/",
-                    "code" : "77831004",
-                    "value" : "Övre inre kvadrant av bröst, struktur"
-                  }, {
-                    "terminologyId" : "http://snomed.info/id/",
-                    "code" : "19100000",
-                    "value" : "Nedre inre kvadrant av bröst, struktur"
-                  }, {
-                    "terminologyId" : "http://snomed.info/id/",
                     "code" : "76365002",
-                    "value" : "Övre yttre kvadrant av bröst, struktur"
+                    "value" : "övre yttre kvadrant av bröst, struktur"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "3564002",
-                    "value" : "Nedre yttre kvadrant av bröst, struktur"
+                    "value" : "nedre yttre kvadrant av bröst, struktur"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "77831004",
+                    "value" : "övre inre kvadrant av bröst, struktur"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "19100000",
+                    "value" : "nedre inre kvadrant av bröst, struktur"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "38412008",
+                    "value" : "processus axillaris i bröst"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "49058007",
+                    "value" : "central del av bröst"
+                  }, {
+                    "terminologyId" : "http://snomed.info/id/",
+                    "code" : "24142002",
+                    "value" : "bröstvårta"
                   } ]
                 } ]
               } ],
@@ -1031,6 +1059,41 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.4" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ],
+          "attributeCustomizations" : {
+            "null_flavour" : {
+              "aliases" : {
+                "sv" : "null_flavour"
+              }
+            }
+          }
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -1130,6 +1193,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "sl" : {
@@ -1143,6 +1212,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
@@ -1158,6 +1233,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "nb" : {
@@ -1171,6 +1252,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
@@ -1186,6 +1273,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "de" : {
@@ -1199,6 +1292,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
@@ -1214,6 +1313,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "sv" : {
@@ -1228,10 +1333,20 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0002.1" : "term:SNOMED-CT::272741003"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
@@ -1248,6 +1363,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.3",
           "members" : [ "at0067", "at0068", "at0069", "at0070", "at0071", "at0072", "at0073", "at0074", "at0080", "at0081", "at0075", "at0076", "at0082", "at0077", "at0078", "at0079" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0003", "at0004" ]
         }
       }
     },
