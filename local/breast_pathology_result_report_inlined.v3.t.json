@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.1.4",
+      "sem_ver" : "3.1.5",
       "build_uid" : "a5d886e1-2856-4832-87e4-5521ba06c0ab",
-      "MD5-CAM-1.0.1" : "3617c61fe2a14d37b19c2810eb524202",
+      "MD5-CAM-1.0.1" : "ac53b4f9fc7cffa5c0a692d682a834f9",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -4520,7 +4520,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "76752008",
-                    "value" : "Bröstvävnad"
+                    "value" : "bröstvävnad"
                   }, {
                     "terminologyId" : "http://snomed.info/id/",
                     "code" : "91532001",
