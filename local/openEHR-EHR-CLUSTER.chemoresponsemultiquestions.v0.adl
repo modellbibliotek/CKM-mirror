@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d0e971cf6ab4a33fb996ce52fd2d6d65">
+		["MD5-CAM-1.0.1"] = <"8857243491d5fdf3ca7ba75c15f01ae9">
 		["build_uid"] = <"6bb1954a-d5d1-3683-952b-19c064972b5a">
 	>
 
@@ -65,11 +65,11 @@ definition
 					3|[local::at0016]
 				}
 			}
-			ELEMENT[at0031] occurrences matches {0..1} matches {    -- What are your symptoms of ...?
+			ELEMENT[at0031] occurrences matches {0..1} matches {    -- How do you experience your problems with itching?
 				value matches {
-					1|[local::at0032],
-					2|[local::at0033],
-					3|[local::at0034]
+					1|[local::at0055],
+					2|[local::at0056],
+					3|[local::at0057]
 				}
 			}
 			ELEMENT[at0035] occurrences matches {0..1} matches {    -- What are your symptoms of ...?
@@ -77,6 +77,34 @@ definition
 					1|[local::at0036],
 					2|[local::at0037],
 					3|[local::at0038]
+				}
+			}
+			ELEMENT[at0039] occurrences matches {0..1} matches {    -- How do you experience your mouth/throat problems?
+				value matches {
+					1|[local::at0058],
+					2|[local::at0059],
+					3|[local::at0060]
+				}
+			}
+			ELEMENT[at0043] occurrences matches {0..1} matches {    -- What are your symptoms of ...?
+				value matches {
+					1|[local::at0044],
+					2|[local::at0045],
+					3|[local::at0046]
+				}
+			}
+			ELEMENT[at0047] occurrences matches {0..1} matches {    -- What are your symptoms of ...?
+				value matches {
+					1|[local::at0048],
+					2|[local::at0049],
+					3|[local::at0050]
+				}
+			}
+			ELEMENT[at0051] occurrences matches {0..1} matches {    -- What are your symptoms of ...?
+				value matches {
+					1|[local::at0052],
+					2|[local::at0053],
+					3|[local::at0054]
 				}
 			}
 		}
@@ -139,19 +167,7 @@ ontology
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"What are your symptoms of ...?">
-					description = <"">
-				>
-				["at0032"] = <
-					text = <"Mild discomfort, ...">
-					description = <"">
-				>
-				["at0033"] = <
-					text = <"Moderate symptoms, ...">
-					description = <"">
-				>
-				["at0034"] = <
-					text = <"Severe problems, ....">
+					text = <"How do you experience your problems with itching?">
 					description = <"">
 				>
 				["at0035"] = <
@@ -168,6 +184,82 @@ ontology
 				>
 				["at0038"] = <
 					text = <"Severe problems, ....">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"How do you experience your mouth/throat problems?">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"What are your symptoms of ...?">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Mild discomfort, ...">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"Moderate symptoms, ...">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Severe problems, ....">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"What are your symptoms of ...?">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Mild discomfort, ...">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Moderate symptoms, ...">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"Severe problems, ....">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"What are your symptoms of ...?">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Mild discomfort, ...">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"Moderate symptoms, ...">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Severe problems, ....">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Slight discomfort, a little itching">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Moderate discomfort, bothersome itching">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"Severe discomfort, itching that is difficult to control.">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Mild discomfort, such as soreness, redness, burning sensation in the mouth. No blisters.">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"Moderate discomfort, redness, pain and blisters in the mouth">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Severe discomfort, unable to eat and drink due to blisters and pain in the mouth">
 					description = <"">
 				>
 			>
@@ -227,19 +319,7 @@ ontology
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"Hur upplever du dina besvär med klåda?">
-					description = <"">
-				>
-				["at0032"] = <
-					text = <"Lätta besvär, lite klåda">
-					description = <"">
-				>
-				["at0033"] = <
-					text = <"Måttliga besvär, besvärande klåda">
-					description = <"">
-				>
-				["at0034"] = <
-					text = <"Svåra besvär, klåda som är svår att kontrollera.">
+					text = <"*How do you experience your problems with itching? (en)">
 					description = <"">
 				>
 				["at0035"] = <
@@ -256,6 +336,82 @@ ontology
 				>
 				["at0038"] = <
 					text = <"Svåra besvär, kan ej äta och dricka p.g.a. blåsor och smärta i munnen">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"*How do you experience your mouth/throat problems? (en)">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Hur upplever du dina besvär i mun/svalg?">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Lätta besvär, såsom ömhet, rodnad, brännande känsla i munnen. Inga blåsor">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"Måttliga besvär, rodnad, smärta och blåsor i munnen">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Svåra besvär, kan ej äta och dricka p.g.a. blåsor och smärta i munnen">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Hur upplever du dina besvär i mun/svalg?">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Lätta besvär, såsom ömhet, rodnad, brännande känsla i munnen. Inga blåsor">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Måttliga besvär, rodnad, smärta och blåsor i munnen">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"Svåra besvär, kan ej äta och dricka p.g.a. blåsor och smärta i munnen">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"Hur upplever du dina besvär i mun/svalg?">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Lätta besvär, såsom ömhet, rodnad, brännande känsla i munnen. Inga blåsor">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"Måttliga besvär, rodnad, smärta och blåsor i munnen">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Svåra besvär, kan ej äta och dricka p.g.a. blåsor och smärta i munnen">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"*Slight discomfort, a little itching (en)">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*Moderate discomfort, bothersome itching (en)">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"*Severe discomfort, itching that is difficult to control. (en)">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"*Mild discomfort, such as soreness, redness, burning sensation in the mouth. No blisters. (en)">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"*Moderate discomfort, redness, pain and blisters in the mouth (en)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"*Severe discomfort, unable to eat and drink due to blisters and pain in the mouth (en)">
 					description = <"">
 				>
 			>
