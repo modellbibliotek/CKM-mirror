@@ -37,12 +37,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e8b894fa31698be0c06e887e045620e9">
+		["MD5-CAM-1.0.1"] = <"d0e971cf6ab4a33fb996ce52fd2d6d65">
 		["build_uid"] = <"6bb1954a-d5d1-3683-952b-19c064972b5a">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- ChemoResponseMultiQuestions
+	CLUSTER[at0000] matches {    -- Chemotherapy questions for self reporting of symptoms.v1
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- How does fatigue affect your daily life?
 				value matches {
@@ -87,8 +87,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"ChemoResponseMultiQuestions">
-					description = <"ChemoResponseMultiQuestions">
+					text = <"Chemotherapy questions for self reporting of symptoms.v1">
+					description = <"Chemotherapy questions for self reporting of symptoms">
 				>
 				["at0001"] = <
 					text = <"How does fatigue affect your daily life?">
@@ -175,8 +175,8 @@ ontology
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"ChemoResponseMultiQuestions">
-					description = <"*ChemoResponseMultiQuestions (en)">
+					text = <"Cytotstatiakbehandling frågor för egenrapportering av symptom">
+					description = <"Cytotstatiakbehandling frågor för egenrapportering av symptom">
 				>
 				["at0001"] = <
 					text = <"Hur påverkar tröttheten ditt dagliga liv?">
