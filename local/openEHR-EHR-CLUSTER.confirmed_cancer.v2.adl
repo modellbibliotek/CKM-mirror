@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::de]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -28,6 +35,10 @@ Die mit diesem Archetyp dargestellte Information soll Kliniker dabei unterstütz
 ">
 			misuse = <"Dieser Archetyp ist ausschließlich für die Darstellung der höchsten Diagnosesicherheit und der Diagnosesicherung von Krebsdiagnosen konzipiert worden und sollte nicht im Kontext von anderen Krankheiten verwendet werden.">
 		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© openEHR Foundation">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
@@ -39,7 +50,7 @@ Die mit diesem Archetyp dargestellte Information soll Kliniker dabei unterstütz
 		["original_namespace"] = <"org.highmed">
 		["original_publisher"] = <"HiGHmed">
 		["custodian_namespace"] = <"org.highmed">
-		["MD5-CAM-1.0.1"] = <"16D003D88AC3C5E2ED76BFB9FC2E5093">
+		["MD5-CAM-1.0.1"] = <"e3bbb845925bcd686eff6d461c8241cb">
 		["build_uid"] = <"c25aba29-e241-4529-9afa-705223ae47cd">
 		["revision"] = <"2.0.1-alpha">
 	>
@@ -341,6 +352,180 @@ ontology
 				["at0135"] = <
 					text = <"Anderes bildgebendes Verfahren">
 					description = <"Anderes bildgebendes Verfahren, welches nicht in den vorherigen Elementen beschrieben wurde.">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Tumor_Diagnosesicherung (de)">
+					description = <"*Beschreibt die höchste erreichte Diagnosesicherheit, die in der Krankenakte des Patienten vermerkt ist. Außerdem kann dargestellt werden, welche Verfahren zur Krebsdiagnose verwendet wurden. (de)">
+				>
+				["at0017"] = <
+					text = <"*Diagnosesicherung (de)">
+					description = <"*Zur Dokumentation der Methode, des Verfahrens oder der Information, auf welcher die Diagnosesicherheit beruht. (de)">
+					comment = <"*Zum Beispiel: klinisches- oder bildgebendes Verfahren (de)">
+				>
+				["at0094"] = <
+					text = <"*Höchste Diagnosesicherheit (de)">
+					description = <"*Die höchste erreichte Diagnosesicherheit zum Diagnosedatum. (de)">
+				>
+				["at0095"] = <
+					text = <"*Klinisch ohne tumorspezifische Diagnostik (de)">
+					description = <"*Die Diagnose wurde nur über eine körperliche Untersuchung gestellt. Es gibt keine tumorspezifische Diagnostik. (de)">
+				>
+				["at0096"] = <
+					text = <"*Klinisch (de)">
+					description = <"*Die klinische Diagnose wurde vor dem Sterbedatum durchgeführt. Diese schließt mehrer diagnostische Techniken ein, wie zum Beispiel Röntgen, Endoskopie, weitere bildgebende Verfahren, Ultraschall, exploratorische Chirurgie (Laparotomie, etc.) und Autopsie. Es gibt keine mikroskopische Gewebediagnose. (de)">
+				>
+				["at0097"] = <
+					text = <"*Spezifische Tumormarker (de)">
+					description = <"*Es gibt zusätzliche biochemische und/oder immunologische Marker, die für einen bestimmten Tumorsitz spezifisch sind. (de)">
+				>
+				["at0098"] = <
+					text = <"*Zytologisch (de)">
+					description = <"*Eine Untersuchung von Zellen aus der primären Lokalisationen, inklusive Flüssigkeitsaspirationen mittels Endoskopien oder Nadeln, liegt vor. Schließt mikroskopische Untersuchungen von peripheren Blutausstrichen und Ausstrichen von Beckenkammaspirationen mit ein. (de)">
+				>
+				["at0099"] = <
+					text = <"*Histologie einer Metastase (de)">
+					description = <"*Eine Histologische Untersuchung des Gewebes aus einer Metastase lieg vor. Dies schließt Autopsie mit ein. (de)">
+				>
+				["at0100"] = <
+					text = <"*Histologisch (de)">
+					description = <"*Die histologische Untersuchung von Gewebe des Primärtumors liegt vor. Dies schließt alle Schnitttechniken und Knochenmarksbiopsien mit ein. Dies schließt ebenfalls Proben des Primärtumors aus Autopsien mit ein. (de)">
+				>
+				["at0101"] = <
+					text = <"*Unbekannt (de)">
+					description = <"*Über die Diagnosesicherheit ist nichts bekannt. (de)">
+				>
+				["at0102"] = <
+					text = <"*Klinisch (de)">
+					description = <"*Die Diagnosesicherheit beruht auf einer klinischen Identifikation des Tumors. (de)">
+				>
+				["at0103"] = <
+					text = <"*Klinisches Verfahren (de)">
+					description = <"*Es wurde weder ein mikroskopisches, noch ein bildgebendes Verfahren für die Diagnose genutzt. (de)">
+				>
+				["at0104"] = <
+					text = <"*Direkte Visualisierung (de)">
+					description = <"*Der Tumor wurde während eines chirurgischen oder endoskopischen Eingriffes identifiziert. Es gab keine mikroskopische Bestätigung des Tumors. (de)">
+				>
+				["at0105"] = <
+					text = <"*Ausschließlich klinische Diagnostik (de)">
+					description = <"*Die Malignität wurde von einem Arzt in einer Krankenakte berichtet. (de)">
+				>
+				["at0106"] = <
+					text = <"*Palpation (de)">
+					description = <"*Der Tumor wurde durch Abtasten des Körpers identifiziert. (de)">
+				>
+				["at0107"] = <
+					text = <"*Zeitpunkt des Verfahrens (de)">
+					description = <"*Der Zeitpunkt und das Datum, an dem das Verfahren durchgeführt wurde. (de)">
+				>
+				["at0108"] = <
+					text = <"*Bildgebung (de)">
+					description = <"*Die Malignität wurde mit Hilfe eines bildgebenden Verfahrens durch den Kliniker berichtet. (de)">
+				>
+				["at0109"] = <
+					text = <"*Bildgebende Verfahren (de)">
+					description = <"*Die Malignität wurde mit Hilfe eines bildgebenden Verfahrens durch den Kliniker berichtet. (de)">
+				>
+				["at0110"] = <
+					text = <"*MRT (de)">
+					description = <"*Tumordiagnose durch Magnetresonanztomographie. (de)">
+				>
+				["at0111"] = <
+					text = <"*CT (de)">
+					description = <"*Tumordiagnose durch Computertomographie. (de)">
+				>
+				["at0112"] = <
+					text = <"*PET (de)">
+					description = <"*Tumordiagnose durch Positronen-Emissions-Tomographie. (de)">
+				>
+				["at0113"] = <
+					text = <"*PET-MRT (de)">
+					description = <"*Tumordiagnose durch Positronen-Emissions-Tomographie kombiniert mit Magnetresonanztomographie. (de)">
+				>
+				["at0114"] = <
+					text = <"*SPECT (de)">
+					description = <"*Tumordiagnose durch Einzelphotonen-Emissionscomputertomographie. (de)">
+				>
+				["at0115"] = <
+					text = <"*Sonstige Nuklearmedizinische Bildgebung (de)">
+					description = <"*Tumordiagnose durch eine weitere nuklearmedizinische Bildgebung, welche nicht in den vorherigen Elementen beschrieben wurde (z.B. Szintigraphie, Szintillation oder Gammakamera). (de)">
+				>
+				["at0116"] = <
+					text = <"*Zeitpunkt des Verfahrens (de)">
+					description = <"*Der Zeitpunkt und das Datum, an dem das Verfahren durchgeführt wurde. (de)">
+				>
+				["at0117"] = <
+					text = <"*Mikroskopisch (de)">
+					description = <"*Die Diagnosesicherheit beruht auf einer mikroskopischen Identifikation des Tumors. (de)">
+				>
+				["at0118"] = <
+					text = <"*Mikroskopisches Verfahren (de)">
+					description = <"*Die Diagnosesicherheit beruht auf einer mikroskopischen Identifikation des Tumors. (de)">
+				>
+				["at0119"] = <
+					text = <"*Histologisch (de)">
+					description = <"*Histologische Bestätigung der Tumordiagnose. Gewebe wurde histologisch analysiert. (de)">
+				>
+				["at0122"] = <
+					text = <"*Immunophänotypisierung (de)">
+					description = <"*Die Tumordiagnose wurde durch eine Immunphänotypisierung gesichert. (de)">
+				>
+				["at0123"] = <
+					text = <"*Mikroskopische Bestätigung mit unbekannter Methode (de)">
+					description = <"*Die Tumordiagnose wurde mit einer unbekannten Methode mikroskopisch bestätigt. (de)">
+				>
+				["at0124"] = <
+					text = <"*Labortest oder Labormarker (de)">
+					description = <"*Die Krebsdiagnose basiert auf einem Labortest, oder einer Analyse eines Labormarkers (z.B. Alpha-fetoprotein für Leberkrebs). (de)">
+				>
+				["at0125"] = <
+					text = <"*Sonstige Verfahren (de)">
+					description = <"*Die Diagnosesicherheit beruht auf einem alternativen Verfahren, welches in den vorherigen Elementen nicht dargestellt wurde. (de)">
+				>
+				["at0126"] = <
+					text = <"*Sonstiges Verfahren (de)">
+					description = <"*Die Diagnosesicherheit beruht auf einem alternativen Verfahren, welches in den vorherigen Elementen nicht dargestellt wurde. (de)">
+				>
+				["at0127"] = <
+					text = <"*Zeitpunkt des Verfahrens (de)">
+					description = <"*Der Zeitpunkt und das Datum, an dem das Verfahren durchgeführt wurde. (de)">
+				>
+				["at0128"] = <
+					text = <"*Zeitpunkt des Verfahrens (de)">
+					description = <"*Der Zeitpunkt und das Datum, an dem das Verfahren durchgeführt wurde. (de)">
+				>
+				["at0129"] = <
+					text = <"*Kommentar (de)">
+					description = <"*Weitere Informationen über die Erhebung der Diagnosesicherheit. (de)">
+					comment = <"*Zum Beispiel können Anmerkungen über Qualität der Diagnosesicherheit in diesem Datenelement festgehalten werden. (de)">
+				>
+				["at0130"] = <
+					text = <"*Sonografie (de)">
+					description = <"*Tumordiagnose durch Sonografie. (de)">
+				>
+				["at0131"] = <
+					text = <"*Genetischer Test (de)">
+					description = <"*Die Tumordiagnose wurde durch einen genetischen Test gesichert. (de)">
+				>
+				["at0132"] = <
+					text = <"*Zytologisch (de)">
+					description = <"*Zytologisch Bestätigung der Tumordiagnose. Zellen wurden in Flüssigkeit analysiert. Es wurde kein Gewebe mikroskopisch analysiert. (de)">
+				>
+				["at0133"] = <
+					text = <"*PET-CT (de)">
+					description = <"*Tumordiagnose durch Positronen-Emissions-Tomographie kombiniert mit Computertomographie. (de)">
+				>
+				["at0134"] = <
+					text = <"*Röntgendiagnostik (de)">
+					description = <"*Tumordiagnose durch Röntgenstrahlung. (de)">
+				>
+				["at0135"] = <
+					text = <"*Anderes bildgebendes Verfahren (de)">
+					description = <"*Anderes bildgebendes Verfahren, welches nicht in den vorherigen Elementen beschrieben wurde. (de)">
 				>
 			>
 		>
