@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::de]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -26,6 +33,10 @@ description
 Dieser Archetyp wurde spezifisch für die Verwendung in anderen Archetypen entwickelt, die einen Tumor als Diagnose beschreiben, zum Beispiel EVALUATION.problem_diagnosis im SECTION-Template \"Tumordiagnose_section\".">
 			misuse = <"Dieser CLUSTER-Archetyp soll nicht verwendet werden, um die eindeutige Identifikation anderer Diagnosen außer der Tumorerkrankung darzustellen.">
 		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© openEHR Foundation">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
@@ -33,7 +44,7 @@ Dieser Archetyp wurde spezifisch für die Verwendung in anderen Archetypen entwi
 		["original_namespace"] = <"org.highmed">
 		["original_publisher"] = <"HiGHmed">
 		["custodian_namespace"] = <"org.highmed">
-		["MD5-CAM-1.0.1"] = <"00E81173D3355F5FB8674F6132AECA33">
+		["MD5-CAM-1.0.1"] = <"3c383d19ed1427b8f7422f2207da4c06">
 		["build_uid"] = <"8f4236d1-9341-4a43-a9bd-5f3f96152e47">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -60,6 +71,18 @@ ontology
 				["at0001"] = <
 					text = <"Tumor ID">
 					description = <"Die ID/Kennung des Tumors.">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Tumour ID">
+					description = <"To represent the ID of the tumor">
+				>
+				["at0001"] = <
+					text = <"Tumour ID">
+					description = <"The ID of the tumour">
 				>
 			>
 		>
