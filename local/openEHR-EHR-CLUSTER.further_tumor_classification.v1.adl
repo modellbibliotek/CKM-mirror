@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::de]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -24,13 +31,17 @@ description
 Dieser Archetyp kann für eine Tumorentität, je nach Anzahl der Klassifikationen, mehrmals verwendet werden.">
 			misuse = <"Nicht zur Dokumentation einer TNM-Klassifikation verwenden. Hierfür nutzen Sie bitte den Archetyp OBSERVATION.tnm_stage oder OBSERVATION.tnm_stage-pathological.">
 		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© openEHR Foundation">
+		>
 	>
 	other_details = <
 		["custodian_organisation"] = <"HiGHmed">
 		["original_namespace"] = <"org.highmed">
 		["original_publisher"] = <"HiGHmed">
 		["custodian_namespace"] = <"org.highmed">
-		["MD5-CAM-1.0.1"] = <"6D422C85F9718516ADFD8A13A5514654">
+		["MD5-CAM-1.0.1"] = <"f56e5ed8eacb9fe1084700620d2c0577">
 		["build_uid"] = <"f382332e-ab6c-40dc-811e-1c837af86dbb">
 		["revision"] = <"1.0.0">
 	>
@@ -102,6 +113,38 @@ ontology
 				["at0007"] = <
 					text = <"Kommentar">
 					description = <"Ergänzende Beschreibung der weiteren Tumorklassifikation, die nicht in anderen Bereichen erfasst wurde.">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Weitere Tumorklassifikation (de)">
+					description = <"*Der Archetyp \"Weitere Tumorklassifikation\" dient zur Stadieneinteilung maligner Neoplasien nach sonstigen, weiteren Tumorklassifikationen, außer der TNM-Klassifikation. (de)">
+				>
+				["at0001"] = <
+					text = <"*Name der Klassifikation (de)">
+					description = <"*Angabe der Bezeichnung der Klassifikation. Wenn möglich wird die Kodierung der spezifischen Klassifikation mit einer Terminologie bevorzugt. (de)">
+				>
+				["at0002"] = <
+					text = <"*Weitere Beschreibung (de)">
+					description = <"*Jede zusätzliche Beschreibung für die entsprechende Klassifikation. (de)">
+				>
+				["at0003"] = <
+					text = <"*Stadium/Gruppe/Grad (de)">
+					description = <"*Das Stadium/die Gruppe/der Grad der Einstufung der Malignität anhand der Klassifikation. (de)">
+				>
+				["at0004"] = <
+					text = <"*Datum der Klassifizierungseinteilung (de)">
+					description = <"*Das Datum, an dem die Klassifikation festgestellt wurde. (de)">
+				>
+				["at0005"] = <
+					text = <"*Auflage der Klassifikation (de)">
+					description = <"*Die Auflage, auf der die Klassifikation basiert, die für die Beurteilung verwendet wurde. (de)">
+				>
+				["at0007"] = <
+					text = <"*Kommentar (de)">
+					description = <"*Ergänzende Beschreibung der weiteren Tumorklassifikation, die nicht in anderen Bereichen erfasst wurde. (de)">
 				>
 			>
 		>
