@@ -60,7 +60,7 @@
       </item>
     </other_details>
   </description>
-  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.organisation.v0" concept_name="Organisation" max="1" name="EHR Organisation with contact person">
+  <definition xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.organisation.v1" concept_name="Organisation" max="1" name="EHR Organisation with contact person">
     <Rule path="/items[at0003]" max="0" />
     <Rule path="/items[at0004]">
       <constraint xsi:type="textConstraint">
@@ -104,7 +104,7 @@
       <Rule path="/items[at0019]" max="0" />
     </Items>
   </definition>
-  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.organisation.v0">
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.organisation.v1">
     <digest id="MD5-CAM-1.0.1">8CC80CB544B3C76C6ACB95676262B8F0</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.address.v0">
