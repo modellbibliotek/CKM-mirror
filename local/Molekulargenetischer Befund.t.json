@@ -24,9 +24,9 @@
       "custodian_namespace" : "org.openehr",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC",
       "build_uid" : "049f2a54-38cd-40a4-ab98-a8bb28653e4c",
-      "MD5-CAM-1.0.1" : "1e9ae46599e4d662b887002101a812a9",
+      "MD5-CAM-1.0.1" : "2f4389f9fecb240a36733c0cb12fe7ac",
       "original_language" : "ISO_639-1::de",
-      "sem_ver" : "4.0.1"
+      "sem_ver" : "4.0.2"
     },
     "details" : {
       "de" : {
@@ -860,7 +860,6 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
                       "nodeId" : "at0073.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -873,12 +872,13 @@
                             "rmAttributeName" : "defining_code",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "CODE_PHRASE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "at0107", "at0037", "at0120", "at0038", "at0040", "at0115", "at0119", "at0074", "at0116" ]
+                              "constraint" : [ "ac0.1" ],
+                              "selectedTerminologies" : [ ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -893,9 +893,17 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
                       "nodeId" : "at0075.1",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_DATE_TIME",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -1175,35 +1183,20 @@
             "text" : "Testdiagnose / Ergebnis",
             "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test result. (en)",
             "comment" : "*For example: 'Severe hepatic impairment', 'Salmonella contamination'. Coding of the diagnosis with a terminology is strongly recommended, where possible. This diagnosis should be aligned with the narrative in the 'Conclusion'. (en)"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         },
         "en" : {
-          "at0000.1" : {
+          "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Molekulargenetische Begutachtung",
-            "description" : "The result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual."
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Analyseart",
-            "description" : "Name of the laboratory investigation performed on the specimen(s).",
-            "comment" : "A test result may be for a single analyte, or a group of items, including panel tests. It is strongly recommended that 'Test name' be coded with a terminology, for example LOINC or SNOMED CT. For example: 'Glucose', 'Urea and Electrolytes', 'Swab', 'Cortisol (am)', 'Potassium in perspiration' or 'Melanoma histopathology'. The name may sometimes include specimen type and patient state, for example 'Fasting blood glucose' or include other information, as 'Potassium (PNA blood gas)'."
-          },
-          "at0100.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0100.1",
-            "text" : "Zusätzliche klinische Information",
-            "description" : "Description of clinical information available at the time of interpretation of results.",
-            "comment" : "This data element may include a link to the original clinical information provided in the test request."
-          },
-          "at0098.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0098.1",
-            "text" : "Testdiagnose / Ergebnis",
-            "description" : "Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test result.",
-            "comment" : "For example: 'Severe hepatic impairment', 'Salmonella contamination'. Coding of the diagnosis with a terminology is strongly recommended, where possible. This diagnosis should be aligned with the narrative in the 'Conclusion'."
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         },
         "nb" : {
@@ -1233,6 +1226,12 @@
             "text" : "Testdiagnose / Ergebnis",
             "description" : "Enkeltord, frase eller kort beskrivelse som representerer den kliniske betydningen og signifikansen av laboratorieresultatet.",
             "comment" : "For eksempel \"Betydelig nedsatt leverfunksjon\" eller \"Salmonella\". Koding med en terminologi foretrekkes, der det er mulig. Diagnosen bør være i overensstemmelse med teksten i \"Konklusjon\"."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         },
         "zh-cn" : {
@@ -1263,6 +1262,12 @@
             "text" : "Testdiagnose / Ergebnis",
             "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test result. (en)",
             "comment" : "*For example: 'Severe hepatic impairment', 'Salmonella contamination'. Coding of the diagnosis with a terminology is strongly recommended, where possible. This diagnosis should be aligned with the narrative in the 'Conclusion'. (en)"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         },
         "de" : {
@@ -1292,6 +1297,12 @@
             "text" : "Testdiagnose / Ergebnis",
             "description" : "Kurze Beschreibung der klinischen Bedeutung und der Aussagekraft des Laborergebnisses.",
             "comment" : "Zum Beispiel: \"Schwere hepatische Beeinträchtigung\", \"Salmonellenbefall\". Die Kodierung der Diagnose mit einer Terminologie, wird nach Möglichkeit dringend empfohlen. Die Diagnose soll zu der Beschreibung im Datenelement \"Zusammenfassung\" passen."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         },
         "it" : {
@@ -1321,6 +1332,12 @@
             "text" : "Testdiagnose / Ergebnis",
             "description" : "Singola parola, frase o breve descrizione che rappresenta il significato clinico e la significatività del risultato del test di laboratorio.",
             "comment" : "Per esempio: 'Grave insufficienza epatica', 'Contaminazione da Salmonella'. Si raccomanda vivamente, ove possibile, di codificare la diagnosi con una terminologia. Questa diagnosi dovrebbe essere allineata con la narrazione nella 'Conclusione'."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         },
         "nl" : {
@@ -1347,6 +1364,12 @@
             "code" : "at0098.1",
             "text" : "Testdiagnose / Ergebnis",
             "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test result.(en)"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         },
         "sv" : {
@@ -1376,6 +1399,12 @@
             "text" : "Testdiagnose / Ergebnis",
             "description" : "Ett enkelt ord, en fras eller en kort beskrivning som representerar den kliniska betydelsen eller konsekvensen av laboratorietestresultatet.\r\n",
             "comment" : "Till exempel: 'Allvarligt nedsatt leverfunktion', 'Salmonella'. Kodning med en terminologi är att föredra där det är möjligt. Diagnosen bör vara i enlighet med texten i \"Tolkning av resultat\".\r\n\r\n"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         },
         "pt-br" : {
@@ -1405,12 +1434,24 @@
             "text" : "Testdiagnose / Ergebnis",
             "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test result.(en)",
             "comment" : "*For example: 'Severe hepatic impairment', 'Salmonella contamination'. Coding of the diagnosis with a terminology is strongly recommended, where possible. This diagnosis should be aligned with the narrative in the 'Conclusion'.(en)"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
           }
         }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0107", "at0037", "at0120", "at0038", "at0040", "at0115", "at0119", "at0074", "at0116" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "1718dbb8-7504-43c2-be06-1dc093e74aac",
@@ -2193,22 +2234,6 @@
           }
         },
         "en" : {
-          "at0029.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0029.1",
-            "text" : "Probenmaterial",
-            "description" : "The type of specimen.",
-            "comment" : "For example: Venous blood, bacterial culture, cytology, or tissue sample. Coding of the specimen type with a terminology is preferred, where possible.",
-            "fhir_mapping" : "Specimen.type"
-          },
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "Laborprobenidentifikator (Blocknummer)",
-            "description" : "A unique identifier of the specimen, normally assigned by the laboratory.",
-            "comment" : "Sometimes called the Accession Identifier. Specimen containers, for example vacuum vials or tissue cassettes, have their own identitiers which may be recorded in the 'Container identifier' element in the 'Specimen container' archetype.",
-            "fhir_mapping" : "Specimen.accessionIdentifier"
-          },
           "at0045.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0045.1",
@@ -2792,7 +2817,6 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2805,12 +2829,13 @@
                 "rmAttributeName" : "defining_code",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "at0002", "at0003" ]
+                  "constraint" : [ "ac0.85" ],
+                  "selectedTerminologies" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -2915,12 +2940,458 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
-        "de" : { }
+        "en" : {
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Sequenced tissue type",
+            "description" : "Normal vs. tumor sample."
+          },
+          "ac0.85" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.85",
+            "description" : ""
+          }
+        },
+        "de" : {
+          "ac0.85" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.85",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.19" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.19",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.20" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.20",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.21" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.21",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.22" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.22",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.23" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.23",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.25" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.25",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.26" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.26",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.27" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.27",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.28" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.28",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.29" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.29",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.30" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.30",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.31" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.31",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.32" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.32",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.33" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.33",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.34" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.34",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.35" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.35",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.36" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.36",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.37" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.37",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.38" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.38",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.39" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.39",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.40" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.40",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.41" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.41",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.42" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.42",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.43" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.43",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.44" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.44",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.45" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.45",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.46" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.46",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.47" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.47",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.48" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.48",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.49" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.49",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.50" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.50",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.51" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.51",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.52" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.52",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.53" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.53",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.54" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.54",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.55" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.55",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.56" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.56",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.57" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.57",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.58" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.58",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.59" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.59",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.60" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.60",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.61" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.61",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.62" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.62",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.63" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.63",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.64" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.64",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.65" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.65",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.66" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.66",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.67" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.67",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.68" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.68",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.69" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.69",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.70" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.70",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.71" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.71",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.72" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.72",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.73" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.73",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.74" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.74",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.75" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.75",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.76" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.76",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.77" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.77",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.78" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.78",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.79" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.79",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.80" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.80",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.81" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.81",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.82" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.82",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.83" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.83",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.84" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.84",
+          "members" : [ "at0002", "at0003" ]
+        },
+        "ac0.85" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.85",
+          "members" : [ "at0002", "at0003" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "d42de821-caab-46a8-93d2-01a84b34d20e",
@@ -3025,12 +3496,13 @@
                 "rmAttributeName" : "defining_code",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+                  "constraint" : [ "ac0.24" ],
+                  "selectedTerminologies" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -3126,26 +3598,147 @@
             "code" : "at0037.1",
             "text" : "Kommentar zur Qualität der Analyse",
             "description" : "Kommentar zum Sequenzierungsassay, der nicht in anderen Feldern erfasst wurde."
+          },
+          "ac0.24" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.24",
+            "description" : ""
           }
         },
         "en" : {
-          "at0001.1" : {
+          "ac0.24" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "Sequenzierungstechnologie / Analysetechnologie",
-            "description" : "Name of the technology used for sequencing analysis."
-          },
-          "at0037.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0037.1",
-            "text" : "Kommentar zur Qualität der Analyse",
-            "description" : "Comment on the sequencing assay that was not captured in other fields."
+            "text" : "*(Synthesized) (de)",
+            "code" : "ac0.24",
+            "description" : ""
           }
         }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.19" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.19",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.20" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.20",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.21" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.21",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.22" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.22",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.23" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.23",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "f0e0d280-0ce2-45a0-bb50-3eb7b2933c84",
@@ -3858,37 +4451,109 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..*",
-          "nodeId" : "at0045.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-simple_variant-012.v0",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0045.2",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-genomic_copy_number_variant-014.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0045.3",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-translocation_variant-016.v0",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
           "nodeId" : "at0102.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-knowledge_base_reference-019.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0045.5",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-genomic_copy_number_variant-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0045.4",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-genomic_conversion_variant-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0045.5",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-genomic_deletion_variant-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0045.6",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-genomic_deletion_insertion_variant-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0045.7",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-genomic_duplication_variant-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0045.8",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-genomic_insertion_variant-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0045.9",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-genomic_inversion_variant-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0045.10",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-genomic_repeated_sequence_variant-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0045.11",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-genomic_substitution_variant-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0045.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-simple_variant-001.v0",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0045.12",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-translocation_variant-001.v0",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -3899,33 +4564,12 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0101.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0101.1",
-            "text" : "Variant / Genomposition aus vcf-File nach HGVS (g.*)",
-            "description" : "Description of the variation at the genomic level following the HGVS nomenclature.",
-            "comment" : "For example: 'g.33038255C>A'.\r\n\r\nIf both this element and the 'Structured variant' SLOT are used simultaneously, they need to represent identical data."
-          },
-          "at0011.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0011.1",
-            "text" : "cDNA Nomenklatur Variante (DNA change)",
-            "description" : "Description of the variation at the DNA level following the HGVS nomenclature.",
-            "comment" : "For example: 'c.5249C>T'."
-          },
           "at0012.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0012.1",
-            "text" : "Proteinebene Nomenklatur Variante (Amino Acid Change)",
+            "text" : "Amino Acid Change",
             "description" : "Description of the variation at the protein level following the HGVS nomenclature.",
             "comment" : "For example: 'p.T1750M'."
-          },
-          "at0054.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0054.1",
-            "text" : "Impact / Variantenklassifikation",
-            "description" : "Single word or phrase describing the reported impact of the specific variant.",
-            "comment" : "For example: 'activating', 'deactivating', 'dysfunction', 'gain of function'. Coding with a terminology is preferred, where possible."
           },
           "at0020.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3941,36 +4585,11 @@
             "description" : "The full gene name approved by the HGNC that conveys the character or function of the gene.",
             "comment" : "For example 'Chromodomain helicase DNA binding protein 5'."
           },
-          "at0057.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0057.1",
-            "text" : "Fusionstranskript-Name 1 (Part of fusion)",
-            "description" : "States if the gene is part of a fusion gene and if it is the first or second part of the fusion gene."
-          },
-          "at0058.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0058.1",
-            "text" : "Pathogenitätsklasse/Variantenklassifikation (ACMG classification)",
-            "description" : "The clinical significance according to the ACMG recommendations."
-          },
-          "at0059.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0059.1",
-            "text" : "Fusionstranskript-Name 2 (Fusion exon)",
-            "description" : "The number of the exon which is part of the fusion."
-          },
           "at0060.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0060.1",
-            "text" : "Lesetiefe an Variantenposition (Median read depth)",
+            "text" : "Median read depth",
             "description" : "The total number of reads mapped at this specific location."
-          },
-          "at0047.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0047.1",
-            "text" : "Allelfrequenz (Allele frequency)",
-            "description" : "The relative frequency of an allele at a particular locus.",
-            "comment" : "For example: '0.63'."
           }
         },
         "nb" : {
@@ -4537,14 +5156,7 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0018",
       "termDefinitions" : {
-        "en" : {
-          "at0020.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0020.1",
-            "text" : "Referenztranskript (Accession number)",
-            "description" : "A unique identifier to refer to a sequence record in a sequence repository."
-          }
-        },
+        "en" : { },
         "nb" : {
           "at0020.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -4686,6 +5298,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0020.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -4694,15 +5307,15 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
               "defaultValue" : {
-                "@type" : "DV_TEXT",
-                "value" : "GRCh37/hg19"
+                "value" : "GRCh37/hg19",
+                "@type" : "DV_TEXT"
               },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
-                "existence" : "0..1",
                 "children" : [ {
                   "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
                   "constraint" : [ "GRCh37/hg19", "GRCh38/hg38", "NCBI36/hg18", "/.+/" ]
                 } ]
               } ],
@@ -4788,1207 +5401,6 @@
           "at0023.1" : "term:LOINC(2.65)::48000-4"
         }
       },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "9735cea1-302d-47d4-9d0f-02827743873f",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Natalia Strauch",
-        "organisation" : "Medizinische Hochschule Hannover",
-        "email" : "Strauch.Natalia@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Vebjørn Arntzen, Liv Laugen,",
-        "organisation" : "Oslo University Hospital, Norway, ​Oslo University Hospital, Norway",
-        "email" : "varntzen@ous-hf.no, liv.laugen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "6330df99-9e38-4ab5-bce8-acd76b51ca5f",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "09EA89B3CD9789FFA9C8D61504F9620D"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Beschreibung einer in einer Sequenz beobachteten Variante, bei dem der Variantentyp unbekannt ist, weil z.B. noch keine Annotation der Daten gemacht wurde, oder weil die spezifische Variante nicht von den spezialisierten Variantenarchetypen erfasst wird.",
-          "keywords" : [ "Variante", "Genetisch", "Genomisch", "Einfache genetische Variante", "Simple Variant" ],
-          "use" : "Dieser Archetyp soll im SLOT \"Variant\" des Archetyps \"Genetic variant\" verwendet werden.\r\n",
-          "misuse" : "Dieser Archetyp sollte nur für den Import von vcf-daten verwendet werden, wenn keine Annotation des Variantentyps (Instertion, Deletion usw.) verfügbar ist und daher die spezifischen Archetypen nicht ausgewählt werden können um die Variantenergebnisse zu speichern.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To describe a variant observed in a sequence, where the variant type is unknown, for example, because no annotation of the data has yet been made, or because the specific variant is not covered by the specialized variant archetypes.",
-          "keywords" : [ "variation", "genetic", "genomic", "variant", "simple generic variant" ],
-          "use" : "This archetype should be used inside the \"Variant\" SLOT of the \"Genetic variant\" archetype.",
-          "misuse" : "This archetype should only be used for import of vcf-data if no annotation of the variant type (substitution, insertion etc.) is available, and, therefore, the right specific archetypes cannot be picked to store the variant results.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.simple_variant.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-simple_variant-012.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0003.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0004.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0009.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0010.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0038.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-reference_sequence-013.v1",
-          "referenceType" : "archetypeOverlay"
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Startposition der Variante / Genomposition (aus vcf-File)",
-            "description" : "The position of the first nucleotide of the changed range for a simple variant. (\"Start\" in vcf-file)."
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Endposition der Variant / Genomposition (aus vcf-File)",
-            "description" : "The position of the last nucleotide of the changed range for a simple variant. (\"End\" in vcf-file)."
-          },
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.1",
-            "text" : "Alternative Nukleotidsequenz (Alt)",
-            "description" : "The observed alternate nucleotide or nucleotide sequence (\"Alt\" in vcf-file)."
-          },
-          "at0010.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010.1",
-            "text" : "Referenznukleotidsequenz (Ref)",
-            "description" : "The reference nucleotide or nucleotide sequence. (\"Ref\" in vcf-file)."
-          }
-        },
-        "de" : {
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Startposition der Variante / Genomposition (aus vcf-File)",
-            "description" : "Die Position des ersten Nukleotids des geänderten Bereichs für eine einfache Variante. (\"Start\" in der vcf-Datei)."
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Endposition der Variant / Genomposition (aus vcf-File)",
-            "description" : "Die Position des letzten Nukleotids des geänderten Bereichs für eine einfache Variante. (\"End\" in der vcf-Datei)."
-          },
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.1",
-            "text" : "Alternative Nukleotidsequenz (Alt)",
-            "description" : "Die beobachtete alternative Nukleotid- oder Nukleotidsequenz (\"Alt\" in vcf-Datei)."
-          },
-          "at0010.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010.1",
-            "text" : "Referenznukleotidsequenz (Ref)",
-            "description" : "Die Referenznukleotid- oder Nukleotidsequenz. (\"Ref\") in der vcf-Datei)."
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "413e04d6-5e97-4671-9155-4cb8f9877c58",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Aurelie Tomczak",
-        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany",
-        "email" : "au.tomczak@yahoo.com"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "0d76b26d-8cbd-4e0d-a7ac-e83bf4dfcae9",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "A435C094BF5B5FE9FD6F95D477E4A4AB"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Darstellung von Details zur Referenzsequenz, die zur Beschreibung von Varianten verwendet wird.",
-          "keywords" : [ "genetische Befunde", "Referenzsequenz", "Gentest", "Identifikation von Varianten", "genomisch", "Variation" ],
-          "use" : "Dieser Archetyp wurde speziell für die Verwendung in den SLOTs \"Reference Genome\" und \"Transcript reference sequence\" innerhalb des Archetyps CLUSTER.genomic_variant_result und in den SLOTs \"Reference sequence\" innerhalb der anderen spezifischen Genetischen Varianten-Archetypen (z. B. CLUSTER.genomic_insertion_variant, CLUSTER.genomic_deletion_variant, usw.), kann aber auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere detaljer om referansesekvensen som brukes for å beskrive varianter.",
-          "keywords" : [ "genetiske funn", "referansesekvens", "genetisk testing", "gentester", "variant", "genetikk", "variasjon", "mutasjon", "sekvensering", "mutasjon" ],
-          "use" : "Denne arketypen har blitt laget for å brukes i SLOT'et \"Referansegenom\" og i \"Transkriptreferansesekvens\" i arketypen CLUSTER.genomic_variant_result arketypen (Genetisk variant resultat) og SLOT'et \"Referansesekvens\" i de spesifikke genetisk variant arketypene (f.eks. CLUSTER.genomic_insertion_variant, CLUSTER.genomic_deletion_variant. osv). Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record details about the reference sequence used to describe variants.",
-          "keywords" : [ "genetic findings", "reference sequence", "Genetic test", "variant calling", "genomic", "variation" ],
-          "use" : "This archetype has been specifically designed to be used in the 'Reference Genome' and in the 'Transcript reference sequence' SLOTs within the CLUSTER.genomic_variant_result archetype and in the 'Reference sequence' SLOT within other specific genetic variant archetypes, such as the CLUSTER.genomic_insertion_variant and the CLUSTER.genomic_deletion_variant. Itt can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.reference_sequence.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-reference_sequence-013.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0018.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0023.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "at0024", "at0025", "at0026", "at0027", "at0028", "at0029", "at0030", "at0031", "at0032", "at0033", "at0034", "at0035", "at0036", "at0037", "at0038", "at0039", "at0040", "at0041", "at0042", "at0043", "at0044", "at0045", "at0046", "at0047" ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0018",
-      "termDefinitions" : {
-        "en" : {
-          "at0018.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018.1",
-            "text" : "Transkript Referenz",
-            "description" : "A sequence file that is used as a reference to describe genetic variants that are present in an analysed sequence."
-          }
-        },
-        "nb" : {
-          "at0018.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018.1",
-            "text" : "Transkript Referenz",
-            "description" : "En sekvensfil som er brukt som en referanse for å beskrive varianter som er funnet i en analysert sekvens."
-          }
-        },
-        "de" : {
-          "at0018.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018.1",
-            "text" : "Transkript Referenz",
-            "description" : "Eine Datei mit Sequenzdaten, die als Referenz zur Beschreibung genetischer Varianten, die in einer analysierten Sequenz vorhanden sind, verwendet wird."
-          }
-        }
-      },
-      "termBindings" : {
-        "LOINC" : {
-          "at0023.1" : "term:LOINC(2.65)::48000-4"
-        }
-      },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "9735cea1-302d-47d4-9d0f-02827743873f",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Natalia Strauch",
-        "organisation" : "Medizinische Hochschule Hannover",
-        "email" : "Strauch.Natalia@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Vebjørn Arntzen, Liv Laugen,",
-        "organisation" : "Oslo University Hospital, Norway, ​Oslo University Hospital, Norway",
-        "email" : "varntzen@ous-hf.no, liv.laugen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "69e173a1-6963-4313-a500-669da9fc11b4",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "64EB00E947278B1CCCF2AEDCDE34309C"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Darstellung von Informationen zu der in einer Sequenz beobachteten \"Copy number variant\" menschlicher DNA.",
-          "keywords" : [ "Copy number", "Variation", "genetisch", "Genom", "genomisch", "Variante", "DNA", "Chromosom", "Mutation", "Nukleotid" ],
-          "use" : "Verwenden Sie diesen Archetyp, um die Details zu einer \"Copy number variant\" menschlicher DNA darzustellen, die in einer genomischen Sequenz beobachtet wurden.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung im SLOT \"Structured variant\" innerhalb des Archetyps CLUSTER.genomic_variant_result entwickelt, kann aber auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.\r\n\r\nAlle Definitionen und Beispiele in diesem Archetyp entsprechen der Nomenklatur der HGVS.",
-          "misuse" : "Nicht zur Darstellung von Informationen über Varianten nicht-menschlicher DNA oder jeglicher Art von RNA oder Protein.\r\n\r\nNicht zur Darstellung von Informationen über Tandem-Wiederholungen verwenden. Verwenden Sie zu diesem Zweck den Archetyp CLUSTER.genomic_repeated_sequence_variant.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere detaljer om en kopitallvariant (CNV) i humant DNA, funnet i en genomisk sekvens.",
-          "keywords" : [ "kopitall", "variasjon", "genetikk", "genom", "mutasjon", "nukleotide", "CNV", "kopitallsavvik", "Copy Number", "DNA", "kromosom" ],
-          "use" : "Brukes til å registrere detaljene om en kopitallsvariant (CNV) i humant DNA, funnet i en genomisk sekvens.\r\n\r\nDenne arketypen har blitt laget for å brukes i SLOT'et \"'Strukturert variantbeskrivelse'\" i arketypen CLUSTER.genomic_variant_result. Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.\r\n\r\nAlle definisjoner og eksempler i denne arketypen følger HGVS-nomenklaturen.",
-          "misuse" : "Skal ikke brukes til å registrere informasjon om varianter av ikke-humant DNA, eller noen form for RNA eller protein.\r\n\r\nSkal ikke brukes til å registrere informasjon om tandem-repeterte sekvenser, bruk arketypen CLUSTER.repeated_sequence_variant til dette formålet.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record the details about a copy number variant of human DNA, observed in a genomic sequence.",
-          "keywords" : [ "copy number", "variation", "genetic", "genomic", "variant", "DNA", "chromosome", "mutation", "nucleotide" ],
-          "use" : "Use to record the details about a copy number variant of human DNA, observed in a genomic sequence.\r\n\r\nThis archetype has been specifically designed to be used in the 'Structured variant' SLOT within the CLUSTER.genomic_variant_result archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nAll definitions and examples in this archetype follow the HGVS nomenclature.",
-          "misuse" : "Not to be used to record information about variants of non-human DNA, or any kind of RNA or protein.\r\n\r\nNot to be used to record information about tandem repeats. Use the CLUSTER.genomic_repeated_sequence_variant archetype for this purpose.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_copy_number_variant.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-genomic_copy_number_variant-014.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0003.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_COUNT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "magnitude",
-                "children" : [ {
-                  "@type" : "C_INTEGER",
-                  "rmTypeName" : "Integer",
-                  "occurrences" : "1..1",
-                  "constraint" : [ {
-                    "lower" : 0,
-                    "lowerIncluded" : true,
-                    "upperIncluded" : false,
-                    "lowerUnbounded" : false,
-                    "upperUnbounded" : true
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0004.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-reference_sequence-015.v1",
-          "referenceType" : "archetypeOverlay"
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Allelzahl (Total copy number)",
-            "description" : "Number of appearance of the allele."
-          }
-        },
-        "nb" : {
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Allelzahl (Total copy number)",
-            "description" : "Antall ganger allelet forekommer (antall kopier)."
-          }
-        },
-        "de" : {
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Allelzahl (Total copy number)",
-            "description" : "Number of appearance of the allele."
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "851f84a5-9d6e-486c-afbd-d04c243ee827",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Aurelie Tomczak, Natalia Strauch",
-        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany; Medizinische Hochschule Hannover",
-        "email" : "au.tomczak@yahoo.com, Strauch.Natalia@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Liv Laugen",
-        "organisation" : "​Oslo University Hospital, Norway",
-        "email" : "liv.laugen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "0d76b26d-8cbd-4e0d-a7ac-e83bf4dfcae9",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "A435C094BF5B5FE9FD6F95D477E4A4AB"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Darstellung von Details zur Referenzsequenz, die zur Beschreibung von Varianten verwendet wird.",
-          "keywords" : [ "genetische Befunde", "Referenzsequenz", "Gentest", "Identifikation von Varianten", "genomisch", "Variation" ],
-          "use" : "Dieser Archetyp wurde speziell für die Verwendung in den SLOTs \"Reference Genome\" und \"Transcript reference sequence\" innerhalb des Archetyps CLUSTER.genomic_variant_result und in den SLOTs \"Reference sequence\" innerhalb der anderen spezifischen Genetischen Varianten-Archetypen (z. B. CLUSTER.genomic_insertion_variant, CLUSTER.genomic_deletion_variant, usw.), kann aber auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere detaljer om referansesekvensen som brukes for å beskrive varianter.",
-          "keywords" : [ "genetiske funn", "referansesekvens", "genetisk testing", "gentester", "variant", "genetikk", "variasjon", "mutasjon", "sekvensering", "mutasjon" ],
-          "use" : "Denne arketypen har blitt laget for å brukes i SLOT'et \"Referansegenom\" og i \"Transkriptreferansesekvens\" i arketypen CLUSTER.genomic_variant_result arketypen (Genetisk variant resultat) og SLOT'et \"Referansesekvens\" i de spesifikke genetisk variant arketypene (f.eks. CLUSTER.genomic_insertion_variant, CLUSTER.genomic_deletion_variant. osv). Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record details about the reference sequence used to describe variants.",
-          "keywords" : [ "genetic findings", "reference sequence", "Genetic test", "variant calling", "genomic", "variation" ],
-          "use" : "This archetype has been specifically designed to be used in the 'Reference Genome' and in the 'Transcript reference sequence' SLOTs within the CLUSTER.genomic_variant_result archetype and in the 'Reference sequence' SLOT within other specific genetic variant archetypes, such as the CLUSTER.genomic_insertion_variant and the CLUSTER.genomic_deletion_variant. Itt can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.reference_sequence.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-reference_sequence-015.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0018.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0018",
-      "termDefinitions" : {
-        "en" : {
-          "at0018.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018.1",
-            "text" : "Transkript Referenz",
-            "description" : "A sequence file that is used as a reference to describe genetic variants that are present in an analysed sequence."
-          }
-        },
-        "nb" : {
-          "at0018.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018.1",
-            "text" : "Transkript Referenz",
-            "description" : "En sekvensfil som er brukt som en referanse for å beskrive varianter som er funnet i en analysert sekvens."
-          }
-        },
-        "de" : {
-          "at0018.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018.1",
-            "text" : "Transkript Referenz",
-            "description" : "Eine Datei mit Sequenzdaten, die als Referenz zur Beschreibung genetischer Varianten, die in einer analysierten Sequenz vorhanden sind, verwendet wird."
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "9735cea1-302d-47d4-9d0f-02827743873f",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Natalia Strauch",
-        "organisation" : "Medizinische Hochschule Hannover",
-        "email" : "Strauch.Natalia@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Vebjørn Arntzen, Liv Laugen,",
-        "organisation" : "Oslo University Hospital, Norway, ​Oslo University Hospital, Norway",
-        "email" : "varntzen@ous-hf.no, liv.laugen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "844062c0-06ff-4716-a092-68126437466c",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "8745C8D1D9C1569BEE1714EB866630E8"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Beschreibung der in einer Sequenz beobachteten 'translocation variant'.",
-          "keywords" : [ "Translokation", "Variante", "genetisch", "genomisch", "Variation", "Genom" ],
-          "use" : "Zur Beschreibung der in einer Sequenz beobachteten 'translocation variant' gemäß der HGVS-Nomenklatur.\r\nDieser Archetyp wurde speziell für die Verwendung im 'Variant'-SLOT innerhalb des Archetyps CLUSTER.genetic_variant entwickelt, kann jedoch auch innerhalb anderer ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å dokumentere en translokasjonvariant funnet i en sekvensering basert på HGVS -nomenklaturen. \r\n",
-          "keywords" : [ "translokasjon", "genetisk variant", "sekvens", "genetisk", "genetisk endring", "genom", "kromosom", "overkryssing", "mutasjon", "nukleotid", "Resiproke translokasjoner", "Robertsonske translokasjoner", "Philadelphiakromosomet", "trisomi", "ubalansert", "balansert", "DNA", "RNA" ],
-          "use" : "Denne arketypen brukes for å dokumentere translokasjonvarianti en sekvensering basert på HGVS-nomenklaturen. Arketypen har blitt laget for å brukes i SLOT'et \"Variant\" i arketypen CLUSTER.genetic_variant. Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record the details about a translocation variant observed in a genetic sequence.",
-          "keywords" : [ ],
-          "use" : "Use to record the findings for a traslocation variant observed in a genetic sequence according to the HGVS nomenclature.\r\nThis archetype has been specifically designed to be used in the 'Variant' SLOT within the CLUSTER.genetic_variant archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.translocation_variant.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-translocation_variant-016.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0003.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0004.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0007.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-reference_sequence-017.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0008.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-reference_sequence-018.v1",
-          "referenceType" : "archetypeOverlay"
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Breakpoint position (or closest approximation by exon border if no WGS data) 1",
-            "description" : "Position of first breakpoint relative to start of \"Chromosome 1\"."
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Breakpoint position (or closest approximation by exon border if no WGS data) 2",
-            "description" : "Position of second breakpoint relative to start of \"Chromosome 2\"."
-          }
-        },
-        "de" : {
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Breakpoint position (or closest approximation by exon border if no WGS data) 1",
-            "description" : "Position of first breakpoint relative to start of \"Chromosome 1\"."
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Breakpoint position (or closest approximation by exon border if no WGS data) 2",
-            "description" : "Position of second breakpoint relative to start of \"Chromosome 2\"."
-          }
-        },
-        "nb" : {
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Breakpoint position (or closest approximation by exon border if no WGS data) 1",
-            "description" : "Posisjonen/plasseringen til det første bruddpunktet (det første bruddpunktet som har oppstått) relatert til starten av \"Kromosom nr. 1\" (kromosomet med det laveste tallet/posisjonen)."
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Breakpoint position (or closest approximation by exon border if no WGS data) 2",
-            "description" : "Posisjonen/plasseringen til bruddpunkt nummer to relatert til starten av \"Kromosom nr. 2\"."
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "2ea5bd94-ad81-469b-863a-6a51e730a124",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Aurelie Tomczak",
-        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany",
-        "email" : "au.tomczak@yahoo.com"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Liv Laugen",
-        "organisation" : "Oslo University Hospital, Norway",
-        "email" : "liv.laugen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "0d76b26d-8cbd-4e0d-a7ac-e83bf4dfcae9",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "A435C094BF5B5FE9FD6F95D477E4A4AB"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Darstellung von Details zur Referenzsequenz, die zur Beschreibung von Varianten verwendet wird.",
-          "keywords" : [ "genetische Befunde", "Referenzsequenz", "Gentest", "Identifikation von Varianten", "genomisch", "Variation" ],
-          "use" : "Dieser Archetyp wurde speziell für die Verwendung in den SLOTs \"Reference Genome\" und \"Transcript reference sequence\" innerhalb des Archetyps CLUSTER.genomic_variant_result und in den SLOTs \"Reference sequence\" innerhalb der anderen spezifischen Genetischen Varianten-Archetypen (z. B. CLUSTER.genomic_insertion_variant, CLUSTER.genomic_deletion_variant, usw.), kann aber auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere detaljer om referansesekvensen som brukes for å beskrive varianter.",
-          "keywords" : [ "genetiske funn", "referansesekvens", "genetisk testing", "gentester", "variant", "genetikk", "variasjon", "mutasjon", "sekvensering", "mutasjon" ],
-          "use" : "Denne arketypen har blitt laget for å brukes i SLOT'et \"Referansegenom\" og i \"Transkriptreferansesekvens\" i arketypen CLUSTER.genomic_variant_result arketypen (Genetisk variant resultat) og SLOT'et \"Referansesekvens\" i de spesifikke genetisk variant arketypene (f.eks. CLUSTER.genomic_insertion_variant, CLUSTER.genomic_deletion_variant. osv). Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record details about the reference sequence used to describe variants.",
-          "keywords" : [ "genetic findings", "reference sequence", "Genetic test", "variant calling", "genomic", "variation" ],
-          "use" : "This archetype has been specifically designed to be used in the 'Reference Genome' and in the 'Transcript reference sequence' SLOTs within the CLUSTER.genomic_variant_result archetype and in the 'Reference sequence' SLOT within other specific genetic variant archetypes, such as the CLUSTER.genomic_insertion_variant and the CLUSTER.genomic_deletion_variant. Itt can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.reference_sequence.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-reference_sequence-017.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0018.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0018",
-      "termDefinitions" : {
-        "en" : {
-          "at0018.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018.1",
-            "text" : "Transkript Referenz 1",
-            "description" : "A sequence file that is used as a reference to describe genetic variants that are present in an analysed sequence."
-          }
-        },
-        "nb" : {
-          "at0018.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018.1",
-            "text" : "Transkript Referenz 1",
-            "description" : "En sekvensfil som er brukt som en referanse for å beskrive varianter som er funnet i en analysert sekvens."
-          }
-        },
-        "de" : {
-          "at0018.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018.1",
-            "text" : "Transkript Referenz 1",
-            "description" : "Eine Datei mit Sequenzdaten, die als Referenz zur Beschreibung genetischer Varianten, die in einer analysierten Sequenz vorhanden sind, verwendet wird."
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "9735cea1-302d-47d4-9d0f-02827743873f",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Natalia Strauch",
-        "organisation" : "Medizinische Hochschule Hannover",
-        "email" : "Strauch.Natalia@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Vebjørn Arntzen, Liv Laugen,",
-        "organisation" : "Oslo University Hospital, Norway, ​Oslo University Hospital, Norway",
-        "email" : "varntzen@ous-hf.no, liv.laugen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "0d76b26d-8cbd-4e0d-a7ac-e83bf4dfcae9",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "A435C094BF5B5FE9FD6F95D477E4A4AB"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Darstellung von Details zur Referenzsequenz, die zur Beschreibung von Varianten verwendet wird.",
-          "keywords" : [ "genetische Befunde", "Referenzsequenz", "Gentest", "Identifikation von Varianten", "genomisch", "Variation" ],
-          "use" : "Dieser Archetyp wurde speziell für die Verwendung in den SLOTs \"Reference Genome\" und \"Transcript reference sequence\" innerhalb des Archetyps CLUSTER.genomic_variant_result und in den SLOTs \"Reference sequence\" innerhalb der anderen spezifischen Genetischen Varianten-Archetypen (z. B. CLUSTER.genomic_insertion_variant, CLUSTER.genomic_deletion_variant, usw.), kann aber auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere detaljer om referansesekvensen som brukes for å beskrive varianter.",
-          "keywords" : [ "genetiske funn", "referansesekvens", "genetisk testing", "gentester", "variant", "genetikk", "variasjon", "mutasjon", "sekvensering", "mutasjon" ],
-          "use" : "Denne arketypen har blitt laget for å brukes i SLOT'et \"Referansegenom\" og i \"Transkriptreferansesekvens\" i arketypen CLUSTER.genomic_variant_result arketypen (Genetisk variant resultat) og SLOT'et \"Referansesekvens\" i de spesifikke genetisk variant arketypene (f.eks. CLUSTER.genomic_insertion_variant, CLUSTER.genomic_deletion_variant. osv). Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record details about the reference sequence used to describe variants.",
-          "keywords" : [ "genetic findings", "reference sequence", "Genetic test", "variant calling", "genomic", "variation" ],
-          "use" : "This archetype has been specifically designed to be used in the 'Reference Genome' and in the 'Transcript reference sequence' SLOTs within the CLUSTER.genomic_variant_result archetype and in the 'Reference sequence' SLOT within other specific genetic variant archetypes, such as the CLUSTER.genomic_insertion_variant and the CLUSTER.genomic_deletion_variant. Itt can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.reference_sequence.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-reference_sequence-018.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0018.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0018",
-      "termDefinitions" : {
-        "en" : {
-          "at0018.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018.1",
-            "text" : "Transkript Referenz 2",
-            "description" : "A sequence file that is used as a reference to describe genetic variants that are present in an analysed sequence."
-          }
-        },
-        "nb" : {
-          "at0018.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018.1",
-            "text" : "Transkript Referenz 2",
-            "description" : "En sekvensfil som er brukt som en referanse for å beskrive varianter som er funnet i en analysert sekvens."
-          }
-        },
-        "de" : {
-          "at0018.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018.1",
-            "text" : "Transkript Referenz 2",
-            "description" : "Eine Datei mit Sequenzdaten, die als Referenz zur Beschreibung genetischer Varianten, die in einer analysierten Sequenz vorhanden sind, verwendet wird."
-          }
-        }
-      },
-      "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
@@ -6428,7 +5840,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Tumordiagnose_section",
+            "text" : "Tumor diagnosis section",
             "description" : "Framework for consistent modelling of content within a template for a Problem list.",
             "comment" : "Intended to be used within the COMPOSITION.problem_list."
           }
@@ -6783,7 +6195,16 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0077.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -7096,37 +6517,23 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Tumordiagnose",
+            "text" : "Tumor diagnosis",
             "description" : "Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.",
             "comment" : "Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'."
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
-            "text" : "Diagnose Name (ICD-10)",
+            "text" : "Diagnosis name (ICD-10)",
             "description" : "Identification of the problem or diagnosis, by name.",
             "comment" : "Coding of the name of the problem or diagnosis with a terminology is preferred, where possible."
           },
           "at0009.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0009.1",
-            "text" : "Diagnose Beschreibung",
+            "text" : "Diagnosis description",
             "description" : "Narrative description about the problem or diagnosis.",
             "comment" : "Use to provide background and context, including evolution, episodes or exacerbations, progress and any other relevant details, about the problem or diagnosis."
-          },
-          "at0012.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012.1",
-            "text" : "Seitenlokalisation",
-            "description" : "Identification of a simple body site for the location of the problem or diagnosis.",
-            "comment" : "Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant."
-          },
-          "at0077.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077.1",
-            "text" : "Erstdiagnosedatum",
-            "description" : "Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.",
-            "comment" : "Data captured/imported as \"Age at onset\" should be converted to a date using the subject's date of birth."
           },
           "at0069.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -9932,6 +9339,910 @@
         "name" : "Bassem Khouzam, Vanessa Pereira",
         "organisation" : "Medtronic, Better - Pathfinder",
         "email" : "bassem.khouzam@medtronic.com, vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "1de21935-3f4f-4f84-a323-682e58480eab",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "E8508DA94B907A913D6922DF808858BC"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_conversion_variant.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-genomic_conversion_variant-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "521c792e-4323-45e2-84c5-d0f2fd4a5468",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aurelie Tomczak, Natalia Strauch",
+        "organisation" : "University Hospital Heidelberg, Germany, Medizinische Hochschule Hannover",
+        "email" : "au.tomczak@yahoo.com, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Liv Laugen",
+        "organisation" : "OUS, ​Oslo University Hospital, Norway",
+        "email" : "liv.laugen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "d558d03d-0f04-41bc-aa85-35b68ac88172",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "64EB00E947278B1CCCF2AEDCDE34309C"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_copy_number_variant.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-genomic_copy_number_variant-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Genetisk variant - kopitall (2)",
+            "description" : "En endring av gensekvensen til et menneske hvor et DNA-segment, vanligvis større enn 1 kilobaser (kb), blir slettet eller duplisert, sammenliknet med referansesekvensen. Også kalt CNV. Engelsk: copy number."
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Genomic copy number variant (2)",
+            "description" : "Eine menschliche genetische Sequenzänderung, bei der im Vergleich zu einer genomischen Referenzsequenz ein DNA-Segment, das normalerweise größer als 1 Kilobase (kb) ist, gelöscht oder dupliziert wurde."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "851f84a5-9d6e-486c-afbd-d04c243ee827",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aurelie Tomczak, Natalia Strauch",
+        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany; Medizinische Hochschule Hannover",
+        "email" : "au.tomczak@yahoo.com, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Liv Laugen",
+        "organisation" : "​Oslo University Hospital, Norway",
+        "email" : "liv.laugen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "b8a33c7b-fd2e-4e81-bb81-841eb25f1a6c",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "4FB63ECCC6FB04AA640F8B2F731487A4"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_deletion_variant.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-genomic_deletion_variant-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "9e865cfb-29dc-4b7f-a816-be2c9c225026",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aurelie Tomczak, Natalia Strauch",
+        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany, Medizinische Hochschule Hannover",
+        "email" : "au.tomczak@yahoo.com, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Liv Laugen",
+        "organisation" : "​Oslo University Hospital, Norway",
+        "email" : "liv.laugen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "a6166b19-b2fe-4571-b7ca-8faa4b8bdeca",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "C976F7E7EE199950211D76C45FC16EF0"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_deletion_insertion_variant.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-genomic_deletion_insertion_variant-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "b9615084-bbfc-41d2-9f3e-83686fbf5901",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aurelie Tomczak, Natalia Strauch",
+        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany, Medizinische Hochschule Hannover",
+        "email" : "au.tomczak@yahoo.com, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Liv Laugen",
+        "organisation" : "OUS, ​Oslo University Hospital, Norway",
+        "email" : "liv.laugen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "bf68c75b-a025-4f7a-a281-0c2ea8169542",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "84C5AA6AA202ACEE0D0559072D8B207D"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_duplication_variant.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-genomic_duplication_variant-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "de" : { },
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "36997faa-2f4f-4cab-9a24-f2a11ecc8381",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aurelie Tomczak, Natalia Strauch",
+        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany, Medizinische Hochschule Hannover",
+        "email" : "au.tomczak@yahoo.com, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Liv Laugen",
+        "organisation" : "Oslo University Hospital, Norway, ​Oslo University Hospital, Norway",
+        "email" : "liv.laugen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "b58e392d-50b4-4db9-a946-e69d0e93bb8f",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "98872A5FB3B08507F48CB34F51A3A8AA"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_insertion_variant.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-genomic_insertion_variant-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "88521f3b-5e70-4f10-b137-6f7b0c49e6a2",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aurelie Tomczak, Natalia Strauch",
+        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany, Medizinische Hochschule Hannover",
+        "email" : "au.tomczak@yahoo.com, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Liv Laugen",
+        "organisation" : "Oslo University hospital, Norway",
+        "email" : "liv.laugen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "f0d32ca0-b43f-495d-ac55-5723e3f7d3c5",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "8123D90C4AE8226BD888C84073372E1F"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_inversion_variant.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-genomic_inversion_variant-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "a8b87105-6a60-410a-9d6d-09f644b3a011",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aurelie Tomczak, Natalia Strauch",
+        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany, Medizinische Hochschule Hannover",
+        "email" : "au.tomczak@yahoo.com, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Liv Laugen, Silje Ljosland Bakke",
+        "organisation" : "Oslo University Hospital, Norway, Helse Vest IKT AS, Norway",
+        "email" : "liv.laugen@ous-hf.no, silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "a9a8f8a5-b1e5-4a8f-925d-c4120966d884",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "46FB5ED4B9ABE631DFE655742BFD3417"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_repeated_sequence_variant.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-genomic_repeated_sequence_variant-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "de" : { },
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "86574d3b-6bc9-4020-a277-22059ac2d806",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aurelie Tomczak, Natalia Strauch",
+        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany, Medizinische Hochschule Hannover",
+        "email" : "au.tomczak@yahoo.com, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Liv Laugen",
+        "organisation" : "Oslo University Hospital, Norway",
+        "email" : "liv.laugen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "39f2fabf-2027-4998-9809-f9ffe18d221c",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "7940C38BF01B8F27E1AA7BD298C0EDAD"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_substitution_variant.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-genomic_substitution_variant-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "de" : { },
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "0feb6387-5368-4354-aecd-f5f08bce0d1c",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aurelie Tomczak, Natalia Strauch",
+        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany, Medizinische Hochschule Hannover",
+        "email" : "au.tomczak@yahoo.com, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Liv Laugen",
+        "organisation" : "Oslo University Hospital, Norway, ​Oslo University Hospital, Norway",
+        "email" : "liv.laugen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "fd3eb83c-989c-411a-9088-ebc7f3354863",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "09EA89B3CD9789FFA9C8D61504F9620D"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.simple_variant.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-simple_variant-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "413e04d6-5e97-4671-9155-4cb8f9877c58",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aurelie Tomczak",
+        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany",
+        "email" : "au.tomczak@yahoo.com"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "67b5bfcb-5645-446e-9262-20085155c8d0",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "8745C8D1D9C1569BEE1714EB866630E8"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.translocation_variant.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-translocation_variant-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Genetic translocation variant (2)",
+            "description" : "Translocation variant."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Genetisk translokasjonvariant (2)",
+            "description" : "En variant der det har skjedd en forflytning/omplasseringa av forskjellige deler av kromosomene mellom ikke-homologe kromosomer, enten at to biter av forskjellige kromosomer har byttet plass, eller at et kromosom er festet til et annet i sin helhet. Det er forskjellige typer translokasjonsvariant, balansert, ubalansert, Resiprok/gjensidig, ikke-gjensidig/nonresiprok translokasjon og Rbertson translokasjoner. \r\nDet kan være interkromosomalt (translokasjon forekommer i et enkelt kromosom) eller intrakromosomalt (translokasjonen forekommer mellom kromosomer). \r\n"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "2ea5bd94-ad81-469b-863a-6a51e730a124",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aurelie Tomczak",
+        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany",
+        "email" : "au.tomczak@yahoo.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Liv Laugen",
+        "organisation" : "Oslo University Hospital, Norway",
+        "email" : "liv.laugen@ous-hf.no"
       },
       "otherDetails" : { }
     } ]
