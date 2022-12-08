@@ -24,9 +24,9 @@
       "custodian_namespace" : "org.openehr",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC",
       "build_uid" : "049f2a54-38cd-40a4-ab98-a8bb28653e4c",
-      "MD5-CAM-1.0.1" : "2f4389f9fecb240a36733c0cb12fe7ac",
+      "MD5-CAM-1.0.1" : "dc999839dd46edce8fca76eef938da57",
       "original_language" : "ISO_639-1::de",
-      "sem_ver" : "4.0.2"
+      "sem_ver" : "4.0.3"
     },
     "details" : {
       "de" : {
@@ -894,16 +894,7 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0075.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_DATE_TIME",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -2233,15 +2224,7 @@
             "description" : "*Additional narrative about the specimen not captured in other fields. (en)"
           }
         },
-        "en" : {
-          "at0045.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0045.1",
-            "text" : "Kommentar zur Probe",
-            "description" : "Additional narrative about the specimen not captured in other fields.",
-            "fhir_mapping" : "Specimen.note"
-          }
-        },
+        "en" : { },
         "pt-br" : {
           "at0029.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2941,12 +2924,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Sequenced tissue type",
-            "description" : "Normal vs. tumor sample."
-          },
           "ac0.85" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -6195,16 +6172,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0077.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -9355,7 +9323,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "E8508DA94B907A913D6922DF808858BC"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung der in einer genomischen Sequenz beobachteten \"Conversion Variant\" menschlicher DNA.",
+          "keywords" : [ "Conversion", "Variation", "genetisch", "genomisch", "Variante", "DNA", "Chromosom", "Mutation", "Nukleotid" ],
+          "use" : "Verwenden Sie diesen Archetyp, um die Informationen zu einer \"Conversion Variant\" menschlicher DNA darzustellen, die in einer genomischen Sequenz beobachtet wurden.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung im SLOT \"Structured variant\" innerhalb des Archetyps CLUSTER.genomic_variant_result entwickelt, kann aber gegebenenfalls auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden.\r\n\r\nAlle Definitionen und Beispiele in diesem Archetyp folgen dem HGVS-Standard.",
+          "misuse" : "Nicht zur Darstellung von Informationen über Varianten nicht-menschlicher DNA, oder jeglicher Art von RNA oder Protein.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljene om en genkonversjonvariant i humant DNA, funnet i en genomisk sekvens.",
+          "keywords" : [ "konversjon", "konvertering", "genetisk", "genetikk", "genom", "variant", "kromosom", "mutasjon", "nukleotid", "sekvens", "DNA" ],
+          "use" : "Brukes for å registrere detaljene om en genkonversjonvariant i humant DNA, funnet i en genomisk sekvens.\r\n\r\nDenne arketypen har blitt laget for å brukes i SLOT'et \"Strukturert variantbeskrivelse\" i arketypen CLUSTER.genomic_variant_result. Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.\r\n\r\nAlle definisjoner og eksempler i denne arketypen følger HGVS-nomenklaturen.",
+          "misuse" : "Skal ikke brukes til å registrere informasjon om varianter av ikke-humant DNA, eller noen form for RNA eller protein.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the details about a conversion variant of human DNA, observed in a genomic sequence.",
+          "keywords" : [ "conversion", "variation", "genetic", "genomic", "variant", "DNA", "chromosome", "mutation", "nucleotide" ],
+          "use" : "Use to record the details about a conversion variant of human DNA, observed in a genomic sequence.\r\n\r\nThis archetype has been specifically designed to be used in the 'Structured variant' SLOT within the CLUSTER.genomic_variant_result archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nAll definitions and examples in this archetype follow the HGVS nomenclature.",
+          "misuse" : "Not to be used to record information about variants of non-human DNA, or any kind of RNA or protein.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_conversion_variant.v1",
     "differential" : true,
@@ -9436,7 +9451,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "64EB00E947278B1CCCF2AEDCDE34309C"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung von Informationen zu der in einer Sequenz beobachteten \"Copy number variant\" menschlicher DNA.",
+          "keywords" : [ "Copy number", "Variation", "genetisch", "Genom", "genomisch", "Variante", "DNA", "Chromosom", "Mutation", "Nukleotid" ],
+          "use" : "Verwenden Sie diesen Archetyp, um die Details zu einer \"Copy number variant\" menschlicher DNA darzustellen, die in einer genomischen Sequenz beobachtet wurden.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung im SLOT \"Structured variant\" innerhalb des Archetyps CLUSTER.genomic_variant_result entwickelt, kann aber auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.\r\n\r\nAlle Definitionen und Beispiele in diesem Archetyp entsprechen der Nomenklatur der HGVS.",
+          "misuse" : "Nicht zur Darstellung von Informationen über Varianten nicht-menschlicher DNA oder jeglicher Art von RNA oder Protein.\r\n\r\nNicht zur Darstellung von Informationen über Tandem-Wiederholungen verwenden. Verwenden Sie zu diesem Zweck den Archetyp CLUSTER.genomic_repeated_sequence_variant.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om en kopitallvariant (CNV) i humant DNA, funnet i en genomisk sekvens.",
+          "keywords" : [ "kopitall", "variasjon", "genetikk", "genom", "mutasjon", "nukleotide", "CNV", "kopitallsavvik", "Copy Number", "DNA", "kromosom" ],
+          "use" : "Brukes til å registrere detaljene om en kopitallsvariant (CNV) i humant DNA, funnet i en genomisk sekvens.\r\n\r\nDenne arketypen har blitt laget for å brukes i SLOT'et \"'Strukturert variantbeskrivelse'\" i arketypen CLUSTER.genomic_variant_result. Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.\r\n\r\nAlle definisjoner og eksempler i denne arketypen følger HGVS-nomenklaturen.",
+          "misuse" : "Skal ikke brukes til å registrere informasjon om varianter av ikke-humant DNA, eller noen form for RNA eller protein.\r\n\r\nSkal ikke brukes til å registrere informasjon om tandem-repeterte sekvenser, bruk arketypen CLUSTER.repeated_sequence_variant til dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the details about a copy number variant of human DNA, observed in a genomic sequence.",
+          "keywords" : [ "copy number", "variation", "genetic", "genomic", "variant", "DNA", "chromosome", "mutation", "nucleotide" ],
+          "use" : "Use to record the details about a copy number variant of human DNA, observed in a genomic sequence.\r\n\r\nThis archetype has been specifically designed to be used in the 'Structured variant' SLOT within the CLUSTER.genomic_variant_result archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nAll definitions and examples in this archetype follow the HGVS nomenclature.",
+          "misuse" : "Not to be used to record information about variants of non-human DNA, or any kind of RNA or protein.\r\n\r\nNot to be used to record information about tandem repeats. Use the CLUSTER.genomic_repeated_sequence_variant archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_copy_number_variant.v1",
     "differential" : true,
@@ -9531,7 +9593,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "4FB63ECCC6FB04AA640F8B2F731487A4"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung von Informationen über die in einer Sequenz beobachteten \"Deletion variant\" menschlicher DNA.",
+          "keywords" : [ "Deletion", "Variation", "genetisch", "genomisch", "Variante", "DNA", "Chromosom", "Mutation", "Nukleotid" ],
+          "use" : "Verwenden Sie diesen Archetyp, um die Details einer \"Deletion variant\" menschlicher DNA darzustellen, die in einer genomischen Sequenz beobachtet wurde.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung im SLOT \"Structured variant\" innerhalb des Archetyps CLUSTER.genomic_variant_result entwickelt, kann aber auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.\r\n\r\nIn den Beispielen in diesem Archetyp sollen Nukleotide in Kleinbuchstaben nur die veränderten Positionen der DNA-Sequenz hervorheben.\r\n\r\nAlle Definitionen und Beispiele in diesem Archetyp folgen dem HGVS-Standard.",
+          "misuse" : "Nicht zur Darstellung von Informationen über Varianten nicht-menschlicher DNA oder jeglicher Art von RNA oder Protein.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljene om en delesjonsvariant i humant DNA, funnet i en genomisk sekvens.",
+          "keywords" : [ "delesjon", "genetikk", "genom", "variant", "allel", "DNA", "kromosom", "mutasjon", "nukleotid", "sekvensering" ],
+          "use" : "Brukes for å registrere detaljene om en delesjonsvariant i humant DNA, funnet i en genomisk sekvens.\r\n\r\nDenne arketypen har blitt laget for å brukes i SLOT'et \"'Strukturert variantbeskrivelse'\" i arketypen CLUSTER.genomic_variant_result. Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.\r\n\r\nI eksemplene i denne arketypen er det brukt små bokstaver på nukleotidene for å markere endringen/-e i DNA-sekvensen.\r\nAlle definisjoner og eksempler i denne arketypen følger HGVS-nomenklaturen.",
+          "misuse" : "Skal ikke brukes til å registrere informasjon om varianter av ikke-humant DNA, eller noen form for RNA eller protein.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the details about a deletion variant of human DNA, observed in a genomic sequence.",
+          "keywords" : [ "deletion", "variation", "genetic", "genomic", "variant", "DNA", "chromosome", "mutation", "nucleotide" ],
+          "use" : "Use to record the details about a deletion variant of human DNA, observed in a genomic sequence.\r\n\r\nThis archetype has been specifically designed to be used in the 'Structured variant' SLOT within the CLUSTER.genomic_variant_result archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nIn the examples in this archetype, lower case nucleotides are only intended to highlight the changed positions of the DNA sequence.\r\nAll definitions and examples in this archetype follow the HGVS nomenclature.",
+          "misuse" : "Not to be used to record information about variants of non-human DNA, or any kind of RNA or protein.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_deletion_variant.v1",
     "differential" : true,
@@ -9612,7 +9721,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "C976F7E7EE199950211D76C45FC16EF0"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Beschreibung der in einer Sequenz beobachteten \"Deletion-insertion variant\" menschlicher DNA.",
+          "keywords" : [ "Indel", "Variation", "genetisch", "genomisch", "Variante", "Delins", "DNA", "Chromosom", "Mutation", "Nukleotid" ],
+          "use" : "Verwenden Sie diesen Archetyp, um die Details einer Deletions-Insertions-Variante menschlicher DNA darzustellen, die in einer genomischen Sequenz beobachtet wurde.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung im SLOT \"Structured variant\" innerhalb des Archetyps CLUSTER.genomic_variant_result entwickelt, kann jedoch auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.\r\n\r\nIn den Beispielen in diesem Archetyp sollen Nukleotide in Kleinbuchstaben nur die veränderten Positionen der DNA-Sequenz hervorheben.\r\n\r\nAlle Definitionen und Beispiele in diesem Archetyp folgen den HGVS-Standard.",
+          "misuse" : "Nicht zur Darstellung von Informationen über Varianten nicht-menschlicher DNA oder jeglicher Art von RNA oder Protein verwenden.\r\n\r\nNicht zur Darstellung von Informationen über eine Variante verwenden, bei der ein Nukleotid durch ein anderes Nukleotid ersetzt wird. Dies ist eine Substitution und für diesen Zweck sollte der Archetyp CLUSTER.genomic_substitution_variant verwendet werden.\r\n\r\nNicht zur Darstellung von Informationen über zwei durch ein oder mehrere Nukleotide getrennte Varianten zu verwenden, es sei denn, die beiden Varianten sind durch ein Nukleotid getrennt und betreffen nur eine Aminosäure.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljene om en delesjon-insersjon (delin) variant i humant DNA, funnet i en genomisk sekvens.",
+          "keywords" : [ "indel", "delin", "variasjon", "genetisk", "genom", "deletion", "insertion", "base", "sekvens", "mutasjon", "gen", "kromosom", "nukleinsyrer", "nukleotid", "DNA" ],
+          "use" : "Brukes for å registrere detaljene om en delesjon-insersjon (delin) variant i humant DNA, funnet i en genomisk sekvens.\r\n\r\nDenne arketypen har blitt laget for å brukes i SLOT'et \"Strukturert variantbeskrivelse\" i arketypen CLUSTER.genomic_variant_result (Genetisk variant resultat). Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.\r\n\r\nI eksemplene i denne arketypen er det brukt små bokstaver på nukleotidene for å markere endringen/-e i DNA-sekvensen.\r\nAlle definisjoner og eksempler i denne arketypen følger HGVS-nomenklaturen.",
+          "misuse" : "Skal ikke brukes til å registrere informasjon om varianter av ikke-humant DNA, eller noen form for RNA eller protein.\r\n\r\nSkal ikke brukes til å registrere informasjon om en variant der ett nukleotid erstattes av et annet nukleotid da dette er en substitusjon og arketypen CLUSTER.substitution_variant skal brukes til dette formålet.\r\n\r\nSkal ikke brukes til å registrere informasjon der to varianter blir atskilt med en eller flere nukleotider, bortsett fra når de to variantene er atskilt med ett nukleotid og de bare påvirker en aminosyre.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the details about a deletion-insertion variant of human DNA, observed in a genomic sequence.",
+          "keywords" : [ "indel", "variation", "genetic", "genomic", "variant", "delins", "DNA", "chromosome", "mutation", "nucleotide" ],
+          "use" : "Use to record the details about a deletion-insertion variant of human DNA, observed in a genomic sequence.\r\n\r\nThis archetype has been specifically designed to be used in the 'Structured variant' SLOT within the CLUSTER.genomic_variant_result archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nIn the examples in this archetype, lower case nucleotides are only intended to highlight the changed positions of the DNA sequence.\r\nAll definitions and examples in this archetype follow the HGVS nomenclature.",
+          "misuse" : "Not to be used to record information about variants of non-human DNA, or any kind of RNA or protein.\r\n\r\nNot to be used for recording information about a variant where one nucleotide is replaced by one other nucleotide. This is a substitution, and the archetype CLUSTER.genomic_substitution_variant should be used for this purpose.\r\n\r\nNot to be used for recording information about two variants separated by one or more nucleotides, except when the two variants are separated by one nucleotide and they affect only one amino acid.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_deletion_insertion_variant.v1",
     "differential" : true,
@@ -9693,7 +9849,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "84C5AA6AA202ACEE0D0559072D8B207D"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Beschreibung der in einer Sequenz beobachteten \"Duplication variant\" menschlicher DNA.",
+          "keywords" : [ "Duplikation", "Variation", "genetisch", "genomisch", "Variante", "DNA", "Chromosom", "Mutation", "Nukleotid" ],
+          "use" : "Verwenden Sie diesen Archetyp, um die Details einer Duplication Variante menschlicher DNA darzustellen, die in einer genomischen Sequenz beobachtet wurde.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung im SLOT \"Structured variant\" innerhalb des Archetyps CLUSTER.genomic_variant_result entwickelt, kann jedoch auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.\r\n\r\nIn den Beispielen in diesem Archetyp sollen Nukleotide in Kleinbuchstaben nur die veränderten Positionen der DNA-Sequenz hervorheben.\r\n\r\nAlle Definitionen und Beispiele in diesem Archetyp folgen den HGVS-Standard.",
+          "misuse" : "Nicht zur Darstellung von Informationen über Varianten nicht-menschlicher DNA oder jeglicher Art von RNA oder Protein verwenden.\r\n\r\nNicht zur Darstellung einer Änderung verwenden, wenn keine Beweise dafür vorliegen, dass die zusätzliche Kopie einer erkannten Sequenz im Tandem liegt (direkt 3'-flankierend zur Originalkopie). Verwenden Sie zu diesem Zweck den Archetyp CLUSTER.genomic_insertion_variant.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljene om en duplikasjonsvariant i humant DNA, funnet i en genomisk sekvens.",
+          "keywords" : [ "duplisering", "duplication", "duplikasjon", "dup", "variasjon", "gen", "variant", "base", "DNA", "sekvens", "mutasjon", "nukleotid", "nukleinsyrer" ],
+          "use" : "Brukes for å registrere detaljene om en duplikasjonsvariant i humant DNA, funnet i en genomisk sekvens.\r\n\r\nDenne arketypen har blitt laget for å brukes i SLOT'et \"Strukturert variantbeskrivelse\" i arketypen CLUSTER.genomic_variant_result (Genetisk variant resultat). Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.\r\n\r\nI eksemplene i denne arketypen er det brukt små bokstaver på nukleotidene for å markere endringen/-e i DNA-sekvensen.\r\nAlle definisjoner og eksempler i denne arketypen følger HGVS-nomenklaturen.",
+          "misuse" : "Skal ikke brukes til å registrere informasjon om varianter av ikke-humant DNA, eller noen form for RNA eller protein.\r\n\r\nSkal ikke brukes til å registrere en endring når det ikke er bevis for at den ekstra kopien av sekvensen er en tandem (har blitt satt direkte inn i 3' (-enden) av den originale sekvenskopien). Bruk heller arketypen CLUSTER.insertion_variant (Genetisk variant - insersjon) til dette.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the details about a duplication variant of human DNA, observed in a genomic sequence.",
+          "keywords" : [ "duplication", "variation", "genetic", "genomic", "variant", "DNA", "chromosome", "mutation", "nucleotide" ],
+          "use" : "Use to record the details about a duplication variant of human DNA, observed in a genomic sequence.\r\n\r\nThis archetype has been specifically designed to be used in the 'Structured variant' SLOT within the CLUSTER.genomic_variant_result archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nIn the examples in this archetype, lower case nucleotides are only intended to highlight the changed positions of the DNA sequence.\r\nAll definitions and examples in this archetype follow the HGVS nomenclature.",
+          "misuse" : "Not to be used to record information about variants of non-human DNA, or any kind of RNA or protein.\r\n\r\nNot to be used to record a change when there is no evidence that the extra copy of a sequence detected is in tandem (directly 3’-flanking the original copy). Use the CLUSTER.genomic_insertion_variant archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_duplication_variant.v1",
     "differential" : true,
@@ -9774,7 +9977,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "98872A5FB3B08507F48CB34F51A3A8AA"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Beschreibung der in einer Sequenz beobachteten \"Insertion Variante\" menschlicher DNA.",
+          "keywords" : [ "Insertion", "Variation", "genetisch", "genomisch", "Variante", "DNA", "Chromosom", "Mutation", "Nukleotid" ],
+          "use" : "Verwenden Sie diesen Archetyp, um die Details einer Insertion Variante menschlicher DNA darzustellen, die in einer genomischen Sequenz beobachtet wurde.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung im SLOT \"Structured variant\" innerhalb des Archetyps CLUSTER.genomic_variant_result entwickelt, kann jedoch auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.\r\n\r\nIn den Beispielen in diesem Archetyp sollen Nukleotide in Kleinbuchstaben nur die veränderten Positionen der DNA-Sequenz hervorheben.\r\n\r\nAlle Definitionen und Beispiele in diesem Archetyp folgen den HGVS-Standard.",
+          "misuse" : "Nicht zur Darstellung von Informationen über Varianten nicht-menschlicher DNA oder jeglicher Art von RNA oder Protein verwenden.\r\n\r\nNicht zur Darstellung einer Änderung verwenden, wenn sich die zusätzliche Kopie einer erkannten Sequenz im Tandem befindet (direkt 3'-flankierend zur Originalkopie). Verwenden Sie zu diesem Zweck den Archetyp CLUSTER.genomic_duplication_variant.)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljene om en insersjonvariant i humant DNA, funnet i en genomisk sekvens.",
+          "keywords" : [ "base", "DNA", "gen", "genetisk", "insersjon", "mutasjon", "nukleinsyrer", "nukleotid", "sekvens", "variant", "variasjon" ],
+          "use" : "Brukes for å registrere detaljene om en insersjonvariant i humant DNA, funnet i en genomisk sekvens.\r\n\r\nDenne arketypen har blitt laget for å brukes i SLOT'et \"Strukturert variantbeskrivelse\" i arketypen CLUSTER.genomic_variant_result (Genetisk variant resultat). Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.\r\n\r\nI eksemplene i denne arketypen er det brukt små bokstaver på nukleotidene for å markere endringen/-e i DNA-sekvensen.\r\nAlle definisjoner og eksempler i denne arketypen følger HGVS-nomenklaturen.",
+          "misuse" : "Skal ikke brukes til å registrere informasjon om varianter av ikke-humant DNA, eller noen form for RNA eller protein\r\n\r\nSkal ikke brukes for å registrere en endring hvis en ekstra kopi av sekvensen er en tandem (har blitt satt direkte inn i 3' (-enden) av den originale sekvenskopien), bruk da heller arketypen CLUSTER.duplication_variant til dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the details about an insertion variant of human DNA, observed in a genomic sequence.",
+          "keywords" : [ "insertion", "variation", "genetic", "genomic", "variant", "DNA", "chromosome", "mutation", "nucleotide" ],
+          "use" : "Use to record the details about an insertion variant of human DNA, observed in a genomic sequence.\r\n\r\nThis archetype has been specifically designed to be used in the 'Structured variant' SLOT within the CLUSTER.genomic_variant_result archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nIn the examples in this archetype, lower case nucleotides are only intended to highlight the changed positions of the DNA sequence.\r\nAll definitions and examples in this archetype follow the HGVS nomenclature.",
+          "misuse" : "Not to be used to record information about variants of non-human DNA, or any kind of RNA or protein.\r\n\r\nNot to be used to record a change when the extra copy of a sequence detected is in tandem (directly 3’-flanking the original copy). Use the CLUSTER.genomic_duplication_variant archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_insertion_variant.v1",
     "differential" : true,
@@ -9855,7 +10105,56 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "8123D90C4AE8226BD888C84073372E1F"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Beschreibung der in einer Sequenz beobachteten \"Inversion variante\" menschlicher DNA.",
+          "keywords" : [ "Inversion", "Variation", "genetisch", "genomisch", "Variante", "DNA", "Chromosom", "Mutation", "Nukleotid" ],
+          "use" : "Verwenden Sie diesen Archetyp, um die Details einer Inversion Variante menschlicher DNA darzustellen, die in einer genomischen Sequenz beobachtet wurde.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung im SLOT \"Structured variant\" innerhalb des Archetyps CLUSTER.genomic_variant_result entwickelt, kann jedoch auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.\r\n\r\nIn den Beispielen in diesem Archetyp sollen Nukleotide in Kleinbuchstaben nur die veränderten Positionen der DNA-Sequenz hervorheben.\r\n\r\nAlle Definitionen und Beispiele in diesem Archetyp folgen den HGVS-Standard.",
+          "misuse" : "Nicht zur Darstellung von Informationen über Varianten nicht-menschlicher DNA oder jeglicher Art von RNA oder Protein verwenden.\r\n\r\nNicht zur Darstellung einer Inversion mit einem Nukleotid verwenden. Verwenden Sie zu diesem Zweck den Archetyp CLUSTER.genomic_substitution_variant.\r\n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljene om en inversjonsvariant i humant DNA, funnet i en genomisk sekvens.",
+          "keywords" : [ "genetisk variasjon", "genetikk", "genom", "variant", "DNA", "kromosom", "mutasjon", "nukleotid", "sekvens" ],
+          "use" : "Brukes for å registrere detaljene om en inversjonsvariant i humant DNA, funnet i en genomisk sekvens.\r\n\r\nDenne arketypen har blitt laget for å brukes i SLOT'et \"Strukturert variantbeskrivelse\" i arketypen CLUSTER.genomic_variant_result (Genetisk variant resultat). Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.\r\n\r\nI eksemplene i denne arketypen er det brukt små bokstaver på nukleotidene for å markere endringen/-e i DNA-sekvensen.\r\nAlle definisjoner og eksempler i denne arketypen følger HGVS-nomenklaturen.",
+          "misuse" : "Skal ikke brukes til å registrere informasjon om varianter av ikke-humant DNA, eller noen form for RNA eller protein.\r\n\r\nSkal ikke brukes for å dokumentere en inversjon av et enkelt nukleotid (enkeltbaseforskjell), bruk arketypen CLUSTER.substitution_variant (Genetisk variant - substitusjon) til dette.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the details about an inversion variant of human DNA, observed in a genomic sequence.",
+          "keywords" : [ "inversion", "variation", "genetic", "genomic", "variant", "DNA", "chromosome", "mutation", "nucleotide" ],
+          "use" : "Use to record the details about an inversion variant of human DNA, observed in a genomic sequence.\r\n\r\nThis archetype has been specifically designed to be used in the ‘Structured variant' SLOT within the CLUSTER.genomic_variant_result archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nIn the examples in this archetype, lower case nucleotides are only intended to highlight the changed positions of the DNA sequence.\r\nAll definitions and examples in this archetype follow the HGVS nomenclature.",
+          "misuse" : "Not to be used to record information about variants of non-human DNA, or any kind of RNA or protein.\r\n\r\nNot to be used to record a one nucleotide inversion. Use the CLUSTER.genomic_substitution_variant archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_inversion_variant.v1",
     "differential" : true,
@@ -9936,7 +10235,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "46FB5ED4B9ABE631DFE655742BFD3417"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Beschreibung der in einer Sequenz beobachteten \"Repeated sequence Variante\" menschlicher DNA.",
+          "keywords" : [ "Wiederholte Sequenz ", "Variation", "genetisch", "genomisch", "Variante", "DNA", "Chromosom", "Mutation", "Nukleotid" ],
+          "use" : "Verwenden Sie diesen Archetyp, um die Details einer \"Repeated sequence Variante\" menschlicher DNA darzustellen, die in einer genomischen Sequenz beobachtet wurde.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung im SLOT \"Structured variant\" innerhalb des Archetyps CLUSTER.genomic_variant_result entwickelt, kann jedoch auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.\r\n\r\nIn den Beispielen in diesem Archetyp sollen Nukleotide in Kleinbuchstaben nur die veränderten Positionen der DNA-Sequenz hervorheben.\r\n\r\nAlle Definitionen und Beispiele in diesem Archetyp folgen den HGVS-Standard.",
+          "misuse" : "Nicht zur Darstellung von Informationen über Varianten nicht-menschlicher DNA oder jeglicher Art von RNA oder Protein.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljene om en repetert sekvensvariant i humant DNA, funnet i en genomisk sekvens.",
+          "keywords" : [ "repetert sekvens", "variasjon", "gen", "genom", "variant", "DNA", "kromosom", "mutasjon", "nukleotid", "sekvens", "tandem repeat", "trinukleotid repeat" ],
+          "use" : "Brukes for å registrere detaljene om en repetert sekvensvariant i humant DNA, funnet i en genomisk sekvens.\r\n\r\nDenne arketypen har blitt laget for å brukes i SLOT'et \"Strukturert variantbeskrivelse\" i arketypen CLUSTER.genomic_variant_result (Genetisk variant resultat). Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.\r\n\r\nI eksemplene i denne arketypen er det brukt små bokstaver på nukleotidene for å markere endringen/-e i DNA-sekvensen.\r\nAlle definisjoner og eksempler i denne arketypen følger HGVS-nomenklaturen.",
+          "misuse" : "Skal ikke brukes til å registrere informasjon om varianter av ikke-humant DNA, eller noen form for RNA eller protein",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the details about a repeated sequence variant of human DNA, observed in a genomic sequence.",
+          "keywords" : [ "repeated sequence", "variation", "genetic", "genomic", "variant", "DNA", "chromosome", "mutation", "nucleotide" ],
+          "use" : "Use to record the details about a repeated sequence variant of human DNA, observed in a genomic sequence.\r\n\r\nThis archetype has been specifically designed to be used in the 'Structured variant' SLOT within the CLUSTER.genomic_variant_result archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nIn the examples in this archetype, lower case nucleotides are only intended to highlight the changed positions of the DNA sequence.\r\nAll definitions and examples in this archetype follow the HGVS nomenclature.",
+          "misuse" : "Not to be used to record information about variants of non-human DNA, or any kind of RNA or protein.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_repeated_sequence_variant.v1",
     "differential" : true,
@@ -10017,7 +10363,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7940C38BF01B8F27E1AA7BD298C0EDAD"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Beschreibung der in einer Sequenz beobachteten \"Substitution Variante\" menschlicher DNA.",
+          "keywords" : [ "Substitution", "Variation", "genetisch", "genomisch", "Variante", "DNA", "Chromosom", "Mutation", "Nukleotid" ],
+          "use" : "Verwenden Sie diesen Archetyp, um die Details einer \"Substitution Variante\" menschlicher DNA darzustellen, die in einer genomischen Sequenz beobachtet wurde.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung im SLOT \"Structured variant\" innerhalb des Archetyps CLUSTER.genomic_variant_result entwickelt, kann jedoch auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.\r\n\r\nIn den Beispielen in diesem Archetyp sollen Nukleotide in Kleinbuchstaben nur die veränderten Positionen der DNA-Sequenz hervorheben.\r\n\r\nAlle Definitionen und Beispiele in diesem Archetyp folgen den HGVS-Standard.",
+          "misuse" : "Nicht zur Darstellung von Informationen über Varianten nicht-menschlicher DNA oder jeglicher Art von RNA oder Protein verwenden.\r\n\r\nNicht zur Darstellung einer Änderung mit zwei oder mehr aufeinanderfolgenden Nukleotiden verwenden. Verwenden Sie dazu den Archetyp CLUSTER.genomic_deletion_insertion_variant.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljene om en substitusjonvariant i humant DNA, funnet i en genomisk sekvens.",
+          "keywords" : [ "substitusjon", "gen", "variasjon", "genetikk", "genom", "variant", "DNA", "kromosom", "mutasjon", "nukleotide", "sekvens", "utbytting" ],
+          "use" : "Brukes for å registrere detaljene om en substitusjonvariant i humant DNA, funnet i en genomisk sekvens.\r\n\r\nDenne arketypen har blitt laget for å brukes i SLOT'et \"Strukturert variantbeskrivelse\" i arketypen CLUSTER.genomic_variant_result (Genetisk variant resultat). Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.\r\n\r\nI eksemplene i denne arketypen er det brukt små bokstaver på nukleotidene for å markere endringen/-e i DNA-sekvensen.\r\nAlle definisjoner og eksempler i denne arketypen følger HGVS-nomenklaturen.",
+          "misuse" : "Skal ikke brukes til å registrere informasjon om varianter av ikke-humant DNA, eller noen form for RNA eller protein.\r\n\r\nSkal ikke brukes for å registrere endringer som involverer to eller flere sammenhengende/påfølgende nukleotider, bruk da arketypen CLUSTER.genomic_deletion_insertion_variant (Genetisk variant - delesjon-insersjon) til dette. ",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the details about a substitution variant of human DNA, observed in a genomic sequence.",
+          "keywords" : [ "substitution", "variation", "genetic", "genomic", "variant", "DNA", "chromosome", "mutation", "nucleotide" ],
+          "use" : "Use to record the details about a substitution variant of human DNA, observed in a genomic sequence.\r\n\r\nThis archetype has been specifically designed to be used in the 'Structured variant' SLOT within the CLUSTER.genomic_variant_result archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nIn the examples in this archetype, lower case nucleotides are only intended to highlight the changed positions of the DNA sequence. \r\nAll definitions and examples in this archetype follow the HGVS nomenclature.",
+          "misuse" : "Not to be used to record information about variants of non-human DNA, or any kind of RNA or protein.\r\n\r\nNot to be used to record a change involving two or more consecutive nucleotides. Use the CLUSTER.genomic_deletion_insertion_variant archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.genomic_substitution_variant.v1",
     "differential" : true,
@@ -10098,7 +10491,40 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "09EA89B3CD9789FFA9C8D61504F9620D"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Beschreibung einer in einer Sequenz beobachteten Variante, bei dem der Variantentyp unbekannt ist, weil z.B. noch keine Annotation der Daten gemacht wurde, oder weil die spezifische Variante nicht von den spezialisierten Variantenarchetypen erfasst wird.",
+          "keywords" : [ "Variante", "Genetisch", "Genomisch", "Einfache genetische Variante", "Simple Variant" ],
+          "use" : "Dieser Archetyp soll im SLOT \"Variant\" des Archetyps \"Genetic variant\" verwendet werden.\r\n",
+          "misuse" : "Dieser Archetyp sollte nur für den Import von vcf-daten verwendet werden, wenn keine Annotation des Variantentyps (Instertion, Deletion usw.) verfügbar ist und daher die spezifischen Archetypen nicht ausgewählt werden können um die Variantenergebnisse zu speichern.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To describe a variant observed in a sequence, where the variant type is unknown, for example, because no annotation of the data has yet been made, or because the specific variant is not covered by the specialized variant archetypes.",
+          "keywords" : [ "variation", "genetic", "genomic", "variant", "simple generic variant" ],
+          "use" : "This archetype should be used inside the \"Variant\" SLOT of the \"Genetic variant\" archetype.",
+          "misuse" : "This archetype should only be used for import of vcf-data if no annotation of the variant type (substitution, insertion etc.) is available, and, therefore, the right specific archetypes cannot be picked to store the variant results.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.simple_variant.v0",
     "differential" : true,
@@ -10164,7 +10590,51 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "8745C8D1D9C1569BEE1714EB866630E8"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Beschreibung der in einer Sequenz beobachteten 'translocation variant'.",
+          "keywords" : [ "Translokation", "Variante", "genetisch", "genomisch", "Variation", "Genom" ],
+          "use" : "Zur Beschreibung der in einer Sequenz beobachteten 'translocation variant' gemäß der HGVS-Nomenklatur.\r\nDieser Archetyp wurde speziell für die Verwendung im 'Variant'-SLOT innerhalb des Archetyps CLUSTER.genetic_variant entwickelt, kann jedoch auch innerhalb anderer ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch angemessen ist.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å dokumentere en translokasjonvariant funnet i en sekvensering basert på HGVS -nomenklaturen. \r\n",
+          "keywords" : [ "translokasjon", "genetisk variant", "sekvens", "genetisk", "genetisk endring", "genom", "kromosom", "overkryssing", "mutasjon", "nukleotid", "Resiproke translokasjoner", "Robertsonske translokasjoner", "Philadelphiakromosomet", "trisomi", "ubalansert", "balansert", "DNA", "RNA" ],
+          "use" : "Denne arketypen brukes for å dokumentere translokasjonvarianti en sekvensering basert på HGVS-nomenklaturen. Arketypen har blitt laget for å brukes i SLOT'et \"Variant\" i arketypen CLUSTER.genetic_variant. Den kan også brukes i andre ENTRY- eller CLUSTER-arketyper der det er klinisk hensiktsmessig.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the details about a translocation variant observed in a genetic sequence.",
+          "keywords" : [ ],
+          "use" : "Use to record the findings for a traslocation variant observed in a genetic sequence according to the HGVS nomenclature.\r\nThis archetype has been specifically designed to be used in the 'Variant' SLOT within the CLUSTER.genetic_variant archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.translocation_variant.v0",
     "differential" : true,
