@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.2",
+      "sem_ver" : "0.2.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "6f58b08fdd9836b9b2a8fe8c3bb401d8",
+      "MD5-CAM-1.0.1" : "f851d9a3708d8472beafd3c6126e4316",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B"
     },
     "details" : {
@@ -2382,6 +2382,9 @@
           "/data[at0001]/items[at0006]" : {
             "source" : "openEHR"
           },
+          "/data[at0001]/items[at0117]" : {
+            "source" : "IMH"
+          },
           "/protocol[at0042]/items[at0099]/items[at0048]" : {
             "source" : "openEHR"
           },
@@ -2396,6 +2399,9 @@
           },
           "/data[at0001]/items[at0009]/items[at0025]" : {
             "source" : "openEHR"
+          },
+          "/data[at0001]/items[at0009]/items[at0027]" : {
+            "source" : "openEHR, FHIR, DAM"
           },
           "/data[at0001]/items[at0009]/items[at0029]" : {
             "source" : "FHIR, openEHR"
@@ -2429,12 +2435,6 @@
           },
           "/data[at0001]/items[at0101.1]" : {
             "source" : "DAM, openEHR"
-          },
-          "/data[at0001]/items[at0117.1]" : {
-            "source" : "IMH"
-          },
-          "/data[at0001]/items[at0009]/items[at0027.1]" : {
-            "source" : "openEHR, FHIR, DAM"
           }
         },
         "pt-br" : {
@@ -2477,6 +2477,9 @@
           "/data[at0001]/items[at0006]" : {
             "source" : "openEHR"
           },
+          "/data[at0001]/items[at0117]" : {
+            "source" : "IMH"
+          },
           "/protocol[at0042]/items[at0099]/items[at0048]" : {
             "source" : "openEHR"
           },
@@ -2491,6 +2494,9 @@
           },
           "/data[at0001]/items[at0009]/items[at0025]" : {
             "source" : "openEHR"
+          },
+          "/data[at0001]/items[at0009]/items[at0027]" : {
+            "source" : "openEHR, FHIR, DAM"
           },
           "/data[at0001]/items[at0009]/items[at0029]" : {
             "source" : "FHIR, openEHR"
@@ -2524,12 +2530,6 @@
           },
           "/data[at0001]/items[at0101.1]" : {
             "source" : "DAM, openEHR"
-          },
-          "/data[at0001]/items[at0117.1]" : {
-            "source" : "IMH"
-          },
-          "/data[at0001]/items[at0009]/items[at0027.1]" : {
-            "source" : "openEHR, FHIR, DAM"
           }
         },
         "sv" : {
@@ -2560,6 +2560,9 @@
           "/data[at0001]/items[at0006]" : {
             "source" : "openEHR"
           },
+          "/data[at0001]/items[at0117]" : {
+            "source" : "IMH"
+          },
           "/protocol[at0042]/items[at0099]/items[at0048]" : {
             "source" : "openEHR"
           },
@@ -2574,6 +2577,9 @@
           },
           "/data[at0001]/items[at0009]/items[at0025]" : {
             "source" : "openEHR"
+          },
+          "/data[at0001]/items[at0009]/items[at0027]" : {
+            "source" : "openEHR, FHIR, DAM"
           },
           "/data[at0001]/items[at0009]/items[at0029]" : {
             "source" : "FHIR, openEHR"
@@ -2604,12 +2610,6 @@
           },
           "/data[at0001]/items[at0101.1]" : {
             "source" : "DAM, openEHR"
-          },
-          "/data[at0001]/items[at0117.1]" : {
-            "source" : "IMH"
-          },
-          "/data[at0001]/items[at0009]/items[at0027.1]" : {
-            "source" : "openEHR, FHIR, DAM"
           }
         }
       }
@@ -2638,7 +2638,17 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0002.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -2762,12 +2772,6 @@
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0117.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
               "nodeId" : "at0009",
               "attributes" : [ {
@@ -2800,12 +2804,6 @@
                       "attributeTuples" : [ ]
                     } ]
                   } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "nodeId" : "at0027.1",
-                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -2905,20 +2903,13 @@
             "comment" : "Detta kan ses som en förutsägbar bedömning av ett \"worst case scenario\". I de flesta sammanhang betraktas \"Låg\" som standardnivå.",
             "source" : "DAM, openEHR"
           },
-          "at0117.1" : {
+          "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0117.1",
-            "text" : "Tidpunkt för senaste reaktionen",
-            "description" : "Datum och/eller tid då den senast kända förekomsten av en reaktionshändelse började.",
-            "comment" : "Det här datumet kan vara en kopia av det senaste datumet för \"Debut av reaktion\". Om en textrepresentation av datumet för den senaste händelsen krävs, till exempel \"I barndomen\", \"för 10 år sedan\", bör kommentarelementet användas.",
-            "source" : "IMH"
-          },
-          "at0027.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0027.1",
-            "text" : "Tidpunkt för reaktion",
-            "description" : "Registrering av datum och/eller tid för reaktionens början.",
-            "source" : "openEHR, FHIR, DAM"
+            "code" : "at0002",
+            "text" : "Substans",
+            "description" : "Identifiering av ett ämne eller ämnesklass som anses utgöra en risk för en enskild reaktion.\nAvser aktiv substans, hjälpämne läkemedel eller kemikalie.",
+            "comment" : "Både ett enskilt ämne och en substansklass är giltiga noteringar under \"Substans\". Ett ämne kan vara en förening av enklare ämnen, exempelvis ett läkemedel. Om uppgiften under \"Substans\" är ett enskilt ämne kan det dupliceras under \"Specifik substans\". Om möjligt, benämn både \"Substans\" och \"Specifik substans\" med en terminologi som kan utlösa beslutsstöd. Till exempel: Snomed CT, DM + D, RxNorm, NDFRT, ATC, Nya Zeeland Universal List of Medicines och Australian Medicines Terminology. Fri textinmatning bör endast användas om det inte finns någon lämplig terminologi tillgänglig.",
+            "source" : "openEHR,FHIR,DAM"
           }
         }
       },
@@ -3710,6 +3701,14 @@
             "description" : "En indikation på potentialen för kritiska organskador eller livshotande konsekvenser.",
             "comment" : "Detta kan ses som en förutsägbar bedömning av ett \"worst case scenario\". I de flesta sammanhang betraktas \"Låg\" som standardnivå.",
             "source" : "DAM, openEHR"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Substans",
+            "description" : "Identifiering av ett ämne eller ämnesklass som anses utgöra en risk för en enskild reaktion.\nAvser läkemedelsprodukt.",
+            "comment" : "Både ett enskilt ämne och en substansklass är giltiga noteringar under \"Substans\". Ett ämne kan vara en förening av enklare ämnen, exempelvis ett läkemedel. Om uppgiften under \"Substans\" är ett enskilt ämne kan det dupliceras under \"Specifik substans\". Om möjligt, benämn både \"Substans\" och \"Specifik substans\" med en terminologi som kan utlösa beslutsstöd. Till exempel: Snomed CT, DM + D, RxNorm, NDFRT, ATC, Nya Zeeland Universal List of Medicines och Australian Medicines Terminology. Fri textinmatning bör endast användas om det inte finns någon lämplig terminologi tillgänglig.",
+            "source" : "openEHR,FHIR,DAM"
           }
         }
       },
