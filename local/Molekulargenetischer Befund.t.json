@@ -24,9 +24,9 @@
       "custodian_namespace" : "org.openehr",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC",
       "build_uid" : "049f2a54-38cd-40a4-ab98-a8bb28653e4c",
-      "MD5-CAM-1.0.1" : "af3fc9902412afd62f541cd698d9e88d",
+      "MD5-CAM-1.0.1" : "89db699d8dc461e38d29c56c6ad52bb0",
       "original_language" : "ISO_639-1::de",
-      "sem_ver" : "4.0.4"
+      "sem_ver" : "4.0.5"
     },
     "details" : {
       "de" : {
@@ -241,10 +241,10 @@
                     "attributes" : [ {
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "value",
-                      "existence" : "0..1",
                       "children" : [ {
                         "@type" : "C_STRING",
-                        "constraint" : [ "Vorläufig", "Final", "Korrigiert" ]
+                        "rmTypeName" : "STRING",
+                        "constraint" : [ "Temporary", "Final", "Edited" ]
                       } ]
                     } ],
                     "attributeTuples" : [ ]
@@ -317,7 +317,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Molekulargenetischer Befund",
+          "text" : "Report Genomic Investigation Molecular Pathology",
           "description" : "Document to communicate information to others, commonly in response to a request from another party."
         }
       },
@@ -902,10 +902,10 @@
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "value",
+                            "existence" : "0..1",
                             "children" : [ {
                               "@type" : "C_STRING",
-                              "rmTypeName" : "STRING",
-                              "constraint" : [ "Putative functional relevant variants identified", "Variants of unknown/contradictory functional significane identified", "Putative functionally neutral variants identified", "/.+/" ]
+                              "constraint" : [ "keine/benigne Variante identifiziert", "Analyse erfolgt, aber nicht auswertbar", "potentiell patogene Variante identifiziert", "/.+/" ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -1928,9 +1928,16 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "Tumour", "Blood", "Buccal swab", "Normal tissue", "Liquid", "Muscle", "Fibroblasts", "/.+/" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -2539,7 +2546,7 @@
                     "children" : [ {
                       "@type" : "C_STRING",
                       "rmTypeName" : "STRING",
-                      "constraint" : [ "Fixated (FFPE)", "Cryofixation", "Not fixated", "Other fixation", "fixiert (FFPE)" ]
+                      "constraint" : [ "Fixed (FFPE)", "Cryofixation", "Not fixed", "Other fixation", "fixiert (FFPE)" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -3388,7 +3395,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "FA86A1F28EA961251F7468664F689314"
+        "PARENT:MD5-CAM-1.0.1" : "7abea4b73dd121f1003a14d6044e590c"
       },
       "details" : {
         "de" : {
@@ -3458,7 +3465,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.24" ],
+                  "constraint" : [ "ac0.25" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -3507,7 +3514,24 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0037.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "existence" : "0..1",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "constraint" : [ "Gute Qualität", "Eingeschränkte Qualität", "Kommentar", "/.+/" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
@@ -3539,18 +3563,25 @@
             "text" : "Kommentar zur Qualität der Analyse",
             "description" : "Kommentar zum Sequenzierungsassay, der nicht in anderen Feldern erfasst wurde."
           },
-          "ac0.24" : {
+          "ac0.25" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.24",
+            "code" : "ac0.25",
             "description" : ""
           }
         },
         "en" : {
-          "ac0.24" : {
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Sequencing technology",
+            "description" : "Name of the technology used for sequencing analysis.",
+            "comment" : "WGS - Whole Genome Sequencing\nWES - Whole Exome Sequencing \nPanel based sequencing\nMetagenomic sequencing\nRNA sequencing\n"
+          },
+          "ac0.25" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (de)",
-            "code" : "ac0.24",
+            "code" : "ac0.25",
             "description" : ""
           }
         }
@@ -3676,6 +3707,11 @@
         "ac0.24" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.24",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.25" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.25",
           "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
         }
       }
@@ -3824,8 +3860,8 @@
             "codeString" : "ar-sy"
           },
           "purpose" : "لتسجيل التفاصيل حول شيئ محسوس, مُنتَج أو جهيزة يتم استخدامها في أوسع وصف لتقديم الخدمة الصحية, و لكن دون طريقة أيضية أو علاجية مباشِرة.",
-          "keywords" : [ "الجهيزة", "الآلة", "الطُّعم", "جهاز مساعد", "القثطار", "البِدْلة", "مساعدة", "طبي بيولوجي", "أداة", "المعدات", "مقياس", "مِرْقب", "بدني/محسوس", "شيئ" ],
-          "use" : "يستخدم لتسجيل التفاصيل حول أي جهيزة جنيسة (غير محدودة الملكية) و التي يمكن أن تستخدم إما مباشرةً بطريقة علاجية أو تشخيصية أو تستخدم بشكل غير مباشر لدعم تقديم الخدمة الصحية.\r\nو يختلف استخدام اللفظ (جهيزة) على حسب السياق. \r\nو في داخل عالم المعايير, فإن اللفظ (جهيزة) يميل إلى الإشارة إلى الجهائز الإلكترونية أو الميكانيكية/الحركية و التي تدعم الرعاية الصحية, و تتطلب توثيق مكثف فيما يتعلق بالمواصفات و الصيانة... إلى آخره.\r\nو في سياق عالم المصطلحات فإن استخدام (جهيزة) واسع جدا, بما في ذلك أي شيئ محسوس يمكن استخدامه في تقديم الرعاية الصحية إما بشكل مباشر أو غير مباشر. \r\nو تتضمن الأمثلة: دوائر أجهزة التنفس الصناعي, مقاييس الجريان القِمِّي, مقاييس التنفس, نظارات العين, العدسات اللاصقة, القثطار داخل الوريد, طُعوم الثدي, البِدْلات, أنابيب المَنْزَح, و الحلقات المسمارية.\r\n\r\nو تم تصميم هذا النموذج ليمثل الأساس لعرض مركب لأي جهيزة, من مثال بسيط لنوع من غميسة البول مع تاريخ الاستخدام, إلى طعم أذن من كائن حيّ و الذي يتطلب توثيق مركب مثل البرنامج الإلكتروني, و الأجزاء الصلبة, و الصيانة و التعيير, إلى آخره.\r\n\r\nو بالنسبة لحالات الاستخدام المعتادة, فقد يكون من المناسب تخصيص هذا النموذج خاصة في القثطار داخل الوريد أو القثطار البولي.",
+          "keywords" : [ "الجهيزة", "الآلة", "الطُّعم", "جهاز مساعد", "القثطار", "البِدْلة", "مساعدة", "طبي بيولوجي", "أداة", "المعدات", "مقياس", "مِرْقب", "بدني/محسوس", "شيئ" ],
+          "use" : "يستخدم لتسجيل التفاصيل حول أي جهيزة جنيسة (غير محدودة الملكية) و التي يمكن أن تستخدم إما مباشرةً بطريقة علاجية أو تشخيصية أو تستخدم بشكل غير مباشر لدعم تقديم الخدمة الصحية.\r\nو يختلف استخدام اللفظ (جهيزة) على حسب السياق. \r\nو في داخل عالم المعايير, فإن اللفظ (جهيزة) يميل إلى الإشارة إلى الجهائز الإلكترونية أو الميكانيكية/الحركية و التي تدعم الرعاية الصحية, و تتطلب توثيق مكثف فيما يتعلق بالمواصفات و الصيانة... إلى آخره.\r\nو في سياق عالم المصطلحات فإن استخدام (جهيزة) واسع جدا, بما في ذلك أي شيئ محسوس يمكن استخدامه في تقديم الرعاية الصحية إما بشكل مباشر أو غير مباشر. \r\nو تتضمن الأمثلة: دوائر أجهزة التنفس الصناعي, مقاييس الجريان القِمِّي, مقاييس التنفس, نظارات العين, العدسات اللاصقة, القثطار داخل الوريد, طُعوم الثدي, البِدْلات, أنابيب المَنْزَح, و الحلقات المسمارية.\r\n\r\nو تم تصميم هذا النموذج ليمثل الأساس لعرض مركب لأي جهيزة, من مثال بسيط لنوع من غميسة البول مع تاريخ الاستخدام, إلى طعم أذن من كائن حيّ و الذي يتطلب توثيق مركب مثل البرنامج الإلكتروني, و الأجزاء الصلبة, و الصيانة و التعيير, إلى آخره.\r\n\r\nو بالنسبة لحالات الاستخدام المعتادة, فقد يكون من المناسب تخصيص هذا النموذج خاصة في القثطار داخل الوريد أو القثطار البولي.",
           "misuse" : "لا يستخدم لتسجيل المنتجات, مثل الأدوية أو التطعيمات أو ما شابه, و التي تستخدم لأغراض علاجية أو أيضية",
           "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
@@ -3917,26 +3953,7 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "ar-sy" : {
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "المُصَنِّع",
-            "description" : "اسم المُصَنِّع"
-          },
-          "at0006" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "رقم التشغيلة",
-            "description" : "رقم التشغيلة من المُصَنِّع"
-          },
-          "at0006.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "رقم التشغيلة",
-            "description" : "رقم التشغيلة من المُصَنِّع"
-          }
-        },
+        "ar-sy" : { },
         "en" : { },
         "es-ar" : { },
         "pt-br" : { },
@@ -6131,7 +6148,24 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..1",
               "nodeId" : "at0012.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "existence" : "0..1",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "constraint" : [ "Links (L)", "Rechts (R)", "Multilokuär (X)", "Beidseitig (B)", "Mittellinie/ Mittig (M)", "Unbekannt (U)", "Trifft nicht zu (T; Seitenangabe nicht sinnvoll, einschließlich Systemerkrankungen)" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
