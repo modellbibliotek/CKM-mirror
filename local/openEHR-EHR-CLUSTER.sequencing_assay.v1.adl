@@ -50,7 +50,7 @@ description
 		["original_namespace"] = <"org.highmed">
 		["original_publisher"] = <"HiGHmed">
 		["custodian_namespace"] = <"org.highmed">
-		["MD5-CAM-1.0.1"] = <"FA86A1F28EA961251F7468664F689314">
+		["MD5-CAM-1.0.1"] = <"7abea4b73dd121f1003a14d6044e590c">
 		["build_uid"] = <"f0e0d280-0ce2-45a0-bb50-3eb7b2933c84">
 		["revision"] = <"1.0.1">
 	>
@@ -67,11 +67,7 @@ definition
 							at0011,    -- NGS (amplicon)
 							at0012,    -- Genome sequencing
 							at0013,    -- Array-CGH
-							at0014,    -- MLPA
-							at0015,    -- Sanger sequencing
-							at0016,    -- Fragment analysis
-							at0017,    -- Methylation assay
-							at0018]    -- Sonstiges
+							at0014]    -- MLPA
 						}
 					}
 					DV_TEXT matches {*}
@@ -218,22 +214,6 @@ ontology
 					text = <"MLPA">
 					description = <"*">
 				>
-				["at0015"] = <
-					text = <"Sanger sequencing">
-					description = <"*">
-				>
-				["at0016"] = <
-					text = <"Fragment analysis">
-					description = <"*">
-				>
-				["at0017"] = <
-					text = <"Methylation assay">
-					description = <"*">
-				>
-				["at0018"] = <
-					text = <"Sonstiges">
-					description = <"*">
-				>
 				["at0020"] = <
 					text = <"Tumorzellgehalt">
 					description = <"Angabe des Tumorzellgehalt in Prozent.">
@@ -324,39 +304,23 @@ ontology
 					description = <"The full gene name approved by the HGNC that convey the character or function of the gene.">
 				>
 				["at0010"] = <
-					text = <"NGS (hybrid-capture)">
+					text = <"Whole genome sequencing (WGS)">
 					description = <"*">
 				>
 				["at0011"] = <
-					text = <"NGS (amplicon)">
+					text = <"Whole exome sequencing (WES)">
 					description = <"*">
 				>
 				["at0012"] = <
-					text = <"Genome sequencing">
+					text = <"Panel based sequencing">
 					description = <"*">
 				>
 				["at0013"] = <
-					text = <"Array-CGH">
+					text = <"Metagenomic sequencing">
 					description = <"*">
 				>
 				["at0014"] = <
-					text = <"MLPA">
-					description = <"*">
-				>
-				["at0015"] = <
-					text = <"Sanger sequencing">
-					description = <"*">
-				>
-				["at0016"] = <
-					text = <"Fragment analysis">
-					description = <"*">
-				>
-				["at0017"] = <
-					text = <"Methylation assay">
-					description = <"*">
-				>
-				["at0018"] = <
-					text = <"Miscellaneous">
+					text = <"RNA sequencing">
 					description = <"*">
 				>
 				["at0020"] = <
