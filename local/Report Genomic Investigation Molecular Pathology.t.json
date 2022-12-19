@@ -24,9 +24,9 @@
       "custodian_namespace" : "org.openehr",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC",
       "build_uid" : "049f2a54-38cd-40a4-ab98-a8bb28653e4c",
-      "MD5-CAM-1.0.1" : "89db699d8dc461e38d29c56c6ad52bb0",
+      "MD5-CAM-1.0.1" : "a6d2fc7258568b66ee97dce6054972e8",
       "original_language" : "ISO_639-1::de",
-      "sem_ver" : "4.0.5"
+      "sem_ver" : "4.0.6"
     },
     "details" : {
       "de" : {
@@ -411,7 +411,7 @@
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
-  "templateId" : "Molekulargenetischer Befund",
+  "templateId" : "Report Genomic Investigation Molecular Pathology",
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
