@@ -24,7 +24,7 @@
       "custodian_namespace" : "org.openehr",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC",
       "build_uid" : "049f2a54-38cd-40a4-ab98-a8bb28653e4c",
-      "MD5-CAM-1.0.1" : "40f96efa749d9f8b0eac4fdc1b3f4d57",
+      "MD5-CAM-1.0.1" : "fcb024669ef588d030d346abef702afc",
       "original_language" : "ISO_639-1::de",
       "sem_ver" : "0.1.1-alpha.5"
     },
@@ -3317,7 +3317,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.25" ],
+                  "constraint" : [ "ac0.26" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -3365,6 +3365,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0037.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -3375,9 +3376,9 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
-                "existence" : "0..1",
                 "children" : [ {
                   "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
                   "constraint" : [ "Gute Qualität", "Eingeschränkte Qualität", "Kommentar", "/.+/" ]
                 } ]
               } ],
@@ -3415,10 +3416,10 @@
             "text" : "Kommentar zur Qualität der Analyse",
             "description" : "Kommentar zum Sequenzierungsassay, der nicht in anderen Feldern erfasst wurde."
           },
-          "ac0.25" : {
+          "ac0.26" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.25",
+            "code" : "ac0.26",
             "description" : ""
           }
         },
@@ -3430,10 +3431,10 @@
             "description" : "Name of the technology used for sequencing analysis.",
             "comment" : "WGS - Whole Genome Sequencing\nWES - Whole Exome Sequencing \nPanel based sequencing\nMetagenomic sequencing\nRNA sequencing\n"
           },
-          "ac0.25" : {
+          "ac0.26" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (de)",
-            "code" : "ac0.25",
+            "code" : "ac0.26",
             "description" : ""
           }
         }
@@ -3565,6 +3566,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.25",
           "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017", "at0018" ]
+        },
+        "ac0.26" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.26",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014" ]
         }
       }
     },
@@ -3795,6 +3801,12 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0024.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0008.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
         } ]
