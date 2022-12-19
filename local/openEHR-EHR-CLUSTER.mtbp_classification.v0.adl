@@ -1,0 +1,85 @@
+archetype (adl_version=1.4; uid=268a21f3-6fc0-403e-a1d8-9bca125f3379)
+	openEHR-EHR-CLUSTER.mtbp_classification.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-12-19">
+		["name"] = <"Erik Sundvall">
+		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
+		["email"] = <"erik.sundvall@regionstockholm.se">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["build_uid"] = <"c326adce-53bd-3c80-9661-45dbecd95748">
+		["MD5-CAM-1.0.1"] = <"5b996db158fef3a2e3520dfd1c63c53e">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- MTBP Classification
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Variant relevance
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Putative functional relevant
+							at0003,    -- Unknown/contradictory functional significane
+							at0004]    -- Putative functionally neutral
+						}
+					}
+				}
+			}
+			allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- Evidence
+				include
+					archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.citation\.v0/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"MTBP Classification">
+					description = <"MTBP Classification">
+				>
+				["at0001"] = <
+					text = <"Variant relevance">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Putative functional relevant">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Unknown/contradictory functional significane">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Putative functionally neutral">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Evidence">
+					description = <"">
+				>
+			>
+		>
+	>
