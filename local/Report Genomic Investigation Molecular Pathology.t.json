@@ -24,9 +24,9 @@
       "custodian_namespace" : "org.openehr",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC",
       "build_uid" : "049f2a54-38cd-40a4-ab98-a8bb28653e4c",
-      "MD5-CAM-1.0.1" : "f190d25b7db9c83f2006be101ecf0cb8",
+      "MD5-CAM-1.0.1" : "f4d9628d2c9879db0ea994f01d626029",
       "original_language" : "ISO_639-1::de",
-      "sem_ver" : "0.1.0-alpha.5"
+      "sem_ver" : "0.1.1-alpha.5"
     },
     "details" : {
       "de" : {
@@ -254,7 +254,7 @@
               }, {
                 "@type" : "C_ARCHETYPE_ROOT",
                 "rmTypeName" : "CLUSTER",
-                "occurrences" : "1..1",
+                "occurrences" : "0..0",
                 "nodeId" : "at0006.1",
                 "attributes" : [ ],
                 "attributeTuples" : [ ],
@@ -873,6 +873,52 @@
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0075.1",
                       "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0077.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "defaultValue" : {
+                            "defining_code" : {
+                              "terminology_id" : {
+                                "value" : "Snomed CT",
+                                "@type" : "TERMINOLOGY_ID"
+                              },
+                              "code_string" : "1236877003",
+                              "@type" : "CODE_PHRASE"
+                            },
+                            "value" : "Genetic pathology",
+                            "@type" : "DV_CODED_TEXT"
+                          },
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "http://snomed.info/id/"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "http://snomed.info/id/" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "http://snomed.info/id/",
+                                "code" : "1236877003",
+                                "value" : "Genetic pathology"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -1964,11 +2010,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_IDENTIFIER",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2022,6 +2066,21 @@
           "occurrences" : "0..0",
           "nodeId" : "at0087.1",
           "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0015.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -2085,6 +2144,24 @@
                   } ]
                 } ]
               } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -7637,6 +7714,13 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0020.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -7660,6 +7744,25 @@
           "occurrences" : "0..0",
           "nodeId" : "at0025.1",
           "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0024.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         } ]
       } ],
@@ -7797,7 +7900,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "5b996db158fef3a2e3520dfd1c63c53e"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.mtbp_classification.v0",
     "differential" : true,
@@ -7861,7 +7977,97 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "79A932331C2792107C0451AFE708108A"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Damit wird ermöglicht bestimmte Abschnitte der Gesundheitsinformationen, die an anderer Stelle gespeichert sind, in die aktuelle Krankenakte aufzunehmen.",
+          "keywords" : [ "Zitat", "Referenz" ],
+          "use" : "Verwenden Sie diese Option, um auf Informationen zu verweisen, die an einer anderen Stelle im selben EHR oder außerhalb des aktiven EHR gespeichert sind, damit sie in das aktuelle Dokument oder die aktuelle Nachricht aufgenommen werden können, die gerade erstellt wird. Beispielsweise kann eine Entlassungszusammenfassung den zusammenfassenden Bericht eines Labortests unter Verwendung dieses Zitierarchetyps enthalten, anstatt den gesamten Laborbericht zu duplizieren.\r\nDieser Archetyp ist bewusst als Archetyp der Klasse CLUSTER konzipiert, sodass das Zitieren durch Einfügen in einen Slot im Kontext anderer Archetypen oder als eigenständige Instanz innerhalb des spezifischen Archetyps EVALUATION.citation erfolgen kann.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å gjøre det mulig å inkludere spesifikk helseinformasjon, som er lagret en annen plass i pasientens journal, i den aktuelle kliniske dokumentasjonen.",
+          "keywords" : [ "henvisning", "referens" ],
+          "use" : "Brukes for å henvise til informasjon som er lagret en annen plass i samme elektronsik pasientjournal eller ekstern til den aktive elektronsike pasientjournalen, slik at den kan inkluderes i det aktuelle dokumentet, som opprettes aktuelt. For eksempel kan en utskrivingsrapport inkludere en henvising til laboratoriefunn heller enn å duplisere alle laboratoriefunnene. \r\nDenne arketypen er bevist designet som CLUSTER arketype, slik at hnvisningen kan gjøres via en slot innenfor kontaksten av andre arketyper, eller som en selvstendig instans innenfor den spesifikke EVALUATION.citation arketypen.",
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Possibilitar que seções específicas de informações de saúde armazenadas em outros lugares sejam incluídas no registro clínico atual.",
+          "keywords" : [ "citação", "referência" ],
+          "use" : "Usado para referenciar informações que estão armazenadas em outro local do RES ou externas ao RES ativo, então essas informações podem ser incluídas no documento atual ou na mensagem que está sendo criada. Por exemplo, um sumário de alta pode incluir um relatório resumido de um teste laboratorial com o uso deste arquétipo de citação, em vez de duplicar todo o relatório laboratorial.\r\nEste arquétipo está deliberadamente projetado como uma classe de arquétipo CLUSTER de forma que a citação possa ser feita por meio de inserção em um slot dentro do contexto de outros arquétipos ou como uma instancia independente dentro do arquétipo específico EVALUATION.citation.",
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To enable specific sections of health information that are stored elsewhere to be included within the current clinical record.",
+          "keywords" : [ "citation", "reference" ],
+          "use" : "Use to reference information that is stored elsewhere in the same EHR or external to the active EHR, so that it can be included in the current document or message that is being created.  For example, a discharge summary may include the summary report of a laboratory test through the use of this citation archetype, rather than duplicating the whole laboratory report.\r\nThis archetype is deliberately designed as a CLUSTER class archetype so that the citation can be made via insertion into a slot within the context of other archetypes, or as a standalone instance within the specific EVALUATION.citation archetype.",
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "ليتمكن من تضمين المقاطع المحددة للمعلومات الطبية في داخل السجل السريري الحالي, و التي كان يتم تخزينها في مكان آخر",
+          "keywords" : [ "الاقتباس", "المرجع" ],
+          "use" : "يستخدم كمرجع للمعلومات التي يتم تخزينها في مكان آخر في داخل ذات السجل الطبي الإلكتروني, أو في خارج السجل الطبي الإلكتروني النشط, بحيث يمكن تضمينه في الوثيقة الحالية أو الرسالة التي يتم تكوينها.\r\nمثلا: قد يتضمن ملخص الخروج تقريرا موجزا لاختبار معملي عن طريق استخدام هذا النموذج الخاص بالمرجعية, بدلا من تكرار إدراج نفس التقرير المعملي.\r\nو قد تم تعمد تصميم هذا النموذج على هيئة فئة نماذج (عنقود) حتى يتم إدراج المرجعية في شرفة في سياق النماذج الأخرى, أو كمعلومة مستقلة في النموذج المخصص (تقييم. اقتباس).",
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "*To enable specific sections of health information that are stored elsewhere to be included within the current clinical record.(en)",
+          "keywords" : [ "*citation(en)", "*reference(en)" ],
+          "use" : "*Use to reference information that is stored elsewhere in the same EHR or external to the active EHR, so that it can be included in the current document or message that is being created.  For example, a discharge summary may include the summary report of a laboratory test through the use of this citation archetype, rather than duplicating the whole laboratory report.\r\nThis archetype is deliberately designed as a CLUSTER class archetype so that the citation can be made via insertion into a slot within the context of other archetypes, or as a standalone instance within the specific EVALUATION.citation archetype.(en)",
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.citation.v0",
     "differential" : true,
