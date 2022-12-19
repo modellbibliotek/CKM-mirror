@@ -24,9 +24,9 @@
       "custodian_namespace" : "org.openehr",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC",
       "build_uid" : "049f2a54-38cd-40a4-ab98-a8bb28653e4c",
-      "MD5-CAM-1.0.1" : "315f38dcb5e520b76e6a8d5e8338411f",
+      "MD5-CAM-1.0.1" : "de31e14fc5f66022e76ec8268e49ebc6",
       "original_language" : "ISO_639-1::de",
-      "sem_ver" : "0.1.1-alpha.5"
+      "sem_ver" : "0.1.2-alpha.5"
     },
     "details" : {
       "de" : {
@@ -1022,6 +1022,52 @@
                     "@type" : "DV_IDENTIFIER"
                   },
                   "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0094",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0062.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_IDENTIFIER",
+                      "defaultValue" : {
+                        "@type" : "DV_IDENTIFIER"
+                      },
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0063.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_IDENTIFIER",
+                      "defaultValue" : {
+                        "@type" : "DV_IDENTIFIER"
+                      },
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
