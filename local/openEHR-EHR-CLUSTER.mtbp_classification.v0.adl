@@ -26,8 +26,8 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"2961e7fbb5264a666b5166d470640d7f">
 		["build_uid"] = <"c326adce-53bd-3c80-9661-45dbecd95748">
-		["MD5-CAM-1.0.1"] = <"5b996db158fef3a2e3520dfd1c63c53e">
 	>
 
 definition
@@ -39,7 +39,7 @@ definition
 						defining_code matches {
 							[local::
 							at0002,    -- Putative functional relevant
-							at0003,    -- Unknown/contradictory functional significane
+							at0003,    -- Unknown/contradictory functional significance
 							at0004]    -- Putative functionally neutral
 						}
 					}
@@ -69,7 +69,7 @@ ontology
 					description = <"">
 				>
 				["at0003"] = <
-					text = <"Unknown/contradictory functional significane">
+					text = <"Unknown/contradictory functional significance">
 					description = <"">
 				>
 				["at0004"] = <
