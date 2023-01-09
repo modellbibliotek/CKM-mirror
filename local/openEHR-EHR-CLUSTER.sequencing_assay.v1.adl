@@ -50,7 +50,7 @@ description
 		["original_namespace"] = <"org.highmed">
 		["original_publisher"] = <"HiGHmed">
 		["custodian_namespace"] = <"org.highmed">
-		["MD5-CAM-1.0.1"] = <"7abea4b73dd121f1003a14d6044e590c">
+		["MD5-CAM-1.0.1"] = <"9e054add0c5da2353c6722590f751d0d">
 		["build_uid"] = <"f0e0d280-0ce2-45a0-bb50-3eb7b2933c84">
 		["revision"] = <"1.0.1">
 	>
@@ -82,7 +82,9 @@ definition
 					DV_TEXT matches {*}
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0021]    -- Oncomine Comprehensive Panel V3
+							[local::
+							at0021,    -- Oncomine Comprehensive Panel V3
+							at0038]    -- *Kapa Hyperprep (en)
 						}
 					}
 				}
@@ -271,6 +273,10 @@ ontology
 					text = <"Kommentar">
 					description = <"Kommentar zum Sequenzierungsassay, der nicht in anderen Feldern erfasst wurde.">
 				>
+				["at0038"] = <
+					text = <"*Kapa Hyperprep (en)">
+					description = <"">
+				>
 			>
 		>
 		["en"] = <
@@ -379,6 +385,10 @@ ontology
 				["at0037"] = <
 					text = <"Comment">
 					description = <"Comment on the sequencing assay that was not captured in other fields.">
+				>
+				["at0038"] = <
+					text = <"Kapa Hyperprep">
+					description = <"">
 				>
 			>
 		>
