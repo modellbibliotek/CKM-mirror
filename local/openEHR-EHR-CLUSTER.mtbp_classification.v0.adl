@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,6 +23,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -26,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2961e7fbb5264a666b5166d470640d7f">
+		["MD5-CAM-1.0.1"] = <"a5be86b77ff1965f81c926a06dad2db8">
 		["build_uid"] = <"c326adce-53bd-3c80-9661-45dbecd95748">
 	>
 
@@ -78,6 +89,34 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Evidence">
+					description = <"">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"MTBP-Klassifizierung">
+					description = <"MTBP-Klassifizierung">
+				>
+				["at0001"] = <
+					text = <"Variantenrelevanz">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Vermutlich funktional relevant">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Unbekannte/widersprüchliche funktionelle Bedeutung">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Vermutlich funktional neutral">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Evidenz">
 					description = <"">
 				>
 			>
