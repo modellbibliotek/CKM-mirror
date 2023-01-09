@@ -39,6 +39,7 @@ description
 		["custodian_namespace"] = <"org.openehr">
 		["MD5-CAM-1.0.1"] = <"a5be86b77ff1965f81c926a06dad2db8">
 		["build_uid"] = <"c326adce-53bd-3c80-9661-45dbecd95748">
+		["references"] = <"Tamborero, D., Dienstmann, R., Rachid, M.H. et al. The Molecular Tumor Board Portal supports clinical decisions and automated reporting for precision oncology. Nat Cancer 3, 251–261 (2022). https://doi.org/10.1038/s43018-022-00332-x">
 	>
 
 definition
