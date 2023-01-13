@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.4",
+      "sem_ver" : "0.2.5",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f7ef3ea5230a9f6f996819f7fcc56875",
+      "MD5-CAM-1.0.1" : "11f0d969a603b343ae0553da4406576e",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B"
     },
     "details" : {
@@ -2658,7 +2658,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.116" ],
+                      "constraint" : [ "ac0.120" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -2766,7 +2766,16 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0117.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -2934,10 +2943,34 @@
             "code" : "ac0.113",
             "description" : ""
           },
-          "ac0.116" : {
+          "at0117.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0117",
+            "text" : "Onset of last reaction",
+            "description" : "The date and/or time of the onset of the last known occurrence of a reaction event.",
+            "comment" : "Attributet \"tid\" i SoS infospec mappas antingen till detta attribut eller ett annat som finns i referensmodellen. Behöver diskuteras vilket val vi gör.\n\n__________\n\nThis date may be be a duplicate of the most recent 'Onset of reaction' date.\n Where a textual representation of the date of last occurrence is required e.g 'In Childhood, '10 years ago' the Comment element should be used.",
+            "source" : "IMH"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Substance",
+            "description" : "Identification of a substance, or substance class, that is considered to put the individual at risk of an adverse reaction event.",
+            "comment" : "I första hand används NSLid, i andra hand NPLid och i tredje hand ATC-kod.\n\n\nBoth an individual substance and a substance class are valid entries in 'Substance'. A substance may be a compound of simpler substances, for example a medicinal product. If the value in 'Substance' is an individual substance, it may be duplicated in 'Specific substance'. It is strongly recommended that both 'Substance' and 'Specific substance' be coded with a terminology capable of triggering decision support, where possible. For example: Snomed CT, DM+D, RxNorm, NDFRT, ATC, New Zealand Universal List of Medicines and Australian Medicines Terminology. Free text entry should only be used if there is no appropriate terminology available.",
+            "source" : "openEHR,FHIR,DAM"
+          },
+          "at0063.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063",
+            "text" : "Status",
+            "description" : "Assertion about the certainty of the propensity, or potential future risk, of the identified 'Substance' to cause a reaction.",
+            "comment" : "Decision support would typically raise alerts for 'Suspected', 'Likely', 'Confirmed', and ignore a 'Refuted' reaction. Clinical systems may choose not to display Adverse reaction entries with a \n\n\n'Refuted' status in the Adverse Reaction List. \n\nHowever, 'Refuted' may be useful for reconciliation of the adverse reaction list or when communicating between systems\n\n. Some implementations may choose to make this field mandatory.\n 'Resolved' may be used variably across systems, depending on clinical use and context - there appears to be differing opinion whether this should still be used to raise potential alerts or to display in an Adverse Reaction List. The free text data type will allow for local variation by enabling other value sets to be applied to this data element in a template - in this situation it is recommended that values should be coded using a terminology.",
+            "source" : "FHIR, DAM"
+          },
+          "ac0.120" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.116",
+            "code" : "ac0.120",
             "description" : ""
           }
         },
@@ -2954,10 +2987,10 @@
             "code" : "ac0.113",
             "description" : ""
           },
-          "ac0.116" : {
+          "ac0.120" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.116",
+            "code" : "ac0.120",
             "description" : ""
           }
         },
@@ -2974,10 +3007,10 @@
             "code" : "ac0.113",
             "description" : ""
           },
-          "ac0.116" : {
+          "ac0.120" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.116",
+            "code" : "ac0.120",
             "description" : ""
           }
         },
@@ -2994,10 +3027,10 @@
             "code" : "ac0.113",
             "description" : ""
           },
-          "ac0.116" : {
+          "ac0.120" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.116",
+            "code" : "ac0.120",
             "description" : ""
           }
         },
@@ -3053,10 +3086,10 @@
             "code" : "ac0.113",
             "description" : ""
           },
-          "ac0.116" : {
+          "ac0.120" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.116",
+            "code" : "ac0.120",
             "description" : ""
           }
         }
@@ -3632,6 +3665,26 @@
         "ac0.116" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.116",
+          "members" : [ "at0127", "at0065", "at0066" ]
+        },
+        "ac0.117" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.117",
+          "members" : [ "at0127", "at0065", "at0066" ]
+        },
+        "ac0.118" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.118",
+          "members" : [ "at0127", "at0065", "at0066" ]
+        },
+        "ac0.119" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.119",
+          "members" : [ "at0127", "at0065", "at0066" ]
+        },
+        "ac0.120" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.120",
           "members" : [ "at0127", "at0065", "at0066" ]
         }
       }
