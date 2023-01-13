@@ -24,7 +24,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.2.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d86fb1c399ecbab917eef722b37e7c03",
+      "MD5-CAM-1.0.1" : "eab44898babcf0fe3713bd028674fe16",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B"
     },
     "details" : {
@@ -1588,7 +1588,27 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "SECTION",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "existence" : "0..1",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "1..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.2",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-advance_care_directive-001.v2",
+          "referenceType" : "archetypeOverlay"
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -2742,16 +2762,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0117.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -2852,32 +2863,14 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0062.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0047.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_EHR_URI",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -2908,16 +2901,7 @@
                   "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0125.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_DATE_TIME",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -3042,14 +3026,6 @@
             "description" : "Identifiering av ett ämne eller ämnesklass som anses utgöra en risk för en enskild reaktion.\nAvser aktiv substans, hjälpämne, läkemedel eller kemikalie.",
             "comment" : "I första hand NSLid, i andra hand NPLid och i sista hand ATC.\n\nOm substansen är en kemikalie används:\n59871000052102 |urval kemikalieöverkänsligheter, uppmärksamhetsinformation|\n_____________________\n\nBåde ett enskilt ämne och en substansklass är giltiga noteringar under \"Substans\". Ett ämne kan vara en förening av enklare ämnen, exempelvis ett läkemedel. Om uppgiften under \"Substans\" är ett enskilt ämne kan det dupliceras under \"Specifik substans\". Om möjligt, benämn både \"Substans\" och \"Specifik substans\" med en terminologi som kan utlösa beslutsstöd. Till exempel: Snomed CT, DM + D, RxNorm, NDFRT, ATC, Nya Zeeland Universal List of Medicines och Australian Medicines Terminology. Fri textinmatning bör endast användas om det inte finns någon lämplig terminologi tillgänglig.",
             "source" : "openEHR,FHIR,DAM"
-          },
-          "at0117" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0117",
-            "text" : "Debut av sista reaktionen",
-            "description" : "Datum och/eller tid då den senast kända förekomsten av en reaktionshändelse började.",
-            "comment" : "Mappas till \"tid\" (tidpunkt då överkänslighetstillstånd observerades) ELLER\nså ska detta attribut strykas och \"tid\" ska mappas till något attribut i referensmodellen.\n\n____________\n\nDet här datumet kan vara en kopia av det senaste datumet för \"Debut av reaktion\". Om en textrepresentation av datumet för den senaste händelsen krävs, till exempel \"I barndomen\", \"för 10 år sedan\", bör kommentarelementet användas.",
-            "source" : "IMH"
           },
           "at0063.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3723,6 +3699,191 @@
         "name" : "Osmeire Chamelette Sanzovo",
         "organisation" : "Hospital Sírio Libanês",
         "email" : "osmeire.acsanzovo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "7d984777-e861-4792-9968-252e19a95355",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "A429428F755F4D6092F9D081CA590D27"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.advance_care_directive.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-advance_care_directive-001.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0005.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0004.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "at0044", "at0045", "at0047" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Type of directive",
+            "description" : "The type of advance care directive.",
+            "comment" : "Urval som ska användas:\n59881000052100 |urval särskilda vårdrutiner, uppmärksamhetsinformation|   \n103491000052103 |urval särskilda vårdrutiner utifrån fattade beslut, uppmärksamhetsinformation|\n\n\nA short text description of the nature of the advance care directive. Coding of the type of directive with a terminology is preferred, where possible. It is expected that this is largely localised to reflect local policy and legislation.\n\nFor example, in the Netherlands, advance care directive types include, but are not limited to, 'Treatment prohibition', 'Treatment prohibition with completion of Completed Life', 'Euthanasia request' and 'Declaration of life'.\n\nIn the UK, advance care directive types include 'Advance Decision', 'Advance Directive' and 'Advance Statement'."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Type of directive",
+            "description" : "The type of advance care directive.",
+            "comment" : "\nA short text description of the nature of the advance care directive. Coding of the type of directive with a terminology is preferred, where possible. It is expected that this is largely localised to reflect local policy and legislation.\n\nFor example, in the Netherlands, advance care directive types include, but are not limited to, 'Treatment prohibition', 'Treatment prohibition with completion of Completed Life', 'Euthanasia request' and 'Declaration of life'.\n\nIn the UK, advance care directive types include 'Advance Decision', 'Advance Directive' and 'Advance Statement'."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Status inkl Negation",
+            "description" : "The status of the advance care directive.",
+            "comment" : "Coding of the advance care directive status with a terminology is preferred, where possible."
+          }
+        },
+        "nb" : { },
+        "de" : { },
+        "nl" : { },
+        "pt-br" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "42bf3c4f-4398-4b2b-b4cf-fe4b0f58aee3",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout",
+        "organisation" : "MHH-Hannover",
+        "email" : "ballout.sarah@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjørn Arntzen, Silje Ljosland Bakke, Liv Laugen",
+        "organisation" : "Oslo University Hospital, Helse Vest IKT AS, ​Oslo University Hospital, Norway",
+        "email" : "varntzen@ous-hf.no, silje.ljosland.bakke@helse-vest-ikt.no, liv.laugen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Royal Philips",
+        "email" : "vrppizzo@gmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Joost Holslag",
+        "organisation" : "Nedap",
+        "email" : "joost.holslag@nedap.com"
       },
       "otherDetails" : { }
     } ]
