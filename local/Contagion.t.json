@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "0.1.1",
       "build_uid" : "c6c16004-7406-4da5-8b73-d61c9a07ba0b",
-      "MD5-CAM-1.0.1" : "68f5ea9959f0e9bdf2cb1ce4cbc6de04",
+      "MD5-CAM-1.0.1" : "6e25dd1a092d3df92f97c4bce86adf18",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
     },
     "details" : {
@@ -667,7 +667,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Contageous disease",
+            "text" : "Contagious disease",
             "description" : "A condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions."
           },
           "ac0.2" : {
