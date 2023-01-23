@@ -1,8 +1,9 @@
-﻿archetype (adl_version=1.4; uid=5669f1f8-acfb-41f0-a43f-46abc4391f0c)
+archetype (adl_version=1.4; uid=5669f1f8-acfb-41f0-a43f-46abc4391f0c)
 	openEHR-EHR-EVALUATION.advance_care_directive.v2
 
 concept
-	[at0000]	-- Advance care directive
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -38,18 +39,27 @@ language
 				["email"] = <"joost.holslag@nedap.com">
 			>
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
 	>
+
 description
 	original_author = <
+		["date"] = <"2019-10-23">
 		["name"] = <"Heidi Koikkalainen">
 		["organisation"] = <"NES Digital Service, Edinburgh Napier University">
 		["email"] = <"hk.koikkalainen@gmail.com">
-		["date"] = <"2019-10-23">
 	>
+	lifecycle_state = <"published">
+	other_contributors = <"Dag Aarhus, Vestre Viken HF, Norway","Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)","steve baguley, NDS, United Kingdom","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)","Marcos Barreto, Universidade Federal da Bahia (UFBA), Brazil","Ivar Berge, Oslo Universitetssykehus, Norway","SB Bhattacharyya, Sudisa Consultancy Services, India","Greg Burch, Tiny Medical Apps, United Kingdom","Santiago Cammi, Argentina","Ady Angelica Castro Acosta, CIBERES-Hospital 12 de Octubre, Spain","Kåre Flø, DIPS ASA, Norway","Grant Forrest, NHS Scotland, United Kingdom","Mikkel Gaup Grønmo, FSE, Helse Nord, Norway (Nasjonal IKT redaktør)","Anne Grimstvedt Kvalvik, Haraldsplass Diakonale sykehus, Norway","Joost Holslag, Nedap, Netherlands","Evelyn Hovenga, EJSH Consulting, Australia","Keltie Jamieson, NSHA, Canada","Gorazd Kalan, University Medical Centre Ljubljana, Slovenia","Lars Morgan Karlsen, DIPS ASA, Norway","Heidi Koikkalainen, United Kingdom (openEHR Editor)","Tomi Laptoš, Marand, Slovenia","Liv Laugen, ​Oslo University Hospital, Norway, Norway (openEHR Editor)","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Neranga Liyanaarachchi, Ministry of Health, Postgraduate Institute of Medicine, Sri Lanka","Manisha Mantri, C-DAC, India","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Paul Miller, SCIMP NHS Scotland, United Kingdom","Bjoern Naess, DIPS ASA, Norway","Arunakiry Natarajan, management4health, Germany","Svenne Naumann, Finnmarkssykehuset, Norway","Andrej Orel, Marand d.o.o., Slovenia","Jayashree Panickar, Karolinska Institute, Sweden","Martin Paulson, Sykehuset i Vestfold, Norway","Vanessa Pereira, Better, Portugal","SARA PRETE, Abinsula, Italy","clovis puttini, Core Consulting, Brazil","Gro-Hilde Severinsen, Norwegian center for ehealthresearch, Norway","Line Silsand, Universitetssykehuset i Nord-Norge, Norway","Laila Storesund, Haraldsplass diakonale sykehus, Norway","Norwegian Review Summary, Nasjonal IKT HF, Norway","Carita Teien, Retten til en verdig død, Norge","Rowan Thomas, St. Vincent's Hospital Melbourne, Australia","Katrin Troeltzsch, Nationales Centrum für Tumorerkrankungen (NCT); Universitätsklinikum Heidelberg, Germany","John Tore Valand, Helse Bergen, Norway (openEHR Editor)","Marit Alice Venheim, Helse Vest IKT, Norway","Olav Weyergang-Nielsen, Retten til en verdig død, Norge","Wouter Zanen, Eurotranplant, Netherlands","Lin Zhang, Taikang Insurance Group, China">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"Zur Repräsentation der Präferenzen einer Person für zukünftige medizinische Behandlung und Pflege.">
+			keywords = <"Leben, Testament, Entscheidung, Richtlinie, Verfügung, Recht, Präferenz, EoL, DNR, DNACPR, Reanimation", ...>
 			use = <"Zur Repräsentation der Präferenzen einer Person für zukünftige medizinische Behandlung und Pflege.
 
 Die Anordnung zur medizinischen Versorgung kann auch als Patientenverfügung, Patientenanordnung, Patientenentscheidung, Patientenverweigerung, persönliche Anordnung, Patientenverfügung zur medizinischen Versorgung oder medizinische Anordnung bezeichnet werden. Eine Patientenverfügung wird üblicherweise verwendet, um eine lebenserhaltende Behandlung zu verweigern, die unter anderem Folgendes umfassen kann: Herz-Lungen-Wiederbelebung (HLW), klinisch unterstützte Ernährung und Flüssigkeitszufuhr, unterstützte Beatmung und Antibiotika bei lebensbedrohlichen Infektionen. Sie könnte auch positive Präferenzen und Anweisungen für zukünftige Prioritäten in der Gesundheitsversorgung, bei den Lebensumständen und in persönlichen Angelegenheiten beinhalten. Eine fähige Person kann eine Richtlinie zur medizinischen Vorabversorgung erstellen, um ihre Präferenzen für die medizinische Versorgung und Behandlung im Voraus festzuhalten, die als Leitfaden für die Entscheidungsfindung in zukünftigen Situationen dienen soll, in denen die Person nicht in der Lage ist, Entscheidungen zu treffen oder mitzuteilen. 
@@ -58,16 +68,20 @@ Dieser Archetyp wurde speziell als Rahmen oder Struktur entwickelt, die für die
 
 In einigen Ländern ist eine Patientenverfügung rechtlich überzeugend, ohne einen offiziellen Rechtsstatus zu haben. In anderen Ländern handelt es sich um ein rechtsverbindliches Dokument und es MUSS sichergestellt werden, dass der Archetyp der Patientenverfügung und alle verschachtelten Archetypen den einschlägigen rechtlichen Anforderungen entsprechen.
 ">
-			keywords = <"Leben, Testament, Entscheidung, Richtlinie, Verfügung, Recht, Präferenz, EoL, DNR, DNACPR, Reanimation", ...>
 			misuse = <"*Not to be used to record organ donation preferences. Use a specific archetype for this purpose.
 
 Not to be used to record details about a Power of Attorney or other legal representative/proxy. Use a specific archetype for this purpose.
 
 Not to be used to record anticipatory decisions about CPR decisions, other possible intervention decisions, and intent of care as asserted by a clinician in a health record. Use the EVALUATION.advance_intervention_decisions archetype for this purpose. (en)">
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å registrere et individs viljeserklæring i forbindelse medisinsk fremtidig behandling og omsorg.">
+			keywords = <"livstestament, EoL, End-of-life, R-, Res minus, livsforlengende, behandlingsreservasjon", ...>
 			use = <"Bruk som et rammeverk for å kommunisere et individs vilje i forbindelse med fremtidig medisinsk behandling og omsorg.
 
 Et individ som har mental kapasitet til det kan lage en viljesrerklæring som uttrykker sine ønsker knyttet til fremtidig medisinsk behandling og omsorg. Dette har til hensikt å veilede beslutninger i fremtidige situasjoner der individet er ute av stand til å gjøre, eller formidle egne valg. Et fremtidig behandlingsvalg blir normalt brukt til å motsette seg livsforlengende behandling som kan, men er ikke begrenset til, hjerte- lungeredning (HLR), kunstig tilført ernæring og væske, invasiv- og non-invasiv ventilasjonsstøtte, og antibiotikabehandling av livstruende infeksjoner. I tillegg kan det inneholde ønsker og instrukser av ikke-restriktiv art for fremtidig behandling, boform eller personlige forhold. For eksempel å prioritere god smertelindring til tross for at dette kan forkorte livet.
@@ -75,7 +89,6 @@ Et individ som har mental kapasitet til det kan lage en viljesrerklæring som ut
 Denne arketypen har blitt designet som et rammeverk for å kunne dekke et vidt spekter av brukssituasjoner ved å nøste inn en eller flere CLUSTER-arketyper med spesifikke detaljer og nasjonale eller lokale krav. 
 
 I noen land er et et fremtidig behandlingsvalg retningsgivende uten å være et offisielt juridisk dokument. I andre land er det juridisk bindende, og det må da sikres at arketypen \"Fremtidig behandlingsvalg\" og eventuelle arketyper som nøstes inn i denne, tilfredsstiller de juridiske krav som stilles lokalt.">
-			keywords = <"livstestament, EoL, End-of-life, R-, Res minus, livsforlengende, behandlingsreservasjon", ...>
 			misuse = <"*Not to be used to record organ donation preferences. Use a specific archetype for this purpose.
 
 Not to be used to record details about a Power of Attorney or other legal representative/proxy. Use a specific archetype for this purpose.
@@ -85,6 +98,7 @@ Not to be used to record anticipatory decisions about CPR decisions, other possi
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
 			purpose = <"Para documentar as preferências de um indivíduo para futuros tratamentos e cuidados médicos.">
+			keywords = <"testamento vital","diretivas avançadas","diretrizes avançadas","decisões avançadas","diretivas antecipadas","diretrizes antecipadas","decisões antecipadas","preferências de fim de vida","fim de vida","não ressuscitar","ressucitação">
 			use = <"Usar para documentar as preferências de um indivíduo para tratamento e cuidados médicos futuros.
 
 A diretriz antecipada de cuidados também pode ser conhecida como testamento vital, diretiva antecipada, decisão antecipada, decisão antecipada de recusa de tratamento, diretiva pessoal, diretiva antecipada de saúde ou diretiva médica. Uma diretriz de cuidado antecipado é comumente usada para recusar o tratamento de suporte à vida que pode incluir, mas não está limitado a: ressuscitação cardiopulmonar (RCP); nutrição e hidratação clinicamente assistida; ventilação assistida; e antibióticos para infecções potencialmente fatais. Também pode incluir preferências e instruções para futuras prioridades de cuidados de saúde, condições de vida e assuntos pessoais. Um indivíduo com capacidade pode criar uma diretriz de atendimento antecipado para registrar suas preferências por atendimento médico e tratamento com antecedência, com o objetivo de orientar a tomada de decisões em situações futuras em que o indivíduo seja incapaz de tomar ou comunicar decisões.
@@ -92,7 +106,6 @@ A diretriz antecipada de cuidados também pode ser conhecida como testamento vit
 Esse arquétipo foi projetado especificamente como um framework ou estrutura que pode ser estendida para a gama complexa de casos de uso e requisitos locais, acomodando uma variedade de arquétipos CLUSTER possíveis que conterão detalhes específicos de acordo com os requisitos nacionais ou locais.
 
 Em alguns países, uma diretiva de atendimento antecipado é legalmente persuasiva mesmo sem ter um status legal oficial. Em outros, é um documento juridicamente vinculativo e DEVE ser garantido que o arquétipo da diretiva de atendimento antecipado e quaisquer arquétipos relacionados cumpram os requisitos legais relevantes.">
-			keywords = <"testamento vital", "diretivas avançadas", "diretrizes avançadas", "decisões avançadas", "diretivas antecipadas", "diretrizes antecipadas", "decisões antecipadas", "preferências de fim de vida", "fim de vida", "não ressuscitar", "ressucitação">
 			misuse = <"Não deve ser usado para documentar preferências de doação de órgãos. Use um arquétipo específico para esse propósito.
 
 Não deve ser usado para registrar detalhes sobre uma procuração ou outro representante legal / procurador. Use um arquétipo específico para esse propósito.
@@ -102,6 +115,8 @@ Não deve ser usado para registrar decisões antecipatórias sobre decisões de 
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record the preferences of an individual for future medical treatment and care.">
+			keywords = <"living, will, advance, advanced, directive, decision, legal, preference, EoL, DNR, DNACPR, resuscitation,", ...>
+			copyright = <"© openEHR Foundation">
 			use = <"Use to record the preferences of an individual for future medical treatment and care.
 
 Advance care directive may also be known as living will, advance directive, advance decision, advance decision to refuse treatment, personal directive, advance healthcare directive, or medical directive. An advance care directive is commonly used to refuse life-sustaining treatment which may include, but is not limited to: cardiopulmonary resuscitation (CPR); clinically assisted nutrition and hydration; assisted ventilation; and antibiotics for life-threatening infections. It could also include positive preferences and instructions for future health care priorities, living arrangements and personal matters. An individual with capacity may create an advance care directive to record their preferences for medical care and treatment in advance, which is intended to guide decision-making in future situations in which the individual is unable to make or communicate decisions. 
@@ -109,17 +124,16 @@ Advance care directive may also be known as living will, advance directive, adva
 This archetype has been specifically designed as a framework or structure that can be extended for the complex range of use cases and local requirements by nesting a variety of possible CLUSTER archetypes which will contain specific details as per national or other local requirements. 
 
 In some countries, an advance care directive is legally persuasive without having an official legal status. In others it is a legally-binding document, and it MUST be ensured that the advance care directive archetype and any nested archetypes adhere to relevant legal requirements.">
-			keywords = <"living, will, advance, advanced, directive, decision, legal, preference, EoL, DNR, DNACPR, resuscitation,", ...>
 			misuse = <"Not to be used to record organ donation preferences. Use a specific archetype for this purpose.
 
 Not to be used to record details about a Power of Attorney or other legal representative/proxy. Use a specific archetype for this purpose.
 
 Not to be used to record anticipatory decisions about CPR decisions, other possible intervention decisions, and intent of care as asserted by a clinician in a health record. Use the EVALUATION.advance_intervention_decisions archetype for this purpose.">
-			copyright = <"© openEHR Foundation">
 		>
 		["nl"] = <
 			language = <[ISO_639-1::nl]>
 			purpose = <"Voor het vastleggen van de voorkeuren van een individu voor toekomstige medische zorg en behandeling.">
+			keywords = <"Wilsverklaring, reanimatieverklaring, behandelverbod, beslissing, juridisch, voorkeur, levenseinde, reanimeren, NTBR.", ...>
 			use = <"Te gebruiken voor het vastleggen van de voorkeuren van een individu voor toekomstige medische zorg en behandeling.
 
 \"Advance care directive\" kan ook bekend staan als o.a. wilsverklaring of behandelverbod.
@@ -130,7 +144,6 @@ An individual with capacity may create an advance care directive to record their
 This archetype has been specifically designed as a framework or structure that can be extended for the complex range of use cases and local requirements by nesting a variety of possible CLUSTER archetypes which will contain specific details as per national or other local requirements. 
 
 In some countries, an advance care directive is legally persuasive without having an official legal status. In others it is a legally-binding document, and it MUST be ensured that the advance care directive archetype and any nested archetypes adhere to relevant legal requirements.">
-			keywords = <"Wilsverklaring, reanimatieverklaring, behandelverbod, beslissing, juridisch, voorkeur, levenseinde, reanimeren, NTBR.", ...>
 			misuse = <"*Not to be used to record organ donation preferences. Use a specific archetype for this purpose.
 
 Not to be used to record details about a Power of Attorney or other legal representative/proxy. Use a specific archetype for this purpose.
@@ -138,8 +151,6 @@ Not to be used to record details about a Power of Attorney or other legal repres
 Not to be used to record anticipatory decisions about CPR decisions, other possible intervention decisions, and intent of care as asserted by a clinician in a health record. Use the EVALUATION.advance_intervention_decisions archetype for this purpose.(en)">
 		>
 	>
-	lifecycle_state = <"published">
-	other_contributors = <"Dag Aarhus, Vestre Viken HF, Norway", "Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)", "steve baguley, NDS, United Kingdom", "Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)", "Marcos Barreto, Universidade Federal da Bahia (UFBA), Brazil", "Ivar Berge, Oslo Universitetssykehus, Norway", "SB Bhattacharyya, Sudisa Consultancy Services, India", "Greg Burch, Tiny Medical Apps, United Kingdom", "Santiago Cammi, Argentina", "Ady Angelica Castro Acosta, CIBERES-Hospital 12 de Octubre, Spain", "Kåre Flø, DIPS ASA, Norway", "Grant Forrest, NHS Scotland, United Kingdom", "Mikkel Gaup Grønmo, FSE, Helse Nord, Norway (Nasjonal IKT redaktør)", "Anne Grimstvedt Kvalvik, Haraldsplass Diakonale sykehus, Norway", "Joost Holslag, Nedap, Netherlands", "Evelyn Hovenga, EJSH Consulting, Australia", "Keltie Jamieson, NSHA, Canada", "Gorazd Kalan, University Medical Centre Ljubljana, Slovenia", "Lars Morgan Karlsen, DIPS ASA, Norway", "Heidi Koikkalainen, United Kingdom (openEHR Editor)", "Tomi Laptoš, Marand, Slovenia", "Liv Laugen, ​Oslo University Hospital, Norway, Norway (openEHR Editor)", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Neranga Liyanaarachchi, Ministry of Health, Postgraduate Institute of Medicine, Sri Lanka", "Manisha Mantri, C-DAC, India", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)", "Paul Miller, SCIMP NHS Scotland, United Kingdom", "Bjoern Naess, DIPS ASA, Norway", "Arunakiry Natarajan, management4health, Germany", "Svenne Naumann, Finnmarkssykehuset, Norway", "Andrej Orel, Marand d.o.o., Slovenia", "Jayashree Panickar, Karolinska Institute, Sweden", "Martin Paulson, Sykehuset i Vestfold, Norway", "Vanessa Pereira, Better, Portugal", "SARA PRETE, Abinsula, Italy", "clovis puttini, Core Consulting, Brazil", "Gro-Hilde Severinsen, Norwegian center for ehealthresearch, Norway", "Line Silsand, Universitetssykehuset i Nord-Norge, Norway", "Laila Storesund, Haraldsplass diakonale sykehus, Norway", "Norwegian Review Summary, Nasjonal IKT HF, Norway", "Carita Teien, Retten til en verdig død, Norge", "Rowan Thomas, St. Vincent's Hospital Melbourne, Australia", "Katrin Troeltzsch, Nationales Centrum für Tumorerkrankungen (NCT); Universitätsklinikum Heidelberg, Germany", "John Tore Valand, Helse Bergen, Norway (openEHR Editor)", "Marit Alice Venheim, Helse Vest IKT, Norway", "Olav Weyergang-Nielsen, Retten til en verdig død, Norge", "Wouter Zanen, Eurotranplant, Netherlands", "Lin Zhang, Taikang Insurance Group, China">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -158,7 +169,7 @@ LeBlanc TW, Tulsky J. Discussing goals of care [Internet]. Wolters Kluwer; 2018 
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"A429428F755F4D6092F9D081CA590D27">
+		["MD5-CAM-1.0.1"] = <"f244acd1bfdd8c5d1bc60f5432d8d09a">
 		["build_uid"] = <"42bf3c4f-4398-4b2b-b4cf-fe4b0f58aee3">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"2.0.0">
@@ -268,7 +279,6 @@ definition
 			}
 		}
 	}
-
 
 ontology
 	terminologies_available = <"SNOMED-CT", ...>
@@ -857,8 +867,125 @@ Ou 'as Testemunhas de Jeová acreditam que a Bíblia proíbe os cristãos de ace
 				>
 			>
 		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Advance care directive (en)">
+					description = <"*A framework to communicate the preferences of an individual for future medical treatment and care. (en)">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"*Status (en)">
+					description = <"*The status of the advance care directive. (en)">
+					comment = <"*Coding of the advance care directive status with a terminology is preferred, where possible. (en)">
+				>
+				["at0005"] = <
+					text = <"*Type of directive (en)">
+					description = <"*The type of advance care directive. (en)">
+					comment = <"*A short text description of the nature of the advance care directive. Coding of the type of directive with a terminology is preferred, where possible. It is expected that this is largely localised to reflect local policy and legislation.
+
+For example, in the Netherlands, advance care directive types include, but are not limited to, 'Treatment prohibition', 'Treatment prohibition with completion of Completed Life', 'Euthanasia request' and 'Declaration of life'.
+
+In the UK, advance care directive types include 'Advance Decision', 'Advance Directive' and 'Advance Statement'. (en)">
+				>
+				["at0006"] = <
+					text = <"*Description (en)">
+					description = <"*Narrative description of the overall advance care directive. (en)">
+					comment = <"*May be used to record a narrative overview of the complete advance care directive, which may or may not be supported by structured data. Details of specific structured findings can be included using CLUSTER archetypes in the 'Directive details' slot. This data element may be used to capture legacy data that is not available in a structured format. (en)">
+				>
+				["at0007"] = <
+					text = <"*Condition (en)">
+					description = <"*The conditions or situations in which the individual wishes the advance care directive to apply. (en)">
+					comment = <"*For example: dementia, brain injury, diseases of the central nervous system, and terminal illness. Coding with a terminology is preferred, where possible.
+
+The advance care directive applies to all specified conditions if the individual can no longer make or communicate decisions about their medical treatment and is unlikely to regain the ability to make such decisions. Details of specific decisions that apply to different conditions or situations can be included using CLUSTER archetypes in the 'Directive details' slot.
+ (en)">
+				>
+				["at0010"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0025"] = <
+					text = <"*Witness (en)">
+					description = <"*Personal details of a person who witnesses the completion of the advance care directive. (en)">
+					comment = <"*For example, 'John Smith, Lawyer'. (en)">
+				>
+				["at0027"] = <
+					text = <"*Mandate (en)">
+					description = <"*Description of any legislation or other authoritative guidance that apply. (en)">
+					comment = <"*For example, 'In England and Wales, advance decisions are covered by the Mental Capacity Act.  Mandate: https://www.bma.org.uk/advice/employment/ethics/consent/consent-tool-kit/9-advance-decisions'. 
+
+Or 'Jehovah's Witnesses believe that the Bible prohibits Christians from accepting blood transfusions. Mandate: https://en.wikipedia.org/wiki/Jehovah%27s_Witnesses_and_blood_transfusions'. (en)">
+				>
+				["at0030"] = <
+					text = <"*Location (en)">
+					description = <"*Physical or digital location of the Advance care directive. (en)">
+				>
+				["at0038"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the advance care directive not captured in other fields. (en)">
+				>
+				["at0044"] = <
+					text = <"*Present (en)">
+					description = <"*The individual has an advance care directive. (en)">
+				>
+				["at0045"] = <
+					text = <"*Absent (en)">
+					description = <"*The individual does not have an advance care directive. (en)">
+				>
+				["at0047"] = <
+					text = <"*Unknown (en)">
+					description = <"*It is not known whether the individual has an advance care directive. (en)">
+				>
+				["at0052"] = <
+					text = <"*Directive detail (en)">
+					description = <"*Structured details about the advance care directive decisions. (en)">
+					comment = <"*This SLOT should also be used to record details for specific conditions or as per national or other local requirements. For example, in the UK, there may be a specific statement about whether to actively prolong life but only during pregnancy. (en)">
+				>
+				["at0053"] = <
+					text = <"*Valid period start (en)">
+					description = <"*The date/time that marks the beginning of the valid period of time for this advance care directive. (en)">
+				>
+				["at0054"] = <
+					text = <"*Valid period end (en)">
+					description = <"*The date/time that marks the conclusion of the valid period of time for this advance care directive. (en)">
+					comment = <"*'Valid period end' may often overlap with 'Review due date'. However, they may need to be recorded separately in circumstances where a document has an extended period of validity but requires an interim review. That may be due to changed personal circumstances/events or local policy. (en)">
+				>
+				["at0055"] = <
+					text = <"*Last updated (en)">
+					description = <"*The date when this advance directive record was last updated. (en)">
+					comment = <"*This may not be a formal review but e.g. a typo correction. (en)">
+				>
+				["at0056"] = <
+					text = <"*Review due date (en)">
+					description = <"*The date at which the advance care directive is due to be reviewed. (en)">
+					comment = <"*'Valid period end' may often overlap with 'Review due date'. However, they may need to be recorded separately in circumstances where a document has an extended period of validity but requires an interim review. That may be due to changed personal circumstances/events or local policy. (en)">
+				>
+				["at0058"] = <
+					text = <"*Directive location (en)">
+					description = <"*Information about the physical or digital location of the Advance care directive. (en)">
+				>
+				["at0059"] = <
+					text = <"*Copy holder (en)">
+					description = <"*Details of a person who has a copy of the Advance care directive. (en)">
+					comment = <"*For example, 'John Smith, Lawyer'. (en)">
+				>
+				["at0060"] = <
+					text = <"*Digital representation (en)">
+					description = <"*Digital document, image or video representing the Advance care directive. (en)">
+				>
+				["at0061"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models/formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+			>
+		>
 	>
-	term_bindings = <
+	term_binding = <
 		["SNOMED-CT"] = <
 			items = <
 				["at0044"] = <[SNOMED-CT::410515003]>
