@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.5.2",
+      "sem_ver" : "0.6.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "890ae419130825882eb8a232ade2fefb",
+      "MD5-CAM-1.0.1" : "9f06891b5c7ad72804f00efb784fe692",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B"
     },
     "details" : {
@@ -2136,7 +2136,7 @@
             "code" : "at0002",
             "text" : "Substance",
             "description" : "Identification of a substance, or substance class, that is considered to put the individual at risk of an adverse reaction event.",
-            "comment" : "I första hand används NSLid, i andra hand (för aktiv substans) ATC-kod (om NSLid saknas ). För kemikalier används Snomed-kod\n\nBoth an individual substance and a substance class are valid entries in 'Substance'. A substance may be a compound of simpler substances, for example a medicinal product. If the value in 'Substance' is an individual substance, it may be duplicated in 'Specific substance'. It is strongly recommended that both 'Substance' and 'Specific substance' be coded with a terminology capable of triggering decision support, where possible. For example: Snomed CT, DM+D, RxNorm, NDFRT, ATC, New Zealand Universal List of Medicines and Australian Medicines Terminology. Free text entry should only be used if there is no appropriate terminology available",
+            "comment" : "I första hand används NSLid, i andra hand (för aktiv substans) ATC-kod (om NSLid saknas ). \n\nOm substansen är en kemikalie används:\n59871000052102 |urval kemikalieöverkänsligheter, uppmärksamhetsinformation|\n\nBoth an individual substance and a substance class are valid entries in 'Substance'. A substance may be a compound of simpler substances, for example a medicinal product. If the value in 'Substance' is an individual substance, it may be duplicated in 'Specific substance'. It is strongly recommended that both 'Substance' and 'Specific substance' be coded with a terminology capable of triggering decision support, where possible. For example: Snomed CT, DM+D, RxNorm, NDFRT, ATC, New Zealand Universal List of Medicines and Australian Medicines Terminology. Free text entry should only be used if there is no appropriate terminology available",
             "source" : "openEHR,FHIR,DAM"
           },
           "at0063.1" : {
@@ -2249,7 +2249,7 @@
             "code" : "at0002",
             "text" : "Substans",
             "description" : "Identifiering av ett ämne eller ämnesklass som anses utgöra en risk för en enskild reaktion.\nAvser aktiv substans, hjälpämne, läkemedel eller kemikalie.",
-            "comment" : "I första hand NSLid, i andra hand NPLid och i sista hand ATC.\n\nOm substansen är en kemikalie används:\n59871000052102 |urval kemikalieöverkänsligheter, uppmärksamhetsinformation|\n_____________________\n\nBåde ett enskilt ämne och en substansklass är giltiga noteringar under \"Substans\". Ett ämne kan vara en förening av enklare ämnen, exempelvis ett läkemedel. Om uppgiften under \"Substans\" är ett enskilt ämne kan det dupliceras under \"Specifik substans\". Om möjligt, benämn både \"Substans\" och \"Specifik substans\" med en terminologi som kan utlösa beslutsstöd. Till exempel: Snomed CT, DM + D, RxNorm, NDFRT, ATC, Nya Zeeland Universal List of Medicines och Australian Medicines Terminology. Fri textinmatning bör endast användas om det inte finns någon lämplig terminologi tillgänglig.",
+            "comment" : "I första hand används NSLid, i andra hand (för aktiv substans) ATC-kod (om NSLid saknas ). \n\nOm substansen är en kemikalie används:\n59871000052102 |urval kemikalieöverkänsligheter, uppmärksamhetsinformation|\n_____________________\n\nBåde ett enskilt ämne och en substansklass är giltiga noteringar under \"Substans\". Ett ämne kan vara en förening av enklare ämnen, exempelvis ett läkemedel. Om uppgiften under \"Substans\" är ett enskilt ämne kan det dupliceras under \"Specifik substans\". Om möjligt, benämn både \"Substans\" och \"Specifik substans\" med en terminologi som kan utlösa beslutsstöd. Till exempel: Snomed CT, DM + D, RxNorm, NDFRT, ATC, Nya Zeeland Universal List of Medicines och Australian Medicines Terminology. Fri textinmatning bör endast användas om det inte finns någon lämplig terminologi tillgänglig.",
             "source" : "openEHR,FHIR,DAM"
           },
           "at0063.1" : {
