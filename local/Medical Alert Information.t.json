@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.1",
+      "sem_ver" : "0.6.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f49d7f236777a4316e7d87f6e35afb91",
+      "MD5-CAM-1.0.1" : "b0c642e1cbc5e788c507fc597f8dc4d3",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B"
     },
     "details" : {
@@ -3182,6 +3182,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.3",
             "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "*Advance care directive (en - ALLTSÅ BLUFF-ÖVERSATT FÖR NÄRVARANDE)",
+            "description" : "*A framework to communicate the preferences of an individual for future medical treatment and care. (en)"
           }
         }
       },
