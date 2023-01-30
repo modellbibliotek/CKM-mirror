@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8857243491d5fdf3ca7ba75c15f01ae9">
+		["MD5-CAM-1.0.1"] = <"9d3608cde163947a2f3a33f91252e0dc">
 		["build_uid"] = <"6bb1954a-d5d1-3683-952b-19c064972b5a">
 	>
 
@@ -53,9 +53,9 @@ definition
 			}
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- How do breathing problems affect your daily life?
 				value matches {
-					1|[local::at0009],
-					2|[local::at0010],
-					3|[local::at0011]
+					1|[local::at0061],
+					2|[local::at0062],
+					3|[local::at0063]
 				}
 			}
 			ELEMENT[at0013] occurrences matches {0..1} matches {    -- What are your symptoms of rash or redness?
@@ -65,7 +65,7 @@ definition
 					3|[local::at0016]
 				}
 			}
-			ELEMENT[at0031] occurrences matches {0..1} matches {    -- How do you experience your problems with itching?
+			ELEMENT[at0031] occurrences matches {0..1} matches {    -- How would you describe your itching?
 				value matches {
 					1|[local::at0055],
 					2|[local::at0056],
@@ -138,18 +138,6 @@ ontology
 					text = <"Severe fatigue, resting more than 50% of waking time">
 					description = <"">
 				>
-				["at0009"] = <
-					text = <"Slight breathing difficulties, can walk up stairs without resting">
-					description = <"">
-				>
-				["at0010"] = <
-					text = <"Moderate breathing problems, can not walk up stairs or 100 m outdoors without resting">
-					description = <"">
-				>
-				["at0011"] = <
-					text = <"Severe breathing problems that affect my daily life">
-					description = <"">
-				>
 				["at0013"] = <
 					text = <"What are your symptoms of rash or redness?">
 					description = <"">
@@ -167,7 +155,7 @@ ontology
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"How do you experience your problems with itching?">
+					text = <"How would you describe your itching?">
 					description = <"">
 				>
 				["at0035"] = <
@@ -262,6 +250,18 @@ ontology
 					text = <"Severe discomfort, unable to eat and drink due to blisters and pain in the mouth">
 					description = <"">
 				>
+				["at0061"] = <
+					text = <"Slight breathing difficulties, can walk up stairs without resting">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Moderate breathing problems, can not walk up stairs or 100 m outdoors without resting">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"Severe breathing problems that affect my daily life">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -290,18 +290,6 @@ ontology
 					text = <"Svår trötthet, vilar mer än 50% av vaken tid">
 					description = <"">
 				>
-				["at0009"] = <
-					text = <"Lätta andningsbesvär, orkar gå uppför trappa utan paus">
-					description = <"">
-				>
-				["at0010"] = <
-					text = <"Måttliga andningsbesvär, orkar ej gå i trappa eller 100 m utomhus utan paus">
-					description = <"">
-				>
-				["at0011"] = <
-					text = <"Svåra andningsbesvär som påverkar min livsföring">
-					description = <"">
-				>
 				["at0013"] = <
 					text = <"Hur upplever du dina besvär med utslag eller hudrodnad?">
 					description = <"">
@@ -319,7 +307,7 @@ ontology
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"*How do you experience your problems with itching? (en)">
+					text = <"Hur upplever du dina besvär med klåda?">
 					description = <"">
 				>
 				["at0035"] = <
@@ -391,15 +379,15 @@ ontology
 					description = <"">
 				>
 				["at0055"] = <
-					text = <"*Slight discomfort, a little itching (en)">
+					text = <"Lätta besvär, lite klåda">
 					description = <"">
 				>
 				["at0056"] = <
-					text = <"*Moderate discomfort, bothersome itching (en)">
+					text = <"Måttliga besvär, besvärande klåda">
 					description = <"">
 				>
 				["at0057"] = <
-					text = <"*Severe discomfort, itching that is difficult to control. (en)">
+					text = <"Svåra besvär, klåda som är svår att kontrollera.">
 					description = <"">
 				>
 				["at0058"] = <
@@ -412,6 +400,18 @@ ontology
 				>
 				["at0060"] = <
 					text = <"*Severe discomfort, unable to eat and drink due to blisters and pain in the mouth (en)">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Lätta andningsbesvär, orkar gå uppför trappa utan paus">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Måttliga andningsbesvär, orkar ej gå i trappa eller 100 m utomhus utan paus">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"Svåra andningsbesvär som påverkar mina dagliga aktiviteter">
 					description = <"">
 				>
 			>
