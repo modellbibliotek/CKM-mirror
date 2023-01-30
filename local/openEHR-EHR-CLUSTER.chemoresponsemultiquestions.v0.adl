@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9d3608cde163947a2f3a33f91252e0dc">
+		["MD5-CAM-1.0.1"] = <"a2e65d37fbdf32a836510e1fbb32b45d">
 		["build_uid"] = <"6bb1954a-d5d1-3683-952b-19c064972b5a">
 	>
 
@@ -72,7 +72,7 @@ definition
 					3|[local::at0057]
 				}
 			}
-			ELEMENT[at0035] occurrences matches {0..1} matches {    -- What are your symptoms of ...?
+			ELEMENT[at0035] occurrences matches {0..1} matches {    -- How would you describe your mouth/throat problems?
 				value matches {
 					1|[local::at0036],
 					2|[local::at0037],
@@ -159,7 +159,7 @@ ontology
 					description = <"">
 				>
 				["at0035"] = <
-					text = <"What are your symptoms of ...?">
+					text = <"How would you describe your mouth/throat problems?">
 					description = <"">
 				>
 				["at0036"] = <
@@ -311,7 +311,7 @@ ontology
 					description = <"">
 				>
 				["at0035"] = <
-					text = <"Hur upplever du dina besvär i mun/svalg?">
+					text = <"*How would you describe your mouth/throat problems? (en)">
 					description = <"">
 				>
 				["at0036"] = <
