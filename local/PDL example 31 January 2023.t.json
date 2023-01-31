@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.0",
+      "sem_ver" : "0.2.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "a3589218564bf539ccce60884392d843",
+      "MD5-CAM-1.0.1" : "43a87c91286c8376e08a7141ec479fb4",
       "PARENT:MD5-CAM-1.0.1" : "782C49493E523506E8C34B7C5CF7B761"
     },
     "details" : {
@@ -542,7 +542,7 @@
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
-            "text" : "Do you have pain",
+            "text" : "Do you have pain?",
             "description" : "Is there a history of the specific symptom or sign having been present?",
             "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
           },
@@ -586,6 +586,13 @@
           }
         },
         "sv" : {
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Känner du smärta?",
+            "description" : "Har symptomet eller tecknet förekommit?",
+            "comment" : "I en mall skulle dataelementet vanligtvis döpas om till den specifika fråga som ställdes till användaren. De föreslagna svarsalternativen kan anpassas för lokal användning genom att välja DV_TEXT eller DV_BOOLEAN datatyper för att matcha varje specifikt användningsfall."
+          },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
