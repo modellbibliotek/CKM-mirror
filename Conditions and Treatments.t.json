@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "cdefebad4295ee2dc60c063cdb84df93",
+      "MD5-CAM-1.0.1" : "9c55c7b5b32916a211b5cfd12a819362",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
-      "sem_ver" : "0.6.0-alpha8",
+      "sem_ver" : "0.7.0",
       "build_uid" : ""
     },
     "details" : {
@@ -2420,6 +2420,13 @@
             "code" : "at0000.1",
             "text" : "Läkemedelsdetaljer",
             "description" : "Detaljer om ett läkemedel eller en läkemedelskomponent, inkluderat styrka, form och detaljer för alla specifika beståndsdelar."
+          },
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132",
+            "text" : "Namn",
+            "description" : "Namnet på läkemedlet eller läkemedelskomponenten.",
+            "comment" : "Till exempel: 'Zinacef 750 mg pulver' eller 'cefuroxim'. Detta dataelement bör om möjligt kodas, med exempelvis RxNorm, DM + D, Australian Medicines Terminology eller FEST. Användningen av detta dataelement kommer att variera beroende på användningssammanhang. Detta dataelement kan utelämnas om läkemedlets namn registreras i föräldrarnas INSTRUCTION eller ACTION, och denna arketyp då endast används för att registrera att formen måste vara eller var \"flytande\"."
           }
         }
       },
@@ -2643,14 +2650,42 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "ATC groups"
+                        "value" : "ATC groups ???"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "ATC groups" ],
+                      "selectedTerminologies" : [ "ATC groups ???" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "ATC groups",
-                        "code" : "111",
-                        "value" : "aaaa"
+                        "terminologyId" : "ATC groups ???",
+                        "code" : "B01A",
+                        "value" : "Antikoagulantiabehandling"
+                      }, {
+                        "terminologyId" : "ATC groups ???",
+                        "code" : "B01AA",
+                        "value" : "Antikoagulantiabehandling, Vitamin K-antagonister"
+                      }, {
+                        "terminologyId" : "ATC groups ???",
+                        "code" : "B01AB",
+                        "value" : "Antikoagulantiabehandling, Heparingruppen"
+                      }, {
+                        "terminologyId" : "ATC groups ???",
+                        "code" : "B01AE",
+                        "value" : "Antikoagulantiabehandling,  Direkt trombinhämmande medel"
+                      }, {
+                        "terminologyId" : "ATC groups ???",
+                        "code" : "B01AF",
+                        "value" : "Antikoagulantiabehandling, Direktverkande faktor Xa-hämmare"
+                      }, {
+                        "terminologyId" : "ATC groups ???",
+                        "code" : "L01",
+                        "value" : "Cytostatikabehandling"
+                      }, {
+                        "terminologyId" : "ATC groups ???",
+                        "code" : "L03A",
+                        "value" : "Immunstimulerande behandling"
+                      }, {
+                        "terminologyId" : "ATC groups ???",
+                        "code" : "L04",
+                        "value" : "Immunsuppressiv behandling"
                       } ]
                     } ]
                   } ],
@@ -2751,15 +2786,8 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Drug treatment with optional specific substance/product information (Alt 1b)",
+            "text" : "Drug treatment with optional specific substance information (Alt 1b)",
             "description" : "A condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions."
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Condition",
-            "description" : "Identification, by name, of a condition or state.",
-            "comment" : "ATC groups but w SoS \n-spec derived labels\n---\nCoding of the identified 'Condition' with a terminology is desirable, where possible."
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
