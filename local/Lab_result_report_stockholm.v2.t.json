@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.8.0-alpha.5",
+      "sem_ver" : "2.8.0-alpha.6",
       "build_uid" : "07c0374a-2759-4524-8805-a40f6d30daad",
-      "MD5-CAM-1.0.1" : "18ea7c689528fb52d6e1c387af4586f6",
+      "MD5-CAM-1.0.1" : "53e4d9cb73c7e58c58b6fa6600a5797a",
       "PARENT:MD5-CAM-1.0.1" : "0C863D4A5014A8C96C483D557F9ABE83"
     },
     "details" : {
@@ -729,16 +729,7 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0075.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_DATE_TIME",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -1217,13 +1208,6 @@
             "text" : "Confounding factors",
             "description" : "Issues or circumstances that impact on the accurate interpretation of the measurement or test result.",
             "comment" : "'Confounding factors' should be reserved for uncontrolled/unplanned issues of patient state/physiology that might affect interpretation, for example 'recent exercise' or 'recent tobacco smoking'.\n\nComment : Seems to be a useless comment from Juno, but will need to be checked with real data.\nKnown or required preconditions, such as 'fasting' should be carried in the 'Sampling conditions' element within the CLUSTER.specimen archetype . In some cases preconditions are captured as part of the test name, for example 'Fasting blood glucose'.\n\nKnown issues with specimen collection or handling, such as 'prolonged use of tourniquet' or 'sample haemolysed', should be carried in the 'Specimen quality' elements within CLUSTER.specimen archetype.\n\nCoding with a terminology is desirable, where possible."
-          },
-          "at0017" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0017",
-            "text" : "Receiving laboratory",
-            "description" : "Details of the laboratory which received the request and has overall responsibility to manage reporting of the test, even if other labs perform specific aspects.",
-            "comment" : "This slot is intended to carry details of the laboratory which received the request and has overall responsibility to manage reporting of the test, even if other labs perform specific aspects.\n\nThe receiving laboratory may either perform the test or refer it to another laboratory. Where a different laboratory is responsible for performing the testing on specific analytes, it would be expected that these details would be carried in the 'Analyte result detail' SLOT within the CLUSTER.laboratory_test_analyte archetype."
           }
         },
         "nb" : {
@@ -2415,10 +2399,15 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.319" ],
+                  "constraint" : [ "ac0.427" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -2471,16 +2460,16 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : {
-          "ac0.319" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.319",
-            "description" : ""
-          },
           "ac0.426" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.426",
+            "description" : ""
+          },
+          "ac0.427" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.427",
             "description" : ""
           }
         },
@@ -2530,12 +2519,6 @@
             "comment" : "---begin-mapping-instruction---\nSRCFMT = /LabReplyChem/samples/sample[x]/group\nRULE = COPY\n---end-mapping-instruction---\n",
             "fhir_mapping" : "Specimen.identifier"
           },
-          "ac0.319" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.319",
-            "description" : ""
-          },
           "at0041.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0041.1",
@@ -2548,47 +2531,53 @@
             "text" : "(Synthesized)",
             "code" : "ac0.426",
             "description" : ""
+          },
+          "ac0.427" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.427",
+            "description" : ""
           }
         },
         "pt-br" : {
-          "ac0.319" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.319",
-            "description" : ""
-          },
           "ac0.426" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.426",
+            "description" : ""
+          },
+          "ac0.427" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.427",
             "description" : ""
           }
         },
         "nb" : {
-          "ac0.319" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.319",
-            "description" : ""
-          },
           "ac0.426" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.426",
+            "description" : ""
+          },
+          "ac0.427" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.427",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.319" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.319",
-            "description" : ""
-          },
           "ac0.426" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.426",
+            "description" : ""
+          },
+          "ac0.427" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.427",
             "description" : ""
           }
         },
@@ -2600,16 +2589,16 @@
             "description" : "Ett specifikt kvalitetsproblem med provmaterialet.",
             "comment" : "Kodning av kvalitetsproblem till en terminologi är att föredra i de fall det är möjligt.\n\nTODO: "
           },
-          "ac0.319" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.319",
-            "description" : ""
-          },
           "ac0.426" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.426",
+            "description" : ""
+          },
+          "ac0.427" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.427",
             "description" : ""
           }
         }
@@ -4746,6 +4735,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.426",
           "members" : [ "at0062", "at0063", "at0064" ]
+        },
+        "ac0.427" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.427",
+          "members" : [ "at0052", "at0053", "at0089", "at0094", "at0054", "at0055", "at0090", "at0095", "at0091", "at0092" ]
         }
       }
     },
@@ -4983,6 +4977,10 @@
           "/items[at0001.5]" : {
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
+          },
+          "/items[at0001.6]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "nb" : {
@@ -5023,6 +5021,10 @@
             "fhir_mapping" : "Observation.value[x]"
           },
           "/items[at0001.5]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
+          },
+          "/items[at0001.6]" : {
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
           }
@@ -5067,6 +5069,10 @@
           "/items[at0001.5]" : {
             "hl7v2_mapping" : "*OBX.2,OBX.5,OBX.6(en)",
             "fhir_mapping" : "*Observation.value[x](en)"
+          },
+          "/items[at0001.6]" : {
+            "hl7v2_mapping" : "*OBX.2,OBX.5,OBX.6(en)",
+            "fhir_mapping" : "*Observation.value[x](en)"
           }
         },
         "de" : {
@@ -5109,6 +5115,10 @@
           "/items[at0001.5]" : {
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
+          },
+          "/items[at0001.6]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "nl" : {
@@ -5149,6 +5159,10 @@
             "fhir_mapping" : "Observation.value[x]"
           },
           "/items[at0001.5]" : {
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
+          },
+          "/items[at0001.6]" : {
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
           }
@@ -5199,6 +5213,12 @@
               }
             }
           }
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.6",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
@@ -5461,16 +5481,7 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0025.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -5660,6 +5671,15 @@
             "text" : "Validation time",
             "description" : "The date and time that the analyte result was validated in the laboratory by a healthcare practitioner.",
             "comment" : "In many jurisdictions the 'Result status' is assumed to include medical validation i.e. a 'final' result will be assumed to be medically validated, but in others this will be recorded and reported separately using this data element.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/attestation/attested/dateTime (not confirmed, to be validated)\nRULE = COPY\nNote that the source data is an integer in format YYYYMMDDhhmmss so conversion might be necessary\n---end-mapping-instruction---"
+          },
+          "at0001.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.6",
+            "text" : "Analyte result (generic)",
+            "description" : "The value of the analyte result.",
+            "comment" : "For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/* (possibly need multiple values)\nRULE = A fairly complex rule goes into here...\n---end-mapping-instruction---\nTODO: Create that rule...",
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "nb" : {
@@ -5700,6 +5720,15 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
             "text" : "Analyseresultat (5)",
+            "description" : "Verdien av analyseresultatet.",
+            "comment" : "For eksempel \"7,3 mmol/L\" eller \"Forhøyet\". Datatypen \"Udefinert datatype\" må begrenses til en passende datatype i en spesialisering, et templat eller i applikasjonen. Datatypen Quantity har attributter fra referansemodellen som dekker flagg for normalt/unormalt, referanseområder og approksimeringer. Se https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for mer detaljer.",
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
+          },
+          "at0001.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Analyseresultat (6)",
             "description" : "Verdien av analyseresultatet.",
             "comment" : "For eksempel \"7,3 mmol/L\" eller \"Forhøyet\". Datatypen \"Udefinert datatype\" må begrenses til en passende datatype i en spesialisering, et templat eller i applikasjonen. Datatypen Quantity har attributter fra referansemodellen som dekker flagg for normalt/unormalt, referanseområder og approksimeringer. Se https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for mer detaljer.",
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
@@ -5748,6 +5777,15 @@
             "comment" : "*For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.(en)",
             "hl7v2_mapping" : "*OBX.2,OBX.5,OBX.6(en)",
             "fhir_mapping" : "*Observation.value[x](en)"
+          },
+          "at0001.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Analyte result(en) (6)",
+            "description" : "*The value of the analyte result.(en)",
+            "comment" : "*For example '7.3 mmol/l', 'Raised'. The 'Any' data type will need to be constrained to an appropriate data type in a specialisation, a template or at run-time to reflect the actual analyte result. The Quantity data type has reference model attributes that include flags for normal/abnormal, reference ranges and approximations - see https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class for more details.(en)",
+            "hl7v2_mapping" : "*OBX.2,OBX.5,OBX.6(en)",
+            "fhir_mapping" : "*Observation.value[x](en)"
           }
         },
         "de" : {
@@ -5788,6 +5826,15 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
             "text" : "Analyt-Ergebnis (5)",
+            "description" : "(Mess-)Wert des Analyt-Ergebnisses.",
+            "comment" : "Z.B. \"7,3 mmol/l\", \"Erhöht\". Der \"Any\"-Datentyp wird dann durch eine Spezialisierung, eine Vorlage oder zur Laufzeit der Anwendung auf einen passenden Datentyp eingeschränkt werden müssen, um das aktuelle Analyt-Ergebnis wiederzugeben. Der \"Quantity\"-Datentyp hat Referenzmodell-Attribute, wie Kennungen für normal/abnormal, Referenzbereiche und Näherungen - für weitere Details s. https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class .",
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
+          },
+          "at0001.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Analyt-Ergebnis (6)",
             "description" : "(Mess-)Wert des Analyt-Ergebnisses.",
             "comment" : "Z.B. \"7,3 mmol/l\", \"Erhöht\". Der \"Any\"-Datentyp wird dann durch eine Spezialisierung, eine Vorlage oder zur Laufzeit der Anwendung auf einen passenden Datentyp eingeschränkt werden müssen, um das aktuelle Analyt-Ergebnis wiederzugeben. Der \"Quantity\"-Datentyp hat Referenzmodell-Attribute, wie Kennungen für normal/abnormal, Referenzbereiche und Näherungen - für weitere Details s. https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class .",
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
@@ -5836,6 +5883,15 @@
             "comment" : "Bijvoorbeeld: '7.3 mmol/l', 'Verhoogd'. Om het daadwerkelijke analyt result weer te geven dient het 'Any' data type gespecificeerd te worden tot een toepasselijk data type in een specialisatie, een template of terwijl de applicatie loopt.",
             "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
             "fhir_mapping" : "Observation.value[x]"
+          },
+          "at0001.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Uitslag van een analyt (6)",
+            "description" : "De waarde van een analyt uitslag.",
+            "comment" : "Bijvoorbeeld: '7.3 mmol/l', 'Verhoogd'. Om het daadwerkelijke analyt result weer te geven dient het 'Any' data type gespecificeerd te worden tot een toepasselijk data type in een specialisatie, een template of terwijl de applicatie loopt.",
+            "hl7v2_mapping" : "OBX.2, OBX.5, OBX.6, OBX.7, OBX.8",
+            "fhir_mapping" : "Observation.value[x]"
           }
         },
         "sv" : {
@@ -5877,6 +5933,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Analysresultat (text med kod)",
+            "description" : "Värdet av analysresultatet.",
+            "comment" : "Till exempel \"7,3 mmol / L\" eller \"Förhöjd\". Datatypen \"Any\", som är en odefinierad datatyp, måste begränsas till en lämplig datatyp i en specialisering, mall eller applikation. Datatypen \"Quantity\" har attribut från referensmodellen som täcker flaggor för normal/onormal, referensområden och approximationer.\r\nSe https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class för mer information."
+          },
+          "at0001.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Analysresultat (text med kod) (2)",
             "description" : "Värdet av analysresultatet.",
             "comment" : "Till exempel \"7,3 mmol / L\" eller \"Förhöjd\". Datatypen \"Any\", som är en odefinierad datatyp, måste begränsas till en lämplig datatyp i en specialisering, mall eller applikation. Datatypen \"Quantity\" har attribut från referensmodellen som täcker flaggor för normal/onormal, referensområden och approximationer.\r\nSe https://specifications.openehr.org/releases/RM/latest/data_types.html#_dv_quantity_class för mer information."
           }
@@ -6851,31 +6914,13 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0001.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0011.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -6917,62 +6962,6 @@
             "text" : "juno_labinfo_adapter",
             "description" : "Adapter archetype containing filelds from EDI source data that may cause errors during conversion due to bad or ambiguous incoming data quality (e.g. incoming text where numbers are expected).",
             "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]\nRULE = Copy all attributes with identical names\n---end-mapping-instruction---"
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "isDeviating",
-            "description" : "Marker for pathological manifestation",
-            "comment" : "Marked * in EDI message\nSG12.OBR..C502.6155 (Measurement attribute, coded)\n\n---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/isDeviating\nRULE = COPY\n---end-mapping-instruction---"
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "referenceArea",
-            "description" : "Reference range from from TakeCare's JUNO-API",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/referenceArea\nRULE = COPY\n---end-mapping-instruction---"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "unit",
-            "description" : "Measurement unit from TakeCare's JUNO-API",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/unit\nRULE = COPY\n---end-mapping-instruction---"
-          },
-          "at0007" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "analysisComment",
-            "description" : "Analysis comment from TakeCare's JUNO-API. This field sometimes contains an actual result (e.g. if the \"value\" field says somoething like see comment).",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/analysisComment\nRULE = COPY\n---end-mapping-instruction---"
-          },
-          "at0009" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009",
-            "text" : "analysisId",
-            "description" : "NPU, SWE or local code from from TakeCare's JUNO-API\n",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/analysisId\nRULE = COPY\n---end-mapping-instruction---"
-          },
-          "at0010" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010",
-            "text" : "value",
-            "description" : "Result value from TakeCare's JUNO-API",
-            "comment" : "---begin-mapping-instruction---\nSRCFMT = LabReplyChem\nSRCPATH = /LabReplyChem/samples/sample[x]/analyses/analysis[y]/value\nRULE = COPY\n---end-mapping-instruction---"
-          },
-          "at0011" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0011",
-            "text" : "isAccredited",
-            "description" : "",
-            "comment" : "Not present for LabReplyChem responses but will be used for LabReplyMulti (Multidisciplinary) responses (Unilabs etc)"
-          },
-          "at0012" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012",
-            "text" : "PairAnalysis",
-            "description" : "Used for what the Juno API calls \"pair anlysis\" - two related tastes that are usually compared to each other Används när man gör \"Pair analysis\" dvs två jämförande provtagningar som hänger ihop. ",
-            "comment" : "Not present for LabReplyChem responses but will be used for LabReplyMulti (Multidisciplinary) responses (Unilabs etc)"
           },
           "at0008.1" : {
             "@type" : "ARCHETYPE_TERM",
