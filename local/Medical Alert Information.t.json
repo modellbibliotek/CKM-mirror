@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.3",
+      "sem_ver" : "0.6.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d32ed18f025347e1d9d9ed30404d2d2a",
+      "MD5-CAM-1.0.1" : "31a1a26b25a9146ff9fbe79c5a8856b3",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B"
     },
     "details" : {
@@ -2223,13 +2223,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Biverkningsrisk (ämne/substans)",
-            "description" : "Risk för skadlig eller oönskad fysiologisk respons som är unikt för en individ och förknippat med exponering för en substans.",
-            "comment" : "Dessa substanser inkluderar bland annat: ett terapeutiskt ämne som administreras korrekt i en lämplig dos för individen; mat; material härrörande från växter eller djur; eller gift från insektsstick."
           },
           "at0101.1" : {
             "@type" : "ARCHETYPE_TERM",
