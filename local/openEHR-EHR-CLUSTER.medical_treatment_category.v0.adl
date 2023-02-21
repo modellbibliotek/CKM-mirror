@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::sv]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -19,6 +26,10 @@ description
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© openEHR Foundation">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -26,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e45539e11b589662d9922adacc55f7b0">
+		["MD5-CAM-1.0.1"] = <"c6695198ed1b497729b419f5703d1eb2">
 		["build_uid"] = <"729a8fdc-248c-3590-a4cb-4ae63dfe3379">
 	>
 
@@ -91,6 +102,46 @@ ontology
 				["at0008"] = <
 					text = <"Immunomodukerande behandling">
 					description = <"(ATC: L03A och L04)">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"*medical_treatment_category (sv)">
+					description = <"*medical_treatment_category (sv)">
+				>
+				["at0001"] = <
+					text = <"*Behandlingskategori (sv)">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"*Antikoagulantiabehandling (sv)">
+					description = <"*(ATC: B01A) (sv)">
+				>
+				["at0003"] = <
+					text = <"*Antikoagulantiabehandling, Vitamin K-antagonister (sv)">
+					description = <"*(ATC: B01AA) (sv)">
+				>
+				["at0004"] = <
+					text = <"*Antikoagulantiabehandling, Heparingruppen (sv)">
+					description = <"*(ATC: B01AB) (sv)">
+				>
+				["at0005"] = <
+					text = <"*Antikoagulantiabehandling,  Direkt trombinhämmande medel (sv)">
+					description = <"*(ATC: B01AE) (sv)">
+				>
+				["at0006"] = <
+					text = <"*Antikoagulantiabehandling, Direktverkande faktor Xa-hämmare (sv)">
+					description = <"*(ATC: B01AF) (sv)">
+				>
+				["at0007"] = <
+					text = <"*Cytostatikabehandling (sv)">
+					description = <"*(ATC: L01) (sv)">
+				>
+				["at0008"] = <
+					text = <"*Immunomodukerande behandling (sv)">
+					description = <"*(ATC: L03A och L04) (sv)">
 				>
 			>
 		>
