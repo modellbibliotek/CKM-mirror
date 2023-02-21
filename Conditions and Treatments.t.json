@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "9c55c7b5b32916a211b5cfd12a819362",
+      "MD5-CAM-1.0.1" : "d335f7449bbfc0937c7038725859d551",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
-      "sem_ver" : "0.7.1",
+      "sem_ver" : "0.7.2",
       "build_uid" : ""
     },
     "details" : {
@@ -1936,6 +1936,10 @@
                         "terminologyId" : "http://snomed.info/id/",
                         "code" : "385971003",
                         "value" : "dialysbehandling"
+                      }, {
+                        "terminologyId" : "http://snomed.info/id/",
+                        "code" : "416608005",
+                        "value" : "läkemedelsbehandling"
                       } ]
                     } ]
                   } ],
@@ -2423,7 +2427,7 @@
           },
           "at0132.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0132",
+            "code" : "at0132.1",
             "text" : "Namn",
             "description" : "Namnet på läkemedlet eller läkemedelskomponenten.",
             "comment" : "Till exempel: 'Zinacef 750 mg pulver' eller 'cefuroxim'. Detta dataelement bör om möjligt kodas, med exempelvis RxNorm, DM + D, Australian Medicines Terminology eller FEST. Användningen av detta dataelement kommer att variera beroende på användningssammanhang. Detta dataelement kan utelämnas om läkemedlets namn registreras i föräldrarnas INSTRUCTION eller ACTION, och denna arketyp då endast används för att registrera att formen måste vara eller var \"flytande\"."
