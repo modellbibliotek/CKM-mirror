@@ -1,0 +1,89 @@
+archetype (adl_version=1.4; uid=7df8d0fb-015c-4de5-8ec3-389b69de117c)
+	openEHR-EHR-ELEMENT.medical_treatment_category.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::sv]>
+
+description
+	original_author = <
+		["name"] = <"Erik Sundvall">
+		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
+		["email"] = <"erik.sundvall@regionstockholm.se">
+		["date"] = <"2023-02-21">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"33310764ecf50eeab729aed7cc4992f9">
+		["build_uid"] = <"c5288ce7-da1b-3cc2-bb32-38a5a8a188b5">
+	>
+
+definition
+	ELEMENT[at0000] matches {    -- medical_treatment_category
+		value matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {
+					[local::
+					at0008,    -- Antikoagulantiabehandling
+					at0009,    -- Antikoagulantiabehandling, Vitamin K-antagonister
+					at0010,    -- Antikoagulantiabehandling, Heparingruppen
+					at0011,    -- Antikoagulantiabehandling,  Direkt trombinhämmande medel
+					at0012,    -- Antikoagulantiabehandling, Direktverkande faktor Xa-hämmare
+					at0013,    -- Cytostatikabehandling
+					at0014]    -- Immunomodukerande behandling
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"medical_treatment_category">
+					description = <"medical_treatment_category">
+				>
+				["at0008"] = <
+					text = <"Antikoagulantiabehandling">
+					description = <"(ATC: B01A)">
+				>
+				["at0009"] = <
+					text = <"Antikoagulantiabehandling, Vitamin K-antagonister">
+					description = <"(ATC: B01AA)">
+				>
+				["at0010"] = <
+					text = <"Antikoagulantiabehandling, Heparingruppen">
+					description = <"(ATC: B01AB)">
+				>
+				["at0011"] = <
+					text = <"Antikoagulantiabehandling,  Direkt trombinhämmande medel">
+					description = <"(ATC: B01AE)">
+				>
+				["at0012"] = <
+					text = <"Antikoagulantiabehandling, Direktverkande faktor Xa-hämmare">
+					description = <"(ATC: B01AF)">
+				>
+				["at0013"] = <
+					text = <"Cytostatikabehandling">
+					description = <"(ATC: L01)">
+				>
+				["at0014"] = <
+					text = <"Immunomodukerande behandling">
+					description = <"(ATC: L03A eller L04)">
+				>
+			>
+		>
+	>
