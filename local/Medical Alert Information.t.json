@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.6",
+      "sem_ver" : "0.6.7",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "ae3d2e0bbdc438e856955f4e3ee1883b",
+      "MD5-CAM-1.0.1" : "39a1f1982520e5737665175139ad958a",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B"
     },
     "details" : {
@@ -3301,6 +3301,12 @@
             "description" : "The status of the advance care directive.",
             "comment" : "Coding of the advance care directive status with a terminology is preferred, where possible."
           },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "*Advance care directive (en - ALLTSÅ BLUFF-ÖVERSATT FÖR NÄRVARANDE) Förslag: att inte användas, täcks av Precaution.",
+            "description" : "A framework to communicate the preferences of an individual for future medical treatment and care."
+          },
           "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -3553,7 +3559,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Advance intervention decisions (Förslag: att inte användas)",
+            "description" : "Anticipatory decisions about the overall intent of care and possible interventions (including treatments, activities, and diagnostic or therapeutic procedures), asserted by a clinician."
+          }
+        },
         "nb" : { },
         "de" : { }
       },
