@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.7",
+      "sem_ver" : "0.6.8",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "39a1f1982520e5737665175139ad958a",
+      "MD5-CAM-1.0.1" : "a90d820ca6ffc87d24ddf48825a5baa3",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B"
     },
     "details" : {
@@ -783,24 +783,6 @@
           "unique" : false
         },
         "children" : [ {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.2",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-advance_care_directive-001.v2",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.6",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-advance_intervention_decisions-001.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "EVALUATION",
           "occurrences" : "0..1",
@@ -2955,689 +2937,6 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "7d984777-e861-4792-9968-252e19a95355",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "f244acd1bfdd8c5d1bc60f5432d8d09a"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Repräsentation der Präferenzen einer Person für zukünftige medizinische Behandlung und Pflege.",
-          "keywords" : [ "Leben, Testament, Entscheidung, Richtlinie, Verfügung, Recht, Präferenz, EoL, DNR, DNACPR, Reanimation" ],
-          "use" : "Zur Repräsentation der Präferenzen einer Person für zukünftige medizinische Behandlung und Pflege.\r\n\r\nDie Anordnung zur medizinischen Versorgung kann auch als Patientenverfügung, Patientenanordnung, Patientenentscheidung, Patientenverweigerung, persönliche Anordnung, Patientenverfügung zur medizinischen Versorgung oder medizinische Anordnung bezeichnet werden. Eine Patientenverfügung wird üblicherweise verwendet, um eine lebenserhaltende Behandlung zu verweigern, die unter anderem Folgendes umfassen kann: Herz-Lungen-Wiederbelebung (HLW), klinisch unterstützte Ernährung und Flüssigkeitszufuhr, unterstützte Beatmung und Antibiotika bei lebensbedrohlichen Infektionen. Sie könnte auch positive Präferenzen und Anweisungen für zukünftige Prioritäten in der Gesundheitsversorgung, bei den Lebensumständen und in persönlichen Angelegenheiten beinhalten. Eine fähige Person kann eine Richtlinie zur medizinischen Vorabversorgung erstellen, um ihre Präferenzen für die medizinische Versorgung und Behandlung im Voraus festzuhalten, die als Leitfaden für die Entscheidungsfindung in zukünftigen Situationen dienen soll, in denen die Person nicht in der Lage ist, Entscheidungen zu treffen oder mitzuteilen. \r\n\r\nDieser Archetyp wurde speziell als Rahmen oder Struktur entwickelt, die für die komplexe Vielfalt von Anwendungsfällen und lokalen Anforderungen erweitert werden kann, indem eine Vielzahl möglicher CLUSTER-Archetypen verschachtelt wird, die je nach nationalen oder anderen lokalen Anforderungen spezifische Angaben enthalten. \r\n\r\nIn einigen Ländern ist eine Patientenverfügung rechtlich überzeugend, ohne einen offiziellen Rechtsstatus zu haben. In anderen Ländern handelt es sich um ein rechtsverbindliches Dokument und es MUSS sichergestellt werden, dass der Archetyp der Patientenverfügung und alle verschachtelten Archetypen den einschlägigen rechtlichen Anforderungen entsprechen.\r\n",
-          "misuse" : "*Not to be used to record organ donation preferences. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record details about a Power of Attorney or other legal representative/proxy. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record anticipatory decisions about CPR decisions, other possible intervention decisions, and intent of care as asserted by a clinician in a health record. Use the EVALUATION.advance_intervention_decisions archetype for this purpose. (en)",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere et individs viljeserklæring i forbindelse medisinsk fremtidig behandling og omsorg.",
-          "keywords" : [ "livstestament, EoL, End-of-life, R-, Res minus, livsforlengende, behandlingsreservasjon" ],
-          "use" : "Bruk som et rammeverk for å kommunisere et individs vilje i forbindelse med fremtidig medisinsk behandling og omsorg.\r\n\r\nEt individ som har mental kapasitet til det kan lage en viljesrerklæring som uttrykker sine ønsker knyttet til fremtidig medisinsk behandling og omsorg. Dette har til hensikt å veilede beslutninger i fremtidige situasjoner der individet er ute av stand til å gjøre, eller formidle egne valg. Et fremtidig behandlingsvalg blir normalt brukt til å motsette seg livsforlengende behandling som kan, men er ikke begrenset til, hjerte- lungeredning (HLR), kunstig tilført ernæring og væske, invasiv- og non-invasiv ventilasjonsstøtte, og antibiotikabehandling av livstruende infeksjoner. I tillegg kan det inneholde ønsker og instrukser av ikke-restriktiv art for fremtidig behandling, boform eller personlige forhold. For eksempel å prioritere god smertelindring til tross for at dette kan forkorte livet.\r\n\r\nDenne arketypen har blitt designet som et rammeverk for å kunne dekke et vidt spekter av brukssituasjoner ved å nøste inn en eller flere CLUSTER-arketyper med spesifikke detaljer og nasjonale eller lokale krav. \r\n\r\nI noen land er et et fremtidig behandlingsvalg retningsgivende uten å være et offisielt juridisk dokument. I andre land er det juridisk bindende, og det må da sikres at arketypen \"Fremtidig behandlingsvalg\" og eventuelle arketyper som nøstes inn i denne, tilfredsstiller de juridiske krav som stilles lokalt.",
-          "misuse" : "*Not to be used to record organ donation preferences. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record details about a Power of Attorney or other legal representative/proxy. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record anticipatory decisions about CPR decisions, other possible intervention decisions, and intent of care as asserted by a clinician in a health record. Use the EVALUATION.advance_intervention_decisions archetype for this purpose. (en)",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "pt-br" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "pt-br"
-          },
-          "purpose" : "Para documentar as preferências de um indivíduo para futuros tratamentos e cuidados médicos.",
-          "keywords" : [ "testamento vital", "diretivas avançadas", "diretrizes avançadas", "decisões avançadas", "diretivas antecipadas", "diretrizes antecipadas", "decisões antecipadas", "preferências de fim de vida", "fim de vida", "não ressuscitar", "ressucitação" ],
-          "use" : "Usar para documentar as preferências de um indivíduo para tratamento e cuidados médicos futuros.\r\n\r\nA diretriz antecipada de cuidados também pode ser conhecida como testamento vital, diretiva antecipada, decisão antecipada, decisão antecipada de recusa de tratamento, diretiva pessoal, diretiva antecipada de saúde ou diretiva médica. Uma diretriz de cuidado antecipado é comumente usada para recusar o tratamento de suporte à vida que pode incluir, mas não está limitado a: ressuscitação cardiopulmonar (RCP); nutrição e hidratação clinicamente assistida; ventilação assistida; e antibióticos para infecções potencialmente fatais. Também pode incluir preferências e instruções para futuras prioridades de cuidados de saúde, condições de vida e assuntos pessoais. Um indivíduo com capacidade pode criar uma diretriz de atendimento antecipado para registrar suas preferências por atendimento médico e tratamento com antecedência, com o objetivo de orientar a tomada de decisões em situações futuras em que o indivíduo seja incapaz de tomar ou comunicar decisões.\r\n\r\nEsse arquétipo foi projetado especificamente como um framework ou estrutura que pode ser estendida para a gama complexa de casos de uso e requisitos locais, acomodando uma variedade de arquétipos CLUSTER possíveis que conterão detalhes específicos de acordo com os requisitos nacionais ou locais.\r\n\r\nEm alguns países, uma diretiva de atendimento antecipado é legalmente persuasiva mesmo sem ter um status legal oficial. Em outros, é um documento juridicamente vinculativo e DEVE ser garantido que o arquétipo da diretiva de atendimento antecipado e quaisquer arquétipos relacionados cumpram os requisitos legais relevantes.",
-          "misuse" : "Não deve ser usado para documentar preferências de doação de órgãos. Use um arquétipo específico para esse propósito.\r\n\r\nNão deve ser usado para registrar detalhes sobre uma procuração ou outro representante legal / procurador. Use um arquétipo específico para esse propósito.\r\n\r\nNão deve ser usado para registrar decisões antecipatórias sobre decisões de RCP, outras decisões de intervenção possíveis e intenção de cuidado, conforme declarado por um médico em um prontuário de saúde. Use o arquétipo EVALUATION.advance_intervention_decisions para esse propósito.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record the preferences of an individual for future medical treatment and care.",
-          "keywords" : [ "living, will, advance, advanced, directive, decision, legal, preference, EoL, DNR, DNACPR, resuscitation," ],
-          "use" : "Use to record the preferences of an individual for future medical treatment and care.\r\n\r\nAdvance care directive may also be known as living will, advance directive, advance decision, advance decision to refuse treatment, personal directive, advance healthcare directive, or medical directive. An advance care directive is commonly used to refuse life-sustaining treatment which may include, but is not limited to: cardiopulmonary resuscitation (CPR); clinically assisted nutrition and hydration; assisted ventilation; and antibiotics for life-threatening infections. It could also include positive preferences and instructions for future health care priorities, living arrangements and personal matters. An individual with capacity may create an advance care directive to record their preferences for medical care and treatment in advance, which is intended to guide decision-making in future situations in which the individual is unable to make or communicate decisions. \r\n\r\nThis archetype has been specifically designed as a framework or structure that can be extended for the complex range of use cases and local requirements by nesting a variety of possible CLUSTER archetypes which will contain specific details as per national or other local requirements. \r\n\r\nIn some countries, an advance care directive is legally persuasive without having an official legal status. In others it is a legally-binding document, and it MUST be ensured that the advance care directive archetype and any nested archetypes adhere to relevant legal requirements.",
-          "misuse" : "Not to be used to record organ donation preferences. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record details about a Power of Attorney or other legal representative/proxy. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record anticipatory decisions about CPR decisions, other possible intervention decisions, and intent of care as asserted by a clinician in a health record. Use the EVALUATION.advance_intervention_decisions archetype for this purpose.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nl" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nl"
-          },
-          "purpose" : "Voor het vastleggen van de voorkeuren van een individu voor toekomstige medische zorg en behandeling.",
-          "keywords" : [ "Wilsverklaring, reanimatieverklaring, behandelverbod, beslissing, juridisch, voorkeur, levenseinde, reanimeren, NTBR." ],
-          "use" : "Te gebruiken voor het vastleggen van de voorkeuren van een individu voor toekomstige medische zorg en behandeling.\r\n\r\n\"Advance care directive\" kan ook bekend staan als o.a. wilsverklaring of behandelverbod.\r\nEen wilsverklaring wordt vaak gebruikt om levensreddende behandeling te weigeren waaronder, maar niet beperkt tot reanimatie, kunstmatige voeding en vocht toediening, kunstmatige beademing, en antibiotica voor levensbedreigende infecties. Het kan ook positieve voorkeuren of instructies bevatten voor toekomstige prioriteiten van gezondheidszorg, woonsituatie en persoonlijke aangelegenheden. \r\n* (en) \r\nAn individual with capacity may create an advance care directive to record their preferences for medical care and treatment in advance, which is intended to guide decision-making in future situations in which the individual is unable to make or communicate decisions. \r\n\r\nThis archetype has been specifically designed as a framework or structure that can be extended for the complex range of use cases and local requirements by nesting a variety of possible CLUSTER archetypes which will contain specific details as per national or other local requirements. \r\n\r\nIn some countries, an advance care directive is legally persuasive without having an official legal status. In others it is a legally-binding document, and it MUST be ensured that the advance care directive archetype and any nested archetypes adhere to relevant legal requirements.",
-          "misuse" : "*Not to be used to record organ donation preferences. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record details about a Power of Attorney or other legal representative/proxy. Use a specific archetype for this purpose.\r\n\r\nNot to be used to record anticipatory decisions about CPR decisions, other possible intervention decisions, and intent of care as asserted by a clinician in a health record. Use the EVALUATION.advance_intervention_decisions archetype for this purpose.(en)",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "sv" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "sv"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-EVALUATION.advance_care_directive.v2",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-EVALUATION.ovl-advance_care_directive-001.v2"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "EVALUATION",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "data",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0001",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0005.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "0..1",
-                      "terminologyId" : {
-                        "value" : "http://snomed.info/id/"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "http://snomed.info/id/" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "http://snomed.info/id/",
-                        "code" : "699128009",
-                        "value" : "avböjt transfusion av blodprodukt"
-                      }, {
-                        "terminologyId" : "http://snomed.info/id/",
-                        "code" : "60761000052104",
-                        "value" : "avböjt autolog blodtransfusion eller cell saver"
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0004.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.4" ],
-                      "selectedTerminologies" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0006.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0007.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0038.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      }, {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "protocol",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0010",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0053.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0054.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0056.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0055.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0027.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_URI",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..0",
-              "nodeId" : "at0058.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Type of directive",
-            "description" : "The type of advance care directive.",
-            "comment" : "\nA short text description of the nature of the advance care directive. Coding of the type of directive with a terminology is preferred, where possible. It is expected that this is largely localised to reflect local policy and legislation.\n\nFor example, in the Netherlands, advance care directive types include, but are not limited to, 'Treatment prohibition', 'Treatment prohibition with completion of Completed Life', 'Euthanasia request' and 'Declaration of life'.\n\nIn the UK, advance care directive types include 'Advance Decision', 'Advance Directive' and 'Advance Statement'."
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Status inkl Negation",
-            "description" : "The status of the advance care directive.",
-            "comment" : "Coding of the advance care directive status with a terminology is preferred, where possible."
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "*Advance care directive (en - ALLTSÅ BLUFF-ÖVERSATT FÖR NÄRVARANDE) Förslag: att inte användas, täcks av Precaution.",
-            "description" : "A framework to communicate the preferences of an individual for future medical treatment and care."
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.4",
-            "description" : ""
-          }
-        },
-        "nb" : {
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
-          }
-        },
-        "de" : {
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
-          }
-        },
-        "nl" : {
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
-          }
-        },
-        "pt-br" : {
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
-          }
-        },
-        "sv" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "*Advance care directive (en - ALLTSÅ BLUFF-ÖVERSATT FÖR NÄRVARANDE)",
-            "description" : "*A framework to communicate the preferences of an individual for future medical treatment and care. (en)"
-          },
-          "at0053" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053",
-            "text" : "*Valid period start (en)",
-            "description" : "*The date/time that marks the beginning of the valid period of time for this advance care directive. (en)",
-            "comment" : "Tidpunkt då information som kan leda till särskild vårdrutin framkommit."
-          },
-          "at0054" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0054",
-            "text" : "*Valid period end (en)",
-            "description" : "*The date/time that marks the conclusion of the valid period of time for this advance care directive. (en)",
-            "comment" : "Om slutdatum anges så anses direktivet vara inaktivt (negation = sant).\n\n*'Valid period end' may often overlap with 'Review due date'. However, they may need to be recorded separately in circumstances where a document has an extended period of validity but requires an interim review. That may be due to changed personal circumstances/events or local policy. (en)"
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
-          },
-          "at0053.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053.1",
-            "text" : "*Valid period start (en)",
-            "description" : "*The date/time that marks the beginning of the valid period of time for this advance care directive. (en)",
-            "comment" : "{tidpunkt då information som kan leda till särskild vårdrutin framkommit"
-          },
-          "at0054.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0054.1",
-            "text" : "*Valid period end (en)",
-            "description" : "*The date/time that marks the conclusion of the valid period of time for this advance care directive. (en)",
-            "comment" : "\n*'Valid period end' may often overlap with 'Review due date'. However, they may need to be recorded separately in circumstances where a document has an extended period of validity but requires an interim review. That may be due to changed personal circumstances/events or local policy. (en)"
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : {
-        "ac0.1" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.1",
-          "members" : [ "at0044", "at0047" ]
-        },
-        "ac0.2" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.2",
-          "members" : [ "at0044", "at0045", "at0047" ]
-        },
-        "ac0.3" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.3",
-          "members" : [ "at0044", "at0045" ]
-        },
-        "ac0.4" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.4",
-          "members" : [ "at0044", "at0045" ]
-        }
-      }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "42bf3c4f-4398-4b2b-b4cf-fe4b0f58aee3",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Sarah Ballout",
-        "organisation" : "MHH-Hannover",
-        "email" : "ballout.sarah@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Vebjørn Arntzen, Silje Ljosland Bakke, Liv Laugen",
-        "organisation" : "Oslo University Hospital, Helse Vest IKT AS, ​Oslo University Hospital, Norway",
-        "email" : "varntzen@ous-hf.no, silje.ljosland.bakke@helse-vest-ikt.no, liv.laugen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "pt-br"
-      },
-      "author" : {
-        "name" : "Vladimir Pizzo",
-        "organisation" : "Royal Philips",
-        "email" : "vrppizzo@gmail.com"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nl"
-      },
-      "author" : {
-        "name" : "Joost Holslag",
-        "organisation" : "Nedap",
-        "email" : "joost.holslag@nedap.com"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : { },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "52d80405-b1ed-44b3-acef-fbb24b77fb19",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "FEF12ACA9033560751C7E28A75C5EF54"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-EVALUATION.advance_intervention_decisions.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-EVALUATION.ovl-advance_intervention_decisions-001.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "EVALUATION",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "data",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0001",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0009.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Advance intervention decisions (Förslag: att inte användas)",
-            "description" : "Anticipatory decisions about the overall intent of care and possible interventions (including treatments, activities, and diagnostic or therapeutic procedures), asserted by a clinician."
-          }
-        },
-        "nb" : { },
-        "de" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : {
-        "ac0.1" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.1",
-          "members" : [ "at0010", "at0011", "at0013" ]
-        },
-        "ac0.2" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.2",
-          "members" : [ "at0010", "at0013" ]
-        },
-        "ac0.3" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.3",
-          "members" : [ "at0013" ]
-        },
-        "ac0.5" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.5",
-          "members" : [ "at0013" ]
-        }
-      }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "3d99df16-8886-4c9a-b00d-7e1cbc9bd825",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Alina Rehberg",
-        "organisation" : "Medizinische Hochschule Hannover",
-        "email" : "rehberg.alina@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Vebjørn Arntzen, John Tore Valand",
-        "organisation" : "Oslo University Hospital, Helse Bergen",
-        "email" : "varntzen@ous-hf.no, john.tore.valand@helse-bergen.no"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
     "uid" : "0ba227b0-ee00-4d41-8061-36b056ec404a",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
@@ -3649,7 +2948,84 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "DBA3D17B49ED151AC2821725ACF4CEEF"
       },
-      "details" : { }
+      "details" : {
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Används för att dokumentera ett tillstånd eller status hos en individ som är kliniskt signifikant och unik eller idiosynkratisk för den här individen, och anses vara vital information i samband med beslut om behandling.",
+          "keywords" : [ "Försiktighet", "Förhindra", "Avvikande händelse", "Förebygga", "Försiktighet", "Uppmärksamhet", "Varning" ],
+          "use" : "Används för att dokumentera ett tillstånd eller status hos en individ som är kliniskt signifikant och unik eller idiosynkratisk för den här individen, och anses vara vital information i samband med beslut om behandling.\r\n\r\nDen här arketypen bör betraktas som en kritisk arketyp för kliniska beslutsstödssystem när det ska testa relevanta terapeutiska försiktighetsåtgärder i samband med att en kliniker inleder en ny klinisk intervention för en individ.\r\n\r\nExempel på tillstånd som berättigar skapandet av en försiktighetsåtgärder kan vara:\r\n- Immunosupprimerad eller genomgår immunosupprimerande behandling - kopplad till en läkemedelsordination för cytostatika eller steroider, eller diagnosen leukemi\r\n- Njursvikt - kopplad till njurfunktionstest eller formell diagnos av njursvikt eller båda\r\n- Väntar på organtransplantation\r\n- Genomgår behandling som strålbehandling eller dialys\r\n- Organtransplanterad eller metallimplantat in situ\r\n- Pågående utredning eller uppföljning av misstänkt eller verifierad malign sjukdom\r\n- Deltagande i läkemedelsprövning; eller\r\n- Använder blodförtunnande läkemedel\r\n",
+          "misuse" : "Ska inte användas för att dokumentera kliniska interventioner (till exempel en undersökning eller behandling) som inte ska genomföras på grund av sannolikheten, eller möjligheten, till skada hos individen. Använd EVALUATION.contraindication för det här syftet.\r\n\r\nSka inte användas för att dokumentera avancerade direktiv av behandling eller för att registrera individens personliga preferenser. Använd EVALUATION.advance_care_directive för det här ändamålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk EVALUATION.advance_care_directive for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "No debe utilizarse para registrar una intervención clínica (incluyendo, pero no limitado a, un tratamiento o realización de una prueba o procedimiento) que no debe ser llevada a cabo debido a la posibilidad de daño al individuo. Utilizar EVALUATION.contraindication para este propósito.\r\n\r\nNo debe utilizarse para registrar directivas anticipadas de cuidado o preferencias personales del individuo. Utilizar EVALUATION.advance_care_directive para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "Não deve ser usado para gravar uma intervenção clínica (incluindo, mas não limitado ao uso de um tratamento ou desempenho de um teste ou procedimento) que não deve ser carregado devido à probabilidade ou possibilidade de dano causado a um indivíduo. Use EVALUATION.contraindicação para este propósito.\r\n\r\nNão deve ser usado para gravar orientações avanças para o cuidado ou preferências pessoais do indivíduo. Use EVALUATION.advance_care_directive para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advance directives for care or personal preferences of the individual. Use EVALUATION.advance_care_directive for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
     "differential" : true,
@@ -3806,48 +3182,21 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0022.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0009.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0004.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -3861,19 +3210,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0022" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022",
-            "text" : "Valid period start",
-            "description" : "Date/time after which the 'Condition' is regarded as active.",
-            "comment" : "Angivelse av tidpunkt när beslutet\nfattades.\n\nThis data element is intended for use when a precaution is identified to start at some time in the future. For example: the commencement date for a pharmaceutical trial."
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Precaution (Försiktighetsmått)",
-            "description" : "A condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions."
-          },
           "at0022.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.1",
