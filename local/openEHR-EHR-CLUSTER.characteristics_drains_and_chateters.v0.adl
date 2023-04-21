@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"29912f6baf731e91073138e8ef0c3f65">
+		["MD5-CAM-1.0.1"] = <"93c2953269c02ca0937efcd1eb9dfeb0">
 		["build_uid"] = <"d4c08d7a-3723-37a1-b0ed-0e0a6f02b761">
 	>
 
@@ -37,23 +37,70 @@ definition
 			}
 			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Diameter
 				value matches {
-					DV_QUANTITY matches {*}
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"mm">
+								units_system = <"http://unitsofmeasure.org">
+								units_display_name = <"mm">
+							>
+							["2"] = <
+								units = <"[Ch]">
+								units_system = <"http://unitsofmeasure.org">
+								units_display_name = <"Fr">
+							>
+						>
+					>
 				}
 			}
 			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Internal lenght
 				value matches {
-					DV_QUANTITY matches {*}
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"cm">
+								precision = <|1|>
+								units_system = <"http://unitsofmeasure.org">
+								units_display_name = <"cm">
+							>
+						>
+					>
 				}
 			}
 			ELEMENT[at0007] occurrences matches {0..1} matches {    -- External length
 				value matches {
-					DV_QUANTITY matches {*}
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"cm">
+								precision = <|1|>
+								units_system = <"http://unitsofmeasure.org">
+								units_display_name = <"cm">
+							>
+						>
+					>
 				}
 			}
 			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Total length
 				value matches {
-					DV_QUANTITY matches {*}
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"cm">
+								units_system = <"http://unitsofmeasure.org">
+								units_display_name = <"cm">
+							>
+						>
+					>
 				}
+			}
+			allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {    -- CLUSTER_SLOT
+				include
+					archetype_id/value matches {/.*/}
 			}
 		}
 	}
@@ -85,6 +132,18 @@ ontology
 				["at0008"] = <
 					text = <"Total length">
 					description = <"">
+				>
+				["at0009"] = <
+					text = <"CLUSTER_SLOT">
+					description = <"">
+				>
+				["mm"] = <
+					text = <"mm">
+					description = <"millimeter">
+				>
+				["cm"] = <
+					text = <"cm">
+					description = <"centimeter">
 				>
 			>
 		>
