@@ -1,0 +1,43 @@
+archetype (adl_version=1.4; uid=ddd593b0-545a-4013-ac6c-9143730f3e4c)
+	openEHR-EHR-CLUSTER.method_incertation.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2023-04-20">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"96d48fa2560ed55ed2b4c5cee4f8e405">
+		["build_uid"] = <"f9a2921d-1ff4-338e-8c4e-20cc82d5b1e7">
+	>
+
+definition
+	CLUSTER[at0000] matches {*}    -- Method_incertation
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Method_incertation">
+					description = <"Method_incertation">
+				>
+			>
+		>
+	>
