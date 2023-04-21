@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -13,6 +20,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -23,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"18e5e5eab015319787412f4ba677dfc6">
+		["MD5-CAM-1.0.1"] = <"fe80b2377bea3b590031effbbd1b93bf">
 		["build_uid"] = <"b62791bb-5395-374b-8949-9c1f929a2460">
 	>
 
@@ -48,6 +59,18 @@ ontology
 				>
 				["at0001"] = <
 					text = <"cutivation on catheter tip">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Odling på kateterspets">
+					description = <"*cultivation_on_catheter_tip (en)">
+				>
+				["at0001"] = <
+					text = <"Odling på kateterspets">
 					description = <"">
 				>
 			>
