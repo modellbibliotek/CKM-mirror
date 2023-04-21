@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -13,6 +20,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -23,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"91df978e396c9f29e91a7420283e3527">
+		["MD5-CAM-1.0.1"] = <"8ad9e66815a7e69ad9092019ccb6f277">
 		["build_uid"] = <"49ec5242-1dc9-3327-9392-ff9833d331f1">
 	>
 
@@ -48,6 +59,18 @@ ontology
 				>
 				["at0001"] = <
 					text = <"Number of puncture attempts">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Antal punktionsförsök">
+					description = <"*Number of puncture attempts (en)">
+				>
+				["at0001"] = <
+					text = <"Antal punktionsförsök">
 					description = <"">
 				>
 			>
