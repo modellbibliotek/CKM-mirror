@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "da3a125af39e0435cc55ea51de3fab83",
+      "MD5-CAM-1.0.1" : "5f8ffa56fc2f048c60ced3b45656bb38",
       "PARENT:MD5-CAM-1.0.1" : "93d89c11cf2ec4279783618139ae9aaa"
     },
     "details" : {
@@ -94,7 +94,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "characteristics_CDK",
+          "text" : "characteristics_PICC-line",
           "description" : "characteristics_drains_and_chateters"
         }
       },
@@ -102,7 +102,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "characteristics_CVK",
+          "text" : "Egenskaper PICC-line",
           "description" : "*characteristics_drains_and_chateters (en)"
         }
       }
@@ -694,36 +694,8 @@
                     "value" : "V Brachialis"
                   }, {
                     "terminologyId" : "local_terms",
-                    "code" : "4",
-                    "value" : "V Brachiocephalica"
-                  }, {
-                    "terminologyId" : "local_terms",
                     "code" : "5",
                     "value" : "V Cephalica"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "6",
-                    "value" : "V Femoralis"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "7",
-                    "value" : "V jugularis externa"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "8",
-                    "value" : "V jugularis interna"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "9",
-                    "value" : "V Saphena magna"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "10",
-                    "value" : "V subclavia supraklavikulärt"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "11",
-                    "value" : "V subclavia infraklavikulärt"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "12",
