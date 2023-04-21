@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0",
+      "sem_ver" : "3.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5b74e80b33fcfdfb48b7b493c34a3152",
+      "MD5-CAM-1.0.1" : "00ba8adaffcff87928b9af761fcb2c8a",
       "PARENT:MD5-CAM-1.0.1" : "93d89c11cf2ec4279783618139ae9aaa"
     },
     "details" : {
@@ -102,7 +102,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "characteristics_CVK",
+          "text" : "Egemskaper_SVP",
           "description" : "*characteristics_drains_and_chateters (en)"
         }
       }
