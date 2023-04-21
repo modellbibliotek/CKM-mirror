@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.0.0",
+      "sem_ver" : "5.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "eaed64d5af8f3d96ae7d58f380f070f5"
+      "MD5-CAM-1.0.1" : "b2ce0764fa97f13cbbcd55952b1f4b85"
     },
     "details" : {
       "de" : {
@@ -1231,16 +1231,7 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0066.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -1303,8 +1294,17 @@
               "nodeId" : "at0003.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-characteristics_drains_and_chateters-001.v0",
-              "referenceType" : "archetypeOverlay"
+              "archetypeRef" : "characteristics_CVK",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.3",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_CDK",
+              "referenceType" : "templateId"
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -3024,68 +3024,6 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "d7908c84-f0b3-4d47-ad80-71a372e39646",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "93d89c11cf2ec4279783618139ae9aaa"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.characteristics_drains_and_chateters.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-characteristics_drains_and_chateters-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { },
-        "sv" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "d4c08d7a-3723-37a1-b0ed-0e0a6f02b761",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : { },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
     "uid" : "0b31c074-809b-486b-b0b7-f7f2d3dcaff1",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
@@ -3097,7 +3035,33 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "31960a46b551a75dd73cfe3d1a5c2dee"
       },
-      "details" : { }
+      "details" : {
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.method_incertation.v0",
     "differential" : true,
