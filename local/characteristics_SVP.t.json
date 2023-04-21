@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d8afc91ece4bc5a8036f0fbb13b70c96",
+      "MD5-CAM-1.0.1" : "5b74e80b33fcfdfb48b7b493c34a3152",
       "PARENT:MD5-CAM-1.0.1" : "93d89c11cf2ec4279783618139ae9aaa"
     },
     "details" : {
@@ -94,7 +94,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "characteristics_CDK",
+          "text" : "characteristics_SVP",
           "description" : "characteristics_drains_and_chateters"
         }
       },
@@ -283,7 +283,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "1",
-                    "value" : "Central dialyskateter (CDK)"
+                    "value" : "Subkutan venport"
                   } ]
                 } ]
               } ],
@@ -295,39 +295,7 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0003.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "local_terms"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "1",
-                    "value" : "Tunnelerad"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "2",
-                    "value" : "Icke-tunnelerad"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -682,40 +650,8 @@
                   "selectedTerminologies" : [ "local_terms" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
-                    "code" : "1",
-                    "value" : "V Axillaris"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "2",
-                    "value" : "V Basilika"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "3",
-                    "value" : "V Brachialis"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "4",
-                    "value" : "V Brachiocephalica"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "5",
-                    "value" : "V Cephalica"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "6",
-                    "value" : "V Femoralis"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "7",
-                    "value" : "V jugularis externa"
-                  }, {
-                    "terminologyId" : "local_terms",
                     "code" : "8",
                     "value" : "V jugularis interna"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "9",
-                    "value" : "V Saphena magna"
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "10",
