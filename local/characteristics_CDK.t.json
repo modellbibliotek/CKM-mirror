@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c0b00a09024b4f9518c2d759e7e4b5b8",
+      "MD5-CAM-1.0.1" : "269bb9ab5c047d1c1e70548cdfab3a70",
       "PARENT:MD5-CAM-1.0.1" : "93d89c11cf2ec4279783618139ae9aaa"
     },
     "details" : {
@@ -283,7 +283,7 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
                     "code" : "1",
-                    "value" : "Central venkateter (CVK)"
+                    "value" : "Central dialyskateter (CDK)"
                   } ]
                 } ]
               } ],
