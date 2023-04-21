@@ -23,14 +23,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e30f59cb17703028a67e0bdfc501ef96">
+		["MD5-CAM-1.0.1"] = <"18e5e5eab015319787412f4ba677dfc6">
 		["build_uid"] = <"b62791bb-5395-374b-8949-9c1f929a2460">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- cultivation_on_catheter_tip
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- DV_TEXT
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- cutivation on catheter tip
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -47,7 +47,7 @@ ontology
 					description = <"cultivation_on_catheter_tip">
 				>
 				["at0001"] = <
-					text = <"DV_TEXT">
+					text = <"cutivation on catheter tip">
 					description = <"">
 				>
 			>
