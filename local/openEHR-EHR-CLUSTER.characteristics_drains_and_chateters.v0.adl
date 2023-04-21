@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -13,6 +20,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -23,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"93c2953269c02ca0937efcd1eb9dfeb0">
+		["MD5-CAM-1.0.1"] = <"93d89c11cf2ec4279783618139ae9aaa">
 		["build_uid"] = <"d4c08d7a-3723-37a1-b0ed-0e0a6f02b761">
 	>
 
@@ -144,6 +155,46 @@ ontology
 				["cm"] = <
 					text = <"cm">
 					description = <"centimeter">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Egenskaper_in-_och_utfarter">
+					description = <"*characteristics_drains_and_chateters (en)">
+				>
+				["at0001"] = <
+					text = <"Antal lumen">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Diameter">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Intern längd">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Extern längd">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Total längd">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"*CLUSTER_SLOT (en)">
+					description = <"">
+				>
+				["mm"] = <
+					text = <"*mm (en)">
+					description = <"*millimeter (en)">
+				>
+				["cm"] = <
+					text = <"*cm (en)">
+					description = <"*centimeter (en)">
 				>
 			>
 		>
