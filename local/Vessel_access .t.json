@@ -22,7 +22,7 @@
       "sem_ver" : "7.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "2fa83581f249e5e5a30ee6349e34b34c"
+      "MD5-CAM-1.0.1" : "92776531bcd734e7430f5fcbaaac8795"
     },
     "details" : {
       "de" : {
@@ -1705,7 +1705,7 @@
                         "value" : "SNOEMD-CT"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "SNOEMD-CT " ],
+                      "selectedTerminologies" : [ "SNOEMD-CT" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOEMD-CT",
                         "code" : "398013009",
@@ -6720,20 +6720,20 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "local_terms_punctiontechnique"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "local_terms_punctiontechnique" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_punctiontechnique",
                     "code" : "1",
                     "value" : "Seldinger"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_punctiontechnique",
                     "code" : "2",
                     "value" : "Direktstick"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_punctiontechnique",
                     "code" : "3",
                     "value" : "Friläggning"
                   } ]
