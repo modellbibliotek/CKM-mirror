@@ -22,7 +22,7 @@
       "sem_ver" : "7.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "44eea2f754dd13c738cfc49b31a0d7a6"
+      "MD5-CAM-1.0.1" : "2fa83581f249e5e5a30ee6349e34b34c"
     },
     "details" : {
       "de" : {
@@ -1702,30 +1702,30 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "SNOEMD-CT"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "SNOEMD-CT " ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
-                        "code" : "1",
+                        "terminologyId" : "SNOEMD-CT",
+                        "code" : "398013009",
+                        "value" : "Subkutan venport (SVP)"
+                      }, {
+                        "terminologyId" : "SNOEMD-CT",
+                        "code" : "52124006",
                         "value" : "Central Venkateter (CVK)"
                       }, {
-                        "terminologyId" : "local_terms",
-                        "code" : "2",
+                        "terminologyId" : "SNOEMD-CT",
+                        "code" : "1",
                         "value" : "Central Dialyskateter (CDK)"
                       }, {
-                        "terminologyId" : "local_terms",
-                        "code" : "3",
+                        "terminologyId" : "SNOEMD-CT",
+                        "code" : "398176008",
                         "value" : "PICC/PCVK"
                       }, {
-                        "terminologyId" : "local_terms",
-                        "code" : "4",
+                        "terminologyId" : "SNOEMD-CT",
+                        "code" : "2",
                         "value" : "PA-Kateter"
-                      }, {
-                        "terminologyId" : "local_terms",
-                        "code" : "5",
-                        "value" : "Subkutan venport (SVP)"
                       } ]
                     } ]
                   } ],
