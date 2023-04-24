@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"93d89c11cf2ec4279783618139ae9aaa">
+		["MD5-CAM-1.0.1"] = <"93fb3b33ab132919d188d44668ea5afd">
 		["build_uid"] = <"d4c08d7a-3723-37a1-b0ed-0e0a6f02b761">
 	>
 
@@ -109,6 +109,11 @@ definition
 					>
 				}
 			}
+			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Material
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
 			allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {    -- CLUSTER_SLOT
 				include
 					archetype_id/value matches {/.*/}
@@ -156,6 +161,10 @@ ontology
 					text = <"cm">
 					description = <"centimeter">
 				>
+				["at0010"] = <
+					text = <"Material">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -165,7 +174,7 @@ ontology
 					description = <"*characteristics_drains_and_chateters (en)">
 				>
 				["at0001"] = <
-					text = <"Antal lumen">
+					text = <"*Number of lumens(en)">
 					description = <"">
 				>
 				["at0005"] = <
@@ -195,6 +204,10 @@ ontology
 				["cm"] = <
 					text = <"*cm (en)">
 					description = <"*centimeter (en)">
+				>
+				["at0010"] = <
+					text = <"*Material (en)">
+					description = <"">
 				>
 			>
 		>
