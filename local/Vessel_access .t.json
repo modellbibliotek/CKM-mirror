@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "8.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "6e3d6c9e8232558a35925157cca557be"
+      "MD5-CAM-1.0.1" : "1db8e903bb8d7231646365f89351f0ca"
     },
     "details" : {
       "de" : {
@@ -7023,12 +7023,12 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "local_terms_CVK"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "local_terms_CVK" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_CVK",
                     "code" : "1",
                     "value" : "Central venkateter (CVK)"
                   } ]
@@ -7057,20 +7057,20 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "local_terms_typeCVK"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "local_terms_typeCVK" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_typeCVK",
                     "code" : "1",
                     "value" : "Tunnelerad"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_typeCVK",
                     "code" : "2",
                     "value" : "Icke-tunnelerad"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_typeCVK",
                     "code" : "3",
                     "value" : "Kateter över nål"
                   } ]
