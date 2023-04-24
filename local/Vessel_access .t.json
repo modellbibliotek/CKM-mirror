@@ -22,7 +22,7 @@
       "sem_ver" : "8.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "c866adea1f16e65780c4713b26ef1d65"
+      "MD5-CAM-1.0.1" : "5cb9d0ed2a9b7fe8c810e41e0390ea3e"
     },
     "details" : {
       "de" : {
@@ -1752,60 +1752,60 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "Indication_centralvenous_access"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "Indication_centralvenous_access" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "Indication_centralvenous_access",
                         "code" : "1",
                         "value" : "Svårstucken patient"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "Indication_centralvenous_access",
                         "code" : "2",
                         "value" : "Snabb infusion/transfusion"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "Indication_centralvenous_access",
                         "code" : "3",
                         "value" : "Infektionsbehandling"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "Indication_centralvenous_access",
                         "code" : "4",
                         "value" : "Cytostatikabehandling"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "Indication_centralvenous_access",
                         "code" : "5",
                         "value" : "Parenteral nutrition"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "Indication_centralvenous_access",
                         "code" : "6",
                         "value" : "Annan iv behandling"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "Indication_centralvenous_access",
                         "code" : "7",
                         "value" : "Monitorering av cirkulation"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "Indication_centralvenous_access",
                         "code" : "8",
                         "value" : "Plasmaferes"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "Indication_centralvenous_access",
                         "code" : "9",
                         "value" : "Hemodialys/-filtration"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "Indication_centralvenous_access",
                         "code" : "10",
                         "value" : "Stamcellsskörd"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "Indication_centralvenous_access",
                         "code" : "12",
                         "value" : "Provtagning"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "Indication_centralvenous_access",
                         "code" : "12",
                         "value" : "Infusion av kärlretande"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "Indication_centralvenous_access",
                         "code" : "11",
                         "value" : "Annan, ange i kommentar"
                       } ]
