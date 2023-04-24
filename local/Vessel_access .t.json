@@ -22,7 +22,7 @@
       "sem_ver" : "8.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "776e1a772961d415a9bd55358d985473"
+      "MD5-CAM-1.0.1" : "ecbd0b826a84ab982415d6bc949ddd25"
     },
     "details" : {
       "de" : {
@@ -1540,6 +1540,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0040.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
