@@ -22,7 +22,7 @@
       "sem_ver" : "7.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "92776531bcd734e7430f5fcbaaac8795"
+      "MD5-CAM-1.0.1" : "6e3d6c9e8232558a35925157cca557be"
     },
     "details" : {
       "de" : {
@@ -6800,24 +6800,24 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "local_terms_help_techniques"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "local_terms_help_techniques" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_help_techniques",
                     "code" : "1",
                     "value" : "Ultraljud före punktion"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_help_techniques",
                     "code" : "2",
                     "value" : "Ultraljud under punktion"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_help_techniques",
                     "code" : "3",
                     "value" : "Ultraljud både före och under punktion"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_help_techniques",
                     "code" : "4",
                     "value" : "Ej använt"
                   } ]
