@@ -22,7 +22,7 @@
       "sem_ver" : "7.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "cc8063165a90429ff18301ebb6f0d19c"
+      "MD5-CAM-1.0.1" : "44eea2f754dd13c738cfc49b31a0d7a6"
     },
     "details" : {
       "de" : {
@@ -944,7 +944,8 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "7976419EEFB8BFACDA7BAB23201F9BEF"
+        "PARENT:MD5-CAM-1.0.1" : "7976419EEFB8BFACDA7BAB23201F9BEF",
+        "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
         "de" : {
@@ -1662,18 +1663,19 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "SNOMED-CT"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "limitToList" : false,
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "1",
-                        "value" : "Insättning"
+                        "value" : "Registrering vid insättning"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "2",
-                        "value" : "Registrering av förekomst av access"
+                        "value" : "Registering av förekomst"
                       } ]
                     } ]
                   } ],
@@ -3609,16 +3611,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0060.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
