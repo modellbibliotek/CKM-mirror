@@ -22,7 +22,7 @@
       "sem_ver" : "8.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "2d45c334ec4a0a74f5d08384a8415ac3"
+      "MD5-CAM-1.0.1" : "c866adea1f16e65780c4713b26ef1d65"
     },
     "details" : {
       "de" : {
@@ -1663,17 +1663,17 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "SNOMED-CT"
+                        "value" : "procedure_name_vessel_access"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "selectedTerminologies" : [ "procedure_name_vessel_access" ],
                       "limitToList" : false,
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "SNOMED-CT",
+                        "terminologyId" : "procedure_name_vessel_access",
                         "code" : "1",
                         "value" : "Registrering vid insättning"
                       }, {
-                        "terminologyId" : "SNOMED-CT",
+                        "terminologyId" : "procedure_name_vessel_access",
                         "code" : "2",
                         "value" : "Registering av förekomst"
                       } ]
@@ -1716,7 +1716,7 @@
                         "value" : "Central Venkateter (CVK)"
                       }, {
                         "terminologyId" : "SNOEMD-CT",
-                        "code" : "1",
+                        "code" : "450866001",
                         "value" : "Central Dialyskateter (CDK)"
                       }, {
                         "terminologyId" : "SNOEMD-CT",
@@ -1724,7 +1724,7 @@
                         "value" : "PICC/PCVK"
                       }, {
                         "terminologyId" : "SNOEMD-CT",
-                        "code" : "2",
+                        "code" : "397755005",
                         "value" : "PA-Kateter"
                       } ]
                     } ]
