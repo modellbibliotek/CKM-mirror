@@ -22,7 +22,7 @@
       "sem_ver" : "8.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "7436a2cdf467bd1859a6c5db4535032b"
+      "MD5-CAM-1.0.1" : "a2e021c3b49c9950a86d8026a69f1b83"
     },
     "details" : {
       "de" : {
@@ -8986,56 +8986,56 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "local_terms_specific_site_CDK"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "local_terms_specific_site_CDK" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_specific_site_CDK",
                     "code" : "1",
                     "value" : "V Axillaris"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_specific_site_CDK",
                     "code" : "2",
                     "value" : "V Basilika"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_specific_site_CDK",
                     "code" : "3",
                     "value" : "V Brachialis"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_specific_site_CDK",
                     "code" : "4",
                     "value" : "V Brachiocephalica"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_specific_site_CDK",
                     "code" : "5",
                     "value" : "V Cephalica"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_specific_site_CDK",
                     "code" : "6",
                     "value" : "V Femoralis"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_specific_site_CDK",
                     "code" : "7",
                     "value" : "V jugularis externa"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_specific_site_CDK",
                     "code" : "8",
                     "value" : "V jugularis interna"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_specific_site_CDK",
                     "code" : "9",
                     "value" : "V Saphena magna"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_specific_site_CDK",
                     "code" : "10",
                     "value" : "V subclavia supraklavikulärt"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_specific_site_CDK",
                     "code" : "11",
                     "value" : "V subclavia infraklavikulärt"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_specific_site_CDK",
                     "code" : "12",
                     "value" : "Annan, ange i kommentar"
                   } ]
