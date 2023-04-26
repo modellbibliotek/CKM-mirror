@@ -34,12 +34,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d76133a39e591444d111d2afcb182766">
 		["build_uid"] = <"f9a2921d-1ff4-338e-8c4e-20cc82d5b1e7">
-		["MD5-CAM-1.0.1"] = <"31960a46b551a75dd73cfe3d1a5c2dee">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Method_incertation
+	CLUSTER[at0000] matches {    -- Method_insertion
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Punction technique
 				value matches {
@@ -64,7 +64,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Method_incertation">
+					text = <"Method_insertion">
 					description = <"Method_incertation">
 				>
 				["at0001"] = <
@@ -84,7 +84,7 @@ ontology
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"Använda metoder">
+					text = <"*Method_insertion (en)">
 					description = <"*Method_incertation (en)">
 				>
 				["at0001"] = <
