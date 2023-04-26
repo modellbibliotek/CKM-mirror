@@ -1,0 +1,78 @@
+archetype (adl_version=1.4; uid=865eb6e8-fc6d-4d0e-b0a1-6fd40cf79df5)
+	openEHR-EHR-CLUSTER.details_procedure.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2023-04-21">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"1f20a41721670a44aa3eadf8365b8820">
+		["build_uid"] = <"49ec5242-1dc9-3327-9392-ff9833d331f1">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- details_procedure
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Number of puncture attempts
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"details_procedure">
+					description = <"Number of puncture attempts">
+				>
+				["at0001"] = <
+					text = <"Number of puncture attempts">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"details_procedure">
+					description = <"*Number of puncture attempts (en)">
+				>
+				["at0001"] = <
+					text = <"Antal punktionsförsök">
+					description = <"">
+				>
+			>
+		>
+	>
