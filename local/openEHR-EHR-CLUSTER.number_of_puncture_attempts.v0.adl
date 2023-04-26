@@ -34,12 +34,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"23ca49229dc5b00ffcfe0c328f626818">
+		["MD5-CAM-1.0.1"] = <"cfe6eca7749ffc88f18428dba14b2ee9">
 		["build_uid"] = <"49ec5242-1dc9-3327-9392-ff9833d331f1">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Number of puncture attempts
+	CLUSTER[at0000] matches {    -- further details of procedure
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Number of puncture attempts
 				value matches {
@@ -54,7 +54,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Number of puncture attempts">
+					text = <"further details of procedure">
 					description = <"Number of puncture attempts">
 				>
 				["at0001"] = <
@@ -66,7 +66,7 @@ ontology
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"Antal punktionsförsök">
+					text = <"*further details of procedure (en)">
 					description = <"*Number of puncture attempts (en)">
 				>
 				["at0001"] = <
