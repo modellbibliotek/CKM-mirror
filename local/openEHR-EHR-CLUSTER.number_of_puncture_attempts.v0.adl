@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"cfe6eca7749ffc88f18428dba14b2ee9">
+		["MD5-CAM-1.0.1"] = <"bdd5d50289283edc4051e5448f6a0273">
 		["build_uid"] = <"49ec5242-1dc9-3327-9392-ff9833d331f1">
 	>
 
@@ -66,7 +66,7 @@ ontology
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"*further details of procedure (en)">
+					text = <"ytterligare detaljer om proceduren">
 					description = <"*Number of puncture attempts (en)">
 				>
 				["at0001"] = <
