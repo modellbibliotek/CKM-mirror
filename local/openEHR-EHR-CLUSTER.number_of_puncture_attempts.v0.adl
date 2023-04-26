@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8ad9e66815a7e69ad9092019ccb6f277">
+		["MD5-CAM-1.0.1"] = <"23ca49229dc5b00ffcfe0c328f626818">
 		["build_uid"] = <"49ec5242-1dc9-3327-9392-ff9833d331f1">
 	>
 
@@ -43,7 +43,7 @@ definition
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Number of puncture attempts
 				value matches {
-					DV_QUANTITY matches {*}
+					DV_COUNT matches {*}
 				}
 			}
 		}
