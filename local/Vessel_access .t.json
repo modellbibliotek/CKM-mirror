@@ -22,7 +22,7 @@
       "sem_ver" : "8.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "ecbd0b826a84ab982415d6bc949ddd25"
+      "MD5-CAM-1.0.1" : "0c1ac671bc9a82e714c3ddc950c08e6d"
     },
     "details" : {
       "de" : {
@@ -212,7 +212,6 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
-                "occurrences" : "0..0",
                 "nodeId" : "at0002.0.1",
                 "attributes" : [ ],
                 "attributeTuples" : [ ]
@@ -1300,6 +1299,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0038.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1348,6 +1348,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0039.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1396,6 +1397,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0036.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1444,6 +1446,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0068.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1492,6 +1495,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0047.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1589,6 +1593,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0041.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1628,6 +1633,55 @@
                     "value" : "local"
                   },
                   "constraint" : [ "at0041" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0043.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "532" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0043" ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -2213,15 +2267,6 @@
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
               "occurrences" : "0..1",
-              "nodeId" : "at0003.2",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-method_incertation-001.v0",
-              "referenceType" : "archetypeOverlay"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
               "nodeId" : "at0003.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -2395,7 +2440,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Insertation/registration",
+            "text" : "insertion/registration",
             "description" : "A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes."
           },
           "at0070.1" : {
@@ -6078,9 +6123,31 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0058.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "Body Site"
+                      },
+                      "constraint" : [ "ac0.1" ],
+                      "selectedTerminologies" : [ "Body Site" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -6377,7 +6444,11 @@
           }
         }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "Body Site" : {
+          "ac0.1" : "terminology://fhir.hl7.org/ValueSet/$expand?url=https://healthterminologies.gov.au/fhir/ValueSet/body-site-1"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
@@ -6503,224 +6574,6 @@
         "email" : "pablo.pazos@cabolabs.com"
       },
       "accreditation" : "Computer Engineer",
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "0b31c074-809b-486b-b0b7-f7f2d3dcaff1",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "31960a46b551a75dd73cfe3d1a5c2dee"
-      },
-      "details" : {
-        "sv" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "sv"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "keywords" : [ ],
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.method_incertation.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-method_incertation-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0001.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "local_terms_punctiontechnique"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms_punctiontechnique" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms_punctiontechnique",
-                    "code" : "258164004",
-                    "value" : "Seldinger"
-                  }, {
-                    "terminologyId" : "local_terms_punctiontechnique",
-                    "code" : "22",
-                    "value" : "Direktstick"
-                  }, {
-                    "terminologyId" : "local_terms_punctiontechnique",
-                    "code" : "28898009",
-                    "value" : "Friläggning"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0002.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "local_terms"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "1",
-                    "value" : "Steril"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "2",
-                    "value" : "Aseptisk"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0003.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "local_terms_help_techniques"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms_help_techniques" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms_help_techniques",
-                    "code" : "1",
-                    "value" : "Ultraljud före punktion"
-                  }, {
-                    "terminologyId" : "local_terms_help_techniques",
-                    "code" : "2",
-                    "value" : "Ultraljud under punktion"
-                  }, {
-                    "terminologyId" : "local_terms_help_techniques",
-                    "code" : "3",
-                    "value" : "Ultraljud både före och under punktion"
-                  }, {
-                    "terminologyId" : "local_terms_help_techniques",
-                    "code" : "4",
-                    "value" : "Ej använt"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { },
-        "sv" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "f9a2921d-1ff4-338e-8c4e-20cc82d5b1e7",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : { },
       "otherDetails" : { }
     } ]
   }, {
@@ -7814,7 +7667,7 @@
         "sem_ver" : "0.1.0",
         "build_uid" : "",
         "MD5-CAM-1.0.1" : "ed68d6dcbd803e0a23bdf69e919804fb",
-        "PARENT:MD5-CAM-1.0.1" : "93d89c11cf2ec4279783618139ae9aaa"
+        "PARENT:MD5-CAM-1.0.1" : "93fb3b33ab132919d188d44668ea5afd"
       },
       "details" : {
         "sv" : {
@@ -9243,7 +9096,7 @@
         "sem_ver" : "2.0.0",
         "build_uid" : "",
         "MD5-CAM-1.0.1" : "269bb9ab5c047d1c1e70548cdfab3a70",
-        "PARENT:MD5-CAM-1.0.1" : "93d89c11cf2ec4279783618139ae9aaa"
+        "PARENT:MD5-CAM-1.0.1" : "93fb3b33ab132919d188d44668ea5afd"
       },
       "details" : {
         "sv" : {
@@ -9366,7 +9219,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "8ad9e66815a7e69ad9092019ccb6f277"
+        "PARENT:MD5-CAM-1.0.1" : "23ca49229dc5b00ffcfe0c328f626818"
       },
       "details" : {
         "sv" : {
