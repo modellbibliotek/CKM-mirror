@@ -22,7 +22,7 @@
       "sem_ver" : "8.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "c209029f770c5d451c1fe9775146f5cf"
+      "MD5-CAM-1.0.1" : "7325708436b95cbbcb311db0b47ed5ba"
     },
     "details" : {
       "de" : {
@@ -1991,6 +1991,22 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0069.2",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "nodeId" : "at0006.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -2007,48 +2023,48 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "local_terms_central_venouscatheter"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "local_terms_central_venouscatheter" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter",
                         "code" : "1",
                         "value" : "Artärpunktion"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter",
                         "code" : "2",
                         "value" : "Artärkatetrering"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter",
                         "code" : "3",
                         "value" : "Hematom"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter",
                         "code" : "4",
                         "value" : "Blödning"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter",
                         "code" : "5",
                         "value" : "Pneumotorax"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter",
                         "code" : "6",
                         "value" : "Luftemboli"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter",
                         "code" : "7",
                         "value" : "Allvarlig arytmi"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter",
                         "code" : "8",
                         "value" : "Parestesi"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter",
                         "code" : "9",
                         "value" : "Svår smärta"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter",
                         "code" : "10",
                         "value" : "Annan komplikation, ange i kommentar"
                       } ]
@@ -2077,48 +2093,52 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "local_terms_central_venouscatheter_child"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "local_terms_central_venouscatheter_child" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter_child",
                         "code" : "1",
                         "value" : "Artärpunktion"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter_child",
                         "code" : "2",
                         "value" : "Artärkatetrering"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter_child",
                         "code" : "3",
                         "value" : "Hematom"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter_child",
                         "code" : "4",
                         "value" : "Blödning"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter_child",
                         "code" : "5",
                         "value" : "Pneumotorax"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter_child",
+                        "code" : "11",
+                        "value" : "Hemothorax"
+                      }, {
+                        "terminologyId" : "local_terms_central_venouscatheter_child",
                         "code" : "6",
                         "value" : "Luftemboli"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter_child",
                         "code" : "7",
                         "value" : "Allvarlig arytmi"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter_child",
                         "code" : "8",
                         "value" : "Parestesi"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter_child",
                         "code" : "9",
                         "value" : "Svår smärta"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "local_terms_central_venouscatheter_child",
                         "code" : "10",
                         "value" : "Annan komplikation, ange i kommentar"
                       } ]
@@ -2398,6 +2418,13 @@
             "description" : "*The clinical or process-related reason for the procedure. (en)",
             "comment" : "*Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'. (en)"
           },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Complicações (3)",
+            "description" : "Detalhes sobre alguma complicação decorrente do procedimento",
+            "comment" : "Utilize este elemento de dados para gravar termos simples ou complicações . Se as condições de gravação de complicação são mais complexas, é aconselhado usar de um arquétipo CLUSTER específico dentro do campo \"Detalhes do Procedimento\" neste arquétipo e este elemento de dados torna-se redundante."
+          },
           "at0006.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
@@ -2405,12 +2432,11 @@
             "description" : "Detalhes sobre alguma complicação decorrente do procedimento",
             "comment" : "Utilize este elemento de dados para gravar termos simples ou complicações . Se as condições de gravação de complicação são mais complexas, é aconselhado usar de um arquétipo CLUSTER específico dentro do campo \"Detalhes do Procedimento\" neste arquétipo e este elemento de dados torna-se redundante."
           },
-          "at0006.3" : {
+          "at0069.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Complicações (3)",
-            "description" : "Detalhes sobre alguma complicação decorrente do procedimento",
-            "comment" : "Utilize este elemento de dados para gravar termos simples ou complicações . Se as condições de gravação de complicação são mais complexas, é aconselhado usar de um arquétipo CLUSTER específico dentro do campo \"Detalhes do Procedimento\" neste arquétipo e este elemento de dados torna-se redundante."
+            "code" : "at0069",
+            "text" : "*Procedural difficulty(en) (2)",
+            "description" : "*Difficulties or issues encountered during the procedure.(en)"
           }
         },
         "sl" : {
@@ -2421,6 +2447,13 @@
             "description" : "*The clinical or process-related reason for the procedure. (en)",
             "comment" : "*Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'. (en)"
           },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "*Complication(en) (3)",
+            "description" : "*Details about any complication arising from the procedure.(en)",
+            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+          },
           "at0006.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
@@ -2428,12 +2461,11 @@
             "description" : "*Details about any complication arising from the procedure.(en)",
             "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
           },
-          "at0006.3" : {
+          "at0069.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "*Complication(en) (3)",
-            "description" : "*Details about any complication arising from the procedure.(en)",
-            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+            "code" : "at0069",
+            "text" : "*Procedural difficulty(en) (2)",
+            "description" : "*Difficulties or issues encountered during the procedure.(en)"
           }
         },
         "en" : {
@@ -2464,13 +2496,6 @@
             "description" : "The clinical or process-related reason for the procedure.",
             "comment" : "Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'."
           },
-          "at0006.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006.2",
-            "text" : "Complication perifer venous catheter",
-            "description" : "Details about any complication arising from the procedure.",
-            "comment" : "Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. Examples: Hematuria after a kidney biopsy, tissue irritation after insertion of intravenous catheter."
-          },
           "at0006.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.3",
@@ -2484,6 +2509,20 @@
             "text" : "Description type of vessel access",
             "description" : "Narrative description about the procedure, as appropriate for the pathway step.",
             "comment" : "For example: description about the performance and findings from the the procedure, the aborted attempt or the cancellation of the procedure."
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.2",
+            "text" : "Complication central venous chatheter (child)",
+            "description" : "Details about any complication arising from the procedure.",
+            "comment" : "Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. Examples: Hematuria after a kidney biopsy, tissue irritation after insertion of intravenous catheter."
+          },
+          "at0069.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.2",
+            "text" : "Procedural difficulty (cildren)",
+            "description" : "Difficulties or issues encountered during performance of the procedure.",
+            "comment" : "Examples: The patient was agitated, insufficient emptying of the stomach before gastroscopy, a tumour in the bile ducts made it impossible to pass the scope through."
           }
         },
         "ar-sy" : {
@@ -2494,6 +2533,13 @@
             "description" : "*The clinical or process-related reason for the procedure. (en)",
             "comment" : "*Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'. (en)"
           },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "*Complication(en) (3)",
+            "description" : "*Details about any complication arising from the procedure.(en)",
+            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+          },
           "at0006.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
@@ -2501,12 +2547,11 @@
             "description" : "*Details about any complication arising from the procedure.(en)",
             "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
           },
-          "at0006.3" : {
+          "at0069.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "*Complication(en) (3)",
-            "description" : "*Details about any complication arising from the procedure.(en)",
-            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+            "code" : "at0069",
+            "text" : "*Procedural difficulty(en) (2)",
+            "description" : "*Difficulties or issues encountered during the procedure.(en)"
           }
         },
         "ru" : {
@@ -2517,6 +2562,13 @@
             "description" : "*The clinical or process-related reason for the procedure. (en)",
             "comment" : "*Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'. (en)"
           },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "*Complication(en) (3)",
+            "description" : "*Details about any complication arising from the procedure.(en)",
+            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+          },
           "at0006.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
@@ -2524,12 +2576,11 @@
             "description" : "*Details about any complication arising from the procedure.(en)",
             "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
           },
-          "at0006.3" : {
+          "at0069.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "*Complication(en) (3)",
-            "description" : "*Details about any complication arising from the procedure.(en)",
-            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+            "code" : "at0069",
+            "text" : "*Procedural difficulty(en) (2)",
+            "description" : "*Difficulties or issues encountered during the procedure.(en)"
           }
         },
         "nb" : {
@@ -2540,6 +2591,13 @@
             "description" : "Den kliniske eller prosessrelaterte årsaken til prosedyren.",
             "comment" : "Koding av indikasjon med en terminologi er foretrukket, om mulig. Dette dataelementet kan repeteres. For eksempel \"Brudd i arm\" eller \"Mislykket tarmtømming\" , \"Tarmkreftscreening\" eller \"Pakkeforløp for kreft\"."
           },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Komplikasjon (3)",
+            "description" : "Detaljer om komplikasjoner oppstått under gjennomføring av prosedyren.",
+            "comment" : "Bruk dette dataelementet til å registrere enkle termer eller prekoordinerte komplikasjoner. Dersom registreringskravene for komplikasjoner er mer komplekse er det anbefalt å bruke en spesifikk CLUSTER-arketype i SLOTet \"Prosedyredetaljer\" i denne arketypen, og i disse tilfellene blir dette dataelementet overflødig. Eksempler: Hematuri etter nyrebiopsi, vevsirritasjon etter innleggelse av venekateter."
+          },
           "at0006.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
@@ -2547,12 +2605,12 @@
             "description" : "Detaljer om komplikasjoner oppstått under gjennomføring av prosedyren.",
             "comment" : "Bruk dette dataelementet til å registrere enkle termer eller prekoordinerte komplikasjoner. Dersom registreringskravene for komplikasjoner er mer komplekse er det anbefalt å bruke en spesifikk CLUSTER-arketype i SLOTet \"Prosedyredetaljer\" i denne arketypen, og i disse tilfellene blir dette dataelementet overflødig. Eksempler: Hematuri etter nyrebiopsi, vevsirritasjon etter innleggelse av venekateter."
           },
-          "at0006.3" : {
+          "at0069.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Komplikasjon (3)",
-            "description" : "Detaljer om komplikasjoner oppstått under gjennomføring av prosedyren.",
-            "comment" : "Bruk dette dataelementet til å registrere enkle termer eller prekoordinerte komplikasjoner. Dersom registreringskravene for komplikasjoner er mer komplekse er det anbefalt å bruke en spesifikk CLUSTER-arketype i SLOTet \"Prosedyredetaljer\" i denne arketypen, og i disse tilfellene blir dette dataelementet overflødig. Eksempler: Hematuri etter nyrebiopsi, vevsirritasjon etter innleggelse av venekateter."
+            "code" : "at0069",
+            "text" : "Problem ved prosedyre (2)",
+            "description" : "Vanskeligheter eller problemer som det ble støtt på under prosedyren.",
+            "comment" : "Eksempler: Pasienten var urolig, magen var ikke skikkelig tømt før gastroskopi, en svulst i gallegangene gjorde det umulig å få skopet gjennom."
           }
         },
         "es" : {
@@ -2563,6 +2621,13 @@
             "description" : "*The clinical or process-related reason for the procedure. (en)",
             "comment" : "*Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'. (en)"
           },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Complicación (3)",
+            "description" : "Detalles de cualquier complicación surgida durante la ejecución del procedimiento",
+            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+          },
           "at0006.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
@@ -2570,12 +2635,11 @@
             "description" : "Detalles de cualquier complicación surgida durante la ejecución del procedimiento",
             "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
           },
-          "at0006.3" : {
+          "at0069.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Complicación (3)",
-            "description" : "Detalles de cualquier complicación surgida durante la ejecución del procedimiento",
-            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+            "code" : "at0069",
+            "text" : "*Procedural difficulty(en) (2)",
+            "description" : "*Difficulties or issues encountered during the procedure.(en)"
           }
         },
         "de" : {
@@ -2586,6 +2650,13 @@
             "description" : "Der klinische oder prozessbezogene Grund für die Prozedur.",
             "comment" : "Die Kodierung der Indikation mit einer Terminologie wird nach Möglichkeit bevorzugt. Dieses Datenelement ermöglicht mehrere Vorkommen. Zum Beispiel: \"Fehlgeschlagenen Darmvorbereitung\" oder \"Darmkrebsvorsorge\"."
           },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Komplikationen (3)",
+            "description" : "Details zu allen Komplikationen, die sich aus der Prozedur ergeben haben.",
+            "comment" : "Verwenden Sie dieses Datenelement, um einfache Begriffe oder präkoordinierte Komplikationen zu erfassen. Wenn die Anforderungen an die Erfassung der Komplikationen komplexer sind, wird die Verwendung eines spezifischen CLUSTER-Archetyps innerhalb des Slots \"Details zur Prozedur\" in diesem Archetyp empfohlen. Dieses Datenelement wird dann redundant. Beispiele: Hämaturie nach einer Nierenbiopsie, Reizungen des Gewebes nach dem Legen eines intravenösen Katheters."
+          },
           "at0006.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
@@ -2593,12 +2664,12 @@
             "description" : "Details zu allen Komplikationen, die sich aus der Prozedur ergeben haben.",
             "comment" : "Verwenden Sie dieses Datenelement, um einfache Begriffe oder präkoordinierte Komplikationen zu erfassen. Wenn die Anforderungen an die Erfassung der Komplikationen komplexer sind, wird die Verwendung eines spezifischen CLUSTER-Archetyps innerhalb des Slots \"Details zur Prozedur\" in diesem Archetyp empfohlen. Dieses Datenelement wird dann redundant. Beispiele: Hämaturie nach einer Nierenbiopsie, Reizungen des Gewebes nach dem Legen eines intravenösen Katheters."
           },
-          "at0006.3" : {
+          "at0069.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Komplikationen (3)",
-            "description" : "Details zu allen Komplikationen, die sich aus der Prozedur ergeben haben.",
-            "comment" : "Verwenden Sie dieses Datenelement, um einfache Begriffe oder präkoordinierte Komplikationen zu erfassen. Wenn die Anforderungen an die Erfassung der Komplikationen komplexer sind, wird die Verwendung eines spezifischen CLUSTER-Archetyps innerhalb des Slots \"Details zur Prozedur\" in diesem Archetyp empfohlen. Dieses Datenelement wird dann redundant. Beispiele: Hämaturie nach einer Nierenbiopsie, Reizungen des Gewebes nach dem Legen eines intravenösen Katheters."
+            "code" : "at0069",
+            "text" : "Schwierigkeiten bei der Durchführung der Prozedur (2)",
+            "description" : "Schwierigkeiten oder Probleme, die während der Durchführung der Prozedur aufgetreten sind.",
+            "comment" : "Beispiele: Der Patient war unruhig; unzureichende Entleerung des Magens vor der Gastroskopie; ein Tumor in den Gallengängen machte es unmöglich, den Bereich zu passieren."
           }
         },
         "sv" : {
@@ -2615,19 +2686,33 @@
             "description" : "Den kliniska eller processrelaterade orsaken till ingreppet.",
             "comment" : "Kodning av indikationen med en terminologi är att föredra, där det är möjligt. Detta dataelement tillåter flera förekomster. Till exempel: 'Misslyckad tarmberedning' eller 'Screening av tarmcancer'."
           },
-          "at0006.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Komplikation (2)",
-            "description" : "Detaljer om eventuella komplikationer som uppstår från proceduren",
-            "comment" : "Använd detta dataelement för att dokumentera enkla termer eller förkoordinerade komplikationer. Om kraven för dokumentation av komplikationen är mer komplexa rekommenderas användning av ett specifikt CLUSTER i öppningen \"Procedur detaljer\", då blir detta dataelement överflödigt. \r\nExempel: Hematuri efter njurbiopsi, vävnadsirritation efter införande av intravenös kateter."
-          },
           "at0006.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
             "text" : "Komplikation (3)",
             "description" : "Detaljer om eventuella komplikationer som uppstår från proceduren",
             "comment" : "Använd detta dataelement för att dokumentera enkla termer eller förkoordinerade komplikationer. Om kraven för dokumentation av komplikationen är mer komplexa rekommenderas användning av ett specifikt CLUSTER i öppningen \"Procedur detaljer\", då blir detta dataelement överflödigt. \r\nExempel: Hematuri efter njurbiopsi, vävnadsirritation efter införande av intravenös kateter."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Komplikation central venaccess",
+            "description" : "Detaljer om eventuella komplikationer som uppstår från proceduren",
+            "comment" : "Använd detta dataelement för att dokumentera enkla termer eller förkoordinerade komplikationer. Om kraven för dokumentation av komplikationen är mer komplexa rekommenderas användning av ett specifikt CLUSTER i öppningen \"Procedur detaljer\", då blir detta dataelement överflödigt. \r\nExempel: Hematuri efter njurbiopsi, vävnadsirritation efter införande av intravenös kateter."
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.2",
+            "text" : "Komplikation central venaccess (child)",
+            "description" : "Detaljer om eventuella komplikationer som uppstår från proceduren",
+            "comment" : "Använd detta dataelement för att dokumentera enkla termer eller förkoordinerade komplikationer. Om kraven för dokumentation av komplikationen är mer komplexa rekommenderas användning av ett specifikt CLUSTER i öppningen \"Procedur detaljer\", då blir detta dataelement överflödigt. \r\nExempel: Hematuri efter njurbiopsi, vävnadsirritation efter införande av intravenös kateter."
+          },
+          "at0069.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069",
+            "text" : "Svårigheter med procedur (2)",
+            "description" : "Svårigheter eller problem som uppstår under genomförandet av proceduren.",
+            "comment" : "Exempel: Patienten var upprörd, otillräcklig tömning av magen före gastroskopi, en tumör i gallgångarna gjorde det omöjligt att passera genom."
           }
         }
       },
@@ -9356,9 +9441,35 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "4604c38e029989f03401f2d01b2ad9df"
+        "PARENT:MD5-CAM-1.0.1" : "fb10258edbf365492ef266676c29c28f"
       },
-      "details" : { }
+      "details" : {
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.details_insertion_drains_and_catheters_.v0",
     "differential" : true,
@@ -9516,7 +9627,20 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "details_insertion_drains_and_catheters_",
+            "description" : "*Method_incertation (en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Rutin",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
