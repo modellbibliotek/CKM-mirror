@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "8.0.0",
+      "sem_ver" : "8.0.1",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "7325708436b95cbbcb311db0b47ed5ba"
+      "MD5-CAM-1.0.1" : "de54dc1c6ab0cf71d74cf7cce391dc23"
     },
     "details" : {
       "de" : {
@@ -1999,7 +1999,33 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "procedural_difficulty_central_venousaccess_child"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "procedural_difficulty_central_venousaccess_child" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "procedural_difficulty_central_venousaccess_child",
+                        "code" : "1",
+                        "value" : "Svårt att få katetern/ledaren på plats"
+                      }, {
+                        "terminologyId" : "procedural_difficulty_central_venousaccess_child",
+                        "code" : "2",
+                        "value" : "Byte pga sumoptimal längd"
+                      }, {
+                        "terminologyId" : "procedural_difficulty_central_venousaccess_child",
+                        "code" : "3",
+                        "value" : "Flytt av utgångshål för CVK/CDK ofa suboptimal.."
+                      } ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
