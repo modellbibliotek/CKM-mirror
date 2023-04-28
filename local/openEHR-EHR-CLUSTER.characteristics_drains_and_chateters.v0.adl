@@ -34,12 +34,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"93fb3b33ab132919d188d44668ea5afd">
+		["MD5-CAM-1.0.1"] = <"de5e7a9a71cb7c5667afa275e2f31ab6">
 		["build_uid"] = <"d4c08d7a-3723-37a1-b0ed-0e0a6f02b761">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- characteristics_drains_and_chateters
+	CLUSTER[at0000] matches {    -- characteristics_drains_and_catheters
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Number of lumens
 				value matches {
@@ -126,7 +126,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"characteristics_drains_and_chateters">
+					text = <"characteristics_drains_and_catheters">
 					description = <"characteristics_drains_and_chateters">
 				>
 				["at0001"] = <
@@ -165,12 +165,16 @@ ontology
 					text = <"Material">
 					description = <"">
 				>
+				["[Ch]"] = <
+					text = <"Fr">
+					description = <"Charrière, french (Gauge of catheters)">
+				>
 			>
 		>
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"Egenskaper_in-_och_utfarter">
+					text = <"*characteristics_drains_and_catheters (en)">
 					description = <"*characteristics_drains_and_chateters (en)">
 				>
 				["at0001"] = <
@@ -208,6 +212,10 @@ ontology
 				["at0010"] = <
 					text = <"*Material (en)">
 					description = <"">
+				>
+				["[Ch]"] = <
+					text = <"*F (en)">
+					description = <"*Charrière, french (Gauge of catheters) (en)">
 				>
 			>
 		>
