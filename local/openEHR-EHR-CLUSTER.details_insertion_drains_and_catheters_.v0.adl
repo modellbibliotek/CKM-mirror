@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4604c38e029989f03401f2d01b2ad9df">
+		["MD5-CAM-1.0.1"] = <"fb10258edbf365492ef266676c29c28f">
 		["build_uid"] = <"f9a2921d-1ff4-338e-8c4e-20cc82d5b1e7">
 	>
 
@@ -93,7 +93,7 @@ ontology
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"details_insertion_drains_and_catheters_">
+					text = <"Detaljer insättning in- och utfarter">
 					description = <"*Method_incertation (en)">
 				>
 				["at0001"] = <
@@ -101,7 +101,7 @@ ontology
 					description = <"">
 				>
 				["at0002"] = <
-					text = <"*Routine (en)">
+					text = <"Rutin">
 					description = <"">
 				>
 				["at0003"] = <
@@ -109,7 +109,7 @@ ontology
 					description = <"">
 				>
 				["at0004"] = <
-					text = <"*Number of punctur attempts (en)">
+					text = <"Antal stickförsök">
 					description = <"">
 				>
 			>
