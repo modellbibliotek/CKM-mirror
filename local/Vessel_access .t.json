@@ -22,7 +22,7 @@
       "sem_ver" : "8.0.5",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "ff96df22268148a131780539f1a8c36e"
+      "MD5-CAM-1.0.1" : "45b6fe7e9ccf1920cdfe6362b3f84375"
     },
     "details" : {
       "de" : {
@@ -4579,9 +4579,17 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0060.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -4631,7 +4639,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0005.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -5947,6 +5954,104 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0068.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0068" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0040.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "530" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0040" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
         } ]
       }, {
         "@type" : "C_ATTRIBUTE",
@@ -5977,13 +6082,13 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "SNOMED-CT"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
-                        "code" : "1",
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "233553003",
                         "value" : "Extraktion av kärlaccess"
                       } ]
                     } ]
@@ -6018,52 +6123,53 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "ors_ext_centr_access"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "ors_ext_centr_access" ],
+                      "limitToList" : false,
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "1",
                         "value" : "Oavsiktigt avlägsnande"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "2",
                         "value" : "Tecken på infektion"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "3",
                         "value" : "Avlägsnad enligt plan"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "4",
                         "value" : "Säkerställd infektion"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "5",
                         "value" : "Byte till annan centralvenös infart"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "6",
                         "value" : "Infarten fungerar inte längre"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "8",
                         "value" : "Smärta"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "9",
                         "value" : "Subkutan infiltration"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "10",
                         "value" : "Cirkulationsstörning"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "11",
                         "value" : "Ocklusion"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "7",
                         "value" : "Annan, ange i kommentar"
                       } ]
@@ -6092,16 +6198,16 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "met_ext_access"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "met_ext_access" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "met_ext_access",
                         "code" : "1",
                         "value" : "Enkel dragning"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "met_ext_access",
                         "code" : "2",
                         "value" : "Operativt ingrepp"
                       } ]
@@ -6114,6 +6220,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0058.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -6179,40 +6286,40 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "ors_ext_centr_access"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "ors_ext_centr_access" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "1",
                         "value" : "Cirkulationspåverkan"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "2",
                         "value" : "Respiratorisk påverkan"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "3",
                         "value" : "Parestesi"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "4",
                         "value" : "Svår smärta"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "5",
                         "value" : "Hematom"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "6",
                         "value" : "Blödning"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "7",
                         "value" : "Annan komplikation, biverkning eller öväntad händelse"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "ors_ext_centr_access",
                         "code" : "8",
                         "value" : "Inga komplikationer"
                       } ]
@@ -8196,9 +8303,7 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "fe80b2377bea3b590031effbbd1b93bf"
-      },
+      "otherDetails" : { },
       "details" : {
         "sv" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -8259,16 +8364,16 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "cultivation_catheter"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "cultivation_catheter" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "cultivation_catheter",
                     "code" : "1",
                     "value" : "Utförd"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "cultivation_catheter",
                     "code" : "2",
                     "value" : "Ej utförd"
                   } ]
