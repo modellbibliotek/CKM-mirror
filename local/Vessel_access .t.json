@@ -22,7 +22,7 @@
       "sem_ver" : "8.0.2",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "a5162a97902087960054db7baecc8b82"
+      "MD5-CAM-1.0.1" : "af0fe56bc16af1ed3ac06396ec6b7d3c"
     },
     "details" : {
       "de" : {
@@ -7316,56 +7316,56 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "SNOMED"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "SNOMED" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SNOMED",
-                    "code" : "1",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "68705008",
                     "value" : "V Axillaris"
                   }, {
-                    "terminologyId" : "SNOMED",
-                    "code" : "2",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "19715009",
                     "value" : "V Basilika"
                   }, {
-                    "terminologyId" : "SNOMED",
-                    "code" : "3",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "20115005",
                     "value" : "V Brachialis"
                   }, {
-                    "terminologyId" : "SNOMED",
-                    "code" : "4",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "8887007",
                     "value" : "V Brachiocephalica"
                   }, {
-                    "terminologyId" : "SNOMED",
-                    "code" : "5",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "20699002",
                     "value" : "V Cephalica"
                   }, {
-                    "terminologyId" : "SNOMED",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "83419000",
                     "value" : "V Femoralis"
                   }, {
-                    "terminologyId" : "SNOMED",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "71585003",
                     "value" : "V jugularis externa"
                   }, {
-                    "terminologyId" : "SNOMED",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "12123001",
                     "value" : "V jugularis interna"
                   }, {
-                    "terminologyId" : "SNOMED",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "60734001",
                     "value" : "V Saphena magna"
                   }, {
-                    "terminologyId" : "SNOMED",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "70951000052106",
                     "value" : "V subclavia supraklavikulärt"
                   }, {
-                    "terminologyId" : "SNOMED",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "70971000052100",
                     "value" : "V subclavia infraklavikulärt"
                   }, {
-                    "terminologyId" : "SNOMED",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "467764008",
                     "value" : "introducer"
                   } ]
@@ -7801,7 +7801,7 @@
         "sem_ver" : "0.1.0",
         "build_uid" : "",
         "MD5-CAM-1.0.1" : "ed68d6dcbd803e0a23bdf69e919804fb",
-        "PARENT:MD5-CAM-1.0.1" : "de5e7a9a71cb7c5667afa275e2f31ab6"
+        "PARENT:MD5-CAM-1.0.1" : "fd9257ec9542f9258e37365b1e55fffc"
       },
       "details" : {
         "sv" : {
@@ -9280,7 +9280,7 @@
         "sem_ver" : "2.0.0",
         "build_uid" : "",
         "MD5-CAM-1.0.1" : "269bb9ab5c047d1c1e70548cdfab3a70",
-        "PARENT:MD5-CAM-1.0.1" : "de5e7a9a71cb7c5667afa275e2f31ab6"
+        "PARENT:MD5-CAM-1.0.1" : "fd9257ec9542f9258e37365b1e55fffc"
       },
       "details" : {
         "sv" : {
@@ -9323,6 +9323,12 @@
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
         "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..1",
@@ -9362,6 +9368,12 @@
             "code" : "at0000.1",
             "text" : "characteristics_CDK",
             "description" : "*characteristics_drains_and_chateters (en)"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "*Number of lumens(en)",
+            "description" : ""
           }
         }
       },
@@ -10639,7 +10651,7 @@
         "sem_ver" : "3.0.1",
         "build_uid" : "",
         "MD5-CAM-1.0.1" : "00ba8adaffcff87928b9af761fcb2c8a",
-        "PARENT:MD5-CAM-1.0.1" : "de5e7a9a71cb7c5667afa275e2f31ab6"
+        "PARENT:MD5-CAM-1.0.1" : "fd9257ec9542f9258e37365b1e55fffc"
       },
       "details" : {
         "sv" : {
