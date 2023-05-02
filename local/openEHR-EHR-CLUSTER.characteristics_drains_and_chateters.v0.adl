@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"de5e7a9a71cb7c5667afa275e2f31ab6">
+		["MD5-CAM-1.0.1"] = <"6fd1c3a97f5f4f8bc1bfb334ce5a3a68">
 		["build_uid"] = <"d4c08d7a-3723-37a1-b0ed-0e0a6f02b761">
 	>
 
@@ -178,7 +178,7 @@ ontology
 					description = <"*characteristics_drains_and_chateters (en)">
 				>
 				["at0001"] = <
-					text = <"*Number of lumens(en)">
+					text = <"Antal lumen">
 					description = <"">
 				>
 				["at0005"] = <
@@ -206,11 +206,11 @@ ontology
 					description = <"*millimeter (en)">
 				>
 				["cm"] = <
-					text = <"*cm (en)">
+					text = <"cm">
 					description = <"*centimeter (en)">
 				>
 				["at0010"] = <
-					text = <"*Material (en)">
+					text = <"Material">
 					description = <"">
 				>
 				["[Ch]"] = <
