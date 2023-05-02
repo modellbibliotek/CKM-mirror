@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.1",
+      "sem_ver" : "4.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "00ba8adaffcff87928b9af761fcb2c8a",
-      "PARENT:MD5-CAM-1.0.1" : "93d89c11cf2ec4279783618139ae9aaa"
+      "MD5-CAM-1.0.1" : "f5f6ae6aeae6bf2c1feccad0a199192e",
+      "PARENT:MD5-CAM-1.0.1" : "fd9257ec9542f9258e37365b1e55fffc"
     },
     "details" : {
       "sv" : {
@@ -276,14 +276,14 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "1",
-                    "value" : "Subkutan venport"
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "398013009",
+                    "value" : "Subkutan venport (SVP)"
                   } ]
                 } ]
               } ],
@@ -359,6 +359,12 @@
           "nodeId" : "at0007.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0024.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -373,7 +379,21 @@
         "pt-br" : { },
         "nb" : { },
         "de" : { },
-        "sv" : { }
+        "sv" : {
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "LOT nummer",
+            "description" : "Det nummer som tillverkaren tilldelar, numret identifierar en grupp av artiklar som tillverkas samtidigt, vanligtvis finns på etiketten eller förpackningsmaterialet."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Märkning",
+            "description" : "Ospecificerad identifierare, som kan specificeras ytterligare i en mall eller vid körning.",
+            "comment" : "Kodning av namnet på identifieraren med en kodverk är önskvärt, om det finns för området."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -644,26 +664,23 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "8",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "12123001",
                     "value" : "V jugularis interna"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "10",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "70951000052106",
                     "value" : "V subclavia supraklavikulärt"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "11",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "70971000052100",
                     "value" : "V subclavia infraklavikulärt"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "12",
-                    "value" : "Annan, ange i kommentar"
                   } ]
                 } ]
               } ],
@@ -857,6 +874,13 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "Insticksställe",
+            "description" : "Ytterligare detalj angiven som ett specifikt område eller en punkt på eller i det identifierade kroppsstället.",
+            "comment" : "Används för att öka precisionen i identifieringen av kroppsstället. Till exempel McBurneys punkt på bukväggen. Om dataelementet 'Kroppsställets namn' använder förkoordinerade termer som inkluderar det specifika kroppsstället är detta dataelement överflödigt."
           }
         }
       },
