@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "8.1.0",
+      "sem_ver" : "9.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "1ad0e0d2b3ebabce57265738f14960bd"
+      "MD5-CAM-1.0.1" : "81a1ca2a2f30a1181b206a8fabd72015"
     },
     "details" : {
       "de" : {
@@ -1752,28 +1752,28 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "SNOEMD-CT"
+                        "value" : "SNOMED-CT"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "SNOEMD-CT" ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "SNOEMD-CT",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "398013009",
                         "value" : "Subkutan venport (SVP)"
                       }, {
-                        "terminologyId" : "SNOEMD-CT",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "52124006",
                         "value" : "Central Venkateter (CVK)"
                       }, {
-                        "terminologyId" : "SNOEMD-CT",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "450866001",
                         "value" : "Central Dialyskateter (CDK)"
                       }, {
-                        "terminologyId" : "SNOEMD-CT",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "398176008",
                         "value" : "PICC/PCVK"
                       }, {
-                        "terminologyId" : "SNOEMD-CT",
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "397755005",
                         "value" : "PA-Kateter"
                       } ]
@@ -2411,7 +2411,7 @@
           "at0070.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0070.2",
-            "text" : "Indication perifer venous chatether child",
+            "text" : "Indication perifer venous catheter child",
             "description" : "The clinical or process-related reason for the procedure.",
             "comment" : "Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'."
           },
@@ -4726,7 +4726,7 @@
           "at0048.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0048.1",
-            "text" : "Outcome flöde och blodretur",
+            "text" : "Outcome flow and bloodreturn",
             "description" : "Outcome of procedure performed.",
             "comment" : "Coding with a terminology is preferred, where possible."
           }
@@ -8663,6 +8663,12 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0004.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -8671,7 +8677,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Number of puncture attempts",
+            "description" : ""
+          }
+        },
         "sv" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
