@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "9.2.0",
+      "sem_ver" : "9.2.1",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "91daa84bc9a384066d980e781e368c4e"
+      "MD5-CAM-1.0.1" : "2ac78c0559801e67ad2cc3e563f85e42"
     },
     "details" : {
       "de" : {
@@ -9235,26 +9235,23 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "8",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "12123001",
                     "value" : "V jugularis interna"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "10",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "70951000052106",
                     "value" : "V subclavia supraklavikulärt"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "11",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "70971000052100",
                     "value" : "V subclavia infraklavikulärt"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "12",
-                    "value" : "Annan, ange i kommentar"
                   } ]
                 } ]
               } ],
