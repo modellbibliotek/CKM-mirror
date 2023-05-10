@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "5.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "2886d04062556a046ec53f185de43566",
+      "MD5-CAM-1.0.1" : "c3d1cf77067a37885a852aacba8d9e1f",
       "PARENT:MD5-CAM-1.0.1" : "fd9257ec9542f9258e37365b1e55fffc"
     },
     "details" : {
@@ -344,7 +344,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "characteristics_PVK",
+          "text" : "characteristics intraosseous needle",
           "description" : "characteristics_drains_and_chateters"
         }
       },
@@ -352,7 +352,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Egemskaper_SVP",
+          "text" : "Egenskaper_intraosseös nål",
           "description" : "*characteristics_drains_and_chateters (en)"
         }
       }
