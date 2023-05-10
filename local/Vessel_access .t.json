@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "9.2.2",
+      "sem_ver" : "9.2.3",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "78e9900164fffaf58eea10273f39aea7"
+      "MD5-CAM-1.0.1" : "9a25aaa8b077f7c5736165f93ff652e3"
     },
     "details" : {
       "de" : {
@@ -1776,6 +1776,10 @@
                         "terminologyId" : "SNOEMD-CT",
                         "code" : "397755005",
                         "value" : "PA-Kateter"
+                      }, {
+                        "terminologyId" : "SNOEMD-CT",
+                        "code" : "8888899xx",
+                        "value" : "ECMO kanyl"
                       } ]
                     } ]
                   } ],
@@ -6273,8 +6277,8 @@
                       "selectedTerminologies" : [ "SNOMED-CT" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
-                        "code" : "233553003",
-                        "value" : "Extraktion av kärlaccess"
+                        "code" : "175853000",
+                        "value" : "Extraktion av central venaccess"
                       } ]
                     } ]
                   } ],
