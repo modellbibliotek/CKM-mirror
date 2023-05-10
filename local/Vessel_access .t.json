@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "9.2.4",
+      "sem_ver" : "9.2.5",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "e71a82c28520832be61c91567babfa73"
+      "MD5-CAM-1.0.1" : "bb73ce66becbcfb8e9dc6ac9b6ae2443"
     },
     "details" : {
       "de" : {
@@ -1796,6 +1796,10 @@
                         "terminologyId" : "SNOEMD-CT",
                         "code" : "61121000052104",
                         "value" : "Långtids PVK - midline"
+                      }, {
+                        "terminologyId" : "SNOEMD-CT",
+                        "code" : "277312002",
+                        "value" : "Introducer"
                       } ]
                     } ]
                   } ],
