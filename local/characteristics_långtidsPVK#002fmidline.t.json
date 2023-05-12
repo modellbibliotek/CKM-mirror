@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "6.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "4deeaaeca4cf4dce99c127a9dd8a1742",
+      "MD5-CAM-1.0.1" : "b6b52b1ea5280cd6e4d6dbb511dc6d86",
       "PARENT:MD5-CAM-1.0.1" : "fd9257ec9542f9258e37365b1e55fffc"
     },
     "details" : {
@@ -344,7 +344,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "characteristics_PVK",
+          "text" : "characteristics_midline",
           "description" : "characteristics_drains_and_chateters"
         }
       },
@@ -544,6 +544,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -951,6 +952,22 @@
                     "terminologyId" : "SNOMED-CT",
                     "code" : "41695006",
                     "value" : "Skalp"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "19715009",
+                    "value" : "V Basilica"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "20115005",
+                    "value" : "V Brachialis"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "20699002",
+                    "value" : "V Cephalica"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "60734001",
+                    "value" : "V Saphena magna"
                   } ]
                 } ]
               } ],
