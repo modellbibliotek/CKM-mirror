@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "6.0.0",
+      "sem_ver" : "6.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b6b52b1ea5280cd6e4d6dbb511dc6d86",
+      "MD5-CAM-1.0.1" : "befa6dd63a09cada290468ec8e6466aa",
       "PARENT:MD5-CAM-1.0.1" : "fd9257ec9542f9258e37365b1e55fffc"
     },
     "details" : {
@@ -352,7 +352,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Egemskaper_SVP",
+          "text" : "Egemskaper långtidsPVK/midline",
           "description" : "*characteristics_drains_and_chateters (en)"
         }
       }
