@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.2",
+      "sem_ver" : "4.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "4e302f3bf919a3f1637cd661838a2bd5",
+      "MD5-CAM-1.0.1" : "4c6c3b6effb594e2c4234cd83127e215",
       "PARENT:MD5-CAM-1.0.1" : "fd9257ec9542f9258e37365b1e55fffc"
     },
     "details" : {
@@ -67,6 +67,352 @@
       "children" : [ {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "ELEMENT",
+        "occurrences" : "0..0",
+        "nodeId" : "at0001.1",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "occurrences" : "0..0",
+        "nodeId" : "at0005.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_QUANTITY",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "property",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "openehr"
+                },
+                "constraint" : [ "122" ]
+              } ]
+            } ],
+            "attributeTuples" : [ {
+              "@type" : "C_ATTRIBUTE_TUPLE",
+              "members" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units_system",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units_display_name",
+                "children" : [ ]
+              } ],
+              "tuples" : [ {
+                "@type" : "C_PRIMITIVE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "mm" ]
+                }, {
+                  "@type" : "C_REAL",
+                  "rmTypeName" : "REAL",
+                  "constraint" : [ {
+                    "lowerIncluded" : false,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : true,
+                    "upperUnbounded" : true
+                  } ]
+                }, {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "http://unitsofmeasure.org" ]
+                }, {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "mm" ]
+                } ]
+              }, {
+                "@type" : "C_PRIMITIVE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "[Ch]" ]
+                }, {
+                  "@type" : "C_REAL",
+                  "rmTypeName" : "REAL",
+                  "constraint" : [ {
+                    "lowerIncluded" : false,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : true,
+                    "upperUnbounded" : true
+                  } ]
+                }, {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "http://unitsofmeasure.org" ]
+                }, {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "Fr" ]
+                } ]
+              } ]
+            } ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "occurrences" : "0..0",
+        "nodeId" : "at0006.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_QUANTITY",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "property",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "openehr"
+                },
+                "constraint" : [ "122" ]
+              } ]
+            } ],
+            "attributeTuples" : [ {
+              "@type" : "C_ATTRIBUTE_TUPLE",
+              "members" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "precision",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units_system",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units_display_name",
+                "children" : [ ]
+              } ],
+              "tuples" : [ {
+                "@type" : "C_PRIMITIVE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "cm" ]
+                }, {
+                  "@type" : "C_REAL",
+                  "rmTypeName" : "REAL",
+                  "constraint" : [ {
+                    "lowerIncluded" : false,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : true,
+                    "upperUnbounded" : true
+                  } ]
+                }, {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "constraint" : [ {
+                    "lower" : 1,
+                    "upper" : 1,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : true,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
+                  } ]
+                }, {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "http://unitsofmeasure.org" ]
+                }, {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "cm" ]
+                } ]
+              } ]
+            } ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "occurrences" : "0..0",
+        "nodeId" : "at0007.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_QUANTITY",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "property",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "openehr"
+                },
+                "constraint" : [ "122" ]
+              } ]
+            } ],
+            "attributeTuples" : [ {
+              "@type" : "C_ATTRIBUTE_TUPLE",
+              "members" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "precision",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units_system",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units_display_name",
+                "children" : [ ]
+              } ],
+              "tuples" : [ {
+                "@type" : "C_PRIMITIVE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "cm" ]
+                }, {
+                  "@type" : "C_REAL",
+                  "rmTypeName" : "REAL",
+                  "constraint" : [ {
+                    "lowerIncluded" : false,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : true,
+                    "upperUnbounded" : true
+                  } ]
+                }, {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "constraint" : [ {
+                    "lower" : 1,
+                    "upper" : 1,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : true,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
+                  } ]
+                }, {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "http://unitsofmeasure.org" ]
+                }, {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "cm" ]
+                } ]
+              } ]
+            } ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "occurrences" : "0..0",
+        "nodeId" : "at0008.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_QUANTITY",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "property",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "openehr"
+                },
+                "constraint" : [ "122" ]
+              } ]
+            } ],
+            "attributeTuples" : [ {
+              "@type" : "C_ATTRIBUTE_TUPLE",
+              "members" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units_system",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units_display_name",
+                "children" : [ ]
+              } ],
+              "tuples" : [ {
+                "@type" : "C_PRIMITIVE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "cm" ]
+                }, {
+                  "@type" : "C_REAL",
+                  "rmTypeName" : "REAL",
+                  "constraint" : [ {
+                    "lowerIncluded" : false,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : true,
+                    "upperUnbounded" : true
+                  } ]
+                }, {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "http://unitsofmeasure.org" ]
+                }, {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "cm" ]
+                } ]
+              } ]
+            } ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "occurrences" : "0..0",
         "nodeId" : "at0010.1",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
@@ -132,7 +478,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "characteristics_CDK",
+          "text" : "characteristics_introducer",
           "description" : "characteristics_drains_and_chateters"
         }
       },
@@ -314,14 +660,27 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "local_terms_introducer:typ"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "local_terms_introducer:typ" ],
+                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_introducer:typ",
                     "code" : "1",
-                    "value" : "Central dialyskateter (CDK)"
+                    "value" : "Impella introducer"
+                  }, {
+                    "terminologyId" : "local_terms_introducer:typ",
+                    "code" : "2",
+                    "value" : "PA-introducer"
+                  }, {
+                    "terminologyId" : "local_terms_introducer:typ",
+                    "code" : "3",
+                    "value" : "Temporär Pacemaker - introducer"
+                  }, {
+                    "terminologyId" : "local_terms_introducer:typ",
+                    "code" : "4",
+                    "value" : "Aortaballongpump"
                   } ]
                 } ]
               } ],
@@ -332,6 +691,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -739,54 +1099,23 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "68705008",
-                    "value" : "V Axillaris"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "19715009",
-                    "value" : "V Basilika"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "20115005",
-                    "value" : "V Brachialis"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "8887007",
-                    "value" : "V Brachiocephalica"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "20699002",
-                    "value" : "V Cephalica"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "83419000",
-                    "value" : "V Femoralis"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "71585003",
-                    "value" : "V jugularis externa"
-                  }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "12123001",
-                    "value" : "V jugularis interna"
+                    "value" : "V Jugularis interna"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "60734001",
-                    "value" : "V Saphena magna"
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "7657000",
+                    "value" : "A Femoralis"
                   }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "70951000052106",
-                    "value" : "V subclavia supraklavikulärt"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "70971000052100",
-                    "value" : "V subclavia infraklavikulärt"
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "735253006",
+                    "value" : "V Femoralis"
                   } ]
                 } ]
               } ],
