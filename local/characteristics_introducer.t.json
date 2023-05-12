@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.0.0",
+      "sem_ver" : "4.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "4c6c3b6effb594e2c4234cd83127e215",
+      "MD5-CAM-1.0.1" : "61535153f41c6c0cbdeaf0e074a462e5",
       "PARENT:MD5-CAM-1.0.1" : "fd9257ec9542f9258e37365b1e55fffc"
     },
     "details" : {
@@ -486,7 +486,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "characteristics_CVK",
+          "text" : "Egenskaper introducer",
           "description" : "*characteristics_drains_and_chateters (en)"
         }
       }
@@ -1309,6 +1309,13 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "Insticksställe",
+            "description" : "Ytterligare detalj angiven som ett specifikt område eller en punkt på eller i det identifierade kroppsstället.",
+            "comment" : "Används för att öka precisionen i identifieringen av kroppsstället. Till exempel McBurneys punkt på bukväggen. Om dataelementet 'Kroppsställets namn' använder förkoordinerade termer som inkluderar det specifika kroppsstället är detta dataelement överflödigt."
           }
         }
       },
