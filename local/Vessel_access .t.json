@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "12.0.0",
+      "sem_ver" : "13.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "307b5abac1b1c66842cc489454f403ba"
+      "MD5-CAM-1.0.1" : "291ccbe840a65de9e7f71247e710674e"
     },
     "details" : {
       "de" : {
@@ -1725,7 +1725,7 @@
                       }, {
                         "terminologyId" : "procedure_name_vessel_access",
                         "code" : "2",
-                        "value" : "Registrering - förekomst av kärlaccess"
+                        "value" : "Registrering - förekomst av befintlig kärlaccess"
                       } ]
                     } ]
                   } ],
@@ -4592,25 +4592,25 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "funk_kont_flowandreturn"
+                        "value" : "funk_kont_flowandreturn_insertation"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "funk_kont_flowandreturn" ],
+                      "selectedTerminologies" : [ "funk_kont_flowandreturn_insertation" ],
                       "limitToList" : false,
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "funk_kont_flowandreturn",
+                        "terminologyId" : "funk_kont_flowandreturn_insertation",
                         "code" : "1",
                         "value" : "Bra flöde och blodretur"
                       }, {
-                        "terminologyId" : "funk_kont_flowandreturn",
+                        "terminologyId" : "funk_kont_flowandreturn_insertation",
                         "code" : "2",
                         "value" : "Bra flöde men ingen blodretur"
                       }, {
-                        "terminologyId" : "funk_kont_flowandreturn",
+                        "terminologyId" : "funk_kont_flowandreturn_insertation",
                         "code" : "3",
                         "value" : "Inget flöde och ingen blodretur"
                       }, {
-                        "terminologyId" : "funk_kont_flowandreturn",
+                        "terminologyId" : "funk_kont_flowandreturn_insertation",
                         "code" : "4",
                         "value" : "Annat, ange i kommentar"
                       } ]
@@ -12834,12 +12834,12 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "local_terms_PAplacering"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "local_terms_PAplacering" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "local_terms_PAplacering",
                     "code" : "1",
                     "value" : "Via introducer"
                   } ]
