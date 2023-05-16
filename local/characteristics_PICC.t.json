@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.1",
+      "sem_ver" : "4.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "0d890ef02443f7e7ca47b6c86b528a01",
-      "PARENT:MD5-CAM-1.0.1" : "fd9257ec9542f9258e37365b1e55fffc"
+      "MD5-CAM-1.0.1" : "347b4d88a6a81d320460818714f32298",
+      "PARENT:MD5-CAM-1.0.1" : "ae578696104b77c1c5491da34d6d24a5"
     },
     "details" : {
       "sv" : {
@@ -65,6 +65,22 @@
       "@type" : "C_ATTRIBUTE",
       "rmAttributeName" : "items",
       "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "occurrences" : "0..0",
+        "nodeId" : "at0011.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "CLUSTER",
         "occurrences" : "0..1",
@@ -268,6 +284,18 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "SNOMED-CT",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "398176008",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "PICC-line",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -276,14 +304,14 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "1",
-                    "value" : "Central dialyskateter (CDK)"
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "398176008",
+                    "value" : "PICC-line"
                   } ]
                 } ]
               } ],
