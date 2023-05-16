@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b3c8ff0f36b78004f7be903733b1d312">
+		["MD5-CAM-1.0.1"] = <"b6181623882c62710ca492c5520119e9">
 		["build_uid"] = <"f9a2921d-1ff4-338e-8c4e-20cc82d5b1e7">
 	>
 
@@ -94,7 +94,7 @@ ontology
 				>
 				["at0005"] = <
 					text = <"CLUSTER_SLOT">
-					description = <"">
+					description = <"Use for further details about the insertion of a drain or catheter ">
 				>
 			>
 		>
@@ -122,7 +122,7 @@ ontology
 				>
 				["at0005"] = <
 					text = <"*CLUSTER_SLOT (en)">
-					description = <"">
+					description = <"*Use for further details about the insertion of a drain or catheter  (en)">
 				>
 			>
 		>
