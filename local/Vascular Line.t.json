@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "23.0.0",
+      "sem_ver" : "24.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "0f8b68d87128861ec00e944480fe811c"
+      "MD5-CAM-1.0.1" : "6bc58efe1f757678f2052e263c304364"
     },
     "details" : {
       "de" : {
@@ -2014,7 +2014,7 @@
                       }, {
                         "terminologyId" : "diffic_procedure_centralvenouscatheter",
                         "code" : "3",
-                        "value" : "Flytt av utgångshål för CVK/CDK"
+                        "value" : "Flytt av utgångshål"
                       } ]
                     } ]
                   } ],
@@ -3523,13 +3523,13 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "SNOMED-CT"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
-                        "code" : "1",
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "363680008",
                         "value" : "Röntgen"
                       } ]
                     } ]
