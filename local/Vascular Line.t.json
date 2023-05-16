@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "21.0.0",
+      "sem_ver" : "22.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "6cf77305d7466a082c1669cde02aef30"
+      "MD5-CAM-1.0.1" : "9b1aa9ff7e39db33f2aa60202dbdea08"
     },
     "details" : {
       "de" : {
@@ -2315,6 +2315,15 @@
               "attributes" : [ ],
               "attributeTuples" : [ ],
               "archetypeRef" : "characteristics_PA_catheter",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.7",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_PVK",
               "referenceType" : "templateId"
             } ]
           } ],
