@@ -1,0 +1,116 @@
+archetype (adl_version=1.4; uid=00c87272-5b47-4991-8a61-3bff718b4dec)
+	openEHR-EHR-CLUSTER.suture.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2023-05-16">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"667ee377a21973e4b2dc628c3f9f7d34">
+		["build_uid"] = <"c69dda53-37dc-3ebd-924a-d73e1c2e37e2">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Suture
+		items cardinality matches {1..*; unordered} matches {
+			allow_archetype CLUSTER[at0001] occurrences matches {0..*} matches {    -- CLUSTER_SLOT
+				include
+					archetype_id/value matches {/.*/}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Suture material
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Diameter
+				value matches {
+					DV_QUANTITY matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Comment
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Suture">
+					description = <"Suture">
+				>
+				["at0001"] = <
+					text = <"CLUSTER_SLOT">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Suture material">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Diameter">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Comment">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Sutur">
+					description = <"*Suture (en)">
+				>
+				["at0001"] = <
+					text = <"*CLUSTER_SLOT (en)">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Sutur material">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Diameter">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Kommentar">
+					description = <"">
+				>
+			>
+		>
+	>
