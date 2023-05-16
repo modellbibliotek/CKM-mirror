@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "8d42783b0593a70742cb1919dcd9f549",
+      "MD5-CAM-1.0.1" : "6f9d5f6cb4cad5ade6dbd49eff95acac",
       "PARENT:MD5-CAM-1.0.1" : "ae578696104b77c1c5491da34d6d24a5"
     },
     "details" : {
@@ -140,7 +140,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "characteristics_CVK",
+          "text" : "egenskaper_CVK",
           "description" : "*characteristics_drains_and_chateters (en)"
         }
       }
