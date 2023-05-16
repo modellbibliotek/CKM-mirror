@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "8.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "04b7b119b5abd70deaa89272e170fcae",
+      "MD5-CAM-1.0.1" : "f468bca00de0972369bcf5342286a13a",
       "PARENT:MD5-CAM-1.0.1" : "ae578696104b77c1c5491da34d6d24a5"
     },
     "details" : {
@@ -67,7 +67,6 @@
       "children" : [ {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "ELEMENT",
-        "occurrences" : "0..0",
         "nodeId" : "at0006.1",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
@@ -153,7 +152,6 @@
       }, {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "ELEMENT",
-        "occurrences" : "0..0",
         "nodeId" : "at0007.1",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
@@ -319,16 +317,7 @@
         "rmTypeName" : "ELEMENT",
         "occurrences" : "0..0",
         "nodeId" : "at0011.1",
-        "attributes" : [ {
-          "@type" : "C_ATTRIBUTE",
-          "rmAttributeName" : "value",
-          "children" : [ {
-            "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "DV_CODED_TEXT",
-            "attributes" : [ ],
-            "attributeTuples" : [ ]
-          } ]
-        } ],
+        "attributes" : [ ],
         "attributeTuples" : [ ]
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
@@ -548,8 +537,8 @@
                   "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "82449006",
-                    "value" : "Perifer venkateter (PVK)"
+                    "code" : "61121000052104",
+                    "value" : "Midline"
                   } ]
                 } ]
               } ],
