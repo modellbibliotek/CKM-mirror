@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "6.0.0",
+      "sem_ver" : "6.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "393266dc377c6565cdcfe5f1f7ba0f8c",
+      "MD5-CAM-1.0.1" : "fd4c4d9e2a4d31052328a00d776f5cb2",
       "PARENT:MD5-CAM-1.0.1" : "ae578696104b77c1c5491da34d6d24a5"
     },
     "details" : {
@@ -317,9 +317,63 @@
       }, {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "ELEMENT",
-        "occurrences" : "0..0",
         "nodeId" : "at0011.1",
-        "attributes" : [ ],
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "defining_code",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "rmTypeName" : "TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "PVK_color"
+                },
+                "constraint" : [ ],
+                "selectedTerminologies" : [ "PVK_color " ],
+                "includedExternalTerminologyCodes" : [ {
+                  "terminologyId" : "PVK_color",
+                  "code" : "1",
+                  "value" : "Lila"
+                }, {
+                  "terminologyId" : "PVK_color",
+                  "code" : "2",
+                  "value" : "Gul"
+                }, {
+                  "terminologyId" : "PVK_color",
+                  "code" : "3",
+                  "value" : "Blå"
+                }, {
+                  "terminologyId" : "PVK_color",
+                  "code" : "4",
+                  "value" : "Rosa"
+                }, {
+                  "terminologyId" : "PVK_color",
+                  "code" : "5",
+                  "value" : "Grön"
+                }, {
+                  "terminologyId" : "PVK_color",
+                  "code" : "6",
+                  "value" : "Vit"
+                }, {
+                  "terminologyId" : "PVK_color",
+                  "code" : "7",
+                  "value" : "Grå"
+                }, {
+                  "terminologyId" : "PVK_color",
+                  "code" : "8",
+                  "value" : "Orange"
+                } ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
         "attributeTuples" : [ ]
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
