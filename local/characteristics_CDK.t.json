@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.3.0",
+      "sem_ver" : "5.0.0",
       "build_uid" : "69f7dda2-1205-4801-bc4e-0872b2b049fb",
-      "MD5-CAM-1.0.1" : "f007e4eb3c1aba534196900c455e7bc7",
+      "MD5-CAM-1.0.1" : "c56ba54dc0d872537b8d1ac0883529f7",
       "PARENT:MD5-CAM-1.0.1" : "ae578696104b77c1c5491da34d6d24a5"
     },
     "details" : {
@@ -779,10 +779,6 @@
                     "terminologyId" : "SNOMED-CT",
                     "code" : "19715009",
                     "value" : "V Basilika"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "20115005",
-                    "value" : "V Brachialis"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "8887007",
