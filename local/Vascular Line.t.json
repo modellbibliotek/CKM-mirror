@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "19.0.0",
+      "sem_ver" : "20.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "bd22149e7cfb208e0c9503fbbf52cced"
+      "MD5-CAM-1.0.1" : "511d5c23e166a48e4a0faa4a4394c042"
     },
     "details" : {
       "de" : {
@@ -6162,10 +6162,10 @@
               "defaultValue" : {
                 "defining_code" : {
                   "terminology_id" : {
-                    "value" : "local_terms_CVK",
+                    "value" : "SNOMED-CT",
                     "@type" : "TERMINOLOGY_ID"
                   },
-                  "code_string" : "1",
+                  "code_string" : "52124006",
                   "@type" : "CODE_PHRASE"
                 },
                 "value" : "Central venkateter (CVK)",
@@ -6179,13 +6179,13 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms_CVK"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms_CVK" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms_CVK",
-                    "code" : "1",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "52124006",
                     "value" : "Central venkateter (CVK)"
                   } ]
                 } ]
@@ -6213,20 +6213,20 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "typ_CVK_vux"
+                    "value" : "typ_CVK_adult"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "typ_CVK_vux" ],
+                  "selectedTerminologies" : [ "typ_CVK_adult" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "typ_CVK_vux",
+                    "terminologyId" : "typ_CVK_adult",
                     "code" : "1",
                     "value" : "Tunnelerad"
                   }, {
-                    "terminologyId" : "typ_CVK_vux",
+                    "terminologyId" : "typ_CVK_adult",
                     "code" : "2",
                     "value" : "Icke-tunnelerad"
                   }, {
-                    "terminologyId" : "typ_CVK_vux",
+                    "terminologyId" : "typ_CVK_adult",
                     "code" : "3",
                     "value" : "Kateter över nål"
                   } ]
@@ -7702,20 +7702,20 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "Punk_Cent_access"
+                    "value" : "puncture_technique_vascular_line"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "Punk_Cent_access" ],
+                  "selectedTerminologies" : [ "puncture_technique_vascular_line" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "Punk_Cent_access",
+                    "terminologyId" : "puncture_technique_vascular_line",
                     "code" : "1",
                     "value" : "Seldingerteknik"
                   }, {
-                    "terminologyId" : "Punk_Cent_access",
+                    "terminologyId" : "puncture_technique_vascular_line",
                     "code" : "2",
                     "value" : "Direktstick"
                   }, {
-                    "terminologyId" : "Punk_Cent_access",
+                    "terminologyId" : "puncture_technique_vascular_line",
                     "code" : "3",
                     "value" : "Friläggning"
                   } ]
@@ -7744,16 +7744,16 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "anv_steril_tek"
+                    "value" : "routine_ins_vascular_line"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "anv_steril_tek" ],
+                  "selectedTerminologies" : [ "routine_ins_vascular_line" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "anv_steril_tek",
+                    "terminologyId" : "routine_ins_vascular_line",
                     "code" : "1",
                     "value" : "Steril"
                   }, {
-                    "terminologyId" : "anv_steril_tek",
+                    "terminologyId" : "routine_ins_vascular_line",
                     "code" : "2",
                     "value" : "Aseptisk"
                   } ]
@@ -7782,29 +7782,29 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "tekn_cent_access"
+                    "value" : "help_technique_vascular_access"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "tekn_cent_access" ],
+                  "selectedTerminologies" : [ "help_technique_vascular_access" ],
                   "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "tekn_cent_access",
+                    "terminologyId" : "help_technique_vascular_access",
                     "code" : "1",
                     "value" : "Ultraljud före punktion"
                   }, {
-                    "terminologyId" : "tekn_cent_access",
+                    "terminologyId" : "help_technique_vascular_access",
                     "code" : "2",
                     "value" : "Ultraljud under punktion"
                   }, {
-                    "terminologyId" : "tekn_cent_access",
+                    "terminologyId" : "help_technique_vascular_access",
                     "code" : "3",
                     "value" : "Ultraljud före och under punktion"
                   }, {
-                    "terminologyId" : "tekn_cent_access",
+                    "terminologyId" : "help_technique_vascular_access",
                     "code" : "4",
                     "value" : "Ej använt"
                   }, {
-                    "terminologyId" : "tekn_cent_access",
+                    "terminologyId" : "help_technique_vascular_access",
                     "code" : "5",
                     "value" : "Annan, ange i kommentar"
                   } ]
@@ -8018,6 +8018,18 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "local_terms",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "398013009",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Subkutan venport (SVP)",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -8032,8 +8044,8 @@
                   "selectedTerminologies" : [ "local_terms" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
-                    "code" : "1",
-                    "value" : "Subkutan venport"
+                    "code" : "398013009",
+                    "value" : "Subkutan venport (SVP)"
                   } ]
                 } ]
               } ],
@@ -9145,6 +9157,18 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "SNOMED-CT",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "450866001",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Central dialyskateter (CDK)",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -9153,13 +9177,13 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "1",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "450866001",
                     "value" : "Central dialyskateter (CDK)"
                   } ]
                 } ]
@@ -10050,6 +10074,21 @@
           } ],
           "attributeTuples" : [ ]
         }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0011.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..1",
@@ -10269,6 +10308,18 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "SNOMED-CT",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "398176008",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "PICC-line",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -11329,6 +11380,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -11716,6 +11768,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0065.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -11878,12 +11931,12 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms_PAplacering"
+                    "value" : "Description_of_placement_PA-catheter"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms_PAplacering" ],
+                  "selectedTerminologies" : [ "Description_of_placement_PA-catheter" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms_PAplacering",
+                    "terminologyId" : "Description_of_placement_PA-catheter",
                     "code" : "1",
                     "value" : "Via introducer"
                   } ]
@@ -18964,29 +19017,29 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms_suture_vascular_lines"
+                    "value" : "suture_site_vascular_access"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms_suture_vascular_lines" ],
+                  "selectedTerminologies" : [ "suture_site_vascular_access" ],
                   "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms_suture_vascular_lines",
+                    "terminologyId" : "suture_site_vascular_access",
                     "code" : "1",
                     "value" : "Portficka"
                   }, {
-                    "terminologyId" : "local_terms_suture_vascular_lines",
+                    "terminologyId" : "suture_site_vascular_access",
                     "code" : "2",
                     "value" : "Porthus"
                   }, {
-                    "terminologyId" : "local_terms_suture_vascular_lines",
+                    "terminologyId" : "suture_site_vascular_access",
                     "code" : "3",
                     "value" : "Halsincision"
                   }, {
-                    "terminologyId" : "local_terms_suture_vascular_lines",
+                    "terminologyId" : "suture_site_vascular_access",
                     "code" : "4",
                     "value" : "Insticksställe för tunnelerad kateter"
                   }, {
-                    "terminologyId" : "local_terms_suture_vascular_lines",
+                    "terminologyId" : "suture_site_vascular_access",
                     "code" : "5",
                     "value" : "Vingar"
                   } ]
