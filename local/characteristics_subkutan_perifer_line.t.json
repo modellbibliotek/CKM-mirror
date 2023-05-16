@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "6.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "4dd0636c979cca873600b2abf791369f",
+      "MD5-CAM-1.0.1" : "09d37692e3d666d6e92bbdca178889b2",
       "PARENT:MD5-CAM-1.0.1" : "ae578696104b77c1c5491da34d6d24a5"
     },
     "details" : {
@@ -344,7 +344,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "characteristics_PVK",
+          "text" : "characteristics_subcutan_perifer_line",
           "description" : "characteristics_drains_and_chateters"
         }
       },
@@ -526,14 +526,14 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "SNOMED-CT"
+                    "value" : "group_vascular_lines"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "selectedTerminologies" : [ "group_vascular_lines" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "82449006",
-                    "value" : "Perifer venkateter (PVK)"
+                    "terminologyId" : "group_vascular_lines",
+                    "code" : "6",
+                    "value" : "Subkutan perifer infart"
                   } ]
                 } ]
               } ],
@@ -544,6 +544,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -898,6 +899,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0065.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
