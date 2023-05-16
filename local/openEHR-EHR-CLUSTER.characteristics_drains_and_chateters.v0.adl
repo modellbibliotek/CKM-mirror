@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fd9257ec9542f9258e37365b1e55fffc">
+		["MD5-CAM-1.0.1"] = <"ae578696104b77c1c5491da34d6d24a5">
 		["build_uid"] = <"d4c08d7a-3723-37a1-b0ed-0e0a6f02b761">
 	>
 
@@ -114,6 +114,11 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
+			ELEMENT[at0011] occurrences matches {0..1} matches {    -- Description
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
 			allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {    -- CLUSTER_SLOT
 				include
 					archetype_id/value matches {/.*/}
@@ -174,6 +179,10 @@ ontology
 					text = <"Fr">
 					description = <"Charrière, french (Gauge of catheters)">
 				>
+				["at0011"] = <
+					text = <"Description">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -226,6 +235,10 @@ ontology
 				["[Ch]"] = <
 					text = <"*F (en)">
 					description = <"*Charrière, french (Gauge of catheters) (en)">
+				>
+				["at0011"] = <
+					text = <"Beskrivning">
+					description = <"">
 				>
 			>
 		>
