@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "6f9d5f6cb4cad5ade6dbd49eff95acac",
+      "MD5-CAM-1.0.1" : "697b263aec7acca9e05311a91de3575a",
       "PARENT:MD5-CAM-1.0.1" : "ae578696104b77c1c5491da34d6d24a5"
     },
     "details" : {
@@ -98,6 +98,22 @@
                 } ]
               } ]
             } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "occurrences" : "0..0",
+        "nodeId" : "at0011.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "attributes" : [ ],
             "attributeTuples" : [ ]
           } ]
         } ],
@@ -320,7 +336,7 @@
                   "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "1",
+                    "code" : "52124006",
                     "value" : "Central venkateter (CVK)"
                   } ]
                 } ]
