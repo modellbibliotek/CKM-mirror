@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.0.0",
+      "sem_ver" : "5.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "dd9ed41e2d1bed8aa2940a391d640a97",
+      "MD5-CAM-1.0.1" : "7bcddbe8071618c76105291bf7247a58",
       "PARENT:MD5-CAM-1.0.1" : "fd9257ec9542f9258e37365b1e55fffc"
     },
     "details" : {
@@ -94,7 +94,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "characteristics_SVP",
+          "text" : "characteristics_SVP_needle",
           "description" : "characteristics_drains_and_chateters"
         }
       },
@@ -295,7 +295,43 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0003.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "local_terms_svp_needle"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms_svp_needle" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms_svp_needle",
+                    "code" : "1",
+                    "value" : "Vingar & slang"
+                  }, {
+                    "terminologyId" : "local_terms_svp_needle",
+                    "code" : "2",
+                    "value" : "Mjuk nålplatta & slang"
+                  }, {
+                    "terminologyId" : "local_terms_svp_needle",
+                    "code" : "3",
+                    "value" : "Böjd nål"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
