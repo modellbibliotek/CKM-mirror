@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.3",
+      "sem_ver" : "4.0.0",
       "build_uid" : "69f7dda2-1205-4801-bc4e-0872b2b049fb",
-      "MD5-CAM-1.0.1" : "7fa40367ea3b662aa40ad56a9a2aa432",
-      "PARENT:MD5-CAM-1.0.1" : "fd9257ec9542f9258e37365b1e55fffc"
+      "MD5-CAM-1.0.1" : "f007e4eb3c1aba534196900c455e7bc7",
+      "PARENT:MD5-CAM-1.0.1" : "ae578696104b77c1c5491da34d6d24a5"
     },
     "details" : {
       "sv" : {
@@ -83,21 +83,37 @@
                 "rmTypeName" : "TERMINOLOGY_CODE",
                 "occurrences" : "0..1",
                 "terminologyId" : {
-                  "value" : "material_central_venaccess_barn"
+                  "value" : "material_CDK"
                 },
                 "constraint" : [ ],
-                "selectedTerminologies" : [ "material_central_venaccess_barn" ],
+                "selectedTerminologies" : [ "material_CDK" ],
                 "includedExternalTerminologyCodes" : [ {
-                  "terminologyId" : "material_central_venaccess_barn",
+                  "terminologyId" : "material_CDK",
                   "code" : "1",
                   "value" : "Silikon"
                 }, {
-                  "terminologyId" : "material_central_venaccess_barn",
+                  "terminologyId" : "material_CDK",
                   "code" : "2",
                   "value" : "Polyuretan"
                 } ]
               } ]
             } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "occurrences" : "0..0",
+        "nodeId" : "at0011.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "attributes" : [ ],
             "attributeTuples" : [ ]
           } ]
         } ],
@@ -306,6 +322,18 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "SNOMED-CT",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "450866001",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Central dialyskateter (CDK)",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -314,13 +342,13 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "1",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "450866001",
                     "value" : "Central dialyskateter (CDK)"
                   } ]
                 } ]
@@ -739,52 +767,52 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "68705008",
                     "value" : "V Axillaris"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "19715009",
                     "value" : "V Basilika"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "20115005",
                     "value" : "V Brachialis"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "8887007",
                     "value" : "V Brachiocephalica"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "20699002",
                     "value" : "V Cephalica"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "83419000",
                     "value" : "V Femoralis"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "71585003",
                     "value" : "V jugularis externa"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "12123001",
                     "value" : "V jugularis interna"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "60734001",
                     "value" : "V Saphena magna"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "70951000052106",
                     "value" : "V subclavia supraklavikulärt"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "SNOMED-CT",
                     "code" : "70971000052100",
                     "value" : "V subclavia infraklavikulärt"
                   } ]
