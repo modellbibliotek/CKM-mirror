@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "22.0.0",
+      "sem_ver" : "23.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "9b1aa9ff7e39db33f2aa60202dbdea08"
+      "MD5-CAM-1.0.1" : "0f8b68d87128861ec00e944480fe811c"
     },
     "details" : {
       "de" : {
@@ -2324,6 +2324,60 @@
               "attributes" : [ ],
               "attributeTuples" : [ ],
               "archetypeRef" : "characteristics_PVK",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.8",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_Arterial-line",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.9",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_intraosseous_needle",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.10",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_långtidsPVK/midline",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.11",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_introducer",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.12",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_SVP_needel ",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.13",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_subkutan_perifer_line",
               "referenceType" : "templateId"
             } ]
           } ],
