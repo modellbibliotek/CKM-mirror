@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "6.0.0",
+      "sem_ver" : "7.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "feb315c3cee290f162dd00c5dafc642a",
+      "MD5-CAM-1.0.1" : "c312c8ed30c28262f932e9be7c8e9def",
       "PARENT:MD5-CAM-1.0.1" : "ae578696104b77c1c5491da34d6d24a5"
     },
     "details" : {
@@ -453,16 +453,7 @@
         "rmTypeName" : "ELEMENT",
         "occurrences" : "0..0",
         "nodeId" : "at0011.1",
-        "attributes" : [ {
-          "@type" : "C_ATTRIBUTE",
-          "rmAttributeName" : "value",
-          "children" : [ {
-            "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "DV_CODED_TEXT",
-            "attributes" : [ ],
-            "attributeTuples" : [ ]
-          } ]
-        } ],
+        "attributes" : [ ],
         "attributeTuples" : [ ]
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
@@ -716,29 +707,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "typ_CDK"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "typ_CDK" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "typ_CDK",
-                    "code" : "1",
-                    "value" : "Tunnelerad"
-                  }, {
-                    "terminologyId" : "typ_CDK",
-                    "code" : "2",
-                    "value" : "Icke-tunnelerad"
-                  } ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
