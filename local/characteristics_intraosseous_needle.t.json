@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.1.0",
+      "sem_ver" : "6.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c3d1cf77067a37885a852aacba8d9e1f",
-      "PARENT:MD5-CAM-1.0.1" : "fd9257ec9542f9258e37365b1e55fffc"
+      "MD5-CAM-1.0.1" : "4af95558cae71f18dde765bb0cc19031",
+      "PARENT:MD5-CAM-1.0.1" : "ae578696104b77c1c5491da34d6d24a5"
     },
     "details" : {
       "sv" : {
@@ -315,6 +315,22 @@
         "attributes" : [ ],
         "attributeTuples" : [ ]
       }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "occurrences" : "0..0",
+        "nodeId" : "at0011.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "CLUSTER",
         "occurrences" : "0..1",
@@ -532,8 +548,8 @@
                   "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "82449006",
-                    "value" : "Perifer venkateter (PVK)"
+                    "code" : "440009003",
+                    "value" : "Intraosseös nål"
                   } ]
                 } ]
               } ],
@@ -544,6 +560,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -914,43 +931,31 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "SNOMED-CT"
+                    "value" : "insertion_location_intraosseos_needel"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "selectedTerminologies" : [ "insertion_location_intraosseos_needel" ],
                   "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "63125000",
-                    "value" : "Handrygg"
+                    "terminologyId" : "insertion_location_intraosseos_needel",
+                    "code" : "1",
+                    "value" : "Humerus proximalt"
                   }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "74670003",
-                    "value" : "Handled"
+                    "terminologyId" : "insertion_location_intraosseos_needel",
+                    "code" : "2",
+                    "value" : "Tibia proximalt"
                   }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "14975008",
-                    "value" : "Underarm"
+                    "terminologyId" : "insertion_location_intraosseos_needel",
+                    "code" : "3",
+                    "value" : "Tibia distalt"
                   }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "90837009",
-                    "value" : "Armveck"
+                    "terminologyId" : "insertion_location_intraosseos_needel",
+                    "code" : "4",
+                    "value" : "Femur distal"
                   }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "2402003",
-                    "value" : "Fotrygg"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "70258002",
-                    "value" : "Fotled"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "30021000",
-                    "value" : "Underben"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "41695006",
-                    "value" : "Skalp"
+                    "terminologyId" : "insertion_location_intraosseos_needel",
+                    "code" : "12",
+                    "value" : "Annan, ange i kommentar"
                   } ]
                 } ]
               } ],
