@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fb10258edbf365492ef266676c29c28f">
+		["MD5-CAM-1.0.1"] = <"b3c8ff0f36b78004f7be903733b1d312">
 		["build_uid"] = <"f9a2921d-1ff4-338e-8c4e-20cc82d5b1e7">
 	>
 
@@ -60,6 +60,10 @@ definition
 				value matches {
 					DV_COUNT matches {*}
 				}
+			}
+			allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- CLUSTER_SLOT
+				include
+					archetype_id/value matches {/.*/}
 			}
 		}
 	}
@@ -88,6 +92,10 @@ ontology
 					text = <"Number of punctur attempts">
 					description = <"">
 				>
+				["at0005"] = <
+					text = <"CLUSTER_SLOT">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -110,6 +118,10 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Antal stickförsök">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*CLUSTER_SLOT (en)">
 					description = <"">
 				>
 			>
