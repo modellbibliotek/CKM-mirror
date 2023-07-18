@@ -66,7 +66,7 @@
             </item>
         </other_details>
     </description>
-    <definition archetype_id="openEHR-EHR-CLUSTER.specimen_container.v0"
+    <definition archetype_id="openEHR-EHR-CLUSTER.specimen_container.v1"
         concept_name="Specimen container" name="Embryo storage tank"
         xmlns:tem="openEHR/v1/Template"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:CLUSTER">
@@ -91,7 +91,7 @@
             </constraint>
         </Rule>
         <Rule max="0" path="/items[at0033]"/>
-        <Items archetype_id="openEHR-EHR-CLUSTER.specimen_container.v0"
+        <Items archetype_id="openEHR-EHR-CLUSTER.specimen_container.v1"
             concept_name="Specimen container" max="1" name="Basket"
             path="/items[at0029]" xsi:type="tem:CLUSTER">
             <Rule max="0" path="/items[at0013]"/>
@@ -125,7 +125,7 @@
             </Rule>
             <Rule max="0" path="/items[at0033]"/>
             <Items
-                archetype_id="openEHR-EHR-CLUSTER.specimen_container.v0"
+                archetype_id="openEHR-EHR-CLUSTER.specimen_container.v1"
                 concept_name="Specimen container" max="1" name="Goblet"
                 path="/items[at0029]" xsi:type="tem:CLUSTER">
                 <Rule max="0" path="/items[at0013]"/>
@@ -159,7 +159,7 @@
                 </Rule>
                 <Rule max="0" path="/items[at0033]"/>
                 <Items
-                    archetype_id="openEHR-EHR-CLUSTER.specimen_container.v0"
+                    archetype_id="openEHR-EHR-CLUSTER.specimen_container.v1"
                     concept_name="Specimen container" max="1"
                     name="Embryo straw" path="/items[at0029]" xsi:type="tem:CLUSTER">
                     <Rule name="Cryoprotectant" path="/items[at0026]"/>
@@ -215,7 +215,7 @@
         </Items>
     </definition>
     <integrity_checks
-        archetype_id="openEHR-EHR-CLUSTER.specimen_container.v0"
+        archetype_id="openEHR-EHR-CLUSTER.specimen_container.v1"
         xmlns:tem="openEHR/v1/Template"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
         <digest id="MD5-CAM-1.0.1">65104BCE789A1148E24778DBE68AE078</digest>
