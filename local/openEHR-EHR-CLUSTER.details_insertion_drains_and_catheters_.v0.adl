@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b6181623882c62710ca492c5520119e9">
+		["MD5-CAM-1.0.1"] = <"43419b981c275f86ddd8d7c5cf2dc375">
 		["build_uid"] = <"f9a2921d-1ff4-338e-8c4e-20cc82d5b1e7">
 	>
 
@@ -43,12 +43,19 @@ definition
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Punction technique
 				value matches {
-					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0006,    -- Seldingers technique
+							at0007,    -- Direct stich
+							at0008]    -- Cutdown
+						}
+					}
 				}
 			}
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Routine
 				value matches {
-					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Used help techniques
@@ -96,6 +103,18 @@ ontology
 					text = <"CLUSTER_SLOT">
 					description = <"Use for further details about the insertion of a drain or catheter ">
 				>
+				["at0006"] = <
+					text = <"Seldingers technique">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Direct stich">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Cutdown">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -123,6 +142,18 @@ ontology
 				["at0005"] = <
 					text = <"*CLUSTER_SLOT (en)">
 					description = <"*Use for further details about the insertion of a drain or catheter  (en)">
+				>
+				["at0006"] = <
+					text = <"Seldingersteknik">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Directstcik">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Friläggning">
+					description = <"">
 				>
 			>
 		>
