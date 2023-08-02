@@ -22,7 +22,7 @@
       "sem_ver" : "27.0.3",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "4888c1af8e9dc8f62997387af27215e3"
+      "MD5-CAM-1.0.1" : "23eb6f0c78003266533af412ac06ef68"
     },
     "details" : {
       "de" : {
@@ -419,7 +419,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "6175B5DE04E6302E3DEB0C8EB876BE34"
+        "PARENT:MD5-CAM-1.0.1" : "8d23a5e07d857802779174f6a2361419"
       },
       "details" : {
         "de" : {
@@ -6182,7 +6182,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -6224,7 +6223,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -6498,7 +6496,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "8cf27199d00f4988b3c947950ed439ba"
+        "PARENT:MD5-CAM-1.0.1" : "1877d44de8ed8eea0ba4ad2373d3cb8f"
       },
       "details" : {
         "sv" : {
@@ -8160,7 +8158,7 @@
         "sem_ver" : "3.0.0",
         "build_uid" : "",
         "MD5-CAM-1.0.1" : "fe7f78a5a51ced72740b5ef6f7130a74",
-        "PARENT:MD5-CAM-1.0.1" : "ae578696104b77c1c5491da34d6d24a5"
+        "PARENT:MD5-CAM-1.0.1" : "299e9899db5a4ea42f6254138da952e8"
       },
       "details" : {
         "sv" : {
@@ -8212,7 +8210,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
