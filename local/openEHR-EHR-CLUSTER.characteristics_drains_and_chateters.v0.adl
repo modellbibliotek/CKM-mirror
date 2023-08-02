@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ae578696104b77c1c5491da34d6d24a5">
+		["MD5-CAM-1.0.1"] = <"299e9899db5a4ea42f6254138da952e8">
 		["build_uid"] = <"d4c08d7a-3723-37a1-b0ed-0e0a6f02b761">
 	>
 
@@ -111,7 +111,13 @@ definition
 			}
 			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Material
 				value matches {
-					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0014,    -- Silicone
+							at0015]    -- Polyurethane
+						}
+					}
 				}
 			}
 			ELEMENT[at0011] occurrences matches {0..1} matches {    -- Description
@@ -183,6 +189,14 @@ ontology
 					text = <"Description">
 					description = <"">
 				>
+				["at0014"] = <
+					text = <"Silicone">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Polyurethane">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -238,6 +252,14 @@ ontology
 				>
 				["at0011"] = <
 					text = <"Beskrivning">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Silikon">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Polyuretan">
 					description = <"">
 				>
 			>
