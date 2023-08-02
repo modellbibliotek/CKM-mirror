@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2e713fca78456e2bfc3748aa38840799">
+		["MD5-CAM-1.0.1"] = <"1d629f99ef9a219623085b67e3f2199f">
 		["build_uid"] = <"b62791bb-5395-374b-8949-9c1f929a2460">
 	>
 
@@ -43,7 +43,13 @@ definition
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- cutivation on catheter tip
 				value matches {
-					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Performed
+							at0003]    -- Not performed
+						}
+					}
 				}
 			}
 		}
@@ -61,6 +67,14 @@ ontology
 					text = <"cutivation on catheter tip">
 					description = <"">
 				>
+				["at0002"] = <
+					text = <"Performed">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Not performed">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -71,6 +85,14 @@ ontology
 				>
 				["at0001"] = <
 					text = <"Odling på kateterspets">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Utförd">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Ej utförd">
 					description = <"">
 				>
 			>
