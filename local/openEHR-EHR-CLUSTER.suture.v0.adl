@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8cf27199d00f4988b3c947950ed439ba">
+		["MD5-CAM-1.0.1"] = <"1877d44de8ed8eea0ba4ad2373d3cb8f">
 		["build_uid"] = <"c69dda53-37dc-3ebd-924a-d73e1c2e37e2">
 	>
 
@@ -50,9 +50,9 @@ definition
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0005,    -- *Icke resorberbar (sv)
-							at0006,    -- *Resorberbar (sv)
-							at0007]    -- *Långsamt resorberbar (sv)
+							at0005,    -- Non absorbable
+							at0006,    -- Absorbable
+							at0007]    -- Slowly resorbable
 						}
 					}
 				}
@@ -95,15 +95,15 @@ ontology
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"*Icke resorberbar (sv)">
+					text = <"Non absorbable">
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"*Resorberbar (sv)">
+					text = <"Absorbable">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"*Långsamt resorberbar (sv)">
+					text = <"Slowly resorbable">
 					description = <"">
 				>
 			>
