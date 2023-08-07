@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "27.0.3",
+      "sem_ver" : "28.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "9fa5c1124a621e9469f922b9154f44ab"
+      "MD5-CAM-1.0.1" : "1e66f5e73974d31177665b55cd490824"
     },
     "details" : {
       "de" : {
@@ -577,11 +577,11 @@
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "local_terms_service_type_vessel_access",
                             "code" : "1",
-                            "value" : "Insättning av kälaccess"
+                            "value" : "Insättning av kärlaccess"
                           }, {
                             "terminologyId" : "local_terms_service_type_vessel_access",
                             "code" : "2",
-                            "value" : "registrering av kärlaccess"
+                            "value" : "Registrering av kärlaccess"
                           } ]
                         } ]
                       } ],
