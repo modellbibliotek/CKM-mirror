@@ -22,7 +22,7 @@
       "sem_ver" : "29.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "cca1a032b219e6d36e460d8ea242b6be"
+      "MD5-CAM-1.0.1" : "8d9f21342e5e8a08bcbd26189007f39c"
     },
     "details" : {
       "de" : {
@@ -6129,7 +6129,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "43419b981c275f86ddd8d7c5cf2dc375"
+        "PARENT:MD5-CAM-1.0.1" : "6bd2116a055d8d5eaf5665b8ac28bac4"
       },
       "details" : {
         "sv" : {
@@ -6260,7 +6260,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -6273,7 +6272,6 @@
                   },
                   "constraint" : [ ],
                   "selectedTerminologies" : [ "help_technique_vascular_access" ],
-                  "limitToList" : false,
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "help_technique_vascular_access",
                     "code" : "1",
