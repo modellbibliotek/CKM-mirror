@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "28.0.0",
+      "sem_ver" : "29.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "1e66f5e73974d31177665b55cd490824"
+      "MD5-CAM-1.0.1" : "cca1a032b219e6d36e460d8ea242b6be"
     },
     "details" : {
       "de" : {
@@ -1782,53 +1782,53 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "SNOEMD-CT + type_vascular_access"
+                        "value" : "SNOMED-CT + type_vascular_access"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "SNOEMD-CT + type_vascular_access" ],
+                      "selectedTerminologies" : [ "SNOMED-CT + type_vascular_access" ],
                       "limitToList" : false,
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "SNOEMD-CT + type_vascular_access",
+                        "terminologyId" : "SNOMED-CT + type_vascular_access",
                         "code" : "398013009",
                         "value" : "Subkutan venport (SVP)"
                       }, {
-                        "terminologyId" : "SNOEMD-CT + type_vascular_access",
+                        "terminologyId" : "SNOMED-CT + type_vascular_access",
                         "code" : "52124006",
                         "value" : "Central Venkateter (CVK)"
                       }, {
-                        "terminologyId" : "SNOEMD-CT + type_vascular_access",
+                        "terminologyId" : "SNOMED-CT + type_vascular_access",
                         "code" : "450866001",
                         "value" : "Central Dialyskateter (CDK)"
                       }, {
-                        "terminologyId" : "SNOEMD-CT + type_vascular_access",
+                        "terminologyId" : "SNOMED-CT + type_vascular_access",
                         "code" : "398176008",
                         "value" : "PICC/PCVK"
                       }, {
-                        "terminologyId" : "SNOEMD-CT + type_vascular_access",
+                        "terminologyId" : "SNOMED-CT + type_vascular_access",
                         "code" : "397755005",
                         "value" : "PA-Kateter"
                       }, {
-                        "terminologyId" : "SNOEMD-CT + type_vascular_access",
+                        "terminologyId" : "SNOMED-CT + type_vascular_access",
                         "code" : "82449006",
                         "value" : "PVK"
                       }, {
-                        "terminologyId" : "SNOEMD-CT + type_vascular_access",
+                        "terminologyId" : "SNOMED-CT + type_vascular_access",
                         "code" : "440009003",
                         "value" : "Intraosseös nål"
                       }, {
-                        "terminologyId" : "SNOEMD-CT + type_vascular_access",
+                        "terminologyId" : "SNOMED-CT + type_vascular_access",
                         "code" : "61121000052104",
                         "value" : "Långtids PVK - midline"
                       }, {
-                        "terminologyId" : "SNOEMD-CT + type_vascular_access",
+                        "terminologyId" : "SNOMED-CT + type_vascular_access",
                         "code" : "277312002",
                         "value" : "Introducer"
                       }, {
-                        "terminologyId" : "SNOEMD-CT + type_vascular_access",
+                        "terminologyId" : "SNOMED-CT + type_vascular_access",
                         "code" : "261241001",
                         "value" : "Artärkateter"
                       }, {
-                        "terminologyId" : "SNOEMD-CT + type_vascular_access",
+                        "terminologyId" : "SNOMED-CT + type_vascular_access",
                         "code" : "6",
                         "value" : "Subkutan perifer infart"
                       } ]
@@ -1857,61 +1857,61 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "indication_cent_venaccess_adult"
+                        "value" : "SNOMED CT + indication_cent_venaccess_adult"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "indication_cent_venaccess_adult" ],
+                      "selectedTerminologies" : [ "SNOMED CT + indication_cent_venaccess_adult" ],
                       "limitToList" : false,
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "indication_cent_venaccess_adult",
+                        "terminologyId" : "SNOMED CT + indication_cent_venaccess_adult",
                         "code" : "1",
                         "value" : "Svårstucken patient"
                       }, {
-                        "terminologyId" : "indication_cent_venaccess_adult",
-                        "code" : "2",
+                        "terminologyId" : "SNOMED CT + indication_cent_venaccess_adult",
+                        "code" : "5447007",
                         "value" : "Snabb infusion/transfusion"
                       }, {
-                        "terminologyId" : "indication_cent_venaccess_adult",
+                        "terminologyId" : "SNOMED CT + indication_cent_venaccess_adult",
                         "code" : "3",
                         "value" : "Infektionsbehandling"
                       }, {
-                        "terminologyId" : "indication_cent_venaccess_adult",
-                        "code" : "4",
+                        "terminologyId" : "SNOMED CT + indication_cent_venaccess_adult",
+                        "code" : "385786002",
                         "value" : "Cytostatikabehandling"
                       }, {
-                        "terminologyId" : "indication_cent_venaccess_adult",
-                        "code" : "5",
+                        "terminologyId" : "SNOMED CT + indication_cent_venaccess_adult",
+                        "code" : "25156005",
                         "value" : "Parenteral nutrition"
                       }, {
-                        "terminologyId" : "indication_cent_venaccess_adult",
-                        "code" : "6",
+                        "terminologyId" : "SNOMED CT + indication_cent_venaccess_adult",
+                        "code" : "386340006",
                         "value" : "Annan intravenös behandling"
                       }, {
-                        "terminologyId" : "indication_cent_venaccess_adult",
+                        "terminologyId" : "SNOMED CT + indication_cent_venaccess_adult",
                         "code" : "7",
                         "value" : "Monitorering av cirkulation"
                       }, {
-                        "terminologyId" : "indication_cent_venaccess_adult",
-                        "code" : "8",
+                        "terminologyId" : "SNOMED CT + indication_cent_venaccess_adult",
+                        "code" : "20720000",
                         "value" : "Plasmaferes"
                       }, {
-                        "terminologyId" : "indication_cent_venaccess_adult",
-                        "code" : "9",
+                        "terminologyId" : "SNOMED CT + indication_cent_venaccess_adult",
+                        "code" : "302497006",
                         "value" : "Hemodialys/-filtration"
                       }, {
-                        "terminologyId" : "indication_cent_venaccess_adult",
-                        "code" : "10",
-                        "value" : "Stamcellsskörd"
+                        "terminologyId" : "SNOMED CT + indication_cent_venaccess_adult",
+                        "code" : "418926001",
+                        "value" : "Skörd av stamceller/ Stamcellskörd"
                       }, {
-                        "terminologyId" : "indication_cent_venaccess_adult",
-                        "code" : "12",
+                        "terminologyId" : "SNOMED CT + indication_cent_venaccess_adult",
+                        "code" : "17636008",
                         "value" : "Provtagning"
                       }, {
-                        "terminologyId" : "indication_cent_venaccess_adult",
+                        "terminologyId" : "SNOMED CT + indication_cent_venaccess_adult",
                         "code" : "12",
                         "value" : "Infusion av kärlretande"
                       }, {
-                        "terminologyId" : "indication_cent_venaccess_adult",
+                        "terminologyId" : "SNOMED CT + indication_cent_venaccess_adult",
                         "code" : "11",
                         "value" : "Annan, ange i kommentar"
                       } ]
