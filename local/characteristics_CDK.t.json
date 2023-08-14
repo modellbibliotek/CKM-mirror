@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "6.0.0",
       "build_uid" : "69f7dda2-1205-4801-bc4e-0872b2b049fb",
-      "MD5-CAM-1.0.1" : "7fbdba7c0c456d09fd2cc5326e8c9e72",
+      "MD5-CAM-1.0.1" : "83115d2b1608eb43ec22568673cce395",
       "PARENT:MD5-CAM-1.0.1" : "fe0faccfc2e944da499fc1e2c61ea7ad"
     },
     "details" : {
@@ -65,6 +65,140 @@
       "@type" : "C_ATTRIBUTE",
       "rmAttributeName" : "items",
       "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0006.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_QUANTITY",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "property",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "terminologyId" : {
+                  "value" : "openehr"
+                },
+                "constraint" : [ "122" ]
+              } ]
+            } ],
+            "attributeTuples" : [ {
+              "@type" : "C_ATTRIBUTE_TUPLE",
+              "members" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "precision",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units_system",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units_display_name",
+                "children" : [ ]
+              } ],
+              "tuples" : [ {
+                "@type" : "C_PRIMITIVE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_STRING",
+                  "constraint" : [ "cm" ]
+                }, {
+                  "@type" : "C_INTEGER",
+                  "constraint" : [ {
+                    "lower" : 1,
+                    "upper" : 1,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : true,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
+                  } ]
+                }, {
+                  "@type" : "C_STRING",
+                  "constraint" : [ "http://unitsofmeasure.org" ]
+                }, {
+                  "@type" : "C_STRING",
+                  "constraint" : [ "cm" ]
+                } ]
+              } ]
+            } ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0007.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_QUANTITY",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "property",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "terminologyId" : {
+                  "value" : "openehr"
+                },
+                "constraint" : [ "122" ]
+              } ]
+            } ],
+            "attributeTuples" : [ {
+              "@type" : "C_ATTRIBUTE_TUPLE",
+              "members" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "precision",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units_system",
+                "children" : [ ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units_display_name",
+                "children" : [ ]
+              } ],
+              "tuples" : [ {
+                "@type" : "C_PRIMITIVE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_STRING",
+                  "constraint" : [ "cm" ]
+                }, {
+                  "@type" : "C_INTEGER",
+                  "constraint" : [ {
+                    "lower" : 1,
+                    "upper" : 1,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : true,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
+                  } ]
+                }, {
+                  "@type" : "C_STRING",
+                  "constraint" : [ "http://unitsofmeasure.org" ]
+                }, {
+                  "@type" : "C_STRING",
+                  "constraint" : [ "cm" ]
+                } ]
+              } ]
+            } ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "ELEMENT",
         "nodeId" : "at0010.1",
@@ -140,6 +274,12 @@
           "code" : "at0000.1",
           "text" : "characteristics_CDK",
           "description" : "characteristics_drains_and_chateters"
+        },
+        "at0006.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006.1",
+          "text" : "Internal length",
+          "description" : "Lenght inside the body"
         }
       },
       "sv" : {
