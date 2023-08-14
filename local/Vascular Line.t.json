@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "32.0.0",
+      "sem_ver" : "33.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "1e40d071779e4ae3606609bd9604c7d8"
+      "MD5-CAM-1.0.1" : "6af97ea510916bbc442fc66802d8acee"
     },
     "details" : {
       "de" : {
@@ -7340,20 +7340,20 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "typ_CVK_adult"
+                    "value" : "SNOMED CT + typ_CVK_adult"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "typ_CVK_adult" ],
+                  "selectedTerminologies" : [ "SNOMED CT + typ_CVK_adult" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "typ_CVK_adult",
-                    "code" : "1",
-                    "value" : "Tunnelerad"
+                    "terminologyId" : "SNOMED CT + typ_CVK_adult",
+                    "code" : "445085009",
+                    "value" : "Tunnelerad central venkateter"
                   }, {
-                    "terminologyId" : "typ_CVK_adult",
-                    "code" : "2",
-                    "value" : "Icke-tunnelerad"
+                    "terminologyId" : "SNOMED CT + typ_CVK_adult",
+                    "code" : "449859004",
+                    "value" : "Icke tunnelerad central venkateter"
                   }, {
-                    "terminologyId" : "typ_CVK_adult",
+                    "terminologyId" : "SNOMED CT + typ_CVK_adult",
                     "code" : "3",
                     "value" : "Kateter över nål"
                   } ]
@@ -8184,17 +8184,17 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "material_CVK"
+                    "value" : "SNOMED CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "material_CVK" ],
+                  "selectedTerminologies" : [ "SNOMED CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "material_CVK",
-                    "code" : "1",
+                    "terminologyId" : "SNOMED CT",
+                    "code" : "13652007",
                     "value" : "Silikon"
                   }, {
-                    "terminologyId" : "material_CVK",
-                    "code" : "2",
+                    "terminologyId" : "SNOMED CT",
+                    "code" : "876840000",
                     "value" : "Polyuretan"
                   } ]
                 } ]
