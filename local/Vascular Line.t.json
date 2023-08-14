@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "31.0.0",
+      "sem_ver" : "32.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "809e8a04e9b87b20360b9223f0eee2d5"
+      "MD5-CAM-1.0.1" : "1e40d071779e4ae3606609bd9604c7d8"
     },
     "details" : {
       "de" : {
@@ -6099,7 +6099,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "6bd2116a055d8d5eaf5665b8ac28bac4"
+        "PARENT:MD5-CAM-1.0.1" : "d3c6ed256686c41003ab6b749e3d9736"
       },
       "details" : {
         "sv" : {
@@ -6192,28 +6192,14 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
+              "rmTypeName" : "DV_TEXT",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
+                "rmAttributeName" : "value",
                 "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "routine_ins_vascular_line"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "routine_ins_vascular_line" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "routine_ins_vascular_line",
-                    "code" : "1",
-                    "value" : "Steril"
-                  }, {
-                    "terminologyId" : "routine_ins_vascular_line",
-                    "code" : "2",
-                    "value" : "Aseptisk"
-                  } ]
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "Steril", "Aseptisk" ]
                 } ]
               } ],
               "attributeTuples" : [ ]
