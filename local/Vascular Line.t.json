@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "34.0.0",
+      "sem_ver" : "35.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "b2968aecff53ab30e22a6284772d2b35"
+      "MD5-CAM-1.0.1" : "eee65503ac6db66d25818c62cb4da4f7"
     },
     "details" : {
       "de" : {
@@ -5501,14 +5501,50 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "SNOMED-CT"
+                        "value" : "KVÅ"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "selectedTerminologies" : [ "KVÅ" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "175853000",
-                        "value" : "Extraktion av central venaccess"
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP181",
+                        "value" : "Avlägsnande av icke tunnulerad central venkateter, enlumen"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP182",
+                        "value" : "Avlägsnande av tunnelerad central venkateter, enlumen"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP183",
+                        "value" : "Avlägsnande av perifert insatt central kateter (PICC)"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP281",
+                        "value" : "Avlägsnande av central venkateter, flerlumen, icke tunnelerad"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP282",
+                        "value" : "Avlägsnande av central venkateter, flerlumen, tunnelerad"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP381",
+                        "value" : "Avlägsnande av central venkateter för dialys, icke tunnelerad"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP382",
+                        "value" : "Avlägsnande av central venkateter för dialys, tunnelerad"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP502",
+                        "value" : "Avlägsnande av perifer långtidskateter (MID)"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP789",
+                        "value" : "Avlägsnande av vaskulär injektionsport UNS"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SQ989",
+                        "value" : "Avlägsnande av artärkateter UNS"
                       } ]
                     } ]
                   } ],
