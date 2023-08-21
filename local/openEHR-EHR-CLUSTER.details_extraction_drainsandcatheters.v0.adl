@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1d629f99ef9a219623085b67e3f2199f">
+		["MD5-CAM-1.0.1"] = <"f8b37b01c75ad959ec4606b4e0000fd6">
 		["build_uid"] = <"b62791bb-5395-374b-8949-9c1f929a2460">
 	>
 
@@ -80,7 +80,7 @@ ontology
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"details_extraction_drainsandcatheters">
+					text = <"Detaljer_extraktion_in- och utfarter">
 					description = <"*cultivation_on_catheter_tip (en)">
 				>
 				["at0001"] = <
