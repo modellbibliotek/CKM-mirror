@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d3c6ed256686c41003ab6b749e3d9736">
+		["MD5-CAM-1.0.1"] = <"ca6ba4c814073ebb255cc2af67948f06">
 		["build_uid"] = <"f9a2921d-1ff4-338e-8c4e-20cc82d5b1e7">
 	>
 
@@ -75,6 +75,11 @@ definition
 			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Number of puncture attempts
 				value matches {
 					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0014] occurrences matches {0..1} matches {    -- Comment
+				value matches {
+					DV_TEXT matches {*}
 				}
 			}
 			allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- CLUSTER_SLOT
@@ -144,6 +149,10 @@ ontology
 					text = <"Other, mention in comments">
 					description = <"">
 				>
+				["at0014"] = <
+					text = <"Comment">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -202,6 +211,10 @@ ontology
 				>
 				["at0013"] = <
 					text = <"Annan, ange i kommentar">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Kommentar">
 					description = <"">
 				>
 			>
