@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6725743fd7f590a908e89b6d98e81b85">
+		["MD5-CAM-1.0.1"] = <"a8db67b678eeecb786dc6ad79d015074">
 		["build_uid"] = <"f9a2921d-1ff4-338e-8c4e-20cc82d5b1e7">
 	>
 
@@ -86,19 +86,22 @@ ontology
 				>
 				["at0001"] = <
 					text = <"Punction technique">
-					description = <"">
+					description = <"Description of the puncture technique for insertion. ">
+					comment = <"Coding of the puncture technique with a terminology is preferred, where possible">
 				>
 				["at0002"] = <
 					text = <"Routine">
-					description = <"">
+					description = <"Description of the procedure used for admission. For example, aseptic or sterile.">
+					comment = <"Coding of the routine with a terminology is preferred, where possible">
 				>
 				["at0003"] = <
 					text = <"Used help techniques">
-					description = <"">
+					description = <"Used to describe used help techniques used during admission. ">
+					comment = <"Coding of the used help techniqies with a terminology is preferred, where possible">
 				>
 				["at0004"] = <
 					text = <"Number of puncture attempts">
-					description = <"">
+					description = <"Number of puncture attempts made at insertion. ">
 				>
 				["at0005"] = <
 					text = <"CLUSTER_SLOT">
@@ -106,32 +109,35 @@ ontology
 				>
 				["at0014"] = <
 					text = <"Comment">
-					description = <"">
+					description = <"Additional free text not covered by other fields. ">
 				>
 			>
 		>
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"Detaljer insättning in- och utfarter">
+					text = <"Detaljer inläggning in- och utfarter">
 					description = <"Används för att beskriva detaljer om insättningen avseende in- och utfarter på ett strukturerat sätt. ">
 					comment = <"För registrering av ytterligare detaljer kan CLUSER_SLOT användas. ">
 				>
 				["at0001"] = <
 					text = <"Punktioneteknik">
-					description = <"">
+					description = <"Beskrivning av punktionstekniken för inläggning. ">
+					comment = <"Kodning till en terminologi av punktionstekniken är att föredra i de fall det är möjligt. ">
 				>
 				["at0002"] = <
 					text = <"Rutin">
-					description = <"">
+					description = <"Beskrivning av den rutin som tillämpats vid inläggningen. Exempelvis aseptisk eller steril.">
+					comment = <"Kodning till en terminologi av rutinen är att föredra i de fall det är möjligt. ">
 				>
 				["at0003"] = <
 					text = <"Använda hjälptekniker">
-					description = <"">
+					description = <"Används för att beskriva eventuella hjälptekniker som har används vid inläggning.">
+					comment = <"Kodning till en terminologi av använda hjälptekniker är att föredra i de fall det är möjligt. ">
 				>
 				["at0004"] = <
 					text = <"Antal stickförsök">
-					description = <"">
+					description = <"Antal stickförsök som gjordes vid inläggningen">
 				>
 				["at0005"] = <
 					text = <"*CLUSTER_SLOT (en)">
@@ -139,7 +145,7 @@ ontology
 				>
 				["at0014"] = <
 					text = <"Kommentar">
-					description = <"">
+					description = <"Ytterligare fritext som inte omfattas av andra fält. ">
 				>
 			>
 		>
