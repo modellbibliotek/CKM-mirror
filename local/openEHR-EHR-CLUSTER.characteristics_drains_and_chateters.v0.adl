@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fe0faccfc2e944da499fc1e2c61ea7ad">
+		["MD5-CAM-1.0.1"] = <"6fbb1a5b42ed2b03cebf2a4d480172ca">
 		["build_uid"] = <"d4c08d7a-3723-37a1-b0ed-0e0a6f02b761">
 	>
 
@@ -132,7 +132,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"characteristics_drains_and_catheters">
-					description = <"characteristics_drains_and_chateters">
+					description = <"Used to describe details about drains and catheters in a structured way">
 				>
 				["at0001"] = <
 					text = <"Number of lumens">
@@ -188,8 +188,8 @@ ontology
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"*characteristics_drains_and_catheters (en)">
-					description = <"*characteristics_drains_and_chateters (en)">
+					text = <"egenskaper_in_och_utfarter">
+					description = <"Används för att beskriva detaljer om in- och utfarter på ett strukturerat sätt">
 				>
 				["at0001"] = <
 					text = <"Antal lumen">
