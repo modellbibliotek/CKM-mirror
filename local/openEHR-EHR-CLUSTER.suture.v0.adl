@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"cf1f3d37876c2b890e6d3ceb5cbc06b4">
+		["MD5-CAM-1.0.1"] = <"ba6f77eb3225ddac873fe6b6e3853522">
 		["build_uid"] = <"c69dda53-37dc-3ebd-924a-d73e1c2e37e2">
 	>
 
@@ -53,9 +53,14 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Diameter
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Diameter suture thread
 				value matches {
 					DV_QUANTITY matches {*}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Number of stitches
+				value matches {
+					DV_COUNT matches {*}
 				}
 			}
 			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Comment
@@ -76,7 +81,8 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Suture">
-					description = <"Suture">
+					description = <"Used to describe the suture and the suture thread used. 
+">
 				>
 				["at0001"] = <
 					text = <"CLUSTER_SLOT">
@@ -89,7 +95,7 @@ ontology
 ">
 				>
 				["at0003"] = <
-					text = <"Diameter">
+					text = <"Diameter suture thread">
 					description = <"Diameter/size of the suture thread">
 				>
 				["at0004"] = <
@@ -108,13 +114,17 @@ ontology
 					text = <"Slowly resorbable">
 					description = <"">
 				>
+				["at0009"] = <
+					text = <"Number of stitches">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
 			items = <
 				["at0000"] = <
 					text = <"Sutur">
-					description = <"*Suture (en)">
+					description = <"Används för att beskriva suturen och suturtråden som är använd. ">
 				>
 				["at0001"] = <
 					text = <"*CLUSTER_SLOT (en)">
@@ -126,7 +136,7 @@ ontology
 					comment = <"Kodning till en terminologi av sutur materialet är att föredra i de fall det är möjligt. ">
 				>
 				["at0003"] = <
-					text = <"Diameter">
+					text = <"Diameter suturtråd">
 					description = <"Diameter/storlek på suturtråd">
 				>
 				["at0004"] = <
@@ -143,6 +153,10 @@ ontology
 				>
 				["at0007"] = <
 					text = <"Långsamt resorberbar">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Antal stygn">
 					description = <"">
 				>
 			>
