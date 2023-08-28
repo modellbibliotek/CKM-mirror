@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6fbb1a5b42ed2b03cebf2a4d480172ca">
+		["MD5-CAM-1.0.1"] = <"beb01a19948c994dbc826cba18cd520d">
 		["build_uid"] = <"d4c08d7a-3723-37a1-b0ed-0e0a6f02b761">
 	>
 
@@ -132,11 +132,13 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"characteristics_drains_and_catheters">
-					description = <"Used to describe details about drains and catheters in a structured way">
+					description = <"Use for describing details about drains and catheters in a structured manner. 
+">
+					comment = <"The utilization of CLUSTER_SLOT is particularly advantageous for incorporating CLUSTER.medical_device, allowing the registration of properties related to the equipment itself, such as LOT numbers. You can also use the CLUSTER_SLOT to insert an anatomical location archetype, to describe where on the body the drain or catheter is located. ">
 				>
 				["at0001"] = <
 					text = <"Number of lumens">
-					description = <"number of lumens ">
+					description = <"Number of lumens ">
 				>
 				["at0005"] = <
 					text = <"Diameter">
@@ -148,7 +150,7 @@ ontology
 				>
 				["at0006"] = <
 					text = <"Internal lenght">
-					description = <"Lenght inside the body">
+					description = <"Lenght of the equipment inside the body">
 				>
 				["at0007"] = <
 					text = <"External length">
@@ -174,6 +176,7 @@ ontology
 				["at0010"] = <
 					text = <"Material">
 					description = <"Describes what material the equipment is made of">
+					comment = <"Coding of the material with a terminology is preferred, where possible">
 				>
 				["[Ch]"] = <
 					text = <"Fr">
@@ -189,32 +192,33 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"egenskaper_in_och_utfarter">
-					description = <"Används för att beskriva detaljer om in- och utfarter på ett strukturerat sätt">
+					description = <"Används för att beskriva detaljer om in- och utfarter  på ett strukturerat sätt. ">
+					comment = <"Användningen av CLUSTER_SLOT är särskilt fördelaktig att använda för CLUSTER.medical_device, vilket möjliggör registrering av egenskaper som är relaterade till själva utrustningen, t.ex. LOT-nummer. Du kan också använda CLUSTER_SLOT för att lägga till en arketyp för anatomisk lokalisation, för att på ett strukturerat sätt beskriva var på kroppen in- och utfarten är placerad.">
 				>
 				["at0001"] = <
 					text = <"Antal lumen">
-					description = <"*number of lumens  (en)">
+					description = <"Antal lumen">
 				>
 				["at0005"] = <
 					text = <"Diameter">
-					description = <"*Diameter of the equipment. Can be mesured in mm, Ch, Fr and Gauge 
-1 french= 1 Charrière= 1/3 mm
+					description = <"Diameter av utrustningen. Kan mätas i mm, Ch, Fr och Gauge 
+1 french = 1 Charrière = 1/3 mm
 
- (en)">
-					comment = <"*Gauge as a unit is currently missing. (en)">
+ ">
+					comment = <"Enheten Gauge är för närvarande inte tillgänglig. ">
 				>
 				["at0006"] = <
 					text = <"Intern längd">
-					description = <"*Lenght inside the body (en)">
+					description = <"Kateterns längd innanför huden. ">
+					comment = <"Benämns ofta som \"Kateterläge i hudplan\"">
 				>
 				["at0007"] = <
 					text = <"Extern längd">
-					description = <"*lenght outside the body (en)">
+					description = <"Längs på katetern utanför huden">
 				>
 				["at0008"] = <
 					text = <"Total längd">
-					description = <"*total lenght of the equipment
- (en)">
+					description = <"Total längd på utrustningen">
 				>
 				["at0009"] = <
 					text = <"*CLUSTER_SLOT (en)">
@@ -230,7 +234,8 @@ ontology
 				>
 				["at0010"] = <
 					text = <"Material">
-					description = <"*Describes what material the equipment is made of (en)">
+					description = <"Beskrivning av materialet utrustningen är tillverkad av.">
+					comment = <"Kodning till en terminologi av materialet är att föredra i de fall det är möjligt. ">
 				>
 				["[Ch]"] = <
 					text = <"*F (en)">
