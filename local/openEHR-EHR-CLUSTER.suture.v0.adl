@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1877d44de8ed8eea0ba4ad2373d3cb8f">
+		["MD5-CAM-1.0.1"] = <"3d84acf285d11321221ec1821656e3bd">
 		["build_uid"] = <"c69dda53-37dc-3ebd-924a-d73e1c2e37e2">
 	>
 
@@ -84,7 +84,9 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Suture material">
-					description = <"">
+					description = <"Description of material used for the suture">
+					comment = <"Coding of the suture material with a terminology is preferred, where possible
+">
 				>
 				["at0003"] = <
 					text = <"Diameter">
@@ -120,7 +122,8 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Sutur material">
-					description = <"">
+					description = <"Beskrivning av det material som använts för suturen">
+					comment = <"Kodning till en terminologi av sutur materialet är att föredra i de fall det är möjligt. ">
 				>
 				["at0003"] = <
 					text = <"Diameter">
