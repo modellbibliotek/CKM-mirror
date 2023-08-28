@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a0f6b234f2930d156944b583723444d2">
+		["MD5-CAM-1.0.1"] = <"6725743fd7f590a908e89b6d98e81b85">
 		["build_uid"] = <"f9a2921d-1ff4-338e-8c4e-20cc82d5b1e7">
 	>
 
@@ -51,7 +51,11 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0003] occurrences matches {0..1} matches {*}    -- Used help techniques
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Used help techniques
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
 			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Number of puncture attempts
 				value matches {
 					DV_COUNT matches {*}
