@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7627f8173c118e21e1d48f2d1be329b0">
+		["MD5-CAM-1.0.1"] = <"a0f6b234f2930d156944b583723444d2">
 		["build_uid"] = <"f9a2921d-1ff4-338e-8c4e-20cc82d5b1e7">
 	>
 
@@ -43,14 +43,7 @@ definition
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Punction technique
 				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0006,    -- Seldingers technique
-							at0007,    -- Direct stich
-							at0008]    -- Cutdown
-						}
-					}
+					DV_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Routine
@@ -58,20 +51,7 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Used help techniques
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0009,    -- Ultrasound before punture
-							at0010,    -- Ultrasound during punture
-							at0011,    -- Ultrasound before and during punture
-							at0012,    -- Not used
-							at0013]    -- Other, mention in comments
-						}
-					}
-				}
-			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {*}    -- Used help techniques
 			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Number of puncture attempts
 				value matches {
 					DV_COUNT matches {*}
@@ -120,38 +100,6 @@ ontology
 					text = <"CLUSTER_SLOT">
 					description = <"Use for further details about the insertion of a drain or catheter ">
 				>
-				["at0006"] = <
-					text = <"Seldingers technique">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"Direct stich">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"Cutdown">
-					description = <"">
-				>
-				["at0009"] = <
-					text = <"Ultrasound before punture">
-					description = <"">
-				>
-				["at0010"] = <
-					text = <"Ultrasound during punture">
-					description = <"">
-				>
-				["at0011"] = <
-					text = <"Ultrasound before and during punture">
-					description = <"">
-				>
-				["at0012"] = <
-					text = <"Not used">
-					description = <"">
-				>
-				["at0013"] = <
-					text = <"Other, mention in comments">
-					description = <"">
-				>
 				["at0014"] = <
 					text = <"Comment">
 					description = <"">
@@ -184,38 +132,6 @@ ontology
 				["at0005"] = <
 					text = <"*CLUSTER_SLOT (en)">
 					description = <"*Use for further details about the insertion of a drain or catheter  (en)">
-				>
-				["at0006"] = <
-					text = <"Seldingersteknik">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"Directstcik">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"Friläggning">
-					description = <"">
-				>
-				["at0009"] = <
-					text = <"Ultraljud före punktion">
-					description = <"">
-				>
-				["at0010"] = <
-					text = <"Ultraljud under punktion">
-					description = <"">
-				>
-				["at0011"] = <
-					text = <"Ultraljud före och under punktion">
-					description = <"">
-				>
-				["at0012"] = <
-					text = <"Ej använt">
-					description = <"">
-				>
-				["at0013"] = <
-					text = <"Annan, ange i kommentar">
-					description = <"">
 				>
 				["at0014"] = <
 					text = <"Kommentar">
