@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3c77e7155255cd4064216927e3429296">
+		["MD5-CAM-1.0.1"] = <"89bc04c912c20b9a0d9d48022518e028">
 		["build_uid"] = <"f9a2921d-1ff4-338e-8c4e-20cc82d5b1e7">
 	>
 
@@ -95,7 +95,10 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"details_insertion_drains_and_catheters_">
-					description = <"Method_incertation">
+					description = <"Used to describe details of the insertion of drains and catheters in a structured way. 
+
+">
+					comment = <"For additional details, CLUSER_SLOT can be used">
 				>
 				["at0001"] = <
 					text = <"Punction technique">
@@ -159,7 +162,8 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Detaljer insättning in- och utfarter">
-					description = <"*Method_insertion (en)">
+					description = <"Används för att beskriva detaljer om insättningen avseende in- och utfarter på ett strukturerat sätt. ">
+					comment = <"*For additional details, CLUSER_SLOT can be used (en)">
 				>
 				["at0001"] = <
 					text = <"Punktioneteknik">
