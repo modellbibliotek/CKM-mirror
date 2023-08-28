@@ -34,17 +34,13 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3d84acf285d11321221ec1821656e3bd">
+		["MD5-CAM-1.0.1"] = <"cf1f3d37876c2b890e6d3ceb5cbc06b4">
 		["build_uid"] = <"c69dda53-37dc-3ebd-924a-d73e1c2e37e2">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Suture
 		items cardinality matches {1..*; unordered} matches {
-			allow_archetype CLUSTER[at0001] occurrences matches {0..*} matches {    -- CLUSTER_SLOT
-				include
-					archetype_id/value matches {/.*/}
-			}
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Suture material
 				value matches {
 					DV_CODED_TEXT matches {
@@ -66,6 +62,10 @@ definition
 				value matches {
 					DV_TEXT matches {*}
 				}
+			}
+			allow_archetype CLUSTER[at0001] occurrences matches {0..*} matches {    -- CLUSTER_SLOT
+				include
+					archetype_id/value matches {/.*/}
 			}
 		}
 	}
@@ -90,11 +90,11 @@ ontology
 				>
 				["at0003"] = <
 					text = <"Diameter">
-					description = <"">
+					description = <"Diameter/size of the suture thread">
 				>
 				["at0004"] = <
 					text = <"Comment">
-					description = <"">
+					description = <"Additional free text not covered by other fields. ">
 				>
 				["at0005"] = <
 					text = <"Non absorbable">
@@ -127,11 +127,11 @@ ontology
 				>
 				["at0003"] = <
 					text = <"Diameter">
-					description = <"">
+					description = <"Diameter/storlek på suturtråd">
 				>
 				["at0004"] = <
 					text = <"Kommentar">
-					description = <"">
+					description = <"Ytterligare fritext som inte omfattas av andra fält. ">
 				>
 				["at0005"] = <
 					text = <"Icke resorberbar">
