@@ -21,8 +21,8 @@
       "custodian_namespace" : "",
       "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "fe7f78a5a51ced72740b5ef6f7130a74",
-      "PARENT:MD5-CAM-1.0.1" : "ae578696104b77c1c5491da34d6d24a5"
+      "MD5-CAM-1.0.1" : "0822685ec71a79057d61dbf47f07bca3",
+      "PARENT:MD5-CAM-1.0.1" : "1109d6260c59342201a8650e15b2f88c"
     },
     "details" : {
       "sv" : {
@@ -74,7 +74,6 @@
           "children" : [ {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "DV_CODED_TEXT",
-            "occurrences" : "1..1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "defining_code",
@@ -174,7 +173,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "EEC8640C1336806D602A1BC344D4F733"
+        "PARENT:MD5-CAM-1.0.1" : "fa7a707b8f8fc2c6b30f7bb4f1343d44"
       },
       "details" : {
         "de" : {
