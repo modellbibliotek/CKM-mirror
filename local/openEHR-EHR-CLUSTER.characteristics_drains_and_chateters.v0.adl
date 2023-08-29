@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"beb01a19948c994dbc826cba18cd520d">
+		["MD5-CAM-1.0.1"] = <"1109d6260c59342201a8650e15b2f88c">
 		["build_uid"] = <"d4c08d7a-3723-37a1-b0ed-0e0a6f02b761">
 	>
 
@@ -154,11 +154,11 @@ ontology
 				>
 				["at0007"] = <
 					text = <"External length">
-					description = <"lenght outside the body">
+					description = <"Lenght of equipment outside the body">
 				>
 				["at0008"] = <
 					text = <"Total length">
-					description = <"total lenght of the equipment
+					description = <"Total lenght of the equipment
 ">
 				>
 				["at0009"] = <
@@ -175,7 +175,7 @@ ontology
 				>
 				["at0010"] = <
 					text = <"Material">
-					description = <"Describes what material the equipment is made of">
+					description = <"Description of the material the equipment is made of">
 					comment = <"Coding of the material with a terminology is preferred, where possible">
 				>
 				["[Ch]"] = <
@@ -184,7 +184,7 @@ ontology
 				>
 				["at0011"] = <
 					text = <"Description">
-					description = <"">
+					description = <"Narrative description that can be used to further refine and support the description of hte characteristics of a drain and catheter ">
 				>
 			>
 		>
@@ -214,7 +214,7 @@ ontology
 				>
 				["at0007"] = <
 					text = <"Extern längd">
-					description = <"Längs på katetern utanför huden">
+					description = <"Kateterns längd utanför kroppen">
 				>
 				["at0008"] = <
 					text = <"Total längd">
@@ -234,7 +234,7 @@ ontology
 				>
 				["at0010"] = <
 					text = <"Material">
-					description = <"Beskrivning av materialet utrustningen är tillverkad av.">
+					description = <"Beskrivning av det material utrustningen är gjord av ">
 					comment = <"Kodning till en terminologi av materialet är att föredra i de fall det är möjligt. ">
 				>
 				["[Ch]"] = <
@@ -243,7 +243,7 @@ ontology
 				>
 				["at0011"] = <
 					text = <"Beskrivning">
-					description = <"">
+					description = <"Kommentarer avseende utrustningen som inte beskrivs i övriga fält. ">
 				>
 			>
 		>
