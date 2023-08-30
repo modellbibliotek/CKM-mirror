@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "39.0.0",
+      "sem_ver" : "40.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "99276b40a78c5873a177f8291425f1ee"
+      "MD5-CAM-1.0.1" : "3c3cc9a3dec364376cef624888aac880"
     },
     "details" : {
       "de" : {
@@ -560,6 +560,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0148.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -2247,9 +2248,56 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0067.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "KVÅ"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "KVÅ" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP111",
+                        "value" : "Inläggning av central venkateter, enlumen, i vena jugularis interna, icke tunnelerad"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP112",
+                        "value" : "Inläggning av central venkateter, enlumen, i vena jugularis interna, tunnelerad"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP121",
+                        "value" : "Inläggning av central venkateter, enlumen, i vena jugularis externa, icke tunnelerad"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP122",
+                        "value" : "Inläggning av central venkateter, enlumen, i vena jugularis externa, tunnelerad"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP131",
+                        "value" : "Inläggning av central venkateter, enlumen, i vena subclavia, icke tunnelerad"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP132",
+                        "value" : "Inläggning av central venkateter, enlumen, i vena subclavia, tunnelerad"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -2773,6 +2821,13 @@
             "text" : "Beskrivning",
             "description" : "Beskrivning av proceduren, anpassad till det aktuella steget.\n\nAnvänds i denna template för att beskriva vilken typ av kärlaccess som lagts in/registrerats. ",
             "comment" : "Till exempel: beskrivning av utförandet och fyndet från proceduren, det avbrutna försöket eller avslutandet av proceduren."
+          },
+          "at0067.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067",
+            "text" : "Typ av procedur",
+            "description" : "Typ av procedur\n\nI denna template skulle detta fält kunna användas till att automatiskt sätta en KVÅ kod baserat på vad användaren har fyllt i. ",
+            "comment" : "Detta pragmatiska dataelement kan användas för att stödja en organisation inom användargränssnittet."
           }
         }
       },
@@ -3609,6 +3664,7 @@
                       },
                       "constraint" : [ ],
                       "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "limitToList" : false,
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "363680008",
@@ -4668,6 +4724,7 @@
                       },
                       "constraint" : [ ],
                       "selectedTerminologies" : [ "funtion_controll_type" ],
+                      "limitToList" : false,
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "funtion_controll_type",
                         "code" : "1",
@@ -4737,7 +4794,6 @@
                       },
                       "constraint" : [ ],
                       "selectedTerminologies" : [ "funk_kont_flowandreturn_insertation" ],
-                      "limitToList" : false,
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "funk_kont_flowandreturn_insertation",
                         "code" : "1",
