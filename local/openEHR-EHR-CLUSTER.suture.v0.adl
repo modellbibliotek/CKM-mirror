@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ba6f77eb3225ddac873fe6b6e3853522">
+		["MD5-CAM-1.0.1"] = <"bcb28fa81c2763bf7d54cb5fa8ba962f">
 		["build_uid"] = <"c69dda53-37dc-3ebd-924a-d73e1c2e37e2">
 	>
 
@@ -53,7 +53,7 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Diameter suture thread
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Size suture thread
 				value matches {
 					DV_QUANTITY matches {*}
 				}
@@ -95,7 +95,7 @@ ontology
 ">
 				>
 				["at0003"] = <
-					text = <"Diameter suture thread">
+					text = <"Size suture thread">
 					description = <"Diameter/size of the suture thread">
 				>
 				["at0004"] = <
@@ -136,7 +136,7 @@ ontology
 					comment = <"Kodning till en terminologi av sutur materialet är att föredra i de fall det är möjligt. ">
 				>
 				["at0003"] = <
-					text = <"Diameter suturtråd">
+					text = <"*Size suture thread (en)">
 					description = <"Diameter/storlek på suturtråd">
 				>
 				["at0004"] = <
