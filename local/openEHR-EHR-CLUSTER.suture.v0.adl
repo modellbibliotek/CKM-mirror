@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bcb28fa81c2763bf7d54cb5fa8ba962f">
+		["MD5-CAM-1.0.1"] = <"0253d06adad73e776e511c901e483a75">
 		["build_uid"] = <"c69dda53-37dc-3ebd-924a-d73e1c2e37e2">
 	>
 
@@ -53,9 +53,20 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Size suture thread
+			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Suture thread size
 				value matches {
-					DV_QUANTITY matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0011,    -- 2-0
+							at0012,    -- 3-0
+							at0013,    -- 4-0
+							at0014,    -- 5-0
+							at0015,    -- 6-0
+							at0016,    -- 7-0
+							at0017]    -- 8-0
+						}
+					}
 				}
 			}
 			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Number of stitches
@@ -94,10 +105,6 @@ ontology
 					comment = <"Coding of the suture material with a terminology is preferred, where possible
 ">
 				>
-				["at0003"] = <
-					text = <"Size suture thread">
-					description = <"Diameter/size of the suture thread">
-				>
 				["at0004"] = <
 					text = <"Comment">
 					description = <"Additional free text not covered by other fields. ">
@@ -118,6 +125,38 @@ ontology
 					text = <"Number of stitches">
 					description = <"">
 				>
+				["at0010"] = <
+					text = <"Suture thread size">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"2-0">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"3-0">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"4-0">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"5-0">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"6-0">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"7-0">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"8-0">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -134,10 +173,6 @@ ontology
 					text = <"Sutur material">
 					description = <"Beskrivning av det material som använts för suturen">
 					comment = <"Kodning till en terminologi av sutur materialet är att föredra i de fall det är möjligt. ">
-				>
-				["at0003"] = <
-					text = <"*Size suture thread (en)">
-					description = <"Diameter/storlek på suturtråd">
 				>
 				["at0004"] = <
 					text = <"Kommentar">
@@ -157,6 +192,38 @@ ontology
 				>
 				["at0009"] = <
 					text = <"Antal stygn">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Suturtråd storlek">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*2-0 (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*3-0 (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*4-0 (en)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"*5-0 (en)">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"*6-0 (en)">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"*7-0 (en)">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"*8-0 (en)">
 					description = <"">
 				>
 			>
