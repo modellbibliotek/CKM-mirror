@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fff41fb1739d042cb056020d7a85e179">
+		["MD5-CAM-1.0.1"] = <"d870ad6df68d95104820446cd8cedecc">
 		["build_uid"] = <"c69dda53-37dc-3ebd-924a-d73e1c2e37e2">
 	>
 
@@ -76,16 +76,7 @@ definition
 			}
 			ELEMENT[at0018] occurrences matches {0..1} matches {    -- Suture location
 				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0019,    -- *Porthus (sv)
-							at0020,    -- *Portficka (sv)
-							at0021,    -- *Halsincision (sv)
-							at0022,    -- *Insticksställe för tunnelerad kateter (sv)
-							at0023]    -- *Vingar (sv)
-						}
-					}
+					DV_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Comment
@@ -175,26 +166,6 @@ ontology
 					text = <"Suture location">
 					description = <"">
 				>
-				["at0019"] = <
-					text = <"*Porthus (sv)">
-					description = <"">
-				>
-				["at0020"] = <
-					text = <"*Portficka (sv)">
-					description = <"">
-				>
-				["at0021"] = <
-					text = <"*Halsincision (sv)">
-					description = <"">
-				>
-				["at0022"] = <
-					text = <"*Insticksställe för tunnelerad kateter (sv)">
-					description = <"">
-				>
-				["at0023"] = <
-					text = <"*Vingar (sv)">
-					description = <"*? vingar på SVP (sv)">
-				>
 			>
 		>
 		["sv"] = <
@@ -267,26 +238,6 @@ ontology
 				["at0018"] = <
 					text = <"Suturställe">
 					description = <"">
-				>
-				["at0019"] = <
-					text = <"Porthus">
-					description = <"">
-				>
-				["at0020"] = <
-					text = <"Portficka">
-					description = <"">
-				>
-				["at0021"] = <
-					text = <"Halsincision">
-					description = <"">
-				>
-				["at0022"] = <
-					text = <"Insticksställe för tunnelerad kateter">
-					description = <"">
-				>
-				["at0023"] = <
-					text = <"Vingar">
-					description = <"? vingar på SVP">
 				>
 			>
 		>
