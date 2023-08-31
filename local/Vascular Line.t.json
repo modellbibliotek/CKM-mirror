@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "45.0.0",
+      "sem_ver" : "46.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "65fdbf56710001919494677aca4dae8c"
+      "MD5-CAM-1.0.1" : "31852c3bbe26d4ed035c48c186359049"
     },
     "details" : {
       "de" : {
@@ -3650,6 +3650,25 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "Verifiering av läge på access",
+                    "@type" : "DV_TEXT"
+                  },
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0049.1",
               "attributes" : [ ],
@@ -6397,6 +6416,13 @@
             "text" : "Namn på procedur",
             "description" : "Identifiering av procedur med namn.\n\nBör automatiskt kunna registreras beroende på vilken typ av kärlacces man plockar ut.",
             "comment" : "Kodning av den specifika proceduren med en terminologi är att föredra, där det är möjligt."
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070",
+            "text" : "Indikation",
+            "description" : "Den kliniska eller processrelaterade orsaken till ingreppet.",
+            "comment" : "Kodning av indikationen med en terminologi är att föredra, där det är möjligt. Detta dataelement tillåter flera förekomster. Till exempel: 'Misslyckad tarmberedning' eller 'Screening av tarmcancer'.\n\nDetta har vi beslutat inte snomedkoda då detta inte är primärdokumentation utan det borde komma från ex. en vårdplan eller annan dokumentation. "
           }
         }
       },
@@ -6632,7 +6658,15 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "sv" : { }
+        "sv" : {
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Odling på kateterspets",
+            "description" : "",
+            "comment" : "Detta borde inte behövas utan denna dokumentation borde ske i samband med beställning av laboratorieundersökning. När man väl dokumenterar en extraktion ska provet redan vara skickat. "
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
