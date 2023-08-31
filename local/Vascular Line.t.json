@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "41.1.0",
+      "sem_ver" : "41.2.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "d71485cf6130995b851e743bba86750c"
+      "MD5-CAM-1.0.1" : "9fae12d35b6dcb2c8004b9ae2e767b6b"
     },
     "details" : {
       "de" : {
@@ -2786,7 +2786,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Insättning/registrering",
+            "text" : "Inläggning/registrering",
             "description" : "En klinisk aktivitet utförd för screening, undersökande, diagnostiska, botande, terapeutiska, utvärderande eller palliativa ändamål."
           },
           "at0070.2" : {
@@ -2826,8 +2826,8 @@
           },
           "at0049.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0049",
-            "text" : "Beskrivning",
+            "code" : "at0049.1",
+            "text" : "Beskrivning typ av kärlaccess",
             "description" : "Beskrivning av proceduren, anpassad till det aktuella steget.\n\nAnvänds i denna template för att beskriva vilken typ av kärlaccess som lagts in/registrerats. ",
             "comment" : "Till exempel: beskrivning av utförandet och fyndet från proceduren, det avbrutna försöket eller avslutandet av proceduren."
           },
@@ -5826,6 +5826,7 @@
                       },
                       "constraint" : [ ],
                       "selectedTerminologies" : [ "ors_ext_centr_access" ],
+                      "limitToList" : false,
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "ors_ext_centr_access",
                         "code" : "1",
