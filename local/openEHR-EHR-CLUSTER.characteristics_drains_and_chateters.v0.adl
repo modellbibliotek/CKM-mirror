@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1109d6260c59342201a8650e15b2f88c">
+		["MD5-CAM-1.0.1"] = <"7af44abe19eede397059fa196bb4575e">
 		["build_uid"] = <"d4c08d7a-3723-37a1-b0ed-0e0a6f02b761">
 	>
 
@@ -114,7 +114,7 @@ definition
 					DV_CODED_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0011] occurrences matches {0..1} matches {    -- Description
+			ELEMENT[at0011] occurrences matches {0..1} matches {    -- Comment
 				value matches {
 					DV_CODED_TEXT matches {*}
 				}
@@ -183,7 +183,7 @@ ontology
 					description = <"Charrière, french (Gauge of catheters)">
 				>
 				["at0011"] = <
-					text = <"Description">
+					text = <"Comment">
 					description = <"Narrative description that can be used to further refine and support the description of hte characteristics of a drain and catheter ">
 				>
 			>
@@ -242,7 +242,7 @@ ontology
 					description = <"*Charrière, french (Gauge of catheters) (en)">
 				>
 				["at0011"] = <
-					text = <"Beskrivning">
+					text = <"Kommentar">
 					description = <"Kommentarer avseende utrustningen som inte beskrivs i övriga fält. ">
 				>
 			>
