@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "51.0.0",
+      "sem_ver" : "51.0.1",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "b7412153b0c875cd9876f968b7658ccc"
+      "MD5-CAM-1.0.1" : "52484a4ba4285d18751616ddd908fe69"
     },
     "details" : {
       "de" : {
@@ -874,8 +874,8 @@
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Förfrågan om hälso-och sjukvårdsrelaterad tjänst",
+            "code" : "at0000.1",
+            "text" : "Kärlaccess",
             "description" : "Förfrågan om en hälso- och sjukvårdsrelaterad tjänst eller aktivitet som behöver genomföras av en kliniker, organisation eller myndighet. \r\n",
             "comment" : "För tex. en central venaccess är remissen ofta då processen startas igång. Oftast specificeras til len viss nivå vilken typ av access. \n\nDock är inte detta alltid fallet, ibland sätts den in utan en förfrågan. \n\nKan förfrågan vara en ordination? Är det samma sak. "
           }
