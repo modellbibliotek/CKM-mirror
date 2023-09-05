@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "03bf3420636998096c68461db476ce54",
+      "MD5-CAM-1.0.1" : "e7fe3c6dc408f3fa4d7e5ddc00e16acf",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933"
     },
     "details" : {
@@ -938,6 +938,114 @@
               "occurrences" : "0..0",
               "nodeId" : "at0049.1",
               "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0070.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "local_terms_inidkation_avlägsnande_kärlaccess"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms_inidkation_avlägsnande_kärlaccess" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms_inidkation_avlägsnande_kärlaccess",
+                        "code" : "1",
+                        "value" : "Oavsiktligt avlägsnande"
+                      }, {
+                        "terminologyId" : "local_terms_inidkation_avlägsnande_kärlaccess",
+                        "code" : "2",
+                        "value" : "Tecken på infektion"
+                      }, {
+                        "terminologyId" : "local_terms_inidkation_avlägsnande_kärlaccess",
+                        "code" : "3",
+                        "value" : "Avlägsnande enligt plan"
+                      }, {
+                        "terminologyId" : "local_terms_inidkation_avlägsnande_kärlaccess",
+                        "code" : "4",
+                        "value" : "Säkerställd infektion"
+                      }, {
+                        "terminologyId" : "local_terms_inidkation_avlägsnande_kärlaccess",
+                        "code" : "5",
+                        "value" : "Byte till annan centralvenös infart"
+                      }, {
+                        "terminologyId" : "local_terms_inidkation_avlägsnande_kärlaccess",
+                        "code" : "6",
+                        "value" : "Infarten fungerar inte längre"
+                      }, {
+                        "terminologyId" : "local_terms_inidkation_avlägsnande_kärlaccess",
+                        "code" : "7",
+                        "value" : "Smärta"
+                      }, {
+                        "terminologyId" : "local_terms_inidkation_avlägsnande_kärlaccess",
+                        "code" : "8",
+                        "value" : "Subkutan infiltration"
+                      }, {
+                        "terminologyId" : "local_terms_inidkation_avlägsnande_kärlaccess",
+                        "code" : "9",
+                        "value" : "Cirkulationsstörning"
+                      }, {
+                        "terminologyId" : "local_terms_inidkation_avlägsnande_kärlaccess",
+                        "code" : "10",
+                        "value" : "Ocklusion"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0065.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "met_ext_access"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "met_ext_access" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "met_ext_access",
+                        "code" : "1",
+                        "value" : "Enkel dragning"
+                      }, {
+                        "terminologyId" : "met_ext_access",
+                        "code" : "2",
+                        "value" : "Operation"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
