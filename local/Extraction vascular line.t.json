@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e7fe3c6dc408f3fa4d7e5ddc00e16acf",
+      "MD5-CAM-1.0.1" : "af00f3dad6fd71df5980f7450e03dfe1",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933"
     },
     "details" : {
@@ -1067,6 +1067,60 @@
               "occurrences" : "0..0",
               "nodeId" : "at0048.1",
               "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0006.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "ors_ext_centr_access"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "ors_ext_centr_access" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "ors_ext_centr_access",
+                        "code" : "1",
+                        "value" : "Cirkulationspåverkan"
+                      }, {
+                        "terminologyId" : "ors_ext_centr_access",
+                        "code" : "2",
+                        "value" : "Respiratorisk påverkan"
+                      }, {
+                        "terminologyId" : "ors_ext_centr_access",
+                        "code" : "3",
+                        "value" : "Parestesi"
+                      }, {
+                        "terminologyId" : "ors_ext_centr_access",
+                        "code" : "4",
+                        "value" : "Svår smärta"
+                      }, {
+                        "terminologyId" : "ors_ext_centr_access",
+                        "code" : "5",
+                        "value" : "Hematom"
+                      }, {
+                        "terminologyId" : "ors_ext_centr_access",
+                        "code" : "6",
+                        "value" : "Blödning"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
