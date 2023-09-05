@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "1.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "2f98b089681de1106daad1f6006132be",
+      "MD5-CAM-1.0.1" : "03bf3420636998096c68461db476ce54",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933"
     },
     "details" : {
@@ -875,6 +875,64 @@
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
             "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "KVÅ"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "KVÅ" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP181",
+                        "value" : "Avlägsnande av icke tunnelerad central venkateter, enlumen"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP182",
+                        "value" : "Avlägsnande av tunnelerad central venkateter, enlumen"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP183",
+                        "value" : "Avlägsnande av perifert insatt central kateter (PICC)"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP282",
+                        "value" : "Avlägsnande av central venkateter, flerlumen"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP382",
+                        "value" : "Avlägsnande av central venkateter för dialys, tunnelerad"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SP789",
+                        "value" : "Avlägsnande av vaskulär injektionsport UNS"
+                      }, {
+                        "terminologyId" : "KVÅ",
+                        "code" : "SQ989",
+                        "value" : "Avlägsnande av artärkateter UNS"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
