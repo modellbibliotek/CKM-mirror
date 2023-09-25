@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "51.0.1",
+      "sem_ver" : "52.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2803313bf3a633c746b33339f0ca2933",
-      "MD5-CAM-1.0.1" : "52484a4ba4285d18751616ddd908fe69"
+      "MD5-CAM-1.0.1" : "154496fcf838c59cd5045d5be8eb5556"
     },
     "details" : {
       "de" : {
@@ -9643,6 +9643,14 @@
                     "terminologyId" : "local_terms",
                     "code" : "5",
                     "value" : "V Cephalica"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "6",
+                    "value" : "V Femoralis"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "7",
+                    "value" : "V Mediana cubitu"
                   } ]
                 } ]
               } ],
