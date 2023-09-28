@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.8.0",
+      "sem_ver" : "0.9.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "83acd6dfed3f741819457c6c15fae82a",
+      "MD5-CAM-1.0.1" : "0cb0e0dc4320ac49db2dc8d8e623517c",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B"
     },
     "details" : {
@@ -2147,14 +2147,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.120",
             "description" : ""
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Adverse reaction risk (substance)",
-            "description" : "Risk of harmful or undesirable physiological response which is unique to an individual and associated with exposure to a substance.",
-            "comment" : "Substances include, but are not limited to: a therapeutic substance administered correctly at an appropriate dosage for the individual; food; material derived from plants or animals; or venom from insect stings.",
-            "source" : "openEHR,FHIR"
           }
         },
         "pt-br" : {
