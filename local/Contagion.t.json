@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.5.0",
+      "sem_ver" : "0.6.0",
       "build_uid" : "c6c16004-7406-4da5-8b73-d61c9a07ba0b",
-      "MD5-CAM-1.0.1" : "0b250b5aaef21ae58246d66f2f6a5f56",
+      "MD5-CAM-1.0.1" : "8ee9da14c2e7cadd4fcdb39381d19f78",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
     },
     "details" : {
@@ -807,8 +807,8 @@
                       "selectedTerminologies" : [ "http://snomed.info/id/" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "http://snomed.info/id/",
-                        "code" : "000000001",
-                        "value" : "Blodsmitta (Svårt hitta lämplig snomedkod, leta i andra kodverk?)"
+                        "code" : "64301000052105",
+                        "value" : "blodsmitta hos gravid"
                       } ]
                     } ]
                   } ],
