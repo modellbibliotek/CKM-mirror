@@ -417,7 +417,7 @@
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-adverse_reaction_risk-001.v1",
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-adverse_reaction_risk-001.v2",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -1786,11 +1786,11 @@
         }
       }
     },
-    "parentArchetypeId" : "openEHR-EHR-EVALUATION.adverse_reaction_risk.v1",
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.adverse_reaction_risk.v2",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-EVALUATION.ovl-adverse_reaction_risk-001.v1"
+      "value" : "openEHR-EHR-EVALUATION.ovl-adverse_reaction_risk-001.v2"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
