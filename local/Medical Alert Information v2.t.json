@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.10.0",
+      "sem_ver" : "0.11.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "64a6367f6e60dc72bbe1856225996869",
+      "MD5-CAM-1.0.1" : "5c9f5f408b567cf7c21709b63848fe7b",
       "PARENT:MD5-CAM-1.0.1" : "A0DA8D01B967B2B05FC941F6E389A94B"
     },
     "details" : {
@@ -1842,7 +1842,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.120" ],
+                      "constraint" : [ "ac0.121" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -2086,16 +2086,16 @@
           },
           "at0063.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0063",
-            "text" : "Status",
+            "code" : "at0063.1",
+            "text" : "Verification status",
             "description" : "Assertion about the certainty of the propensity, or potential future risk, of the identified 'Substance' to cause a reaction.",
             "comment" : "Decision support would typically raise alerts for 'Suspected', 'Likely', 'Confirmed', and ignore a 'Refuted' reaction. Clinical systems may choose not to display Adverse reaction entries with a \n\n\n'Refuted' status in the Adverse Reaction List. \n\nHowever, 'Refuted' may be useful for reconciliation of the adverse reaction list or when communicating between systems\n\n. Some implementations may choose to make this field mandatory.\n 'Resolved' may be used variably across systems, depending on clinical use and context - there appears to be differing opinion whether this should still be used to raise potential alerts or to display in an Adverse Reaction List. The free text data type will allow for local variation by enabling other value sets to be applied to this data element in a template - in this situation it is recommended that values should be coded using a terminology.",
             "source" : "FHIR, DAM"
           },
-          "ac0.120" : {
+          "ac0.121" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.120",
+            "code" : "ac0.121",
             "description" : ""
           }
         },
@@ -2106,10 +2106,10 @@
             "code" : "ac0.113",
             "description" : ""
           },
-          "ac0.120" : {
+          "ac0.121" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.120",
+            "code" : "ac0.121",
             "description" : ""
           }
         },
@@ -2120,10 +2120,10 @@
             "code" : "ac0.113",
             "description" : ""
           },
-          "ac0.120" : {
+          "ac0.121" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.120",
+            "code" : "ac0.121",
             "description" : ""
           }
         },
@@ -2134,10 +2134,10 @@
             "code" : "ac0.113",
             "description" : ""
           },
-          "ac0.120" : {
+          "ac0.121" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.120",
+            "code" : "ac0.121",
             "description" : ""
           }
         },
@@ -2180,10 +2180,10 @@
             "code" : "ac0.113",
             "description" : ""
           },
-          "ac0.120" : {
+          "ac0.121" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.120",
+            "code" : "ac0.121",
             "description" : ""
           }
         }
@@ -2780,6 +2780,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.120",
           "members" : [ "at0127", "at0065", "at0066" ]
+        },
+        "ac0.121" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.121",
+          "members" : [ "at0064", "at0065" ]
         }
       }
     },
