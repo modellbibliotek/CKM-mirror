@@ -16,10 +16,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2023-02-21">
 		["name"] = <"Erik Sundvall">
 		["organisation"] = <"Karolinska University hospital + Institute & Linköping University, Sweden">
 		["email"] = <"erik.sundvall@regionstockholm.se">
-		["date"] = <"2023-02-21">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c6695198ed1b497729b419f5703d1eb2">
+		["MD5-CAM-1.0.1"] = <"dccbd0bfe110e9eb5dbded8e6501e5f9">
 		["build_uid"] = <"729a8fdc-248c-3590-a4cb-4ae63dfe3379">
 	>
 
@@ -49,13 +49,13 @@ definition
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0002,    -- Antikoagulantiabehandling
 							at0003,    -- Antikoagulantiabehandling, Vitamin K-antagonister
 							at0004,    -- Antikoagulantiabehandling, Heparingruppen
 							at0005,    -- Antikoagulantiabehandling,  Direkt trombinhämmande medel
 							at0006,    -- Antikoagulantiabehandling, Direktverkande faktor Xa-hämmare
 							at0007,    -- Cytostatikabehandling
-							at0008]    -- Immunomodukerande behandling
+							at0008,    -- Immunstimulerande medel
+							at0009]    -- Immunsuppressiva medel
 						}
 					}
 				}
@@ -74,10 +74,6 @@ ontology
 				["at0001"] = <
 					text = <"Behandlingskategori">
 					description = <"">
-				>
-				["at0002"] = <
-					text = <"Antikoagulantiabehandling">
-					description = <"(ATC: B01A)">
 				>
 				["at0003"] = <
 					text = <"Antikoagulantiabehandling, Vitamin K-antagonister">
@@ -100,8 +96,12 @@ ontology
 					description = <"(ATC: L01)">
 				>
 				["at0008"] = <
-					text = <"Immunomodukerande behandling">
-					description = <"(ATC: L03A och L04)">
+					text = <"Immunstimulerande medel">
+					description = <"(ATC: L03A)">
+				>
+				["at0009"] = <
+					text = <"Immunsuppressiva medel">
+					description = <"(ATC: L04)">
 				>
 			>
 		>
@@ -114,10 +114,6 @@ ontology
 				["at0001"] = <
 					text = <"*Behandlingskategori (sv)">
 					description = <"">
-				>
-				["at0002"] = <
-					text = <"*Antikoagulantiabehandling (sv)">
-					description = <"*(ATC: B01A) (sv)">
 				>
 				["at0003"] = <
 					text = <"*Antikoagulantiabehandling, Vitamin K-antagonister (sv)">
@@ -140,8 +136,12 @@ ontology
 					description = <"*(ATC: L01) (sv)">
 				>
 				["at0008"] = <
-					text = <"*Immunomodukerande behandling (sv)">
-					description = <"*(ATC: L03A och L04) (sv)">
+					text = <"*Immunstimulerande medel (sv)">
+					description = <"*(ATC: L03A) (sv)">
+				>
+				["at0009"] = <
+					text = <"*Immunsuppressiva medel (sv)">
+					description = <"*(ATC: L04) (sv)">
 				>
 			>
 		>
