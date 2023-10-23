@@ -19,8 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "75c98599a232244ee61b055b6261b36f",
-      "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
+      "MD5-CAM-1.0.1" : "f192dfc0aebfcd927e1a90cfc12fee5b",
+      "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
+      "sem_ver" : "0.1.0",
+      "build_uid" : ""
     },
     "details" : {
       "de" : {
@@ -149,7 +151,7 @@
   "differential" : true,
   "archetypeId" : {
     "@type" : "ARCHETYPE_HRID",
-    "value" : "openEHR-EHR-SECTION.hypersentitivities allergies and intolerances.v1"
+    "value" : "openEHR-EHR-SECTION.hypersentitivities_allergies_and_intolerances.v1"
   },
   "definition" : {
     "@type" : "C_COMPLEX_OBJECT",
@@ -212,7 +214,7 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "968a2645-72f4-32b4-864a-c82fe3dfcc38",
+  "buildUid" : "11e2720e-2616-3b7d-8eea-ccbc1d0ddafa",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
@@ -615,6 +617,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
               "nodeId" : "at0130.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -632,7 +635,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.123" ],
+                      "constraint" : [ "ac0.124" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -648,6 +651,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
               "nodeId" : "at0063.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -665,7 +669,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.121" ],
+                      "constraint" : [ "ac0.125" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -681,6 +685,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
               "nodeId" : "at0101.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -772,6 +777,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
               "nodeId" : "at0117.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -915,16 +921,16 @@
             "comment" : "Decision support would typically raise alerts for 'Suspected', 'Likely', 'Confirmed', and ignore a 'Refuted' reaction. Clinical systems may choose not to display Adverse reaction entries with a \n\n\n'Refuted' status in the Adverse Reaction List. \n\nHowever, 'Refuted' may be useful for reconciliation of the adverse reaction list or when communicating between systems\n\n. Some implementations may choose to make this field mandatory.\n 'Resolved' may be used variably across systems, depending on clinical use and context - there appears to be differing opinion whether this should still be used to raise potential alerts or to display in an Adverse Reaction List. The free text data type will allow for local variation by enabling other value sets to be applied to this data element in a template - in this situation it is recommended that values should be coded using a terminology.",
             "source" : "FHIR, DAM"
           },
-          "ac0.121" : {
+          "ac0.124" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.121",
+            "code" : "ac0.124",
             "description" : ""
           },
-          "ac0.123" : {
+          "ac0.125" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.123",
+            "code" : "ac0.125",
             "description" : ""
           }
         },
@@ -935,16 +941,16 @@
             "code" : "ac0.113",
             "description" : ""
           },
-          "ac0.121" : {
+          "ac0.124" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.121",
+            "code" : "ac0.124",
             "description" : ""
           },
-          "ac0.123" : {
+          "ac0.125" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.123",
+            "code" : "ac0.125",
             "description" : ""
           }
         },
@@ -955,16 +961,16 @@
             "code" : "ac0.113",
             "description" : ""
           },
-          "ac0.121" : {
+          "ac0.124" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.121",
+            "code" : "ac0.124",
             "description" : ""
           },
-          "ac0.123" : {
+          "ac0.125" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.123",
+            "code" : "ac0.125",
             "description" : ""
           }
         },
@@ -975,16 +981,16 @@
             "code" : "ac0.113",
             "description" : ""
           },
-          "ac0.121" : {
+          "ac0.124" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.121",
+            "code" : "ac0.124",
             "description" : ""
           },
-          "ac0.123" : {
+          "ac0.125" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.123",
+            "code" : "ac0.125",
             "description" : ""
           }
         },
@@ -1027,16 +1033,16 @@
             "code" : "ac0.113",
             "description" : ""
           },
-          "ac0.121" : {
+          "ac0.124" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.121",
+            "code" : "ac0.124",
             "description" : ""
           },
-          "ac0.123" : {
+          "ac0.125" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.123",
+            "code" : "ac0.125",
             "description" : ""
           }
         }
@@ -1648,6 +1654,16 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.123",
           "members" : [ "at0131", "at0132" ]
+        },
+        "ac0.124" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.124",
+          "members" : [ "at0131", "at0132" ]
+        },
+        "ac0.125" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.125",
+          "members" : [ "at0064", "at0065" ]
         }
       }
     },
