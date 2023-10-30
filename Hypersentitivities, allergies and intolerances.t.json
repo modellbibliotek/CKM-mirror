@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "f192dfc0aebfcd927e1a90cfc12fee5b",
+      "MD5-CAM-1.0.1" : "7b76ccaaa0225d669e218ac4c118947b",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "0.2.0",
       "build_uid" : ""
     },
     "details" : {
@@ -170,7 +170,7 @@
       "children" : [ {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "EVALUATION",
-        "occurrences" : "0..1",
+        "occurrences" : "0..*",
         "nodeId" : "at0.2",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -601,6 +601,57 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
+              "nodeId" : "at0120.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "http://snomed.info/id/"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "http://snomed.info/id/" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "http://snomed.info/id/",
+                        "code" : "360215002",
+                        "value" : "farmaceutiskt hjälpämne"
+                      }, {
+                        "terminologyId" : "http://snomed.info/id/",
+                        "code" : "410942007",
+                        "value" : "läkemedel"
+                      }, {
+                        "terminologyId" : "http://snomed.info/id/",
+                        "code" : "441900009",
+                        "value" : "kemikalie"
+                      }, {
+                        "terminologyId" : "http://snomed.info/id/",
+                        "code" : "763158003",
+                        "value" : "läkemedel (produkt)"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -720,56 +771,6 @@
                       } ]
                     } ]
                   } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0120.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "http://snomed.info/id/"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "http://snomed.info/id/" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "http://snomed.info/id/",
-                        "code" : "360215002",
-                        "value" : "farmaceutiskt hjälpämne"
-                      }, {
-                        "terminologyId" : "http://snomed.info/id/",
-                        "code" : "410942007",
-                        "value" : "läkemedel"
-                      }, {
-                        "terminologyId" : "http://snomed.info/id/",
-                        "code" : "441900009",
-                        "value" : "kemikalie"
-                      }, {
-                        "terminologyId" : "http://snomed.info/id/",
-                        "code" : "763158003",
-                        "value" : "läkemedel (produkt)"
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                }, {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
