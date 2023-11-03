@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"dccbd0bfe110e9eb5dbded8e6501e5f9">
+		["MD5-CAM-1.0.1"] = <"265c422cf1a42da158b1c048d1dc7f0c">
 		["build_uid"] = <"729a8fdc-248c-3590-a4cb-4ae63dfe3379">
 	>
 
@@ -112,7 +112,7 @@ ontology
 					description = <"*medical_treatment_category (sv)">
 				>
 				["at0001"] = <
-					text = <"*Behandlingskategori (sv)">
+					text = <"*Treatment category">
 					description = <"">
 				>
 				["at0003"] = <
