@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "7b7cf8ee3314b15de33766de95ea742b",
+      "MD5-CAM-1.0.1" : "40f4fc631f569734ebe21112490f00e9",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
-      "sem_ver" : "0.18.0",
+      "sem_ver" : "0.19.0",
       "build_uid" : ""
     },
     "details" : {
@@ -1948,7 +1948,57 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "local_terms"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "72506001",
+                        "value" : "implanterbar defibrillator"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "14106009",
+                        "value" : "pacemaker"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "705991002",
+                        "value" : "mekanisk hjärtklaffprotes"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "72821000052105",
+                        "value" : "mikrospiral, magnetisk metall"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "72811000052102",
+                        "value" : "kärlklämma, magnetisk metall"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "263805004",
+                        "value" : "magnetisk metall"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "258593008",
+                        "value" : "ventrikelshunt"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "360100007",
+                        "value" : "trakeal stent"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "69805005",
+                        "value" : "insulinpump"
+                      } ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -2334,7 +2384,57 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "local_terms"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "413679007",
+                        "value" : "benmärgsvätska"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "413604003",
+                        "value" : "autolog benmärgsvätska"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "413478009",
+                        "value" : "allogen benmärgsvätska"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "420291005",
+                        "value" : "transplantatmaterial från hjärta"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "421751001",
+                        "value" : "transplantatmaterial från lever"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "421525000",
+                        "value" : "transplantatmaterial från lunga"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "420852008",
+                        "value" : "transplantatmaterial från njure"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "421263007",
+                        "value" : "transplantatmaterial från pankreas"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "73341000052100",
+                        "value" : "transplantatmaterial från tarm"
+                      } ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
