@@ -19,10 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "083fd053855dd51a8e5691346678ca7b",
+      "MD5-CAM-1.0.1" : "512e97c97403df5c457e70990c17bc41",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
-      "sem_ver" : "1.0.0-alpha.2",
-      "build_uid" : "05430c79-7af6-4161-8be3-b98662790fa1"
+      "sem_ver" : "1.0.0-alpha.3",
+      "build_uid" : "76cf2e54-12a1-4646-86b6-16bebb2db0f1"
     },
     "details" : {
       "de" : {
@@ -2066,8 +2066,8 @@
                         "value" : "insulinpump"
                       }, {
                         "terminologyId" : "local_terms",
-                        "code" : "653586018",
-                        "value" : "Uretrasfinkterprotes (physical object"
+                        "code" : "261680000",
+                        "value" : "uretrasfinkterprotes"
                       } ]
                     } ]
                   } ],
