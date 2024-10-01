@@ -19,10 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "b1ec52f15cae3efa01c37b62750cc21b",
+      "MD5-CAM-1.0.1" : "39eaa57d31dd71176ecc820fd6658877",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
-      "sem_ver" : "1.0.0-alpha.4",
-      "build_uid" : "3c32a65c-dd82-4330-a27d-848edf39c116"
+      "sem_ver" : "1.0.0-alpha.5",
+      "build_uid" : "e82ea43c-2a74-491d-9123-7ccd2560058b"
     },
     "details" : {
       "de" : {
@@ -434,20 +434,20 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation"
+                        "value" : "http://snomed.info/id/, 59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation" ],
+                      "selectedTerminologies" : [ "http://snomed.info/id/, 59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation",
+                        "terminologyId" : "http://snomed.info/id/, 59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation",
                         "code" : "243142003",
                         "value" : "BiPAP-behandling"
                       }, {
-                        "terminologyId" : "59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation",
+                        "terminologyId" : "http://snomed.info/id/, 59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation",
                         "code" : "385971003",
                         "value" : "dialysbehandling"
                       }, {
-                        "terminologyId" : "59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation",
+                        "terminologyId" : "http://snomed.info/id/, 59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation",
                         "code" : "416608005",
                         "value" : "läkemedelsbehandling"
                       } ]
@@ -1455,180 +1455,180 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|"
+                        "value" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|" ],
+                      "selectedTerminologies" : [ "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "41291007",
                         "value" : "angioödem"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "9651007",
                         "value" : "långt QT-syndrom"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "70995007",
                         "value" : "pulmonell hypertoni"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "373662000",
                         "value" : "primär binjurebarksinsufficiens"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "405501007",
                         "value" : "malign hypertermi"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "64779008",
                         "value" : "blodkoagulationssjukdom"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "53891000052101",
                         "value" : "trombocytrelaterad sjukdom med ökad blödningstendens"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "126729006",
                         "value" : "trombotisk mikroangiopati"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "234467004",
                         "value" : "trombofili"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "91637004",
                         "value" : "myasthenia gravis"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "234422006",
                         "value" : "akut intermittent porfyri"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "58275005",
                         "value" : "porphyria variegata"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "7425008",
                         "value" : "hereditär koproporfyri"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "64081000",
                         "value" : "brist på porfobilinogensyntetas"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "360631004",
                         "value" : "brist på kolinesteras 2, ospecifik"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "33211000",
                         "value" : "komplikation till anestesi"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "718447001",
                         "value" : "svår intubation"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "707147002",
                         "value" : "aspleni"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "31323000",
                         "value" : "svår kombinerad immunbrist"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "17182001",
                         "value" : "agranulocytos"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "770942003",
                         "value" : "Kostmanns syndrom"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "89454001",
                         "value" : "Shwachmans syndrom"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "203551000052109",
                         "value" : "störning av neutrofilfunktion"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "699007002",
                         "value" : "arteriovenös fistel in situ"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "27718001",
                         "value" : "Maple syrup urine disease"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "116020001",
                         "value" : "rubbning i omsättningen av förgrenade aminosyror"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "39929009",
                         "value" : "rubbning i fettsyraomsättningen"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "7046009",
                         "value" : "hyperleucin-isoleucinemi"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "87827003",
                         "value" : "brist på isovaleryl-CoA-dehydrogenas"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "42393006",
                         "value" : "metylmalonisk acidemi"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "69080001",
                         "value" : "brist på propionyl-CoA-karboxylas"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "<<1156591005",
                         "value" : "fettsyreoxidationsdefekt"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "82319005",
                         "value" : "brist på acyl-CoA-dehydrogenas"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "36444000",
                         "value" : "rubbning i ureaomsättningscykeln"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "237929000",
                         "value" : "rubbning i lysin- och hydroxilysinomsättningen"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "41013004",
                         "value" : "brist på argininosuccinatlyas"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "398680004",
                         "value" : "citrullinemi"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "29633007",
                         "value" : "glykogeninlagringssjukdom"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "39452003",
                         "value" : "rubbning i fruktosomsättningen"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "190760009",
                         "value" : "rubbningar i pyruvatomsättningen och glukoneogenesen"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "75934005",
                         "value" : "ämnesomsättningssjukdom"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "238006008",
                         "value" : "rubbning i purin- och pyrimidinomsättningen"
                       }, {
-                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "16851005",
                         "value" : "mitokondriell myopati"
                       } ]
@@ -2028,48 +2028,48 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "59841000052105 |urval implantat, uppmärksamhetsinformation|"
+                        "value" : "http://snomed.info/id/, 59841000052105 |urval implantat, uppmärksamhetsinformation|"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "59841000052105 |urval implantat, uppmärksamhetsinformation|" ],
+                      "selectedTerminologies" : [ "http://snomed.info/id/, 59841000052105 |urval implantat, uppmärksamhetsinformation|" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "72506001",
                         "value" : "implanterbar defibrillator"
                       }, {
-                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "14106009",
                         "value" : "pacemaker"
                       }, {
-                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "705991002",
                         "value" : "mekanisk hjärtklaffprotes"
                       }, {
-                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "72821000052105",
                         "value" : "mikrospiral, magnetisk metall"
                       }, {
-                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "72811000052102",
                         "value" : "kärlklämma, magnetisk metall"
                       }, {
-                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "263805004",
                         "value" : "magnetisk metall"
                       }, {
-                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "258593008",
                         "value" : "ventrikelshunt"
                       }, {
-                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "360100007",
                         "value" : "trakeal stent"
                       }, {
-                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "69805005",
                         "value" : "insulinpump"
                       }, {
-                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "261680000",
                         "value" : "uretrasfinkterprotes"
                       } ]
@@ -2468,44 +2468,44 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|"
+                        "value" : "http://snomed.info/id/, 59861000052106 |urval transplantat, uppmärksamhetsinformation|"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "59861000052106 |urval transplantat, uppmärksamhetsinformation|" ],
+                      "selectedTerminologies" : [ "http://snomed.info/id/, 59861000052106 |urval transplantat, uppmärksamhetsinformation|" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "413679007",
                         "value" : "benmärgsvätska"
                       }, {
-                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "413604003",
                         "value" : "autolog benmärgsvätska"
                       }, {
-                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "413478009",
                         "value" : "allogen benmärgsvätska"
                       }, {
-                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "420291005",
                         "value" : "transplantatmaterial från hjärta"
                       }, {
-                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "421751001",
                         "value" : "transplantatmaterial från lever"
                       }, {
-                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "421525000",
                         "value" : "transplantatmaterial från lunga"
                       }, {
-                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "420852008",
                         "value" : "transplantatmaterial från njure"
                       }, {
-                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "421263007",
                         "value" : "transplantatmaterial från pankreas"
                       }, {
-                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "73341000052100",
                         "value" : "transplantatmaterial från tarm"
                       } ]
