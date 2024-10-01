@@ -19,10 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "512e97c97403df5c457e70990c17bc41",
+      "MD5-CAM-1.0.1" : "b1ec52f15cae3efa01c37b62750cc21b",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
-      "sem_ver" : "1.0.0-alpha.3",
-      "build_uid" : "76cf2e54-12a1-4646-86b6-16bebb2db0f1"
+      "sem_ver" : "1.0.0-alpha.4",
+      "build_uid" : "3c32a65c-dd82-4330-a27d-848edf39c116"
     },
     "details" : {
       "de" : {
@@ -434,20 +434,20 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "http://snomed.info/id/"
+                        "value" : "59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "http://snomed.info/id/" ],
+                      "selectedTerminologies" : [ "59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "http://snomed.info/id/",
+                        "terminologyId" : "59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation",
                         "code" : "243142003",
                         "value" : "BiPAP-behandling"
                       }, {
-                        "terminologyId" : "http://snomed.info/id/",
+                        "terminologyId" : "59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation",
                         "code" : "385971003",
                         "value" : "dialysbehandling"
                       }, {
-                        "terminologyId" : "http://snomed.info/id/",
+                        "terminologyId" : "59831000052104 |urval behandlingar, uppmärksamhetsinformation| & Snomed CT-kod för läkemedelsbehandling enligt UMI informationsspecifikation",
                         "code" : "416608005",
                         "value" : "läkemedelsbehandling"
                       } ]
@@ -1455,180 +1455,180 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "41291007",
                         "value" : "angioödem"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "9651007",
                         "value" : "långt QT-syndrom"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "70995007",
                         "value" : "pulmonell hypertoni"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "373662000",
                         "value" : "primär binjurebarksinsufficiens"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "405501007",
                         "value" : "malign hypertermi"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "64779008",
                         "value" : "blodkoagulationssjukdom"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "53891000052101",
                         "value" : "trombocytrelaterad sjukdom med ökad blödningstendens"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "126729006",
                         "value" : "trombotisk mikroangiopati"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "234467004",
                         "value" : "trombofili"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "91637004",
                         "value" : "myasthenia gravis"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "234422006",
                         "value" : "akut intermittent porfyri"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "58275005",
                         "value" : "porphyria variegata"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "7425008",
                         "value" : "hereditär koproporfyri"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "64081000",
                         "value" : "brist på porfobilinogensyntetas"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "360631004",
                         "value" : "brist på kolinesteras 2, ospecifik"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "33211000",
                         "value" : "komplikation till anestesi"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "718447001",
                         "value" : "svår intubation"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "707147002",
                         "value" : "aspleni"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "31323000",
                         "value" : "svår kombinerad immunbrist"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "17182001",
                         "value" : "agranulocytos"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "770942003",
                         "value" : "Kostmanns syndrom"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "89454001",
                         "value" : "Shwachmans syndrom"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "203551000052109",
                         "value" : "störning av neutrofilfunktion"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "699007002",
                         "value" : "arteriovenös fistel in situ"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "27718001",
                         "value" : "Maple syrup urine disease"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "116020001",
                         "value" : "rubbning i omsättningen av förgrenade aminosyror"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "39929009",
                         "value" : "rubbning i fettsyraomsättningen"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "7046009",
                         "value" : "hyperleucin-isoleucinemi"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "87827003",
                         "value" : "brist på isovaleryl-CoA-dehydrogenas"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "42393006",
                         "value" : "metylmalonisk acidemi"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "69080001",
                         "value" : "brist på propionyl-CoA-karboxylas"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "<<1156591005",
                         "value" : "fettsyreoxidationsdefekt"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "82319005",
                         "value" : "brist på acyl-CoA-dehydrogenas"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "36444000",
                         "value" : "rubbning i ureaomsättningscykeln"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "237929000",
                         "value" : "rubbning i lysin- och hydroxilysinomsättningen"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "41013004",
                         "value" : "brist på argininosuccinatlyas"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "398680004",
                         "value" : "citrullinemi"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "29633007",
                         "value" : "glykogeninlagringssjukdom"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "39452003",
                         "value" : "rubbning i fruktosomsättningen"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "190760009",
                         "value" : "rubbningar i pyruvatomsättningen och glukoneogenesen"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "75934005",
                         "value" : "ämnesomsättningssjukdom"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "238006008",
                         "value" : "rubbning i purin- och pyrimidinomsättningen"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59821000052101 |urval medicinska tillstånd, uppmärksamhetsinformation|",
                         "code" : "16851005",
                         "value" : "mitokondriell myopati"
                       } ]
@@ -2028,44 +2028,48 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "59841000052105 |urval implantat, uppmärksamhetsinformation|"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "59841000052105 |urval implantat, uppmärksamhetsinformation|" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "72506001",
                         "value" : "implanterbar defibrillator"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "14106009",
                         "value" : "pacemaker"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "705991002",
                         "value" : "mekanisk hjärtklaffprotes"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "72821000052105",
                         "value" : "mikrospiral, magnetisk metall"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "72811000052102",
                         "value" : "kärlklämma, magnetisk metall"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
+                        "code" : "263805004",
+                        "value" : "magnetisk metall"
+                      }, {
+                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "258593008",
                         "value" : "ventrikelshunt"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "360100007",
                         "value" : "trakeal stent"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "69805005",
                         "value" : "insulinpump"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59841000052105 |urval implantat, uppmärksamhetsinformation|",
                         "code" : "261680000",
                         "value" : "uretrasfinkterprotes"
                       } ]
@@ -2464,44 +2468,44 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "59861000052106 |urval transplantat, uppmärksamhetsinformation|" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "413679007",
                         "value" : "benmärgsvätska"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "413604003",
                         "value" : "autolog benmärgsvätska"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "413478009",
                         "value" : "allogen benmärgsvätska"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "420291005",
                         "value" : "transplantatmaterial från hjärta"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "421751001",
                         "value" : "transplantatmaterial från lever"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "421525000",
                         "value" : "transplantatmaterial från lunga"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "420852008",
                         "value" : "transplantatmaterial från njure"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "421263007",
                         "value" : "transplantatmaterial från pankreas"
                       }, {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "59861000052106 |urval transplantat, uppmärksamhetsinformation|",
                         "code" : "73341000052100",
                         "value" : "transplantatmaterial från tarm"
                       } ]
