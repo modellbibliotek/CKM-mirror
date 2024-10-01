@@ -19,10 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "4d3a442040f1a4e190f1b26e8c50728d",
+      "MD5-CAM-1.0.1" : "083fd053855dd51a8e5691346678ca7b",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
-      "sem_ver" : "0.20.0",
-      "build_uid" : ""
+      "sem_ver" : "1.0.0-alpha.2",
+      "build_uid" : "05430c79-7af6-4161-8be3-b98662790fa1"
     },
     "details" : {
       "de" : {
@@ -1533,10 +1533,6 @@
                         "value" : "aspleni"
                       }, {
                         "terminologyId" : "local_terms",
-                        "code" : "11999007",
-                        "value" : "inaktiv tuberkulos"
-                      }, {
-                        "terminologyId" : "local_terms",
                         "code" : "31323000",
                         "value" : "svår kombinerad immunbrist"
                       }, {
@@ -1559,6 +1555,82 @@
                         "terminologyId" : "local_terms",
                         "code" : "699007002",
                         "value" : "arteriovenös fistel in situ"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "27718001",
+                        "value" : "Maple syrup urine disease"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "116020001",
+                        "value" : "rubbning i omsättningen av förgrenade aminosyror"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "39929009",
+                        "value" : "rubbning i fettsyraomsättningen"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "7046009",
+                        "value" : "hyperleucin-isoleucinemi"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "87827003",
+                        "value" : "brist på isovaleryl-CoA-dehydrogenas"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "42393006",
+                        "value" : "metylmalonisk acidemi"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "69080001",
+                        "value" : "brist på propionyl-CoA-karboxylas"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "<<1156591005",
+                        "value" : "fettsyreoxidationsdefekt"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "82319005",
+                        "value" : "brist på acyl-CoA-dehydrogenas"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "36444000",
+                        "value" : "rubbning i ureaomsättningscykeln"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "237929000",
+                        "value" : "rubbning i lysin- och hydroxilysinomsättningen"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "41013004",
+                        "value" : "brist på argininosuccinatlyas"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "398680004",
+                        "value" : "citrullinemi"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "29633007",
+                        "value" : "glykogeninlagringssjukdom"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "39452003",
+                        "value" : "rubbning i fruktosomsättningen"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "190760009",
+                        "value" : "rubbningar i pyruvatomsättningen och glukoneogenesen"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "75934005",
+                        "value" : "ämnesomsättningssjukdom"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "238006008",
+                        "value" : "rubbning i purin- och pyrimidinomsättningen"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "16851005",
+                        "value" : "mitokondriell myopati"
                       } ]
                     } ]
                   } ],
@@ -1982,10 +2054,6 @@
                         "value" : "kärlklämma, magnetisk metall"
                       }, {
                         "terminologyId" : "local_terms",
-                        "code" : "263805004",
-                        "value" : "magnetisk metall"
-                      }, {
-                        "terminologyId" : "local_terms",
                         "code" : "258593008",
                         "value" : "ventrikelshunt"
                       }, {
@@ -1996,6 +2064,10 @@
                         "terminologyId" : "local_terms",
                         "code" : "69805005",
                         "value" : "insulinpump"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "653586018",
+                        "value" : "Uretrasfinkterprotes (physical object"
                       } ]
                     } ]
                   } ],
@@ -2522,16 +2594,7 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0004.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
