@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.2",
-      "build_uid" : "c9d838a2-a28f-47c7-9a40-691378fef7c9",
-      "MD5-CAM-1.0.1" : "fa16284aabd5692abc97482735b05533",
+      "sem_ver" : "1.0.0-alpha.3",
+      "build_uid" : "9b72a7f8-1919-439a-a6b2-63fd8f73c3bf",
+      "MD5-CAM-1.0.1" : "d8c934102ed6919b6f9c8c51cd03f41d",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
     },
     "details" : {
@@ -419,24 +419,24 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "59851000052108 |urval smittämnen, uppmärksamhetsinformation|"
+                        "value" : "http://snomed.info/id/, 59851000052108 |urval smittämnen, uppmärksamhetsinformation|"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "59851000052108 |urval smittämnen, uppmärksamhetsinformation|" ],
+                      "selectedTerminologies" : [ "http://snomed.info/id/, 59851000052108 |urval smittämnen, uppmärksamhetsinformation|" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "59851000052108 |urval smittämnen, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59851000052108 |urval smittämnen, uppmärksamhetsinformation|",
                         "code" : "432415000",
                         "value" : "bärare av meticillinresistent Staphylococcus aureus"
                       }, {
-                        "terminologyId" : "59851000052108 |urval smittämnen, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59851000052108 |urval smittämnen, uppmärksamhetsinformation|",
                         "code" : "431109006",
                         "value" : "bärare av vankomycinresistenta enterokocker"
                       }, {
-                        "terminologyId" : "59851000052108 |urval smittämnen, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59851000052108 |urval smittämnen, uppmärksamhetsinformation|",
                         "code" : "762988003",
                         "value" : "bärare av ESBL-producerande bakterier"
                       }, {
-                        "terminologyId" : "59851000052108 |urval smittämnen, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 59851000052108 |urval smittämnen, uppmärksamhetsinformation|",
                         "code" : "61751000052107",
                         "value" : "bärare av ESBL- och karbapenemasproducerande bakterier"
                       } ]
@@ -828,12 +828,12 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "60661000052106 |urval smittsamma sjukdomar, uppmärksamhetsinformation|"
+                        "value" : "http://snomed.info/id/, 60661000052106 |urval smittsamma sjukdomar, uppmärksamhetsinformation|"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "60661000052106 |urval smittsamma sjukdomar, uppmärksamhetsinformation|" ],
+                      "selectedTerminologies" : [ "http://snomed.info/id/, 60661000052106 |urval smittsamma sjukdomar, uppmärksamhetsinformation|" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "60661000052106 |urval smittsamma sjukdomar, uppmärksamhetsinformation|",
+                        "terminologyId" : "http://snomed.info/id/, 60661000052106 |urval smittsamma sjukdomar, uppmärksamhetsinformation|",
                         "code" : "64301000052105",
                         "value" : "blodsmitta hos gravid"
                       } ]
