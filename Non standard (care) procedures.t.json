@@ -19,10 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "5722901217b2e7dc6c331c857628c9f4",
+      "MD5-CAM-1.0.1" : "6642b9680f3788bd910959025744229e",
       "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
-      "sem_ver" : "0.5.0",
-      "build_uid" : ""
+      "sem_ver" : "1.0.0-alpha.2",
+      "build_uid" : "130c3e70-f35e-4b45-854f-33a37137321a"
     },
     "details" : {
       "de" : {
@@ -416,28 +416,28 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "http://snomed.info/id/"
+                        "value" : "http://snomed.info/id/, 59881000052100 |urval särskilda vårdrutiner, uppmärksamhetsinformation|"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "http://snomed.info/id/" ],
+                      "selectedTerminologies" : [ "http://snomed.info/id/, 59881000052100 |urval särskilda vårdrutiner, uppmärksamhetsinformation|" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "http://snomed.info/id/",
+                        "terminologyId" : "http://snomed.info/id/, 59881000052100 |urval särskilda vårdrutiner, uppmärksamhetsinformation|",
                         "code" : "60781000052105",
                         "value" : "hotbild mot patient"
                       }, {
-                        "terminologyId" : "http://snomed.info/id/",
+                        "terminologyId" : "http://snomed.info/id/, 59881000052100 |urval särskilda vårdrutiner, uppmärksamhetsinformation|",
                         "code" : "713670002",
                         "value" : "deltar i klinisk läkemedelsprövning"
                       }, {
-                        "terminologyId" : "http://snomed.info/id/",
+                        "terminologyId" : "http://snomed.info/id/, 59881000052100 |urval särskilda vårdrutiner, uppmärksamhetsinformation|",
                         "code" : "185923000",
                         "value" : "patienten deltar i klinisk prövning"
                       }, {
-                        "terminologyId" : "http://snomed.info/id/",
+                        "terminologyId" : "http://snomed.info/id/, 59881000052100 |urval särskilda vårdrutiner, uppmärksamhetsinformation|",
                         "code" : "699128009",
                         "value" : "avböjt transfusion av blodprodukt"
                       }, {
-                        "terminologyId" : "http://snomed.info/id/",
+                        "terminologyId" : "http://snomed.info/id/, 59881000052100 |urval särskilda vårdrutiner, uppmärksamhetsinformation|",
                         "code" : "60761000052104",
                         "value" : "avböjt autolog blodtransfusion eller cell saver"
                       } ]
@@ -826,28 +826,28 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "http://snomed.info/id/"
+                        "value" : "http://snomed.info/id/, 103491000052103 |urval särskilda vårdrutiner utifrån fattade beslut, uppmärksamhetsinformation|"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "http://snomed.info/id/" ],
+                      "selectedTerminologies" : [ "http://snomed.info/id/, 103491000052103 |urval särskilda vårdrutiner utifrån fattade beslut, uppmärksamhetsinformation| " ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "http://snomed.info/id/",
+                        "terminologyId" : "http://snomed.info/id/, 103491000052103 |urval särskilda vårdrutiner utifrån fattade beslut, uppmärksamhetsinformation|",
                         "code" : "89666000",
                         "value" : "hjärt-lungräddning"
                       }, {
-                        "terminologyId" : "http://snomed.info/id/",
+                        "terminologyId" : "http://snomed.info/id/, 103491000052103 |urval särskilda vårdrutiner utifrån fattade beslut, uppmärksamhetsinformation|",
                         "code" : "78823007",
                         "value" : "livsuppehållande behandling"
                       }, {
-                        "terminologyId" : "http://snomed.info/id/",
+                        "terminologyId" : "http://snomed.info/id/, 103491000052103 |urval särskilda vårdrutiner utifrån fattade beslut, uppmärksamhetsinformation|",
                         "code" : "103735009",
                         "value" : "palliativ vård"
                       }, {
-                        "terminologyId" : "http://snomed.info/id/",
+                        "terminologyId" : "http://snomed.info/id/, 103491000052103 |urval särskilda vårdrutiner utifrån fattade beslut, uppmärksamhetsinformation|",
                         "code" : "133571000052106",
                         "value" : "utfärdande av förskrivningsrestriktion"
                       }, {
-                        "terminologyId" : "http://snomed.info/id/",
+                        "terminologyId" : "http://snomed.info/id/, 103491000052103 |urval särskilda vårdrutiner utifrån fattade beslut, uppmärksamhetsinformation|",
                         "code" : "306103005",
                         "value" : "hänvisning till specifik vårdenhet"
                       } ]
@@ -947,16 +947,7 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0004.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
